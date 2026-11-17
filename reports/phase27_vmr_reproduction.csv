@@ -1,0 +1,4 @@
+analysis_level,sample_size_n,p14_mean,p14_variance,p14_vmr,p17_mean,p17_variance,p17_vmr,duration_variance_hr_sq,interpretation
+RAW_STREAM_COUNTS_DDOF1,17,3.2941,28.0956,8.529,3.0,22.75,7.5833,0.0653,"Raw count VMR is inflated by unequal stream durations (0.0887h to 1.000h, ratio 11.27x)."
+HISTORICAL_REPORTED_COUNTS,17,3.2941,31.846,9.6676,3.0,25.125,8.375,0.0653,Phase 24-26 reported variance used divisor N-3=14 (adjusting for 3 campaigns) rather than N-1=16.
+EXPOSURE_NORMALIZED_RATES_PER_HR,17,22.9647,1167.3027,50.8304,20.9746,980.2368,46.7345,0.0,True environmental rate heterogeneity: rates vary from 0.0 to 101.7 /h across micro-environments.

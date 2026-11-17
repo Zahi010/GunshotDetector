@@ -1,0 +1,16 @@
+category,sub_category,ground_truth_label,total_recordings,detected_as_gunshot,rejected_as_non_gunshot,true_positives,false_negatives,false_positives,true_negatives,metric_rate_pct,displayed_in_phase54_decision_table
+environmental_negative,bioacoustic_human_vocalizations,0,25,2,23,0,0,2,23,8.0,OMITTED_IN_SUMMARY_TABLE
+environmental_negative,natural_outdoor_ambience,0,25,0,25,0,0,0,25,0.0,YES
+environmental_negative,urban_transit_sirens,0,25,1,24,0,0,1,24,4.0,YES
+genuine_gunshot,clean_open_air,1,54,39,15,39,15,0,0,72.22,YES
+genuine_gunshot,clipped_high_energy,1,6,4,2,4,2,0,0,66.67,YES
+genuine_gunshot,distant_field,1,10,8,2,8,2,0,0,80.0,YES
+genuine_gunshot,rapid_cadence_burst,1,60,42,18,42,18,0,0,70.0,YES
+genuine_gunshot,reverberant_indoor,1,4,2,2,2,2,0,0,50.0,YES
+hard_negative,balloon_bursts,0,7,4,3,0,0,4,3,57.14,YES
+hard_negative,fireworks_pyrotechnics,0,30,22,8,0,0,22,8,73.33,YES
+hard_negative,glass_breakage,0,25,3,22,0,0,3,22,12.0,YES
+hard_negative,heavy_door_slams,0,25,5,20,0,0,5,20,20.0,YES
+hard_negative,metal_hammer_impacts,0,25,5,20,0,0,5,20,20.0,YES
+hard_negative,thunder_rumbles,0,25,6,19,0,0,6,19,24.0,YES
+hard_negative,vehicle_backfires,0,5,0,5,0,0,0,5,0.0,YES

@@ -1,0 +1,23 @@
+{
+  "project_root": "E:\\gunshot\\gunshot",
+  "total_raw_audio_files": 257,
+  "raw_counts": {
+    "gunshots": 150,
+    "background": 107,
+    "synthetic": 0
+  },
+  "processed_counts": {
+    "train": 176,
+    "validation": 34,
+    "test": 47
+  },
+  "hard_negatives": {
+    "approved_snippets_count": 224,
+    "approved_manifest_exists": true
+  },
+  "splits_composition": {
+    "train_recordings": 176,
+    "validation_recordings": 34,
+    "test_recordings": 47
+  }
+}

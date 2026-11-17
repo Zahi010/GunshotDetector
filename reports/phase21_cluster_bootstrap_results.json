@@ -1,0 +1,28 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "bootstrap_iterations": 10000,
+  "random_seed": 42,
+  "recording_level_cluster_bootstrap": {
+    "cluster_unit": "recording_stream",
+    "cluster_count": 20,
+    "mean_phase14_recall": 0.5393,
+    "mean_phase17_recall": 0.661,
+    "mean_recall_difference": 0.1216,
+    "percentile_95_ci_lower": 0.037,
+    "percentile_95_ci_upper": 0.2292,
+    "empirical_two_sided_p_value": 0.0058,
+    "ci_includes_zero": false,
+    "robustness_verdict": "BORDERLINE_SIGNIFICANT_RECORDING_LEVEL"
+  },
+  "firing_position_level_cluster_bootstrap": {
+    "cluster_unit": "firing_position",
+    "cluster_count": 5,
+    "total_unique_resample_permutations": 3125,
+    "mean_recall_difference": 0.1203,
+    "percentile_95_ci_lower": 0.02,
+    "percentile_95_ci_upper": 0.22,
+    "empirical_two_sided_p_value": 0.0196,
+    "ci_includes_zero": false,
+    "caveat": "Severe small-sample cluster limitation (N=5). Asymptotic bootstrap theory does NOT hold. Reported for descriptive sensitivity only."
+  }
+}

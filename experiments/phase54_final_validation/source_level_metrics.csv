@@ -1,0 +1,80 @@
+uploader_source,total_recordings,detected_gunshots,recall_pct,mean_peak_score,acoustic_conditions
+Tito Lahaye,8,6,75.0,0.7609,clean_open_air
+EFlexTheSoundDesigner,6,6,100.0,0.9736,"clean_open_air, clipped_high_energy, rapid_cadence_burst"
+nicStage,5,3,60.0,0.6058,"clean_open_air, clipped_high_energy"
+martian,5,5,100.0,0.979,clean_open_air
+klangfabrik,5,5,100.0,0.9918,"clean_open_air, rapid_cadence_burst"
+OGsoundFX,4,1,25.0,0.6763,rapid_cadence_burst
+alienbomb,4,3,75.0,0.9842,rapid_cadence_burst
+MrLindstrom,4,1,25.0,0.2844,rapid_cadence_burst
+Yap_Audio_Production,3,2,66.67,0.7732,"distant_field, rapid_cadence_burst"
+cognito perceptu,3,2,66.67,0.7587,"clean_open_air, distant_field"
+stintx,3,1,33.33,0.3375,rapid_cadence_burst
+Rock Savage,3,2,66.67,0.8063,clean_open_air
+Lubini,3,3,100.0,0.9815,"clean_open_air, distant_field, rapid_cadence_burst"
+Timbre,2,2,100.0,0.9929,rapid_cadence_burst
+Sergenious,2,1,50.0,0.5532,"clean_open_air, rapid_cadence_burst"
+kennysvoice,2,2,100.0,0.9858,clean_open_air
+fennelliott,2,1,50.0,0.9849,"clean_open_air, rapid_cadence_burst"
+mnslugger20,2,2,100.0,0.9806,rapid_cadence_burst
+knufds,2,2,100.0,0.9207,distant_field
+ingudios,2,1,50.0,0.5216,"clean_open_air, distant_field"
+ken788,2,1,50.0,0.8366,"clean_open_air, rapid_cadence_burst"
+tehlordoswag420,2,2,100.0,0.9958,rapid_cadence_burst
+tcpp,2,1,50.0,0.7614,rapid_cadence_burst
+daveincamas,2,0,0.0,0.0992,clean_open_air
+alukahn,2,2,100.0,0.9643,clean_open_air
+Bird_man,1,0,0.0,0.2052,clean_open_air
+DLTBGYD,1,1,100.0,0.9958,rapid_cadence_burst
+AbuNijmeh,1,0,0.0,0.0559,reverberant_indoor
+Alxy,1,0,0.0,0.9261,rapid_cadence_burst
+Callum_Sharp279,1,1,100.0,0.9941,rapid_cadence_burst
+Brokenphono,1,0,0.0,0.7993,reverberant_indoor
+LS,1,1,100.0,0.9141,rapid_cadence_burst
+Julien Nicolas,1,1,100.0,0.99,clean_open_air
+Hybrid_V,1,1,100.0,0.835,rapid_cadence_burst
+HolyMatt123,1,1,100.0,0.9922,rapid_cadence_burst
+Hamp999,1,1,100.0,0.9938,rapid_cadence_burst
+Gutek,1,1,100.0,0.9966,clean_open_air
+Ghostex,1,1,100.0,0.9635,rapid_cadence_burst
+Dragout,1,1,100.0,0.9937,rapid_cadence_burst
+Steelskull,1,0,0.0,0.6324,rapid_cadence_burst
+Sllarson,1,1,100.0,0.9732,rapid_cadence_burst
+SkibkaMusic,1,1,100.0,0.995,rapid_cadence_burst
+Shades,1,1,100.0,0.9873,clean_open_air
+Pashee,1,1,100.0,0.9944,rapid_cadence_burst
+Matt_G,1,1,100.0,0.9945,rapid_cadence_burst
+MrJohnWeez,1,0,0.0,0.2465,rapid_cadence_burst
+MalieEngel,1,0,0.0,0.1869,clean_open_air
+deleted_user_7146007,1,1,100.0,0.9912,rapid_cadence_burst
+davidou,1,0,0.0,0.178,rapid_cadence_burst
+casmarrav,1,1,100.0,0.9926,clean_open_air
+cetsoundcrew,1,1,100.0,0.9276,distant_field
+THE_bizniss,1,1,100.0,0.9778,clean_open_air
+Vlaxim,1,1,100.0,0.9795,rapid_cadence_burst
+Willary1,1,0,0.0,0.9809,rapid_cadence_burst
+aerror,1,1,100.0,0.9243,clean_open_air
+TheBuilder15,1,1,100.0,0.9539,rapid_cadence_burst
+Mr_KeybOred,1,1,100.0,0.9895,reverberant_indoor
+Paul368,1,0,0.0,0.1507,clean_open_air
+SamsterBirdies,1,0,0.0,0.2385,rapid_cadence_burst
+jppi_Stu,1,1,100.0,0.9711,clean_open_air
+fastson,1,1,100.0,0.9457,clean_open_air
+hutsvoid,1,1,100.0,0.9543,reverberant_indoor
+ingsey101,1,0,0.0,0.9511,rapid_cadence_burst
+newciv1,1,1,100.0,0.9902,clipped_high_energy
+mikewest,1,1,100.0,0.9968,rapid_cadence_burst
+kklab5050,1,1,100.0,0.7163,clean_open_air
+knova,1,0,0.0,0.5741,rapid_cadence_burst
+paulnorthyorks,1,1,100.0,0.9117,distant_field
+schots,1,0,0.0,0.4363,clean_open_air
+originalmaja,1,0,0.0,0.2402,distant_field
+nextmaking,1,1,100.0,0.9919,rapid_cadence_burst
+soundscalpel.com,1,1,100.0,0.9944,rapid_cadence_burst
+sgtmurphy,1,1,100.0,0.9951,rapid_cadence_burst
+surrey_film,1,1,100.0,0.9958,rapid_cadence_burst
+timgormly,1,1,100.0,0.8151,rapid_cadence_burst
+trip2000,1,1,100.0,0.7651,clipped_high_energy
+uair01,1,0,0.0,0.1152,clean_open_air
+urupin,1,1,100.0,0.9806,clean_open_air
+vtkproductions.com,1,1,100.0,0.9775,clean_open_air

@@ -1,0 +1,4 @@
+detector,positive_detected,positive_total,positive_recall_pct,fireworks_false_positives,fireworks_total,fireworks_fpr_pct,env_false_positives,env_total,env_fpr_pct,continuous_alerts,continuous_hours,continuous_alert_rate_per_hr
+Detector Improvement V2,45,72,62.5,24,59,40.68,2,79,2.53,3,1.1181,2.6832
+Detector Improvement V3,48,72,66.67,14,59,23.73,0,79,0.0,0,1.1181,0.0
+Detector Improvement V4,70,72,97.22,20,59,33.9,6,79,7.59,1,1.1181,0.8944

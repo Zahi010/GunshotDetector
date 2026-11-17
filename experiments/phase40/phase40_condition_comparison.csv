@@ -1,0 +1,7 @@
+condition_id,condition_name,continuous_gross_far,continuous_gross_far_95_ci,conv_b_excluded_seconds,conv_b_far,positive_event_recall,positive_recall_95_ci,positive_precision,duplicate_rate,distractor_trigger_rate_220,fireworks_trigger_rate_100,audit_classification
+COND1,Phase 14 Balanced Baseline,7.3491,"[4.9933, 10.4314]",120.64,7.4079,61.7% (74/120),"[52.4%, 70.4%]",100.0%,27.5%,24.6% (54/220),47.0% (47/100),EVALUATED_FROZEN
+COND2,Phase 17 Experimental Frozen Profile,24.6549,"[20.1449, 29.8736]",3440.0,31.8758,76.7% (92/120),"[68.1%, 83.9%]",100.0%,22.0%,40.5% (89/220),62.0% (62/100),EVALUATED_FROZEN
+COND3,Phase 17 State Reset Candidate,7.3491,"[4.9933, 10.4314]",120.64,7.4079,64.2% (77/120),"[54.9%, 72.7%]",100.0%,22.0%,29.5% (65/220),62.0% (62/100),EVALUATED_FROZEN
+COND4,Phase 36 Raw State Machine,6.1637,"[4.0264, 9.0313]",107.2,6.2076,64.2% (77/120),"[54.9%, 72.7%]",100.0%,14.4%,30.0% (66/220),57.0% (57/100),EVALUATED_FROZEN
+COND5,Phase 36 Legacy Suppression,6.1637,"[4.0264, 9.0313]",107.2,6.2076,64.2% (77/120),"[54.9%, 72.7%]",100.0%,14.4%,30.0% (66/220),57.0% (57/100),EVALUATED_FROZEN
+COND6,Phase 36 Conservative Suppression,6.1637,"[4.0264, 9.0313]",107.2,6.2076,64.2% (77/120),"[54.9%, 72.7%]",100.0%,14.4%,30.0% (66/220),57.0% (57/100),EVALUATED_FROZEN

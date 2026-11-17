@@ -1,0 +1,133 @@
+{
+  "phase": "PHASE_39",
+  "mandatory_safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "release_archive": {
+    "filename": "gunshot_detection_phase39_evaluation.zip",
+    "byte_size": 122871,
+    "sha256": "42436b45c2daf86f1df8eac09bb7754d2c228de3d414be954858fb92e6653515",
+    "zip_crc_status": "PASS",
+    "file_count": 30
+  },
+  "artifacts": {
+    "experiments/phase39/phase39_evaluation_protocol.md": {
+      "size_bytes": 7677,
+      "sha256": "726d0231d429acfa370ebdf740c1213d59cd720f81df6d2fd9788a1514fbb736"
+    },
+    "experiments/phase39/phase39_detector_freeze_manifest.json": {
+      "size_bytes": 2663,
+      "sha256": "f71591daf46ff7a74f91ef207eb1b2308b9006116c12324dffce9c5ad8e80c88"
+    },
+    "experiments/phase39/phase39_hash_reconciliation.csv": {
+      "size_bytes": 3121,
+      "sha256": "f29dd7102f4439ba452d6bf2faca3b9692a847b5d1ba19e4755c827411ad7420"
+    },
+    "experiments/phase39/phase39_archive_reconciliation.csv": {
+      "size_bytes": 2408,
+      "sha256": "9348bbce975e85125645eb015f0b49bca067d73c92229cbaaf1d4a0dbdd77d54"
+    },
+    "experiments/phase39/phase39_provenance_findings.md": {
+      "size_bytes": 5989,
+      "sha256": "a6e1ace1ffbed16ddedd2ecb5dfa071784a8f75fe4236d0010ec4de374702c34"
+    },
+    "experiments/phase39/provenance/phase39_hash_reconciliation.csv": {
+      "size_bytes": 3121,
+      "sha256": "f29dd7102f4439ba452d6bf2faca3b9692a847b5d1ba19e4755c827411ad7420"
+    },
+    "experiments/phase39/provenance/phase39_archive_reconciliation.csv": {
+      "size_bytes": 2408,
+      "sha256": "9348bbce975e85125645eb015f0b49bca067d73c92229cbaaf1d4a0dbdd77d54"
+    },
+    "experiments/phase39/provenance/phase39_provenance_findings.md": {
+      "size_bytes": 5989,
+      "sha256": "a6e1ace1ffbed16ddedd2ecb5dfa071784a8f75fe4236d0010ec4de374702c34"
+    },
+    "experiments/phase39/phase39_positive_annotation_audit.csv": {
+      "size_bytes": 61005,
+      "sha256": "e6c92e548d28246d5ef7cc7e39f47530a95ffe35f856711e16c93f9c69119edd"
+    },
+    "experiments/phase39/phase39_positive_annotation_report.md": {
+      "size_bytes": 5159,
+      "sha256": "5c85324ccc2ff74d47b91a6ca71f8bebd3203144f13659a4e43d122224767917"
+    },
+    "experiments/phase39/phase39_phase38_reproduction.csv": {
+      "size_bytes": 1901,
+      "sha256": "393f8799f31a538a7abe0c1bfddc450499143e620e92d44e2b82bebbb87fbe1b"
+    },
+    "experiments/phase39/phase39_metric_reconciliation.md": {
+      "size_bytes": 4925,
+      "sha256": "9421d2d0ea81ece0990bd5342020e8596d9649f9ac3e0c50034fa30acb5fdc4d"
+    },
+    "experiments/phase39/phase39_continuous_dataset_registry.csv": {
+      "size_bytes": 6338,
+      "sha256": "fb6d4620b0f427e4251f34d9b1a5c9961fd3213fb655b673c4edff7e0a790ef0"
+    },
+    "experiments/phase39/phase39_distractor_registry.csv": {
+      "size_bytes": 85519,
+      "sha256": "9b47094b1085827b1cffb047657d78753ba932be8ee0c6aa5a99ffb48c895e55"
+    },
+    "experiments/phase39/phase39_audio_overlap_audit.csv": {
+      "size_bytes": 57894,
+      "sha256": "b3036a0d8701df89100dee37fd8cce50a59dd0273748d7415ecec1c0052631f5"
+    },
+    "experiments/phase39/phase39_continuous_acquisition_report.md": {
+      "size_bytes": 5849,
+      "sha256": "462f3fe4316a5c32e5324184607ce56c879b9bd3878f24a533ee81137db0ca8f"
+    },
+    "experiments/phase39/dataset/phase39_continuous_dataset_registry.csv": {
+      "size_bytes": 6338,
+      "sha256": "fb6d4620b0f427e4251f34d9b1a5c9961fd3213fb655b673c4edff7e0a790ef0"
+    },
+    "experiments/phase39/dataset/phase39_distractor_registry.csv": {
+      "size_bytes": 85519,
+      "sha256": "9b47094b1085827b1cffb047657d78753ba932be8ee0c6aa5a99ffb48c895e55"
+    },
+    "experiments/phase39/dataset/phase39_audio_overlap_audit.csv": {
+      "size_bytes": 57894,
+      "sha256": "b3036a0d8701df89100dee37fd8cce50a59dd0273748d7415ecec1c0052631f5"
+    },
+    "experiments/phase39/dataset/phase39_continuous_acquisition_report.md": {
+      "size_bytes": 5849,
+      "sha256": "462f3fe4316a5c32e5324184607ce56c879b9bd3878f24a533ee81137db0ca8f"
+    },
+    "experiments/phase39/phase39_continuous_results.csv": {
+      "size_bytes": 937,
+      "sha256": "3071e4fb7925be23bbc2ecc513dfa1b5e7f2604d97547f8a232f7d85f4ccaffc"
+    },
+    "experiments/phase39/phase39_distractor_results.csv": {
+      "size_bytes": 1322,
+      "sha256": "10848466a44f05da6dfe26e1336777212ea295404b8d3cbbac29cd6b7a4c1a7a"
+    },
+    "experiments/phase39/phase39_positive_results.csv": {
+      "size_bytes": 1053,
+      "sha256": "ace432f674817f0735f7427d33d4c73a8c928f3b3a77b21c44be296fd7456261"
+    },
+    "experiments/phase39/phase39_condition_comparison.csv": {
+      "size_bytes": 1631,
+      "sha256": "919b32dda0604bd7d39c6d0ef42f3339e9afc7fd3c7e7bf622e3a681f2e7c585"
+    },
+    "experiments/phase39/phase39_fireworks_error_analysis.md": {
+      "size_bytes": 3750,
+      "sha256": "84b0515f482292e16795b69b38a2386a99f9c330d3b78a6b8337128999b8d208"
+    },
+    "experiments/phase39/phase39_suppression_reproducibility.md": {
+      "size_bytes": 6099,
+      "sha256": "8c98225196590ad16dfdeb7fb0004830c16235a4bc30a5b16a82c7ad47d7cad2"
+    },
+    "experiments/phase39/phase39_final_report.md": {
+      "size_bytes": 17292,
+      "sha256": "b7bd29daf8993528823fa1dd8178a83743857838f21242af80e6353acb897dad"
+    },
+    "experiments/phase39/phase39_test_execution_log.txt": {
+      "size_bytes": 3476,
+      "sha256": "2c52386609a70c069f393209b12477ded53f9c267267855310c287c988813370"
+    },
+    "tests/test_phase39_evaluation.py": {
+      "size_bytes": 10766,
+      "sha256": "d30fb1e954ffb2621a005ec842531255234f7ec569ba1c1744017c84d4fed627"
+    },
+    "experiments/phase39/tests/test_phase39_evaluation.py": {
+      "size_bytes": 10766,
+      "sha256": "d30fb1e954ffb2621a005ec842531255234f7ec569ba1c1744017c84d4fed627"
+    }
+  }
+}

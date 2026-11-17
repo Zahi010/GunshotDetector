@@ -1,0 +1,7 @@
+condition_id,architecture_profile,total_alerts,duration_hours,point_estimate_far,poisson_exact_95_ci_lower,poisson_exact_95_ci_upper,cluster_robust_se,naive_wald_z_95_ci_lower,naive_wald_z_95_ci_upper,naive_wald_t_95_ci_lower,naive_wald_t_95_ci_upper,log_cluster_wald_95_ci_lower,log_cluster_wald_95_ci_upper,naive_has_negative_lower_bound,log_wald_strictly_positive
+COND1,Phase 14 Balanced Baseline,31,4.2182,7.3491,4.9933,10.4314,4.9273,-2.3082,17.0063,-3.0027,17.7009,1.7968,30.0589,True,True
+COND2,Phase 17 Experimental Frozen Profile,104,4.2182,24.655,20.1449,29.8736,12.0354,1.066,48.2439,-0.6306,49.9405,8.841,68.7553,True,True
+COND3,Phase 17 State Reset Candidate,31,4.2182,7.3491,4.9933,10.4314,4.9273,-2.3082,17.0063,-3.0027,17.7009,1.7968,30.0589,True,True
+COND4,Phase 36 Raw State Machine,26,4.2182,6.1637,4.0264,9.0313,4.123,-1.9172,14.2447,-2.4984,14.8259,1.5119,25.129,True,True
+COND5,Phase 36 Legacy Suppression,26,4.2182,6.1637,4.0264,9.0313,4.123,-1.9172,14.2447,-2.4984,14.8259,1.5119,25.129,True,True
+COND6,Phase 36 Conservative Suppression,26,4.2182,6.1637,4.0264,9.0313,4.123,-1.9172,14.2447,-2.4984,14.8259,1.5119,25.129,True,True

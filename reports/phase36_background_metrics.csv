@@ -1,0 +1,25 @@
+condition_id,condition_name,recording_id,gross_duration_s,gross_duration_hr,alerts_count,gross_far_per_hr,conv_a_cooldown_s,conv_a_eligible_hr,conv_a_far_per_hr,conv_b_cooldown_s,conv_b_eligible_hr,conv_b_far_per_hr
+COND1_PHASE14_BALANCED_BASELINE,Phase 14 Balanced Reference Baseline,continuous_stream_01_urban_transit_sirens_1hr,3600.0,1.0,11,11.0,22.0,0.9939,11.0676,56.4,0.9843,11.1751
+COND1_PHASE14_BALANCED_BASELINE,Phase 14 Balanced Reference Baseline,continuous_stream_02_domestic_interior_transients_1hr,3600.0,1.0,0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+COND1_PHASE14_BALANCED_BASELINE,Phase 14 Balanced Reference Baseline,continuous_stream_03_outdoor_natural_ambience_1hr,3600.0,1.0,23,23.0,46.0,0.9872,23.2977,98.72,0.9726,23.6485
+COND1_PHASE14_BALANCED_BASELINE,Phase 14 Balanced Reference Baseline,phase15_independent_continuous_2hr,7200.0,2.0,34,17.0,68.0,1.9811,17.1621,151.04,1.958,17.3643
+COND2_PHASE17_EXPERIMENTAL_LEGACY,Phase 17 Experimental Frozen Profile,continuous_stream_01_urban_transit_sirens_1hr,3600.0,1.0,20,20.0,40.0,0.9889,20.2247,896.64,0.7509,26.6335
+COND2_PHASE17_EXPERIMENTAL_LEGACY,Phase 17 Experimental Frozen Profile,continuous_stream_02_domestic_interior_transients_1hr,3600.0,1.0,0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+COND2_PHASE17_EXPERIMENTAL_LEGACY,Phase 17 Experimental Frozen Profile,continuous_stream_03_outdoor_natural_ambience_1hr,3600.0,1.0,54,54.0,108.0,0.97,55.6701,1364.4,0.621,86.9565
+COND2_PHASE17_EXPERIMENTAL_LEGACY,Phase 17 Experimental Frozen Profile,phase15_independent_continuous_2hr,7200.0,2.0,71,35.5,141.36,1.9607,36.2109,2870.32,1.2027,59.0344
+COND3_PHASE17_STATE_RESET_CANDIDATE,Phase 17 State Reset Candidate,continuous_stream_01_urban_transit_sirens_1hr,3600.0,1.0,11,11.0,22.0,0.9939,11.0676,56.4,0.9843,11.1751
+COND3_PHASE17_STATE_RESET_CANDIDATE,Phase 17 State Reset Candidate,continuous_stream_02_domestic_interior_transients_1hr,3600.0,1.0,0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+COND3_PHASE17_STATE_RESET_CANDIDATE,Phase 17 State Reset Candidate,continuous_stream_03_outdoor_natural_ambience_1hr,3600.0,1.0,23,23.0,46.0,0.9872,23.2977,98.72,0.9726,23.6485
+COND3_PHASE17_STATE_RESET_CANDIDATE,Phase 17 State Reset Candidate,phase15_independent_continuous_2hr,7200.0,2.0,34,17.0,68.0,1.9811,17.1621,151.04,1.958,17.3643
+COND4_PHASE36_RAW_STATE_MACHINE,Phase 36 Raw State Machine,continuous_stream_01_urban_transit_sirens_1hr,3600.0,1.0,10,10.0,20.0,0.9944,10.0559,54.56,0.9848,10.1539
+COND4_PHASE36_RAW_STATE_MACHINE,Phase 36 Raw State Machine,continuous_stream_02_domestic_interior_transients_1hr,3600.0,1.0,0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+COND4_PHASE36_RAW_STATE_MACHINE,Phase 36 Raw State Machine,continuous_stream_03_outdoor_natural_ambience_1hr,3600.0,1.0,22,22.0,44.0,0.9878,22.2722,94.88,0.9736,22.5955
+COND4_PHASE36_RAW_STATE_MACHINE,Phase 36 Raw State Machine,phase15_independent_continuous_2hr,7200.0,2.0,34,17.0,68.0,1.9811,17.1621,151.04,1.958,17.3643
+COND5_PHASE36_LEGACY_SUPPRESSION,Phase 36 Legacy Suppression,continuous_stream_01_urban_transit_sirens_1hr,3600.0,1.0,10,10.0,20.0,0.9944,10.0559,54.56,0.9848,10.1539
+COND5_PHASE36_LEGACY_SUPPRESSION,Phase 36 Legacy Suppression,continuous_stream_02_domestic_interior_transients_1hr,3600.0,1.0,0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+COND5_PHASE36_LEGACY_SUPPRESSION,Phase 36 Legacy Suppression,continuous_stream_03_outdoor_natural_ambience_1hr,3600.0,1.0,22,22.0,44.0,0.9878,22.2722,94.88,0.9736,22.5955
+COND5_PHASE36_LEGACY_SUPPRESSION,Phase 36 Legacy Suppression,phase15_independent_continuous_2hr,7200.0,2.0,34,17.0,68.0,1.9811,17.1621,151.04,1.958,17.3643
+COND6_PHASE36_CONSERVATIVE_SUPPRESSION,Phase 36 Conservative Suppression,continuous_stream_01_urban_transit_sirens_1hr,3600.0,1.0,10,10.0,20.0,0.9944,10.0559,54.56,0.9848,10.1539
+COND6_PHASE36_CONSERVATIVE_SUPPRESSION,Phase 36 Conservative Suppression,continuous_stream_02_domestic_interior_transients_1hr,3600.0,1.0,0,0.0,0.0,1.0,0.0,0.0,1.0,0.0
+COND6_PHASE36_CONSERVATIVE_SUPPRESSION,Phase 36 Conservative Suppression,continuous_stream_03_outdoor_natural_ambience_1hr,3600.0,1.0,22,22.0,44.0,0.9878,22.2722,94.88,0.9736,22.5955
+COND6_PHASE36_CONSERVATIVE_SUPPRESSION,Phase 36 Conservative Suppression,phase15_independent_continuous_2hr,7200.0,2.0,34,17.0,68.0,1.9811,17.1621,151.04,1.958,17.3643

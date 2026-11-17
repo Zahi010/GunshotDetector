@@ -1,0 +1,53 @@
+{
+  "phase": 17,
+  "title": "Continuous Positive Event Detection, Long-Duration Reliability & Animal Suppression Validation",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "timestamp_utc": "2026-11-13T17:36:34Z",
+  "deployment_archive": {
+    "filename": "gunshot_detection_phase17.zip",
+    "path": "E:\\gunshot\\gunshot_detection_phase17.zip",
+    "sha256": "028bb95bced4456020e5d9860cb01ddca3d2944779d31db76ba2b20f99e2bc41",
+    "size_bytes": 2418868636,
+    "size_mb": 2306.81,
+    "file_count": 3220,
+    "testzip_integrity": "PASSED_ZERO_CORRUPTION"
+  },
+  "frozen_models": {
+    "model_phase14.py": {
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "status": "FROZEN_BASELINE_UNTOUCHED"
+    },
+    "model_phase13.py": {
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "status": "FROZEN_HISTORICAL_COMPARATOR"
+    },
+    "model_phase9.py": {
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "status": "FROZEN_HISTORICAL_COMPARATOR"
+    },
+    "model_phase17.py": {
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "status": "EXPERIMENTAL_ANIMAL_SUPPRESSION_CANDIDATE"
+    }
+  },
+  "key_reports": [
+    "reports/phase17_positive_continuous_provenance.md",
+    "reports/phase17_annotation_audit.md",
+    "reports/phase17_long_duration_negative_evaluation.md",
+    "reports/phase17_animal_suppression_experiment.md",
+    "reports/phase17_high_precision_zero_alert_audit.md",
+    "reports/phase17_continuous_event_results.md",
+    "reports/phase17_latency_audit.md",
+    "reports/phase17_statistical_analysis.md",
+    "reports/phase17_final_report.md"
+  ],
+  "key_datasets": {
+    "continuous_positive": "data/phase17_continuous_positive/ (4 evaluation streams, 39 physical events)",
+    "continuous_negative": "data/phase17_natural_continuous/ (6 new urban streams + 11 Phase 16 baseline streams, 6.65 hours total)"
+  },
+  "regression_suites": [
+    "tests/test_phase17_provenance_integrity.py",
+    "tests/test_phase17_evaluation_integrity.py",
+    "tests/test_phase17_regression.py"
+  ]
+}

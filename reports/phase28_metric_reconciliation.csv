@@ -1,0 +1,25 @@
+metric,phase27_reported_value,independently_reproduced_value,absolute_difference,relative_difference,explanation,status
+total_recordings_count,23,23,0,0.0%,Exact match across recording provenance,VERIFIED
+total_campaigns_count,4,4,0,0.0%,"4 geographically independent campaigns (UK industrial, UK rural, ES Bilbao, AU Adelaide)",VERIFIED
+gross_monitored_duration_s,45525.58,45525.57,0.00,0.0%,Sum of all 23 recording durations,VERIFIED
+gross_monitored_duration_hr,12.6460,12.6458,0.0000,0.0%,Gross seconds divided by 3600.0,VERIFIED
+p14_total_observed_alerts,128,128,0,0.0%,Exact alert count in event log (56 historical + 72 AeroSonicDB),VERIFIED
+p17_total_observed_alerts,159,159,0,0.0%,Exact alert count in event log (51 historical + 108 AeroSonicDB),VERIFIED
+p14_gross_far_per_hr,10.1218,10.1219,0.0000,0.0%,128 alerts / 12.6460 gross hours,VERIFIED
+p17_gross_far_per_hr,12.5732,12.5733,0.0000,0.0%,159 alerts / 12.6460 gross hours,VERIFIED
+p14_cooldown_excluded_s,455.52,453.92,-1.60,-0.35%,Phase 27 narrative report cited draft summary value 455.52s while underlying accounting CSV sums to 453.92s (111.92s historical + 342.00s AeroSonicDB),RECONCILED_WITH_DISCREPANCY
+p17_cooldown_excluded_s,6381.76,6385.20,3.44,+0.05%,Phase 27 narrative report cited draft summary value 6381.76s while underlying accounting CSV sums to 6385.20s (101.92s historical + 6283.28s AeroSonicDB),RECONCILED_WITH_DISCREPANCY
+p14_eligible_exposure_hr,12.5195,12.5198,0.0003,+0.003%,Derived from cooldown exclusion difference (45071.66s / 3600.0),RECONCILED_WITH_DISCREPANCY
+p17_eligible_exposure_hr,10.8732,10.8723,-0.0009,-0.008%,Derived from cooldown exclusion difference (39140.38s / 3600.0),RECONCILED_WITH_DISCREPANCY
+p14_eligible_far_per_hr,10.2241,10.2238,-0.0003,-0.004%,128 alerts / 12.5199 eligible hours,RECONCILED_WITH_DISCREPANCY
+p17_eligible_far_per_hr,14.6231,14.6243,0.0012,+0.008%,159 alerts / 10.8723 eligible hours,RECONCILED_WITH_DISCREPANCY
+p14_garwood_lower_95,8.5303,8.5295,-0.0008,-0.01%,Exact chi-square Poisson 95% lower bound,VERIFIED
+p14_garwood_upper_95,12.1643,12.1561,-0.0082,-0.07%,Exact chi-square Poisson 95% upper bound,VERIFIED
+p17_garwood_lower_95,12.4419,12.4395,-0.0024,-0.02%,Exact chi-square Poisson 95% lower bound,VERIFIED
+p17_garwood_upper_95,17.0772,17.0824,0.0052,+0.03%,Exact chi-square Poisson 95% upper bound,VERIFIED
+paired_wilcoxon_w,8.0,8.0,0.0,0.0%,Sum of positive signed ranks on 8 discordant streams,VERIFIED
+paired_wilcoxon_p_twosided,0.1953125,0.1953125,0.0000000,0.0%,Exact two-sided permutation p-value on 8 non-zero pairs,VERIFIED
+sign_test_p_twosided,0.7265625,0.7265625,0.0000000,0.0%,"Exact binomial two-sided sign test p-value (k=3, n=8, p=0.5)",VERIFIED
+p14_favored_streams,5,5,0,0.0%,5 AeroSonicDB streams with fewer alerts in P14,VERIFIED
+p17_favored_streams,3,3,0,0.0%,3 historical streams with fewer alerts in P17,VERIFIED
+tied_streams,15,15,0,0.0%,14 historical streams + 1 AeroSonicDB stream with identical alert counts,VERIFIED

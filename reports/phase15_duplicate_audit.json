@@ -1,0 +1,177 @@
+{
+  "phase": 15,
+  "total_discrete_recordings_audited": 152,
+  "total_continuous_segments_audited": 1440,
+  "internal_near_duplicate_pairs": 914,
+  "near_duplicate_findings": [
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_010_phase15_gunshot_pocket_berettasinglepocket07",
+      "filename_b": "phase15_gunshot_pocket_berettasinglepocket07.wav",
+      "spectral_similarity": 0.9973,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_011_phase15_gunshot_pocket_berettasinglepocket08",
+      "filename_b": "phase15_gunshot_pocket_berettasinglepocket08.wav",
+      "spectral_similarity": 0.9973,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_012_phase15_gunshot_pocket_berettasinglepocket09",
+      "filename_b": "phase15_gunshot_pocket_berettasinglepocket09.wav",
+      "spectral_similarity": 0.99,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_013_phase15_gunshot_pocket_berettasinglepocket10",
+      "filename_b": "phase15_gunshot_pocket_berettasinglepocket10.wav",
+      "spectral_similarity": 0.998,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_025_phase15_gunshot_clean_berettadouble04",
+      "filename_b": "phase15_gunshot_clean_berettadouble04.wav",
+      "spectral_similarity": 0.9936,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_030_phase15_gunshot_clean_berettadouble09",
+      "filename_b": "phase15_gunshot_clean_berettadouble09.wav",
+      "spectral_similarity": 0.9753,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_032_phase15_gunshot_clean_berettadouble11",
+      "filename_b": "phase15_gunshot_clean_berettadouble11.wav",
+      "spectral_similarity": 0.992,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_036_phase15_gunshot_clean_berettadouble15",
+      "filename_b": "phase15_gunshot_clean_berettadouble15.wav",
+      "spectral_similarity": 0.9694,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_043_phase15_gunshot_urban_shotspotter_d5_01",
+      "filename_b": "phase15_gunshot_urban_shotspotter_d5_01.wav",
+      "spectral_similarity": 0.9878,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_044_phase15_gunshot_urban_shotspotter_d5_02",
+      "filename_b": "phase15_gunshot_urban_shotspotter_d5_02.wav",
+      "spectral_similarity": 0.9937,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_045_phase15_gunshot_urban_shotspotter_d5_03",
+      "filename_b": "phase15_gunshot_urban_shotspotter_d5_03.wav",
+      "spectral_similarity": 0.9653,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_046_phase15_gunshot_urban_shotspotter_d5_04",
+      "filename_b": "phase15_gunshot_urban_shotspotter_d5_04.wav",
+      "spectral_similarity": 0.9899,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_pos_047_phase15_gunshot_scepter_calibration_01",
+      "filename_b": "phase15_gunshot_scepter_calibration_01.wav",
+      "spectral_similarity": 0.9914,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_003_phase15_neg_mitchell_noise_03",
+      "filename_b": "phase15_neg_mitchell_noise_03.wav",
+      "spectral_similarity": 0.99,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_004_phase15_neg_mitchell_noise_04",
+      "filename_b": "phase15_neg_mitchell_noise_04.wav",
+      "spectral_similarity": 0.9697,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_007_phase15_neg_mitchell_noise_07",
+      "filename_b": "phase15_neg_mitchell_noise_07.wav",
+      "spectral_similarity": 0.9931,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_028_phase15_neg_mitchell_ambient_16",
+      "filename_b": "phase15_neg_mitchell_ambient_16.wav",
+      "spectral_similarity": 0.9872,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_029_phase15_neg_mitchell_ambient_17",
+      "filename_b": "phase15_neg_mitchell_ambient_17.wav",
+      "spectral_similarity": 0.9881,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_031_phase15_neg_mitchell_ambient_19",
+      "filename_b": "phase15_neg_mitchell_ambient_19.wav",
+      "spectral_similarity": 0.9882,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    },
+    {
+      "recording_a": "p15_pos_001_phase15_gunshot_pocket_ar15singlepocket07",
+      "filename_a": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "recording_b": "p15_neg_035_phase15_neg_mitchell_ambient_23",
+      "filename_b": "phase15_neg_mitchell_ambient_23.wav",
+      "spectral_similarity": 0.9857,
+      "interpretation": "High acoustic spectral similarity (potential take variation or common acoustic room impulse response)"
+    }
+  ],
+  "zero_collision_with_phase12": true,
+  "zero_collision_with_phase13_stream": true,
+  "historical_shotspotter_disclosure": {
+    "d5_sensor_count": 4,
+    "scepter_calibration_count": 1,
+    "provenance_class": "HISTORICALLY_USED",
+    "split": "diagnostic_only",
+    "note": "Examined in Phase 7 research exploration; retained purely as diagnostic historical benchmark comparator; strictly segregated from blind evaluation."
+  }
+}

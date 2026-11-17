@@ -1,0 +1,59 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "evaluation_set": "Category A (ShotSpotter Pittsburgh PA DQV 2018)",
+  "stream_count": 20,
+  "observed_false_alerts_phase14": 0,
+  "observed_false_alerts_phase17": 0,
+  "mathematical_formula": "Exact Garwood Poisson 95% Upper Bound: lambda_upper = -ln(0.05) / (T_seconds / 3600)",
+  "exposure_scenarios": {
+    "definition_1_total_recorded_audio": {
+      "description": "Total duration of all 20 sensor recordings without subtracting gunfire or cooldown.",
+      "duration_seconds": 200.0,
+      "duration_hours": 0.05556,
+      "garwood_95_upper_bound_alerts_per_hour": 53.923,
+      "methodological_validity": "INVALID — Conflates active ballistic impact and refractory periods with false-alert exposure."
+    },
+    "definition_2_eligible_background_matching_window": {
+      "description": "Total audio excluding ground-truth event matching windows [t - 0.5s, t + 1.5s].",
+      "duration_seconds": 59.58400000000001,
+      "eligible_duration_seconds": 140.416,
+      "eligible_duration_hours": 0.039,
+      "garwood_95_upper_bound_alerts_per_hour": 76.805,
+      "methodological_validity": "RECOMMENDED — Accurately isolates non-event audio outside the temporal matching window."
+    },
+    "definition_3_nominal_rounded_quiescent_background": {
+      "description": "Nominal 140.0-second quiescent background duration cited in Phase 20 report.",
+      "duration_seconds": 140.0,
+      "duration_hours": 0.03889,
+      "garwood_95_upper_bound_alerts_per_hour": 77.033,
+      "methodological_validity": "CONSERVATIVE_STANDARD — Exact match for prompt formula: -ln(0.05) / (140 / 3600)."
+    },
+    "definition_4_eligible_background_cooldown_window": {
+      "description": "Total audio excluding detector refractory cooldown periods [t - 0.2s, t + 2.0s].",
+      "duration_seconds": 63.584,
+      "eligible_duration_seconds": 136.416,
+      "eligible_duration_hours": 0.03789,
+      "garwood_95_upper_bound_alerts_per_hour": 79.057,
+      "methodological_validity": "STRICT_HARDWARE_LIMIT — Only periods where detector was actually capable of triggering."
+    }
+  },
+  "comparison_with_phase18_continuous_negative_benchmark": {
+    "benchmark_dataset": "Phase 18 Natural Continuous Negative Suite",
+    "duration_seconds": 21888.0,
+    "duration_hours": 6.08,
+    "phase_14_balanced": {
+      "observed_false_alerts": 6,
+      "empirical_rate_per_hour": 0.987,
+      "garwood_95_ci_per_hour": [
+        0.362,
+        2.148
+      ]
+    },
+    "phase_14_high_precision": {
+      "observed_false_alerts": 0,
+      "empirical_rate_per_hour": 0.0,
+      "garwood_95_upper_bound_per_hour": 0.493
+    },
+    "scientific_conclusion": "Category A's 140 seconds of exposure provides an upper bound of ~77 alerts/hour, which is 150x looser than Phase 18's 6.08-hour benchmark (0.49 alerts/hour). Category A cannot assess false alarm rates."
+  }
+}

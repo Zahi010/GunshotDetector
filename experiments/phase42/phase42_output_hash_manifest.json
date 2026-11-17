@@ -1,0 +1,96 @@
+{
+  "phase": "PHASE_42",
+  "timestamp": "2026-11-16T09:15:52Z",
+  "mandatory_safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "description": "Cryptographic SHA-256 hash manifest for Phase 42 deliverables",
+  "files": {
+    "experiments/phase42/phase42_protected_file_hashes.json": {
+      "sha256": "cf444faad677b15c306e4332c192c9cf4cb8980a41348e55a2c2f2ad20982743",
+      "byte_size": 1544
+    },
+    "experiments/phase42/phase42_continuous_exposure_reconciliation.csv": {
+      "sha256": "2ebf4834c883e43e60c78c8f6b282c01836826b582fdf6e6f8552c30a929f8f8",
+      "byte_size": 5398
+    },
+    "experiments/phase42/phase42_stream_level_results.csv": {
+      "sha256": "f378a535769a5227e89a04c3eb4f0f97de9bd4cb1416129b3bf1bd38d4624a27",
+      "byte_size": 34549
+    },
+    "experiments/phase42/phase42_continuous_reconciliation.md": {
+      "sha256": "cc01cceef8906ee93c1ceafb86cb9e11b0986ab7830a3bed5f2575ef69864047",
+      "byte_size": 6227
+    },
+    "experiments/phase42/phase42_fireworks_decision_reconciliation.csv": {
+      "sha256": "63c75cfb0fd2f0f19c4313f009795cec4531a8997dbcd1556b30508ccc303f0d",
+      "byte_size": 32550
+    },
+    "experiments/phase42/phase42_fireworks_reconciliation.md": {
+      "sha256": "8e98cd5893db64f7aef51881264f210ce51eb14ecd16e3634123046da2fca46a",
+      "byte_size": 6481
+    },
+    "experiments/phase42/phase42_confidence_interval_audit.csv": {
+      "sha256": "7944ab862aa3f210a70d42a53b5cbd49b054bee35a9433d701dbcbe10c0b2665",
+      "byte_size": 1161
+    },
+    "experiments/phase42/phase42_statistical_methods.md": {
+      "sha256": "77968dd543b73b552ee3b2a1cdd648cc326b7de43ed6587e7e369e3e35aa7c06",
+      "byte_size": 5729
+    },
+    "experiments/phase42/phase42_recordist_analysis.csv": {
+      "sha256": "5bf5c50264eac4807b89d4cb5e4f481525922f869e8a0e2d58dad98b9046410a",
+      "byte_size": 1359
+    },
+    "experiments/phase42/phase42_cluster_inference_report.md": {
+      "sha256": "c4ebd9210929f7758d1758f8a9663604a243489c0b74fcff6cde313369bb1eee",
+      "byte_size": 5454
+    },
+    "experiments/phase42/phase42_positive_deduplication_audit.csv": {
+      "sha256": "fba8b376bc4e8bbd83b68491008e6fa17c0459575182a3f85a5d042b4eac7b12",
+      "byte_size": 1202
+    },
+    "experiments/phase42/phase42_positive_recall_sensitivity.md": {
+      "sha256": "9d1875796246ec5a14f7b18b585c7f8a51b5d0f56a0bd8b8d396edb1eb67bad7",
+      "byte_size": 4775
+    },
+    "experiments/phase42/phase42_crest_factor_reconstruction.csv": {
+      "sha256": "d6465d5e585e7129f046614c9eb706d1e979d0fe3f47ed09fe10be5b56cc28b8",
+      "byte_size": 3113
+    },
+    "experiments/phase42/phase42_mechanism_validation.md": {
+      "sha256": "47a9c53631cd0eff7dbb3f79ce099e0c6b40229153a1067e3e4a0f93702cf1dc",
+      "byte_size": 5450
+    },
+    "experiments/phase42/phase42_authoritative_benchmark.csv": {
+      "sha256": "3221e30ce54ea78d52db0811557eb57453ebdbb91ae37d896470cdd8476ed0b6",
+      "byte_size": 7202
+    },
+    "experiments/phase42/phase42_discrepancy_register.csv": {
+      "sha256": "f3937556714e46125edd5ab09ed482ff521950c86f0d2c72f4a6e4d16ef75692",
+      "byte_size": 3673
+    },
+    "experiments/phase42/phase42_claim_evidence_matrix.csv": {
+      "sha256": "f2514a678dcd4edf06ef37e58a16f04cd5d5f3230490c49b03ff627934952682",
+      "byte_size": 3935
+    },
+    "tests/test_phase42_audit.py": {
+      "sha256": "15f402a2ac21340911841b3e572173c85c77e909dcdaefef8b1754e2e31a5a5d",
+      "byte_size": 11859
+    },
+    "experiments/phase42/phase42_test_execution_log.txt": {
+      "sha256": "c74169468405069f88db2a24eebf22d13a3ba12e74ef5f3c9e2f8496140b50d0",
+      "byte_size": 2331
+    },
+    "experiments/phase42/phase42_final_audit_report.md": {
+      "sha256": "cd9e00e8b62a6d0885a6636909a4fb16b3d4aee88d1934a137e4f9fb3ee6747f",
+      "byte_size": 15358
+    },
+    "reports/phase42_final_audit_report.md": {
+      "sha256": "cd9e00e8b62a6d0885a6636909a4fb16b3d4aee88d1934a137e4f9fb3ee6747f",
+      "byte_size": 15358
+    },
+    "experiments/phase42/phase42_release_notes.md": {
+      "sha256": "b67e97bd04f07fa78f3c99f462e54db22e57ccfe8e6ca1bb6de9751138cd9c5e",
+      "byte_size": 7892
+    }
+  }
+}

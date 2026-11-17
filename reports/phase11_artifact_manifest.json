@@ -1,0 +1,46 @@
+{
+  "audit_phase": "Phase 11",
+  "audit_timestamp": "2026-10-29T09:45:00Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "environment": {
+    "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "win32"
+  },
+  "model_bundle_artifacts": {
+    "catboost_model.joblib": "a34d2d80e2815b56c6de4fc6ba784f9bea4f35add2ab351be3e66df4b47d40b9",
+    "classifier_head.keras": "1142278dd5848f0344433448af4185f5ea1f987f6109a297e1b774c9001fba8a",
+    "lightgbm_model.joblib": "3de5e30a6c869f22d1cf98e77533b7497fa9553a67c2476b84314f91bc997fb3",
+    "xgboost_model.joblib": "fd1aeccd5666da10dab4aebd3c6cf30ca7b3124237860b5325b176933cd5aa69"
+  },
+  "deployment_archives": {
+    "phase8_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase8.zip",
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "size_bytes": 485193859,
+      "integrity_testzip": "PASSED"
+    },
+    "phase9_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase9.zip",
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "size_bytes": 865883024,
+      "integrity_testzip": "PASSED"
+    },
+    "phase10_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase10.zip",
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "size_bytes": 865952822,
+      "integrity_testzip": "PASSED"
+    },
+    "phase11_zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase11.zip",
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "size_bytes": 865990752,
+      "file_count": 2729,
+      "integrity_testzip": "PASSED"
+    }
+  },
+  "manifest_artifacts": {
+    "phase10_evaluation_manifest.csv": "1890fa151db28211e72464aee37ff79b0b513496731e49e0c061423d06164f17",
+    "phase11_field_collection_manifest.csv": "554b18049eca409c33510b0c857ea5aae9ed1ef8e808acc59bf1235931336c4b"
+  }
+}

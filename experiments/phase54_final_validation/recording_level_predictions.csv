@@ -1,0 +1,352 @@
+fname,filepath,title,uploader,ground_truth_label,category,sub_category,acoustic_condition,duration_sec,prediction,peak_score,num_events,latency_ms
+86047,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\86047.wav,machinegun.aif,nextmaking,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,3.003,1,0.9919,1,727.31
+368456,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\368456.wav,Honor Guard - Shooting Ceremony.wav,Gutek,1,genuine_gunshot,clean_open_air,clean_open_air,15.209,1,0.9966,4,1470.73
+71300,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\71300.wav,Parabolix_candy_flavored_bullets_intro_now_with_machine_gun.wav,Timbre,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,13.351,1,0.9894,1,1240.47
+37789,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\37789.wav,BREAKIN.wav,THE_bizniss,1,genuine_gunshot,clean_open_air,clean_open_air,5.655,1,0.9778,1,488.23
+51055,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\51055.wav,machine and pistol shots.wav,ingsey101,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,13.09,0,0.9511,0,1283.93
+127722,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127722.wav,Civil War era cannon 1,nicStage,1,genuine_gunshot,clean_open_air,clean_open_air,2.641,1,0.8969,1,204.5
+65290,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\65290.wav,jackdaws_fleeing_after_fireworks.wav,uair01,1,genuine_gunshot,clean_open_air,clean_open_air,25.631,0,0.1152,0,2821.71
+182272,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\182272.wav,Gun for Loy.wav,martian,1,genuine_gunshot,clean_open_air,clean_open_air,1.477,1,0.9814,1,101.33
+232961,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\232961.wav,Explosion005 with decay.wav,klangfabrik,1,genuine_gunshot,clean_open_air,clean_open_air,12.918,1,0.9966,1,1233.59
+182274,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\182274.wav,Gun for Roy.wav,martian,1,genuine_gunshot,clean_open_air,clean_open_air,1.7,1,0.9893,1,98.45
+182273,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\182273.wav,Gun for ghose.wav,martian,1,genuine_gunshot,clean_open_air,clean_open_air,1.696,1,0.9885,1,95.64
+151555,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\151555.wav,War Sounds.wav,HolyMatt123,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,15.282,1,0.9922,1,1490.52
+158724,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\158724.wav,mp 40.mp3,sgtmurphy,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,21.238,1,0.9951,5,2125.38
+151556,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\151556.wav,Machinegun-ish 9,tcpp,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,13.317,1,0.9798,2,1009.94
+87562,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\87562.wav,Rifle-223 cal (take 1),knufds,1,genuine_gunshot,distant_field,distant_field,6.909,1,0.8472,1,686.12
+58904,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58904.wav,Western Shot Modern 2.wav,Rock Savage,1,genuine_gunshot,clean_open_air,clean_open_air,1.448,1,0.9912,1,100.33
+58905,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58905.wav,Western Shot Modern 1.wav,Rock Savage,1,genuine_gunshot,clean_open_air,clean_open_air,1.342,0,0.4315,0,50.28
+58906,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58906.wav,Western Shot Modern 3.wav,Rock Savage,1,genuine_gunshot,clean_open_air,clean_open_air,3.309,1,0.9962,1,256.49
+350745,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\350745.wav,gunshooting.wav,aerror,1,genuine_gunshot,clean_open_air,clean_open_air,24.103,1,0.9243,7,2564.13
+30749,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\30749.wav,m240.wav,Matt_G,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,12.757,1,0.9945,1,1279.36
+110622,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\110622.wav,warfare_gunshots_machine_gun_burst_001.wav,soundscalpel.com,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,2.864,1,0.9944,1,203.23
+351777,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\351777.wav,Sniper Rifle M24 SFX.mp3,kennysvoice,1,genuine_gunshot,clean_open_air,clean_open_air,3.971,1,0.9776,1,343.36
+351778,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\351778.wav,AK47 SFX.mp3,kennysvoice,1,genuine_gunshot,clean_open_air,clean_open_air,13.427,1,0.9941,3,1275.6
+55842,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\55842.wav,mgun.wav,Sergenious,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.931,1,0.9078,1,50.88
+325157,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\325157.wav,BB Gas Hand Gun.mp3,DLTBGYD,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,3.579,1,0.9958,1,294.45
+55851,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\55851.wav,shot.wav,Sergenious,1,genuine_gunshot,clean_open_air,clean_open_air,1.063,0,0.1987,0,47.68
+370220,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\370220.wav,Pistol Shot (Close) (Mixed),EFlexTheSoundDesigner,1,genuine_gunshot,clean_open_air,clean_open_air,1.375,1,0.9774,1,46.2
+370219,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\370219.wav,Cannon Shot (Sci-Fi) (Mixed),EFlexTheSoundDesigner,1,genuine_gunshot,clean_open_air,clean_open_air,2.933,1,0.9581,1,256.49
+46654,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\46654.wav,carbine debris.wav,cognito perceptu,1,genuine_gunshot,clean_open_air,clean_open_air,4.914,1,0.7228,1,431.04
+46655,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\46655.wav,carbine single.wav,cognito perceptu,1,genuine_gunshot,clean_open_air,clean_open_air,3.343,0,0.6207,0,240.57
+105025,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\105025.wav,fireM.wav,tcpp,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.806,0,0.543,0,98.23
+151620,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\151620.wav,30. cal burst.mp3,Hamp999,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,5.278,1,0.9938,1,454.59
+344142,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\344142.wav,Gunshot_002.wav,Brokenphono,1,genuine_gunshot,reverberant_indoor,reverberant_indoor,0.569,0,0.7993,0,49.66
+233044,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\233044.wav,UTS-15 Shotgun with pump action 4takes.wav,klangfabrik,1,genuine_gunshot,clean_open_air,clean_open_air,6.625,1,0.9929,1,592.36
+107619,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\107619.wav,GunShot.02.wav,stintx,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,2.091,1,0.8007,1,143.42
+107620,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\107620.wav,GunShot.03.wav,stintx,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.771,0,0.1002,0,98.3
+107621,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\107621.wav,GunShot.04.wav,stintx,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,2.101,0,0.1116,0,150.5
+192104,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\192104.wav,Shot? Blow? Destruction?,urupin,1,genuine_gunshot,clean_open_air,clean_open_air,1.769,1,0.9806,1,107.23
+347647,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\347647.wav,musket.wav,fennelliott,1,genuine_gunshot,clean_open_air,clean_open_air,2.041,0,0.9736,0,145.2
+233068,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\233068.wav,(LOUD) Tiger II audio test,newciv1,1,genuine_gunshot,clipped_high_energy,clipped_high_energy,24.481,1,0.9902,4,2523.43
+338046,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\338046.wav,mp 38 schmeisser (Variations) WW2.wav,Lubini,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,7.726,1,0.9897,1,739.17
+274559,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\274559.wav,Auto Machine Gun.wav,MrJohnWeez,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,4.31,0,0.2465,0,354.3
+343680,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\343680.wav,RisingGunShot.wav,Sllarson,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,6.267,1,0.9732,1,580.63
+52357,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\52357.wav,gun shot.aif,trip2000,1,genuine_gunshot,clipped_high_energy,clipped_high_energy,2.837,1,0.7651,1,194.37
+368269,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\368269.wav,CivilWarCannonFire_02.WAV,daveincamas,1,genuine_gunshot,clean_open_air,clean_open_air,1.075,0,0.0256,0,49.1
+368270,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\368270.wav,CivilWarCannonFire_01.WAV,daveincamas,1,genuine_gunshot,clean_open_air,clean_open_air,2.579,0,0.1728,0,208.56
+196753,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\196753.wav,shooting in the forest.mp3,hutsvoid,1,genuine_gunshot,reverberant_indoor,reverberant_indoor,10.031,1,0.9543,2,921.3
+204949,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\204949.wav,m4-carbine improved.wav,tehlordoswag420,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,24.197,1,0.9962,3,1761.96
+39065,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\39065.wav,battlefield.1.wav,alienbomb,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,4.154,1,0.9764,1,344.91
+39066,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\39066.wav,battlefield.2.wav,alienbomb,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,3.692,1,0.994,1,288.7
+39070,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\39070.wav,fade.burst.wav,alienbomb,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.846,1,0.9782,1,104.64
+39071,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\39071.wav,heavy.burst.wav,alienbomb,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.923,0,0.9882,0,52.55
+242846,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\242846.wav,suppressed-submachinegun.wav,mnslugger20,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.996,1,0.9707,1,148.69
+133797,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\133797.wav,FUSIL,Julien Nicolas,1,genuine_gunshot,clean_open_air,clean_open_air,16.555,1,0.99,2,1584.66
+342184,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\342184.wav,BigGun.wav,Willary1,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.881,0,0.9809,0,47.66
+259758,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\259758.wav,M4 Assault rifle firing.wav,mnslugger20,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,11.601,1,0.9904,1,1120.15
+361136,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\361136.wav,Attack Pack FX1,SkibkaMusic,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,21.079,1,0.995,3,2085.22
+170167,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\170167.wav,8-bit Machine Gun.aif,timgormly,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.453,1,0.8151,1,54.87
+125630,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\125630.wav,remix of 101962__CGEffex__Machine_gun.flac,Timbre,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,16.524,1,0.9964,3,1670.82
+423108,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\423108.wav,Guns & Explosions Album - Autocannon - Shot 1.wav,OGsoundFX,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,2.25,1,0.9953,1,145.93
+423109,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\423109.wav,Guns & Explosions Album - Flare gun 5-2.wav,OGsoundFX,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,3.0,0,0.0358,0,251.74
+386758,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\386758.wav,Shotgun_Shot.wav,ken788,1,genuine_gunshot,clean_open_air,clean_open_air,2.173,0,0.6755,0,112.34
+169673,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\169673.wav,knova-shotgun1old.aif,knova,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.234,0,0.5741,0,51.51
+423114,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\423114.wav,Guns & Explosions Album - Hand Gun 6.wav,OGsoundFX,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.813,0,0.6846,0,51.08
+174283,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\174283.wav,REC_3_H4NNEAR_STR.wav,ingudios,1,genuine_gunshot,clean_open_air,clean_open_air,6.99,0,0.1583,0,568.32
+185034,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\185034.wav,15M4-n64.wav,casmarrav,1,genuine_gunshot,clean_open_air,clean_open_air,1.064,1,0.9926,1,51.95
+423115,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\423115.wav,Guns & Explosions Album - Machine Gun 1.wav,OGsoundFX,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.115,0,0.9896,0,48.24
+275151,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\275151.wav,Gun Shot.wav,Bird_man,1,genuine_gunshot,clean_open_air,clean_open_air,0.383,0,0.2052,0,49.03
+174290,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\174290.wav,REC_1_AT897_STR.wav,ingudios,1,genuine_gunshot,distant_field,distant_field,26.734,1,0.8848,4,2694.99
+399065,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\399065.wav,Tikka M65_2.wav,fastson,1,genuine_gunshot,clean_open_air,clean_open_air,4.24,1,0.9457,1,346.31
+386780,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\386780.wav,Machine_Gun_Shooting.wav,ken788,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,4.079,1,0.9977,1,245.6
+255716,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\255716.wav,Silenced Pistol Layered (Powerful),Paul368,1,genuine_gunshot,clean_open_air,clean_open_air,0.42,0,0.1507,0,49.49
+171237,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\171237.wav,Gunshot1.wav,alukahn,1,genuine_gunshot,clean_open_air,clean_open_air,1.292,1,0.9551,1,49.07
+171236,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\171236.wav,Gunshot2.wav,alukahn,1,genuine_gunshot,clean_open_air,clean_open_air,2.134,1,0.9735,1,145.25
+320742,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\320742.wav,Complex Minigun Spin-Up Firing,Hybrid_V,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,8.795,1,0.835,1,852.67
+127721,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127721.wav,Civil War era cannon 2,nicStage,1,genuine_gunshot,clean_open_air,clean_open_air,1.643,1,0.8937,1,101.14
+127724,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127724.wav,"A-10 Thunderbolt (""Warthog"") 30mm GAU cannon",nicStage,1,genuine_gunshot,clipped_high_energy,clipped_high_energy,10.381,1,0.8593,1,990.38
+127729,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127729.wav,"A-10 Thunderbolt (""Warthog"") 30mm GAU cannon 2",nicStage,1,genuine_gunshot,clipped_high_energy,clipped_high_energy,17.157,0,0.2653,0,1652.68
+240377,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\240377.wav,smgshoot.wav,tehlordoswag420,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,20.808,1,0.9955,3,2069.35
+127737,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127737.wav,"A-10 Thunderbolt (""Warthog"") 30mm GAU cannon",nicStage,1,genuine_gunshot,clipped_high_energy,clipped_high_energy,10.97,0,0.1138,0,1032.8
+120059,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\120059.wav,Toy Gun.wav,kklab5050,1,genuine_gunshot,clean_open_air,clean_open_air,4.222,1,0.7163,1,339.86
+398597,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\398597.wav,pistol shot ricochet.wav,cetsoundcrew,1,genuine_gunshot,distant_field,distant_field,10.0,1,0.9276,1,328.22
+200460,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\200460.wav,22 multiple shots,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,9.041,1,0.9418,2,820.47
+382735,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\382735.wav,Gun shot,schots,1,genuine_gunshot,clean_open_air,clean_open_air,1.08,0,0.4363,0,48.51
+415508,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\415508.wav,RPK Kalashnikov 's hand machine gun,Pashee,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,20.12,1,0.9944,4,1974.08
+84254,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\84254.wav,45 Smith & Wesson.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,1.369,1,0.7927,1,46.25
+366878,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\366878.wav,Gun Toy Reload.wav,MalieEngel,1,genuine_gunshot,clean_open_air,clean_open_air,3.629,0,0.1869,0,111.97
+150305,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\150305.wav,War sounds,Dragout,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,15.233,1,0.9937,2,1484.12
+196400,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\196400.wav,G36-E Fire,Callum_Sharp279,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,3.394,1,0.9941,1,302.36
+383796,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\383796.wav,Machine Gun Shooting,deleted_user_7146007,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,6.792,1,0.9912,2,651.19
+370998,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\370998.wav,MachinegunFire6.wav,MrLindstrom,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.502,1,0.9919,1,52.22
+76089,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\76089.wav,22 rifle 1 shot.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,1.013,0,0.2028,0,55.31
+76090,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\76090.wav,22 rifle 2 shots.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,2.473,1,0.84,1,222.01
+371001,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\371001.wav,MachinegunFire4.wav,MrLindstrom,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.0,0,0.0639,0,61.12
+249146,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\249146.wav,50 CAL Machine Gun.wav,klangfabrik,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,21.583,1,0.9871,5,2165.28
+76093,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\76093.wav,45 pistol load 2 shots.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,5.222,1,0.9759,1,443.61
+371004,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\371004.wav,MachinegunFire3.wav,MrLindstrom,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.8,0,0.0759,0,49.12
+371002,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\371002.wav,MachinegunFire5.wav,MrLindstrom,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.6,0,0.0058,0,51.78
+191289,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\191289.wav,Rapid fire weapon,Alxy,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,1.531,0,0.9261,0,100.42
+234305,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\234305.wav,Gunshot,paulnorthyorks,1,genuine_gunshot,distant_field,distant_field,1.0,1,0.9117,1,50.48
+414023,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\414023.wav,Realistic Gun-Fire,Mr_KeybOred,1,genuine_gunshot,reverberant_indoor,reverberant_indoor,4.445,1,0.9895,1,390.74
+86346,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\86346.wav,Lark with MG.aif,surrey_film,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,17.643,1,0.9958,5,1773.91
+119633,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\119633.wav,sw_DP2011_Cannon_1.aif,jppi_Stu,1,genuine_gunshot,clean_open_air,clean_open_air,6.008,1,0.9711,1,567.62
+378204,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\378204.wav,Semi-Auto Rifle Shot (Open Field/Mixed),EFlexTheSoundDesigner,1,genuine_gunshot,clean_open_air,clean_open_air,1.393,1,0.9191,1,50.53
+404334,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\404334.wav,Firefight,TheBuilder15,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,20.392,1,0.9539,4,2071.05
+218480,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\218480.wav,GunShot02.mp3,Yap_Audio_Production,1,genuine_gunshot,distant_field,distant_field,0.967,0,0.4208,0,47.72
+218484,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\218484.wav,MachineGunLoop.mp3,Yap_Audio_Production,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.601,1,0.9802,1,46.73
+37237,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\37237.wav,Gun-Shot Gun(2 pumps).wav,Shades,1,genuine_gunshot,clean_open_air,clean_open_air,5.454,1,0.9873,1,360.07
+218487,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\218487.wav,GunShot03.mp3,Yap_Audio_Production,1,genuine_gunshot,distant_field,distant_field,1.567,1,0.9186,1,101.47
+20352,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\20352.wav,gunshot.wav,cognito perceptu,1,genuine_gunshot,distant_field,distant_field,2.693,1,0.9327,1,192.7
+338321,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\338321.wav,End of WWII on Elba - Soviets Celebrating.wav,Lubini,1,genuine_gunshot,distant_field,distant_field,24.47,1,0.9573,7,2418.55
+88467,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\88467.wav,Mitraillette-3.wav,davidou,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.602,0,0.178,0,49.7
+338324,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\338324.wav,Tokarev TT-30_33.wav,Lubini,1,genuine_gunshot,clean_open_air,clean_open_air,10.832,1,0.9976,1,1106.45
+153492,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\153492.wav,MiniGun Shooting (Awesome Sound),Steelskull,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,11.378,0,0.6324,0,1148.23
+377245,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\377245.wav,Machine gun firing in distance,SamsterBirdies,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,2.694,0,0.2385,0,198.89
+232868,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\232868.wav,357 Magnum with 9mm mix EXT.wav,klangfabrik,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,18.092,1,0.9865,4,1769.07
+319399,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\319399.wav,22multpl3.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,4.047,0,0.4655,0,345.96
+319400,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\319400.wav,22multpl2.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,9.002,1,0.9067,1,840.6
+319401,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\319401.wav,22multpl.wav,Tito Lahaye,1,genuine_gunshot,clean_open_air,clean_open_air,6.344,1,0.9621,2,588.12
+342952,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\342952.wav,4 Shot Burst - SIG 552 Airsoft,Vlaxim,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.72,1,0.9795,1,50.84
+388528,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\388528.wav,Artillery Explosion (Close) (Mixed),EFlexTheSoundDesigner,1,genuine_gunshot,clean_open_air,clean_open_air,8.866,1,0.997,1,858.8
+393651,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\393651.wav,Sniper Rifle Shot/Gun Shot (Outdoor/Close) with Bolt Action [Mixed],EFlexTheSoundDesigner,1,genuine_gunshot,clipped_high_energy,clipped_high_energy,3.594,1,0.9963,1,312.11
+78776,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\78776.wav,Rifle-223 cal (take 2),knufds,1,genuine_gunshot,distant_field,distant_field,4.345,1,0.9942,1,393.83
+380349,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\380349.wav,Machine Gun.wav,fennelliott,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,14.536,1,0.9962,2,1134.35
+68036,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\68036.wav,MX5Auto_2.wav,Ghostex,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,5.602,1,0.9635,1,519.05
+393671,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\393671.wav,Auto Assault Rifle/Gun Burst (Outdoor/Close) [Mixed],EFlexTheSoundDesigner,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,2.069,1,0.9935,1,149.51
+67020,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\67020.wav,submachinegun2.wav,LS,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,0.598,1,0.9141,1,53.55
+249298,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\249298.wav,rpg launcher  three shots.wav,klangfabrik,1,genuine_gunshot,clean_open_air,clean_open_air,11.35,1,0.9957,3,1123.42
+210901,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\210901.wav,Three cannon shots,originalmaja,1,genuine_gunshot,distant_field,distant_field,8.136,0,0.2402,0,668.71
+182236,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\182236.wav,gun for Hg.wav,martian,1,genuine_gunshot,clean_open_air,clean_open_air,2.468,1,0.9719,1,220.61
+239596,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\239596.wav,Gatling Gun Close.wav,mikewest,1,genuine_gunshot,rapid_cadence_burst,rapid_cadence_burst,7.662,1,0.9968,1,742.99
+131571,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\131571.wav,rifle_shot_vtkproductions.wav,vtkproductions.com,1,genuine_gunshot,clean_open_air,clean_open_air,3.427,1,0.9775,1,320.8
+318973,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\318973.wav,Shotgun - Fire.wav,AbuNijmeh,1,genuine_gunshot,reverberant_indoor,reverberant_indoor,1.288,0,0.0559,0,52.79
+182271,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\182271.wav,Gun for Lui.wav,martian,1,genuine_gunshot,clean_open_air,clean_open_air,1.5,1,0.9638,1,106.99
+390297,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\390297.wav,052116 fireworks at the baseball game.mp3,pflanigan,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,23.066,0,0.389,0,2483.89
+161686,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161686.wav,sw_Fireworks_KidMonkeySounds.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,21.321,1,0.992,1,2230.24
+189696,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\189696.wav,San Juan - Languages -.wav,barcelonetasonora,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,20.383,1,0.8037,1,2072.7
+60905,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\60905.wav,bottleRockets3.wav,nicStage,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,11.703,1,0.9365,3,1149.67
+49774,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\49774.wav,Fireworks 070811 with screen door squeak and crickets 24 bit.wav,BoilingSand,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,18.088,0,0.0296,0,1829.74
+260627,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\260627.wav,boom-fireworks-car-alarm.mp3,SoundEffectsPodcast_com,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,11.755,1,0.8743,2,1180.97
+21412,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\21412.wav,it_has_just_begun.aif,Heigh-hoo,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,19.548,0,0.2623,0,1996.32
+98843,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\98843.wav,fireworks from a distance.wav,Tomlija,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,27.696,1,0.9941,7,2840.08
+38272,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\38272.wav,fireworks_in_the_rain.aif,Heigh-hoo,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,17.477,0,0.0096,0,1740.01
+161688,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161688.wav,sw_Fireworks_Mortar_02.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,9.95,1,0.9674,2,1019.69
+321785,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\321785.wav,Fireworks Beach Crowd Night [St.Ives - Cornwall - England] 03,Skjor1,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,23.947,1,0.8955,2,2402.49
+253605,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\253605.wav,Fireworks-close-01nov2014.wav,m.newlove,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,24.961,1,0.9167,1,2545.43
+159777,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\159777.wav,silv3.wav,nicobaba,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,10.217,1,0.8287,2,1013.92
+32983,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\32983.wav,rocket report and scream jr.wav,cognito perceptu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,12.347,0,0.3629,0,1228.49
+56579,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\56579.wav,fireworks 3bursts sizzle.wav,atomwrath,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,6.538,1,0.9163,1,593.7
+32984,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\32984.wav,rocket report and scream.wav,cognito perceptu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,11.819,0,0.4068,0,1129.4
+321783,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\321783.wav,Fireworks Beach Crowd Night [St.Ives - Cornwall - England] 02,Skjor1,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,27.173,1,0.8147,2,2660.61
+56578,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\56578.wav,closePopsizzle july408.wav,atomwrath,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,3.535,0,0.0533,0,313.18
+173334,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\173334.wav,Sylvester2013_Fireworks-240.flac,toam,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,22.123,1,0.9057,4,2288.13
+132900,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\132900.wav,Fireworks.mp3,Alvinwhatup2,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,5.433,1,0.9382,1,510.08
+173335,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\173335.wav,Sylvester2013_Fireworks-239.flac,toam,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,20.139,1,0.9511,3,1987.03
+413212,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\413212.wav,Knall1_lang.wav,317wurst,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,1.475,1,0.8761,1,104.96
+161677,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161677.wav,sw_Fireworks_Distant_03.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,8.169,1,0.9243,2,783.05
+161678,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161678.wav,sw_Fireworks_Distant_02.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,20.726,1,0.9581,3,2078.53
+161679,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161679.wav,sw_Fireworks_Distant_01.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,7.315,1,0.9516,2,720.74
+161680,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161680.wav,sw_Fireworks_BottleRocket_01.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,2.685,1,0.9224,1,213.85
+161681,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161681.wav,sw_Fireworks_Distant_07.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,12.24,1,0.923,2,1228.26
+161682,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161682.wav,sw_Fireworks_Distant_06.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,6.001,1,0.9618,2,549.46
+192659,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\192659.wav,fireworks1,Andy_Gardner,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,24.66,1,0.9807,3,2560.25
+161683,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\161683.wav,sw_Fireworks_Distant_05.wav,jppi_Stu,0,hard_negative,fireworks_pyrotechnics,pyrotechnic_combustion,7.739,0,0.1244,0,781.05
+408103,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\408103.wav,Balloon Popping.wav,AngelicWings,0,hard_negative,balloon_bursts,membrane_rupture,2.301,1,0.8853,1,149.73
+407677,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\407677.wav,Balloon Pop,Nagwense,0,hard_negative,balloon_bursts,membrane_rupture,5.0,0,0.3533,0,479.51
+400801,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\400801.wav,balloon .wav,mutatorscotch,0,hard_negative,balloon_bursts,membrane_rupture,5.571,1,0.9053,1,468.64
+403570,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\403570.wav,Balloon_Pop.wav,LamaMakesMusic,0,hard_negative,balloon_bursts,membrane_rupture,1.696,1,0.7811,1,97.42
+326658,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\326658.wav,Wet thump or splash,150128,0,hard_negative,balloon_bursts,membrane_rupture,2.91,1,0.8377,1,246.71
+188008,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\188008.wav,Water Ballon Pop 3.wav,Motion_S,0,hard_negative,balloon_bursts,membrane_rupture,2.01,0,0.2534,0,154.14
+366402,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\366402.wav,Blowing up balloon and popping.wav,Rach_Capache,0,hard_negative,balloon_bursts,membrane_rupture,15.0,0,0.6848,0,1489.93
+402549,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\402549.wav,01_light_rain_against_closed_windows_indoors.wav,DrMaysta,0,hard_negative,heavy_door_slams,structural_impact,18.921,0,0.0191,0,2062.01
+425676,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\425676.wav,door closing.mp3,Camo1018,0,hard_negative,heavy_door_slams,structural_impact,4.79,1,0.7842,1,414.61
+412487,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\412487.wav,92_Puerta_Golpe.mp3,byronabadia,0,hard_negative,heavy_door_slams,structural_impact,0.94,0,0.1501,0,50.47
+426783,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\426783.wav,Oven Open_Close.wav,cMilan,0,hard_negative,heavy_door_slams,structural_impact,5.345,0,0.1629,0,501.06
+397917,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\397917.wav,Close Wooden Door,nozefian,0,hard_negative,heavy_door_slams,structural_impact,1.599,0,0.1202,0,109.22
+393374,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\393374.wav,Big Sci-Fi Explosion/Bomb (Close) [Mixed],EFlexTheSoundDesigner,0,hard_negative,heavy_door_slams,structural_impact,6.804,1,0.9936,1,661.33
+434085,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\434085.wav,Subway MTA Door Close Chime,Ccomics88,0,hard_negative,heavy_door_slams,structural_impact,2.949,0,0.1129,0,197.5
+424031,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\424031.wav,Car Door Slam,mandymatz,0,hard_negative,heavy_door_slams,structural_impact,0.314,0,0.2232,0,49.49
+386735,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\386735.wav,Close_Door.wav,ken788,0,hard_negative,heavy_door_slams,structural_impact,4.092,1,0.822,1,299.84
+402568,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\402568.wav,201709018-Ginger-Barking-Indoor-STEREO-H4N-48K_24bit.wav,justbradford,0,hard_negative,heavy_door_slams,structural_impact,8.777,0,0.0415,0,883.8
+408046,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\408046.wav,Lock Unlocking.wav,170048@virtualwindow.co.za,0,hard_negative,heavy_door_slams,structural_impact,13.393,1,0.9511,1,1385.0
+403546,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\403546.wav,Shutter_Open_Close.wav,LamaMakesMusic,0,hard_negative,heavy_door_slams,structural_impact,5.934,0,0.207,0,554.9
+408284,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\408284.wav,Slide Door.wav,Arq1998,0,hard_negative,heavy_door_slams,structural_impact,26.0,0,0.4357,0,2627.27
+402452,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\402452.wav,kocking on door,jimmyfisher,0,hard_negative,heavy_door_slams,structural_impact,11.072,0,0.1447,0,1109.85
+402141,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\402141.wav,opening-cupboard.wav,Mickael_Leroi,0,hard_negative,heavy_door_slams,structural_impact,1.534,0,0.0152,0,97.59
+402143,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\402143.wav,opening-closing-cupboard_1.wav,Mickael_Leroi,0,hard_negative,heavy_door_slams,structural_impact,4.695,0,0.2575,0,393.35
+402142,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\402142.wav,opening-closing-cupboard_2.wav,Mickael_Leroi,0,hard_negative,heavy_door_slams,structural_impact,7.826,0,0.1074,0,744.84
+408709,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\408709.wav,"Elevator, open and close.wav",Nkone_M,0,hard_negative,heavy_door_slams,structural_impact,21.99,1,0.8181,1,2255.49
+419089,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\419089.wav,Door Knock.mp3,SomeoneCool14,0,hard_negative,heavy_door_slams,structural_impact,2.377,0,0.1025,0,102.33
+400391,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\400391.wav,sfx: door squeaks closed,chromakei,0,hard_negative,heavy_door_slams,structural_impact,3.999,0,0.0197,0,350.25
+421848,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\421848.wav,Closet Slide Door Open and Close,ChazzRavenelle,0,hard_negative,heavy_door_slams,structural_impact,24.245,0,0.2104,0,2454.36
+433585,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\433585.wav,Car Door,jacklmurr27,0,hard_negative,heavy_door_slams,structural_impact,2.358,0,0.1132,0,157.5
+433587,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\433587.wav,Cabinet Door Close,jacklmurr27,0,hard_negative,heavy_door_slams,structural_impact,1.714,0,0.2123,0,101.5
+426587,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\426587.wav,Door close far distance.wav,MootMcnoodles,0,hard_negative,heavy_door_slams,structural_impact,3.925,0,0.3636,0,375.1
+426586,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\426586.wav,Door close medium distance.wav,MootMcnoodles,0,hard_negative,heavy_door_slams,structural_impact,2.733,0,0.0611,0,206.73
+278188,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\278188.wav,Rally Car Idle Loop 14.wav,debsound,0,hard_negative,vehicle_backfires,automotive_combustion,23.288,0,0.218,0,2339.2
+120838,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\120838.wav,Rally Race 002.wav,debsound,0,hard_negative,vehicle_backfires,automotive_combustion,9.615,0,0.1249,0,964.89
+123684,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\123684.wav,Chev 350 failed start.wav,lonemonk,0,hard_negative,vehicle_backfires,automotive_combustion,3.115,0,0.0096,0,259.84
+278186,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\278186.wav,Rally Car Idle Loop 17.wav,debsound,0,hard_negative,vehicle_backfires,automotive_combustion,5.015,0,0.0745,0,462.46
+278189,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\278189.wav,Rally Car Idle Loop 05.wav,debsound,0,hard_negative,vehicle_backfires,automotive_combustion,2.302,0,0.0099,0,158.76
+327556,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\327556.wav,Money Jar - Money falling slowly into jar.wav,DamianMinnie,0,hard_negative,glass_breakage,resonant_shatter,9.0,0,0.4181,0,868.09
+365562,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\365562.wav,CUTTING ON GLASS BOARD.wav,ShanayGroen,0,hard_negative,glass_breakage,resonant_shatter,8.78,0,0.0958,0,871.82
+17146,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\17146.wav,lg fire4.wav,lgarrett,0,hard_negative,glass_breakage,resonant_shatter,23.275,0,0.044,0,2470.53
+154466,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\154466.wav,Glass Breaking_1-2.aif,lucaslara,0,hard_negative,glass_breakage,resonant_shatter,6.59,0,0.4981,0,609.94
+403578,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\403578.wav,Glass_Bottle_Fall_Roll.wav,LamaMakesMusic,0,hard_negative,glass_breakage,resonant_shatter,9.5,1,0.8223,1,865.42
+98650,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\98650.wav,beer bottle break 2.wav,Tomlija,0,hard_negative,glass_breakage,resonant_shatter,8.129,1,0.9328,1,804.51
+320167,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\320167.wav,small-shot-glass-breaking.wav,joshs,0,hard_negative,glass_breakage,resonant_shatter,2.711,0,0.0191,0,212.21
+232176,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\232176.wav,glass break,nick121087,0,hard_negative,glass_breakage,resonant_shatter,6.231,0,0.3299,0,320.5
+336425,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\336425.wav,Glass Shattering and Falling,221Beimesche,0,hard_negative,glass_breakage,resonant_shatter,3.692,0,0.5811,0,292.67
+343756,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\343756.wav,Glass_Smash.wav,Brokenphono,0,hard_negative,glass_breakage,resonant_shatter,17.467,1,0.9827,2,1394.78
+98054,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\98054.wav,wine bottle break 1.wav,Tomlija,0,hard_negative,glass_breakage,resonant_shatter,1.541,0,0.2973,0,99.56
+315647,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\315647.wav,Glas_Multiple_Slices_Drop_On_Floor_Debris_01.wav,TheSoundcatcher,0,hard_negative,glass_breakage,resonant_shatter,2.533,0,0.2438,0,195.87
+144115,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\144115.wav,Cup breaks,avakas,0,hard_negative,glass_breakage,resonant_shatter,3.388,0,0.0872,0,304.99
+356312,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\356312.wav,coparota2.aif,esmayorga,0,hard_negative,glass_breakage,resonant_shatter,5.089,0,0.2289,0,384.88
+29712,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\29712.wav,broken glass.ogg,Glaneur de sons,0,hard_negative,glass_breakage,resonant_shatter,11.335,0,0.3027,0,896.23
+330800,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\330800.wav,Shattering Glass (Small),Czarcazas,0,hard_negative,glass_breakage,resonant_shatter,1.152,0,0.0115,0,50.29
+386906,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\386906.wav,Broken Glass.wav,hatchetgirl,0,hard_negative,glass_breakage,resonant_shatter,1.019,0,0.6323,0,49.09
+378568,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\378568.wav,Glass Breaking,ToxicFilmzSRsounds,0,hard_negative,glass_breakage,resonant_shatter,2.247,0,0.33,0,146.12
+171998,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\171998.wav,glass4.wav,drewkelly,0,hard_negative,glass_breakage,resonant_shatter,2.693,0,0.1725,0,189.91
+78484,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\78484.wav,Dumpster_Diving.wav,1sticky8,0,hard_negative,glass_breakage,resonant_shatter,4.731,0,0.9334,0,390.82
+204185,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\204185.wav,breaking_glass1.wav,reg7783,0,hard_negative,glass_breakage,resonant_shatter,4.232,0,0.215,0,347.31
+116329,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\116329.wav,bball on lamp.wav,David Bowman,0,hard_negative,glass_breakage,resonant_shatter,1.168,0,0.0315,0,48.08
+341070,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\341070.wav,breaking glass,hifijohn,0,hard_negative,glass_breakage,resonant_shatter,3.389,0,0.0238,0,200.79
+172000,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\172000.wav,glass2.wav,drewkelly,0,hard_negative,glass_breakage,resonant_shatter,3.234,0,0.1242,0,248.26
+338691,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\338691.wav,glass break.wav,natemarler,0,hard_negative,glass_breakage,resonant_shatter,1.28,0,0.2187,0,48.02
+249490,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\249490.wav,hammering.wav,Katiemullen,0,hard_negative,metal_hammer_impacts,metallic_impact,4.661,0,0.0552,0,397.31
+209801,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\209801.wav,20131204_Construction Work_ZoomH2nXY.wav,Soundscape_Leuphana,0,hard_negative,metal_hammer_impacts,metallic_impact,16.347,0,0.1694,0,1664.22
+396530,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\396530.wav,Baltic Shipyard2.wav,FullMetalJedi,0,hard_negative,metal_hammer_impacts,metallic_impact,16.082,1,0.8737,3,1608.56
+344438,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\344438.wav,Crashing wall with a hammer.aif,thiagoriedel,0,hard_negative,metal_hammer_impacts,metallic_impact,10.75,1,0.8831,1,1043.58
+323795,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\323795.wav,Hammer hitting metal,150237_Matthys,0,hard_negative,metal_hammer_impacts,metallic_impact,12.706,1,0.8012,1,1228.44
+367015,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\367015.wav,Hammer hitting nail.wav,tanapistorius,0,hard_negative,metal_hammer_impacts,metallic_impact,7.04,0,0.3717,0,638.37
+365762,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\365762.wav,Hammer hitting a nail.,BiancaBothaPure,0,hard_negative,metal_hammer_impacts,metallic_impact,8.03,0,0.208,0,730.01
+260626,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\260626.wav,hammer-anvil-hit-1.mp3,SoundEffectsPodcast_com,0,hard_negative,metal_hammer_impacts,metallic_impact,0.679,0,0.1819,0,50.71
+96138,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\96138.wav,Thud3.wav,BMacZero,0,hard_negative,metal_hammer_impacts,metallic_impact,0.418,0,0.1706,0,50.2
+410243,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\410243.wav,Hammer.wav,Leoni@FS,0,hard_negative,metal_hammer_impacts,metallic_impact,2.281,0,0.1689,0,144.4
+394891,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\394891.wav,hammer pounding on wood.wav,Ryujin95,0,hard_negative,metal_hammer_impacts,metallic_impact,5.991,0,0.151,0,531.19
+127993,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127993.wav,kladivo 3.wav,Gvido,0,hard_negative,metal_hammer_impacts,metallic_impact,3.493,0,0.1515,0,309.43
+363169,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\363169.wav,Hammering on Anvil,SamsterBirdies,0,hard_negative,metal_hammer_impacts,metallic_impact,15.314,0,0.0478,0,1543.93
+408483,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\408483.wav,Plastic holder hit by hammer.wav,FALCONS_SHADOW,0,hard_negative,metal_hammer_impacts,metallic_impact,15.714,0,0.3269,0,1329.66
+407618,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\407618.wav,Hammer and Nail.wav,AryaNotStark,0,hard_negative,metal_hammer_impacts,metallic_impact,15.0,0,0.1976,0,1471.1
+351312,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\351312.wav,Sledgehammer Hitting Spike,petebuchwald,0,hard_negative,metal_hammer_impacts,metallic_impact,13.5,1,0.9603,2,1313.94
+127992,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127992.wav,kladivo 4.wav,Gvido,0,hard_negative,metal_hammer_impacts,metallic_impact,9.472,1,0.8782,2,773.66
+70885,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\70885.wav,mallet.wav,spukkin,0,hard_negative,metal_hammer_impacts,metallic_impact,0.767,0,0.1757,0,52.45
+127994,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127994.wav,kladivo 2.wav,Gvido,0,hard_negative,metal_hammer_impacts,metallic_impact,6.294,0,0.6167,0,604.78
+96936,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\96936.wav,cekic kiseonik.wav,Tomlija,0,hard_negative,metal_hammer_impacts,metallic_impact,21.354,0,0.5656,0,2126.69
+244985,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\244985.wav,Repair_metal.wav,zbig77,0,hard_negative,metal_hammer_impacts,metallic_impact,1.641,0,0.0142,0,103.79
+219627,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\219627.wav,anvil1.wav,andrescompovigo,0,hard_negative,metal_hammer_impacts,metallic_impact,10.0,0,0.2546,0,460.64
+258265,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\258265.wav,Metal rod.aif,lostphosphene,0,hard_negative,metal_hammer_impacts,metallic_impact,2.118,0,0.1343,0,154.93
+326122,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\326122.wav,Tapping on metal.wav,LuannWepener,0,hard_negative,metal_hammer_impacts,metallic_impact,29.827,0,0.2705,0,2830.08
+209800,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\209800.wav,20131204_Hammering Construction_ZoomH2XY.wav,Soundscape_Leuphana,0,hard_negative,metal_hammer_impacts,metallic_impact,16.347,0,0.5932,0,1695.68
+30303,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\30303.wav,thunder1Long.mp3,cajo,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,30.015,1,0.9848,1,3032.22
+329978,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\329978.wav,Very loud thunder clap.flac,jrosin,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,21.972,0,0.3016,0,2152.07
+30216,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\30216.wav,thunder-rumble.wav,Erdie,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,28.771,0,0.1016,0,2941.14
+121943,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\121943.wav,Crackling_thunder_far_away.wav,hantorio,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,23.429,1,0.9453,2,2325.88
+121945,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\121945.wav,Thunder_close.wav,hantorio,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,27.654,0,0.5823,0,2752.4
+127119,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127119.wav,PERC-Thunder-2.wav,westernsynthetics,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,1.534,0,0.0023,0,93.88
+127120,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127120.wav,PERC-Thunder-3.wav,westernsynthetics,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,1.348,0,0.0066,0,49.67
+127121,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127121.wav,PERC-Thunder-kid.wav,westernsynthetics,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,1.042,0,0.0007,0,51.99
+127126,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127126.wav,SN-Thunder-2.wav,westernsynthetics,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,2.125,0,0.0096,0,149.6
+127127,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\127127.wav,SN-Thunder-3.wav,westernsynthetics,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,8.771,1,0.9603,2,828.31
+396984,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\396984.wav,Strolling in the rolling thunder.MP3,macdaddyno1,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,18.26,1,0.8963,1,1825.42
+396995,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\396995.wav,Rolling thunder.MP3,macdaddyno1,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,28.5,0,0.4638,0,2924.56
+396485,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\396485.wav,Ambience with thunder in the distance.MP3,macdaddyno1,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,24.32,0,0.2176,0,2468.01
+198857,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\198857.wav,Thunder - 1,bone666138,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,21.043,0,0.2469,0,2156.54
+198858,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\198858.wav,Thunder - 2,bone666138,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,21.234,0,0.6904,0,2147.04
+354025,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\354025.wav,Thunder during rainstorm 1,stondi,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,26.416,0,0.2085,0,2823.34
+199926,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\199926.wav,Rain Storm,thedapperdan,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,27.771,0,0.0014,0,2845.87
+86280,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\86280.wav,thunder.wav,Tito Lahaye,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,21.12,0,0.1758,0,2141.67
+24952,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\24952.wav,thunder-long-distance.wav,Erdie,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,26.47,0,0.3133,0,2681.82
+239492,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\239492.wav,Rain and Rolling Thunder #2,lonemonk,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,25.356,0,0.0132,0,2508.75
+37774,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\37774.wav,Donner1.wav,swuing,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,18.107,1,0.9754,2,1826.49
+16783,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\16783.wav,sw_thunder_02.wav,jppi_Stu,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,14.273,0,0.0973,0,1388.68
+87963,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\87963.wav,thunder.wav,guitarguy1985,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,18.112,1,0.8509,1,1765.51
+2531,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\2531.wav,rbh thunder_09.wav,RHumphries,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,27.31,0,0.0166,0,2713.78
+56306,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\56306.wav,Rain_01.wav,Q.K.,0,hard_negative,thunder_rumbles,infrasonic_atmospheric,25.762,0,0.017,0,2622.43
+18442,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\18442.wav,bands_and_motorbike.aif,Heigh-hoo,0,environmental_negative,urban_transit_sirens,urban_mechanical,15.133,0,0.0373,0,1460.99
+34865,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\34865.wav,Indian Street - Dibrughar.wav,grololo,0,environmental_negative,urban_transit_sirens,urban_mechanical,13.28,0,0.0991,0,1290.15
+392257,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\392257.wav,Bus (Ambiente 01).wav,Viliguis,0,environmental_negative,urban_transit_sirens,urban_mechanical,28.189,0,0.0197,0,2874.7
+382572,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\382572.wav,"Autobus, rue Serpenoise, Metz.mp3",schmutz,0,environmental_negative,urban_transit_sirens,urban_mechanical,16.998,0,0.0914,0,1705.78
+257202,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\257202.wav,Niñas chinas - María José (idRhh038),xavierbonfill,0,environmental_negative,urban_transit_sirens,urban_mechanical,5.486,0,0.0068,0,496.02
+59587,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\59587.wav,car.mp3,morgantj,0,environmental_negative,urban_transit_sirens,urban_mechanical,21.081,0,0.0248,0,2056.72
+44791,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\44791.wav,NYC_bus_idle.wav,gezortenplotz,0,environmental_negative,urban_transit_sirens,urban_mechanical,27.067,0,0.0132,0,2723.03
+338168,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\338168.wav,Bus-conductor2_01.mp3,edranil,0,environmental_negative,urban_transit_sirens,urban_mechanical,12.84,0,0.014,0,1307.64
+100647,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\100647.wav,Shanghai Nanjing Road 20100606_01.mp3,Unice.ys,0,environmental_negative,urban_transit_sirens,urban_mechanical,19.435,0,0.0102,0,1930.05
+380772,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\380772.wav,City ​​traffic plus tramway.wav,cosmo235,0,environmental_negative,urban_transit_sirens,urban_mechanical,30.0,1,0.9294,1,3073.54
+58368,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58368.wav,sim ambulance.wav,THE_bizniss,0,environmental_negative,urban_transit_sirens,urban_mechanical,20.217,0,0.0174,0,2002.75
+117120,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\117120.wav,siren_med.wav,UncleSigmund,0,environmental_negative,urban_transit_sirens,urban_mechanical,11.24,0,0.0833,0,1074.67
+117121,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\117121.wav,siren_short.wav,UncleSigmund,0,environmental_negative,urban_transit_sirens,urban_mechanical,8.173,0,0.0611,0,797.47
+71299,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\71299.wav,Real Rhythms police-siren intro #3.wav,Timbre,0,environmental_negative,urban_transit_sirens,urban_mechanical,27.128,0,0.1088,0,2062.31
+58371,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58371.wav,sim firetruck.wav,THE_bizniss,0,environmental_negative,urban_transit_sirens,urban_mechanical,3.409,0,0.0232,0,297.0
+58369,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58369.wav,sim firetruck 2.wav,THE_bizniss,0,environmental_negative,urban_transit_sirens,urban_mechanical,2.417,0,0.047,0,196.61
+378257,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\378257.wav,ambulance passing on riverside.wav,13GPanska_Kubinova_Karolina,0,environmental_negative,urban_transit_sirens,urban_mechanical,11.277,0,0.0174,0,1148.09
+238228,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\238228.wav,Ambulence - WARNING LOUD,eaglechopper,0,environmental_negative,urban_transit_sirens,urban_mechanical,26.688,0,0.0409,0,2676.08
+70936,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\70936.wav,police.wav,guitarguy1985,0,environmental_negative,urban_transit_sirens,urban_mechanical,27.491,0,0.0915,0,2756.24
+70938,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\70938.wav,police2.wav,guitarguy1985,0,environmental_negative,urban_transit_sirens,urban_mechanical,4.315,0,0.0539,0,348.94
+70939,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\70939.wav,police3.wav,guitarguy1985,0,environmental_negative,urban_transit_sirens,urban_mechanical,27.139,0,0.0052,0,2726.03
+43806,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\43806.wav,Siren.wav,daveincamas,0,environmental_negative,urban_transit_sirens,urban_mechanical,4.625,0,0.006,0,415.74
+58014,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58014.wav,wail.wav,guitarguy1985,0,environmental_negative,urban_transit_sirens,urban_mechanical,16.121,0,0.0576,0,1629.97
+58015,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\58015.wav,yelp.wav,guitarguy1985,0,environmental_negative,urban_transit_sirens,urban_mechanical,5.239,0,0.0198,0,448.7
+431651,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\431651.wav,police siren.wav,blukotek,0,environmental_negative,urban_transit_sirens,urban_mechanical,3.655,0,0.0919,0,293.18
+240186,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\240186.wav,Aplausos.wav,barcelonetasonora,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,8.343,0,0.0245,0,784.65
+118577,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\118577.wav,birds chirping.mp3,antwash,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,18.204,0,0.0283,0,1763.05
+264842,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\264842.wav,Sad Family Trapped at Sea World,arcanekids,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,14.189,0,0.1725,0,1455.31
+62327,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\62327.wav,Door slam.wav,bsumusictech,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,4.608,0,0.2152,0,399.87
+17486,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\17486.wav,Threatening Dogs.wav,SFindigo,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,6.133,0,0.153,0,538.39
+251496,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\251496.wav,Parnas (terminal station) .WAV,SangiVenelo,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,17.941,0,0.0795,0,1779.75
+209965,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\209965.wav,Car out of the track.flac,jrosin,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,22.838,1,0.9745,1,2271.5
+76220,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\76220.wav,Plaza_de_la_Revolucion_perro.wav,tallers,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,25.947,0,0.2939,0,2675.89
+62478,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\62478.wav,uchor.wav,bsumusictech,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,16.251,0,0.0098,0,1576.78
+207451,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\207451.wav,Laments,Alambic38,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,21.2,0,0.1546,0,2129.88
+328087,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\328087.wav,51. Bicycle chain and cogs.wav,btherad2000,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,27.812,0,0.1614,0,2802.02
+68272,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\68272.wav,subway-FR.mp3,rychc,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,29.631,0,0.0074,0,3064.81
+156098,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\156098.wav,Child crying.wav,marcolo91,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,1.706,0,0.0192,0,98.0
+238209,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\238209.wav,Yerlin sonido Edgar .wav,IESPAUCLARIS,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,9.404,0,0.1512,0,901.52
+116163,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\116163.wav,Digital Distruction Barking.wav,Puniho,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,3.897,0,0.1918,0,348.59
+211191,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\211191.wav,Pitbull loop.wav,zagi2,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,14.072,0,0.0505,0,1382.18
+145364,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\145364.wav,KleAudio_CoughTriple_msST.wav,kleanthism,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,1.573,0,0.0245,0,110.21
+79598,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\79598.wav,VladikKry.wav,telesik,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,14.904,0,0.0457,0,1460.06
+171464,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\171464.wav,Dog Barking,avakas,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,14.107,0,0.0746,0,1132.92
+425662,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\425662.wav,barking dog antagonized by father.mp3,Rebecca_f,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,8.673,0,0.1416,0,840.68
+131199,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\131199.wav,Dog Bark,TheGertz,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,2.5,0,0.0289,0,206.92
+115537,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\115537.wav,Fergus Sniff.wav,Puniho,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,20.032,0,0.0327,0,1963.87
+41328,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\41328.wav,cry.WAV,Sumanguru Gyra Jones,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,14.118,0,0.1788,0,1378.97
+217172,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\217172.wav,Rotten Punks Ruin Fathers Day,arcanekids,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,21.72,0,0.2009,0,2177.18
+62335,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\62335.wav,Tea jug.wav,bsumusictech,0,environmental_negative,bioacoustic_human_vocalizations,organic_transients,16.241,1,0.9848,1,1580.76
+257413,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\257413.wav,Relaxing Saxophone,Deatlev,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,13.031,0,0.2131,0,1296.77
+187299,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\187299.wav,remixes of 187098__simondsouza__alto-sax-90bpm-cm-3-band.flac,Timbre,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,24.143,0,0.1341,0,2471.76
+325701,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\325701.wav,Wedding.wav,__O,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,29.257,0,0.0416,0,2918.8
+135717,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\135717.wav,police motorcycle distance to stop.WAV,ikbenraar,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,27.225,0,0.2009,0,2799.96
+321753,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\321753.wav,City Street Ambience Daytime w/ Ambulance Siren Doppler [Florence - Italy] 02,Skjor1,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,16.299,0,0.0172,0,1580.91
+380664,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\380664.wav,13GVomackovaK_ambulance.wav,kristynavom98,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,18.96,0,0.0031,0,1918.11
+134747,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\134747.wav,Jingle 5.wav,juskiddink,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,13.66,0,0.1704,0,1183.0
+31462,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\31462.wav,Fish Chimes.WAV,gurdonark,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,6.124,0,0.0158,0,531.45
+210314,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\210314.wav,20131209_raindrop_OlympusLS10_xy.wav,Soundscape_Leuphana,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,5.25,0,0.0571,0,447.47
+336788,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\336788.wav,Car revs and drives away.WAV,luminadii,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,7.559,0,0.027,0,688.05
+153056,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\153056.wav,Bicycle-wheels.wav,Xampi8,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,4.975,0,0.134,0,439.71
+321671,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\321671.wav,Running Through Grass And Leaves In The Woods.WAV,darranambler,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,20.155,0,0.144,0,1867.02
+176132,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\176132.wav,5_anthropologist_luguhu.wav,LukeIRL,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,25.406,0,0.2165,0,2540.03
+128013,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\128013.wav,Subway to Osaka Buisness park St. .wav,kaonaya,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,21.754,0,0.172,0,2163.57
+424785,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\424785.wav,Boat in the lake.m4a,barbara.raposo,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,9.056,0,0.0255,0,827.49
+352421,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\352421.wav,wind_gust.aif,joseph.larralde,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,18.195,0,0.0751,0,1773.25
+424786,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\424786.wav,Sing in the metro.m4a,barbara.raposo,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,15.279,0,0.0338,0,1491.3
+371153,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\371153.wav,Pacific Beach Waves 1,microsome,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,29.22,0,0.0469,0,2895.98
+263079,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\263079.wav,Rain ,SoundProject123456789,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,19.912,0,0.1038,0,1988.48
+320070,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\320070.wav,Saxophone in Yoyogi park.,macdaddyno1,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,17.11,0,0.1727,0,1748.97
+181269,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\181269.wav,Wind Chimes.wav,CapsLok,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,21.576,0,0.0452,0,2102.04
+399538,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\399538.wav,Windchime soft,Vendarro,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,27.492,0,0.0704,0,2762.3
+263661,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\263661.wav,Glass Chimes.aif,stefansmulovitz,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,26.816,0,0.0107,0,2732.87
+30425,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\30425.wav,metal1.mp3,synthania,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,15.909,0,0.074,0,1577.79
+217800,e:/FSD50K.dev_audio/FSD50K.eval_audio/FSD50K.eval_audio\217800.wav,wind_chimes.wav,minian89,0,environmental_negative,natural_outdoor_ambience,weather_hydrodynamic,25.699,0,0.0837,0,2571.7

@@ -1,0 +1,7 @@
+category,exposure_hours,p9_alerts,p9_rate_per_hr,p13_alerts,p13_rate_per_hr,p14_b_alerts,p14_b_rate_per_hr,p14_hp_alerts,p14_hp_rate_per_hr,p14_hs_alerts,p14_hs_rate_per_hr
+general_indoor_ambience,1.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+industrial_and_mechanical,2.5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+natural_weather,0.583,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+percussive_acoustic_mimics,0.5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+public_spaces,0.5,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+traffic_and_road,1.0,6,6.0,6,6.0,6,6.0,0,0.0,11,11.0

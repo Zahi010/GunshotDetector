@@ -1,0 +1,12 @@
+{
+  "selected_optimal_threshold": 0.48,
+  "threshold_selection_criterion": "Optimized on validation set to achieve 90%+ precision with high recall",
+  "presets": {
+    "high_recall_sensitive": 0.35,
+    "balanced_optimal": 0.19,
+    "high_precision_conservative": 0.48,
+    "ultra_low_false_alarm": 0.52
+  },
+  "confirm_windows": 2,
+  "cooldown_secs": 2.0
+}

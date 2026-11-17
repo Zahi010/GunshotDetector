@@ -1,0 +1,29 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 20 items
+
+tests/test_phase25_reconciliation.py::test_baseline_hashes PASSED        [  5%]
+tests/test_phase25_reconciliation.py::test_historical_archive_hashes PASSED [ 10%]
+tests/test_phase25_reconciliation.py::test_stream_comparison_reconciliation PASSED [ 15%]
+tests/test_phase25_reconciliation.py::test_recording_inventory_reconciliation PASSED [ 20%]
+tests/test_phase25_reconciliation.py::test_evaluated_vs_excluded_exposure PASSED [ 25%]
+tests/test_phase25_reconciliation.py::test_reviewer_contingency_table PASSED [ 30%]
+tests/test_phase25_reconciliation.py::test_cohens_kappa_assessment PASSED [ 35%]
+tests/test_phase25_reconciliation.py::test_provenance_schema_validation PASSED [ 40%]
+tests/test_phase25_reconciliation.py::test_duplicate_detection PASSED    [ 45%]
+tests/test_phase25_reconciliation.py::test_campaign_independence_matrix PASSED [ 50%]
+tests/test_phase25_reconciliation.py::test_continuity_verification PASSED [ 55%]
+tests/test_phase25_reconciliation.py::test_negative_label_eligibility PASSED [ 60%]
+tests/test_phase25_reconciliation.py::test_gross_exposure_accounting PASSED [ 65%]
+tests/test_phase25_reconciliation.py::test_cooldown_union_and_no_double_counting PASSED [ 70%]
+tests/test_phase25_reconciliation.py::test_gross_alert_rate PASSED       [ 75%]
+tests/test_phase25_reconciliation.py::test_eligible_alert_rate PASSED    [ 80%]
+tests/test_phase25_reconciliation.py::test_matched_exposure_consistency PASSED [ 85%]
+tests/test_phase25_reconciliation.py::test_garwood_confidence_intervals PASSED [ 90%]
+tests/test_phase25_reconciliation.py::test_statistical_comparison_validation PASSED [ 95%]
+tests/test_phase25_reconciliation.py::test_mandatory_safety_designation PASSED [100%]
+
+============================= 20 passed in 1.51s ==============================

@@ -1,0 +1,123 @@
+{
+  "audit_timestamp": "2026-10-29T08:47:33Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "environment": {
+    "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "numpy_version": "2.4.0",
+    "pandas_version": "3.0.3",
+    "tensorflow_version": "2.21.0",
+    "catboost_version": "1.2.10",
+    "lightgbm_version": "4.7.0",
+    "xgboost_version": "3.4.1"
+  },
+  "model_bundle_artifacts": {
+    "catboost_model.joblib": {
+      "size_bytes": 233634,
+      "sha256": "a34d2d80e2815b56c6de4fc6ba784f9bea4f35add2ab351be3e66df4b47d40b9"
+    },
+    "class_mapping.json": {
+      "size_bytes": 58,
+      "sha256": "2e844d71c0223851a812ce096ded82281bb1e86f7bbc4d166665a6cf101e3539"
+    },
+    "classifier_head.keras": {
+      "size_bytes": 4217913,
+      "sha256": "1142278dd5848f0344433448af4185f5ea1f987f6109a297e1b774c9001fba8a"
+    },
+    "lightgbm_model.joblib": {
+      "size_bytes": 693596,
+      "sha256": "3de5e30a6c869f22d1cf98e77533b7497fa9553a67c2476b84314f91bc997fb3"
+    },
+    "metadata.json": {
+      "size_bytes": 363,
+      "sha256": "ca2544ac0a2c0086ad74a4492ccf06a223a87115d6ea718113f4a513e10a19a4"
+    },
+    "model_config.json": {
+      "size_bytes": 490,
+      "sha256": "fdeb8551a21f74a121aa47603465b441f0d978653c2a8668e3c48a8b6d98f81b"
+    },
+    "threshold.json": {
+      "size_bytes": 395,
+      "sha256": "6dcd1b4a942463c85e62dbad8f44fa65d86eac8e1746a45c45b4719feb801ecd"
+    },
+    "xgboost_model.joblib": {
+      "size_bytes": 417630,
+      "sha256": "fd1aeccd5666da10dab4aebd3c6cf30ca7b3124237860b5325b176933cd5aa69"
+    }
+  },
+  "deployment_archives": {
+    "phase8_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase8.zip",
+      "size_bytes": 485193859,
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "file_count": 2666,
+      "integrity_testzip": "PASSED"
+    },
+    "phase9_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase9.zip",
+      "size_bytes": 865883024,
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "file_count": 2699,
+      "integrity_testzip": "PASSED"
+    },
+    "phase10_zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase10.zip",
+      "size_bytes": 865952822,
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "file_count": 2716,
+      "integrity_testzip": "PASSED"
+    }
+  },
+  "manifest_artifacts": {
+    "canonical_gunshot_events.csv": {
+      "size_bytes": 73697,
+      "sha256": "7f20079b01bfe0e8d63942f692b415967c3cf0d1e2d88c492e35bd7b2526d52e",
+      "row_count": 238
+    },
+    "gunshot_events.csv": {
+      "size_bytes": 70078,
+      "sha256": "f1c8b3f849c15486628c522ec14213b40a7e720d05a04e52bff7be4e71ebceeb",
+      "row_count": 351
+    },
+    "negative_audio_sources.csv": {
+      "size_bytes": 151479,
+      "sha256": "32812b5ec9ffc7f43c1f8122da94182e5106a84454846c0be40b0ad86a1a6550",
+      "row_count": 340
+    },
+    "phase7_canonical_gunshot_events.csv": {
+      "size_bytes": 6722,
+      "sha256": "a3e7f352cb24cbeaeb3c4ad62fefd3ecbdf40c39b4d25cdc2e632d40b2e5f059",
+      "row_count": 27
+    },
+    "phase7_independent_eval_manifest.csv": {
+      "size_bytes": 56366,
+      "sha256": "f1b3277047e0dd9ac433c6c4e5d65f3a6df94b295830e996ac3757e133132294",
+      "row_count": 230
+    },
+    "phase8_canonical_gunshot_events.csv": {
+      "size_bytes": 10232,
+      "sha256": "bee3a8aa9671cdd39394fd0e776e91e404783f4da65d70464758d3793d23544f",
+      "row_count": 43
+    },
+    "phase8_final_eval_manifest.csv": {
+      "size_bytes": 63765,
+      "sha256": "c2244c1a9af843c723cd0bfe07caa9be8df2ff04756ccc0639e6afc835bce997",
+      "row_count": 246
+    },
+    "test.csv": {
+      "size_bytes": 11085,
+      "sha256": "c2f5ab9359a263755f059eb6ef7e21674924b9a0740095622252f9a250d194a9",
+      "row_count": 47
+    },
+    "train.csv": {
+      "size_bytes": 43111,
+      "sha256": "df993fd9231f012d872756b612f6a6781abcc12aad807280c65544efb1209775",
+      "row_count": 176
+    },
+    "val.csv": {
+      "size_bytes": 8784,
+      "sha256": "8dfd6b584df2de184938ccbee0dc7b49a5dba83939027e0055141829916b8b70",
+      "row_count": 34
+    }
+  }
+}

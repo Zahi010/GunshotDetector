@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 20 items
+
+tests/test_phase28_reproduction.py::test_01_frozen_detector_hashes PASSED [  5%]
+tests/test_phase28_reproduction.py::test_02_historical_release_archives PASSED [ 10%]
+tests/test_phase28_reproduction.py::test_03_baseline_freeze_manifest PASSED [ 15%]
+tests/test_phase28_reproduction.py::test_04_recording_and_campaign_counts PASSED [ 20%]
+tests/test_phase28_reproduction.py::test_05_gross_exposure_reconstruction PASSED [ 25%]
+tests/test_phase28_reproduction.py::test_06_cooldown_reconciliation_sums PASSED [ 30%]
+tests/test_phase28_reproduction.py::test_07_cooldown_interval_ledger_properties PASSED [ 35%]
+tests/test_phase28_reproduction.py::test_08_alert_count_reconstruction PASSED [ 40%]
+tests/test_phase28_reproduction.py::test_09_gross_and_eligible_alert_rates PASSED [ 45%]
+tests/test_phase28_reproduction.py::test_10_paired_stream_differences PASSED [ 50%]
+tests/test_phase28_reproduction.py::test_11_wilcoxon_rank_and_pvalue PASSED [ 55%]
+tests/test_phase28_reproduction.py::test_12_campaign_summary_aggregation PASSED [ 60%]
+tests/test_phase28_reproduction.py::test_13_leave_one_campaign_out_sensitivity PASSED [ 65%]
+tests/test_phase28_reproduction.py::test_14_aircraft_fragmentation_sequences PASSED [ 70%]
+tests/test_phase28_reproduction.py::test_15_poisson_garwood_bounds PASSED [ 75%]
+tests/test_phase28_reproduction.py::test_16_dataset_provenance_and_license PASSED [ 80%]
+tests/test_phase28_reproduction.py::test_17_metric_reconciliation_coverage PASSED [ 85%]
+tests/test_phase28_reproduction.py::test_18_mandatory_safety_designation PASSED [ 90%]
+tests/test_phase28_reproduction.py::test_19_model_role_terminology PASSED [ 95%]
+tests/test_phase28_reproduction.py::test_20_deterministic_reproduction PASSED [100%]
+
+============================= 20 passed in 1.42s ==============================
+

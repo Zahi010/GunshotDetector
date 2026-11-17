@@ -1,0 +1,13 @@
+filename,triggered,max_adj_score,max_crest,max_lo,min_m2l,clause3_fired
+hard_neg_door_slam_001.wav,False,0.2456,26.41,0.999,0.00109,True
+hard_neg_door_slam_002.wav,True,0.8869,23.72,0.9975,0.00081,True
+hard_neg_door_slam_003.wav,True,0.9366,26.54,0.9988,0.0009,True
+hard_neg_door_slam_004.wav,True,0.9132,26.07,0.997,0.00092,True
+hard_neg_door_slam_005.wav,True,0.9352,26.95,0.9993,0.00077,True
+hard_neg_door_slam_006.wav,False,0.2465,22.48,0.999,0.00106,True
+hard_neg_door_slam_007.wav,True,0.9835,23.36,0.9991,0.00074,True
+hard_neg_door_slam_008.wav,True,0.9803,23.9,0.9991,0.00094,True
+hard_neg_door_slam_009.wav,False,0.2445,23.98,0.9992,0.00089,True
+hard_neg_door_slam_010.wav,True,0.9809,23.25,0.9991,0.00094,True
+hard_neg_door_slam_011.wav,True,0.9794,24.34,0.9989,0.00098,True
+hard_neg_door_slam_012.wav,False,0.2439,24.58,0.9991,0.00071,True

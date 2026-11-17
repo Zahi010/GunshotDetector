@@ -1,0 +1,7 @@
+condition_id,architecture_profile,annotated_event_clips,annotated_total_rounds,strict_matched_true_positives,false_negatives,false_positives,duplicate_alerts_count,duplicate_alert_rate,event_level_recall,event_recall_95_ci_lower,event_recall_95_ci_upper,event_level_precision,event_precision_95_ci_lower,event_precision_95_ci_upper,event_level_f1_score,burst_incident_rounds_overlap,burst_overlap_rate
+COND1,Phase 14 Balanced Baseline,120,140,74,46,0,28,0.2745,0.6167,0.5235,0.7039,1.0,0.9514,1.0,0.7629,86,0.6143
+COND2,Phase 17 Experimental Frozen Profile,120,140,92,28,0,26,0.2203,0.7667,0.6807,0.839,1.0,0.9607,1.0,0.8679,104,0.7429
+COND3,Phase 17 State Reset Candidate,120,140,77,43,0,22,0.2222,0.6417,0.549,0.7271,1.0,0.9532,1.0,0.7817,89,0.6357
+COND4,Phase 36 Raw State Machine,120,140,77,43,0,13,0.1444,0.6417,0.549,0.7271,1.0,0.9532,1.0,0.7817,89,0.6357
+COND5,Phase 36 Legacy Suppression,120,140,77,43,0,13,0.1444,0.6417,0.549,0.7271,1.0,0.9532,1.0,0.7817,89,0.6357
+COND6,Phase 36 Conservative Suppression,120,140,77,43,0,13,0.1444,0.6417,0.549,0.7271,1.0,0.9532,1.0,0.7817,89,0.6357

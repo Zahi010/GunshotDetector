@@ -1,0 +1,13 @@
+vector_id,scenario_name,expected_alerts,phase14_alerts,phase14_verdict,phase17_alerts,phase17_verdict,candidate_alerts,candidate_verdict,clerical_reconciliation
+VEC-01,Isolated Unconfirmed Spike,0,0,PASS,1,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-02,Unrelated Spikes Across Short Gap (3s),0,0,PASS,1,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-03,Unrelated Spikes Across Long Gap (100s),0,0,PASS,1,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-04,Three Unrelated Spikes Across Gaps,0,0,PASS,2,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-05,Consecutive Qualifying Windows,1,1,PASS,1,PASS,1,PASS,Phase 17 passes
+VEC-06,Genuine Immediate Qualification,1,1,PASS,1,PASS,1,PASS,Phase 17 passes
+VEC-07,Recording-Boundary State Isolation,0,0,PASS,2,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-08,Empty Window Sequence,0,0,PASS,0,PASS,0,PASS,Phase 17 passes
+VEC-09,Irregular Timestamp Intervals,0,0,PASS,1,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-10,End-of-Stream Trailing Flush Guard,0,0,PASS,1,FAIL_DEFECT,0,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush
+VEC-11,Previously Confirmed Active Event,1,1,PASS,1,PASS,1,PASS,Phase 17 passes
+VEC-12,Confirmed Event Followed by Unconfirmed Spike,1,1,PASS,2,FAIL_DEFECT,1,PASS,Phase 17 fails due to unconfirmed cluster retention or unguarded EOF flush

@@ -1,0 +1,37 @@
+{
+  "forensics_phase": "Phase 13",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE - NOT FOR LIFE SAFETY",
+  "stream_duration_hours": 2.0,
+  "total_alerts_reproduced": 299,
+  "false_alert_rate_per_hour": 149.5,
+  "alerts_by_category": {
+    "fireworks": 130,
+    "thunderstorm": 165,
+    "engine": 4
+  },
+  "alerts_by_dispatch_mechanism": {
+    "multi_window_confirmation": 96,
+    "single_window_high_confidence": 203
+  },
+  "cause_breakdown": {
+    "natural_source_transients": 283,
+    "natural_source_pct": 94.6,
+    "crossfade_boundary_transients": 16,
+    "crossfade_boundary_pct": 5.4
+  },
+  "acoustic_metric_distributions": {
+    "peak_score_median": 0.895,
+    "peak_score_mean": 0.891,
+    "peak_score_p95": 0.948,
+    "crest_factor_db_median": 15.06,
+    "crest_factor_db_mean": 16.14,
+    "crest_factor_db_min": 9.07,
+    "crest_factor_db_max": 25.6
+  },
+  "root_causes": [
+    "Gating Escape on High-Score Mimics: Phase 9 semantic suppression has an explicit condition 'and raw_score < 0.88'. Fireworks and thunderstorm claps producing raw scores >= 0.88 completely bypass suppression.",
+    "Single-Window High-Confidence Trigger: 203 of 299 alerts (67.9%) were dispatched on a single window without temporal confirmation because raw_score >= 0.88.",
+    "Stream Repetition Loop: The 2-hour stream repeated a 40-clip sequence 36 times, subjecting the detector to 288 fireworks clips (8 per cycle) and 288 thunderstorm clips (8 per cycle).",
+    "Crossfade Artifacts Are Minor: Only 16 alerts (5.4%) occurred within 0.48s of a 100ms crossfade, disproving the hypothesis that false alerts were primarily splicing artifacts."
+  ]
+}

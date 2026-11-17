@@ -1,0 +1,7 @@
+condition_id,architecture_profile,total_distractor_clips,total_triggered_clips,overall_trigger_rate,trigger_rate_95_ci_lower,trigger_rate_95_ci_upper,distractor_fireworks_rate,distractor_fireworks_count,distractor_glass_rate,distractor_glass_count,distractor_screaming_rate,distractor_screaming_count,distractor_slam_door_rate,distractor_slam_door_count,distractor_thunder_rate,distractor_thunder_count,distractor_tools_impact_rate,distractor_tools_impact_count,distractor_vehicle_engine_rate,distractor_vehicle_engine_count
+COND1,Phase 14 Balanced Baseline,220,54,0.2455,0.1901,0.3078,0.47,47/100,0.0,0/20,0.05,1/20,0.0,0/20,0.25,5/20,0.05,1/20,0.0,0/20
+COND2,Phase 17 Experimental Frozen Profile,220,89,0.4045,0.3391,0.4726,0.71,71/100,0.0,0/20,0.05,1/20,0.3,6/20,0.4,8/20,0.15,3/20,0.0,0/20
+COND3,Phase 17 State Reset Candidate,220,65,0.2955,0.236,0.3605,0.57,57/100,0.0,0/20,0.05,1/20,0.0,0/20,0.3,6/20,0.05,1/20,0.0,0/20
+COND4,Phase 36 Raw State Machine,220,66,0.3,0.2402,0.3652,0.57,57/100,0.0,0/20,0.05,1/20,0.05,1/20,0.3,6/20,0.05,1/20,0.0,0/20
+COND5,Phase 36 Legacy Suppression,220,66,0.3,0.2402,0.3652,0.57,57/100,0.0,0/20,0.05,1/20,0.05,1/20,0.3,6/20,0.05,1/20,0.0,0/20
+COND6,Phase 36 Conservative Suppression,220,66,0.3,0.2402,0.3652,0.57,57/100,0.0,0/20,0.05,1/20,0.05,1/20,0.3,6/20,0.05,1/20,0.0,0/20

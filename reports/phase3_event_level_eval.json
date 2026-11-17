@@ -1,0 +1,38 @@
+{
+  "split": "test",
+  "operating_threshold": 0.55,
+  "confirm_windows": 1,
+  "cooldown_secs": 2.0,
+  "matching_tolerance_sec": 0.5,
+  "event_level_metrics": {
+    "total_annotated_gunshot_events": 24,
+    "gunshot_events_detected_tp": 17,
+    "gunshot_events_missed_fn": 7,
+    "false_alarm_events_fp": 28,
+    "duplicate_alerts": 3,
+    "duplicate_alert_rate_per_event": 0.176,
+    "event_recall": 0.7083,
+    "event_precision": 0.3778,
+    "event_f1_score": 0.4928,
+    "detection_delay_mean_ms": 22.9,
+    "detection_delay_p95_ms": 78.0
+  },
+  "continuous_streaming_false_alarms": {
+    "negative_audio_duration_secs": 417.7,
+    "negative_audio_duration_hours": 0.116,
+    "total_false_alert_events": 28,
+    "false_alerts_per_hour": 241.33,
+    "poisson_95_ci": [
+      160.36,
+      348.79
+    ]
+  },
+  "recording_level_metrics": {
+    "gunshot_recordings_total": 17,
+    "gunshot_recordings_detected": 17,
+    "gunshot_recording_recall": 1.0,
+    "negative_recordings_total": 81,
+    "negative_recordings_rejected": 63,
+    "negative_recording_rejection_rate": 0.7778
+  }
+}

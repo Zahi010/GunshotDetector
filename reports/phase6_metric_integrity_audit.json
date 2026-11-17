@@ -1,0 +1,84 @@
+{
+  "audit_title": "Phase 6 Metric Integrity and Counting Consistency Audit",
+  "timestamp": "2026-10-28",
+  "phase5_baseline_reproduction": {
+    "test_recordings_total": 98,
+    "gunshot_recordings": 17,
+    "background_recordings": 81,
+    "total_windows": 873,
+    "operating_threshold": 0.69,
+    "accuracy": 0.9038,
+    "window_precision": 0.4825,
+    "window_recall": 0.8734,
+    "window_f1": 0.6216,
+    "roc_auc": 0.9277,
+    "pr_auc": 0.5973,
+    "confusion_matrix": {
+      "tp": 69,
+      "fp": 74,
+      "tn": 720,
+      "fn": 10
+    },
+    "event_level_recall": 0.9412,
+    "event_level_precision": 0.5714,
+    "false_alerts_per_hour": 103.43
+  },
+  "false_positive_windows_discrepancy_investigation": {
+    "offline_cached_fp_windows_count": 74,
+    "continuous_audio_fp_windows_count": 77,
+    "mathematical_reconciliation": "74 (offline cached windows) - 1 (trailing silence window from positive file u_b6hqzcpu1z-handgun-sound-effect-432110) + 4 (net additional boundary windows created during continuous streaming hop framing across 81 files) = 77.",
+    "detailed_recording_differences": {
+      "u_b6hqzcpu1z-handgun-sound-effect-432110": {
+        "offline_cached_fps": 1,
+        "continuous_audio_fps": 0,
+        "explanation": "Gunshot recording with timestamp-aware trailing silence window (y=0). Included in features_test.npz, but excluded from background-only continuous evaluation."
+      },
+      "meditation_hypnosis--110246": {
+        "offline_cached_fps": 33,
+        "continuous_audio_fps": 34,
+        "explanation": "Continuous audio slicing produced 34 windows vs 33 offline windows due to audio end padding."
+      },
+      "freesound_community-laser-compilation-05-31597": {
+        "offline_cached_fps": 9,
+        "continuous_audio_fps": 11,
+        "explanation": "Continuous audio slicing produced 11 windows vs 9 offline windows due to boundary framing."
+      }
+    }
+  },
+  "negative_exposure_duration_policies": {
+    "policy_a_pure_background_only": {
+      "description": "Calculates false alert rate strictly on pure background audio recordings, completely excluding gunshot files.",
+      "duration_seconds": 417.68,
+      "duration_hours": 0.116,
+      "false_alert_events": 12,
+      "false_alerts_per_hour": 103.43,
+      "poisson_95_ci": [
+        53.44,
+        180.67
+      ],
+      "formula": "(12 events / 417.7s) * 3600 = 103.43/hr"
+    },
+    "policy_b_total_non_gunshot_exposure": {
+      "description": "Includes pure background audio plus verified non-gunshot pre-onset and trailing silence intervals from gunshot recordings.",
+      "duration_seconds": 440.58,
+      "duration_hours": 0.1224,
+      "false_alert_events": 12,
+      "false_alerts_per_hour": 98.05,
+      "poisson_95_ci": [
+        50.67,
+        171.28
+      ],
+      "formula": "(12 events / 440.6s) * 3600 = 98.05/hr"
+    }
+  },
+  "formal_definitions": {
+    "positive_window": "A 0.96s audio window with >= 0.15s verified overlap with a physical gunshot event interval (ground truth label y=1).",
+    "negative_window": "A 0.96s audio window with <= 0.05s overlap with a gunshot event interval (ground truth label y=0), including all background audio and trailing silence.",
+    "ambiguous_window": "An audio window with 0.05s < overlap < 0.15s. Excluded from training to prevent label noise; evaluated conservatively as positive in evaluation.",
+    "false_positive_window": "A negative window (y=0) whose predicted continuous model score is >= operating threshold tau.",
+    "predicted_alert_event": "A temporal cluster of consecutive positive detection windows formed by the streaming hysteresis state machine (merge_detection_windows), characterized by onset, offset, and peak score.",
+    "ground_truth_physical_gunshot_event": "An experimentally verified physical firearm discharge defined in canonical_gunshot_events.csv by unique canonical_event_id, start time, and end time.",
+    "duplicate_or_repeated_alert": "An additional alert event triggered on the same physical recording that overlaps or falls within tolerance of an already-matched ground-truth event. Counted as a duplicate alert, not a false positive.",
+    "recording_level_detection": "A binary verdict indicating whether >= 1 alert event was triggered in a physical recording (detected vs rejected)."
+  }
+}

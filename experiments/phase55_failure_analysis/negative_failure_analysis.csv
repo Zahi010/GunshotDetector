@@ -1,0 +1,49 @@
+fname,title,sub_category,peak_score,trigger_time_s,trigger_crest_db,trigger_cent_hz,trigger_hi_ratio,trigger_lo_ratio,trigger_pure_gun,trigger_raw_score,trigger_adj_score,suppression_attempted,suppression_cat,failure_mechanism
+161686,sw_Fireworks_KidMonkeySounds.wav,fireworks_pyrotechnics,0.992,5.76,17.47,1102.7,0.0079,0.6466,0.0923,0.705,0.705,False,,"Combustion rise-time heuristic missed (adj=0.705, crest=17.5dB)"
+189696,San Juan - Languages -.wav,fireworks_pyrotechnics,0.8037,0.96,15.68,939.7,0.003,0.8938,0.0051,0.1637,0.8037,False,,"Combustion rise-time heuristic missed (adj=0.804, crest=15.7dB)"
+60905,bottleRockets3.wav,fireworks_pyrotechnics,0.9365,0.48,29.06,3310.8,0.4736,0.2062,0.8979,0.8658,0.8658,False,,YAMNet false semantic activation (pure_gun=0.898)
+260627,boom-fireworks-car-alarm.mp3,fireworks_pyrotechnics,0.8743,0.0,17.47,1392.7,0.0169,0.7187,0.0095,0.4226,0.8344,False,,"Combustion rise-time heuristic missed (adj=0.834, crest=17.5dB)"
+98843,fireworks from a distance.wav,fireworks_pyrotechnics,0.9941,2.4,17.95,1013.4,0.0062,0.754,0.0008,0.4902,0.7215,False,,"Combustion rise-time heuristic missed (adj=0.722, crest=17.9dB)"
+161688,sw_Fireworks_Mortar_02.wav,fireworks_pyrotechnics,0.9674,2.4,21.07,1571.0,0.0333,0.4647,0.0325,0.898,0.898,False,,Base ensemble overconfidence on sharp explosion (raw=0.898)
+321785,Fireworks Beach Crowd Night [St.Ives - Cornwall - England] 03,fireworks_pyrotechnics,0.8955,6.72,18.46,1290.0,0.0117,0.5556,0.0699,0.8955,0.8955,False,,Base ensemble overconfidence on sharp explosion (raw=0.896)
+253605,Fireworks-close-01nov2014.wav,fireworks_pyrotechnics,0.9167,11.04,20.64,3411.2,0.5421,0.1084,0.7026,0.9167,0.9167,False,,YAMNet false semantic activation (pure_gun=0.703)
+159777,silv3.wav,fireworks_pyrotechnics,0.8287,0.96,23.97,887.8,0.0011,0.5549,0.0064,0.1745,0.7908,False,,"Combustion rise-time heuristic missed (adj=0.791, crest=24.0dB)"
+56579,fireworks 3bursts sizzle.wav,fireworks_pyrotechnics,0.9163,3.36,28.07,2784.6,0.2289,0.2774,0.8563,0.9163,0.9163,False,,YAMNet false semantic activation (pure_gun=0.856)
+321783,Fireworks Beach Crowd Night [St.Ives - Cornwall - England] 02,fireworks_pyrotechnics,0.8147,9.6,31.04,2020.0,0.0373,0.4326,0.2153,0.581,0.8147,False,,YAMNet false semantic activation (pure_gun=0.215)
+173334,Sylvester2013_Fireworks-240.flac,fireworks_pyrotechnics,0.9057,1.92,27.61,2104.7,0.0824,0.3481,0.0009,0.0535,0.7399,False,,"Combustion rise-time heuristic missed (adj=0.740, crest=27.6dB)"
+132900,Fireworks.mp3,fireworks_pyrotechnics,0.9382,0.0,21.91,2084.7,0.079,0.2426,0.3992,0.8242,0.9382,False,,YAMNet false semantic activation (pure_gun=0.399)
+173335,Sylvester2013_Fireworks-239.flac,fireworks_pyrotechnics,0.9511,3.36,25.19,1827.2,0.0718,0.4564,0.0003,0.0119,0.8955,False,,"Combustion rise-time heuristic missed (adj=0.895, crest=25.2dB)"
+413212,Knall1_lang.wav,fireworks_pyrotechnics,0.8761,0.0,13.81,1677.3,0.0388,0.7626,0.6938,0.8761,0.8761,False,,YAMNet false semantic activation (pure_gun=0.694)
+161677,sw_Fireworks_Distant_03.wav,fireworks_pyrotechnics,0.9243,0.96,32.66,959.9,0.0034,0.5895,0.0004,0.3562,0.7437,False,,"Combustion rise-time heuristic missed (adj=0.744, crest=32.7dB)"
+161678,sw_Fireworks_Distant_02.wav,fireworks_pyrotechnics,0.9581,1.44,15.49,791.1,0.0013,0.7821,0.2276,0.9251,0.9251,False,,YAMNet false semantic activation (pure_gun=0.228)
+161679,sw_Fireworks_Distant_01.wav,fireworks_pyrotechnics,0.9516,1.44,23.17,994.9,0.0058,0.6859,0.0106,0.143,0.8677,False,,"Combustion rise-time heuristic missed (adj=0.868, crest=23.2dB)"
+161680,sw_Fireworks_BottleRocket_01.wav,fireworks_pyrotechnics,0.9224,1.44,18.52,2413.3,0.1326,0.151,0.3851,0.7395,0.9224,False,,YAMNet false semantic activation (pure_gun=0.385)
+161681,sw_Fireworks_Distant_07.wav,fireworks_pyrotechnics,0.923,2.4,19.92,584.7,0.0002,0.8574,0.2096,0.708,0.923,False,,YAMNet false semantic activation (pure_gun=0.210)
+161682,sw_Fireworks_Distant_06.wav,fireworks_pyrotechnics,0.9618,0.48,23.24,2460.6,0.2614,0.2639,0.3065,0.6979,0.9353,False,,YAMNet false semantic activation (pure_gun=0.306)
+192659,fireworks1,fireworks_pyrotechnics,0.9807,0.0,22.54,805.3,0.0007,0.5389,0.0289,0.1697,0.865,False,,"Combustion rise-time heuristic missed (adj=0.865, crest=22.5dB)"
+408103,Balloon Popping.wav,balloon_bursts,0.8853,0.96,21.38,3360.1,0.5074,0.0779,0.1292,0.8853,0.8853,False,,"Scalar balloon heuristic gate missed: cent=3360<3400, hi=0.507<0.70, lo=0.0779>0.015"
+400801,balloon .wav,balloon_bursts,0.9053,0.48,23.31,1544.3,0.0028,0.9952,0.0654,0.9053,0.9053,True,c4_ground_blast_rescued,"Scalar balloon heuristic gate missed: cent=1544<3400, hi=0.003<0.70, lo=0.9952>0.015"
+403570,Balloon_Pop.wav,balloon_bursts,0.7811,0.0,28.28,2570.3,0.1551,0.3884,0.339,0.7086,0.7811,False,,"Scalar balloon heuristic gate missed: cent=2570<3400, hi=0.155<0.70, lo=0.3884>0.015"
+326658,Wet thump or splash,balloon_bursts,0.8377,0.0,29.21,3788.4,0.6317,0.0944,0.321,0.8377,0.8377,False,,"Scalar balloon heuristic gate missed: hi=0.632<0.70, lo=0.0944>0.015"
+425676,door closing.mp3,heavy_door_slams,0.7842,3.36,23.04,3794.4,0.7059,0.0349,0.8618,0.7842,0.7842,False,,"Damped impact produced sufficient mid-freq energy (cent=3794Hz, crest=23.0dB)"
+393374,Big Sci-Fi Explosion/Bomb (Close) [Mixed],heavy_door_slams,0.9936,1.92,14.38,706.4,0.0008,0.742,0.6524,0.9851,0.9851,False,,"Damped impact produced sufficient mid-freq energy (cent=706Hz, crest=14.4dB)"
+386735,Close_Door.wav,heavy_door_slams,0.822,1.44,18.96,1500.0,0.0058,0.9749,0.0565,0.7314,0.822,True,c4_ground_blast_rescued,"Damped impact produced sufficient mid-freq energy (cent=1500Hz, crest=19.0dB)"
+408046,Lock Unlocking.wav,heavy_door_slams,0.9511,1.44,30.15,3554.9,0.6086,0.0058,0.0549,0.9511,0.9511,False,,"Damped impact produced sufficient mid-freq energy (cent=3555Hz, crest=30.2dB)"
+408709,"Elevator, open and close.wav",heavy_door_slams,0.8181,6.24,20.09,1224.2,0.0111,0.6208,0.0542,0.8181,0.8181,False,,"Damped impact produced sufficient mid-freq energy (cent=1224Hz, crest=20.1dB)"
+403578,Glass_Bottle_Fall_Roll.wav,glass_breakage,0.8223,5.28,23.31,1022.1,0.0128,0.8983,0.0629,0.8223,0.8223,False,,"Glass semantics below threshold or centroid below 3000Hz (glass_s=0.418, cent=1022Hz)"
+98650,beer bottle break 2.wav,glass_breakage,0.9328,1.44,16.75,3347.6,0.7562,0.0174,0.0562,0.7587,0.7587,False,,"Glass semantics below threshold or centroid below 3000Hz (glass_s=0.054, cent=3348Hz)"
+343756,Glass_Smash.wav,glass_breakage,0.9827,0.96,19.33,3737.9,0.714,0.0578,0.0372,0.8567,0.8567,False,,"Glass semantics below threshold or centroid below 3000Hz (glass_s=0.082, cent=3738Hz)"
+396530,Baltic Shipyard2.wav,metal_hammer_impacts,0.8737,0.96,16.21,2537.7,0.5156,0.0011,0.0734,0.8737,0.8737,False,,"Sharp metallic onset matched ballistic crest factor (crest=16.2dB, raw=0.874)"
+344438,Crashing wall with a hammer.aif,metal_hammer_impacts,0.8831,6.72,27.04,4003.7,0.7857,0.0296,0.2408,0.7989,0.7989,False,,"Sharp metallic onset matched ballistic crest factor (crest=27.0dB, raw=0.799)"
+323795,Hammer hitting metal,metal_hammer_impacts,0.8012,8.64,30.75,4124.3,0.6808,0.022,0.4649,0.719,0.719,False,,"Sharp metallic onset matched ballistic crest factor (crest=30.8dB, raw=0.719)"
+351312,Sledgehammer Hitting Spike,metal_hammer_impacts,0.9603,1.44,30.84,3739.5,0.7135,0.0816,0.9388,0.9579,0.9579,False,,"Sharp metallic onset matched ballistic crest factor (crest=30.8dB, raw=0.958)"
+127992,kladivo 4.wav,metal_hammer_impacts,0.8782,0.48,20.4,1860.7,0.0439,0.1306,0.0158,0.8782,0.8782,False,,"Sharp metallic onset matched ballistic crest factor (crest=20.4dB, raw=0.878)"
+30303,thunder1Long.mp3,thunder_rumbles,0.9848,0.96,4.42,1341.9,0.0163,0.8116,0.3978,0.9848,0.9848,False,,"Thunderclap exhibited high-frequency crack (cent=1342Hz, crest=4.4dB)"
+121943,Crackling_thunder_far_away.wav,thunder_rumbles,0.9453,0.48,20.96,995.3,0.0023,0.5765,0.0554,0.8275,0.8275,False,,"Thunderclap exhibited high-frequency crack (cent=995Hz, crest=21.0dB)"
+127127,SN-Thunder-3.wav,thunder_rumbles,0.9603,0.48,14.11,1118.7,0.0064,0.6949,0.3865,0.6835,0.9145,False,,"Thunderclap exhibited high-frequency crack (cent=1119Hz, crest=14.1dB)"
+396984,Strolling in the rolling thunder.MP3,thunder_rumbles,0.8963,9.6,15.66,801.2,0.002,0.8224,0.6915,0.8963,0.8963,False,,"Thunderclap exhibited high-frequency crack (cent=801Hz, crest=15.7dB)"
+37774,Donner1.wav,thunder_rumbles,0.9754,1.92,19.26,1105.5,0.009,0.6468,0.0062,0.7091,0.7091,False,,"Thunderclap exhibited high-frequency crack (cent=1106Hz, crest=19.3dB)"
+87963,thunder.wav,thunder_rumbles,0.8509,0.0,15.07,1050.4,0.0062,0.7115,0.1148,0.8463,0.8509,False,,"Thunderclap exhibited high-frequency crack (cent=1050Hz, crest=15.1dB)"
+380772,City ​​traffic plus tramway.wav,urban_transit_sirens,0.9294,27.84,13.75,1395.2,0.0193,0.5189,0.0259,0.6878,0.6878,False,,"Transient mimicked impulse profile (adj=0.688, crest=13.8dB)"
+209965,Car out of the track.flac,bioacoustic_human_vocalizations,0.9745,11.52,14.42,1863.9,0.0438,0.7313,0.2172,0.7366,0.7366,False,,"Transient mimicked impulse profile (adj=0.737, crest=14.4dB)"
+62335,Tea jug.wav,bioacoustic_human_vocalizations,0.9848,7.68,16.69,1373.7,0.0061,0.9727,0.3694,0.6793,0.7813,False,,"Transient mimicked impulse profile (adj=0.781, crest=16.7dB)"

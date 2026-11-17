@@ -1,0 +1,78 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_31_CAMPAIGN_PROVENANCE_STATE_MACHINE_VERIFICATION_SUPPRESSION_ABLATION",
+  "frozen_models": {
+    "model_phase14.py": {
+      "role": "DEFAULT_RESEARCH_BASELINE",
+      "path": "E:\\gunshot\\gunshot\\model_phase14.py",
+      "size_bytes": 23340,
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "status": "VERIFIED"
+    },
+    "model_phase17.py": {
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE",
+      "path": "E:\\gunshot\\gunshot\\model_phase17.py",
+      "size_bytes": 29067,
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "status": "VERIFIED"
+    },
+    "model_phase13.py": {
+      "role": "HISTORICAL_COMPARATOR",
+      "path": "E:\\gunshot\\gunshot\\model_phase13.py",
+      "size_bytes": 22252,
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "status": "VERIFIED"
+    },
+    "model_phase9.py": {
+      "role": "HISTORICAL_COMPARATOR",
+      "path": "E:\\gunshot\\gunshot\\model_phase9.py",
+      "size_bytes": 17719,
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "status": "VERIFIED"
+    }
+  },
+  "experimental_candidates": {
+    "model_phase17_state_reset_candidate.py": {
+      "role": "EXPERIMENTAL_STATE_RESET_CANDIDATE_DO_NOT_REPLACE_BASELINE",
+      "path": "E:\\gunshot\\gunshot\\experiments\\phase31\\model_phase17_state_reset_candidate.py",
+      "size_bytes": 30407,
+      "sha256": "131d0d9fb186800180519c695ea5e549e1909f489ce38554d8f2ba2cc45114b6",
+      "status": "VERIFIED"
+    }
+  },
+  "configuration_files": {
+    "config.py": {
+      "path": "E:\\gunshot\\gunshot\\config.py",
+      "size_bytes": 2619,
+      "sha256": "55749f9d46d561d131fad374064021b73c08274e2a79954efd08570b029b1858",
+      "status": "VERIFIED"
+    },
+    "feature_extractor.py": {
+      "path": "E:\\gunshot\\gunshot\\feature_extractor.py",
+      "size_bytes": 6218,
+      "sha256": "1c665b7c1749de98337da0726627710fffe0dcfa56335291b666ae7abcbae94f",
+      "status": "VERIFIED"
+    }
+  },
+  "historical_release_archives": {
+    "gunshot_detection_phase30.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase30.zip",
+      "size_bytes": 5451607,
+      "sha256": "a50cc30c13f840f1d68cb111b868242562262e979d9b211d902b6573ab14ada4",
+      "status": "VERIFIED"
+    },
+    "gunshot_detection_phase29.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase29.zip",
+      "size_bytes": 4593850,
+      "sha256": "23a3f8af3dc74db6bc71b0babbc813bb0e96d1bbd4ca2001cb508b8756081dd5",
+      "status": "VERIFIED"
+    },
+    "gunshot_detection_phase28.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase28.zip",
+      "size_bytes": 4586167,
+      "sha256": "e6505e3597b406541efb005f1d69432653cbfc5603843695fdfd66af01324a72",
+      "status": "VERIFIED"
+    }
+  },
+  "status": "ALL_HASHES_VERIFIED_AND_FROZEN"
+}

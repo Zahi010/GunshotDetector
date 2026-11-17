@@ -1,0 +1,170 @@
+{
+  "report_title": "Phase 7 Independent Test Set Evaluation Report",
+  "evaluation_timestamp": "2026-10-28",
+  "evaluator_role": "Senior Acoustic ML Engineer",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "dataset_metadata": {
+    "evaluation_set": "Phase 7 Genuinely Independent Test Set (100% Leak-Free)",
+    "gunshot_sources": [
+      "ShotSpotter Urban Audio Archive",
+      "Mitchell Roberts Firing Range Dataset"
+    ],
+    "negative_sources": [
+      "ESC-50 Open Access Environmental Audio Dataset"
+    ],
+    "gunshot_recordings_count": 27,
+    "negative_mimic_recordings_count": 200,
+    "total_canonical_physical_events": 27
+  },
+  "model_configuration": {
+    "operating_threshold": 0.75,
+    "deactivation_threshold": 0.5,
+    "confirm_windows": 2,
+    "cooldown_secs": 2.0
+  },
+  "window_level_metrics": {
+    "total_windows": 2111,
+    "positive_windows": 46,
+    "negative_windows": 2065,
+    "accuracy": 0.9541,
+    "precision": 0.2371,
+    "recall": 0.5,
+    "f1_score": 0.3217,
+    "roc_auc": 0.9471,
+    "pr_auc": 0.2337,
+    "confusion_matrix": {
+      "tp": 23,
+      "fp": 74,
+      "tn": 1991,
+      "fn": 23
+    }
+  },
+  "event_level_metrics": {
+    "canonical_physical_events": 27,
+    "physical_events_detected": 4,
+    "physical_events_missed": 23,
+    "event_recall": 0.1481,
+    "false_alert_events": 14,
+    "event_precision": 0.2222,
+    "event_f1": 0.1778,
+    "recording_recall": 0.1481,
+    "recordings_detected": 4,
+    "recordings_total": 27,
+    "duplicate_alerts": 0
+  },
+  "acoustic_condition_breakdown": {
+    "urban_sensor_distant": {
+      "gt_events": 4,
+      "detected_events": 3,
+      "missed_events": 1
+    },
+    "urban_street_canyon": {
+      "gt_events": 3,
+      "detected_events": 1,
+      "missed_events": 2
+    },
+    "outdoor_reverberant": {
+      "gt_events": 1,
+      "detected_events": 0,
+      "missed_events": 1
+    },
+    "rifle_outdoor_single": {
+      "gt_events": 4,
+      "detected_events": 0,
+      "missed_events": 4
+    },
+    "rifle_rapid_double": {
+      "gt_events": 3,
+      "detected_events": 0,
+      "missed_events": 3
+    },
+    "rifle_rapid_burst": {
+      "gt_events": 2,
+      "detected_events": 0,
+      "missed_events": 2
+    },
+    "rifle_pocket_low_snr": {
+      "gt_events": 1,
+      "detected_events": 0,
+      "missed_events": 1
+    },
+    "rifle_pocket_rapid_low_snr": {
+      "gt_events": 1,
+      "detected_events": 0,
+      "missed_events": 1
+    },
+    "handgun_range_single": {
+      "gt_events": 3,
+      "detected_events": 0,
+      "missed_events": 3
+    },
+    "handgun_rapid_double": {
+      "gt_events": 2,
+      "detected_events": 0,
+      "missed_events": 2
+    },
+    "handgun_rapid_burst": {
+      "gt_events": 2,
+      "detected_events": 0,
+      "missed_events": 2
+    },
+    "handgun_pocket_low_snr": {
+      "gt_events": 1,
+      "detected_events": 0,
+      "missed_events": 1
+    }
+  },
+  "mimic_category_breakdown": {
+    "weather_transient_thunder": {
+      "recordings": 20,
+      "fp_windows": 22,
+      "false_alert_events": 5
+    },
+    "percussive_wood_knock": {
+      "recordings": 20,
+      "fp_windows": 0,
+      "false_alert_events": 0
+    },
+    "metallic_click_transient": {
+      "recordings": 20,
+      "fp_windows": 0,
+      "false_alert_events": 0
+    },
+    "sharp_percussive_handclap": {
+      "recordings": 20,
+      "fp_windows": 0,
+      "false_alert_events": 0
+    },
+    "pyrotechnic_blast": {
+      "recordings": 20,
+      "fp_windows": 33,
+      "false_alert_events": 7
+    },
+    "machinery_continuous": {
+      "recordings": 20,
+      "fp_windows": 0,
+      "false_alert_events": 0
+    },
+    "metallic_resonance_bell": {
+      "recordings": 20,
+      "fp_windows": 0,
+      "false_alert_events": 0
+    },
+    "ambient_broadband_wind": {
+      "recordings": 20,
+      "fp_windows": 1,
+      "false_alert_events": 0
+    },
+    "vehicle_impulse": {
+      "recordings": 20,
+      "fp_windows": 0,
+      "false_alert_events": 0
+    },
+    "sharp_brittle_impact": {
+      "recordings": 20,
+      "fp_windows": 1,
+      "false_alert_events": 0
+    }
+  },
+  "evaluation_summary": "Evaluated on 227 independent recordings. The frozen Phase 6 model achieved 14.81% physical event recall (4/27) and 14.81% recording recall (4/27). Across 200 difficult acoustic mimics, 12 false alert events triggered, achieving 22.22% physical event precision."
+}

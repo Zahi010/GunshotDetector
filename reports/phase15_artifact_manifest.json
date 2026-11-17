@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "phase": 15,
+    "title": "Phase 15 Independent Dataset Acquisition, Blind Evaluation & Generalization Audit",
+    "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+    "archive_filename": "gunshot_detection_phase15.zip",
+    "archive_sha256": "9ae819de02b9520aa105ecad8db871aa583cc204778bca20e7b9d1018ea6b08c",
+    "archive_size_mb": 1409.58,
+    "generated_timestamp": "2026-10-30T09:52:45Z"
+  },
+  "prior_archives": {
+    "Phase 8": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353"
+    },
+    "Phase 9": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0"
+    },
+    "Phase 10": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d"
+    },
+    "Phase 11": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef"
+    },
+    "Phase 12": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a"
+    },
+    "Phase 13": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561"
+    },
+    "Phase 14": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "37807435378d313efbec89a3671b714cb33f8b1ddef4ca91141956ae5082d144"
+    }
+  },
+  "phase15_deliverables": {
+    "reports/phase15_baseline_freeze.json": {
+      "size_bytes": 4698,
+      "sha256": "437dfb6dd7730af73a57656095c1fc7636e546fa19e9c7d3b6f547cc901ca7d3"
+    },
+    "reports/phase15_dataset_provenance.md": {
+      "size_bytes": 4493,
+      "sha256": "978bbc44466857d7a4c3bbda100acb5ba2f75af32f33587fe81d6a73b2453269"
+    },
+    "reports/phase15_source_overlap_matrix.csv": {
+      "size_bytes": 804,
+      "sha256": "d3ece6f45c43587e57abd9ccba8c98061cd80f5cc2a045560a6f647a03bc0756"
+    },
+    "reports/phase15_dataset_manifest.csv": {
+      "size_bytes": 94879,
+      "sha256": "68b6e160a5b225fc803820874d0d34939b802c0195a62fce95db959e1e39cb6d"
+    },
+    "reports/phase15_duplicate_audit.json": {
+      "size_bytes": 10041,
+      "sha256": "7a7ae940ec02de035f553bbb68225b5af11720ae003579d9366f18b79340085d"
+    },
+    "reports/phase15_split_integrity_report.md": {
+      "size_bytes": 5911,
+      "sha256": "56a588cba57489eb857fdd6e2ac7d3a50e59ac41b649a44ebc44e6ecdf2f26bd"
+    },
+    "reports/phase15_frozen_detector_evaluation.md": {
+      "size_bytes": 4668,
+      "sha256": "02b541a529e9b683544a11ffa6bab3124d58257150e3cff28d6a0850f8b1a5cf"
+    },
+    "reports/phase15_event_level_metrics.csv": {
+      "size_bytes": 977,
+      "sha256": "98ac3bcdd9f40639366f844a3dd9b5b11fbda52e7f344d9ce98d7500e74af165"
+    },
+    "reports/phase15_window_level_metrics.json": {
+      "size_bytes": 2095,
+      "sha256": "91cb22bc18ff0ee1fafcfb216e0f7ff3bdcda4da508b2e261e373db0d3e559e6"
+    },
+    "reports/phase15_continuous_evaluation.md": {
+      "size_bytes": 4689,
+      "sha256": "11bfd66a3051020dea968354ac092fbdeb19fade3dd05f09ced3c7b3b50796bd"
+    },
+    "reports/phase15_continuous_benchmark_evaluation.json": {
+      "size_bytes": 47928,
+      "sha256": "d55924c09dc89f2173421a819ce876baf5454b50ee72bf26e1cbf83d5dd9bdad"
+    },
+    "reports/phase15_stream_segments.csv": {
+      "size_bytes": 112758,
+      "sha256": "69fbb91843f35fc7641e096a3fa698cbdf8236a31ce1617e803df578b8bd6c47"
+    },
+    "reports/phase15_false_positive_analysis.md": {
+      "size_bytes": 6064,
+      "sha256": "a381032b2221b136334162d95976cedff0645568ff287f7985037b66d601de38"
+    },
+    "reports/phase15_false_negative_analysis.md": {
+      "size_bytes": 2936,
+      "sha256": "c9d5d5f0940b4565c92bc878f0686545c0a1875dd5a5f987e0c3ea6da7bb4903"
+    },
+    "reports/phase15_pocket_occlusion_evaluation.md": {
+      "size_bytes": 2474,
+      "sha256": "236c45d486aa793f55f2af984187129e59208050e4375dc6f4850f15b261a641"
+    },
+    "reports/phase15_statistical_analysis.md": {
+      "size_bytes": 5236,
+      "sha256": "fc37a54e92e5d13fca2835aa9911ad2fe46b6c7d0fca2af62ad6a3d582bbbd37"
+    },
+    "reports/phase15_final_report.md": {
+      "size_bytes": 20976,
+      "sha256": "45e22f35261731d725693f16108755b7850b015ab17ec223e26d000b0f5a6311"
+    },
+    "scripts/run_phase15_provenance_audit.py": {
+      "size_bytes": 18534,
+      "sha256": "909ddf47699f4c3b7198d174820f48deaca54ade66475d9870d64bd6559a7d84"
+    },
+    "scripts/run_phase15_frozen_evaluation.py": {
+      "size_bytes": 21519,
+      "sha256": "86d16164e6ff9451f9d736800ba2c5108210590e560e3c6b839875b87d542f8b"
+    },
+    "scripts/run_phase15_continuous_evaluation.py": {
+      "size_bytes": 33449,
+      "sha256": "54e35a6c6589c9ed88ce9df78fa2136f643e0c5d89dcf576b1d83306312b4697"
+    },
+    "scripts/run_phase15_statistical_analysis.py": {
+      "size_bytes": 11205,
+      "sha256": "3361b94387db9a90b3003ada9f7bff5d644fddadc073b5c8c74c931bf4deec02"
+    },
+    "tests/test_phase15_evaluation_integrity.py": {
+      "size_bytes": 7590,
+      "sha256": "1c91a442ca9e28e1e806dc7afcaa945ccf24eba2028f1f533d2587976b46f6ab"
+    },
+    "tests/test_phase15_regression.py": {
+      "size_bytes": 6644,
+      "sha256": "638400f03683f0c7ddb4ab8954c3e6d1e0996c7e8710251072407fda1f7179f9"
+    }
+  }
+}

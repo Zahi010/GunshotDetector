@@ -1,0 +1,90 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "archive_filename": "env_audio.zip",
+  "archive_size_bytes": 495276974,
+  "archive_md5": "8c042dc817f459e80ac2491ffc8dd1cd",
+  "archive_sha256": "7ebfb4aec3ec41a64db326b7b28789c0d6346a6439182ceb1e9d22f401f3438a",
+  "zenodo_md5_expected": "8c042dc817f459e80ac2491ffc8dd1cd",
+  "md5_verification": "PASS_EXACT_MATCH",
+  "testzip_crc_result": "PASS_ZERO_CORRUPT_FILES",
+  "extracted_files": [
+    {
+      "original_filename": "1_AUDIO.wav",
+      "original_size_bytes": 158760044,
+      "original_sha256": "846ecdbc6022ce3e0e91f388b5e89178eec413ac79339e1f2cdda4ed83a76481",
+      "derived_filename": "1_AUDIO_16k.wav",
+      "derived_size_bytes": 115200044,
+      "derived_sha256": "1b6e241fe31478daf7adcc34880aab7c1d14b27e7061a65d69d01875968948eb",
+      "resampling_method": "scipy.signal.resample_poly_320_441",
+      "channels": 1,
+      "sample_rate_native": 22050,
+      "sample_rate_derived": 16000,
+      "duration_seconds": 3600.0
+    },
+    {
+      "original_filename": "2_AUDIO.wav",
+      "original_size_bytes": 158760044,
+      "original_sha256": "bbe8ba5116a38b4864911d7186db6f796877bdf27f0e94f689ea3f088c3d23e2",
+      "derived_filename": "2_AUDIO_16k.wav",
+      "derived_size_bytes": 115200044,
+      "derived_sha256": "75be01bb0c12af75beb2a2a11f4b7848774244daf02c3720af06f8c8efe96cd2",
+      "resampling_method": "scipy.signal.resample_poly_320_441",
+      "channels": 1,
+      "sample_rate_native": 22050,
+      "sample_rate_derived": 16000,
+      "duration_seconds": 3600.0
+    },
+    {
+      "original_filename": "3_AUDIO.wav",
+      "original_size_bytes": 158760044,
+      "original_sha256": "e8b1c42f2793fb5cd893ef31199b388547ec4e8b11f61bf4dc99fb82e7245e24",
+      "derived_filename": "3_AUDIO_16k.wav",
+      "derived_size_bytes": 115200044,
+      "derived_sha256": "358fa98be820cf148faa631a7c434c876959a697dd944ef6d6ea29745a4b5c75",
+      "resampling_method": "scipy.signal.resample_poly_320_441",
+      "channels": 1,
+      "sample_rate_native": 22050,
+      "sample_rate_derived": 16000,
+      "duration_seconds": 3600.0
+    },
+    {
+      "original_filename": "4_AUDIO.wav",
+      "original_size_bytes": 158760044,
+      "original_sha256": "0942ce1378d6a29b1eee4ea8ebc84ebbe7e5f552ed80693f8fdfd47524f1decf",
+      "derived_filename": "4_AUDIO_16k.wav",
+      "derived_size_bytes": 115200044,
+      "derived_sha256": "4caa3539abaa544471ddfa983e391edad4ca56ded3f4ca2a33170d10f1beae0d",
+      "resampling_method": "scipy.signal.resample_poly_320_441",
+      "channels": 1,
+      "sample_rate_native": 22050,
+      "sample_rate_derived": 16000,
+      "duration_seconds": 3600.0
+    },
+    {
+      "original_filename": "5_AUDIO.wav",
+      "original_size_bytes": 158760044,
+      "original_sha256": "e8dcdd249bd1b33d90c9d48a79f3d4dcf2e60c567e4ac180f0e426d9c7342917",
+      "derived_filename": "5_AUDIO_16k.wav",
+      "derived_size_bytes": 115200044,
+      "derived_sha256": "8ef0f4f24baa9a9e52efbd3d1213131759c329464408127790ac87859a9b0f91",
+      "resampling_method": "scipy.signal.resample_poly_320_441",
+      "channels": 1,
+      "sample_rate_native": 22050,
+      "sample_rate_derived": 16000,
+      "duration_seconds": 3600.0
+    },
+    {
+      "original_filename": "6_AUDIO.wav",
+      "original_size_bytes": 158760044,
+      "original_sha256": "573a4d0e73a5c07d977fd25e7d5468bb4a42e6f67a67d7db409e6a9b2beb2710",
+      "derived_filename": "6_AUDIO_16k.wav",
+      "derived_size_bytes": 115200044,
+      "derived_sha256": "77dcfb06a4bb6f461d33460a8d42b891a9f2f483120f6f580158e6bce586aea6",
+      "resampling_method": "scipy.signal.resample_poly_320_441",
+      "channels": 1,
+      "sample_rate_native": 22050,
+      "sample_rate_derived": 16000,
+      "duration_seconds": 3600.0
+    }
+  ]
+}

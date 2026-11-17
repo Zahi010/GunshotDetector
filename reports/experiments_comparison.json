@@ -1,0 +1,645 @@
+{
+  "candidate_1_baseline_mlp": {
+    "model_type": "Baseline MLP (No Hard Negatives)",
+    "threshold_modes": {
+      "balanced_f1": {
+        "threshold": 0.335,
+        "val_metrics": {
+          "threshold": 0.335,
+          "precision": 0.8345,
+          "recall": 0.8662,
+          "f1": 0.85
+        }
+      },
+      "high_recall": {
+        "threshold": 0.26,
+        "val_metrics": {
+          "threshold": 0.26,
+          "precision": 0.7313,
+          "recall": 0.9507,
+          "f1": 0.8267
+        }
+      },
+      "low_false_alarm": {
+        "threshold": 0.32,
+        "val_metrics": {
+          "threshold": 0.32,
+          "precision": 0.8082,
+          "recall": 0.8845,
+          "f1": 0.8447
+        }
+      }
+    },
+    "test_eval_at_0_19": {
+      "threshold": 0.19,
+      "total_windows": 519,
+      "accuracy": 0.5087,
+      "precision": 0.49,
+      "recall": 0.9959,
+      "f1_score": 0.6568,
+      "roc_auc": 0.901,
+      "true_positives": 244,
+      "false_positives": 254,
+      "true_negatives": 20,
+      "false_negatives": 1,
+      "false_positive_rate": 0.927,
+      "false_negative_rate": 0.0041,
+      "confusion_matrix": [
+        [
+          20,
+          254
+        ],
+        [
+          1,
+          244
+        ]
+      ]
+    },
+    "test_eval_at_val_selected": {
+      "threshold": 0.335,
+      "total_windows": 519,
+      "accuracy": 0.6378,
+      "precision": 0.568,
+      "recall": 0.9714,
+      "f1_score": 0.7169,
+      "roc_auc": 0.901,
+      "true_positives": 238,
+      "false_positives": 181,
+      "true_negatives": 93,
+      "false_negatives": 7,
+      "false_positive_rate": 0.6606,
+      "false_negative_rate": 0.0286,
+      "confusion_matrix": [
+        [
+          93,
+          181
+        ],
+        [
+          7,
+          238
+        ]
+      ]
+    },
+    "recording_eval": {
+      "recordings_total": 37,
+      "accuracy": 0.4595,
+      "precision": 0.4595,
+      "recall": 1.0,
+      "f1_score": 0.6296,
+      "roc_auc": 0.9735,
+      "true_positives": 17,
+      "false_positives": 20,
+      "true_negatives": 0,
+      "false_negatives": 0,
+      "confusion_matrix": [
+        [
+          0,
+          20
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "streaming_alerts_confirm_1": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 51,
+      "false_alerts_per_hour": 1311.8,
+      "poisson_95_ci": [
+        976.75,
+        1724.83
+      ]
+    },
+    "streaming_alerts_confirm_2": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 40,
+      "false_alerts_per_hour": 1028.9,
+      "poisson_95_ci": [
+        735.06,
+        1401.06
+      ]
+    }
+  },
+  "candidate_2_baseline_mlp_hn": {
+    "model_type": "Baseline MLP + Hard Negatives",
+    "threshold_modes": {
+      "balanced_f1": {
+        "threshold": 0.24,
+        "val_metrics": {
+          "threshold": 0.24,
+          "precision": 0.8164,
+          "recall": 0.8268,
+          "f1": 0.8216
+        }
+      },
+      "high_recall": {
+        "threshold": 0.12,
+        "val_metrics": {
+          "threshold": 0.12,
+          "precision": 0.6438,
+          "recall": 0.9521,
+          "f1": 0.7682
+        }
+      },
+      "low_false_alarm": {
+        "threshold": 0.175,
+        "val_metrics": {
+          "threshold": 0.175,
+          "precision": 0.725,
+          "recall": 0.8873,
+          "f1": 0.798
+        }
+      }
+    },
+    "test_eval_at_val_selected": {
+      "threshold": 0.24,
+      "total_windows": 519,
+      "accuracy": 0.6358,
+      "precision": 0.5654,
+      "recall": 0.9878,
+      "f1_score": 0.7192,
+      "roc_auc": 0.9256,
+      "true_positives": 242,
+      "false_positives": 186,
+      "true_negatives": 88,
+      "false_negatives": 3,
+      "false_positive_rate": 0.6788,
+      "false_negative_rate": 0.0122,
+      "confusion_matrix": [
+        [
+          88,
+          186
+        ],
+        [
+          3,
+          242
+        ]
+      ]
+    },
+    "recording_eval": {
+      "recordings_total": 37,
+      "accuracy": 0.5676,
+      "precision": 0.5152,
+      "recall": 1.0,
+      "f1_score": 0.68,
+      "roc_auc": 0.9912,
+      "true_positives": 17,
+      "false_positives": 16,
+      "true_negatives": 4,
+      "false_negatives": 0,
+      "confusion_matrix": [
+        [
+          4,
+          16
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "streaming_alerts_confirm_1": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 43,
+      "false_alerts_per_hour": 1106.1,
+      "poisson_95_ci": [
+        800.46,
+        1489.86
+      ]
+    },
+    "streaming_alerts_confirm_2": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 33,
+      "false_alerts_per_hour": 848.8,
+      "poisson_95_ci": [
+        584.3,
+        1192.08
+      ]
+    }
+  },
+  "candidate_3_regularized_mlp_hn": {
+    "model_type": "Regularized Deep MLP (LayerNorm + AdamW + Hard Negatives)",
+    "threshold_modes": {
+      "balanced_f1": {
+        "threshold": 0.075,
+        "val_metrics": {
+          "threshold": 0.075,
+          "precision": 0.8042,
+          "recall": 0.9662,
+          "f1": 0.8778
+        }
+      },
+      "high_recall": {
+        "threshold": 0.075,
+        "val_metrics": {
+          "threshold": 0.075,
+          "precision": 0.8042,
+          "recall": 0.9662,
+          "f1": 0.8778
+        }
+      },
+      "low_false_alarm": {
+        "threshold": 0.145,
+        "val_metrics": {
+          "threshold": 0.145,
+          "precision": 0.8278,
+          "recall": 0.8803,
+          "f1": 0.8532
+        }
+      }
+    },
+    "test_eval_at_val_selected": {
+      "threshold": 0.075,
+      "total_windows": 519,
+      "accuracy": 0.6281,
+      "precision": 0.5599,
+      "recall": 0.9918,
+      "f1_score": 0.7158,
+      "roc_auc": 0.9344,
+      "true_positives": 243,
+      "false_positives": 191,
+      "true_negatives": 83,
+      "false_negatives": 2,
+      "false_positive_rate": 0.6971,
+      "false_negative_rate": 0.0082,
+      "confusion_matrix": [
+        [
+          83,
+          191
+        ],
+        [
+          2,
+          243
+        ]
+      ]
+    },
+    "recording_eval": {
+      "recordings_total": 37,
+      "accuracy": 0.5676,
+      "precision": 0.5152,
+      "recall": 1.0,
+      "f1_score": 0.68,
+      "roc_auc": 0.9912,
+      "true_positives": 17,
+      "false_positives": 16,
+      "true_negatives": 4,
+      "false_negatives": 0,
+      "confusion_matrix": [
+        [
+          4,
+          16
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "streaming_alerts_confirm_1": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 45,
+      "false_alerts_per_hour": 1157.5,
+      "poisson_95_ci": [
+        844.29,
+        1548.83
+      ]
+    },
+    "streaming_alerts_confirm_2": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 35,
+      "false_alerts_per_hour": 900.3,
+      "poisson_95_ci": [
+        627.08,
+        1252.08
+      ]
+    }
+  },
+  "candidate_4_lightgbm_hn": {
+    "model_type": "LightGBM Gradient Boosted Trees + Hard Negatives",
+    "threshold_modes": {
+      "balanced_f1": {
+        "threshold": 0.365,
+        "val_metrics": {
+          "threshold": 0.365,
+          "precision": 0.6868,
+          "recall": 0.9606,
+          "f1": 0.8009
+        }
+      },
+      "high_recall": {
+        "threshold": 0.365,
+        "val_metrics": {
+          "threshold": 0.365,
+          "precision": 0.6868,
+          "recall": 0.9606,
+          "f1": 0.8009
+        }
+      },
+      "low_false_alarm": {
+        "threshold": 0.365,
+        "val_metrics": {
+          "threshold": 0.365,
+          "precision": 0.6868,
+          "recall": 0.9606,
+          "f1": 0.8009
+        }
+      }
+    },
+    "test_eval_at_val_selected": {
+      "threshold": 0.365,
+      "total_windows": 519,
+      "accuracy": 0.6089,
+      "precision": 0.5469,
+      "recall": 1.0,
+      "f1_score": 0.7071,
+      "roc_auc": 0.9281,
+      "true_positives": 245,
+      "false_positives": 203,
+      "true_negatives": 71,
+      "false_negatives": 0,
+      "false_positive_rate": 0.7409,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": [
+        [
+          71,
+          203
+        ],
+        [
+          0,
+          245
+        ]
+      ]
+    },
+    "recording_eval": {
+      "recordings_total": 37,
+      "accuracy": 0.5405,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6667,
+      "roc_auc": 0.9559,
+      "true_positives": 17,
+      "false_positives": 17,
+      "true_negatives": 3,
+      "false_negatives": 0,
+      "confusion_matrix": [
+        [
+          3,
+          17
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "streaming_alerts_confirm_1": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 46,
+      "false_alerts_per_hour": 1183.2,
+      "poisson_95_ci": [
+        866.27,
+        1578.26
+      ]
+    },
+    "streaming_alerts_confirm_2": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 36,
+      "false_alerts_per_hour": 926.0,
+      "poisson_95_ci": [
+        648.56,
+        1281.98
+      ]
+    }
+  },
+  "candidate_5_calibrated_lgb_hn": {
+    "model_type": "Calibrated LightGBM (Platt Scaling Sigmoid) + Hard Negatives",
+    "threshold_modes": {
+      "balanced_f1": {
+        "threshold": 0.465,
+        "val_metrics": {
+          "threshold": 0.465,
+          "precision": 0.6966,
+          "recall": 0.9606,
+          "f1": 0.8076
+        }
+      },
+      "high_recall": {
+        "threshold": 0.465,
+        "val_metrics": {
+          "threshold": 0.465,
+          "precision": 0.6966,
+          "recall": 0.9606,
+          "f1": 0.8076
+        }
+      },
+      "low_false_alarm": {
+        "threshold": 0.465,
+        "val_metrics": {
+          "threshold": 0.465,
+          "precision": 0.6966,
+          "recall": 0.9606,
+          "f1": 0.8076
+        }
+      }
+    },
+    "test_eval_at_val_selected": {
+      "threshold": 0.465,
+      "total_windows": 519,
+      "accuracy": 0.6127,
+      "precision": 0.5493,
+      "recall": 1.0,
+      "f1_score": 0.7091,
+      "roc_auc": 0.9281,
+      "true_positives": 245,
+      "false_positives": 201,
+      "true_negatives": 73,
+      "false_negatives": 0,
+      "false_positive_rate": 0.7336,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": [
+        [
+          73,
+          201
+        ],
+        [
+          0,
+          245
+        ]
+      ]
+    },
+    "recording_eval": {
+      "recordings_total": 37,
+      "accuracy": 0.5405,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6667,
+      "roc_auc": 0.9559,
+      "true_positives": 17,
+      "false_positives": 17,
+      "true_negatives": 3,
+      "false_negatives": 0,
+      "confusion_matrix": [
+        [
+          3,
+          17
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "streaming_alerts_confirm_1": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 46,
+      "false_alerts_per_hour": 1183.2,
+      "poisson_95_ci": [
+        866.27,
+        1578.26
+      ]
+    },
+    "streaming_alerts_confirm_2": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 36,
+      "false_alerts_per_hour": 926.0,
+      "poisson_95_ci": [
+        648.56,
+        1281.98
+      ]
+    }
+  },
+  "candidate_6_hybrid_ensemble_hn": {
+    "model_type": "Hybrid Ensemble (Regularized MLP + LightGBM 50/50 Blend)",
+    "threshold_modes": {
+      "balanced_f1": {
+        "threshold": 0.235,
+        "val_metrics": {
+          "threshold": 0.235,
+          "precision": 0.794,
+          "recall": 0.9662,
+          "f1": 0.8717
+        }
+      },
+      "high_recall": {
+        "threshold": 0.235,
+        "val_metrics": {
+          "threshold": 0.235,
+          "precision": 0.794,
+          "recall": 0.9662,
+          "f1": 0.8717
+        }
+      },
+      "low_false_alarm": {
+        "threshold": 0.285,
+        "val_metrics": {
+          "threshold": 0.285,
+          "precision": 0.8507,
+          "recall": 0.8831,
+          "f1": 0.8666
+        }
+      }
+    },
+    "test_eval_at_val_selected": {
+      "threshold": 0.235,
+      "total_windows": 519,
+      "accuracy": 0.6397,
+      "precision": 0.5678,
+      "recall": 0.9918,
+      "f1_score": 0.7221,
+      "roc_auc": 0.9376,
+      "true_positives": 243,
+      "false_positives": 185,
+      "true_negatives": 89,
+      "false_negatives": 2,
+      "false_positive_rate": 0.6752,
+      "false_negative_rate": 0.0082,
+      "confusion_matrix": [
+        [
+          89,
+          185
+        ],
+        [
+          2,
+          243
+        ]
+      ]
+    },
+    "recording_eval": {
+      "recordings_total": 37,
+      "accuracy": 0.5676,
+      "precision": 0.5152,
+      "recall": 1.0,
+      "f1_score": 0.68,
+      "roc_auc": 0.9824,
+      "true_positives": 17,
+      "false_positives": 16,
+      "true_negatives": 4,
+      "false_negatives": 0,
+      "confusion_matrix": [
+        [
+          4,
+          16
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    "streaming_alerts_confirm_1": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 44,
+      "false_alerts_per_hour": 1131.8,
+      "poisson_95_ci": [
+        822.36,
+        1519.37
+      ]
+    },
+    "streaming_alerts_confirm_2": {
+      "negative_duration_sec": 139.96,
+      "negative_duration_hours": 0.0389,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "false_alert_events": 34,
+      "false_alerts_per_hour": 874.6,
+      "poisson_95_ci": [
+        605.66,
+        1222.11
+      ]
+    }
+  }
+}

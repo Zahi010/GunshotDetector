@@ -1,0 +1,100 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_20_PITTSBURGH_AUDIT",
+  "timestamp": "2026-11-14 10:06:47 UTC",
+  "status": "FROZEN_UNMODIFIED",
+  "default_production_baseline": "Phase 14 Balanced",
+  "selectable_experimental_profile": "Phase 17 Experimental",
+  "models": {
+    "model_phase14.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "expected_sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "size_bytes": 23340,
+      "expected_bytes": 23340,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "DEFAULT_PRODUCTION_BASELINE",
+      "verification": "VERIFIED_MATCH"
+    },
+    "model_phase17.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase17.py",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "expected_sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "size_bytes": 29067,
+      "expected_bytes": 29067,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE",
+      "verification": "VERIFIED_MATCH"
+    },
+    "model_phase13.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase13.py",
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "expected_sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "size_bytes": 22252,
+      "expected_bytes": 22252,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "FROZEN_HISTORICAL_COMPARATOR",
+      "verification": "VERIFIED_MATCH"
+    },
+    "model_phase9.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase9.py",
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "expected_sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "size_bytes": 17719,
+      "expected_bytes": 17719,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "FROZEN_HISTORICAL_COMPARATOR",
+      "verification": "VERIFIED_MATCH"
+    }
+  },
+  "archives": {
+    "gunshot_detection_phase19.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase19.zip",
+      "sha256": "9d768b9db3126aa23b37dd0f6b00804345929a4171499f703e4bb84132ad9ac4",
+      "expected_sha256": "9d768b9db3126aa23b37dd0f6b00804345929a4171499f703e4bb84132ad9ac4",
+      "size_bytes": 8191423,
+      "expected_bytes": 8191423,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "PHASE_19_ARCHIVE",
+      "verification": "VERIFIED_MATCH"
+    },
+    "gunshot_detection_phase18.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase18.zip",
+      "sha256": "90963ba0e8a70bee9f408473964f10ad0d4a94fcc46173961905761f3ada6b6c",
+      "expected_sha256": "90963ba0e8a70bee9f408473964f10ad0d4a94fcc46173961905761f3ada6b6c",
+      "size_bytes": 2418935811,
+      "expected_bytes": 2418935811,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "PHASE_18_ARCHIVE",
+      "verification": "VERIFIED_MATCH"
+    },
+    "gunshot_detection_phase17.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase17.zip",
+      "sha256": "028bb95bced4456020e5d9860cb01ddca3d2944779d31db76ba2b20f99e2bc41",
+      "expected_sha256": "028bb95bced4456020e5d9860cb01ddca3d2944779d31db76ba2b20f99e2bc41",
+      "size_bytes": 2418868636,
+      "expected_bytes": 2418868636,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "PHASE_17_ARCHIVE",
+      "verification": "VERIFIED_MATCH"
+    },
+    "gunshot_detection_phase16.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase16.zip",
+      "sha256": "386298c4a4a251b4728d14d5903265ebe18c63404f87d0eba47bbcce442f65b4",
+      "expected_sha256": "386298c4a4a251b4728d14d5903265ebe18c63404f87d0eba47bbcce442f65b4",
+      "size_bytes": 1997721700,
+      "expected_bytes": 1997721700,
+      "sha256_match": true,
+      "size_match": true,
+      "role": "PHASE_16_ARCHIVE",
+      "verification": "VERIFIED_MATCH"
+    }
+  }
+}

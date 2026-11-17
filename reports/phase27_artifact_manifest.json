@@ -1,0 +1,87 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_27_AUTHORIZED_AEROSONICDB_ACQUISITION_AND_STATISTICAL_CORRECTION",
+  "archive_filename": "gunshot_detection_phase27.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase27.zip",
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "tripartite_denominator_summary": {
+    "gross_calendar_exposure_hours": 12.646,
+    "total_verified_natural_streams": 23,
+    "total_independent_campaigns": 4,
+    "phase_14_balanced": {
+      "total_observed_alerts": 128,
+      "gross_rate_alerts_per_hr": 10.1218,
+      "cooldown_excluded_seconds": 455.52,
+      "eligible_exposure_hours": 12.5195,
+      "eligible_rate_alerts_per_hr": 10.2241,
+      "garwood_95_ci_per_hr": [
+        8.5303,
+        12.1643
+      ],
+      "mtbfa_minutes": 5.87
+    },
+    "phase_17_experimental": {
+      "total_observed_alerts": 159,
+      "gross_rate_alerts_per_hr": 12.5732,
+      "cooldown_excluded_seconds": 6381.76,
+      "eligible_exposure_hours": 10.8732,
+      "eligible_rate_alerts_per_hr": 14.6231,
+      "garwood_95_ci_per_hr": [
+        12.4419,
+        17.0772
+      ],
+      "mtbfa_minutes": 4.1
+    },
+    "comparison": {
+      "alert_difference_p17_minus_p14": 31,
+      "percentage_increase_p17": "+24.2%",
+      "p14_streams_superior": 5,
+      "p17_streams_superior": 3,
+      "streams_tied": 15,
+      "paired_wilcoxon_w": 8.0,
+      "paired_wilcoxon_p": 0.1953125,
+      "sign_test_p_twosided": 0.7265625,
+      "baseline_decision": "RETAIN_PHASE_14_BALANCED_AS_DEFAULT_RESEARCH_BASELINE"
+    }
+  },
+  "key_deliverables": [
+    "reports/phase27_final_report.md",
+    "reports/phase27_baseline_freeze.json",
+    "reports/phase27_source_verification.json",
+    "reports/phase27_acquisition_log.md",
+    "reports/phase27_download_integrity.json",
+    "reports/phase27_recording_provenance.csv",
+    "reports/phase27_continuity_audit.csv",
+    "reports/phase27_negative_eligibility_report.md",
+    "reports/phase27_exposure_accounting.csv",
+    "reports/phase27_historical_paired_statistics_audit.md",
+    "reports/phase27_paired_differences.csv",
+    "reports/phase27_wilcoxon_reproduction.json",
+    "reports/phase27_poisson_assumption_audit.md",
+    "reports/phase27_vmr_reproduction.csv",
+    "reports/phase27_alert_event_log.csv",
+    "reports/phase27_negative_audio_results.csv",
+    "reports/phase27_matched_model_comparison.md",
+    "reports/phase27_distractor_analysis.md",
+    "reports/phase27_statistical_analysis.md",
+    "reports/phase27_risk_and_limitation_register.md",
+    "reports/phase27_processing_manifest.json",
+    "reports/phase27_artifact_manifest.json",
+    "tests/test_phase27_acquisition_statistics.py",
+    "reports/phase27_test_results.txt",
+    "scripts/reproduce_phase27_analysis.py"
+  ],
+  "archive_size_bytes": 4610265,
+  "archive_sha256": "59c27ccdb74a8e17c269eddd3d8965a6a9350cc0b9f45687b792e5ba1dfb490d",
+  "total_archive_entries": 56
+}

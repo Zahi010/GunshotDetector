@@ -1,0 +1,74 @@
+{
+  "Phase 9 Balanced": {
+    "genuine_events": 39,
+    "detected_events": 19,
+    "missed_events": 20,
+    "false_positive_alerts": 7,
+    "duplicate_alerts": 0,
+    "event_recall": 48.72,
+    "event_precision": 73.08,
+    "event_f1": 58.46,
+    "median_delay_sec": 0.48,
+    "p95_delay_sec": 1.284
+  },
+  "Phase 13 Balanced": {
+    "genuine_events": 39,
+    "detected_events": 24,
+    "missed_events": 15,
+    "false_positive_alerts": 7,
+    "duplicate_alerts": 0,
+    "event_recall": 61.54,
+    "event_precision": 77.42,
+    "event_f1": 68.57,
+    "median_delay_sec": 0.7,
+    "p95_delay_sec": 1.614
+  },
+  "Phase 14 Balanced": {
+    "genuine_events": 39,
+    "detected_events": 23,
+    "missed_events": 16,
+    "false_positive_alerts": 8,
+    "duplicate_alerts": 0,
+    "event_recall": 58.97,
+    "event_precision": 74.19,
+    "event_f1": 65.71,
+    "median_delay_sec": 0.6,
+    "p95_delay_sec": 1.636
+  },
+  "Phase 14 High-Precision": {
+    "genuine_events": 39,
+    "detected_events": 18,
+    "missed_events": 21,
+    "false_positive_alerts": 7,
+    "duplicate_alerts": 0,
+    "event_recall": 46.15,
+    "event_precision": 72.0,
+    "event_f1": 56.25,
+    "median_delay_sec": 0.5,
+    "p95_delay_sec": 1.068
+  },
+  "Phase 14 High-Sensitivity": {
+    "genuine_events": 39,
+    "detected_events": 24,
+    "missed_events": 15,
+    "false_positive_alerts": 8,
+    "duplicate_alerts": 0,
+    "event_recall": 61.54,
+    "event_precision": 75.0,
+    "event_f1": 67.61,
+    "median_delay_sec": 0.6,
+    "p95_delay_sec": 1.614
+  },
+  "Phase 17 Experimental": {
+    "genuine_events": 39,
+    "detected_events": 23,
+    "missed_events": 16,
+    "false_positive_alerts": 8,
+    "duplicate_alerts": 0,
+    "event_recall": 58.97,
+    "event_precision": 74.19,
+    "event_f1": 65.71,
+    "median_delay_sec": 0.6,
+    "p95_delay_sec": 1.636
+  }
+}

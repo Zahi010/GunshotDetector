@@ -1,0 +1,6 @@
+campaign_id,stream_count,gross_duration_s,gross_duration_hr,phase14_alerts,phase17_alerts,alert_delta_p14_minus_p17,phase14_gross_far,phase17_gross_far,phase14_conv_a_cd_s,phase14_conv_a_elig_hr,phase14_conv_a_far,phase14_conv_b_cd_s,phase14_conv_b_elig_hr,phase14_conv_b_far,phase17_conv_a_cd_s,phase17_conv_a_elig_hr,phase17_conv_a_far,phase17_conv_b_cd_s,phase17_conv_b_elig_hr,phase17_conv_b_far
+CAMPAIGN-ADELAIDE-AEROSONIC,6,21600.0,6.0,72,108,-36,12.0,18.0,143.92,5.96,12.0805,342.0,5.905,12.1931,214.64,5.9404,18.1807,6283.28,4.2546,25.384
+CAMPAIGN-BILBAO,6,2025.5755,0.5627,32,29,3,56.8727,51.5409,63.92,0.5449,58.7258,63.92,0.5449,58.7258,57.92,0.5466,53.0579,57.92,0.5466,53.0579
+CAMPAIGN-CHEW-MAGNA,1,2100.0,0.5833,0,0,0,0.0,0.0,0.0,0.5833,0.0,0.0,0.5833,0.0,0.0,0.5833,0.0,0.0,0.5833,0.0
+CAMPAIGN-SOUTHAMPTON-EXP1,10,19800.0,5.5,24,22,2,4.3636,4.0,48.0,5.4867,4.3742,48.0,5.4867,4.3742,44.0,5.4878,4.0089,44.0,5.4878,4.0089
+CUMULATIVE_BENCHMARK_TOTAL,23,45525.5755,12.646,128,159,-31,10.1218,12.5732,255.84,12.5749,10.179,453.92,12.5199,10.2237,316.56,12.5581,12.6612,6385.2,10.8723,14.6243

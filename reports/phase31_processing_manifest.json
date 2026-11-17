@@ -1,0 +1,36 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_31_CAMPAIGN_PROVENANCE_RECONCILIATION_STATE_MACHINE_VERIFICATION_SUPPRESSION_ABLATION",
+  "reproduced_by": "Phase 31 Reproduction Analysis Engine",
+  "verified_inventory": {
+    "recordings_count": 23,
+    "verified_campaigns": [
+      "CAMPAIGN-RPISOUND-UK (Southampton, UK, 10 streams, 5.5000h)",
+      "CAMPAIGN-CHEWMAGNA-UK (Chew Magna, UK, 1 stream, 0.5833h)",
+      "CAMPAIGN-BILBAO-ES (Bilbao, Spain, 6 streams, 0.5627h)",
+      "CAMPAIGN-AEROSONIC-AU (Adelaide, Australia, 6 streams, 6.0000h)"
+    ],
+    "gross_hours": 12.646,
+    "p14_total_alerts": 128,
+    "p17_total_alerts": 159
+  },
+  "state_machine_defect_status": {
+    "defect_confirmed": true,
+    "description": "Omission of 'else: active_cluster = []' in model_phase17.py causes retention of unconfirmed qualifying spikes across arbitrary time gaps; unguarded EOF flush emits trailing single spikes.",
+    "regression_tests": "5/5 PASS on candidate patch (Tests A-E)",
+    "experimental_candidate_path": "experiments/phase31/model_phase17_state_reset_candidate.py"
+  },
+  "animal_suppression_audit_status": {
+    "parameter_definitions_clarified": true,
+    "animal_thresh": 0.35,
+    "animal_ratio": 2.0,
+    "penalty_scalar": 0.3,
+    "threshold_off": 0.48,
+    "counterfactual_reproducibility": "11/25 confirmed direct causal contribution to fragmentation, 9/25 pure acoustic, 5/25 partial"
+  },
+  "governance_decision": {
+    "default_research_baseline": "Phase 14 Balanced",
+    "phase17_promotion_status": "REJECTED_DO_NOT_PROMOTE",
+    "rationale": "Phase 17 possesses a confirmed state-machine defect, exhibits lower specificity (+31 false alerts in negative continuous exposure), and demonstrates no statistically significant superiority on independent continuous audio."
+  }
+}

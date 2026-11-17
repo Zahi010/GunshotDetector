@@ -1,0 +1,37 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_33_FORENSIC_AUDIT_AND_PROVENANCE_RECONCILIATION",
+  "raw_traces": {
+    "path": "E:\\gunshot\\gunshot\\reports\\phase30_instrumented_score_traces.csv",
+    "size_bytes": 7878926,
+    "sha256": "43cb7851af20e1892ebc839d62838c1bbb3216067f8e5babc98b66128d689dd9",
+    "status": "VERIFIED"
+  },
+  "models": {
+    "model_phase14.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase14.py",
+      "size_bytes": 23340,
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "status": "VERIFIED"
+    },
+    "model_phase17.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase17.py",
+      "size_bytes": 29067,
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "status": "VERIFIED"
+    },
+    "model_phase17_state_reset_candidate.py": {
+      "path": "E:\\gunshot\\gunshot\\experiments\\phase31\\model_phase17_state_reset_candidate.py",
+      "size_bytes": 29718,
+      "sha256": "c144b917b56532787e2a9198f2cad4a77dc2095b57962f31d11d250a4d5d9ea5",
+      "status": "VERIFIED"
+    }
+  },
+  "factorial_alert_counts": {
+    "Condition_A": 108,
+    "Condition_B": 130,
+    "Condition_C": 66,
+    "Condition_D": 72
+  },
+  "condition_d_label": "CORRECTED-CANDIDATE / SUPPRESSION-OFF (Functionally equivalent in detection timing to Phase 14 Baseline; schema differs)"
+}

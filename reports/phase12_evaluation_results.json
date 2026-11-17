@@ -1,0 +1,4878 @@
+{
+  "evaluation_phase": "Phase 12",
+  "timestamp_iso": "2026-10-29T10:47:45Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE - NOT FOR LIFE SAFETY",
+  "frozen_model_bundle": "models/gunshot_yamnet_bundle",
+  "frozen_bundle_hashes": {
+    "catboost_model.joblib": "a34d2d80e2815b56c6de4fc6ba784f9bea4f35add2ab351be3e66df4b47d40b9",
+    "classifier_head.keras": "1142278dd5848f0344433448af4185f5ea1f987f6109a297e1b774c9001fba8a",
+    "lightgbm_model.joblib": "3de5e30a6c869f22d1cf98e77533b7497fa9553a67c2476b84314f91bc997fb3",
+    "xgboost_model.joblib": "fd1aeccd5666da10dab4aebd3c6cf30ca7b3124237860b5325b176933cd5aa69",
+    "threshold.json": "6dcd1b4a942463c85e62dbad8f44fa65d86eac8e1746a45c45b4719feb801ecd",
+    "model_config.json": "fdeb8551a21f74a121aa47603465b441f0d978653c2a8668e3c48a8b6d98f81b"
+  },
+  "locked_test_manifest": "data/manifests/phase12_independent_eval_manifest.csv",
+  "primary_profile_evaluation": {
+    "profile": "balanced",
+    "event_level": {
+      "true_positives": 29,
+      "false_negatives": 9,
+      "false_positives": 9,
+      "event_precision": 0.7632,
+      "event_precision_95_ci": [
+        0.6079,
+        0.8701
+      ],
+      "event_recall": 0.7632,
+      "event_recall_95_ci": [
+        0.6079,
+        0.8701
+      ],
+      "event_f1": 0.7632,
+      "duplicate_alerts": 4,
+      "detection_delays_sec": {
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "count": 29
+      }
+    },
+    "window_level": {
+      "window_precision": 0.4247,
+      "window_recall": 0.7045,
+      "window_f1": 0.5299,
+      "roc_auc": 0.9489,
+      "pr_auc": 0.3595,
+      "confusion_matrix": [
+        [
+          662,
+          42
+        ],
+        [
+          13,
+          31
+        ]
+      ],
+      "total_windows": 748,
+      "positive_windows": 44,
+      "negative_windows": 704
+    },
+    "continuous_stream": {
+      "exposure_hours": 2.0,
+      "false_alerts_count": 299,
+      "false_alerts_per_hour": 149.5,
+      "poisson_95_ci": [
+        133.03,
+        167.44
+      ],
+      "latency_ms_median": 115.06,
+      "latency_ms_p95": 137.59,
+      "latency_ms_max": 354.21
+    },
+    "ambiguous_edge_cases": {
+      "total_ambiguous_evaluated": 5,
+      "dispatched_alerts_count": 0,
+      "trigger_rate": 0.0
+    },
+    "condition_breakdown": {
+      "digital_clipped_adc_saturation": {
+        "total": 8,
+        "tp": 7,
+        "fn": 1,
+        "fp": 2,
+        "tn": 0,
+        "label": 1
+      },
+      "pocket_occluded_fabric_attenuated": {
+        "total": 16,
+        "tp": 9,
+        "fn": 7,
+        "fp": 0,
+        "tn": 0,
+        "label": 1
+      },
+      "clean_direct_line_of_sight": {
+        "total": 8,
+        "tp": 7,
+        "fn": 1,
+        "fp": 0,
+        "tn": 0,
+        "label": 1
+      },
+      "clean_rapid_double_tap": {
+        "total": 4,
+        "tp": 4,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "label": 1
+      },
+      "distant_urban_sensor_reverberant": {
+        "total": 2,
+        "tp": 2,
+        "fn": 0,
+        "fp": 1,
+        "tn": 0,
+        "label": 1
+      },
+      "impulsive_range_impact": {
+        "total": 16,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 16,
+        "label": 0
+      },
+      "esc50_target_48_fireworks": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 5,
+        "tn": 3,
+        "label": 0
+      },
+      "esc50_target_19_thunderstorm": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 1,
+        "tn": 5,
+        "label": 0
+      },
+      "esc50_target_42_siren": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_43_car_horn": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_44_engine": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_45_train": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_39_glass_breaking": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_30_door_wood_knock": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_41_chainsaw": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "esc50_target_9_crow": {
+        "total": 6,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 6,
+        "label": 0
+      },
+      "ambiguous_transient_edge_case": {
+        "total": 5,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "label": -1
+      }
+    },
+    "crest_factor_audit": [
+      {
+        "recording_id": "p12_pos_001_phase12_gunshot_clipped_ar15_rapid_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 11.76,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.504
+      },
+      {
+        "recording_id": "p12_pos_002_phase12_gunshot_clipped_ar15_rapid_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 11.79,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 18.25,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 27.412
+      },
+      {
+        "recording_id": "p12_pos_004_phase12_gunshot_clipped_ar15_rapid_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 11.31,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.504
+      },
+      {
+        "recording_id": "p12_pos_006_phase12_gunshot_clipped_beretta_rapid_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 12.72,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_007_phase12_gunshot_clipped_beretta_rapid_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 14.15,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_008_phase12_gunshot_clipped_beretta_rapid_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 14.02,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_009_phase12_gunshot_clipped_beretta_rapid_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 13.58,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_011_phase12_gunshot_pocket_ar15_single_02",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 22.06,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.5
+      },
+      {
+        "recording_id": "p12_pos_012_phase12_gunshot_pocket_ar15_single_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 23.11,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_013_phase12_gunshot_pocket_ar15_single_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 18.8,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_014_phase12_gunshot_pocket_ar15_single_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 22.22,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_016_phase12_gunshot_pocket_ar15_rapid_02",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 12.16,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_pos_017_phase12_gunshot_pocket_ar15_rapid_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 9.45,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_018_phase12_gunshot_pocket_ar15_rapid_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 11.37,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_019_phase12_gunshot_pocket_ar15_rapid_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 11.52,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_021_phase12_gunshot_pocket_beretta_single_02",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 19.13,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.537
+      },
+      {
+        "recording_id": "p12_pos_022_phase12_gunshot_pocket_beretta_single_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 19.89,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.537
+      },
+      {
+        "recording_id": "p12_pos_023_phase12_gunshot_pocket_beretta_single_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 20.45,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.53
+      },
+      {
+        "recording_id": "p12_pos_024_phase12_gunshot_pocket_beretta_single_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 19.8,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_026_phase12_gunshot_pocket_beretta_rapid_02",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 16.8,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_027_phase12_gunshot_pocket_beretta_rapid_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 12.31,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.537
+      },
+      {
+        "recording_id": "p12_pos_028_phase12_gunshot_pocket_beretta_rapid_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 13.39,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_029_phase12_gunshot_pocket_beretta_rapid_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 13.75,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_031_phase12_gunshot_clean_ar15_single_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 16.88,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.557
+      },
+      {
+        "recording_id": "p12_pos_032_phase12_gunshot_clean_ar15_single_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 16.33,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.557
+      },
+      {
+        "recording_id": "p12_pos_033_phase12_gunshot_clean_ar15_single_07",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 15.72,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.557
+      },
+      {
+        "recording_id": "p12_pos_034_phase12_gunshot_clean_ar15_single_08",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 16.49,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.557
+      },
+      {
+        "recording_id": "p12_pos_036_phase12_gunshot_clean_beretta_single_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 19.34,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_037_phase12_gunshot_clean_beretta_single_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 19.01,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_038_phase12_gunshot_clean_beretta_single_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 20.17,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_039_phase12_gunshot_clean_beretta_single_07",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 19.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_041_phase12_gunshot_clean_ar15_double_04",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_rapid_double_tap",
+        "physical_crest_factor_db": 11.5,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_042_phase12_gunshot_clean_ar15_double_05",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_rapid_double_tap",
+        "physical_crest_factor_db": 10.19,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_043_phase12_gunshot_clean_ar15_double_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_rapid_double_tap",
+        "physical_crest_factor_db": 11.57,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_044_phase12_gunshot_clean_ar15_double_07",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_rapid_double_tap",
+        "physical_crest_factor_db": 11.77,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_046_phase12_gunshot_urban_shotspotter_d7_01",
+        "ground_truth_label": 1,
+        "acoustic_condition": "distant_urban_sensor_reverberant",
+        "physical_crest_factor_db": 24.55,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 9.983
+      },
+      {
+        "recording_id": "p12_pos_047_phase12_gunshot_urban_shotspotter_d7_02",
+        "ground_truth_label": 1,
+        "acoustic_condition": "distant_urban_sensor_reverberant",
+        "physical_crest_factor_db": 25.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 9.983
+      },
+      {
+        "recording_id": "p12_neg_049_phase12_negative_range_impulse_loud_noise_10",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 24.06,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_050_phase12_negative_range_impulse_loud_noise_11",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 13.68,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_051_phase12_negative_range_impulse_loud_noise_12",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 12.24,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_052_phase12_negative_range_impulse_loud_noise_13",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 23.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_053_phase12_negative_range_impulse_loud_noise_14",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 22.65,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_054_phase12_negative_range_impulse_loud_noise_15",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 15.78,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_055_phase12_negative_range_impulse_loud_noise_16",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 14.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_056_phase12_negative_range_impulse_loud_noise_17",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 16.19,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_057_phase12_negative_range_impulse_loud_noise_18",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 16.16,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_058_phase12_negative_range_impulse_loud_noise_19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 22.2,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_059_phase12_negative_range_impulse_loud_noise_20",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 15.12,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_060_phase12_negative_range_impulse_loud_noise_21",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 15.72,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_061_phase12_negative_range_impulse_loud_noise_22",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 15.73,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_062_phase12_negative_range_impulse_loud_noise_23",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 6.56,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": false,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_063_phase12_negative_range_impulse_loud_noise_24",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 12.67,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_064_phase12_negative_range_impulse_loud_noise_25",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 19.14,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_069_phase12_negative_esc50_fireworks_3-172881-A-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 28.76,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_070_phase12_negative_esc50_fireworks_3-172922-A-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 33.73,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_071_phase12_negative_esc50_fireworks_3-251617-A-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 26.28,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_072_phase12_negative_esc50_fireworks_4-119647-A-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 30.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_073_phase12_negative_esc50_fireworks_4-119647-B-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 28.63,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_074_phase12_negative_esc50_fireworks_4-119647-C-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 26.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_077_phase12_negative_esc50_thunderstorm_3-144891-B-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 17.71,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_078_phase12_negative_esc50_thunderstorm_4-125070-A-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 18.11,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_079_phase12_negative_esc50_thunderstorm_4-125071-A-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 17.45,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_080_phase12_negative_esc50_thunderstorm_4-125072-A-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 25.63,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_081_phase12_negative_esc50_thunderstorm_4-125072-B-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 15.31,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_082_phase12_negative_esc50_thunderstorm_4-156993-A-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 18.14,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_085_phase12_negative_esc50_siren_1-31482-A-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 12.5,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_086_phase12_negative_esc50_siren_1-31482-B-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 12.39,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_087_phase12_negative_esc50_siren_1-54084-A-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 11.78,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_088_phase12_negative_esc50_siren_1-76831-A-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 7.52,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": false,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_089_phase12_negative_esc50_siren_1-76831-B-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 7.5,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": false,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_090_phase12_negative_esc50_siren_1-76831-C-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 7.62,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": false,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_093_phase12_negative_esc50_car_horn_3-155234-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 12.71,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_094_phase12_negative_esc50_car_horn_3-161010-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 13.2,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_095_phase12_negative_esc50_car_horn_3-174840-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 16.91,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_096_phase12_negative_esc50_car_horn_3-243726-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 15.97,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_097_phase12_negative_esc50_car_horn_4-175845-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 13.98,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_098_phase12_negative_esc50_car_horn_4-175846-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 15.61,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_101_phase12_negative_esc50_engine_3-141240-B-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 16.08,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_102_phase12_negative_esc50_engine_3-146186-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 9.44,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_103_phase12_negative_esc50_engine_3-154758-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 13.75,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_104_phase12_negative_esc50_engine_3-259622-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 17.48,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_105_phase12_negative_esc50_engine_4-171652-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 15.08,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_106_phase12_negative_esc50_engine_4-186935-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 17.56,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_109_phase12_negative_esc50_train_3-141559-A-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 15.4,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_110_phase12_negative_esc50_train_3-157492-A-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 20.18,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_111_phase12_negative_esc50_train_3-159445-A-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 12.98,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_112_phase12_negative_esc50_train_3-159445-B-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 13.04,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_113_phase12_negative_esc50_train_4-165606-A-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 14.43,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_114_phase12_negative_esc50_train_4-165791-A-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 13.21,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_117_phase12_negative_esc50_glass_breaking_3-203377-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 31.6,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_118_phase12_negative_esc50_glass_breaking_3-216280-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 32.82,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_119_phase12_negative_esc50_glass_breaking_3-216281-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 30.22,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_120_phase12_negative_esc50_glass_breaking_3-216284-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 30.11,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_121_phase12_negative_esc50_glass_breaking_4-204115-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 27.96,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_122_phase12_negative_esc50_glass_breaking_4-204119-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 26.84,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_125_phase12_negative_esc50_door_wood_knock_3-170574-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 25.08,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_126_phase12_negative_esc50_door_wood_knock_3-180147-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 20.21,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_127_phase12_negative_esc50_door_wood_knock_3-182023-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 16.02,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_128_phase12_negative_esc50_door_wood_knock_3-182025-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 25.91,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_129_phase12_negative_esc50_door_wood_knock_4-182034-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 22.95,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_130_phase12_negative_esc50_door_wood_knock_4-182039-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 21.83,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_133_phase12_negative_esc50_chainsaw_3-165856-A-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 12.14,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_134_phase12_negative_esc50_chainsaw_4-149294-A-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 15.42,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_135_phase12_negative_esc50_chainsaw_4-149294-B-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 12.14,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_136_phase12_negative_esc50_chainsaw_4-157611-A-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 12.68,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_137_phase12_negative_esc50_chainsaw_4-157611-B-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 14.21,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_138_phase12_negative_esc50_chainsaw_4-165823-A-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 14.49,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_141_phase12_negative_esc50_crow_1-103298-A-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 17.99,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_142_phase12_negative_esc50_crow_1-39835-A-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 14.07,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_143_phase12_negative_esc50_crow_1-39835-B-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 15.5,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_144_phase12_negative_esc50_crow_1-56233-A-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 17.58,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_145_phase12_negative_esc50_crow_1-56234-A-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 17.58,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_146_phase12_negative_esc50_crow_1-75162-A-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 17.01,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_amb_001_phase12_ambig_01_distant_muffled_thump",
+        "ground_truth_label": -1,
+        "acoustic_condition": "ambiguous_transient_edge_case",
+        "physical_crest_factor_db": 19.39,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 3.0
+      },
+      {
+        "recording_id": "p12_amb_002_phase12_ambig_02_firecracker_diffuse_burst",
+        "ground_truth_label": -1,
+        "acoustic_condition": "ambiguous_transient_edge_case",
+        "physical_crest_factor_db": 27.83,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 3.0
+      },
+      {
+        "recording_id": "p12_amb_003_phase12_ambig_03_heavy_metal_drum_impact",
+        "ground_truth_label": -1,
+        "acoustic_condition": "ambiguous_transient_edge_case",
+        "physical_crest_factor_db": 22.95,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 3.0
+      },
+      {
+        "recording_id": "p12_amb_004_phase12_ambig_04_pneumatic_nailer_reverberant",
+        "ground_truth_label": -1,
+        "acoustic_condition": "ambiguous_transient_edge_case",
+        "physical_crest_factor_db": 32.02,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 3.0
+      },
+      {
+        "recording_id": "p12_amb_005_phase12_ambig_05_synthetic_transient_spike",
+        "ground_truth_label": -1,
+        "acoustic_condition": "ambiguous_transient_edge_case",
+        "physical_crest_factor_db": 30.55,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 3.0
+      }
+    ]
+  },
+  "supplementary_profile_evaluations": {
+    "high_precision": {
+      "profile": "high_precision",
+      "event_level": {
+        "true_positives": 23,
+        "false_negatives": 15,
+        "false_positives": 6,
+        "event_precision": 0.7931,
+        "event_precision_95_ci": [
+          0.6161,
+          0.9015
+        ],
+        "event_recall": 0.6053,
+        "event_recall_95_ci": [
+          0.4472,
+          0.744
+        ],
+        "event_f1": 0.6866,
+        "duplicate_alerts": 2,
+        "detection_delays_sec": {
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "count": 23
+        }
+      },
+      "window_level": {
+        "window_precision": 0.4167,
+        "window_recall": 0.5682,
+        "window_f1": 0.4808,
+        "roc_auc": 0.9489,
+        "pr_auc": 0.3595,
+        "confusion_matrix": [
+          [
+            669,
+            35
+          ],
+          [
+            19,
+            25
+          ]
+        ],
+        "total_windows": 748,
+        "positive_windows": 44,
+        "negative_windows": 704
+      },
+      "continuous_stream": {
+        "exposure_hours": 0.0,
+        "false_alerts_count": 0,
+        "false_alerts_per_hour": 0.0,
+        "poisson_95_ci": [
+          0.0,
+          0.0
+        ],
+        "latency_ms_median": 0.0,
+        "latency_ms_p95": 0.0,
+        "latency_ms_max": 0.0
+      },
+      "ambiguous_edge_cases": {
+        "total_ambiguous_evaluated": 5,
+        "dispatched_alerts_count": 0,
+        "trigger_rate": 0.0
+      },
+      "condition_breakdown": {
+        "digital_clipped_adc_saturation": {
+          "total": 8,
+          "tp": 5,
+          "fn": 3,
+          "fp": 2,
+          "tn": 0,
+          "label": 1
+        },
+        "pocket_occluded_fabric_attenuated": {
+          "total": 16,
+          "tp": 6,
+          "fn": 10,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "clean_direct_line_of_sight": {
+          "total": 8,
+          "tp": 6,
+          "fn": 2,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "clean_rapid_double_tap": {
+          "total": 4,
+          "tp": 4,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "distant_urban_sensor_reverberant": {
+          "total": 2,
+          "tp": 2,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "impulsive_range_impact": {
+          "total": 16,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 16,
+          "label": 0
+        },
+        "esc50_target_48_fireworks": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 3,
+          "tn": 4,
+          "label": 0
+        },
+        "esc50_target_19_thunderstorm": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 1,
+          "tn": 5,
+          "label": 0
+        },
+        "esc50_target_42_siren": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_43_car_horn": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_44_engine": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_45_train": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_39_glass_breaking": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_30_door_wood_knock": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_41_chainsaw": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_9_crow": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "ambiguous_transient_edge_case": {
+          "total": 5,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "label": -1
+        }
+      },
+      "crest_factor_audit": [
+        {
+          "recording_id": "p12_pos_001_phase12_gunshot_clipped_ar15_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 11.76,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.504
+        },
+        {
+          "recording_id": "p12_pos_002_phase12_gunshot_clipped_ar15_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 11.79,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 18.25,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 27.412
+        },
+        {
+          "recording_id": "p12_pos_004_phase12_gunshot_clipped_ar15_rapid_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 11.31,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.504
+        },
+        {
+          "recording_id": "p12_pos_006_phase12_gunshot_clipped_beretta_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 12.72,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_007_phase12_gunshot_clipped_beretta_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 14.15,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_008_phase12_gunshot_clipped_beretta_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 14.02,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_009_phase12_gunshot_clipped_beretta_rapid_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 13.58,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_011_phase12_gunshot_pocket_ar15_single_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 22.06,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.5
+        },
+        {
+          "recording_id": "p12_pos_012_phase12_gunshot_pocket_ar15_single_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 23.11,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_013_phase12_gunshot_pocket_ar15_single_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 18.8,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_014_phase12_gunshot_pocket_ar15_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 22.22,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_016_phase12_gunshot_pocket_ar15_rapid_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 12.16,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_pos_017_phase12_gunshot_pocket_ar15_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 9.45,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_018_phase12_gunshot_pocket_ar15_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 11.37,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_019_phase12_gunshot_pocket_ar15_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 11.52,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_021_phase12_gunshot_pocket_beretta_single_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 19.13,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.537
+        },
+        {
+          "recording_id": "p12_pos_022_phase12_gunshot_pocket_beretta_single_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 19.89,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.537
+        },
+        {
+          "recording_id": "p12_pos_023_phase12_gunshot_pocket_beretta_single_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 20.45,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.53
+        },
+        {
+          "recording_id": "p12_pos_024_phase12_gunshot_pocket_beretta_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 19.8,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_026_phase12_gunshot_pocket_beretta_rapid_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 16.8,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_027_phase12_gunshot_pocket_beretta_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 12.31,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.537
+        },
+        {
+          "recording_id": "p12_pos_028_phase12_gunshot_pocket_beretta_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 13.39,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_029_phase12_gunshot_pocket_beretta_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 13.75,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_031_phase12_gunshot_clean_ar15_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 16.88,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_032_phase12_gunshot_clean_ar15_single_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 16.33,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_033_phase12_gunshot_clean_ar15_single_07",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 15.72,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_034_phase12_gunshot_clean_ar15_single_08",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 16.49,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_036_phase12_gunshot_clean_beretta_single_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 19.34,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_037_phase12_gunshot_clean_beretta_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 19.01,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_038_phase12_gunshot_clean_beretta_single_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 20.17,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_039_phase12_gunshot_clean_beretta_single_07",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 19.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_041_phase12_gunshot_clean_ar15_double_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 11.5,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_042_phase12_gunshot_clean_ar15_double_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 10.19,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_043_phase12_gunshot_clean_ar15_double_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 11.57,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_044_phase12_gunshot_clean_ar15_double_07",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 11.77,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_046_phase12_gunshot_urban_shotspotter_d7_01",
+          "ground_truth_label": 1,
+          "acoustic_condition": "distant_urban_sensor_reverberant",
+          "physical_crest_factor_db": 24.55,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 9.983
+        },
+        {
+          "recording_id": "p12_pos_047_phase12_gunshot_urban_shotspotter_d7_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "distant_urban_sensor_reverberant",
+          "physical_crest_factor_db": 25.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 9.983
+        },
+        {
+          "recording_id": "p12_neg_049_phase12_negative_range_impulse_loud_noise_10",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 24.06,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_050_phase12_negative_range_impulse_loud_noise_11",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 13.68,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_051_phase12_negative_range_impulse_loud_noise_12",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 12.24,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_052_phase12_negative_range_impulse_loud_noise_13",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 23.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_053_phase12_negative_range_impulse_loud_noise_14",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 22.65,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_054_phase12_negative_range_impulse_loud_noise_15",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.78,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_055_phase12_negative_range_impulse_loud_noise_16",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 14.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_056_phase12_negative_range_impulse_loud_noise_17",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 16.19,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_057_phase12_negative_range_impulse_loud_noise_18",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 16.16,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_058_phase12_negative_range_impulse_loud_noise_19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 22.2,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_059_phase12_negative_range_impulse_loud_noise_20",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.12,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_060_phase12_negative_range_impulse_loud_noise_21",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.72,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_061_phase12_negative_range_impulse_loud_noise_22",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.73,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_062_phase12_negative_range_impulse_loud_noise_23",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 6.56,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_063_phase12_negative_range_impulse_loud_noise_24",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 12.67,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_064_phase12_negative_range_impulse_loud_noise_25",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 19.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_069_phase12_negative_esc50_fireworks_3-172881-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 28.76,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_070_phase12_negative_esc50_fireworks_3-172922-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 33.73,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_071_phase12_negative_esc50_fireworks_3-251617-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 26.28,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_072_phase12_negative_esc50_fireworks_4-119647-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 30.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_073_phase12_negative_esc50_fireworks_4-119647-B-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 28.63,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_074_phase12_negative_esc50_fireworks_4-119647-C-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 26.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_077_phase12_negative_esc50_thunderstorm_3-144891-B-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 17.71,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_078_phase12_negative_esc50_thunderstorm_4-125070-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 18.11,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_079_phase12_negative_esc50_thunderstorm_4-125071-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 17.45,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_080_phase12_negative_esc50_thunderstorm_4-125072-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 25.63,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_081_phase12_negative_esc50_thunderstorm_4-125072-B-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 15.31,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_082_phase12_negative_esc50_thunderstorm_4-156993-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 18.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_085_phase12_negative_esc50_siren_1-31482-A-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 12.5,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_086_phase12_negative_esc50_siren_1-31482-B-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 12.39,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_087_phase12_negative_esc50_siren_1-54084-A-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 11.78,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_088_phase12_negative_esc50_siren_1-76831-A-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 7.52,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_089_phase12_negative_esc50_siren_1-76831-B-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 7.5,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_090_phase12_negative_esc50_siren_1-76831-C-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 7.62,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_093_phase12_negative_esc50_car_horn_3-155234-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 12.71,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_094_phase12_negative_esc50_car_horn_3-161010-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 13.2,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_095_phase12_negative_esc50_car_horn_3-174840-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 16.91,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_096_phase12_negative_esc50_car_horn_3-243726-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 15.97,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_097_phase12_negative_esc50_car_horn_4-175845-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 13.98,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_098_phase12_negative_esc50_car_horn_4-175846-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 15.61,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_101_phase12_negative_esc50_engine_3-141240-B-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 16.08,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_102_phase12_negative_esc50_engine_3-146186-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 9.44,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_103_phase12_negative_esc50_engine_3-154758-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 13.75,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_104_phase12_negative_esc50_engine_3-259622-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 17.48,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_105_phase12_negative_esc50_engine_4-171652-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 15.08,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_106_phase12_negative_esc50_engine_4-186935-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 17.56,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_109_phase12_negative_esc50_train_3-141559-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 15.4,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_110_phase12_negative_esc50_train_3-157492-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 20.18,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_111_phase12_negative_esc50_train_3-159445-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 12.98,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_112_phase12_negative_esc50_train_3-159445-B-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 13.04,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_113_phase12_negative_esc50_train_4-165606-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 14.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_114_phase12_negative_esc50_train_4-165791-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 13.21,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_117_phase12_negative_esc50_glass_breaking_3-203377-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 31.6,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_118_phase12_negative_esc50_glass_breaking_3-216280-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 32.82,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_119_phase12_negative_esc50_glass_breaking_3-216281-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 30.22,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_120_phase12_negative_esc50_glass_breaking_3-216284-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 30.11,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_121_phase12_negative_esc50_glass_breaking_4-204115-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 27.96,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_122_phase12_negative_esc50_glass_breaking_4-204119-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 26.84,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_125_phase12_negative_esc50_door_wood_knock_3-170574-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 25.08,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_126_phase12_negative_esc50_door_wood_knock_3-180147-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 20.21,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_127_phase12_negative_esc50_door_wood_knock_3-182023-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 16.02,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_128_phase12_negative_esc50_door_wood_knock_3-182025-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 25.91,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_129_phase12_negative_esc50_door_wood_knock_4-182034-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 22.95,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_130_phase12_negative_esc50_door_wood_knock_4-182039-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 21.83,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_133_phase12_negative_esc50_chainsaw_3-165856-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 12.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_134_phase12_negative_esc50_chainsaw_4-149294-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 15.42,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_135_phase12_negative_esc50_chainsaw_4-149294-B-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 12.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_136_phase12_negative_esc50_chainsaw_4-157611-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 12.68,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_137_phase12_negative_esc50_chainsaw_4-157611-B-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 14.21,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_138_phase12_negative_esc50_chainsaw_4-165823-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 14.49,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_141_phase12_negative_esc50_crow_1-103298-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.99,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_142_phase12_negative_esc50_crow_1-39835-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 14.07,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_143_phase12_negative_esc50_crow_1-39835-B-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 15.5,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_144_phase12_negative_esc50_crow_1-56233-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.58,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_145_phase12_negative_esc50_crow_1-56234-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.58,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_146_phase12_negative_esc50_crow_1-75162-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.01,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_amb_001_phase12_ambig_01_distant_muffled_thump",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 19.39,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_002_phase12_ambig_02_firecracker_diffuse_burst",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 27.83,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_003_phase12_ambig_03_heavy_metal_drum_impact",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 22.95,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_004_phase12_ambig_04_pneumatic_nailer_reverberant",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 32.02,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_005_phase12_ambig_05_synthetic_transient_spike",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 30.55,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        }
+      ]
+    },
+    "high_sensitivity": {
+      "profile": "high_sensitivity",
+      "event_level": {
+        "true_positives": 35,
+        "false_negatives": 3,
+        "false_positives": 14,
+        "event_precision": 0.7143,
+        "event_precision_95_ci": [
+          0.5759,
+          0.8215
+        ],
+        "event_recall": 0.9211,
+        "event_recall_95_ci": [
+          0.792,
+          0.9728
+        ],
+        "event_f1": 0.8046,
+        "duplicate_alerts": 3,
+        "detection_delays_sec": {
+          "median": 0.0,
+          "mean": 0.0,
+          "p95": 0.0,
+          "count": 35
+        }
+      },
+      "window_level": {
+        "window_precision": 0.4432,
+        "window_recall": 0.8864,
+        "window_f1": 0.5909,
+        "roc_auc": 0.9489,
+        "pr_auc": 0.3595,
+        "confusion_matrix": [
+          [
+            655,
+            49
+          ],
+          [
+            5,
+            39
+          ]
+        ],
+        "total_windows": 748,
+        "positive_windows": 44,
+        "negative_windows": 704
+      },
+      "continuous_stream": {
+        "exposure_hours": 0.0,
+        "false_alerts_count": 0,
+        "false_alerts_per_hour": 0.0,
+        "poisson_95_ci": [
+          0.0,
+          0.0
+        ],
+        "latency_ms_median": 0.0,
+        "latency_ms_p95": 0.0,
+        "latency_ms_max": 0.0
+      },
+      "ambiguous_edge_cases": {
+        "total_ambiguous_evaluated": 5,
+        "dispatched_alerts_count": 0,
+        "trigger_rate": 0.0
+      },
+      "condition_breakdown": {
+        "digital_clipped_adc_saturation": {
+          "total": 8,
+          "tp": 8,
+          "fn": 0,
+          "fp": 2,
+          "tn": 0,
+          "label": 1
+        },
+        "pocket_occluded_fabric_attenuated": {
+          "total": 16,
+          "tp": 13,
+          "fn": 3,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "clean_direct_line_of_sight": {
+          "total": 8,
+          "tp": 8,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "clean_rapid_double_tap": {
+          "total": 4,
+          "tp": 4,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "label": 1
+        },
+        "distant_urban_sensor_reverberant": {
+          "total": 2,
+          "tp": 2,
+          "fn": 0,
+          "fp": 1,
+          "tn": 0,
+          "label": 1
+        },
+        "impulsive_range_impact": {
+          "total": 16,
+          "tp": 0,
+          "fn": 0,
+          "fp": 2,
+          "tn": 14,
+          "label": 0
+        },
+        "esc50_target_48_fireworks": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 5,
+          "tn": 3,
+          "label": 0
+        },
+        "esc50_target_19_thunderstorm": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 4,
+          "tn": 3,
+          "label": 0
+        },
+        "esc50_target_42_siren": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_43_car_horn": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_44_engine": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_45_train": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_39_glass_breaking": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_30_door_wood_knock": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_41_chainsaw": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "esc50_target_9_crow": {
+          "total": 6,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 6,
+          "label": 0
+        },
+        "ambiguous_transient_edge_case": {
+          "total": 5,
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "label": -1
+        }
+      },
+      "crest_factor_audit": [
+        {
+          "recording_id": "p12_pos_001_phase12_gunshot_clipped_ar15_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 11.76,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.504
+        },
+        {
+          "recording_id": "p12_pos_002_phase12_gunshot_clipped_ar15_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 11.79,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 18.25,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 27.412
+        },
+        {
+          "recording_id": "p12_pos_004_phase12_gunshot_clipped_ar15_rapid_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 11.31,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.504
+        },
+        {
+          "recording_id": "p12_pos_006_phase12_gunshot_clipped_beretta_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 12.72,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_007_phase12_gunshot_clipped_beretta_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 14.15,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_008_phase12_gunshot_clipped_beretta_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 14.02,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_009_phase12_gunshot_clipped_beretta_rapid_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "digital_clipped_adc_saturation",
+          "physical_crest_factor_db": 13.58,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_011_phase12_gunshot_pocket_ar15_single_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 22.06,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.5
+        },
+        {
+          "recording_id": "p12_pos_012_phase12_gunshot_pocket_ar15_single_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 23.11,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_013_phase12_gunshot_pocket_ar15_single_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 18.8,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_014_phase12_gunshot_pocket_ar15_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 22.22,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_016_phase12_gunshot_pocket_ar15_rapid_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 12.16,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_pos_017_phase12_gunshot_pocket_ar15_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 9.45,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_018_phase12_gunshot_pocket_ar15_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 11.37,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_019_phase12_gunshot_pocket_ar15_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 11.52,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_021_phase12_gunshot_pocket_beretta_single_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 19.13,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.537
+        },
+        {
+          "recording_id": "p12_pos_022_phase12_gunshot_pocket_beretta_single_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 19.89,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.537
+        },
+        {
+          "recording_id": "p12_pos_023_phase12_gunshot_pocket_beretta_single_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 20.45,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.53
+        },
+        {
+          "recording_id": "p12_pos_024_phase12_gunshot_pocket_beretta_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 19.8,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_026_phase12_gunshot_pocket_beretta_rapid_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 16.8,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_027_phase12_gunshot_pocket_beretta_rapid_03",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 12.31,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.537
+        },
+        {
+          "recording_id": "p12_pos_028_phase12_gunshot_pocket_beretta_rapid_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 13.39,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_029_phase12_gunshot_pocket_beretta_rapid_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "pocket_occluded_fabric_attenuated",
+          "physical_crest_factor_db": 13.75,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.527
+        },
+        {
+          "recording_id": "p12_pos_031_phase12_gunshot_clean_ar15_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 16.88,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_032_phase12_gunshot_clean_ar15_single_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 16.33,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_033_phase12_gunshot_clean_ar15_single_07",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 15.72,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_034_phase12_gunshot_clean_ar15_single_08",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 16.49,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.557
+        },
+        {
+          "recording_id": "p12_pos_036_phase12_gunshot_clean_beretta_single_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 19.34,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_037_phase12_gunshot_clean_beretta_single_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 19.01,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_038_phase12_gunshot_clean_beretta_single_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 20.17,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_039_phase12_gunshot_clean_beretta_single_07",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_direct_line_of_sight",
+          "physical_crest_factor_db": 19.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.52
+        },
+        {
+          "recording_id": "p12_pos_041_phase12_gunshot_clean_ar15_double_04",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 11.5,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_042_phase12_gunshot_clean_ar15_double_05",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 10.19,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_043_phase12_gunshot_clean_ar15_double_06",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 11.57,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_044_phase12_gunshot_clean_ar15_double_07",
+          "ground_truth_label": 1,
+          "acoustic_condition": "clean_rapid_double_tap",
+          "physical_crest_factor_db": 11.77,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.507
+        },
+        {
+          "recording_id": "p12_pos_046_phase12_gunshot_urban_shotspotter_d7_01",
+          "ground_truth_label": 1,
+          "acoustic_condition": "distant_urban_sensor_reverberant",
+          "physical_crest_factor_db": 24.55,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 9.983
+        },
+        {
+          "recording_id": "p12_pos_047_phase12_gunshot_urban_shotspotter_d7_02",
+          "ground_truth_label": 1,
+          "acoustic_condition": "distant_urban_sensor_reverberant",
+          "physical_crest_factor_db": 25.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 9.983
+        },
+        {
+          "recording_id": "p12_neg_049_phase12_negative_range_impulse_loud_noise_10",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 24.06,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_050_phase12_negative_range_impulse_loud_noise_11",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 13.68,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_051_phase12_negative_range_impulse_loud_noise_12",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 12.24,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_052_phase12_negative_range_impulse_loud_noise_13",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 23.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_053_phase12_negative_range_impulse_loud_noise_14",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 22.65,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_054_phase12_negative_range_impulse_loud_noise_15",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.78,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_055_phase12_negative_range_impulse_loud_noise_16",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 14.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_056_phase12_negative_range_impulse_loud_noise_17",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 16.19,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_057_phase12_negative_range_impulse_loud_noise_18",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 16.16,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_058_phase12_negative_range_impulse_loud_noise_19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 22.2,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_059_phase12_negative_range_impulse_loud_noise_20",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.12,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_060_phase12_negative_range_impulse_loud_noise_21",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.72,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_061_phase12_negative_range_impulse_loud_noise_22",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 15.73,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_062_phase12_negative_range_impulse_loud_noise_23",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 6.56,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_063_phase12_negative_range_impulse_loud_noise_24",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 12.67,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_064_phase12_negative_range_impulse_loud_noise_25",
+          "ground_truth_label": 0,
+          "acoustic_condition": "impulsive_range_impact",
+          "physical_crest_factor_db": 19.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 0.503
+        },
+        {
+          "recording_id": "p12_neg_069_phase12_negative_esc50_fireworks_3-172881-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 28.76,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_070_phase12_negative_esc50_fireworks_3-172922-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 33.73,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_071_phase12_negative_esc50_fireworks_3-251617-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 26.28,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_072_phase12_negative_esc50_fireworks_4-119647-A-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 30.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_073_phase12_negative_esc50_fireworks_4-119647-B-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 28.63,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_074_phase12_negative_esc50_fireworks_4-119647-C-48",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_48_fireworks",
+          "physical_crest_factor_db": 26.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_077_phase12_negative_esc50_thunderstorm_3-144891-B-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 17.71,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_078_phase12_negative_esc50_thunderstorm_4-125070-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 18.11,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_079_phase12_negative_esc50_thunderstorm_4-125071-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 17.45,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_080_phase12_negative_esc50_thunderstorm_4-125072-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 25.63,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_081_phase12_negative_esc50_thunderstorm_4-125072-B-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 15.31,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_082_phase12_negative_esc50_thunderstorm_4-156993-A-19",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_19_thunderstorm",
+          "physical_crest_factor_db": 18.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_085_phase12_negative_esc50_siren_1-31482-A-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 12.5,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_086_phase12_negative_esc50_siren_1-31482-B-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 12.39,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_087_phase12_negative_esc50_siren_1-54084-A-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 11.78,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_088_phase12_negative_esc50_siren_1-76831-A-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 7.52,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_089_phase12_negative_esc50_siren_1-76831-B-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 7.5,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_090_phase12_negative_esc50_siren_1-76831-C-42",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_42_siren",
+          "physical_crest_factor_db": 7.62,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": false,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_093_phase12_negative_esc50_car_horn_3-155234-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 12.71,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_094_phase12_negative_esc50_car_horn_3-161010-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 13.2,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_095_phase12_negative_esc50_car_horn_3-174840-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 16.91,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_096_phase12_negative_esc50_car_horn_3-243726-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 15.97,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_097_phase12_negative_esc50_car_horn_4-175845-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 13.98,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_098_phase12_negative_esc50_car_horn_4-175846-A-43",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_43_car_horn",
+          "physical_crest_factor_db": 15.61,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_101_phase12_negative_esc50_engine_3-141240-B-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 16.08,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_102_phase12_negative_esc50_engine_3-146186-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 9.44,
+          "passes_9_5db_threshold": false,
+          "passes_10_0db_threshold": false,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_103_phase12_negative_esc50_engine_3-154758-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 13.75,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_104_phase12_negative_esc50_engine_3-259622-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 17.48,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_105_phase12_negative_esc50_engine_4-171652-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 15.08,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_106_phase12_negative_esc50_engine_4-186935-A-44",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_44_engine",
+          "physical_crest_factor_db": 17.56,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_109_phase12_negative_esc50_train_3-141559-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 15.4,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_110_phase12_negative_esc50_train_3-157492-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 20.18,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_111_phase12_negative_esc50_train_3-159445-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 12.98,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_112_phase12_negative_esc50_train_3-159445-B-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 13.04,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_113_phase12_negative_esc50_train_4-165606-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 14.43,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_114_phase12_negative_esc50_train_4-165791-A-45",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_45_train",
+          "physical_crest_factor_db": 13.21,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_117_phase12_negative_esc50_glass_breaking_3-203377-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 31.6,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_118_phase12_negative_esc50_glass_breaking_3-216280-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 32.82,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_119_phase12_negative_esc50_glass_breaking_3-216281-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 30.22,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_120_phase12_negative_esc50_glass_breaking_3-216284-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 30.11,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_121_phase12_negative_esc50_glass_breaking_4-204115-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 27.96,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_122_phase12_negative_esc50_glass_breaking_4-204119-A-39",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_39_glass_breaking",
+          "physical_crest_factor_db": 26.84,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_125_phase12_negative_esc50_door_wood_knock_3-170574-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 25.08,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_126_phase12_negative_esc50_door_wood_knock_3-180147-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 20.21,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_127_phase12_negative_esc50_door_wood_knock_3-182023-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 16.02,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_128_phase12_negative_esc50_door_wood_knock_3-182025-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 25.91,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_129_phase12_negative_esc50_door_wood_knock_4-182034-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 22.95,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_130_phase12_negative_esc50_door_wood_knock_4-182039-A-30",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_30_door_wood_knock",
+          "physical_crest_factor_db": 21.83,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_133_phase12_negative_esc50_chainsaw_3-165856-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 12.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_134_phase12_negative_esc50_chainsaw_4-149294-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 15.42,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_135_phase12_negative_esc50_chainsaw_4-149294-B-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 12.14,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_136_phase12_negative_esc50_chainsaw_4-157611-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 12.68,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_137_phase12_negative_esc50_chainsaw_4-157611-B-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 14.21,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_138_phase12_negative_esc50_chainsaw_4-165823-A-41",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_41_chainsaw",
+          "physical_crest_factor_db": 14.49,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_141_phase12_negative_esc50_crow_1-103298-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.99,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_142_phase12_negative_esc50_crow_1-39835-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 14.07,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_143_phase12_negative_esc50_crow_1-39835-B-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 15.5,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_144_phase12_negative_esc50_crow_1-56233-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.58,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_145_phase12_negative_esc50_crow_1-56234-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.58,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_neg_146_phase12_negative_esc50_crow_1-75162-A-9",
+          "ground_truth_label": 0,
+          "acoustic_condition": "esc50_target_9_crow",
+          "physical_crest_factor_db": 17.01,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 5.0
+        },
+        {
+          "recording_id": "p12_amb_001_phase12_ambig_01_distant_muffled_thump",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 19.39,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_002_phase12_ambig_02_firecracker_diffuse_burst",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 27.83,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_003_phase12_ambig_03_heavy_metal_drum_impact",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 22.95,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_004_phase12_ambig_04_pneumatic_nailer_reverberant",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 32.02,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        },
+        {
+          "recording_id": "p12_amb_005_phase12_ambig_05_synthetic_transient_spike",
+          "ground_truth_label": -1,
+          "acoustic_condition": "ambiguous_transient_edge_case",
+          "physical_crest_factor_db": 30.55,
+          "passes_9_5db_threshold": true,
+          "passes_10_0db_threshold": true,
+          "passes_9_0db_threshold": true,
+          "duration_seconds": 3.0
+        }
+      ]
+    }
+  },
+  "reserved_validation_evaluation": {
+    "profile": "balanced",
+    "event_level": {
+      "true_positives": 6,
+      "false_negatives": 4,
+      "false_positives": 2,
+      "event_precision": 0.75,
+      "event_precision_95_ci": [
+        0.4093,
+        0.9285
+      ],
+      "event_recall": 0.6,
+      "event_recall_95_ci": [
+        0.3127,
+        0.8318
+      ],
+      "event_f1": 0.6667,
+      "duplicate_alerts": 0,
+      "detection_delays_sec": {
+        "median": 0.0,
+        "mean": 0.0,
+        "p95": 0.0,
+        "count": 6
+      }
+    },
+    "window_level": {
+      "window_precision": 0.28,
+      "window_recall": 0.5,
+      "window_f1": 0.359,
+      "roc_auc": 0.9128,
+      "pr_auc": 0.3525,
+      "confusion_matrix": [
+        [
+          254,
+          18
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "total_windows": 286,
+      "positive_windows": 14,
+      "negative_windows": 272
+    },
+    "continuous_stream": {
+      "exposure_hours": 0.0,
+      "false_alerts_count": 0,
+      "false_alerts_per_hour": 0.0,
+      "poisson_95_ci": [
+        0.0,
+        0.0
+      ],
+      "latency_ms_median": 0.0,
+      "latency_ms_p95": 0.0,
+      "latency_ms_max": 0.0
+    },
+    "ambiguous_edge_cases": {
+      "total_ambiguous_evaluated": 0,
+      "dispatched_alerts_count": 0,
+      "trigger_rate": 0.0
+    },
+    "condition_breakdown": {
+      "digital_clipped_adc_saturation": {
+        "total": 2,
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "label": 1
+      },
+      "pocket_occluded_fabric_attenuated": {
+        "total": 4,
+        "tp": 1,
+        "fn": 3,
+        "fp": 1,
+        "tn": 0,
+        "label": 1
+      },
+      "clean_direct_line_of_sight": {
+        "total": 2,
+        "tp": 2,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "label": 1
+      },
+      "clean_rapid_double_tap": {
+        "total": 1,
+        "tp": 1,
+        "fn": 0,
+        "fp": 0,
+        "tn": 0,
+        "label": 1
+      },
+      "distant_urban_sensor_reverberant": {
+        "total": 1,
+        "tp": 0,
+        "fn": 1,
+        "fp": 1,
+        "tn": 0,
+        "label": 1
+      },
+      "impulsive_range_impact": {
+        "total": 4,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 4,
+        "label": 0
+      },
+      "esc50_target_48_fireworks": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_19_thunderstorm": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_42_siren": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_43_car_horn": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_44_engine": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_45_train": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_39_glass_breaking": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_30_door_wood_knock": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_41_chainsaw": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      },
+      "esc50_target_9_crow": {
+        "total": 2,
+        "tp": 0,
+        "fn": 0,
+        "fp": 0,
+        "tn": 2,
+        "label": 0
+      }
+    },
+    "crest_factor_audit": [
+      {
+        "recording_id": "p12_pos_005_phase12_gunshot_clipped_ar15_rapid_07",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 11.49,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.504
+      },
+      {
+        "recording_id": "p12_pos_010_phase12_gunshot_clipped_beretta_rapid_07",
+        "ground_truth_label": 1,
+        "acoustic_condition": "digital_clipped_adc_saturation",
+        "physical_crest_factor_db": 13.47,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.52
+      },
+      {
+        "recording_id": "p12_pos_015_phase12_gunshot_pocket_ar15_single_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 22.93,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_020_phase12_gunshot_pocket_ar15_rapid_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 9.49,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_025_phase12_gunshot_pocket_beretta_single_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 19.12,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06",
+        "ground_truth_label": 1,
+        "acoustic_condition": "pocket_occluded_fabric_attenuated",
+        "physical_crest_factor_db": 22.07,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 26.239
+      },
+      {
+        "recording_id": "p12_pos_035_phase12_gunshot_clean_ar15_single_09",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 15.21,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.557
+      },
+      {
+        "recording_id": "p12_pos_040_phase12_gunshot_clean_beretta_single_08",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_direct_line_of_sight",
+        "physical_crest_factor_db": 18.6,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.527
+      },
+      {
+        "recording_id": "p12_pos_045_phase12_gunshot_clean_ar15_double_08",
+        "ground_truth_label": 1,
+        "acoustic_condition": "clean_rapid_double_tap",
+        "physical_crest_factor_db": 11.91,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.507
+      },
+      {
+        "recording_id": "p12_pos_048_phase12_gunshot_urban_shotspotter_d7_03",
+        "ground_truth_label": 1,
+        "acoustic_condition": "distant_urban_sensor_reverberant",
+        "physical_crest_factor_db": 23.07,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 9.983
+      },
+      {
+        "recording_id": "p12_neg_065_phase12_negative_range_impulse_loud_noise_26",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 15.45,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_066_phase12_negative_range_impulse_loud_noise_27",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 17.71,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_067_phase12_negative_range_impulse_loud_noise_28",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 16.52,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_068_phase12_negative_range_impulse_loud_noise_29",
+        "ground_truth_label": 0,
+        "acoustic_condition": "impulsive_range_impact",
+        "physical_crest_factor_db": 24.24,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 0.503
+      },
+      {
+        "recording_id": "p12_neg_075_phase12_negative_esc50_fireworks_4-119647-D-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 27.95,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_076_phase12_negative_esc50_fireworks_4-119648-A-48",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_48_fireworks",
+        "physical_crest_factor_db": 24.52,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_083_phase12_negative_esc50_thunderstorm_4-161519-A-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 18.96,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_084_phase12_negative_esc50_thunderstorm_4-165813-A-19",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_19_thunderstorm",
+        "physical_crest_factor_db": 15.3,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_091_phase12_negative_esc50_siren_1-76831-D-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 6.98,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": false,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_092_phase12_negative_esc50_siren_1-76831-E-42",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_42_siren",
+        "physical_crest_factor_db": 7.37,
+        "passes_9_5db_threshold": false,
+        "passes_10_0db_threshold": false,
+        "passes_9_0db_threshold": false,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_099_phase12_negative_esc50_car_horn_4-175855-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 20.06,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_100_phase12_negative_esc50_car_horn_4-175856-A-43",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_43_car_horn",
+        "physical_crest_factor_db": 21.1,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_107_phase12_negative_esc50_engine_4-186936-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 12.41,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_108_phase12_negative_esc50_engine_4-186938-A-44",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_44_engine",
+        "physical_crest_factor_db": 16.59,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_115_phase12_negative_esc50_train_4-165791-B-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 16.98,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_116_phase12_negative_esc50_train_4-165845-A-45",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_45_train",
+        "physical_crest_factor_db": 14.13,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_123_phase12_negative_esc50_glass_breaking_4-204121-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 27.38,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_124_phase12_negative_esc50_glass_breaking_4-204123-A-39",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_39_glass_breaking",
+        "physical_crest_factor_db": 27.35,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_131_phase12_negative_esc50_door_wood_knock_4-182041-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 22.28,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_132_phase12_negative_esc50_door_wood_knock_4-186518-A-30",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_30_door_wood_knock",
+        "physical_crest_factor_db": 22.89,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_139_phase12_negative_esc50_chainsaw_4-165823-B-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 17.77,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_140_phase12_negative_esc50_chainsaw_4-169127-A-41",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_41_chainsaw",
+        "physical_crest_factor_db": 20.39,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_147_phase12_negative_esc50_crow_1-96950-A-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 19.69,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      },
+      {
+        "recording_id": "p12_neg_148_phase12_negative_esc50_crow_1-96950-B-9",
+        "ground_truth_label": 0,
+        "acoustic_condition": "esc50_target_9_crow",
+        "physical_crest_factor_db": 18.57,
+        "passes_9_5db_threshold": true,
+        "passes_10_0db_threshold": true,
+        "passes_9_0db_threshold": true,
+        "duration_seconds": 5.0
+      }
+    ]
+  },
+  "stage_7_crest_factor_limitation_audit": {
+    "min_crest_threshold_configured_db": 9.5,
+    "summary_by_acoustic_condition": {
+      "ambiguous_transient_edge_case": {
+        "total_files": 5,
+        "pass_9_5db_count": 5,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 26.55,
+        "min_crest_db": 19.39,
+        "max_crest_db": 32.02
+      },
+      "clean_direct_line_of_sight": {
+        "total_files": 8,
+        "pass_9_5db_count": 8,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 17.92,
+        "min_crest_db": 15.72,
+        "max_crest_db": 20.17
+      },
+      "clean_rapid_double_tap": {
+        "total_files": 4,
+        "pass_9_5db_count": 4,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 11.26,
+        "min_crest_db": 10.19,
+        "max_crest_db": 11.77
+      },
+      "digital_clipped_adc_saturation": {
+        "total_files": 8,
+        "pass_9_5db_count": 8,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 13.45,
+        "min_crest_db": 11.31,
+        "max_crest_db": 18.25
+      },
+      "distant_urban_sensor_reverberant": {
+        "total_files": 2,
+        "pass_9_5db_count": 2,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 24.99,
+        "min_crest_db": 24.55,
+        "max_crest_db": 25.43
+      },
+      "esc50_target_19_thunderstorm": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 18.72,
+        "min_crest_db": 15.31,
+        "max_crest_db": 25.63
+      },
+      "esc50_target_30_door_wood_knock": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 22.0,
+        "min_crest_db": 16.02,
+        "max_crest_db": 25.91
+      },
+      "esc50_target_39_glass_breaking": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 29.93,
+        "min_crest_db": 26.84,
+        "max_crest_db": 32.82
+      },
+      "esc50_target_41_chainsaw": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 13.51,
+        "min_crest_db": 12.14,
+        "max_crest_db": 15.42
+      },
+      "esc50_target_42_siren": {
+        "total_files": 6,
+        "pass_9_5db_count": 3,
+        "pass_rate_pct": 50.0,
+        "mean_crest_db": 9.88,
+        "min_crest_db": 7.5,
+        "max_crest_db": 12.5
+      },
+      "esc50_target_43_car_horn": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 14.73,
+        "min_crest_db": 12.71,
+        "max_crest_db": 16.91
+      },
+      "esc50_target_44_engine": {
+        "total_files": 6,
+        "pass_9_5db_count": 5,
+        "pass_rate_pct": 83.3,
+        "mean_crest_db": 14.9,
+        "min_crest_db": 9.44,
+        "max_crest_db": 17.56
+      },
+      "esc50_target_45_train": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 14.87,
+        "min_crest_db": 12.98,
+        "max_crest_db": 20.18
+      },
+      "esc50_target_48_fireworks": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 29.04,
+        "min_crest_db": 26.28,
+        "max_crest_db": 33.73
+      },
+      "esc50_target_9_crow": {
+        "total_files": 6,
+        "pass_9_5db_count": 6,
+        "pass_rate_pct": 100.0,
+        "mean_crest_db": 16.62,
+        "min_crest_db": 14.07,
+        "max_crest_db": 17.99
+      },
+      "impulsive_range_impact": {
+        "total_files": 16,
+        "pass_9_5db_count": 15,
+        "pass_rate_pct": 93.8,
+        "mean_crest_db": 16.61,
+        "min_crest_db": 6.56,
+        "max_crest_db": 24.06
+      },
+      "pocket_occluded_fabric_attenuated": {
+        "total_files": 16,
+        "pass_9_5db_count": 15,
+        "pass_rate_pct": 93.8,
+        "mean_crest_db": 16.64,
+        "min_crest_db": 9.45,
+        "max_crest_db": 23.11
+      }
+    },
+    "key_acoustic_vulnerability_findings": [
+      "Pocket-occluded rapid fire shots exhibit crest factor as low as 9.45 dB, causing the single-window short clip exception to block them when unconfirmed.",
+      "Digital-clipped ballistic recordings show moderate crest factor (11.5 - 14.1 dB) despite ADC saturation because the sudden onset transient still creates high initial peak.",
+      "Impulsive range non-gunshots (hammer drops, metal clanks) routinely exceed the 9.5 dB crest threshold (mean >15 dB), proving crest factor alone is insufficient to reject mechanical mimics.",
+      "Real urban sensor gunshots show wide crest variations (23 - 25 dB) when recorded close to sensors, but distant diffuse reflections attenuate peak amplitude."
+    ]
+  }
+}

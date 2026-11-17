@@ -1,0 +1,166 @@
+{
+  "phase": "PHASE_41",
+  "audit_name": "Independent Evidence Reconciliation and Statistical Robustness Audit",
+  "mandatory_safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "timestamp_iso": "2026-11-16T08:44:55Z",
+  "governance_disposition": {
+    "model_phase14.py": "DEFAULT_RESEARCH_BASELINE",
+    "model_phase17.py": "SELECTABLE_EXPERIMENTAL_PROFILE_QUARANTINED_DEFECT",
+    "experiments/phase31/model_phase17_state_reset_candidate.py": "QUARANTINED_DIAGNOSTIC_REFERENCE",
+    "experiments/phase36/model_phase36.py": "EXPERIMENTAL_RESEARCH_BRANCH_V1_NOT_PROMOTED"
+  },
+  "release_archive": {
+    "filename": "gunshot_detection_phase41_audit.zip",
+    "byte_size": 147407,
+    "sha256": "f14f50932db228735185a5af70cd60d10afb598c1708547b56c6833b92e6ed8f",
+    "internal_file_count": 29,
+    "crc_status": "PASS"
+  },
+  "artifacts": {
+    "experiments/phase41/phase41_protected_file_hashes.json": {
+      "relative_path": "experiments/phase41/phase41_protected_file_hashes.json",
+      "byte_size": 2223,
+      "sha256": "801687b22abad8c1e82a63df0fa49c1963a3122c0809dd9ea7b7852674617b4d"
+    },
+    "experiments/phase41/phase41_recording_inventory.csv": {
+      "relative_path": "experiments/phase41/phase41_recording_inventory.csv",
+      "byte_size": 143581,
+      "sha256": "24ff4aae77364fb1341fbdfd228931d8eeeffa793a01c6b2c69810e41170ee5b"
+    },
+    "experiments/phase41/phase41_inventory_reconciliation.md": {
+      "relative_path": "experiments/phase41/phase41_inventory_reconciliation.md",
+      "byte_size": 6523,
+      "sha256": "04def9762bae83af1d72018c51da3f301fdad1a63a5d33a3b6d153048d40e416"
+    },
+    "experiments/phase41/phase41_hash_reconciliation.csv": {
+      "relative_path": "experiments/phase41/phase41_hash_reconciliation.csv",
+      "byte_size": 8311,
+      "sha256": "ccdaf05f775cd125cfcfc836fb2b53a675e6fcceb93fa78667cf23b83a557327"
+    },
+    "experiments/phase41/phase41_hash_provenance_report.md": {
+      "relative_path": "experiments/phase41/phase41_hash_provenance_report.md",
+      "byte_size": 7835,
+      "sha256": "e34fc7df93eaac059e63f64a7a50f9e39237c1b689da245f73d56ac5d7c0c0a4"
+    },
+    "experiments/phase41/phase41_source_lineage.csv": {
+      "relative_path": "experiments/phase41/phase41_source_lineage.csv",
+      "byte_size": 1330,
+      "sha256": "8bb13a12cad156d41145807a0a64e050285c75375f73417cf144e1600523e1ae"
+    },
+    "experiments/phase41/phase41_similarity_results.csv": {
+      "relative_path": "experiments/phase41/phase41_similarity_results.csv",
+      "byte_size": 248998,
+      "sha256": "a099917e60cb1c521fe9acb1a2d42c7a1392c9122eab1bcdb65861d548cd089b"
+    },
+    "experiments/phase41/phase41_similarity_methodology.md": {
+      "relative_path": "experiments/phase41/phase41_similarity_methodology.md",
+      "byte_size": 6711,
+      "sha256": "03fbeed3b8eb4561637461711bcc70d9751b61638f440b2306327c73e35d9eb7"
+    },
+    "experiments/phase41/phase41_fireworks_reconstruction.csv": {
+      "relative_path": "experiments/phase41/phase41_fireworks_reconstruction.csv",
+      "byte_size": 17490,
+      "sha256": "f72280889b1e8c68fcd74d2eb4f75c8238ac725837669a1ca77ad069ebfcd029"
+    },
+    "experiments/phase41/phase41_crest_factor_mechanism_audit.csv": {
+      "relative_path": "experiments/phase41/phase41_crest_factor_mechanism_audit.csv",
+      "byte_size": 23852,
+      "sha256": "f3340adeabeeffc158f635bd2763d507917125f3b862efe5f527a4f11eb6e3a1"
+    },
+    "experiments/phase41/phase41_fireworks_cluster_analysis.md": {
+      "relative_path": "experiments/phase41/phase41_fireworks_cluster_analysis.md",
+      "byte_size": 8096,
+      "sha256": "46f60c038db707a4e6bcaf3d2c5c4ecad4e061f6191adcc8c176b09a300bf0e0"
+    },
+    "experiments/phase41/phase41_continuous_reconstruction.csv": {
+      "relative_path": "experiments/phase41/phase41_continuous_reconstruction.csv",
+      "byte_size": 28526,
+      "sha256": "b5d5e53b699ba23d7351eb1a653b4f56d71cadf12f54712f33ae7f8bb9ae3ec7"
+    },
+    "experiments/phase41/phase41_statistical_reproduction.json": {
+      "relative_path": "experiments/phase41/phase41_statistical_reproduction.json",
+      "byte_size": 5947,
+      "sha256": "6dd43d3a69605a34c5ef8f6d910c74537e424468848ac17125410c7f80a57c17"
+    },
+    "experiments/phase41/phase41_cluster_robust_analysis.md": {
+      "relative_path": "experiments/phase41/phase41_cluster_robust_analysis.md",
+      "byte_size": 7445,
+      "sha256": "13ba12628c55081b91250130d413596b51f9c394d8e5b270feb5c33ee1b7916b"
+    },
+    "experiments/phase41/phase41_claim_evidence_matrix.csv": {
+      "relative_path": "experiments/phase41/phase41_claim_evidence_matrix.csv",
+      "byte_size": 8535,
+      "sha256": "3da226231d04a808691ebfc6ae63b1da0d92b8e072129e5c4a5263f71551f1b3"
+    },
+    "experiments/phase41/phase41_audit_scope_reconciliation.md": {
+      "relative_path": "experiments/phase41/phase41_audit_scope_reconciliation.md",
+      "byte_size": 7165,
+      "sha256": "8603ff7223fc170979c054c007edca8c938d0b0d6a31836c7fd991456ac69791"
+    },
+    "tests/test_phase41_audit.py": {
+      "relative_path": "tests/test_phase41_audit.py",
+      "byte_size": 14143,
+      "sha256": "144366454b568b1685553296e43a46965f5cb3c75bfeb8d0b7380c8108c6ce50"
+    },
+    "experiments/phase41/phase41_test_execution_log.txt": {
+      "relative_path": "experiments/phase41/phase41_test_execution_log.txt",
+      "byte_size": 6780,
+      "sha256": "3303af9369fa43f19c7b00e89124f93e613ebaa727c38107325706a7377b635f"
+    },
+    "experiments/phase41/phase41_final_audit_report.md": {
+      "relative_path": "experiments/phase41/phase41_final_audit_report.md",
+      "byte_size": 22250,
+      "sha256": "507cf8a083ccd41b62e89cc59a549b23019c99c356a781a7de65d14bb6c4ca4f"
+    },
+    "experiments/phase41/phase41_release_notes.md": {
+      "relative_path": "experiments/phase41/phase41_release_notes.md",
+      "byte_size": 7167,
+      "sha256": "30cec785afab019c9c71a449be86d89bab29debf81ca43bffd6e6a5920087118"
+    },
+    "reports/phase41_final_audit_report.md": {
+      "relative_path": "reports/phase41_final_audit_report.md",
+      "byte_size": 22250,
+      "sha256": "507cf8a083ccd41b62e89cc59a549b23019c99c356a781a7de65d14bb6c4ca4f"
+    },
+    "scripts/record_phase41_protected_hashes.py": {
+      "relative_path": "scripts/record_phase41_protected_hashes.py",
+      "byte_size": 1547,
+      "sha256": "be8b706489d3e468ab8a8d1e95a04d954824e8679333e2404360c5befae0a487"
+    },
+    "scripts/build_phase41_recording_inventory.py": {
+      "relative_path": "scripts/build_phase41_recording_inventory.py",
+      "byte_size": 5953,
+      "sha256": "e76abcb6b0cf70a899466c577d76d3860f0569a6d94c21597001549179c62607"
+    },
+    "scripts/build_phase41_hash_reconciliation.py": {
+      "relative_path": "scripts/build_phase41_hash_reconciliation.py",
+      "byte_size": 21179,
+      "sha256": "20f2a8dcc9bb70b58d8315c838d8d5bed939a84196bc6ce42e5ffd785e8a89c7"
+    },
+    "scripts/run_phase41_source_and_similarity.py": {
+      "relative_path": "scripts/run_phase41_source_and_similarity.py",
+      "byte_size": 14568,
+      "sha256": "dd49fb3165a80f0881dff1aabaf0b70ef3b1ffd88b9a825968f1f741b2229e6a"
+    },
+    "scripts/run_phase41_fireworks_mechanism_audit.py": {
+      "relative_path": "scripts/run_phase41_fireworks_mechanism_audit.py",
+      "byte_size": 17132,
+      "sha256": "e2ed1ef6dc342479a0da6bfb811fc4115e24acb1e3b78aefb75173c26b26302d"
+    },
+    "scripts/run_phase41_continuous_robustness.py": {
+      "relative_path": "scripts/run_phase41_continuous_robustness.py",
+      "byte_size": 17173,
+      "sha256": "32de6c0406c318c044eec0980f5c4791585a1a1938f8bb9ec4b80e146465d42c"
+    },
+    "scripts/build_phase41_claim_evidence_matrix.py": {
+      "relative_path": "scripts/build_phase41_claim_evidence_matrix.py",
+      "byte_size": 19817,
+      "sha256": "24f431e7c1e1c53ca5e6fd5ee4f0325da0d60bd8d8d0ac15c2e27bf7c6f2b18a"
+    },
+    "scripts/package_phase41_release.py": {
+      "relative_path": "scripts/package_phase41_release.py",
+      "byte_size": 4890,
+      "sha256": "aba01c016d454b105178a78e2a968c47b7b1dc894855b9447546a5181e6c3fd8"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_27_AUTHORIZED_AEROSONICDB_ACQUISITION_AND_STATISTICAL_CORRECTION",
+  "environment": {
+    "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "os": "Windows",
+    "project_root": "E:\\gunshot\\gunshot"
+  },
+  "frozen_detectors": {
+    "default_research_baseline": {
+      "name": "Phase 14 Balanced",
+      "file": "model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+    },
+    "selectable_experimental_profile": {
+      "name": "Phase 17 Experimental",
+      "file": "model_phase17.py",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+    }
+  },
+  "historical_release_archives_verified": [
+    "gunshot_detection_phase26.zip",
+    "gunshot_detection_phase25.zip",
+    "gunshot_detection_phase24.zip",
+    "gunshot_detection_phase23.zip",
+    "gunshot_detection_phase22.zip",
+    "gunshot_detection_phase21.zip",
+    "gunshot_detection_phase20.zip"
+  ],
+  "dataset_accounting": {
+    "historical_continuous_streams": 17,
+    "new_continuous_streams": 6,
+    "total_continuous_streams": 23,
+    "campaigns": [
+      "CAMPAIGN-RPISOUND-UK",
+      "CAMPAIGN-DCASE2020-ES",
+      "CAMPAIGN-URBANSOUND8K-FR",
+      "CAMPAIGN-AEROSONIC-AU"
+    ],
+    "gross_monitored_duration_s": 45525.58,
+    "gross_monitored_duration_hr": 12.64599
+  },
+  "matched_evaluation_summary": {
+    "phase14_balanced": {
+      "role": "DEFAULT_RESEARCH_BASELINE",
+      "total_alerts": 128,
+      "gross_far_per_hr": 10.1218,
+      "cooldown_excluded_s": 453.92,
+      "eligible_exposure_hr": 12.51988,
+      "eligible_far_per_hr": 10.2237,
+      "garwood_95_ci_per_hr": [
+        8.5294,
+        12.1561
+      ]
+    },
+    "phase17_experimental": {
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE",
+      "total_alerts": 159,
+      "gross_far_per_hr": 12.5732,
+      "cooldown_excluded_s": 6385.2,
+      "eligible_exposure_hr": 10.87233,
+      "eligible_far_per_hr": 14.6243,
+      "garwood_95_ci_per_hr": [
+        12.4395,
+        17.0824
+      ]
+    },
+    "comparison": {
+      "alert_delta_p17_minus_p14": 31,
+      "p14_streams_superior": 5,
+      "p17_streams_superior": 3,
+      "streams_tied": 15,
+      "paired_wilcoxon_w": 8.0,
+      "paired_wilcoxon_p_twosided": 0.1953125,
+      "baseline_decision": "RETAIN_PHASE_14_BALANCED_AS_DEFAULT_RESEARCH_BASELINE"
+    }
+  }
+}

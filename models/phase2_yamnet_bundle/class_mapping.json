@@ -1,0 +1,15 @@
+{
+  "classes": [
+    "background",
+    "gunshot"
+  ],
+  "class_to_idx": {
+    "background": 0,
+    "gunshot": 1,
+    "non_gunshot": 0
+  },
+  "idx_to_class": {
+    "0": "background",
+    "1": "gunshot"
+  }
+}

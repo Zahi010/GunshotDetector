@@ -1,0 +1,199 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "timestamp": "2026-11-13",
+  "phase": "PHASE_18_INDEPENDENT_AUDIT",
+  "continuous_positive_events": {
+    "Phase 9 Balanced": {
+      "genuine_events": 39,
+      "detected_events": 19,
+      "missed_events": 20,
+      "false_positive_alerts": 7,
+      "duplicate_alerts": 0,
+      "event_recall": 48.72,
+      "recall_95_ci": [
+        33.87,
+        63.8
+      ],
+      "event_precision": 73.08,
+      "precision_95_ci": [
+        53.92,
+        86.3
+      ],
+      "event_f1": 58.46,
+      "median_delay_sec": 0.48,
+      "p95_delay_sec": 1.284
+    },
+    "Phase 13 Balanced": {
+      "genuine_events": 39,
+      "detected_events": 24,
+      "missed_events": 15,
+      "false_positive_alerts": 7,
+      "duplicate_alerts": 0,
+      "event_recall": 61.54,
+      "recall_95_ci": [
+        45.9,
+        75.11
+      ],
+      "event_precision": 77.42,
+      "precision_95_ci": [
+        60.19,
+        88.6
+      ],
+      "event_f1": 68.57,
+      "median_delay_sec": 0.7,
+      "p95_delay_sec": 1.614
+    },
+    "Phase 14 Balanced": {
+      "genuine_events": 39,
+      "detected_events": 23,
+      "missed_events": 16,
+      "false_positive_alerts": 8,
+      "duplicate_alerts": 0,
+      "event_recall": 58.97,
+      "recall_95_ci": [
+        43.42,
+        72.92
+      ],
+      "event_precision": 74.19,
+      "precision_95_ci": [
+        56.75,
+        86.3
+      ],
+      "event_f1": 65.71,
+      "median_delay_sec": 0.6,
+      "p95_delay_sec": 1.636
+    },
+    "Phase 14 High-Precision": {
+      "genuine_events": 39,
+      "detected_events": 18,
+      "missed_events": 21,
+      "false_positive_alerts": 7,
+      "duplicate_alerts": 0,
+      "event_recall": 46.15,
+      "recall_95_ci": [
+        31.57,
+        61.43
+      ],
+      "event_precision": 72.0,
+      "precision_95_ci": [
+        52.42,
+        85.72
+      ],
+      "event_f1": 56.25,
+      "median_delay_sec": 0.5,
+      "p95_delay_sec": 1.068
+    },
+    "Phase 14 High-Sensitivity": {
+      "genuine_events": 39,
+      "detected_events": 24,
+      "missed_events": 15,
+      "false_positive_alerts": 8,
+      "duplicate_alerts": 0,
+      "event_recall": 61.54,
+      "recall_95_ci": [
+        45.9,
+        75.11
+      ],
+      "event_precision": 75.0,
+      "precision_95_ci": [
+        57.89,
+        86.75
+      ],
+      "event_f1": 67.61,
+      "median_delay_sec": 0.6,
+      "p95_delay_sec": 1.614
+    },
+    "Phase 17 Experimental": {
+      "genuine_events": 39,
+      "detected_events": 23,
+      "missed_events": 16,
+      "false_positive_alerts": 8,
+      "duplicate_alerts": 0,
+      "event_recall": 58.97,
+      "recall_95_ci": [
+        43.42,
+        72.92
+      ],
+      "event_precision": 74.19,
+      "precision_95_ci": [
+        56.75,
+        86.3
+      ],
+      "event_f1": 65.71,
+      "median_delay_sec": 0.6,
+      "p95_delay_sec": 1.636
+    }
+  },
+  "continuous_negative_audio": {
+    "Phase 9 Balanced": {
+      "total_false_alerts": 15,
+      "total_exposure_hours": 6.646,
+      "alert_rate_per_hour": 2.257,
+      "exact_95_poisson_ci": [
+        1.2632,
+        3.7226
+      ],
+      "implied_mtbfa_min": 26.58
+    },
+    "Phase 13 Balanced": {
+      "total_false_alerts": 56,
+      "total_exposure_hours": 6.646,
+      "alert_rate_per_hour": 8.4261,
+      "exact_95_poisson_ci": [
+        6.365,
+        10.942
+      ],
+      "implied_mtbfa_min": 7.12
+    },
+    "Phase 14 Balanced": {
+      "total_false_alerts": 56,
+      "total_exposure_hours": 6.646,
+      "alert_rate_per_hour": 8.4261,
+      "exact_95_poisson_ci": [
+        6.365,
+        10.942
+      ],
+      "implied_mtbfa_min": 7.12
+    },
+    "Phase 14 High-Precision": {
+      "total_false_alerts": 22,
+      "total_exposure_hours": 6.646,
+      "alert_rate_per_hour": 3.3103,
+      "exact_95_poisson_ci": [
+        2.0745,
+        5.0118
+      ],
+      "implied_mtbfa_min": 18.13
+    },
+    "Phase 14 High-Sensitivity": {
+      "total_false_alerts": 100,
+      "total_exposure_hours": 6.646,
+      "alert_rate_per_hour": 15.0467,
+      "exact_95_poisson_ci": [
+        12.2426,
+        18.3008
+      ],
+      "implied_mtbfa_min": 3.99
+    },
+    "Phase 17 Experimental": {
+      "total_false_alerts": 51,
+      "total_exposure_hours": 6.646,
+      "alert_rate_per_hour": 7.6738,
+      "exact_95_poisson_ci": [
+        5.7136,
+        10.0896
+      ],
+      "implied_mtbfa_min": 7.82
+    }
+  },
+  "statistical_tests": {
+    "mcnemar_discordant_alerts": {
+      "p14_only": 5,
+      "p17_only": 0
+    },
+    "mcnemar_chi2_statistic": 3.2,
+    "poisson_rate_comparison_p_value": 0.2314,
+    "is_statistically_significant": false,
+    "interpretation": "The reduction of 5 alerts across 6.65 hours is not statistically significant at alpha=0.05 (p=0.2314). Parity maintained."
+  }
+}

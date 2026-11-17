@@ -1,0 +1,5490 @@
+{
+  "report_title": "Phase 5 Comprehensive False Positive & Hard Negative Acoustic Audit",
+  "timestamp": "2026-10-28",
+  "dataset_scope": {
+    "total_negative_recordings_evaluated": 81,
+    "total_negative_audio_duration_seconds": 417.68,
+    "total_negative_audio_duration_hours": 0.116,
+    "total_false_positive_windows_at_055": 147,
+    "total_false_positive_windows_at_069": 77
+  },
+  "meditation_chimes_special_case": {
+    "recording_stem": "meditation_hypnosis--110246",
+    "total_fp_windows_at_055": 35,
+    "total_fp_windows_at_069": 34,
+    "proportion_of_all_069_fps": 0.4416,
+    "dominant_resonance_frequency_hz": 1174.0,
+    "yamnet_top5_audioset": [
+      "Clang (0.324)",
+      "Sound effect (0.204)",
+      "Ding (0.194)",
+      "Chink, clink (0.185)",
+      "Glass (0.167)"
+    ],
+    "finding": "The singular file meditation_hypnosis--110246.mp3 (17.87s of Tibetan singing bowl / metallic chime strikes) accounts for over 40% of all false positive windows at threshold 0.690. YAMNet classifies these metallic transient strikes with 57.3% confidence as Explosion and 56.0% as Gunshot, representing a fundamental frozen-backbone acoustic embedding limitation. In Phase 5, this file is preserved untouched in the test set."
+  },
+  "category_breakdown": {
+    "environmental_ambient": {
+      "total_recordings": 54,
+      "fp_events_055": 13,
+      "fp_events_069": 7
+    },
+    "firearm_mechanical_foley": {
+      "total_recordings": 4,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    },
+    "laser_synthetic": {
+      "total_recordings": 3,
+      "fp_events_055": 6,
+      "fp_events_069": 1
+    },
+    "toy_gun_pop": {
+      "total_recordings": 2,
+      "fp_events_055": 2,
+      "fp_events_069": 0
+    },
+    "balloon_burst": {
+      "total_recordings": 5,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    },
+    "percussive_impact": {
+      "total_recordings": 4,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    },
+    "fireworks": {
+      "total_recordings": 2,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    },
+    "thunder_weather": {
+      "total_recordings": 2,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    },
+    "vehicle_backfire": {
+      "total_recordings": 1,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    },
+    "metallic_chime_bell": {
+      "total_recordings": 1,
+      "fp_events_055": 4,
+      "fp_events_069": 4
+    },
+    "procedural_synthetic": {
+      "total_recordings": 3,
+      "fp_events_055": 0,
+      "fp_events_069": 0
+    }
+  },
+  "root_cause_distribution": {
+    "high_tonal_resonance_leakage (sustained harmonic ringing not rejected by broad acoustic embedding)": 1,
+    "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)": 49,
+    "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)": 30,
+    "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)": 10,
+    "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)": 28,
+    "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)": 29
+  },
+  "all_false_positive_instances": [
+    {
+      "recording_id": "1-115545-A-48",
+      "filename": "1-115545-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.8137,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9428,
+        "catboost": 0.7306,
+        "lightgbm": 0.8074,
+        "xgboost": 0.803
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Speech (0.097)",
+        "Thump, thud (0.074)",
+        "Inside, large room or hall (0.063)",
+        "Rail transport (0.041)",
+        "Train (0.037)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.1287,
+        "rms_energy": 0.0174,
+        "crest_factor": 7.38,
+        "zero_crossing_rate": 0.112,
+        "spectral_centroid_hz": 1419.8,
+        "spectral_bandwidth_hz": 1388.7,
+        "spectral_rolloff_hz": 2669.9,
+        "spectral_flatness": 0.0283,
+        "harmonic_to_percussive_ratio": 0.6132,
+        "dominant_resonance_frequency_hz": 261.5
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "1-115545-A-48",
+      "filename": "1-115545-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "ensemble_calibrated_score": 0.684,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8498,
+        "catboost": 0.6448,
+        "lightgbm": 0.5944,
+        "xgboost": 0.648
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Outside, rural or natural (0.142)",
+        "Vehicle (0.137)",
+        "Outside, urban or manmade (0.089)",
+        "Explosion (0.084)",
+        "Mechanisms (0.070)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.032,
+        "rms_energy": 0.0063,
+        "crest_factor": 5.11,
+        "zero_crossing_rate": 0.1624,
+        "spectral_centroid_hz": 1804.2,
+        "spectral_bandwidth_hz": 1511.2,
+        "spectral_rolloff_hz": 3279.2,
+        "spectral_flatness": 0.0489,
+        "harmonic_to_percussive_ratio": 0.7263,
+        "dominant_resonance_frequency_hz": 770.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-115545-A-48",
+      "filename": "1-115545-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.9297,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9961,
+        "catboost": 0.9074,
+        "lightgbm": 0.9115,
+        "xgboost": 0.9015
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.463)",
+        "Explosion (0.442)",
+        "Wild animals (0.354)",
+        "Bird (0.348)",
+        "Animal (0.323)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0314,
+        "rms_energy": 0.0039,
+        "crest_factor": 7.95,
+        "zero_crossing_rate": 0.1255,
+        "spectral_centroid_hz": 1451.7,
+        "spectral_bandwidth_hz": 1342.2,
+        "spectral_rolloff_hz": 2673.9,
+        "spectral_flatness": 0.0304,
+        "harmonic_to_percussive_ratio": 0.3953,
+        "dominant_resonance_frequency_hz": 574.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-115545-A-48",
+      "filename": "1-115545-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.9454,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9987,
+        "catboost": 0.9565,
+        "lightgbm": 0.8876,
+        "xgboost": 0.9269
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.433)",
+        "Gunshot, gunfire (0.231)",
+        "Fireworks (0.216)",
+        "Outside, rural or natural (0.158)",
+        "Animal (0.112)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0168,
+        "rms_energy": 0.0025,
+        "crest_factor": 6.81,
+        "zero_crossing_rate": 0.0723,
+        "spectral_centroid_hz": 942.0,
+        "spectral_bandwidth_hz": 1090.9,
+        "spectral_rolloff_hz": 1695.1,
+        "spectral_flatness": 0.0063,
+        "harmonic_to_percussive_ratio": 0.4717,
+        "dominant_resonance_frequency_hz": 14.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-160563-B-48",
+      "filename": "1-160563-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.8645,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.803,
+        "catboost": 0.8704,
+        "lightgbm": 0.9037,
+        "xgboost": 0.8879
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.656)",
+        "Gunshot, gunfire (0.570)",
+        "Machine gun (0.347)",
+        "Outside, rural or natural (0.278)",
+        "Cap gun (0.274)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5498,
+        "rms_energy": 0.0156,
+        "crest_factor": 35.31,
+        "zero_crossing_rate": 0.1072,
+        "spectral_centroid_hz": 1726.1,
+        "spectral_bandwidth_hz": 1878.5,
+        "spectral_rolloff_hz": 3663.8,
+        "spectral_flatness": 0.0541,
+        "harmonic_to_percussive_ratio": 0.0178,
+        "dominant_resonance_frequency_hz": 333.3
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-160563-B-48",
+      "filename": "1-160563-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.7268,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.6897,
+        "catboost": 0.7687,
+        "lightgbm": 0.7023,
+        "xgboost": 0.7318
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.944)",
+        "Explosion (0.892)",
+        "Firecracker (0.531)",
+        "Fire (0.122)",
+        "Outside, rural or natural (0.114)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9909,
+        "rms_energy": 0.0207,
+        "crest_factor": 47.86,
+        "zero_crossing_rate": 0.113,
+        "spectral_centroid_hz": 1702.4,
+        "spectral_bandwidth_hz": 1813.8,
+        "spectral_rolloff_hz": 3411.8,
+        "spectral_flatness": 0.0545,
+        "harmonic_to_percussive_ratio": 0.0034,
+        "dominant_resonance_frequency_hz": 436.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-160563-B-48",
+      "filename": "1-160563-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.7513,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.6115,
+        "catboost": 0.7965,
+        "lightgbm": 0.7973,
+        "xgboost": 0.8021
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.862)",
+        "Fireworks (0.736)",
+        "Firecracker (0.380)",
+        "Gunshot, gunfire (0.322)",
+        "Outside, rural or natural (0.248)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9909,
+        "rms_energy": 0.0269,
+        "crest_factor": 36.82,
+        "zero_crossing_rate": 0.0864,
+        "spectral_centroid_hz": 1333.7,
+        "spectral_bandwidth_hz": 1652.0,
+        "spectral_rolloff_hz": 2589.7,
+        "spectral_flatness": 0.0224,
+        "harmonic_to_percussive_ratio": 0.0156,
+        "dominant_resonance_frequency_hz": 495.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-24524-B-19",
+      "filename": "1-24524-B-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.5717,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7573,
+        "catboost": 0.5036,
+        "lightgbm": 0.5109,
+        "xgboost": 0.5229
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sliding door (0.279)",
+        "Inside, small room (0.257)",
+        "Door (0.196)",
+        "Animal (0.087)",
+        "Vehicle (0.086)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0469,
+        "rms_energy": 0.0041,
+        "crest_factor": 11.45,
+        "zero_crossing_rate": 0.0506,
+        "spectral_centroid_hz": 1418.2,
+        "spectral_bandwidth_hz": 1935.9,
+        "spectral_rolloff_hz": 3663.8,
+        "spectral_flatness": 0.012,
+        "harmonic_to_percussive_ratio": 0.4517,
+        "dominant_resonance_frequency_hz": 45.8
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "1-24524-B-19",
+      "filename": "1-24524-B-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.8168,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8507,
+        "catboost": 0.8088,
+        "lightgbm": 0.8167,
+        "xgboost": 0.779
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.792)",
+        "Fireworks (0.627)",
+        "Firecracker (0.273)",
+        "Burst, pop (0.212)",
+        "Outside, urban or manmade (0.047)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0198,
+        "rms_energy": 0.1923,
+        "crest_factor": 5.3,
+        "zero_crossing_rate": 0.0626,
+        "spectral_centroid_hz": 932.4,
+        "spectral_bandwidth_hz": 1067.7,
+        "spectral_rolloff_hz": 1832.7,
+        "spectral_flatness": 0.004,
+        "harmonic_to_percussive_ratio": 0.0745,
+        "dominant_resonance_frequency_hz": 104.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-24524-B-19",
+      "filename": "1-24524-B-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.7461,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.776,
+        "catboost": 0.7221,
+        "lightgbm": 0.7486,
+        "xgboost": 0.7479
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.966)",
+        "Explosion (0.948)",
+        "Firecracker (0.458)",
+        "Burst, pop (0.045)",
+        "Outside, urban or manmade (0.031)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0198,
+        "rms_energy": 0.1994,
+        "crest_factor": 5.12,
+        "zero_crossing_rate": 0.0439,
+        "spectral_centroid_hz": 747.0,
+        "spectral_bandwidth_hz": 992.7,
+        "spectral_rolloff_hz": 1442.0,
+        "spectral_flatness": 0.0034,
+        "harmonic_to_percussive_ratio": 0.1392,
+        "dominant_resonance_frequency_hz": 104.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "1-9887-A-49",
+      "filename": "1-9887-A-49.wav",
+      "category": "environmental_ambient",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.6833,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7792,
+        "catboost": 0.7174,
+        "lightgbm": 0.6247,
+        "xgboost": 0.5414
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Animal (0.783)",
+        "Domestic animals, pets (0.691)",
+        "Dog (0.557)",
+        "Whimper (dog) (0.141)",
+        "Yip (0.057)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.7613,
+        "rms_energy": 0.1088,
+        "crest_factor": 7.0,
+        "zero_crossing_rate": 0.3627,
+        "spectral_centroid_hz": 3542.7,
+        "spectral_bandwidth_hz": 1829.2,
+        "spectral_rolloff_hz": 5636.6,
+        "spectral_flatness": 0.0765,
+        "harmonic_to_percussive_ratio": 0.0162,
+        "dominant_resonance_frequency_hz": 4757.3
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.6338,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5401,
+        "catboost": 0.6782,
+        "lightgbm": 0.6388,
+        "xgboost": 0.678
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.888)",
+        "Explosion (0.865)",
+        "Firecracker (0.377)",
+        "Burst, pop (0.068)",
+        "Skateboard (0.049)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9363,
+        "rms_energy": 0.0395,
+        "crest_factor": 23.73,
+        "zero_crossing_rate": 0.0856,
+        "spectral_centroid_hz": 1354.3,
+        "spectral_bandwidth_hz": 1478.6,
+        "spectral_rolloff_hz": 2755.5,
+        "spectral_flatness": 0.0207,
+        "harmonic_to_percussive_ratio": 0.0057,
+        "dominant_resonance_frequency_hz": 267.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.6621,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6062,
+        "catboost": 0.7472,
+        "lightgbm": 0.5633,
+        "xgboost": 0.7211
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.936)",
+        "Explosion (0.914)",
+        "Firecracker (0.584)",
+        "Outside, urban or manmade (0.063)",
+        "Burst, pop (0.054)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4958,
+        "rms_energy": 0.0193,
+        "crest_factor": 25.67,
+        "zero_crossing_rate": 0.0969,
+        "spectral_centroid_hz": 1421.5,
+        "spectral_bandwidth_hz": 1503.7,
+        "spectral_rolloff_hz": 2913.3,
+        "spectral_flatness": 0.0229,
+        "harmonic_to_percussive_ratio": 0.0582,
+        "dominant_resonance_frequency_hz": 334.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.7068,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.6732,
+        "catboost": 0.7088,
+        "lightgbm": 0.7241,
+        "xgboost": 0.7293
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.774)",
+        "Explosion (0.737)",
+        "Firecracker (0.482)",
+        "Outside, rural or natural (0.207)",
+        "Gunshot, gunfire (0.095)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5769,
+        "rms_energy": 0.0178,
+        "crest_factor": 32.5,
+        "zero_crossing_rate": 0.1006,
+        "spectral_centroid_hz": 1494.8,
+        "spectral_bandwidth_hz": 1525.0,
+        "spectral_rolloff_hz": 2949.1,
+        "spectral_flatness": 0.0335,
+        "harmonic_to_percussive_ratio": 0.0056,
+        "dominant_resonance_frequency_hz": 277.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.8148,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7718,
+        "catboost": 0.8249,
+        "lightgbm": 0.8427,
+        "xgboost": 0.8166
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Door (0.256)",
+        "Sliding door (0.245)",
+        "Inside, small room (0.224)",
+        "Glass (0.174)",
+        "Explosion (0.164)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0367,
+        "rms_energy": 0.0023,
+        "crest_factor": 16.07,
+        "zero_crossing_rate": 0.093,
+        "spectral_centroid_hz": 1344.5,
+        "spectral_bandwidth_hz": 1450.1,
+        "spectral_rolloff_hz": 2535.8,
+        "spectral_flatness": 0.0191,
+        "harmonic_to_percussive_ratio": 0.1976,
+        "dominant_resonance_frequency_hz": 297.9
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 7,
+      "start_time_sec": 3.36,
+      "end_time_sec": 4.32,
+      "ensemble_calibrated_score": 0.5999,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5478,
+        "catboost": 0.622,
+        "lightgbm": 0.5795,
+        "xgboost": 0.669
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Breaking (0.559)",
+        "Explosion (0.318)",
+        "Wood (0.309)",
+        "Crack (0.306)",
+        "Slam (0.266)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5951,
+        "rms_energy": 0.0286,
+        "crest_factor": 20.78,
+        "zero_crossing_rate": 0.0968,
+        "spectral_centroid_hz": 1483.3,
+        "spectral_bandwidth_hz": 1611.6,
+        "spectral_rolloff_hz": 3097.8,
+        "spectral_flatness": 0.0297,
+        "harmonic_to_percussive_ratio": 0.0007,
+        "dominant_resonance_frequency_hz": 264.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "ensemble_calibrated_score": 0.6394,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6848,
+        "catboost": 0.6807,
+        "lightgbm": 0.5366,
+        "xgboost": 0.6388
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.827)",
+        "Fireworks (0.796)",
+        "Firecracker (0.476)",
+        "Gunshot, gunfire (0.191)",
+        "Outside, rural or natural (0.185)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5951,
+        "rms_energy": 0.0289,
+        "crest_factor": 20.56,
+        "zero_crossing_rate": 0.0927,
+        "spectral_centroid_hz": 1425.8,
+        "spectral_bandwidth_hz": 1543.6,
+        "spectral_rolloff_hz": 3035.3,
+        "spectral_flatness": 0.0272,
+        "harmonic_to_percussive_ratio": 0.0034,
+        "dominant_resonance_frequency_hz": 264.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.8358,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8265,
+        "catboost": 0.8156,
+        "lightgbm": 0.863,
+        "xgboost": 0.8535
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0399,
+        "rms_energy": 0.0052,
+        "crest_factor": 7.61,
+        "zero_crossing_rate": 0.0766,
+        "spectral_centroid_hz": 1186.3,
+        "spectral_bandwidth_hz": 1334.6,
+        "spectral_rolloff_hz": 2346.6,
+        "spectral_flatness": 0.0129,
+        "harmonic_to_percussive_ratio": 0.3399,
+        "dominant_resonance_frequency_hz": 357.4
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "2-117615-C-48",
+      "filename": "2-117615-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.8564,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.925,
+        "catboost": 0.8258,
+        "lightgbm": 0.8343,
+        "xgboost": 0.8503
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.672)",
+        "Fireworks (0.472)",
+        "Burst, pop (0.224)",
+        "Artillery fire (0.150)",
+        "Firecracker (0.116)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.1131,
+        "rms_energy": 0.0153,
+        "crest_factor": 7.4,
+        "zero_crossing_rate": 0.0504,
+        "spectral_centroid_hz": 948.3,
+        "spectral_bandwidth_hz": 1255.7,
+        "spectral_rolloff_hz": 1927.9,
+        "spectral_flatness": 0.0052,
+        "harmonic_to_percussive_ratio": 0.4644,
+        "dominant_resonance_frequency_hz": 88.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-C-48",
+      "filename": "2-117615-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.5631,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5703,
+        "catboost": 0.5781,
+        "lightgbm": 0.5509,
+        "xgboost": 0.5362
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Silence (0.995)",
+        "Speech (0.000)",
+        "Narration, monologue (0.000)",
+        "Music (0.000)",
+        "Inside, small room (0.000)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0055,
+        "rms_energy": 0.0011,
+        "crest_factor": 5.21,
+        "zero_crossing_rate": 0.0817,
+        "spectral_centroid_hz": 1348.9,
+        "spectral_bandwidth_hz": 1579.8,
+        "spectral_rolloff_hz": 2832.2,
+        "spectral_flatness": 0.0286,
+        "harmonic_to_percussive_ratio": 1.1901,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "2-117615-C-48",
+      "filename": "2-117615-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.7319,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.6705,
+        "catboost": 0.7748,
+        "lightgbm": 0.708,
+        "xgboost": 0.7739
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.419)",
+        "Burst, pop (0.287)",
+        "Fireworks (0.213)",
+        "Bang (0.178)",
+        "Whack, thwack (0.173)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0309,
+        "rms_energy": 0.1232,
+        "crest_factor": 8.37,
+        "zero_crossing_rate": 0.0835,
+        "spectral_centroid_hz": 1343.0,
+        "spectral_bandwidth_hz": 1596.8,
+        "spectral_rolloff_hz": 2899.7,
+        "spectral_flatness": 0.0199,
+        "harmonic_to_percussive_ratio": 0.017,
+        "dominant_resonance_frequency_hz": 150.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117615-C-48",
+      "filename": "2-117615-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 7,
+      "start_time_sec": 3.36,
+      "end_time_sec": 4.32,
+      "ensemble_calibrated_score": 0.6024,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.3221,
+        "catboost": 0.6758,
+        "lightgbm": 0.7164,
+        "xgboost": 0.7085
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.450)",
+        "Explosion (0.304)",
+        "Firecracker (0.252)",
+        "Drum (0.130)",
+        "Percussion (0.123)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0309,
+        "rms_energy": 0.1235,
+        "crest_factor": 8.34,
+        "zero_crossing_rate": 0.0639,
+        "spectral_centroid_hz": 1232.3,
+        "spectral_bandwidth_hz": 1549.2,
+        "spectral_rolloff_hz": 2726.8,
+        "spectral_flatness": 0.0151,
+        "harmonic_to_percussive_ratio": 0.0361,
+        "dominant_resonance_frequency_hz": 150.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117616-A-48",
+      "filename": "2-117616-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.9426,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9792,
+        "catboost": 0.9384,
+        "lightgbm": 0.914,
+        "xgboost": 0.9392
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.930)",
+        "Gunshot, gunfire (0.896)",
+        "Machine gun (0.788)",
+        "Fireworks (0.141)",
+        "Firecracker (0.095)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.2257,
+        "rms_energy": 0.3765,
+        "crest_factor": 3.26,
+        "zero_crossing_rate": 0.1631,
+        "spectral_centroid_hz": 2157.1,
+        "spectral_bandwidth_hz": 2005.1,
+        "spectral_rolloff_hz": 4533.3,
+        "spectral_flatness": 0.1106,
+        "harmonic_to_percussive_ratio": 0.066,
+        "dominant_resonance_frequency_hz": 211.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117616-A-48",
+      "filename": "2-117616-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.7739,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9235,
+        "catboost": 0.7517,
+        "lightgbm": 0.6839,
+        "xgboost": 0.7263
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.825)",
+        "Fireworks (0.792)",
+        "Firecracker (0.632)",
+        "Burst, pop (0.239)",
+        "Gunshot, gunfire (0.217)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.2847,
+        "rms_energy": 0.3678,
+        "crest_factor": 3.49,
+        "zero_crossing_rate": 0.2096,
+        "spectral_centroid_hz": 2390.4,
+        "spectral_bandwidth_hz": 1980.8,
+        "spectral_rolloff_hz": 4689.0,
+        "spectral_flatness": 0.1404,
+        "harmonic_to_percussive_ratio": 0.0981,
+        "dominant_resonance_frequency_hz": 317.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117616-A-48",
+      "filename": "2-117616-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.9658,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.995,
+        "catboost": 0.9524,
+        "lightgbm": 0.959,
+        "xgboost": 0.9593
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.926)",
+        "Gunshot, gunfire (0.789)",
+        "Machine gun (0.687)",
+        "Fireworks (0.408)",
+        "Firecracker (0.185)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.2847,
+        "rms_energy": 0.3676,
+        "crest_factor": 3.49,
+        "zero_crossing_rate": 0.2606,
+        "spectral_centroid_hz": 2734.7,
+        "spectral_bandwidth_hz": 2124.7,
+        "spectral_rolloff_hz": 5288.3,
+        "spectral_flatness": 0.1852,
+        "harmonic_to_percussive_ratio": 0.17,
+        "dominant_resonance_frequency_hz": 318.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-117616-A-48",
+      "filename": "2-117616-A-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.7508,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8239,
+        "catboost": 0.7283,
+        "lightgbm": 0.7238,
+        "xgboost": 0.7264
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Glass (0.325)",
+        "Explosion (0.281)",
+        "Breaking (0.208)",
+        "Whip (0.191)",
+        "Burst, pop (0.182)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4374,
+        "rms_energy": 0.0377,
+        "crest_factor": 11.59,
+        "zero_crossing_rate": 0.1912,
+        "spectral_centroid_hz": 2357.3,
+        "spectral_bandwidth_hz": 2060.1,
+        "spectral_rolloff_hz": 4906.8,
+        "spectral_flatness": 0.128,
+        "harmonic_to_percussive_ratio": 0.1097,
+        "dominant_resonance_frequency_hz": 114.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-120218-A-30",
+      "filename": "2-120218-A-30.wav",
+      "category": "environmental_ambient",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.7455,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9056,
+        "catboost": 0.6713,
+        "lightgbm": 0.7461,
+        "xgboost": 0.651
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3906,
+        "rms_energy": 0.0586,
+        "crest_factor": 6.66,
+        "zero_crossing_rate": 0.0112,
+        "spectral_centroid_hz": 489.1,
+        "spectral_bandwidth_hz": 1114.5,
+        "spectral_rolloff_hz": 903.4,
+        "spectral_flatness": 0.0009,
+        "harmonic_to_percussive_ratio": 2.6246,
+        "dominant_resonance_frequency_hz": 26.5
+      },
+      "root_cause_diagnosis": "high_tonal_resonance_leakage (sustained harmonic ringing not rejected by broad acoustic embedding)"
+    },
+    {
+      "recording_id": "2-173618-A-39",
+      "filename": "2-173618-A-39.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.7146,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.5209,
+        "catboost": 0.7091,
+        "lightgbm": 0.8606,
+        "xgboost": 0.8068
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.556)",
+        "Firecracker (0.409)",
+        "Fireworks (0.348)",
+        "Gunshot, gunfire (0.317)",
+        "Burst, pop (0.281)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0729,
+        "rms_energy": 0.2273,
+        "crest_factor": 4.72,
+        "zero_crossing_rate": 0.4338,
+        "spectral_centroid_hz": 3672.6,
+        "spectral_bandwidth_hz": 2157.6,
+        "spectral_rolloff_hz": 6309.5,
+        "spectral_flatness": 0.2975,
+        "harmonic_to_percussive_ratio": 0.5059,
+        "dominant_resonance_frequency_hz": 238.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-28314-B-12",
+      "filename": "2-28314-B-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.5887,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.4517,
+        "catboost": 0.6371,
+        "lightgbm": 0.6402,
+        "xgboost": 0.6181
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Whip (0.753)",
+        "Explosion (0.424)",
+        "Gunshot, gunfire (0.334)",
+        "Cap gun (0.295)",
+        "Outside, rural or natural (0.126)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.7059,
+        "rms_energy": 0.0245,
+        "crest_factor": 28.8,
+        "zero_crossing_rate": 0.1696,
+        "spectral_centroid_hz": 2390.3,
+        "spectral_bandwidth_hz": 2161.4,
+        "spectral_rolloff_hz": 5113.4,
+        "spectral_flatness": 0.1292,
+        "harmonic_to_percussive_ratio": 0.0083,
+        "dominant_resonance_frequency_hz": 101.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-28314-B-12",
+      "filename": "2-28314-B-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "ensemble_calibrated_score": 0.5914,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.423,
+        "catboost": 0.6373,
+        "lightgbm": 0.6658,
+        "xgboost": 0.6412
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Chop (0.833)",
+        "Wood (0.608)",
+        "Breaking (0.206)",
+        "Whack, thwack (0.172)",
+        "Skateboard (0.160)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8162,
+        "rms_energy": 0.0297,
+        "crest_factor": 27.51,
+        "zero_crossing_rate": 0.1019,
+        "spectral_centroid_hz": 1920.8,
+        "spectral_bandwidth_hz": 2097.6,
+        "spectral_rolloff_hz": 4612.9,
+        "spectral_flatness": 0.0601,
+        "harmonic_to_percussive_ratio": 0.0067,
+        "dominant_resonance_frequency_hz": 2864.6
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "2-28314-B-12",
+      "filename": "2-28314-B-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.6163,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5208,
+        "catboost": 0.5906,
+        "lightgbm": 0.7172,
+        "xgboost": 0.6673
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8162,
+        "rms_energy": 0.0353,
+        "crest_factor": 23.11,
+        "zero_crossing_rate": 0.1655,
+        "spectral_centroid_hz": 2171.9,
+        "spectral_bandwidth_hz": 1972.8,
+        "spectral_rolloff_hz": 4552.6,
+        "spectral_flatness": 0.0911,
+        "harmonic_to_percussive_ratio": 0.0065,
+        "dominant_resonance_frequency_hz": 2866.2
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "2-30322-B-12",
+      "filename": "2-30322-B-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.7242,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7265,
+        "catboost": 0.7112,
+        "lightgbm": 0.7179,
+        "xgboost": 0.7611
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Whip (0.374)",
+        "Explosion (0.362)",
+        "Fireworks (0.320)",
+        "Firecracker (0.304)",
+        "Outside, rural or natural (0.164)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6808,
+        "rms_energy": 0.0332,
+        "crest_factor": 20.48,
+        "zero_crossing_rate": 0.1664,
+        "spectral_centroid_hz": 2355.6,
+        "spectral_bandwidth_hz": 2176.0,
+        "spectral_rolloff_hz": 5131.6,
+        "spectral_flatness": 0.115,
+        "harmonic_to_percussive_ratio": 0.1764,
+        "dominant_resonance_frequency_hz": 53.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-39945-C-19",
+      "filename": "2-39945-C-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.8658,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9302,
+        "catboost": 0.8546,
+        "lightgbm": 0.8332,
+        "xgboost": 0.8394
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.650)",
+        "Burst, pop (0.392)",
+        "Eruption (0.381)",
+        "Artillery fire (0.301)",
+        "Boom (0.152)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9454,
+        "rms_energy": 0.2511,
+        "crest_factor": 3.77,
+        "zero_crossing_rate": 0.0719,
+        "spectral_centroid_hz": 1012.8,
+        "spectral_bandwidth_hz": 1113.2,
+        "spectral_rolloff_hz": 1953.6,
+        "spectral_flatness": 0.0037,
+        "harmonic_to_percussive_ratio": 1.2981,
+        "dominant_resonance_frequency_hz": 94.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-39945-C-19",
+      "filename": "2-39945-C-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.8519,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9077,
+        "catboost": 0.8133,
+        "lightgbm": 0.847,
+        "xgboost": 0.8574
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.822)",
+        "Fireworks (0.771)",
+        "Burst, pop (0.186)",
+        "Firecracker (0.130)",
+        "Eruption (0.124)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9454,
+        "rms_energy": 0.1557,
+        "crest_factor": 6.07,
+        "zero_crossing_rate": 0.0784,
+        "spectral_centroid_hz": 1006.2,
+        "spectral_bandwidth_hz": 1062.7,
+        "spectral_rolloff_hz": 1885.1,
+        "spectral_flatness": 0.0035,
+        "harmonic_to_percussive_ratio": 1.1037,
+        "dominant_resonance_frequency_hz": 59.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-39945-C-19",
+      "filename": "2-39945-C-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "ensemble_calibrated_score": 0.9013,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9963,
+        "catboost": 0.8431,
+        "lightgbm": 0.8928,
+        "xgboost": 0.8929
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.758)",
+        "Gunshot, gunfire (0.427)",
+        "Artillery fire (0.288)",
+        "Fireworks (0.282)",
+        "Machine gun (0.195)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6163,
+        "rms_energy": 0.1042,
+        "crest_factor": 5.91,
+        "zero_crossing_rate": 0.0831,
+        "spectral_centroid_hz": 940.0,
+        "spectral_bandwidth_hz": 938.2,
+        "spectral_rolloff_hz": 1714.2,
+        "spectral_flatness": 0.0023,
+        "harmonic_to_percussive_ratio": 0.7877,
+        "dominant_resonance_frequency_hz": 212.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-39945-C-19",
+      "filename": "2-39945-C-19.wav",
+      "category": "environmental_ambient",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.66,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8611,
+        "catboost": 0.6443,
+        "lightgbm": 0.5119,
+        "xgboost": 0.6084
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4655,
+        "rms_energy": 0.0786,
+        "crest_factor": 5.92,
+        "zero_crossing_rate": 0.0443,
+        "spectral_centroid_hz": 583.3,
+        "spectral_bandwidth_hz": 683.8,
+        "spectral_rolloff_hz": 1152.0,
+        "spectral_flatness": 0.0004,
+        "harmonic_to_percussive_ratio": 0.3924,
+        "dominant_resonance_frequency_hz": 157.4
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "2-73260-A-10",
+      "filename": "2-73260-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.892,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9899,
+        "catboost": 0.8749,
+        "lightgbm": 0.8593,
+        "xgboost": 0.8235
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Wild animals (0.442)",
+        "Bird (0.350)",
+        "Pigeon, dove (0.338)",
+        "Animal (0.325)",
+        "Explosion (0.216)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3834,
+        "rms_energy": 0.0333,
+        "crest_factor": 11.51,
+        "zero_crossing_rate": 0.0624,
+        "spectral_centroid_hz": 1448.1,
+        "spectral_bandwidth_hz": 1890.6,
+        "spectral_rolloff_hz": 3326.6,
+        "spectral_flatness": 0.0189,
+        "harmonic_to_percussive_ratio": 1.5143,
+        "dominant_resonance_frequency_hz": 1.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "2-73260-A-10",
+      "filename": "2-73260-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.5597,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6708,
+        "catboost": 0.5161,
+        "lightgbm": 0.5165,
+        "xgboost": 0.5484
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Rain on surface (0.147)",
+        "Rain (0.130)",
+        "Run (0.115)",
+        "Vehicle (0.114)",
+        "Clip-clop (0.114)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3834,
+        "rms_energy": 0.0311,
+        "crest_factor": 12.32,
+        "zero_crossing_rate": 0.0776,
+        "spectral_centroid_hz": 1581.8,
+        "spectral_bandwidth_hz": 1948.6,
+        "spectral_rolloff_hz": 3660.3,
+        "spectral_flatness": 0.0322,
+        "harmonic_to_percussive_ratio": 1.3155,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "2-73260-A-10",
+      "filename": "2-73260-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.6769,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8982,
+        "catboost": 0.64,
+        "lightgbm": 0.6173,
+        "xgboost": 0.4937
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Wild animals (0.972)",
+        "Animal (0.971)",
+        "Bird (0.967)",
+        "Pigeon, dove (0.888)",
+        "Coo (0.194)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3007,
+        "rms_energy": 0.0368,
+        "crest_factor": 8.18,
+        "zero_crossing_rate": 0.0827,
+        "spectral_centroid_hz": 1689.2,
+        "spectral_bandwidth_hz": 1974.3,
+        "spectral_rolloff_hz": 3847.8,
+        "spectral_flatness": 0.0435,
+        "harmonic_to_percussive_ratio": 1.5836,
+        "dominant_resonance_frequency_hz": 32.3
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "2-73260-A-10",
+      "filename": "2-73260-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.7131,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9145,
+        "catboost": 0.6807,
+        "lightgbm": 0.6106,
+        "xgboost": 0.6235
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Wild animals (0.967)",
+        "Bird (0.967)",
+        "Animal (0.952)",
+        "Pigeon, dove (0.899)",
+        "Coo (0.162)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4189,
+        "rms_energy": 0.0387,
+        "crest_factor": 10.84,
+        "zero_crossing_rate": 0.0827,
+        "spectral_centroid_hz": 1641.4,
+        "spectral_bandwidth_hz": 1947.2,
+        "spectral_rolloff_hz": 3713.7,
+        "spectral_flatness": 0.0394,
+        "harmonic_to_percussive_ratio": 1.5907,
+        "dominant_resonance_frequency_hz": 26.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "2-73260-A-10",
+      "filename": "2-73260-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.6327,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9087,
+        "catboost": 0.5267,
+        "lightgbm": 0.5843,
+        "xgboost": 0.5008
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Animal (0.799)",
+        "Bird (0.785)",
+        "Wild animals (0.760)",
+        "Pigeon, dove (0.717)",
+        "Coo (0.105)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2607,
+        "rms_energy": 0.037,
+        "crest_factor": 7.06,
+        "zero_crossing_rate": 0.0849,
+        "spectral_centroid_hz": 1655.9,
+        "spectral_bandwidth_hz": 1955.5,
+        "spectral_rolloff_hz": 3715.7,
+        "spectral_flatness": 0.0389,
+        "harmonic_to_percussive_ratio": 1.3517,
+        "dominant_resonance_frequency_hz": 31.3
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "2-73260-A-10",
+      "filename": "2-73260-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.6297,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9284,
+        "catboost": 0.4556,
+        "lightgbm": 0.6125,
+        "xgboost": 0.5667
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2352,
+        "rms_energy": 0.0348,
+        "crest_factor": 6.76,
+        "zero_crossing_rate": 0.0813,
+        "spectral_centroid_hz": 1650.7,
+        "spectral_bandwidth_hz": 1951.4,
+        "spectral_rolloff_hz": 3706.0,
+        "spectral_flatness": 0.038,
+        "harmonic_to_percussive_ratio": 1.5216,
+        "dominant_resonance_frequency_hz": 32.4
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "2-81190-A-34",
+      "filename": "2-81190-A-34.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.6077,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.3761,
+        "catboost": 0.7147,
+        "lightgbm": 0.6582,
+        "xgboost": 0.6596
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Cap gun (0.919)",
+        "Gunshot, gunfire (0.880)",
+        "Explosion (0.824)",
+        "Inside, small room (0.107)",
+        "Outside, rural or natural (0.025)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.39,
+        "rms_energy": 0.1287,
+        "crest_factor": 10.8,
+        "zero_crossing_rate": 0.5443,
+        "spectral_centroid_hz": 4414.7,
+        "spectral_bandwidth_hz": 1963.7,
+        "spectral_rolloff_hz": 6588.2,
+        "spectral_flatness": 0.2168,
+        "harmonic_to_percussive_ratio": 0.1172,
+        "dominant_resonance_frequency_hz": 5817.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-104632-A-12",
+      "filename": "3-104632-A-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.6284,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8636,
+        "catboost": 0.6321,
+        "lightgbm": 0.5298,
+        "xgboost": 0.3921
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Speech (0.540)",
+        "Outside, rural or natural (0.037)",
+        "Explosion (0.020)",
+        "Outside, urban or manmade (0.017)",
+        "Livestock, farm animals, working animals (0.010)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.1335,
+        "rms_energy": 0.003,
+        "crest_factor": 43.99,
+        "zero_crossing_rate": 0.1333,
+        "spectral_centroid_hz": 2480.8,
+        "spectral_bandwidth_hz": 2094.2,
+        "spectral_rolloff_hz": 5047.4,
+        "spectral_flatness": 0.1019,
+        "harmonic_to_percussive_ratio": 0.2471,
+        "dominant_resonance_frequency_hz": 636.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-104632-A-12",
+      "filename": "3-104632-A-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.6355,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6832,
+        "catboost": 0.633,
+        "lightgbm": 0.6207,
+        "xgboost": 0.5865
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Speech (0.489)",
+        "Honk (0.138)",
+        "Goose (0.118)",
+        "Fowl (0.085)",
+        "Duck (0.084)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0778,
+        "rms_energy": 0.0026,
+        "crest_factor": 29.82,
+        "zero_crossing_rate": 0.1469,
+        "spectral_centroid_hz": 2435.6,
+        "spectral_bandwidth_hz": 1969.8,
+        "spectral_rolloff_hz": 4770.7,
+        "spectral_flatness": 0.1011,
+        "harmonic_to_percussive_ratio": 0.3461,
+        "dominant_resonance_frequency_hz": 674.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "3-104632-A-12",
+      "filename": "3-104632-A-12.wav",
+      "category": "environmental_ambient",
+      "window_index": 7,
+      "start_time_sec": 3.36,
+      "end_time_sec": 4.32,
+      "ensemble_calibrated_score": 0.5557,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5407,
+        "catboost": 0.6799,
+        "lightgbm": 0.4117,
+        "xgboost": 0.5309
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Speech (0.543)",
+        "Explosion (0.025)",
+        "Outside, rural or natural (0.016)",
+        "Ping (0.014)",
+        "Outside, urban or manmade (0.011)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0747,
+        "rms_energy": 0.0024,
+        "crest_factor": 31.73,
+        "zero_crossing_rate": 0.125,
+        "spectral_centroid_hz": 2110.6,
+        "spectral_bandwidth_hz": 1845.2,
+        "spectral_rolloff_hz": 4099.3,
+        "spectral_flatness": 0.0669,
+        "harmonic_to_percussive_ratio": 0.3166,
+        "dominant_resonance_frequency_hz": 666.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-119120-B-48",
+      "filename": "3-119120-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.6884,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7345,
+        "catboost": 0.7364,
+        "lightgbm": 0.581,
+        "xgboost": 0.6785
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.953)",
+        "Explosion (0.913)",
+        "Firecracker (0.395)",
+        "Outside, urban or manmade (0.023)",
+        "Inside, large room or hall (0.018)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6839,
+        "rms_energy": 0.0262,
+        "crest_factor": 26.07,
+        "zero_crossing_rate": 0.0557,
+        "spectral_centroid_hz": 1134.9,
+        "spectral_bandwidth_hz": 1438.4,
+        "spectral_rolloff_hz": 2475.8,
+        "spectral_flatness": 0.0109,
+        "harmonic_to_percussive_ratio": 0.0166,
+        "dominant_resonance_frequency_hz": 150.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-119120-B-48",
+      "filename": "3-119120-B-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.5967,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7398,
+        "catboost": 0.4947,
+        "lightgbm": 0.6196,
+        "xgboost": 0.5581
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Clip-clop (0.442)",
+        "Horse (0.412)",
+        "Walk, footsteps (0.382)",
+        "Run (0.194)",
+        "Livestock, farm animals, working animals (0.152)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.1325,
+        "rms_energy": 0.0056,
+        "crest_factor": 23.86,
+        "zero_crossing_rate": 0.0509,
+        "spectral_centroid_hz": 1055.9,
+        "spectral_bandwidth_hz": 1355.0,
+        "spectral_rolloff_hz": 2287.8,
+        "spectral_flatness": 0.01,
+        "harmonic_to_percussive_ratio": 0.1292,
+        "dominant_resonance_frequency_hz": 166.7
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "3-119120-C-48",
+      "filename": "3-119120-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.5926,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.4994,
+        "catboost": 0.6323,
+        "lightgbm": 0.5958,
+        "xgboost": 0.6497
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.918)",
+        "Explosion (0.875)",
+        "Firecracker (0.174)",
+        "Outside, urban or manmade (0.031)",
+        "Inside, large room or hall (0.026)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9195,
+        "rms_energy": 0.0451,
+        "crest_factor": 20.37,
+        "zero_crossing_rate": 0.0314,
+        "spectral_centroid_hz": 753.8,
+        "spectral_bandwidth_hz": 1197.7,
+        "spectral_rolloff_hz": 1487.4,
+        "spectral_flatness": 0.0041,
+        "harmonic_to_percussive_ratio": 0.0047,
+        "dominant_resonance_frequency_hz": 230.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-119120-C-48",
+      "filename": "3-119120-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.6385,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5739,
+        "catboost": 0.6124,
+        "lightgbm": 0.7265,
+        "xgboost": 0.6608
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.303)",
+        "Thump, thud (0.284)",
+        "Arrow (0.239)",
+        "Fireworks (0.222)",
+        "Sound effect (0.162)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0418,
+        "rms_energy": 0.0053,
+        "crest_factor": 7.9,
+        "zero_crossing_rate": 0.0218,
+        "spectral_centroid_hz": 603.7,
+        "spectral_bandwidth_hz": 1057.6,
+        "spectral_rolloff_hz": 1084.2,
+        "spectral_flatness": 0.001,
+        "harmonic_to_percussive_ratio": 0.4426,
+        "dominant_resonance_frequency_hz": 75.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-119120-C-48",
+      "filename": "3-119120-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.6988,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7235,
+        "catboost": 0.6238,
+        "lightgbm": 0.7389,
+        "xgboost": 0.7658
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.702)",
+        "Explosion (0.438)",
+        "Drum (0.126)",
+        "Percussion (0.108)",
+        "Musical instrument (0.105)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0658,
+        "rms_energy": 0.0812,
+        "crest_factor": 13.13,
+        "zero_crossing_rate": 0.0234,
+        "spectral_centroid_hz": 603.3,
+        "spectral_bandwidth_hz": 1144.4,
+        "spectral_rolloff_hz": 1122.0,
+        "spectral_flatness": 0.0012,
+        "harmonic_to_percussive_ratio": 0.0111,
+        "dominant_resonance_frequency_hz": 99.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-119120-C-48",
+      "filename": "3-119120-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.5521,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5452,
+        "catboost": 0.583,
+        "lightgbm": 0.5574,
+        "xgboost": 0.4825
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Drum (0.521)",
+        "Percussion (0.407)",
+        "Musical instrument (0.355)",
+        "Bass drum (0.285)",
+        "Drum kit (0.235)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0658,
+        "rms_energy": 0.0814,
+        "crest_factor": 13.1,
+        "zero_crossing_rate": 0.0174,
+        "spectral_centroid_hz": 533.6,
+        "spectral_bandwidth_hz": 1061.1,
+        "spectral_rolloff_hz": 976.8,
+        "spectral_flatness": 0.0011,
+        "harmonic_to_percussive_ratio": 0.0269,
+        "dominant_resonance_frequency_hz": 99.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "3-119120-C-48",
+      "filename": "3-119120-C-48.wav",
+      "category": "environmental_ambient",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.5592,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5935,
+        "catboost": 0.5923,
+        "lightgbm": 0.4722,
+        "xgboost": 0.57
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.975)",
+        "Explosion (0.917)",
+        "Firecracker (0.174)",
+        "Inside, large room or hall (0.019)",
+        "Outside, urban or manmade (0.019)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0578,
+        "rms_energy": 0.0627,
+        "crest_factor": 16.87,
+        "zero_crossing_rate": 0.021,
+        "spectral_centroid_hz": 609.7,
+        "spectral_bandwidth_hz": 1101.5,
+        "spectral_rolloff_hz": 1177.9,
+        "spectral_flatness": 0.0023,
+        "harmonic_to_percussive_ratio": 0.0103,
+        "dominant_resonance_frequency_hz": 239.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.8459,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9702,
+        "catboost": 0.7782,
+        "lightgbm": 0.8629,
+        "xgboost": 0.7684
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.747)",
+        "Explosion (0.686)",
+        "Vehicle (0.108)",
+        "Firecracker (0.108)",
+        "Burst, pop (0.077)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5317,
+        "rms_energy": 0.1052,
+        "crest_factor": 5.06,
+        "zero_crossing_rate": 0.0696,
+        "spectral_centroid_hz": 1096.4,
+        "spectral_bandwidth_hz": 1321.8,
+        "spectral_rolloff_hz": 2098.8,
+        "spectral_flatness": 0.009,
+        "harmonic_to_percussive_ratio": 1.1605,
+        "dominant_resonance_frequency_hz": 55.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.7328,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9579,
+        "catboost": 0.6027,
+        "lightgbm": 0.6876,
+        "xgboost": 0.7368
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Vehicle (0.396)",
+        "Helicopter (0.220)",
+        "Aircraft (0.127)",
+        "Explosion (0.116)",
+        "Fireworks (0.109)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5317,
+        "rms_energy": 0.0988,
+        "crest_factor": 5.38,
+        "zero_crossing_rate": 0.0705,
+        "spectral_centroid_hz": 1108.8,
+        "spectral_bandwidth_hz": 1332.5,
+        "spectral_rolloff_hz": 2127.5,
+        "spectral_flatness": 0.0095,
+        "harmonic_to_percussive_ratio": 1.2218,
+        "dominant_resonance_frequency_hz": 55.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "ensemble_calibrated_score": 0.6051,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6349,
+        "catboost": 0.5522,
+        "lightgbm": 0.6252,
+        "xgboost": 0.6452
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Vehicle (0.352)",
+        "Fireworks (0.144)",
+        "Motorboat, speedboat (0.108)",
+        "Boat, Water vehicle (0.102)",
+        "Helicopter (0.096)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4038,
+        "rms_energy": 0.0921,
+        "crest_factor": 4.38,
+        "zero_crossing_rate": 0.0733,
+        "spectral_centroid_hz": 1122.2,
+        "spectral_bandwidth_hz": 1334.4,
+        "spectral_rolloff_hz": 2164.3,
+        "spectral_flatness": 0.0097,
+        "harmonic_to_percussive_ratio": 1.1039,
+        "dominant_resonance_frequency_hz": 610.4
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.7689,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9493,
+        "catboost": 0.6807,
+        "lightgbm": 0.7592,
+        "xgboost": 0.6898
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.952)",
+        "Explosion (0.927)",
+        "Firecracker (0.196)",
+        "Outside, urban or manmade (0.041)",
+        "Vehicle (0.035)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4648,
+        "rms_energy": 0.0886,
+        "crest_factor": 5.25,
+        "zero_crossing_rate": 0.0751,
+        "spectral_centroid_hz": 1137.4,
+        "spectral_bandwidth_hz": 1337.7,
+        "spectral_rolloff_hz": 2210.7,
+        "spectral_flatness": 0.0102,
+        "harmonic_to_percussive_ratio": 0.9502,
+        "dominant_resonance_frequency_hz": 610.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.6028,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7573,
+        "catboost": 0.5397,
+        "lightgbm": 0.569,
+        "xgboost": 0.5487
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Vehicle (0.270)",
+        "Wind noise (microphone) (0.164)",
+        "Fireworks (0.164)",
+        "Wind (0.147)",
+        "Bicycle (0.145)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5152,
+        "rms_energy": 0.0984,
+        "crest_factor": 5.24,
+        "zero_crossing_rate": 0.0742,
+        "spectral_centroid_hz": 1142.8,
+        "spectral_bandwidth_hz": 1347.9,
+        "spectral_rolloff_hz": 2220.3,
+        "spectral_flatness": 0.0105,
+        "harmonic_to_percussive_ratio": 1.0851,
+        "dominant_resonance_frequency_hz": 610.4
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.6586,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8486,
+        "catboost": 0.5959,
+        "lightgbm": 0.5727,
+        "xgboost": 0.6312
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fireworks (0.407)",
+        "Explosion (0.262)",
+        "Vehicle (0.216)",
+        "Wind (0.081)",
+        "Boat, Water vehicle (0.080)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6543,
+        "rms_energy": 0.0996,
+        "crest_factor": 6.57,
+        "zero_crossing_rate": 0.0786,
+        "spectral_centroid_hz": 1184.3,
+        "spectral_bandwidth_hz": 1383.7,
+        "spectral_rolloff_hz": 2346.3,
+        "spectral_flatness": 0.0117,
+        "harmonic_to_percussive_ratio": 1.0771,
+        "dominant_resonance_frequency_hz": 214.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 7,
+      "start_time_sec": 3.36,
+      "end_time_sec": 4.32,
+      "ensemble_calibrated_score": 0.5849,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6194,
+        "catboost": 0.6199,
+        "lightgbm": 0.5475,
+        "xgboost": 0.5078
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Vehicle (0.355)",
+        "Boat, Water vehicle (0.156)",
+        "Motorboat, speedboat (0.149)",
+        "Helicopter (0.091)",
+        "Aircraft (0.079)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6543,
+        "rms_energy": 0.1028,
+        "crest_factor": 6.36,
+        "zero_crossing_rate": 0.0783,
+        "spectral_centroid_hz": 1185.0,
+        "spectral_bandwidth_hz": 1372.3,
+        "spectral_rolloff_hz": 2327.6,
+        "spectral_flatness": 0.0116,
+        "harmonic_to_percussive_ratio": 0.9772,
+        "dominant_resonance_frequency_hz": 610.4
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "ensemble_calibrated_score": 0.7017,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7312,
+        "catboost": 0.6579,
+        "lightgbm": 0.7174,
+        "xgboost": 0.7285
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Vehicle (0.223)",
+        "Motorboat, speedboat (0.115)",
+        "Boat, Water vehicle (0.102)",
+        "Fireworks (0.094)",
+        "Aircraft (0.093)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5372,
+        "rms_energy": 0.1,
+        "crest_factor": 5.37,
+        "zero_crossing_rate": 0.0747,
+        "spectral_centroid_hz": 1160.7,
+        "spectral_bandwidth_hz": 1355.2,
+        "spectral_rolloff_hz": 2249.0,
+        "spectral_flatness": 0.0109,
+        "harmonic_to_percussive_ratio": 0.806,
+        "dominant_resonance_frequency_hz": 250.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "environmental_ambient",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.6028,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7874,
+        "catboost": 0.5426,
+        "lightgbm": 0.5839,
+        "xgboost": 0.4671
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5372,
+        "rms_energy": 0.1022,
+        "crest_factor": 5.26,
+        "zero_crossing_rate": 0.0755,
+        "spectral_centroid_hz": 1176.0,
+        "spectral_bandwidth_hz": 1355.7,
+        "spectral_rolloff_hz": 2300.4,
+        "spectral_flatness": 0.0125,
+        "harmonic_to_percussive_ratio": 0.9688,
+        "dominant_resonance_frequency_hz": 195.6
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-gun-dry-firing-1-96426",
+      "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+      "category": "environmental_ambient",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.624,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7334,
+        "catboost": 0.5512,
+        "lightgbm": 0.6154,
+        "xgboost": 0.6258
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.638)",
+        "Gunshot, gunfire (0.619)",
+        "Cap gun (0.424)",
+        "Sound effect (0.270)",
+        "Breaking (0.202)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8966,
+        "rms_energy": 0.0288,
+        "crest_factor": 31.16,
+        "zero_crossing_rate": 0.4054,
+        "spectral_centroid_hz": 3614.2,
+        "spectral_bandwidth_hz": 2127.7,
+        "spectral_rolloff_hz": 6131.0,
+        "spectral_flatness": 0.1271,
+        "harmonic_to_percussive_ratio": 0.0007,
+        "dominant_resonance_frequency_hz": 4785.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.9421,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9991,
+        "catboost": 0.9047,
+        "lightgbm": 0.95,
+        "xgboost": 0.9216
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.738)",
+        "Gunshot, gunfire (0.671)",
+        "Machine gun (0.580)",
+        "Sound effect (0.224)",
+        "Musical instrument (0.035)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.7861,
+        "rms_energy": 0.1239,
+        "crest_factor": 6.35,
+        "zero_crossing_rate": 0.0291,
+        "spectral_centroid_hz": 1137.6,
+        "spectral_bandwidth_hz": 1430.7,
+        "spectral_rolloff_hz": 2466.2,
+        "spectral_flatness": 0.0258,
+        "harmonic_to_percussive_ratio": 0.3626,
+        "dominant_resonance_frequency_hz": 6.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "ensemble_calibrated_score": 0.5737,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7311,
+        "catboost": 0.4849,
+        "lightgbm": 0.5634,
+        "xgboost": 0.5358
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.325)",
+        "Fart (0.044)",
+        "Inside, small room (0.039)",
+        "Boing (0.027)",
+        "Cacophony (0.023)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8084,
+        "rms_energy": 0.1204,
+        "crest_factor": 6.72,
+        "zero_crossing_rate": 0.032,
+        "spectral_centroid_hz": 1118.9,
+        "spectral_bandwidth_hz": 1397.4,
+        "spectral_rolloff_hz": 2382.6,
+        "spectral_flatness": 0.0265,
+        "harmonic_to_percussive_ratio": 0.462,
+        "dominant_resonance_frequency_hz": 11.5
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "ensemble_calibrated_score": 0.808,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7393,
+        "catboost": 0.8449,
+        "lightgbm": 0.8056,
+        "xgboost": 0.8408
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Fart (0.577)",
+        "Sound effect (0.152)",
+        "Synthesizer (0.103)",
+        "Music (0.078)",
+        "Keyboard (musical) (0.043)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8084,
+        "rms_energy": 0.1248,
+        "crest_factor": 6.48,
+        "zero_crossing_rate": 0.0334,
+        "spectral_centroid_hz": 1464.3,
+        "spectral_bandwidth_hz": 1728.7,
+        "spectral_rolloff_hz": 3235.4,
+        "spectral_flatness": 0.0297,
+        "harmonic_to_percussive_ratio": 0.4809,
+        "dominant_resonance_frequency_hz": 6.2
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.773,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8597,
+        "catboost": 0.7613,
+        "lightgbm": 0.7153,
+        "xgboost": 0.7521
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Cacophony (0.375)",
+        "Synthesizer (0.100)",
+        "Noise (0.080)",
+        "Sound effect (0.075)",
+        "Music (0.064)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0176,
+        "rms_energy": 0.1135,
+        "crest_factor": 8.97,
+        "zero_crossing_rate": 0.0436,
+        "spectral_centroid_hz": 1410.0,
+        "spectral_bandwidth_hz": 1607.6,
+        "spectral_rolloff_hz": 2959.2,
+        "spectral_flatness": 0.0368,
+        "harmonic_to_percussive_ratio": 0.3646,
+        "dominant_resonance_frequency_hz": 17.7
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "ensemble_calibrated_score": 0.652,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6556,
+        "catboost": 0.6398,
+        "lightgbm": 0.6959,
+        "xgboost": 0.6013
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.177)",
+        "Cacophony (0.082)",
+        "Synthesizer (0.068)",
+        "Noise (0.048)",
+        "Music (0.044)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8023,
+        "rms_energy": 0.1013,
+        "crest_factor": 7.92,
+        "zero_crossing_rate": 0.0671,
+        "spectral_centroid_hz": 1758.7,
+        "spectral_bandwidth_hz": 1835.1,
+        "spectral_rolloff_hz": 3712.7,
+        "spectral_flatness": 0.0379,
+        "harmonic_to_percussive_ratio": 0.2834,
+        "dominant_resonance_frequency_hz": 40.6
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 13,
+      "start_time_sec": 6.24,
+      "end_time_sec": 7.2,
+      "ensemble_calibrated_score": 0.6459,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8202,
+        "catboost": 0.5839,
+        "lightgbm": 0.6571,
+        "xgboost": 0.4815
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.497)",
+        "Synthesizer (0.075)",
+        "Sound effect (0.072)",
+        "Keyboard (musical) (0.031)",
+        "Sampler (0.019)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6423,
+        "rms_energy": 0.0705,
+        "crest_factor": 9.11,
+        "zero_crossing_rate": 0.1019,
+        "spectral_centroid_hz": 2389.6,
+        "spectral_bandwidth_hz": 2041.3,
+        "spectral_rolloff_hz": 4854.8,
+        "spectral_flatness": 0.061,
+        "harmonic_to_percussive_ratio": 0.1939,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 21,
+      "start_time_sec": 10.08,
+      "end_time_sec": 11.04,
+      "ensemble_calibrated_score": 0.5631,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6036,
+        "catboost": 0.6063,
+        "lightgbm": 0.5083,
+        "xgboost": 0.4863
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Ding (0.446)",
+        "Sound effect (0.188)",
+        "Boing (0.186)",
+        "Plop (0.123)",
+        "Beep, bleep (0.096)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2642,
+        "rms_energy": 0.0501,
+        "crest_factor": 5.28,
+        "zero_crossing_rate": 0.1863,
+        "spectral_centroid_hz": 2952.7,
+        "spectral_bandwidth_hz": 2354.0,
+        "spectral_rolloff_hz": 5658.3,
+        "spectral_flatness": 0.0138,
+        "harmonic_to_percussive_ratio": 0.1046,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 28,
+      "start_time_sec": 13.44,
+      "end_time_sec": 14.4,
+      "ensemble_calibrated_score": 0.8689,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9371,
+        "catboost": 0.8416,
+        "lightgbm": 0.8576,
+        "xgboost": 0.8381
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.569)",
+        "Sound effect (0.542)",
+        "Bang (0.474)",
+        "Gunshot, gunfire (0.454)",
+        "Machine gun (0.344)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8073,
+        "rms_energy": 0.1198,
+        "crest_factor": 6.74,
+        "zero_crossing_rate": 0.053,
+        "spectral_centroid_hz": 1167.5,
+        "spectral_bandwidth_hz": 973.1,
+        "spectral_rolloff_hz": 2313.5,
+        "spectral_flatness": 0.627,
+        "harmonic_to_percussive_ratio": 0.151,
+        "dominant_resonance_frequency_hz": 32.3
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 29,
+      "start_time_sec": 13.92,
+      "end_time_sec": 14.88,
+      "ensemble_calibrated_score": 0.9322,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9961,
+        "catboost": 0.8819,
+        "lightgbm": 0.9383,
+        "xgboost": 0.9327
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.405)",
+        "Explosion (0.098)",
+        "Gunshot, gunfire (0.060)",
+        "Music (0.050)",
+        "Machine gun (0.047)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8073,
+        "rms_energy": 0.1287,
+        "crest_factor": 6.27,
+        "zero_crossing_rate": 0.0565,
+        "spectral_centroid_hz": 1607.5,
+        "spectral_bandwidth_hz": 1635.5,
+        "spectral_rolloff_hz": 3281.8,
+        "spectral_flatness": 0.1455,
+        "harmonic_to_percussive_ratio": 0.062,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 31,
+      "start_time_sec": 14.88,
+      "end_time_sec": 15.84,
+      "ensemble_calibrated_score": 0.866,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.95,
+        "catboost": 0.8181,
+        "lightgbm": 0.8537,
+        "xgboost": 0.858
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.425)",
+        "Burst, pop (0.335)",
+        "Sound effect (0.234)",
+        "Machine gun (0.146)",
+        "Cacophony (0.143)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8754,
+        "rms_energy": 0.1242,
+        "crest_factor": 7.05,
+        "zero_crossing_rate": 0.0249,
+        "spectral_centroid_hz": 1078.2,
+        "spectral_bandwidth_hz": 1375.3,
+        "spectral_rolloff_hz": 2256.6,
+        "spectral_flatness": 0.0313,
+        "harmonic_to_percussive_ratio": 0.3515,
+        "dominant_resonance_frequency_hz": 95.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 32,
+      "start_time_sec": 15.36,
+      "end_time_sec": 16.32,
+      "ensemble_calibrated_score": 0.9074,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9757,
+        "catboost": 0.8805,
+        "lightgbm": 0.8867,
+        "xgboost": 0.8908
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.159)",
+        "Explosion (0.121)",
+        "Cacophony (0.106)",
+        "Burst, pop (0.077)",
+        "Music (0.065)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8754,
+        "rms_energy": 0.1371,
+        "crest_factor": 6.38,
+        "zero_crossing_rate": 0.0341,
+        "spectral_centroid_hz": 1487.2,
+        "spectral_bandwidth_hz": 1729.2,
+        "spectral_rolloff_hz": 3254.0,
+        "spectral_flatness": 0.0399,
+        "harmonic_to_percussive_ratio": 0.0971,
+        "dominant_resonance_frequency_hz": 95.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 34,
+      "start_time_sec": 16.32,
+      "end_time_sec": 17.28,
+      "ensemble_calibrated_score": 0.6011,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8508,
+        "catboost": 0.5911,
+        "lightgbm": 0.4844,
+        "xgboost": 0.4029
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.334)",
+        "Sound effect (0.110)",
+        "Electronic music (0.037)",
+        "Cacophony (0.037)",
+        "Synthesizer (0.035)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9142,
+        "rms_energy": 0.1102,
+        "crest_factor": 8.3,
+        "zero_crossing_rate": 0.0433,
+        "spectral_centroid_hz": 1367.9,
+        "spectral_bandwidth_hz": 1631.7,
+        "spectral_rolloff_hz": 2921.4,
+        "spectral_flatness": 0.0425,
+        "harmonic_to_percussive_ratio": 0.1294,
+        "dominant_resonance_frequency_hz": 203.1
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 35,
+      "start_time_sec": 16.8,
+      "end_time_sec": 17.76,
+      "ensemble_calibrated_score": 0.5986,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7874,
+        "catboost": 0.5184,
+        "lightgbm": 0.531,
+        "xgboost": 0.5836
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.487)",
+        "Synthesizer (0.143)",
+        "Sound effect (0.109)",
+        "Keyboard (musical) (0.097)",
+        "Sampler (0.051)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9142,
+        "rms_energy": 0.134,
+        "crest_factor": 6.82,
+        "zero_crossing_rate": 0.0699,
+        "spectral_centroid_hz": 1812.2,
+        "spectral_bandwidth_hz": 1836.4,
+        "spectral_rolloff_hz": 3854.8,
+        "spectral_flatness": 0.0685,
+        "harmonic_to_percussive_ratio": 0.0608,
+        "dominant_resonance_frequency_hz": 192.7
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 47,
+      "start_time_sec": 22.56,
+      "end_time_sec": 23.52,
+      "ensemble_calibrated_score": 0.643,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9367,
+        "catboost": 0.5621,
+        "lightgbm": 0.5467,
+        "xgboost": 0.5031
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.186)",
+        "Beep, bleep (0.158)",
+        "Music (0.027)",
+        "Speech (0.020)",
+        "Inside, small room (0.018)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3051,
+        "rms_energy": 0.0546,
+        "crest_factor": 5.59,
+        "zero_crossing_rate": 0.2038,
+        "spectral_centroid_hz": 2999.2,
+        "spectral_bandwidth_hz": 1967.5,
+        "spectral_rolloff_hz": 5326.6,
+        "spectral_flatness": 0.035,
+        "harmonic_to_percussive_ratio": 0.0614,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 57,
+      "start_time_sec": 27.36,
+      "end_time_sec": 28.32,
+      "ensemble_calibrated_score": 0.7204,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9054,
+        "catboost": 0.6276,
+        "lightgbm": 0.7069,
+        "xgboost": 0.651
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Whack, thwack (0.560)",
+        "Sound effect (0.411)",
+        "Bang (0.128)",
+        "Burst, pop (0.067)",
+        "Smash, crash (0.062)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8309,
+        "rms_energy": 0.1906,
+        "crest_factor": 4.36,
+        "zero_crossing_rate": 0.0539,
+        "spectral_centroid_hz": 766.8,
+        "spectral_bandwidth_hz": 685.2,
+        "spectral_rolloff_hz": 1501.0,
+        "spectral_flatness": 0.6553,
+        "harmonic_to_percussive_ratio": 0.3414,
+        "dominant_resonance_frequency_hz": 3.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 64,
+      "start_time_sec": 30.72,
+      "end_time_sec": 31.68,
+      "ensemble_calibrated_score": 0.6762,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9047,
+        "catboost": 0.5969,
+        "lightgbm": 0.5925,
+        "xgboost": 0.6202
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.433)",
+        "Drum machine (0.097)",
+        "Whack, thwack (0.069)",
+        "Sound effect (0.068)",
+        "Drum kit (0.055)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9611,
+        "rms_energy": 0.2076,
+        "crest_factor": 4.63,
+        "zero_crossing_rate": 0.1288,
+        "spectral_centroid_hz": 1237.3,
+        "spectral_bandwidth_hz": 1621.0,
+        "spectral_rolloff_hz": 2729.8,
+        "spectral_flatness": 0.0119,
+        "harmonic_to_percussive_ratio": 0.263,
+        "dominant_resonance_frequency_hz": 16.7
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 66,
+      "start_time_sec": 31.68,
+      "end_time_sec": 32.64,
+      "ensemble_calibrated_score": 0.7059,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9254,
+        "catboost": 0.6223,
+        "lightgbm": 0.6568,
+        "xgboost": 0.6173
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.158)",
+        "Siren (0.023)",
+        "Air horn, truck horn (0.022)",
+        "Inside, small room (0.019)",
+        "Music (0.017)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.1121,
+        "rms_energy": 0.1355,
+        "crest_factor": 8.21,
+        "zero_crossing_rate": 0.079,
+        "spectral_centroid_hz": 1163.9,
+        "spectral_bandwidth_hz": 1488.7,
+        "spectral_rolloff_hz": 2504.5,
+        "spectral_flatness": 0.0133,
+        "harmonic_to_percussive_ratio": 0.0038,
+        "dominant_resonance_frequency_hz": 817.7
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 67,
+      "start_time_sec": 32.16,
+      "end_time_sec": 33.12,
+      "ensemble_calibrated_score": 0.6364,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6511,
+        "catboost": 0.565,
+        "lightgbm": 0.708,
+        "xgboost": 0.659
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.233)",
+        "Sound effect (0.194)",
+        "Plop (0.053)",
+        "Beep, bleep (0.041)",
+        "Drum machine (0.034)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.1121,
+        "rms_energy": 0.1863,
+        "crest_factor": 5.97,
+        "zero_crossing_rate": 0.1525,
+        "spectral_centroid_hz": 1593.1,
+        "spectral_bandwidth_hz": 1771.8,
+        "spectral_rolloff_hz": 3475.3,
+        "spectral_flatness": 0.0211,
+        "harmonic_to_percussive_ratio": 0.1389,
+        "dominant_resonance_frequency_hz": 15.6
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 86,
+      "start_time_sec": 41.28,
+      "end_time_sec": 42.24,
+      "ensemble_calibrated_score": 0.5728,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5449,
+        "catboost": 0.6246,
+        "lightgbm": 0.5388,
+        "xgboost": 0.5549
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Plop (0.335)",
+        "Music for children (0.152)",
+        "Ding (0.152)",
+        "Sound effect (0.126)",
+        "Jingle, tinkle (0.106)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3463,
+        "rms_energy": 0.0372,
+        "crest_factor": 9.32,
+        "zero_crossing_rate": 0.0147,
+        "spectral_centroid_hz": 469.1,
+        "spectral_bandwidth_hz": 560.4,
+        "spectral_rolloff_hz": 973.8,
+        "spectral_flatness": 0.7485,
+        "harmonic_to_percussive_ratio": 0.0,
+        "dominant_resonance_frequency_hz": 499.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 87,
+      "start_time_sec": 41.76,
+      "end_time_sec": 42.72,
+      "ensemble_calibrated_score": 0.6798,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.814,
+        "catboost": 0.6903,
+        "lightgbm": 0.6367,
+        "xgboost": 0.5034
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Ding (0.254)",
+        "Sound effect (0.122)",
+        "Music (0.095)",
+        "Music for children (0.044)",
+        "Jingle, tinkle (0.044)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4352,
+        "rms_energy": 0.0712,
+        "crest_factor": 6.11,
+        "zero_crossing_rate": 0.0636,
+        "spectral_centroid_hz": 1397.7,
+        "spectral_bandwidth_hz": 1510.4,
+        "spectral_rolloff_hz": 2909.8,
+        "spectral_flatness": 0.2711,
+        "harmonic_to_percussive_ratio": 0.0463,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 90,
+      "start_time_sec": 43.2,
+      "end_time_sec": 44.16,
+      "ensemble_calibrated_score": 0.6664,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8641,
+        "catboost": 0.5802,
+        "lightgbm": 0.6739,
+        "xgboost": 0.5256
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Beep, bleep (0.181)",
+        "Sound effect (0.141)",
+        "Music (0.043)",
+        "Inside, small room (0.031)",
+        "Ringtone (0.015)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3971,
+        "rms_energy": 0.0694,
+        "crest_factor": 5.72,
+        "zero_crossing_rate": 0.071,
+        "spectral_centroid_hz": 1613.4,
+        "spectral_bandwidth_hz": 1832.4,
+        "spectral_rolloff_hz": 3299.9,
+        "spectral_flatness": 0.0222,
+        "harmonic_to_percussive_ratio": 0.0307,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 91,
+      "start_time_sec": 43.68,
+      "end_time_sec": 44.64,
+      "ensemble_calibrated_score": 0.5861,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8323,
+        "catboost": 0.5272,
+        "lightgbm": 0.5028,
+        "xgboost": 0.4518
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.288)",
+        "Cacophony (0.141)",
+        "Music (0.116)",
+        "Beep, bleep (0.080)",
+        "Synthesizer (0.070)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3971,
+        "rms_energy": 0.0671,
+        "crest_factor": 5.92,
+        "zero_crossing_rate": 0.1032,
+        "spectral_centroid_hz": 1899.3,
+        "spectral_bandwidth_hz": 1962.0,
+        "spectral_rolloff_hz": 4115.4,
+        "spectral_flatness": 0.0201,
+        "harmonic_to_percussive_ratio": 0.0694,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 94,
+      "start_time_sec": 45.12,
+      "end_time_sec": 46.08,
+      "ensemble_calibrated_score": 0.6062,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8467,
+        "catboost": 0.5581,
+        "lightgbm": 0.4652,
+        "xgboost": 0.5528
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.296)",
+        "Cacophony (0.286)",
+        "Sound effect (0.273)",
+        "Synthesizer (0.070)",
+        "Electronic music (0.040)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4229,
+        "rms_energy": 0.0685,
+        "crest_factor": 6.18,
+        "zero_crossing_rate": 0.1587,
+        "spectral_centroid_hz": 2241.0,
+        "spectral_bandwidth_hz": 1931.4,
+        "spectral_rolloff_hz": 4653.7,
+        "spectral_flatness": 0.035,
+        "harmonic_to_percussive_ratio": 0.0622,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 96,
+      "start_time_sec": 46.08,
+      "end_time_sec": 47.04,
+      "ensemble_calibrated_score": 0.6226,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9113,
+        "catboost": 0.5739,
+        "lightgbm": 0.4811,
+        "xgboost": 0.4909
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.278)",
+        "Music (0.058)",
+        "Ding (0.035)",
+        "Inside, large room or hall (0.021)",
+        "Music for children (0.017)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3841,
+        "rms_energy": 0.0657,
+        "crest_factor": 5.85,
+        "zero_crossing_rate": 0.144,
+        "spectral_centroid_hz": 2006.6,
+        "spectral_bandwidth_hz": 1900.6,
+        "spectral_rolloff_hz": 4440.5,
+        "spectral_flatness": 0.044,
+        "harmonic_to_percussive_ratio": 0.0606,
+        "dominant_resonance_frequency_hz": 418.8
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 100,
+      "start_time_sec": 48.0,
+      "end_time_sec": 48.96,
+      "ensemble_calibrated_score": 0.5799,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9141,
+        "catboost": 0.4805,
+        "lightgbm": 0.4587,
+        "xgboost": 0.457
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.214)",
+        "Music (0.172)",
+        "Music for children (0.154)",
+        "Boing (0.136)",
+        "Inside, small room (0.036)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4204,
+        "rms_energy": 0.0704,
+        "crest_factor": 5.97,
+        "zero_crossing_rate": 0.2278,
+        "spectral_centroid_hz": 2589.6,
+        "spectral_bandwidth_hz": 1882.4,
+        "spectral_rolloff_hz": 4925.4,
+        "spectral_flatness": 0.07,
+        "harmonic_to_percussive_ratio": 0.0411,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 102,
+      "start_time_sec": 48.96,
+      "end_time_sec": 49.92,
+      "ensemble_calibrated_score": 0.565,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5938,
+        "catboost": 0.5916,
+        "lightgbm": 0.5344,
+        "xgboost": 0.506
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Plop (0.627)",
+        "Boing (0.326)",
+        "Music for children (0.283)",
+        "Sound effect (0.257)",
+        "Ding (0.149)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4462,
+        "rms_energy": 0.0582,
+        "crest_factor": 7.67,
+        "zero_crossing_rate": 0.1249,
+        "spectral_centroid_hz": 2247.0,
+        "spectral_bandwidth_hz": 1957.4,
+        "spectral_rolloff_hz": 4553.9,
+        "spectral_flatness": 0.0467,
+        "harmonic_to_percussive_ratio": 0.0774,
+        "dominant_resonance_frequency_hz": 2481.2
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 103,
+      "start_time_sec": 49.44,
+      "end_time_sec": 50.4,
+      "ensemble_calibrated_score": 0.6486,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8287,
+        "catboost": 0.6553,
+        "lightgbm": 0.5041,
+        "xgboost": 0.5736
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Ding (0.221)",
+        "Sound effect (0.181)",
+        "Music for children (0.097)",
+        "Plop (0.063)",
+        "Beep, bleep (0.054)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4462,
+        "rms_energy": 0.0675,
+        "crest_factor": 6.61,
+        "zero_crossing_rate": 0.2162,
+        "spectral_centroid_hz": 2584.9,
+        "spectral_bandwidth_hz": 1881.7,
+        "spectral_rolloff_hz": 4929.9,
+        "spectral_flatness": 0.0724,
+        "harmonic_to_percussive_ratio": 0.0279,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 108,
+      "start_time_sec": 51.84,
+      "end_time_sec": 52.8,
+      "ensemble_calibrated_score": 0.8053,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9288,
+        "catboost": 0.8348,
+        "lightgbm": 0.6739,
+        "xgboost": 0.7494
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.359)",
+        "Music (0.213)",
+        "Drum machine (0.035)",
+        "Synthesizer (0.028)",
+        "Electronic music (0.024)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4234,
+        "rms_energy": 0.0964,
+        "crest_factor": 4.39,
+        "zero_crossing_rate": 0.0831,
+        "spectral_centroid_hz": 1237.9,
+        "spectral_bandwidth_hz": 1199.8,
+        "spectral_rolloff_hz": 2156.8,
+        "spectral_flatness": 0.1835,
+        "harmonic_to_percussive_ratio": 0.0481,
+        "dominant_resonance_frequency_hz": 463.5
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 112,
+      "start_time_sec": 53.76,
+      "end_time_sec": 54.72,
+      "ensemble_calibrated_score": 0.7274,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9344,
+        "catboost": 0.6854,
+        "lightgbm": 0.6461,
+        "xgboost": 0.6159
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.373)",
+        "Synthesizer (0.107)",
+        "Sound effect (0.059)",
+        "Keyboard (musical) (0.056)",
+        "Sampler (0.039)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5404,
+        "rms_energy": 0.0962,
+        "crest_factor": 5.62,
+        "zero_crossing_rate": 0.1311,
+        "spectral_centroid_hz": 1564.5,
+        "spectral_bandwidth_hz": 1193.8,
+        "spectral_rolloff_hz": 2759.6,
+        "spectral_flatness": 0.0613,
+        "harmonic_to_percussive_ratio": 0.1589,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 118,
+      "start_time_sec": 56.64,
+      "end_time_sec": 57.6,
+      "ensemble_calibrated_score": 0.6104,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7822,
+        "catboost": 0.533,
+        "lightgbm": 0.5638,
+        "xgboost": 0.5821
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.170)",
+        "Music (0.124)",
+        "Beep, bleep (0.106)",
+        "Cacophony (0.105)",
+        "Synthesizer (0.076)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4912,
+        "rms_energy": 0.0737,
+        "crest_factor": 6.67,
+        "zero_crossing_rate": 0.2759,
+        "spectral_centroid_hz": 3061.8,
+        "spectral_bandwidth_hz": 1848.2,
+        "spectral_rolloff_hz": 5190.5,
+        "spectral_flatness": 0.0822,
+        "harmonic_to_percussive_ratio": 0.064,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 119,
+      "start_time_sec": 57.12,
+      "end_time_sec": 58.08,
+      "ensemble_calibrated_score": 0.6247,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7823,
+        "catboost": 0.5757,
+        "lightgbm": 0.5028,
+        "xgboost": 0.6795
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.321)",
+        "Sound effect (0.113)",
+        "Cacophony (0.009)",
+        "Synthesizer (0.008)",
+        "Video game music (0.005)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2294,
+        "rms_energy": 0.0319,
+        "crest_factor": 7.2,
+        "zero_crossing_rate": 0.1762,
+        "spectral_centroid_hz": 2174.9,
+        "spectral_bandwidth_hz": 1675.4,
+        "spectral_rolloff_hz": 4142.6,
+        "spectral_flatness": 0.0317,
+        "harmonic_to_percussive_ratio": 0.1527,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 125,
+      "start_time_sec": 60.0,
+      "end_time_sec": 60.96,
+      "ensemble_calibrated_score": 0.6301,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7179,
+        "catboost": 0.6356,
+        "lightgbm": 0.5613,
+        "xgboost": 0.5859
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.259)",
+        "Music (0.087)",
+        "Boing (0.048)",
+        "Music for children (0.025)",
+        "Ding (0.024)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3274,
+        "rms_energy": 0.0361,
+        "crest_factor": 9.08,
+        "zero_crossing_rate": 0.2879,
+        "spectral_centroid_hz": 3633.7,
+        "spectral_bandwidth_hz": 2415.3,
+        "spectral_rolloff_hz": 6614.9,
+        "spectral_flatness": 0.0445,
+        "harmonic_to_percussive_ratio": 0.0955,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 126,
+      "start_time_sec": 60.48,
+      "end_time_sec": 61.44,
+      "ensemble_calibrated_score": 0.6694,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7726,
+        "catboost": 0.6123,
+        "lightgbm": 0.6967,
+        "xgboost": 0.5853
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.244)",
+        "Ding (0.165)",
+        "Music (0.087)",
+        "Boing (0.042)",
+        "Music for children (0.041)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2945,
+        "rms_energy": 0.0349,
+        "crest_factor": 8.44,
+        "zero_crossing_rate": 0.2405,
+        "spectral_centroid_hz": 3345.6,
+        "spectral_bandwidth_hz": 2518.4,
+        "spectral_rolloff_hz": 6476.3,
+        "spectral_flatness": 0.0475,
+        "harmonic_to_percussive_ratio": 0.0252,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 127,
+      "start_time_sec": 60.96,
+      "end_time_sec": 61.92,
+      "ensemble_calibrated_score": 0.5637,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7197,
+        "catboost": 0.5882,
+        "lightgbm": 0.4572,
+        "xgboost": 0.4237
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Ding (0.415)",
+        "Music for children (0.226)",
+        "Boing (0.214)",
+        "Sound effect (0.152)",
+        "Jingle, tinkle (0.076)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3426,
+        "rms_energy": 0.0548,
+        "crest_factor": 6.25,
+        "zero_crossing_rate": 0.3377,
+        "spectral_centroid_hz": 3617.0,
+        "spectral_bandwidth_hz": 2265.1,
+        "spectral_rolloff_hz": 6424.4,
+        "spectral_flatness": 0.0984,
+        "harmonic_to_percussive_ratio": 0.0355,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "laser_synthetic",
+      "window_index": 128,
+      "start_time_sec": 61.44,
+      "end_time_sec": 62.4,
+      "ensemble_calibrated_score": 0.6866,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.9096,
+        "catboost": 0.5092,
+        "lightgbm": 0.7328,
+        "xgboost": 0.6519
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.215)",
+        "Sound effect (0.151)",
+        "Synthesizer (0.059)",
+        "Alarm (0.043)",
+        "Siren (0.036)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3426,
+        "rms_energy": 0.0434,
+        "crest_factor": 7.89,
+        "zero_crossing_rate": 0.3048,
+        "spectral_centroid_hz": 3712.9,
+        "spectral_bandwidth_hz": 2374.4,
+        "spectral_rolloff_hz": 6686.0,
+        "spectral_flatness": 0.0584,
+        "harmonic_to_percussive_ratio": 0.0956,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "freesound_community-laser-gun-81720",
+      "filename": "freesound_community-laser-gun-81720.mp3",
+      "category": "laser_synthetic",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.582,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8568,
+        "catboost": 0.4688,
+        "lightgbm": 0.4616,
+        "xgboost": 0.589
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.447)",
+        "Synthesizer (0.107)",
+        "Boing (0.080)",
+        "Keyboard (musical) (0.064)",
+        "Sound effect (0.042)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5093,
+        "rms_energy": 0.1287,
+        "crest_factor": 3.96,
+        "zero_crossing_rate": 0.1294,
+        "spectral_centroid_hz": 1359.7,
+        "spectral_bandwidth_hz": 849.7,
+        "spectral_rolloff_hz": 2295.4,
+        "spectral_flatness": 0.0369,
+        "harmonic_to_percussive_ratio": 0.0328,
+        "dominant_resonance_frequency_hz": 152.1
+      },
+      "root_cause_diagnosis": "missing_hard_negative_diversity (acoustic signature underrepresented in negative training distribution)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "ensemble_calibrated_score": 0.6691,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7297,
+        "catboost": 0.6701,
+        "lightgbm": 0.6322,
+        "xgboost": 0.627
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Breaking (0.318)",
+        "Sound effect (0.244)",
+        "Glass (0.208)",
+        "Shatter (0.206)",
+        "Crack (0.164)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2803,
+        "rms_energy": 0.0153,
+        "crest_factor": 18.32,
+        "zero_crossing_rate": 0.2054,
+        "spectral_centroid_hz": 2497.5,
+        "spectral_bandwidth_hz": 1977.7,
+        "spectral_rolloff_hz": 4943.0,
+        "spectral_flatness": 0.1235,
+        "harmonic_to_percussive_ratio": 0.0002,
+        "dominant_resonance_frequency_hz": 869.8
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.612,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7081,
+        "catboost": 0.5697,
+        "lightgbm": 0.6326,
+        "xgboost": 0.5166
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.198)",
+        "Music (0.063)",
+        "Silence (0.059)",
+        "Percussion (0.043)",
+        "Drum machine (0.042)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.344,
+        "rms_energy": 0.0165,
+        "crest_factor": 20.8,
+        "zero_crossing_rate": 0.2144,
+        "spectral_centroid_hz": 2483.4,
+        "spectral_bandwidth_hz": 2029.7,
+        "spectral_rolloff_hz": 5000.0,
+        "spectral_flatness": 0.135,
+        "harmonic_to_percussive_ratio": 0.0001,
+        "dominant_resonance_frequency_hz": 194.8
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.6345,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6749,
+        "catboost": 0.6663,
+        "lightgbm": 0.6025,
+        "xgboost": 0.5463
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Percussion (0.124)",
+        "Music (0.088)",
+        "Musical instrument (0.073)",
+        "Drum (0.069)",
+        "Wood block (0.057)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.344,
+        "rms_energy": 0.0134,
+        "crest_factor": 25.69,
+        "zero_crossing_rate": 0.225,
+        "spectral_centroid_hz": 2563.7,
+        "spectral_bandwidth_hz": 2067.8,
+        "spectral_rolloff_hz": 5171.9,
+        "spectral_flatness": 0.1354,
+        "harmonic_to_percussive_ratio": 0.0001,
+        "dominant_resonance_frequency_hz": 197.9
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 7,
+      "start_time_sec": 3.36,
+      "end_time_sec": 4.32,
+      "ensemble_calibrated_score": 0.6525,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6441,
+        "catboost": 0.6314,
+        "lightgbm": 0.6955,
+        "xgboost": 0.644
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.149)",
+        "Glass (0.054)",
+        "Music (0.050)",
+        "Inside, small room (0.029)",
+        "Inside, large room or hall (0.026)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3656,
+        "rms_energy": 0.0114,
+        "crest_factor": 32.06,
+        "zero_crossing_rate": 0.1403,
+        "spectral_centroid_hz": 2347.9,
+        "spectral_bandwidth_hz": 2154.0,
+        "spectral_rolloff_hz": 5126.5,
+        "spectral_flatness": 0.0913,
+        "harmonic_to_percussive_ratio": 0.0,
+        "dominant_resonance_frequency_hz": 197.9
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "ensemble_calibrated_score": 0.6733,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5575,
+        "catboost": 0.6598,
+        "lightgbm": 0.7526,
+        "xgboost": 0.7655
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.392)",
+        "Percussion (0.130)",
+        "Musical instrument (0.121)",
+        "Drum (0.053)",
+        "Drum kit (0.046)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3656,
+        "rms_energy": 0.0113,
+        "crest_factor": 32.31,
+        "zero_crossing_rate": 0.1332,
+        "spectral_centroid_hz": 2209.9,
+        "spectral_bandwidth_hz": 2016.4,
+        "spectral_rolloff_hz": 4687.0,
+        "spectral_flatness": 0.0725,
+        "harmonic_to_percussive_ratio": 0.0,
+        "dominant_resonance_frequency_hz": 196.9
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.605,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.6589,
+        "catboost": 0.6331,
+        "lightgbm": 0.5374,
+        "xgboost": 0.5627
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Music (0.211)",
+        "Sound effect (0.175)",
+        "Glass (0.057)",
+        "Percussion (0.023)",
+        "Chink, clink (0.018)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4786,
+        "rms_energy": 0.0204,
+        "crest_factor": 23.51,
+        "zero_crossing_rate": 0.1988,
+        "spectral_centroid_hz": 2359.3,
+        "spectral_bandwidth_hz": 1957.9,
+        "spectral_rolloff_hz": 4682.0,
+        "spectral_flatness": 0.0959,
+        "harmonic_to_percussive_ratio": 0.0002,
+        "dominant_resonance_frequency_hz": 749.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 10,
+      "start_time_sec": 4.8,
+      "end_time_sec": 5.76,
+      "ensemble_calibrated_score": 0.788,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8286,
+        "catboost": 0.7887,
+        "lightgbm": 0.7603,
+        "xgboost": 0.7649
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Clang (0.339)",
+        "Ding (0.279)",
+        "Glass (0.269)",
+        "Chink, clink (0.156)",
+        "Sound effect (0.122)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4786,
+        "rms_energy": 0.0216,
+        "crest_factor": 22.19,
+        "zero_crossing_rate": 0.1759,
+        "spectral_centroid_hz": 2356.1,
+        "spectral_bandwidth_hz": 1984.4,
+        "spectral_rolloff_hz": 4740.9,
+        "spectral_flatness": 0.0983,
+        "harmonic_to_percussive_ratio": 0.004,
+        "dominant_resonance_frequency_hz": 749.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 11,
+      "start_time_sec": 5.28,
+      "end_time_sec": 6.24,
+      "ensemble_calibrated_score": 0.5886,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.7594,
+        "catboost": 0.5225,
+        "lightgbm": 0.5262,
+        "xgboost": 0.562
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.400)",
+        "Silence (0.067)",
+        "Music (0.056)",
+        "Inside, small room (0.041)",
+        "Drum machine (0.031)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.1835,
+        "rms_energy": 0.0137,
+        "crest_factor": 13.4,
+        "zero_crossing_rate": 0.2305,
+        "spectral_centroid_hz": 2730.0,
+        "spectral_bandwidth_hz": 2047.3,
+        "spectral_rolloff_hz": 5156.2,
+        "spectral_flatness": 0.1348,
+        "harmonic_to_percussive_ratio": 0.0001,
+        "dominant_resonance_frequency_hz": 196.9
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 12,
+      "start_time_sec": 5.76,
+      "end_time_sec": 6.72,
+      "ensemble_calibrated_score": 0.7075,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7888,
+        "catboost": 0.5945,
+        "lightgbm": 0.7683,
+        "xgboost": 0.7345
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.179)",
+        "Inside, small room (0.110)",
+        "Drum machine (0.106)",
+        "Door (0.105)",
+        "Whack, thwack (0.085)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3047,
+        "rms_energy": 0.0179,
+        "crest_factor": 17.04,
+        "zero_crossing_rate": 0.2806,
+        "spectral_centroid_hz": 2997.9,
+        "spectral_bandwidth_hz": 2106.3,
+        "spectral_rolloff_hz": 5517.1,
+        "spectral_flatness": 0.17,
+        "harmonic_to_percussive_ratio": 0.0045,
+        "dominant_resonance_frequency_hz": 194.8
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 16,
+      "start_time_sec": 7.68,
+      "end_time_sec": 8.64,
+      "ensemble_calibrated_score": 0.5607,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5737,
+        "catboost": 0.5722,
+        "lightgbm": 0.5229,
+        "xgboost": 0.5754
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.237)",
+        "Whack, thwack (0.193)",
+        "Gunshot, gunfire (0.131)",
+        "Glass (0.106)",
+        "Ding (0.100)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3027,
+        "rms_energy": 0.0185,
+        "crest_factor": 16.36,
+        "zero_crossing_rate": 0.194,
+        "spectral_centroid_hz": 2484.9,
+        "spectral_bandwidth_hz": 2026.8,
+        "spectral_rolloff_hz": 4997.0,
+        "spectral_flatness": 0.1241,
+        "harmonic_to_percussive_ratio": 0.0,
+        "dominant_resonance_frequency_hz": 193.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 17,
+      "start_time_sec": 8.16,
+      "end_time_sec": 9.12,
+      "ensemble_calibrated_score": 0.632,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.5988,
+        "catboost": 0.6439,
+        "lightgbm": 0.6441,
+        "xgboost": 0.6394
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.281)",
+        "Inside, small room (0.089)",
+        "Gunshot, gunfire (0.070)",
+        "Ding (0.062)",
+        "Cap gun (0.045)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3027,
+        "rms_energy": 0.018,
+        "crest_factor": 16.86,
+        "zero_crossing_rate": 0.1953,
+        "spectral_centroid_hz": 2438.6,
+        "spectral_bandwidth_hz": 2061.5,
+        "spectral_rolloff_hz": 5036.3,
+        "spectral_flatness": 0.121,
+        "harmonic_to_percussive_ratio": 0.0,
+        "dominant_resonance_frequency_hz": 551.0
+      },
+      "root_cause_diagnosis": "yamnet_embedding_semantic_overlap (frozen backbone AudioSet representations overlap with impulse/explosive sounds)"
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "category": "toy_gun_pop",
+      "window_index": 19,
+      "start_time_sec": 9.12,
+      "end_time_sec": 10.08,
+      "ensemble_calibrated_score": 0.552,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.431,
+        "catboost": 0.5727,
+        "lightgbm": 0.6156,
+        "xgboost": 0.5992
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Inside, small room (0.161)",
+        "Door (0.080)",
+        "Whack, thwack (0.058)",
+        "Sound effect (0.052)",
+        "Slap, smack (0.049)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2237,
+        "rms_energy": 0.0099,
+        "crest_factor": 22.57,
+        "zero_crossing_rate": 0.2185,
+        "spectral_centroid_hz": 2502.0,
+        "spectral_bandwidth_hz": 1954.8,
+        "spectral_rolloff_hz": 4944.1,
+        "spectral_flatness": 0.1167,
+        "harmonic_to_percussive_ratio": 0.0001,
+        "dominant_resonance_frequency_hz": 579.2
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "ensemble_calibrated_score": 0.7388,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8547,
+        "catboost": 0.6371,
+        "lightgbm": 0.7708,
+        "xgboost": 0.7301
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Clang (0.324)",
+        "Sound effect (0.204)",
+        "Ding (0.194)",
+        "Chink, clink (0.185)",
+        "Glass (0.167)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3701,
+        "rms_energy": 0.0344,
+        "crest_factor": 10.74,
+        "zero_crossing_rate": 0.2091,
+        "spectral_centroid_hz": 2934.7,
+        "spectral_bandwidth_hz": 1866.0,
+        "spectral_rolloff_hz": 5193.0,
+        "spectral_flatness": 0.4395,
+        "harmonic_to_percussive_ratio": 0.0137,
+        "dominant_resonance_frequency_hz": 1174.0
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "ensemble_calibrated_score": 0.7094,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9306,
+        "catboost": 0.7103,
+        "lightgbm": 0.5706,
+        "xgboost": 0.57
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.349)",
+        "Computer keyboard (0.069)",
+        "Music (0.065)",
+        "Drum machine (0.059)",
+        "Percussion (0.050)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6849,
+        "rms_energy": 0.0414,
+        "crest_factor": 16.54,
+        "zero_crossing_rate": 0.1908,
+        "spectral_centroid_hz": 2717.8,
+        "spectral_bandwidth_hz": 1755.2,
+        "spectral_rolloff_hz": 4793.9,
+        "spectral_flatness": 0.3832,
+        "harmonic_to_percussive_ratio": 0.0038,
+        "dominant_resonance_frequency_hz": 1103.1
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "ensemble_calibrated_score": 0.7814,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8498,
+        "catboost": 0.7835,
+        "lightgbm": 0.7531,
+        "xgboost": 0.7094
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.652)",
+        "Gunshot, gunfire (0.211)",
+        "Explosion (0.167)",
+        "Clatter (0.104)",
+        "Silence (0.078)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.6849,
+        "rms_energy": 0.0349,
+        "crest_factor": 19.62,
+        "zero_crossing_rate": 0.2447,
+        "spectral_centroid_hz": 3155.1,
+        "spectral_bandwidth_hz": 1982.0,
+        "spectral_rolloff_hz": 5433.0,
+        "spectral_flatness": 0.2417,
+        "harmonic_to_percussive_ratio": 0.0045,
+        "dominant_resonance_frequency_hz": 5340.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "ensemble_calibrated_score": 0.8583,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.881,
+        "catboost": 0.8647,
+        "lightgbm": 0.8284,
+        "xgboost": 0.8551
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.752)",
+        "Fireworks (0.639)",
+        "Firecracker (0.335)",
+        "Gunshot, gunfire (0.273)",
+        "Burst, pop (0.257)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0093,
+        "rms_energy": 0.1942,
+        "crest_factor": 5.2,
+        "zero_crossing_rate": 0.3268,
+        "spectral_centroid_hz": 3021.6,
+        "spectral_bandwidth_hz": 1921.6,
+        "spectral_rolloff_hz": 5224.3,
+        "spectral_flatness": 0.1654,
+        "harmonic_to_percussive_ratio": 0.004,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 6,
+      "start_time_sec": 2.88,
+      "end_time_sec": 3.84,
+      "ensemble_calibrated_score": 0.9487,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9884,
+        "catboost": 0.9461,
+        "lightgbm": 0.9265,
+        "xgboost": 0.9257
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.873)",
+        "Gunshot, gunfire (0.845)",
+        "Machine gun (0.537)",
+        "Fireworks (0.104)",
+        "Outside, rural or natural (0.064)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0458,
+        "rms_energy": 0.2428,
+        "crest_factor": 4.31,
+        "zero_crossing_rate": 0.1564,
+        "spectral_centroid_hz": 1992.7,
+        "spectral_bandwidth_hz": 1781.5,
+        "spectral_rolloff_hz": 3992.9,
+        "spectral_flatness": 0.0641,
+        "harmonic_to_percussive_ratio": 0.0104,
+        "dominant_resonance_frequency_hz": 219.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 7,
+      "start_time_sec": 3.36,
+      "end_time_sec": 4.32,
+      "ensemble_calibrated_score": 0.9257,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9936,
+        "catboost": 0.9111,
+        "lightgbm": 0.8924,
+        "xgboost": 0.902
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.752)",
+        "Explosion (0.731)",
+        "Machine gun (0.285)",
+        "Fusillade (0.200)",
+        "Sound effect (0.116)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0458,
+        "rms_energy": 0.195,
+        "crest_factor": 5.36,
+        "zero_crossing_rate": 0.1591,
+        "spectral_centroid_hz": 1922.7,
+        "spectral_bandwidth_hz": 1688.9,
+        "spectral_rolloff_hz": 3759.1,
+        "spectral_flatness": 0.059,
+        "harmonic_to_percussive_ratio": 0.0025,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "ensemble_calibrated_score": 0.9233,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9688,
+        "catboost": 0.9057,
+        "lightgbm": 0.9146,
+        "xgboost": 0.9028
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.690)",
+        "Explosion (0.689)",
+        "Fusillade (0.198)",
+        "Machine gun (0.146)",
+        "Sound effect (0.121)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0629,
+        "rms_energy": 0.2032,
+        "crest_factor": 5.23,
+        "zero_crossing_rate": 0.1633,
+        "spectral_centroid_hz": 2009.2,
+        "spectral_bandwidth_hz": 1754.9,
+        "spectral_rolloff_hz": 3960.7,
+        "spectral_flatness": 0.0672,
+        "harmonic_to_percussive_ratio": 0.0338,
+        "dominant_resonance_frequency_hz": 216.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 9,
+      "start_time_sec": 4.32,
+      "end_time_sec": 5.28,
+      "ensemble_calibrated_score": 0.7955,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8432,
+        "catboost": 0.7998,
+        "lightgbm": 0.7408,
+        "xgboost": 0.7973
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.689)",
+        "Fireworks (0.542)",
+        "Gunshot, gunfire (0.348)",
+        "Firecracker (0.339)",
+        "Machine gun (0.300)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0629,
+        "rms_energy": 0.1946,
+        "crest_factor": 5.46,
+        "zero_crossing_rate": 0.1531,
+        "spectral_centroid_hz": 1867.5,
+        "spectral_bandwidth_hz": 1666.1,
+        "spectral_rolloff_hz": 3670.4,
+        "spectral_flatness": 0.0533,
+        "harmonic_to_percussive_ratio": 0.0022,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 10,
+      "start_time_sec": 4.8,
+      "end_time_sec": 5.76,
+      "ensemble_calibrated_score": 0.932,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9904,
+        "catboost": 0.9049,
+        "lightgbm": 0.9271,
+        "xgboost": 0.9062
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.787)",
+        "Gunshot, gunfire (0.781)",
+        "Fusillade (0.393)",
+        "Machine gun (0.255)",
+        "Sound effect (0.200)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0243,
+        "rms_energy": 0.1949,
+        "crest_factor": 5.26,
+        "zero_crossing_rate": 0.1639,
+        "spectral_centroid_hz": 2014.5,
+        "spectral_bandwidth_hz": 1742.8,
+        "spectral_rolloff_hz": 3942.5,
+        "spectral_flatness": 0.0697,
+        "harmonic_to_percussive_ratio": 0.0115,
+        "dominant_resonance_frequency_hz": 216.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 11,
+      "start_time_sec": 5.28,
+      "end_time_sec": 6.24,
+      "ensemble_calibrated_score": 0.9064,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9736,
+        "catboost": 0.8891,
+        "lightgbm": 0.8734,
+        "xgboost": 0.8895
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.799)",
+        "Gunshot, gunfire (0.793)",
+        "Machine gun (0.385)",
+        "Sound effect (0.168)",
+        "Burst, pop (0.100)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0243,
+        "rms_energy": 0.237,
+        "crest_factor": 4.32,
+        "zero_crossing_rate": 0.1481,
+        "spectral_centroid_hz": 1932.3,
+        "spectral_bandwidth_hz": 1761.9,
+        "spectral_rolloff_hz": 3914.3,
+        "spectral_flatness": 0.061,
+        "harmonic_to_percussive_ratio": 0.019,
+        "dominant_resonance_frequency_hz": 46.9
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 12,
+      "start_time_sec": 5.76,
+      "end_time_sec": 6.72,
+      "ensemble_calibrated_score": 0.9139,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9834,
+        "catboost": 0.9001,
+        "lightgbm": 0.8788,
+        "xgboost": 0.8888
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.685)",
+        "Gunshot, gunfire (0.630)",
+        "Machine gun (0.202)",
+        "Fireworks (0.174)",
+        "Fusillade (0.168)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0119,
+        "rms_energy": 0.195,
+        "crest_factor": 5.19,
+        "zero_crossing_rate": 0.1621,
+        "spectral_centroid_hz": 1967.4,
+        "spectral_bandwidth_hz": 1707.1,
+        "spectral_rolloff_hz": 3841.7,
+        "spectral_flatness": 0.0636,
+        "harmonic_to_percussive_ratio": 0.0043,
+        "dominant_resonance_frequency_hz": 216.7
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 13,
+      "start_time_sec": 6.24,
+      "end_time_sec": 7.2,
+      "ensemble_calibrated_score": 0.844,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8802,
+        "catboost": 0.8148,
+        "lightgbm": 0.8552,
+        "xgboost": 0.8336
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.651)",
+        "Burst, pop (0.565)",
+        "Firecracker (0.418)",
+        "Gunshot, gunfire (0.405)",
+        "Artillery fire (0.374)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0119,
+        "rms_energy": 0.1394,
+        "crest_factor": 7.26,
+        "zero_crossing_rate": 0.1448,
+        "spectral_centroid_hz": 1874.8,
+        "spectral_bandwidth_hz": 1538.8,
+        "spectral_rolloff_hz": 3590.7,
+        "spectral_flatness": 0.2446,
+        "harmonic_to_percussive_ratio": 0.0233,
+        "dominant_resonance_frequency_hz": 277.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 14,
+      "start_time_sec": 6.72,
+      "end_time_sec": 7.68,
+      "ensemble_calibrated_score": 0.8187,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9279,
+        "catboost": 0.7457,
+        "lightgbm": 0.8115,
+        "xgboost": 0.8189
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Whack, thwack (0.217)",
+        "Knock (0.171)",
+        "Explosion (0.161)",
+        "Sound effect (0.154)",
+        "Door (0.147)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5416,
+        "rms_energy": 0.0388,
+        "crest_factor": 13.98,
+        "zero_crossing_rate": 0.0926,
+        "spectral_centroid_hz": 1596.0,
+        "spectral_bandwidth_hz": 1359.2,
+        "spectral_rolloff_hz": 3092.2,
+        "spectral_flatness": 0.4388,
+        "harmonic_to_percussive_ratio": 0.032,
+        "dominant_resonance_frequency_hz": 268.8
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 15,
+      "start_time_sec": 7.2,
+      "end_time_sec": 8.16,
+      "ensemble_calibrated_score": 0.9825,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9983,
+        "catboost": 0.9775,
+        "lightgbm": 0.9813,
+        "xgboost": 0.9697
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Machine gun (0.950)",
+        "Gunshot, gunfire (0.941)",
+        "Explosion (0.878)",
+        "Sound effect (0.079)",
+        "Outside, rural or natural (0.020)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5416,
+        "rms_energy": 0.0666,
+        "crest_factor": 8.13,
+        "zero_crossing_rate": 0.1143,
+        "spectral_centroid_hz": 1690.1,
+        "spectral_bandwidth_hz": 1642.7,
+        "spectral_rolloff_hz": 3547.9,
+        "spectral_flatness": 0.2922,
+        "harmonic_to_percussive_ratio": 0.9622,
+        "dominant_resonance_frequency_hz": 352.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 16,
+      "start_time_sec": 7.68,
+      "end_time_sec": 8.64,
+      "ensemble_calibrated_score": 0.8856,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9966,
+        "catboost": 0.8299,
+        "lightgbm": 0.8693,
+        "xgboost": 0.8581
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Machine gun (0.788)",
+        "Gunshot, gunfire (0.648)",
+        "Explosion (0.488)",
+        "Clatter (0.135)",
+        "Engine (0.063)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5275,
+        "rms_energy": 0.078,
+        "crest_factor": 6.76,
+        "zero_crossing_rate": 0.1392,
+        "spectral_centroid_hz": 1808.9,
+        "spectral_bandwidth_hz": 1901.8,
+        "spectral_rolloff_hz": 3938.0,
+        "spectral_flatness": 0.0455,
+        "harmonic_to_percussive_ratio": 1.8424,
+        "dominant_resonance_frequency_hz": 352.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 17,
+      "start_time_sec": 8.16,
+      "end_time_sec": 9.12,
+      "ensemble_calibrated_score": 0.9843,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.999,
+        "catboost": 0.9787,
+        "lightgbm": 0.9829,
+        "xgboost": 0.9751
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Machine gun (0.990)",
+        "Gunshot, gunfire (0.978)",
+        "Explosion (0.958)",
+        "Sound effect (0.039)",
+        "Clatter (0.009)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5172,
+        "rms_energy": 0.0685,
+        "crest_factor": 7.55,
+        "zero_crossing_rate": 0.1534,
+        "spectral_centroid_hz": 1936.9,
+        "spectral_bandwidth_hz": 1922.8,
+        "spectral_rolloff_hz": 4105.3,
+        "spectral_flatness": 0.0876,
+        "harmonic_to_percussive_ratio": 1.177,
+        "dominant_resonance_frequency_hz": 186.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 18,
+      "start_time_sec": 8.64,
+      "end_time_sec": 9.6,
+      "ensemble_calibrated_score": 0.9355,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9798,
+        "catboost": 0.9177,
+        "lightgbm": 0.9234,
+        "xgboost": 0.923
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.514)",
+        "Explosion (0.480)",
+        "Machine gun (0.396)",
+        "Sound effect (0.233)",
+        "Fusillade (0.169)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5481,
+        "rms_energy": 0.0873,
+        "crest_factor": 6.28,
+        "zero_crossing_rate": 0.1565,
+        "spectral_centroid_hz": 2472.4,
+        "spectral_bandwidth_hz": 2034.6,
+        "spectral_rolloff_hz": 4919.9,
+        "spectral_flatness": 0.2358,
+        "harmonic_to_percussive_ratio": 0.0322,
+        "dominant_resonance_frequency_hz": 160.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 19,
+      "start_time_sec": 9.12,
+      "end_time_sec": 10.08,
+      "ensemble_calibrated_score": 0.9756,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9909,
+        "catboost": 0.9689,
+        "lightgbm": 0.9741,
+        "xgboost": 0.9683
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.836)",
+        "Explosion (0.772)",
+        "Machine gun (0.282)",
+        "Sound effect (0.140)",
+        "Fusillade (0.114)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5481,
+        "rms_energy": 0.0905,
+        "crest_factor": 6.05,
+        "zero_crossing_rate": 0.1868,
+        "spectral_centroid_hz": 2696.5,
+        "spectral_bandwidth_hz": 1997.1,
+        "spectral_rolloff_hz": 5112.9,
+        "spectral_flatness": 0.2644,
+        "harmonic_to_percussive_ratio": 0.0419,
+        "dominant_resonance_frequency_hz": 228.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 20,
+      "start_time_sec": 9.6,
+      "end_time_sec": 10.56,
+      "ensemble_calibrated_score": 0.9788,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9978,
+        "catboost": 0.9705,
+        "lightgbm": 0.9768,
+        "xgboost": 0.9699
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.927)",
+        "Explosion (0.841)",
+        "Machine gun (0.236)",
+        "Outside, rural or natural (0.064)",
+        "Inside, large room or hall (0.004)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.4294,
+        "rms_energy": 0.0493,
+        "crest_factor": 8.71,
+        "zero_crossing_rate": 0.1905,
+        "spectral_centroid_hz": 2193.6,
+        "spectral_bandwidth_hz": 1701.8,
+        "spectral_rolloff_hz": 4082.2,
+        "spectral_flatness": 0.1059,
+        "harmonic_to_percussive_ratio": 0.1788,
+        "dominant_resonance_frequency_hz": 203.1
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 21,
+      "start_time_sec": 10.08,
+      "end_time_sec": 11.04,
+      "ensemble_calibrated_score": 0.9262,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9962,
+        "catboost": 0.8796,
+        "lightgbm": 0.9304,
+        "xgboost": 0.9114
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.807)",
+        "Explosion (0.720)",
+        "Cap gun (0.459)",
+        "Machine gun (0.268)",
+        "Outside, rural or natural (0.254)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.611,
+        "rms_energy": 0.0377,
+        "crest_factor": 16.22,
+        "zero_crossing_rate": 0.2071,
+        "spectral_centroid_hz": 2449.7,
+        "spectral_bandwidth_hz": 1766.6,
+        "spectral_rolloff_hz": 4384.1,
+        "spectral_flatness": 0.1287,
+        "harmonic_to_percussive_ratio": 0.0402,
+        "dominant_resonance_frequency_hz": 5340.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 22,
+      "start_time_sec": 10.56,
+      "end_time_sec": 11.52,
+      "ensemble_calibrated_score": 0.6649,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.711,
+        "catboost": 0.6599,
+        "lightgbm": 0.6254,
+        "xgboost": 0.6652
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Cap gun (0.755)",
+        "Gunshot, gunfire (0.713)",
+        "Explosion (0.614)",
+        "Machine gun (0.288)",
+        "Inside, small room (0.149)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8267,
+        "rms_energy": 0.0525,
+        "crest_factor": 15.74,
+        "zero_crossing_rate": 0.3559,
+        "spectral_centroid_hz": 3449.0,
+        "spectral_bandwidth_hz": 1949.2,
+        "spectral_rolloff_hz": 5587.7,
+        "spectral_flatness": 0.1906,
+        "harmonic_to_percussive_ratio": 0.0312,
+        "dominant_resonance_frequency_hz": 6096.9
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 23,
+      "start_time_sec": 11.04,
+      "end_time_sec": 12.0,
+      "ensemble_calibrated_score": 0.7252,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.7522,
+        "catboost": 0.6385,
+        "lightgbm": 0.8138,
+        "xgboost": 0.7351
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.331)",
+        "Explosion (0.209)",
+        "Cap gun (0.118)",
+        "Inside, small room (0.059)",
+        "Percussion (0.040)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8267,
+        "rms_energy": 0.0408,
+        "crest_factor": 20.27,
+        "zero_crossing_rate": 0.5012,
+        "spectral_centroid_hz": 3995.2,
+        "spectral_bandwidth_hz": 1935.4,
+        "spectral_rolloff_hz": 6122.0,
+        "spectral_flatness": 0.2247,
+        "harmonic_to_percussive_ratio": 0.0214,
+        "dominant_resonance_frequency_hz": 6097.9
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 24,
+      "start_time_sec": 11.52,
+      "end_time_sec": 12.48,
+      "ensemble_calibrated_score": 0.8931,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9701,
+        "catboost": 0.8639,
+        "lightgbm": 0.8645,
+        "xgboost": 0.8807
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.710)",
+        "Gunshot, gunfire (0.598)",
+        "Burst, pop (0.303)",
+        "Fusillade (0.270)",
+        "Sound effect (0.256)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0217,
+        "rms_energy": 0.1936,
+        "crest_factor": 5.28,
+        "zero_crossing_rate": 0.3738,
+        "spectral_centroid_hz": 3313.5,
+        "spectral_bandwidth_hz": 1987.8,
+        "spectral_rolloff_hz": 5646.2,
+        "spectral_flatness": 0.1922,
+        "harmonic_to_percussive_ratio": 0.0109,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 25,
+      "start_time_sec": 12.0,
+      "end_time_sec": 12.96,
+      "ensemble_calibrated_score": 0.9096,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9792,
+        "catboost": 0.8914,
+        "lightgbm": 0.8845,
+        "xgboost": 0.8778
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.702)",
+        "Gunshot, gunfire (0.575)",
+        "Machine gun (0.374)",
+        "Firecracker (0.359)",
+        "Fireworks (0.335)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0217,
+        "rms_energy": 0.1938,
+        "crest_factor": 5.27,
+        "zero_crossing_rate": 0.1789,
+        "spectral_centroid_hz": 2119.0,
+        "spectral_bandwidth_hz": 1729.9,
+        "spectral_rolloff_hz": 4037.3,
+        "spectral_flatness": 0.1246,
+        "harmonic_to_percussive_ratio": 0.0275,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 26,
+      "start_time_sec": 12.48,
+      "end_time_sec": 13.44,
+      "ensemble_calibrated_score": 0.9194,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9379,
+        "catboost": 0.9171,
+        "lightgbm": 0.9023,
+        "xgboost": 0.9221
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.800)",
+        "Gunshot, gunfire (0.541)",
+        "Burst, pop (0.304)",
+        "Sound effect (0.293)",
+        "Artillery fire (0.108)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0234,
+        "rms_energy": 0.1944,
+        "crest_factor": 5.26,
+        "zero_crossing_rate": 0.1547,
+        "spectral_centroid_hz": 2059.0,
+        "spectral_bandwidth_hz": 1754.6,
+        "spectral_rolloff_hz": 4019.2,
+        "spectral_flatness": 0.1713,
+        "harmonic_to_percussive_ratio": 0.0181,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 27,
+      "start_time_sec": 12.96,
+      "end_time_sec": 13.92,
+      "ensemble_calibrated_score": 0.9284,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9758,
+        "catboost": 0.9167,
+        "lightgbm": 0.915,
+        "xgboost": 0.8993
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.688)",
+        "Gunshot, gunfire (0.666)",
+        "Machine gun (0.326)",
+        "Sound effect (0.261)",
+        "Artillery fire (0.138)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0234,
+        "rms_energy": 0.1946,
+        "crest_factor": 5.26,
+        "zero_crossing_rate": 0.1564,
+        "spectral_centroid_hz": 2028.7,
+        "spectral_bandwidth_hz": 1746.4,
+        "spectral_rolloff_hz": 3976.3,
+        "spectral_flatness": 0.1484,
+        "harmonic_to_percussive_ratio": 0.0095,
+        "dominant_resonance_frequency_hz": 215.6
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 28,
+      "start_time_sec": 13.44,
+      "end_time_sec": 14.4,
+      "ensemble_calibrated_score": 0.8565,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8646,
+        "catboost": 0.8625,
+        "lightgbm": 0.8336,
+        "xgboost": 0.8674
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Explosion (0.716)",
+        "Gunshot, gunfire (0.526)",
+        "Machine gun (0.348)",
+        "Burst, pop (0.322)",
+        "Firecracker (0.258)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3075,
+        "rms_energy": 0.0808,
+        "crest_factor": 3.81,
+        "zero_crossing_rate": 0.1325,
+        "spectral_centroid_hz": 2134.6,
+        "spectral_bandwidth_hz": 1779.1,
+        "spectral_rolloff_hz": 4144.2,
+        "spectral_flatness": 0.2368,
+        "harmonic_to_percussive_ratio": 0.0534,
+        "dominant_resonance_frequency_hz": 34.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 29,
+      "start_time_sec": 13.92,
+      "end_time_sec": 14.88,
+      "ensemble_calibrated_score": 0.9751,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9987,
+        "catboost": 0.9676,
+        "lightgbm": 0.9653,
+        "xgboost": 0.9693
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.980)",
+        "Explosion (0.966)",
+        "Machine gun (0.949)",
+        "Sound effect (0.037)",
+        "Outside, rural or natural (0.036)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.3075,
+        "rms_energy": 0.0975,
+        "crest_factor": 3.16,
+        "zero_crossing_rate": 0.1304,
+        "spectral_centroid_hz": 2210.6,
+        "spectral_bandwidth_hz": 1813.8,
+        "spectral_rolloff_hz": 4258.1,
+        "spectral_flatness": 0.2571,
+        "harmonic_to_percussive_ratio": 0.0762,
+        "dominant_resonance_frequency_hz": 34.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 30,
+      "start_time_sec": 14.4,
+      "end_time_sec": 15.36,
+      "ensemble_calibrated_score": 0.9752,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9969,
+        "catboost": 0.9659,
+        "lightgbm": 0.9699,
+        "xgboost": 0.9692
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.736)",
+        "Explosion (0.622)",
+        "Machine gun (0.487)",
+        "Outside, rural or natural (0.195)",
+        "Sound effect (0.034)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.2965,
+        "rms_energy": 0.0586,
+        "crest_factor": 5.06,
+        "zero_crossing_rate": 0.1305,
+        "spectral_centroid_hz": 1501.3,
+        "spectral_bandwidth_hz": 1299.2,
+        "spectral_rolloff_hz": 2692.5,
+        "spectral_flatness": 0.0269,
+        "harmonic_to_percussive_ratio": 0.2723,
+        "dominant_resonance_frequency_hz": 284.4
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 31,
+      "start_time_sec": 14.88,
+      "end_time_sec": 15.84,
+      "ensemble_calibrated_score": 0.8551,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9642,
+        "catboost": 0.7993,
+        "lightgbm": 0.8389,
+        "xgboost": 0.8305
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Sound effect (0.439)",
+        "Explosion (0.259)",
+        "Flap (0.191)",
+        "Clatter (0.166)",
+        "Gunshot, gunfire (0.160)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.1633,
+        "rms_energy": 0.0178,
+        "crest_factor": 9.18,
+        "zero_crossing_rate": 0.094,
+        "spectral_centroid_hz": 1240.4,
+        "spectral_bandwidth_hz": 1089.1,
+        "spectral_rolloff_hz": 2209.7,
+        "spectral_flatness": 0.2366,
+        "harmonic_to_percussive_ratio": 0.1068,
+        "dominant_resonance_frequency_hz": 711.5
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 32,
+      "start_time_sec": 15.36,
+      "end_time_sec": 16.32,
+      "ensemble_calibrated_score": 0.7416,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.8484,
+        "catboost": 0.7345,
+        "lightgbm": 0.671,
+        "xgboost": 0.6978
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Knock (0.682)",
+        "Thunk (0.551)",
+        "Whack, thwack (0.414)",
+        "Thump, thud (0.410)",
+        "Sound effect (0.354)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5358,
+        "rms_energy": 0.0309,
+        "crest_factor": 17.33,
+        "zero_crossing_rate": 0.0607,
+        "spectral_centroid_hz": 1045.5,
+        "spectral_bandwidth_hz": 950.9,
+        "spectral_rolloff_hz": 2002.0,
+        "spectral_flatness": 0.572,
+        "harmonic_to_percussive_ratio": 0.0,
+        "dominant_resonance_frequency_hz": 347.9
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 33,
+      "start_time_sec": 15.84,
+      "end_time_sec": 16.8,
+      "ensemble_calibrated_score": 0.9751,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9964,
+        "catboost": 0.9733,
+        "lightgbm": 0.9641,
+        "xgboost": 0.9621
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Gunshot, gunfire (0.746)",
+        "Machine gun (0.685)",
+        "Explosion (0.682)",
+        "Sound effect (0.430)",
+        "Fusillade (0.038)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5358,
+        "rms_energy": 0.0615,
+        "crest_factor": 8.72,
+        "zero_crossing_rate": 0.0942,
+        "spectral_centroid_hz": 1302.2,
+        "spectral_bandwidth_hz": 1307.2,
+        "spectral_rolloff_hz": 2768.6,
+        "spectral_flatness": 0.3946,
+        "harmonic_to_percussive_ratio": 0.7997,
+        "dominant_resonance_frequency_hz": 279.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 34,
+      "start_time_sec": 16.32,
+      "end_time_sec": 17.28,
+      "ensemble_calibrated_score": 0.6991,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9677,
+        "catboost": 0.5361,
+        "lightgbm": 0.7192,
+        "xgboost": 0.5983
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Engine (0.224)",
+        "Vehicle (0.104)",
+        "Motorcycle (0.101)",
+        "Heavy engine (low frequency) (0.085)",
+        "Clatter (0.076)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5217,
+        "rms_energy": 0.0766,
+        "crest_factor": 6.81,
+        "zero_crossing_rate": 0.1378,
+        "spectral_centroid_hz": 1811.9,
+        "spectral_bandwidth_hz": 1903.6,
+        "spectral_rolloff_hz": 3923.9,
+        "spectral_flatness": 0.0452,
+        "harmonic_to_percussive_ratio": 1.7451,
+        "dominant_resonance_frequency_hz": 352.1
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 35,
+      "start_time_sec": 16.8,
+      "end_time_sec": 17.76,
+      "ensemble_calibrated_score": 0.9785,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9983,
+        "catboost": 0.9697,
+        "lightgbm": 0.9819,
+        "xgboost": 0.9601
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Machine gun (0.984)",
+        "Gunshot, gunfire (0.981)",
+        "Explosion (0.959)",
+        "Outside, rural or natural (0.015)",
+        "Sound effect (0.008)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5208,
+        "rms_energy": 0.0732,
+        "crest_factor": 7.12,
+        "zero_crossing_rate": 0.1415,
+        "spectral_centroid_hz": 1841.7,
+        "spectral_bandwidth_hz": 1906.7,
+        "spectral_rolloff_hz": 3965.7,
+        "spectral_flatness": 0.0514,
+        "harmonic_to_percussive_ratio": 1.5255,
+        "dominant_resonance_frequency_hz": 255.2
+      },
+      "root_cause_diagnosis": "yamnet_embedding_harmonic_transient_confusion (high-Q resonance with percussive attack misidentified as explosion/gunshot by AudioSet backbone)"
+    },
+    {
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_chime_bell",
+      "window_index": 36,
+      "start_time_sec": 17.28,
+      "end_time_sec": 18.24,
+      "ensemble_calibrated_score": 0.9831,
+      "passes_055_threshold": true,
+      "passes_069_threshold": true,
+      "model_member_scores": {
+        "residual_mlp": 0.9986,
+        "catboost": 0.9787,
+        "lightgbm": 0.9779,
+        "xgboost": 0.9759
+      },
+      "yamnet_top5_audioset_predictions": [],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5191,
+        "rms_energy": 0.0613,
+        "crest_factor": 8.46,
+        "zero_crossing_rate": 0.1553,
+        "spectral_centroid_hz": 1963.4,
+        "spectral_bandwidth_hz": 1938.8,
+        "spectral_rolloff_hz": 4206.4,
+        "spectral_flatness": 0.0686,
+        "harmonic_to_percussive_ratio": 0.5874,
+        "dominant_resonance_frequency_hz": 260.3
+      },
+      "root_cause_diagnosis": "high_crest_factor_transient_mimicry (sharp mechanical impact mimics gunshot acoustic onset)"
+    },
+    {
+      "recording_id": "synth_negative_room_ambience_046",
+      "filename": "synth_negative_room_ambience_046.wav",
+      "category": "procedural_synthetic",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "ensemble_calibrated_score": 0.5904,
+      "passes_055_threshold": true,
+      "passes_069_threshold": false,
+      "model_member_scores": {
+        "residual_mlp": 0.8886,
+        "catboost": 0.4618,
+        "lightgbm": 0.5789,
+        "xgboost": 0.4128
+      },
+      "yamnet_top5_audioset_predictions": [
+        "Noise (0.556)",
+        "Synthesizer (0.185)",
+        "Keyboard (musical) (0.145)",
+        "Static (0.144)",
+        "Cacophony (0.105)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0853,
+        "rms_energy": 0.0276,
+        "crest_factor": 3.09,
+        "zero_crossing_rate": 0.0195,
+        "spectral_centroid_hz": 1381.5,
+        "spectral_bandwidth_hz": 1988.0,
+        "spectral_rolloff_hz": 3503.5,
+        "spectral_flatness": 0.0091,
+        "harmonic_to_percussive_ratio": 13.7809,
+        "dominant_resonance_frequency_hz": 60.4
+      },
+      "root_cause_diagnosis": "ensemble_calibration_discordance (models disagree, high outlier pulls up ensemble score)"
+    }
+  ]
+}

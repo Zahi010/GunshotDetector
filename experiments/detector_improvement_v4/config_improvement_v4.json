@@ -1,0 +1,192 @@
+{
+  "system_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "disclaimer": "Uncertified acoustic research software. Never deploy for autonomous emergency dispatch, tactical police response, active-shooter alerting, automated evacuation, lockdown, or life-critical physical security. Safe recorded audio playback only; no live-fire testing.",
+  "branch_identifier": "DETECTOR_IMPROVEMENT_V4",
+  "created_at": "2026-11-16",
+  "provenance": {
+    "base_acoustic_model": "models/gunshot_yamnet_bundle",
+    "fusion_classifier": "experiments/detector_improvement_v4/fusion_model.joblib",
+    "physical_features": [
+      "physical_crest_factor_db",
+      "spectral_flatness",
+      "high_band_ratio_ge_2500hz",
+      "mid_band_ratio_500_2500hz",
+      "low_band_ratio_lt_500hz",
+      "mid_to_low_energy_ratio",
+      "channel_rolloff_ratio",
+      "spectral_centroid_hz"
+    ],
+    "semantic_features": [
+      "yamnet_gunshot",
+      "yamnet_ballistic",
+      "yamnet_fireworks",
+      "yamnet_thunder",
+      "yamnet_mechanical_impact",
+      "yamnet_glass_shatter",
+      "yamnet_non_target"
+    ],
+    "domain_adaptation": "Physically plausible fabric low-pass filtering (1400-1800 Hz) and dynamic range saturation during GroupKFold training",
+    "state_machine": "Deterministic 4-state refractory FSM V4 with candidate-bound crest attribution and condition-invariant single-impulse promotion",
+    "semantic_suppression": "Calibrated multi-category acoustic suppression V4 with ballistic shockwave protection, two-tier pyrotechnic gating, and glass shatter protection"
+  },
+  "profiles": {
+    "balanced": {
+      "threshold_base": 0.62,
+      "threshold_high": 0.80,
+      "threshold_off": 0.40,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "max_hop_gap_s": 0.60,
+      "min_crest_factor_db": 7.5,
+      "single_impulse_min_crest_db": 11.5,
+      "allow_single_impulse_exception": true,
+      "single_impulse_min_score": 0.62,
+      "suppression": {
+        "enabled": true,
+        "coherence_safeguard": {
+          "enabled": true,
+          "ballistic_max_threshold": 0.015,
+          "non_target_threshold": 0.12,
+          "attenuation": 0.20
+        },
+        "thunder": {
+          "threshold": 0.25,
+          "ratio": 1.5,
+          "attenuation": 0.30
+        },
+        "fireworks": {
+          "dominant_threshold": 0.45,
+          "dominant_ratio": 1.8,
+          "dominant_gun_max": 0.25,
+          "dominant_attenuation": 0.30,
+          "standard_threshold": 0.30,
+          "standard_ratio": 1.5,
+          "standard_gun_max": 0.12,
+          "standard_attenuation": 0.35
+        },
+        "glass": {
+          "threshold": 0.30,
+          "min_high_band_ratio": 0.30,
+          "max_ballistic": 0.20,
+          "attenuation": 0.35
+        },
+        "mechanical_impact": {
+          "enabled": true,
+          "impact_threshold": 0.25,
+          "impact_to_gun_ratio": 1.6,
+          "gun_score_max": 0.20,
+          "attenuation": 0.35
+        },
+        "canine": {
+          "threshold": 0.30,
+          "attenuation": 0.25
+        },
+        "crackle": {
+          "threshold": 0.35,
+          "attenuation": 0.30
+        },
+        "siren": {
+          "threshold": 0.25,
+          "attenuation": 0.20
+        }
+      }
+    },
+    "high_precision": {
+      "threshold_base": 0.72,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.5,
+      "max_hop_gap_s": 0.60,
+      "min_crest_factor_db": 9.0,
+      "single_impulse_min_crest_db": 13.5,
+      "allow_single_impulse_exception": true,
+      "single_impulse_min_score": 0.72,
+      "suppression": {
+        "enabled": true,
+        "coherence_safeguard": {
+          "enabled": true,
+          "ballistic_max_threshold": 0.020,
+          "non_target_threshold": 0.10,
+          "attenuation": 0.25
+        },
+        "thunder": { "threshold": 0.20, "ratio": 1.3, "attenuation": 0.35 },
+        "fireworks": {
+          "dominant_threshold": 0.40,
+          "dominant_ratio": 1.5,
+          "dominant_gun_max": 0.30,
+          "dominant_attenuation": 0.35,
+          "standard_threshold": 0.25,
+          "standard_ratio": 1.3,
+          "standard_gun_max": 0.15,
+          "standard_attenuation": 0.40
+        },
+        "glass": {
+          "threshold": 0.25,
+          "min_high_band_ratio": 0.25,
+          "max_ballistic": 0.25,
+          "attenuation": 0.40
+        },
+        "mechanical_impact": {
+          "enabled": true,
+          "impact_threshold": 0.20,
+          "impact_to_gun_ratio": 1.4,
+          "gun_score_max": 0.25,
+          "attenuation": 0.40
+        },
+        "canine": { "threshold": 0.25, "attenuation": 0.30 },
+        "crackle": { "threshold": 0.30, "attenuation": 0.35 },
+        "siren": { "threshold": 0.20, "attenuation": 0.25 }
+      }
+    },
+    "high_sensitivity": {
+      "threshold_base": 0.52,
+      "threshold_high": 0.70,
+      "threshold_off": 0.35,
+      "confirm_windows": 1,
+      "cooldown_secs": 1.5,
+      "max_hop_gap_s": 0.60,
+      "min_crest_factor_db": 6.5,
+      "single_impulse_min_crest_db": 10.0,
+      "allow_single_impulse_exception": true,
+      "single_impulse_min_score": 0.52,
+      "suppression": {
+        "enabled": true,
+        "coherence_safeguard": {
+          "enabled": true,
+          "ballistic_max_threshold": 0.010,
+          "non_target_threshold": 0.15,
+          "attenuation": 0.15
+        },
+        "thunder": { "threshold": 0.30, "ratio": 1.8, "attenuation": 0.25 },
+        "fireworks": {
+          "dominant_threshold": 0.50,
+          "dominant_ratio": 2.0,
+          "dominant_gun_max": 0.20,
+          "dominant_attenuation": 0.25,
+          "standard_threshold": 0.35,
+          "standard_ratio": 1.8,
+          "standard_gun_max": 0.10,
+          "standard_attenuation": 0.30
+        },
+        "glass": {
+          "threshold": 0.35,
+          "min_high_band_ratio": 0.35,
+          "max_ballistic": 0.15,
+          "attenuation": 0.30
+        },
+        "mechanical_impact": {
+          "enabled": true,
+          "impact_threshold": 0.30,
+          "impact_to_gun_ratio": 1.8,
+          "gun_score_max": 0.15,
+          "attenuation": 0.30
+        },
+        "canine": { "threshold": 0.35, "attenuation": 0.20 },
+        "crackle": { "threshold": 0.40, "attenuation": 0.25 },
+        "siren": { "threshold": 0.30, "attenuation": 0.15 }
+      }
+    }
+  }
+}
+

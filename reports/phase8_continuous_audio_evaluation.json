@@ -1,0 +1,1250 @@
+{
+  "evaluation_title": "Continuous Multi-Environment Negative Audio Robustness Evaluation",
+  "evaluator": "Senior Acoustic ML Researcher",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "total_exposure_hours": 3.0,
+  "models_evaluated": {
+    "phase7": {
+      "model_name": "Phase 7 Frozen Baseline (tau=0.75, N=2)",
+      "total_exposure_seconds": 10800.0,
+      "total_exposure_hours": 3.0,
+      "total_false_alert_events": 39,
+      "overall_false_alerts_per_hour": 13.0,
+      "overall_poisson_95_ci": [
+        9.24,
+        17.77
+      ],
+      "streams_breakdown": [
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "acoustic_condition": "multi_environment_continuous_1hr",
+          "exposure_seconds": 3600.0,
+          "exposure_hours": 1.0,
+          "false_alerts_count": 10,
+          "false_alerts_per_hour": 10.0,
+          "poisson_95_ci": [
+            4.8,
+            18.39
+          ],
+          "inference_time_sec": 19.4
+        },
+        {
+          "stream_id": "continuous_stream_02_domestic_interior_transients_1hr",
+          "filename": "continuous_stream_02_domestic_interior_transients_1hr.wav",
+          "acoustic_condition": "multi_environment_continuous_1hr",
+          "exposure_seconds": 3600.0,
+          "exposure_hours": 1.0,
+          "false_alerts_count": 0,
+          "false_alerts_per_hour": 0.0,
+          "poisson_95_ci": [
+            0.0,
+            3.69
+          ],
+          "inference_time_sec": 8.43
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "acoustic_condition": "multi_environment_continuous_1hr",
+          "exposure_seconds": 3600.0,
+          "exposure_hours": 1.0,
+          "false_alerts_count": 29,
+          "false_alerts_per_hour": 29.0,
+          "poisson_95_ci": [
+            19.42,
+            41.65
+          ],
+          "inference_time_sec": 8.09
+        }
+      ],
+      "all_false_alerts": [
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 750.72,
+          "end_time_sec": 753.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.931
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1230.72,
+          "end_time_sec": 1233.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.803
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1448.64,
+          "end_time_sec": 1451.04,
+          "duration_sec": 2.4,
+          "peak_score": 0.912
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1908.0,
+          "end_time_sec": 1910.4,
+          "duration_sec": 2.4,
+          "peak_score": 0.898
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2064.96,
+          "end_time_sec": 2067.36,
+          "duration_sec": 2.4,
+          "peak_score": 0.836
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2399.04,
+          "end_time_sec": 2401.44,
+          "duration_sec": 2.4,
+          "peak_score": 0.853
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2402.4,
+          "end_time_sec": 2404.8,
+          "duration_sec": 2.4,
+          "peak_score": 0.948
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2405.76,
+          "end_time_sec": 2407.68,
+          "duration_sec": 1.92,
+          "peak_score": 0.842
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 3138.24,
+          "end_time_sec": 3140.64,
+          "duration_sec": 2.4,
+          "peak_score": 0.893
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 3202.56,
+          "end_time_sec": 3204.96,
+          "duration_sec": 2.4,
+          "peak_score": 0.872
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 516.48,
+          "end_time_sec": 518.88,
+          "duration_sec": 2.4,
+          "peak_score": 0.863
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 577.92,
+          "end_time_sec": 579.84,
+          "duration_sec": 1.92,
+          "peak_score": 0.793
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 722.4,
+          "end_time_sec": 724.32,
+          "duration_sec": 1.92,
+          "peak_score": 0.825
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 727.68,
+          "end_time_sec": 730.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.86
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 739.2,
+          "end_time_sec": 741.12,
+          "duration_sec": 1.92,
+          "peak_score": 0.825
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 759.84,
+          "end_time_sec": 762.24,
+          "duration_sec": 2.4,
+          "peak_score": 0.873
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 860.64,
+          "end_time_sec": 862.08,
+          "duration_sec": 1.44,
+          "peak_score": 0.845
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1028.64,
+          "end_time_sec": 1031.04,
+          "duration_sec": 2.4,
+          "peak_score": 0.899
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1032.0,
+          "end_time_sec": 1034.4,
+          "duration_sec": 2.4,
+          "peak_score": 0.787
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1105.92,
+          "end_time_sec": 1107.84,
+          "duration_sec": 1.92,
+          "peak_score": 0.797
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1416.96,
+          "end_time_sec": 1418.88,
+          "duration_sec": 1.92,
+          "peak_score": 0.784
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1619.52,
+          "end_time_sec": 1621.44,
+          "duration_sec": 1.92,
+          "peak_score": 0.846
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1675.68,
+          "end_time_sec": 1678.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.808
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1832.64,
+          "end_time_sec": 1834.56,
+          "duration_sec": 1.92,
+          "peak_score": 0.795
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1905.12,
+          "end_time_sec": 1907.04,
+          "duration_sec": 1.92,
+          "peak_score": 0.81
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1946.4,
+          "end_time_sec": 1947.84,
+          "duration_sec": 1.44,
+          "peak_score": 0.812
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2095.2,
+          "end_time_sec": 2097.6,
+          "duration_sec": 2.4,
+          "peak_score": 0.772
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2109.12,
+          "end_time_sec": 2111.52,
+          "duration_sec": 2.4,
+          "peak_score": 0.76
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2391.36,
+          "end_time_sec": 2392.8,
+          "duration_sec": 1.44,
+          "peak_score": 0.773
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2451.84,
+          "end_time_sec": 2454.24,
+          "duration_sec": 2.4,
+          "peak_score": 0.874
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2472.0,
+          "end_time_sec": 2473.92,
+          "duration_sec": 1.92,
+          "peak_score": 0.804
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2529.6,
+          "end_time_sec": 2532.0,
+          "duration_sec": 2.4,
+          "peak_score": 0.837
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2752.32,
+          "end_time_sec": 2754.24,
+          "duration_sec": 1.92,
+          "peak_score": 0.797
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2848.8,
+          "end_time_sec": 2850.72,
+          "duration_sec": 1.92,
+          "peak_score": 0.793
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2970.24,
+          "end_time_sec": 2972.16,
+          "duration_sec": 1.92,
+          "peak_score": 0.859
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3107.04,
+          "end_time_sec": 3108.48,
+          "duration_sec": 1.44,
+          "peak_score": 0.796
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3163.2,
+          "end_time_sec": 3164.64,
+          "duration_sec": 1.44,
+          "peak_score": 0.823
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3190.08,
+          "end_time_sec": 3192.48,
+          "duration_sec": 2.4,
+          "peak_score": 0.822
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3270.24,
+          "end_time_sec": 3272.16,
+          "duration_sec": 1.92,
+          "peak_score": 0.774
+        }
+      ]
+    },
+    "phase8": {
+      "model_name": "Phase 8 Adaptive Detector",
+      "total_exposure_seconds": 10800.0,
+      "total_exposure_hours": 3.0,
+      "total_false_alert_events": 102,
+      "overall_false_alerts_per_hour": 34.0,
+      "overall_poisson_95_ci": [
+        27.72,
+        41.27
+      ],
+      "streams_breakdown": [
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "acoustic_condition": "multi_environment_continuous_1hr",
+          "exposure_seconds": 3600.0,
+          "exposure_hours": 1.0,
+          "false_alerts_count": 24,
+          "false_alerts_per_hour": 24.0,
+          "poisson_95_ci": [
+            15.38,
+            35.71
+          ],
+          "inference_time_sec": 8.52
+        },
+        {
+          "stream_id": "continuous_stream_02_domestic_interior_transients_1hr",
+          "filename": "continuous_stream_02_domestic_interior_transients_1hr.wav",
+          "acoustic_condition": "multi_environment_continuous_1hr",
+          "exposure_seconds": 3600.0,
+          "exposure_hours": 1.0,
+          "false_alerts_count": 0,
+          "false_alerts_per_hour": 0.0,
+          "poisson_95_ci": [
+            0.0,
+            3.69
+          ],
+          "inference_time_sec": 7.97
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "acoustic_condition": "multi_environment_continuous_1hr",
+          "exposure_seconds": 3600.0,
+          "exposure_hours": 1.0,
+          "false_alerts_count": 78,
+          "false_alerts_per_hour": 78.0,
+          "poisson_95_ci": [
+            61.66,
+            97.35
+          ],
+          "inference_time_sec": 7.72
+        }
+      ],
+      "all_false_alerts": [
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 39.36,
+          "end_time_sec": 41.76,
+          "duration_sec": 2.4,
+          "peak_score": 0.788
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 538.08,
+          "end_time_sec": 539.04,
+          "duration_sec": 0.96,
+          "peak_score": 0.859
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 750.72,
+          "end_time_sec": 753.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.931
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 844.32,
+          "end_time_sec": 845.76,
+          "duration_sec": 1.44,
+          "peak_score": 0.883
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1131.84,
+          "end_time_sec": 1133.28,
+          "duration_sec": 1.44,
+          "peak_score": 0.84
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1230.72,
+          "end_time_sec": 1233.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.803
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1396.8,
+          "end_time_sec": 1398.24,
+          "duration_sec": 1.44,
+          "peak_score": 0.85
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1448.64,
+          "end_time_sec": 1451.04,
+          "duration_sec": 2.4,
+          "peak_score": 0.912
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 1907.04,
+          "end_time_sec": 1909.44,
+          "duration_sec": 2.4,
+          "peak_score": 0.929
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2064.48,
+          "end_time_sec": 2066.88,
+          "duration_sec": 2.4,
+          "peak_score": 0.836
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2326.08,
+          "end_time_sec": 2328.48,
+          "duration_sec": 2.4,
+          "peak_score": 0.785
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2342.88,
+          "end_time_sec": 2345.28,
+          "duration_sec": 2.4,
+          "peak_score": 0.876
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2399.04,
+          "end_time_sec": 2401.44,
+          "duration_sec": 2.4,
+          "peak_score": 0.853
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2402.4,
+          "end_time_sec": 2404.8,
+          "duration_sec": 2.4,
+          "peak_score": 0.948
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2405.76,
+          "end_time_sec": 2407.68,
+          "duration_sec": 1.92,
+          "peak_score": 0.842
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2495.52,
+          "end_time_sec": 2496.48,
+          "duration_sec": 0.96,
+          "peak_score": 0.874
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2580.48,
+          "end_time_sec": 2581.92,
+          "duration_sec": 1.44,
+          "peak_score": 0.78
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2641.44,
+          "end_time_sec": 2642.88,
+          "duration_sec": 1.44,
+          "peak_score": 0.841
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2741.28,
+          "end_time_sec": 2742.72,
+          "duration_sec": 1.44,
+          "peak_score": 0.8
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 2891.04,
+          "end_time_sec": 2892.48,
+          "duration_sec": 1.44,
+          "peak_score": 0.718
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 3079.68,
+          "end_time_sec": 3080.64,
+          "duration_sec": 0.96,
+          "peak_score": 0.903
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 3138.24,
+          "end_time_sec": 3140.64,
+          "duration_sec": 2.4,
+          "peak_score": 0.893
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 3200.64,
+          "end_time_sec": 3203.04,
+          "duration_sec": 2.4,
+          "peak_score": 0.822
+        },
+        {
+          "stream_id": "continuous_stream_01_urban_transit_sirens_1hr",
+          "filename": "continuous_stream_01_urban_transit_sirens_1hr.wav",
+          "start_time_sec": 3202.56,
+          "end_time_sec": 3204.96,
+          "duration_sec": 2.4,
+          "peak_score": 0.872
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3.36,
+          "end_time_sec": 5.76,
+          "duration_sec": 2.4,
+          "peak_score": 0.8
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 6.72,
+          "end_time_sec": 9.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.792
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 17.28,
+          "end_time_sec": 19.68,
+          "duration_sec": 2.4,
+          "peak_score": 0.767
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 160.32,
+          "end_time_sec": 161.76,
+          "duration_sec": 1.44,
+          "peak_score": 0.763
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 169.92,
+          "end_time_sec": 171.84,
+          "duration_sec": 1.92,
+          "peak_score": 0.824
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 172.32,
+          "end_time_sec": 174.72,
+          "duration_sec": 2.4,
+          "peak_score": 0.776
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 209.76,
+          "end_time_sec": 211.2,
+          "duration_sec": 1.44,
+          "peak_score": 0.823
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 235.68,
+          "end_time_sec": 238.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.784
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 432.48,
+          "end_time_sec": 433.44,
+          "duration_sec": 0.96,
+          "peak_score": 0.82
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 476.16,
+          "end_time_sec": 478.56,
+          "duration_sec": 2.4,
+          "peak_score": 0.743
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 479.04,
+          "end_time_sec": 481.44,
+          "duration_sec": 2.4,
+          "peak_score": 0.708
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 507.36,
+          "end_time_sec": 509.76,
+          "duration_sec": 2.4,
+          "peak_score": 0.765
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 516.48,
+          "end_time_sec": 518.88,
+          "duration_sec": 2.4,
+          "peak_score": 0.863
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 518.4,
+          "end_time_sec": 519.84,
+          "duration_sec": 1.44,
+          "peak_score": 0.853
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 553.92,
+          "end_time_sec": 555.84,
+          "duration_sec": 1.92,
+          "peak_score": 0.85
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 577.92,
+          "end_time_sec": 579.84,
+          "duration_sec": 1.92,
+          "peak_score": 0.793
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 650.4,
+          "end_time_sec": 652.8,
+          "duration_sec": 2.4,
+          "peak_score": 0.774
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 696.0,
+          "end_time_sec": 698.4,
+          "duration_sec": 2.4,
+          "peak_score": 0.76
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 722.4,
+          "end_time_sec": 724.32,
+          "duration_sec": 1.92,
+          "peak_score": 0.824
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 727.68,
+          "end_time_sec": 730.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.86
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 738.72,
+          "end_time_sec": 741.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.825
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 758.88,
+          "end_time_sec": 761.28,
+          "duration_sec": 2.4,
+          "peak_score": 0.801
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 760.8,
+          "end_time_sec": 762.24,
+          "duration_sec": 1.44,
+          "peak_score": 0.873
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 860.16,
+          "end_time_sec": 862.08,
+          "duration_sec": 1.92,
+          "peak_score": 0.845
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 982.08,
+          "end_time_sec": 984.48,
+          "duration_sec": 2.4,
+          "peak_score": 0.823
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1028.64,
+          "end_time_sec": 1031.04,
+          "duration_sec": 2.4,
+          "peak_score": 0.899
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1030.56,
+          "end_time_sec": 1031.52,
+          "duration_sec": 0.96,
+          "peak_score": 0.829
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1032.0,
+          "end_time_sec": 1034.4,
+          "duration_sec": 2.4,
+          "peak_score": 0.787
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1103.04,
+          "end_time_sec": 1104.48,
+          "duration_sec": 1.44,
+          "peak_score": 0.775
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1105.92,
+          "end_time_sec": 1108.32,
+          "duration_sec": 2.4,
+          "peak_score": 0.797
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1107.84,
+          "end_time_sec": 1109.76,
+          "duration_sec": 1.92,
+          "peak_score": 0.857
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1248.48,
+          "end_time_sec": 1249.92,
+          "duration_sec": 1.44,
+          "peak_score": 0.808
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1288.32,
+          "end_time_sec": 1290.72,
+          "duration_sec": 2.4,
+          "peak_score": 0.774
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1416.96,
+          "end_time_sec": 1418.88,
+          "duration_sec": 1.92,
+          "peak_score": 0.784
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1538.88,
+          "end_time_sec": 1540.8,
+          "duration_sec": 1.92,
+          "peak_score": 0.767
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1602.24,
+          "end_time_sec": 1604.64,
+          "duration_sec": 2.4,
+          "peak_score": 0.788
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1605.6,
+          "end_time_sec": 1608.0,
+          "duration_sec": 2.4,
+          "peak_score": 0.785
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1619.52,
+          "end_time_sec": 1621.44,
+          "duration_sec": 1.92,
+          "peak_score": 0.846
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1675.68,
+          "end_time_sec": 1678.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.808
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1832.64,
+          "end_time_sec": 1834.56,
+          "duration_sec": 1.92,
+          "peak_score": 0.795
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1905.12,
+          "end_time_sec": 1907.04,
+          "duration_sec": 1.92,
+          "peak_score": 0.81
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1946.4,
+          "end_time_sec": 1947.84,
+          "duration_sec": 1.44,
+          "peak_score": 0.812
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 1999.68,
+          "end_time_sec": 2002.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.778
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2095.2,
+          "end_time_sec": 2097.6,
+          "duration_sec": 2.4,
+          "peak_score": 0.772
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2109.12,
+          "end_time_sec": 2111.52,
+          "duration_sec": 2.4,
+          "peak_score": 0.76
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2236.32,
+          "end_time_sec": 2238.72,
+          "duration_sec": 2.4,
+          "peak_score": 0.844
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2256.48,
+          "end_time_sec": 2258.4,
+          "duration_sec": 1.92,
+          "peak_score": 0.793
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2391.36,
+          "end_time_sec": 2392.8,
+          "duration_sec": 1.44,
+          "peak_score": 0.773
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2451.84,
+          "end_time_sec": 2454.24,
+          "duration_sec": 2.4,
+          "peak_score": 0.874
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2472.0,
+          "end_time_sec": 2473.92,
+          "duration_sec": 1.92,
+          "peak_score": 0.804
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2529.6,
+          "end_time_sec": 2532.0,
+          "duration_sec": 2.4,
+          "peak_score": 0.837
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2580.0,
+          "end_time_sec": 2582.4,
+          "duration_sec": 2.4,
+          "peak_score": 0.777
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2632.32,
+          "end_time_sec": 2634.24,
+          "duration_sec": 1.92,
+          "peak_score": 0.778
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2656.32,
+          "end_time_sec": 2658.72,
+          "duration_sec": 2.4,
+          "peak_score": 0.823
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2659.68,
+          "end_time_sec": 2662.08,
+          "duration_sec": 2.4,
+          "peak_score": 0.774
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2706.72,
+          "end_time_sec": 2708.16,
+          "duration_sec": 1.44,
+          "peak_score": 0.724
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2752.32,
+          "end_time_sec": 2754.24,
+          "duration_sec": 1.92,
+          "peak_score": 0.797
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2764.8,
+          "end_time_sec": 2767.2,
+          "duration_sec": 2.4,
+          "peak_score": 0.725
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2814.72,
+          "end_time_sec": 2816.16,
+          "duration_sec": 1.44,
+          "peak_score": 0.721
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2816.64,
+          "end_time_sec": 2818.08,
+          "duration_sec": 1.44,
+          "peak_score": 0.835
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2829.12,
+          "end_time_sec": 2831.04,
+          "duration_sec": 1.92,
+          "peak_score": 0.79
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2848.32,
+          "end_time_sec": 2850.72,
+          "duration_sec": 2.4,
+          "peak_score": 0.793
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2913.6,
+          "end_time_sec": 2914.56,
+          "duration_sec": 0.96,
+          "peak_score": 0.831
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 2970.24,
+          "end_time_sec": 2972.16,
+          "duration_sec": 1.92,
+          "peak_score": 0.859
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3090.72,
+          "end_time_sec": 3093.12,
+          "duration_sec": 2.4,
+          "peak_score": 0.83
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3107.04,
+          "end_time_sec": 3108.48,
+          "duration_sec": 1.44,
+          "peak_score": 0.796
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3145.92,
+          "end_time_sec": 3147.84,
+          "duration_sec": 1.92,
+          "peak_score": 0.819
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3163.2,
+          "end_time_sec": 3164.64,
+          "duration_sec": 1.44,
+          "peak_score": 0.822
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3190.08,
+          "end_time_sec": 3192.48,
+          "duration_sec": 2.4,
+          "peak_score": 0.822
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3204.96,
+          "end_time_sec": 3207.36,
+          "duration_sec": 2.4,
+          "peak_score": 0.875
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3268.32,
+          "end_time_sec": 3270.24,
+          "duration_sec": 1.92,
+          "peak_score": 0.76
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3270.24,
+          "end_time_sec": 3272.16,
+          "duration_sec": 1.92,
+          "peak_score": 0.774
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3284.64,
+          "end_time_sec": 3287.04,
+          "duration_sec": 2.4,
+          "peak_score": 0.817
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3320.64,
+          "end_time_sec": 3322.56,
+          "duration_sec": 1.92,
+          "peak_score": 0.853
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3478.56,
+          "end_time_sec": 3480.96,
+          "duration_sec": 2.4,
+          "peak_score": 0.774
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3492.96,
+          "end_time_sec": 3495.36,
+          "duration_sec": 2.4,
+          "peak_score": 0.775
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3563.52,
+          "end_time_sec": 3565.92,
+          "duration_sec": 2.4,
+          "peak_score": 0.814
+        },
+        {
+          "stream_id": "continuous_stream_03_outdoor_natural_ambience_1hr",
+          "filename": "continuous_stream_03_outdoor_natural_ambience_1hr.wav",
+          "start_time_sec": 3575.52,
+          "end_time_sec": 3577.92,
+          "duration_sec": 2.4,
+          "peak_score": 0.751
+        }
+      ]
+    }
+  }
+}

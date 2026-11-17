@@ -1,0 +1,6 @@
+excluded_firing_position,remaining_positions,remaining_physical_rounds,remaining_recording_streams,both_detected,phase14_only,phase17_only,neither_detected,total_discordant,phase_14_round_recall,phase_17_round_recall,round_recall_difference,round_gain,exact_mcnemar_p_value,statistically_significant_05,phase_14_incident_recall,phase_17_incident_recall,incident_gain
+FP1,FP2+FP3+FP4+FP5,40,16,25,0,4,11,4,0.625,0.725,0.1,4,0.125,False,0.8125,0.875,1
+FP2,FP1+FP3+FP4+FP5,40,16,21,0,6,13,6,0.525,0.675,0.15,6,0.03125,True,0.6875,0.875,3
+FP3,FP1+FP2+FP4+FP5,40,16,21,0,5,14,5,0.525,0.65,0.125,5,0.0625,False,0.75,0.9375,3
+FP4,FP1+FP2+FP3+FP5,40,16,21,0,3,16,3,0.525,0.6,0.075,3,0.25,False,0.75,0.875,2
+FP5,FP1+FP2+FP3+FP4,40,16,20,0,6,14,6,0.5,0.65,0.15,6,0.03125,True,0.75,0.9375,3

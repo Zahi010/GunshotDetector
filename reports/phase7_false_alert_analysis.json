@@ -1,0 +1,451 @@
+{
+  "report_title": "Phase 7 Continuous Negative Audio Evaluation Report",
+  "evaluation_timestamp": "2026-10-28",
+  "evaluator_role": "Senior Acoustic ML Engineer",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "operating_configuration": {
+    "threshold": 0.75,
+    "threshold_off": 0.5,
+    "confirm_windows": 2,
+    "cooldown_secs": 2.0,
+    "bundle_source": "models\\phase6_yamnet_bundle"
+  },
+  "aggregate_continuous_metrics": {
+    "total_exposure_seconds": 10800.0,
+    "total_exposure_hours": 3.0,
+    "total_evaluation_windows": 22497,
+    "total_false_positive_windows": 179,
+    "overall_window_fpr": 0.007957,
+    "total_false_alert_events": 42,
+    "overall_false_alerts_per_hour": 14.0,
+    "poisson_95_ci": [
+      10.09,
+      18.92
+    ]
+  },
+  "stream_by_stream_evaluation": [
+    {
+      "stream_filename": "continuous_stream_01_urban_traffic_and_machinery_1hr.wav",
+      "duration_seconds": 3600.0,
+      "duration_hours": 1.0,
+      "total_evaluation_windows": 7499,
+      "false_positive_windows": 0,
+      "window_false_positive_rate": 0.0,
+      "false_alert_events": 0,
+      "false_alerts_per_hour": 0.0,
+      "poisson_95_ci": [
+        0.0,
+        3.69
+      ]
+    },
+    {
+      "stream_filename": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "duration_seconds": 3600.0,
+      "duration_hours": 1.0,
+      "total_evaluation_windows": 7499,
+      "false_positive_windows": 123,
+      "window_false_positive_rate": 0.016402,
+      "false_alert_events": 30,
+      "false_alerts_per_hour": 30.0,
+      "poisson_95_ci": [
+        20.24,
+        42.83
+      ]
+    },
+    {
+      "stream_filename": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "duration_seconds": 3600.0,
+      "duration_hours": 1.0,
+      "total_evaluation_windows": 7499,
+      "false_positive_windows": 56,
+      "window_false_positive_rate": 0.007468,
+      "false_alert_events": 12,
+      "false_alerts_per_hour": 12.0,
+      "poisson_95_ci": [
+        6.2,
+        20.96
+      ]
+    }
+  ],
+  "itemized_false_alert_events": [
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 64.32,
+      "end_time_sec": 65.76,
+      "duration_sec": 1.44,
+      "peak_score": 0.889,
+      "mean_score": 0.821,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 66.24,
+      "end_time_sec": 68.16,
+      "duration_sec": 1.92,
+      "peak_score": 0.907,
+      "mean_score": 0.75,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 105.6,
+      "end_time_sec": 107.52,
+      "duration_sec": 1.92,
+      "peak_score": 0.839,
+      "mean_score": 0.791,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 210.24,
+      "end_time_sec": 212.64,
+      "duration_sec": 2.4,
+      "peak_score": 0.943,
+      "mean_score": 0.902,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 261.6,
+      "end_time_sec": 263.52,
+      "duration_sec": 1.92,
+      "peak_score": 0.822,
+      "mean_score": 0.793,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 805.44,
+      "end_time_sec": 807.36,
+      "duration_sec": 1.92,
+      "peak_score": 0.873,
+      "mean_score": 0.806,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 906.24,
+      "end_time_sec": 908.64,
+      "duration_sec": 2.4,
+      "peak_score": 0.926,
+      "mean_score": 0.799,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 1221.6,
+      "end_time_sec": 1223.52,
+      "duration_sec": 1.92,
+      "peak_score": 0.881,
+      "mean_score": 0.766,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 1341.12,
+      "end_time_sec": 1343.04,
+      "duration_sec": 1.92,
+      "peak_score": 0.876,
+      "mean_score": 0.811,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 1463.04,
+      "end_time_sec": 1465.44,
+      "duration_sec": 2.4,
+      "peak_score": 0.9,
+      "mean_score": 0.813,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 1684.32,
+      "end_time_sec": 1686.24,
+      "duration_sec": 1.92,
+      "peak_score": 0.856,
+      "mean_score": 0.833,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 1930.08,
+      "end_time_sec": 1932.0,
+      "duration_sec": 1.92,
+      "peak_score": 0.847,
+      "mean_score": 0.833,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 1944.0,
+      "end_time_sec": 1946.4,
+      "duration_sec": 2.4,
+      "peak_score": 0.956,
+      "mean_score": 0.792,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2189.76,
+      "end_time_sec": 2191.68,
+      "duration_sec": 1.92,
+      "peak_score": 0.849,
+      "mean_score": 0.756,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2231.52,
+      "end_time_sec": 2233.92,
+      "duration_sec": 2.4,
+      "peak_score": 0.912,
+      "mean_score": 0.812,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2263.68,
+      "end_time_sec": 2265.6,
+      "duration_sec": 1.92,
+      "peak_score": 0.906,
+      "mean_score": 0.797,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2406.72,
+      "end_time_sec": 2408.64,
+      "duration_sec": 1.92,
+      "peak_score": 0.921,
+      "mean_score": 0.903,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2556.48,
+      "end_time_sec": 2558.4,
+      "duration_sec": 1.92,
+      "peak_score": 0.81,
+      "mean_score": 0.788,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2729.76,
+      "end_time_sec": 2732.16,
+      "duration_sec": 2.4,
+      "peak_score": 0.868,
+      "mean_score": 0.782,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2808.96,
+      "end_time_sec": 2811.36,
+      "duration_sec": 2.4,
+      "peak_score": 0.924,
+      "mean_score": 0.793,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2868.48,
+      "end_time_sec": 2870.88,
+      "duration_sec": 2.4,
+      "peak_score": 0.801,
+      "mean_score": 0.759,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 2871.84,
+      "end_time_sec": 2873.76,
+      "duration_sec": 1.92,
+      "peak_score": 0.923,
+      "mean_score": 0.856,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3020.64,
+      "end_time_sec": 3023.04,
+      "duration_sec": 2.4,
+      "peak_score": 0.902,
+      "mean_score": 0.786,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3074.88,
+      "end_time_sec": 3076.32,
+      "duration_sec": 1.44,
+      "peak_score": 0.888,
+      "mean_score": 0.866,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3076.32,
+      "end_time_sec": 3078.72,
+      "duration_sec": 2.4,
+      "peak_score": 0.888,
+      "mean_score": 0.794,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3152.64,
+      "end_time_sec": 3154.56,
+      "duration_sec": 1.92,
+      "peak_score": 0.937,
+      "mean_score": 0.8,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3256.32,
+      "end_time_sec": 3258.24,
+      "duration_sec": 1.92,
+      "peak_score": 0.907,
+      "mean_score": 0.873,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3301.92,
+      "end_time_sec": 3303.36,
+      "duration_sec": 1.44,
+      "peak_score": 0.961,
+      "mean_score": 0.883,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3381.6,
+      "end_time_sec": 3383.52,
+      "duration_sec": 1.92,
+      "peak_score": 0.85,
+      "mean_score": 0.816,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_02_weather_thunder_and_rain_1hr.wav",
+      "start_time_sec": 3569.76,
+      "end_time_sec": 3572.16,
+      "duration_sec": 2.4,
+      "peak_score": 0.9,
+      "mean_score": 0.774,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 509.28,
+      "end_time_sec": 510.72,
+      "duration_sec": 1.44,
+      "peak_score": 0.811,
+      "mean_score": 0.811,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 587.04,
+      "end_time_sec": 588.48,
+      "duration_sec": 1.44,
+      "peak_score": 0.946,
+      "mean_score": 0.857,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 588.96,
+      "end_time_sec": 591.36,
+      "duration_sec": 2.4,
+      "peak_score": 0.978,
+      "mean_score": 0.806,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 1731.84,
+      "end_time_sec": 1733.28,
+      "duration_sec": 1.44,
+      "peak_score": 0.867,
+      "mean_score": 0.834,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 2176.8,
+      "end_time_sec": 2178.24,
+      "duration_sec": 1.44,
+      "peak_score": 0.838,
+      "mean_score": 0.808,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 2221.92,
+      "end_time_sec": 2223.36,
+      "duration_sec": 1.44,
+      "peak_score": 0.806,
+      "mean_score": 0.805,
+      "trigger_windows_count": 2
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 2248.8,
+      "end_time_sec": 2251.2,
+      "duration_sec": 2.4,
+      "peak_score": 0.958,
+      "mean_score": 0.843,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 2481.6,
+      "end_time_sec": 2483.52,
+      "duration_sec": 1.92,
+      "peak_score": 0.867,
+      "mean_score": 0.83,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 2863.2,
+      "end_time_sec": 2865.6,
+      "duration_sec": 2.4,
+      "peak_score": 0.969,
+      "mean_score": 0.806,
+      "trigger_windows_count": 4
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 2867.04,
+      "end_time_sec": 2868.96,
+      "duration_sec": 1.92,
+      "peak_score": 0.926,
+      "mean_score": 0.831,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 3243.36,
+      "end_time_sec": 3245.28,
+      "duration_sec": 1.92,
+      "peak_score": 0.857,
+      "mean_score": 0.807,
+      "trigger_windows_count": 3
+    },
+    {
+      "stream": "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav",
+      "start_time_sec": 3442.08,
+      "end_time_sec": 3443.52,
+      "duration_sec": 1.44,
+      "peak_score": 0.795,
+      "mean_score": 0.793,
+      "trigger_windows_count": 2
+    }
+  ],
+  "conclusions": "Across 3.00 hours of continuous multi-environment audio (22,490+ windows), the detector produced 42 false alert events, corresponding to 14.00 false alerts/hour (95% Poisson CI: [10.09, 18.92]). The majority of false alerts in continuous streams were triggered by pyrotechnic deflagrations (fireworks) and close-proximity lightning transients, whereas urban machinery, car horns, construction, and sirens produced zero false alerts."
+}

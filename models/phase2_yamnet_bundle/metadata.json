@@ -1,0 +1,73 @@
+{
+  "bundle_version": "1.0.0",
+  "created_at_utc": "2026-10-28T08:35:21.794632",
+  "confidence_calibrated": false,
+  "confidence_note": "Scores represent raw sigmoid probabilities from the neural network classifier. They should be termed detection scores rather than calibrated Bayesian confidence until formal Platt scaling or Isotonic regression is conducted on live in-field test data.",
+  "safety_disclaimer": "CRITICAL DISCLAIMER: This gunshot detection model is designed for research, prototyping, and evaluation purposes only. It MUST NOT be relied upon as a primary safety system, emergency response trigger, or life-critical monitoring apparatus.",
+  "training_history": {
+    "epochs_trained": 16,
+    "final_train_loss": 0.3532572090625763,
+    "final_val_loss": 1.1559172868728638,
+    "final_train_acc": 0.9175334572792053,
+    "final_val_acc": 0.6253021955490112,
+    "hard_negatives_included": true,
+    "hard_negatives_count": 224
+  },
+  "evaluation_metrics": {
+    "validation_selected_metrics": {
+      "threshold": 0.295,
+      "objective": "Maximize validation F0.5 to strongly penalize false alarms while preserving detection recall",
+      "precision": 0.8922,
+      "recall": 0.8394,
+      "f1": 0.865,
+      "f05": 0.8811
+    },
+    "test_window_metrics": {
+      "threshold": 0.295,
+      "windows_total": 519,
+      "windows_gunshot": 245,
+      "windows_background": 274,
+      "precision": 0.6706,
+      "recall": 0.9388,
+      "f1": 0.7823,
+      "roc_auc": 0.9285,
+      "confusion_matrix": [
+        [
+          161,
+          113
+        ],
+        [
+          15,
+          230
+        ]
+      ],
+      "true_negatives": 161,
+      "false_positives": 113,
+      "false_negatives": 15,
+      "true_positives": 230
+    },
+    "test_recording_metrics": {
+      "total_recordings": 37,
+      "recordings_gunshot": 17,
+      "recordings_background": 20,
+      "precision": 0.5862,
+      "recall": 1.0,
+      "f1": 0.7391,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          8,
+          12
+        ],
+        [
+          0,
+          17
+        ]
+      ],
+      "true_negatives": 8,
+      "false_positives": 12,
+      "false_negatives": 0,
+      "true_positives": 17
+    }
+  }
+}

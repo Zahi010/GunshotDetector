@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AcousticGunshotDatasetProvenanceSchema",
+  "description": "Preregistered data provenance, source lineage, and legal compliance schema for prospective acoustic gunshot validation campaigns.",
+  "type": "object",
+  "required": [
+    "provenance_id",
+    "campaign_metadata",
+    "source_recording_metadata",
+    "legal_and_compliance",
+    "ground_truth_metadata",
+    "technical_acoustic_metadata",
+    "duplicate_detection"
+  ],
+  "properties": {
+    "provenance_id": {
+      "type": "string",
+      "description": "Unique identifier for this provenance record (e.g. PROV-CAMP01-REC001)."
+    },
+    "campaign_metadata": {
+      "type": "object",
+      "required": [
+        "campaign_id",
+        "campaign_name",
+        "operating_authority",
+        "start_date_utc",
+        "end_date_utc",
+        "geographic_region",
+        "metropolitan_area",
+        "campaign_independence_status"
+      ],
+      "properties": {
+        "campaign_id": {
+          "type": "string",
+          "description": "Unique campaign ID (e.g. PITT_DQV_2018, METRO_PHX_2027)."
+        },
+        "campaign_name": {
+          "type": "string",
+          "description": "Official name of the recording campaign or experimental operation."
+        },
+        "operating_authority": {
+          "type": "string",
+          "description": "Entity responsible for recording operations (e.g., Municipal Police Dept, Academic Institution)."
+        },
+        "start_date_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_date_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "geographic_region": {
+          "type": "string",
+          "description": "Country / State / Province."
+        },
+        "metropolitan_area": {
+          "type": "string",
+          "description": "City or Metropolitan Area."
+        },
+        "campaign_independence_status": {
+          "type": "string",
+          "enum": [
+            "INDEPENDENT_EXTERNAL_CAMPAIGN",
+            "MUNICIPAL_COPRODUCTION",
+            "LABORATORY_CONTROLLED_STUDY",
+            "HISTORICALLY_LINKED_CAMPAIGN",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "source_recording_metadata": {
+      "type": "object",
+      "required": [
+        "recording_id",
+        "session_id",
+        "location_id",
+        "continuity_type",
+        "original_filename",
+        "sha256_hash",
+        "file_size_bytes",
+        "duration_seconds"
+      ],
+      "properties": {
+        "recording_id": {
+          "type": "string"
+        },
+        "session_id": {
+          "type": "string"
+        },
+        "location_id": {
+          "type": "string",
+          "description": "Surveyed firing position or anonymized location node (e.g., FP01, NODE_A)."
+        },
+        "continuity_type": {
+          "type": "string",
+          "enum": [
+            "UNBROKEN_NATURAL_CONTINUOUS",
+            "RESAMPLED_UNBROKEN_COPY",
+            "PRE_CROPPED_CLIP",
+            "CONCATENATED_DERIVED_STREAM",
+            "UNKNOWN"
+          ]
+        },
+        "original_filename": {
+          "type": "string"
+        },
+        "sha256_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "file_size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "duration_seconds": {
+          "type": "number",
+          "minimum": 0.001
+        }
+      }
+    },
+    "legal_and_compliance": {
+      "type": "object",
+      "required": [
+        "acquisition_url_or_reference",
+        "license_type",
+        "permitted_research_use",
+        "redistribution_permitted",
+        "privacy_and_anonymization_status"
+      ],
+      "properties": {
+        "acquisition_url_or_reference": {
+          "type": "string"
+        },
+        "license_type": {
+          "type": "string",
+          "enum": [
+            "CC_BY_4.0",
+            "CC0_PUBLIC_DOMAIN",
+            "ODC_BY_1.0",
+            "OPEN_DATA_COMMONS_OPEN_DATABASE",
+            "ACADEMIC_RESEARCH_USE_AGREEMENT",
+            "CUSTOM_PERMISSIVE_RESEARCH_LICENSE",
+            "UNVERIFIED"
+          ]
+        },
+        "permitted_research_use": {
+          "type": "boolean"
+        },
+        "redistribution_permitted": {
+          "type": "boolean"
+        },
+        "privacy_and_anonymization_status": {
+          "type": "string",
+          "enum": [
+            "ANONYMIZED_COORDINATES",
+            "NON_GEOREFERENCED",
+            "PUBLIC_STREET_RIGHT_OF_WAY",
+            "REQUIRES_RESIDENTIAL_MASKING",
+            "UNVERIFIED"
+          ]
+        }
+      }
+    },
+    "ground_truth_metadata": {
+      "type": "object",
+      "required": [
+        "annotation_source",
+        "verification_method",
+        "events_count",
+        "timing_precision",
+        "firearm_and_caliber_documented"
+      ],
+      "properties": {
+        "annotation_source": {
+          "type": "string",
+          "enum": [
+            "MULTILATERATION_MICROSECOND_LOG",
+            "SENSOR_TRIGGER_TIMESTAMP",
+            "AUDITORY_EXPERT_LABEL",
+            "ACOUSTIC_SPECTROGRAM_INSPECTION",
+            "TEST_RANGE_OPERATOR_LOG",
+            "UNVERIFIED"
+          ]
+        },
+        "verification_method": {
+          "type": "string"
+        },
+        "events_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "timing_precision": {
+          "type": "string",
+          "enum": [
+            "MICROSECOND_ABSOLUTE",
+            "MILLISECOND_ABSOLUTE",
+            "CENTISECOND_RELATIVE",
+            "ROUGH_WINDOW_ESTIMATE",
+            "UNKNOWN"
+          ]
+        },
+        "firearm_and_caliber_documented": {
+          "type": "boolean"
+        }
+      }
+    },
+    "technical_acoustic_metadata": {
+      "type": "object",
+      "required": [
+        "sampling_rate_hz",
+        "channels",
+        "bit_depth",
+        "sensor_hardware_type",
+        "environment_type"
+      ],
+      "properties": {
+        "sampling_rate_hz": {
+          "type": "integer"
+        },
+        "channels": {
+          "type": "integer"
+        },
+        "bit_depth": {
+          "type": "integer"
+        },
+        "sensor_hardware_type": {
+          "type": "string"
+        },
+        "environment_type": {
+          "type": "string",
+          "enum": [
+            "URBAN_CANYON",
+            "URBAN_OPEN_INTERSECTION",
+            "SUBURBAN_RESIDENTIAL",
+            "RURAL_OPEN_FIELD",
+            "FOREST_VEGETATED",
+            "INDOOR_INDUSTRIAL",
+            "UNKNOWN"
+          ]
+        }
+      }
+    },
+    "duplicate_detection": {
+      "type": "object",
+      "required": [
+        "exact_sha256_duplicate_checked",
+        "chromaprint_similarity_checked",
+        "overlap_with_training_data",
+        "overlap_with_historical_benchmarks"
+      ],
+      "properties": {
+        "exact_sha256_duplicate_checked": {
+          "type": "boolean"
+        },
+        "chromaprint_similarity_checked": {
+          "type": "boolean"
+        },
+        "overlap_with_training_data": {
+          "type": "boolean"
+        },
+        "overlap_with_historical_benchmarks": {
+          "type": "boolean"
+        },
+        "duplicate_resolution_verdict": {
+          "type": "string",
+          "enum": [
+            "UNIQUE_INDEPENDENT_RECORDING",
+            "DUPLICATE_EXACT_MATCH",
+            "DERIVED_OR_CROPPED_VARIANT",
+            "UNVERIFIED"
+          ]
+        }
+      }
+    }
+  }
+}
+

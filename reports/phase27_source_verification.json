@@ -1,0 +1,71 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_27_AUTHORIZED_AEROSONICDB_ACQUISITION_AND_STATISTICAL_CORRECTION",
+  "source_dataset": "AeroSonicDB: An aerial acoustic dataset for aircraft detection and classification",
+  "zenodo_record_id": 10215080,
+  "zenodo_concept_id": 8000468,
+  "zenodo_release_id": 8371595,
+  "doi": "10.5281/zenodo.10215080",
+  "publication_date": "2023-11-20",
+  "authors": [
+    {
+      "name": "Blake Downward",
+      "affiliation": "Independent / University of Adelaide"
+    },
+    {
+      "name": "Jon Nordby",
+      "affiliation": "Soundsensing AS (acknowledged / co-author arXiv:2311.06368)"
+    }
+  ],
+  "license_verified": {
+    "license_declared_historical": "CC BY 4.0",
+    "license_actual_zenodo": "CC BY-NC 4.0",
+    "license_name": "Creative Commons Attribution Non Commercial 4.0 International",
+    "commercial_use_permitted": false,
+    "research_use_permitted": true,
+    "license_verification_status": "CONFIRMED_NON_COMMERCIAL_RESEARCH_ONLY"
+  },
+  "associated_publication": {
+    "title": "AeroSonicDB: An aerial acoustic dataset for aircraft detection and classification",
+    "arxiv_id": "arXiv:2311.06368",
+    "url": "https://arxiv.org/abs/2311.06368"
+  },
+  "target_archive": {
+    "filename": "env_audio.zip",
+    "expected_md5": "8c042dc817f459e80ac2491ffc8dd1cd",
+    "expected_size_bytes": 495276974,
+    "actual_size_bytes": 495276974,
+    "actual_sha256": "7ebfb4aec3ec41a64db326b7b28789c0d6346a6439182ceb1e9d22f401f3438a",
+    "verification_status": "VERIFIED_INTEGRITY_MATCH"
+  },
+  "metadata_files_downloaded": [
+    {
+      "filename": "README.md",
+      "size_bytes": 1058
+    },
+    {
+      "filename": "LICENSE.txt",
+      "size_bytes": 19446
+    },
+    {
+      "filename": "locations.json",
+      "size_bytes": 1085
+    },
+    {
+      "filename": "environment_class_mappings.csv",
+      "size_bytes": 106
+    },
+    {
+      "filename": "environment_mappings_raw.csv",
+      "size_bytes": 483
+    }
+  ],
+  "access_route": {
+    "protocol": "HTTPS_REST_API",
+    "api_endpoint": "https://zenodo.org/api/records/10215080/files/env_audio.zip/content",
+    "access_control_bypassed": false,
+    "authentication_required": false,
+    "anti_bot_gate_encountered": false,
+    "lawful_compliance": "STRICT_REST_API_COMPLIANCE"
+  }
+}

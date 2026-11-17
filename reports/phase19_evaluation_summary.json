@@ -1,0 +1,162 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "evaluation_phase": "PHASE_19_SOURCE_INDEPENDENT_EVALUATION",
+  "timestamp": "2026-11-13 UTC",
+  "models": {
+    "Phase 14 Balanced (Default Baseline)": {
+      "category_a_natural_continuous": {
+        "total_events": 50,
+        "detected_events": 27,
+        "missed_events": 23,
+        "false_alerts": 0,
+        "duplicate_alerts": 0,
+        "recall_pct": 54.0,
+        "precision_pct": 100.0,
+        "f1_score": 0.7013,
+        "wilson_95_ci_pct": [
+          40.4,
+          67.03
+        ],
+        "median_latency_ms": 811.0,
+        "p95_latency_ms": 1672.8999999999999
+      },
+      "category_b_pre_cropped_external": {
+        "total_events": 3,
+        "detected_events": 1,
+        "missed_events": 2,
+        "false_alerts": 0,
+        "recall_pct": 33.33,
+        "precision_pct": 100.0,
+        "f1_score": 0.5,
+        "wilson_95_ci_pct": [
+          6.15,
+          79.23
+        ]
+      }
+    },
+    "Phase 14 High-Precision": {
+      "category_a_natural_continuous": {
+        "total_events": 50,
+        "detected_events": 24,
+        "missed_events": 26,
+        "false_alerts": 0,
+        "duplicate_alerts": 0,
+        "recall_pct": 48.0,
+        "precision_pct": 100.0,
+        "f1_score": 0.6486,
+        "wilson_95_ci_pct": [
+          34.8,
+          61.49
+        ],
+        "median_latency_ms": 825.5,
+        "p95_latency_ms": 2061.85
+      },
+      "category_b_pre_cropped_external": {
+        "total_events": 3,
+        "detected_events": 1,
+        "missed_events": 2,
+        "false_alerts": 0,
+        "recall_pct": 33.33,
+        "precision_pct": 100.0,
+        "f1_score": 0.5,
+        "wilson_95_ci_pct": [
+          6.15,
+          79.23
+        ]
+      }
+    },
+    "Phase 14 High-Sensitivity": {
+      "category_a_natural_continuous": {
+        "total_events": 50,
+        "detected_events": 22,
+        "missed_events": 28,
+        "false_alerts": 0,
+        "duplicate_alerts": 1,
+        "recall_pct": 44.0,
+        "precision_pct": 100.0,
+        "f1_score": 0.6111,
+        "wilson_95_ci_pct": [
+          31.16,
+          57.69
+        ],
+        "median_latency_ms": 825.5,
+        "p95_latency_ms": 1639.0
+      },
+      "category_b_pre_cropped_external": {
+        "total_events": 3,
+        "detected_events": 1,
+        "missed_events": 2,
+        "false_alerts": 0,
+        "recall_pct": 33.33,
+        "precision_pct": 100.0,
+        "f1_score": 0.5,
+        "wilson_95_ci_pct": [
+          6.15,
+          79.23
+        ]
+      }
+    },
+    "Phase 17 Experimental (Animal Suppression)": {
+      "category_a_natural_continuous": {
+        "total_events": 50,
+        "detected_events": 33,
+        "missed_events": 17,
+        "false_alerts": 0,
+        "duplicate_alerts": 0,
+        "recall_pct": 66.0,
+        "precision_pct": 100.0,
+        "f1_score": 0.7952,
+        "wilson_95_ci_pct": [
+          52.15,
+          77.56
+        ],
+        "median_latency_ms": 637.0,
+        "p95_latency_ms": 1649.9999999999995
+      },
+      "category_b_pre_cropped_external": {
+        "total_events": 3,
+        "detected_events": 2,
+        "missed_events": 1,
+        "false_alerts": 0,
+        "recall_pct": 66.67,
+        "precision_pct": 100.0,
+        "f1_score": 0.8,
+        "wilson_95_ci_pct": [
+          20.77,
+          93.85
+        ]
+      }
+    },
+    "Phase 9 Balanced (Historical Baseline)": {
+      "category_a_natural_continuous": {
+        "total_events": 50,
+        "detected_events": 28,
+        "missed_events": 22,
+        "false_alerts": 1,
+        "duplicate_alerts": 2,
+        "recall_pct": 56.0,
+        "precision_pct": 96.55,
+        "f1_score": 0.7089,
+        "wilson_95_ci_pct": [
+          42.31,
+          68.84
+        ],
+        "median_latency_ms": 669.0,
+        "p95_latency_ms": 1937.4999999999995
+      },
+      "category_b_pre_cropped_external": {
+        "total_events": 3,
+        "detected_events": 1,
+        "missed_events": 2,
+        "false_alerts": 0,
+        "recall_pct": 33.33,
+        "precision_pct": 100.0,
+        "f1_score": 0.5,
+        "wilson_95_ci_pct": [
+          6.15,
+          79.23
+        ]
+      }
+    }
+  }
+}

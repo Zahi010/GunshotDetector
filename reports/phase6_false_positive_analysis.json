@@ -1,0 +1,419 @@
+{
+  "report_title": "Phase 6 Deep False-Positive Alert and Acoustic Mimic Analysis",
+  "timestamp": "2026-10-28",
+  "scope": {
+    "total_negative_recordings_evaluated": 81,
+    "total_negative_audio_duration_seconds": 417.68,
+    "total_negative_audio_duration_hours": 0.116,
+    "operating_threshold": 0.69,
+    "confirm_windows": 2,
+    "cooldown_secs": 2.0,
+    "total_false_alert_events": 12,
+    "false_alerts_per_hour": 103.43
+  },
+  "category_summary": {
+    "fireworks_pyrotechnics": 4,
+    "thunderstorm_weather": 2,
+    "heavy_rain_transients": 1,
+    "synthetic_laser_sweep": 1,
+    "metallic_singing_bowl_chime": 4
+  },
+  "investigation_findings": {
+    "meditation_hypnosis_impact": "The single singing-bowl recording (meditation_hypnosis--110246) generates 4 of the 12 false alert events (33.3%). Because chime strikes occur every ~4.8s, the 2.0s cooldown period elapses between strikes, allowing all 4 strikes to trigger distinct alert events. Each strike exhibits an intense percussive attack followed by high-Q harmonic ringing (HPR=4.12, dominant resonance=1174 Hz). YAMNet's frozen backbone classifies these strikes as Explosion (0.573) and Gunshot (0.560).",
+    "fireworks_pyrotechnics_impact": "ESC-50 class 48 (fireworks) accounts for 4 of the 12 false alert events (33.3%). Fireworks are genuine physical acoustic mimics: pyrotechnic deflagrations share rapid pressure rises and turbulent acoustic dissipation with small-arms fire. These require human review or multi-modal contextual verification.",
+    "thunderstorms_and_weather": "ESC-50 class 19 (thunderstorms) accounts for 2 false alert events (16.7%). Low-frequency infrasound and heavy rumbles partially overlap with distant heavy artillery / mortar fire.",
+    "laser_compilation_and_rain": "1 false alert originates from a synthetic laser downward chirp (8.3%), and 1 from heavy rain droplets (8.3%).",
+    "zero_false_alerts_categories": [
+      "balloon_bursts (0 alerts)",
+      "percussive_hammer_impacts (0 alerts)",
+      "firearm_mechanical_foley_reload_cock (0 alerts)",
+      "toy_gun_pops_at_069 (0 alerts)"
+    ]
+  },
+  "all_false_positive_alert_events": [
+    {
+      "alert_id": "FP-EVT-01",
+      "recording_id": "1-115545-A-48",
+      "filename": "1-115545-A-48.wav",
+      "category": "fireworks_pyrotechnics",
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.88,
+      "duration_sec": 1.44,
+      "peak_ensemble_score": 0.945,
+      "trigger_windows_count": 2,
+      "requires_human_review": true,
+      "yamnet_top5_audioset": [
+        "Gunshot, gunfire (0.463)",
+        "Explosion (0.442)",
+        "Wild animals (0.354)",
+        "Bird (0.348)",
+        "Animal (0.323)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.0314,
+        "rms_energy": 0.0035,
+        "crest_factor": 8.99,
+        "zero_crossing_rate": 0.1038,
+        "spectral_centroid_hz": 1226.2,
+        "spectral_bandwidth_hz": 1226.9,
+        "spectral_rolloff_hz": 2223.5,
+        "spectral_flatness": 0.0212,
+        "harmonic_to_percussive_ratio": 0.4003,
+        "dominant_resonance_frequency_hz": 573.6
+      },
+      "technical_origin_diagnosis": "acoustic_phenomenological_mimic (fireworks share identical combustive explosive transient mechanics with small arms)"
+    },
+    {
+      "alert_id": "FP-EVT-02",
+      "recording_id": "1-160563-B-48",
+      "filename": "1-160563-B-48.wav",
+      "category": "fireworks_pyrotechnics",
+      "start_time_sec": 1.44,
+      "end_time_sec": 3.84,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.864,
+      "trigger_windows_count": 4,
+      "requires_human_review": true,
+      "yamnet_top5_audioset": [
+        "Explosion (0.656)",
+        "Gunshot, gunfire (0.570)",
+        "Machine gun (0.347)",
+        "Outside, rural or natural (0.278)",
+        "Cap gun (0.274)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9909,
+        "rms_energy": 0.0198,
+        "crest_factor": 50.12,
+        "zero_crossing_rate": 0.0918,
+        "spectral_centroid_hz": 1436.2,
+        "spectral_bandwidth_hz": 1724.7,
+        "spectral_rolloff_hz": 2912.6,
+        "spectral_flatness": 0.033,
+        "harmonic_to_percussive_ratio": 0.0088,
+        "dominant_resonance_frequency_hz": 488.8
+      },
+      "technical_origin_diagnosis": "acoustic_phenomenological_mimic (fireworks share identical combustive explosive transient mechanics with small arms)"
+    },
+    {
+      "alert_id": "FP-EVT-03",
+      "recording_id": "1-24524-B-19",
+      "filename": "1-24524-B-19.wav",
+      "category": "thunderstorm_weather",
+      "start_time_sec": 1.92,
+      "end_time_sec": 3.36,
+      "duration_sec": 1.44,
+      "peak_ensemble_score": 0.817,
+      "trigger_windows_count": 2,
+      "requires_human_review": true,
+      "yamnet_top5_audioset": [
+        "Explosion (0.792)",
+        "Fireworks (0.627)",
+        "Firecracker (0.273)",
+        "Burst, pop (0.212)",
+        "Outside, urban or manmade (0.047)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0198,
+        "rms_energy": 0.1634,
+        "crest_factor": 6.24,
+        "zero_crossing_rate": 0.0579,
+        "spectral_centroid_hz": 871.4,
+        "spectral_bandwidth_hz": 1037.7,
+        "spectral_rolloff_hz": 1698.7,
+        "spectral_flatness": 0.0038,
+        "harmonic_to_percussive_ratio": 0.0444,
+        "dominant_resonance_frequency_hz": 103.5
+      },
+      "technical_origin_diagnosis": "low_frequency_acoustic_overlap (infrasound and low-frequency rumble overlaps with distant heavy artillery / mortar)"
+    },
+    {
+      "alert_id": "FP-EVT-04",
+      "recording_id": "2-117615-B-48",
+      "filename": "2-117615-B-48.wav",
+      "category": "fireworks_pyrotechnics",
+      "start_time_sec": 2.4,
+      "end_time_sec": 4.8,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.815,
+      "trigger_windows_count": 4,
+      "requires_human_review": true,
+      "yamnet_top5_audioset": [
+        "Fireworks (0.774)",
+        "Explosion (0.737)",
+        "Firecracker (0.482)",
+        "Outside, rural or natural (0.207)",
+        "Gunshot, gunfire (0.095)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5951,
+        "rms_energy": 0.0215,
+        "crest_factor": 27.7,
+        "zero_crossing_rate": 0.0982,
+        "spectral_centroid_hz": 1437.2,
+        "spectral_bandwidth_hz": 1524.5,
+        "spectral_rolloff_hz": 2908.7,
+        "spectral_flatness": 0.028,
+        "harmonic_to_percussive_ratio": 0.0041,
+        "dominant_resonance_frequency_hz": 264.2
+      },
+      "technical_origin_diagnosis": "acoustic_phenomenological_mimic (fireworks share identical combustive explosive transient mechanics with small arms)"
+    },
+    {
+      "alert_id": "FP-EVT-05",
+      "recording_id": "2-117616-A-48",
+      "filename": "2-117616-A-48.wav",
+      "category": "fireworks_pyrotechnics",
+      "start_time_sec": 1.44,
+      "end_time_sec": 3.84,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.966,
+      "trigger_windows_count": 4,
+      "requires_human_review": true,
+      "yamnet_top5_audioset": [
+        "Explosion (0.825)",
+        "Fireworks (0.792)",
+        "Firecracker (0.632)",
+        "Burst, pop (0.239)",
+        "Gunshot, gunfire (0.217)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.2847,
+        "rms_energy": 0.2339,
+        "crest_factor": 5.49,
+        "zero_crossing_rate": 0.1767,
+        "spectral_centroid_hz": 1995.6,
+        "spectral_bandwidth_hz": 1710.9,
+        "spectral_rolloff_hz": 4062.9,
+        "spectral_flatness": 0.2764,
+        "harmonic_to_percussive_ratio": 0.0122,
+        "dominant_resonance_frequency_hz": 318.3
+      },
+      "technical_origin_diagnosis": "acoustic_phenomenological_mimic (fireworks share identical combustive explosive transient mechanics with small arms)"
+    },
+    {
+      "alert_id": "FP-EVT-06",
+      "recording_id": "2-39945-C-19",
+      "filename": "2-39945-C-19.wav",
+      "category": "thunderstorm_weather",
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.92,
+      "duration_sec": 1.92,
+      "peak_ensemble_score": 0.901,
+      "trigger_windows_count": 3,
+      "requires_human_review": true,
+      "yamnet_top5_audioset": [
+        "Explosion (0.650)",
+        "Burst, pop (0.392)",
+        "Eruption (0.381)",
+        "Artillery fire (0.301)",
+        "Boom (0.152)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.9454,
+        "rms_energy": 0.1922,
+        "crest_factor": 4.92,
+        "zero_crossing_rate": 0.0794,
+        "spectral_centroid_hz": 973.1,
+        "spectral_bandwidth_hz": 1023.4,
+        "spectral_rolloff_hz": 1825.8,
+        "spectral_flatness": 0.0029,
+        "harmonic_to_percussive_ratio": 1.1922,
+        "dominant_resonance_frequency_hz": 62.0
+      },
+      "technical_origin_diagnosis": "low_frequency_acoustic_overlap (infrasound and low-frequency rumble overlaps with distant heavy artillery / mortar)"
+    },
+    {
+      "alert_id": "FP-EVT-07",
+      "recording_id": "3-140774-A-10",
+      "filename": "3-140774-A-10.wav",
+      "category": "heavy_rain_transients",
+      "start_time_sec": 0.0,
+      "end_time_sec": 2.4,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.846,
+      "trigger_windows_count": 4,
+      "requires_human_review": false,
+      "yamnet_top5_audioset": [
+        "Fireworks (0.747)",
+        "Explosion (0.686)",
+        "Vehicle (0.108)",
+        "Firecracker (0.108)",
+        "Burst, pop (0.077)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5317,
+        "rms_energy": 0.0963,
+        "crest_factor": 5.52,
+        "zero_crossing_rate": 0.0742,
+        "spectral_centroid_hz": 1115.7,
+        "spectral_bandwidth_hz": 1326.2,
+        "spectral_rolloff_hz": 2148.8,
+        "spectral_flatness": 0.0093,
+        "harmonic_to_percussive_ratio": 1.1084,
+        "dominant_resonance_frequency_hz": 610.4
+      },
+      "technical_origin_diagnosis": "percussive_droplet_clustering (rapid successive impact spikes mimic automatic firearm burst tempo)"
+    },
+    {
+      "alert_id": "FP-EVT-08",
+      "recording_id": "freesound_community-laser-compilation-05-31597",
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "category": "synthetic_laser_sweep",
+      "start_time_sec": 13.44,
+      "end_time_sec": 14.88,
+      "duration_sec": 1.44,
+      "peak_ensemble_score": 0.932,
+      "trigger_windows_count": 2,
+      "requires_human_review": false,
+      "yamnet_top5_audioset": [
+        "Explosion (0.569)",
+        "Sound effect (0.542)",
+        "Bang (0.474)",
+        "Gunshot, gunfire (0.454)",
+        "Machine gun (0.344)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8073,
+        "rms_energy": 0.1051,
+        "crest_factor": 7.68,
+        "zero_crossing_rate": 0.0381,
+        "spectral_centroid_hz": 1083.3,
+        "spectral_bandwidth_hz": 1102.2,
+        "spectral_rolloff_hz": 2211.6,
+        "spectral_flatness": 0.4242,
+        "harmonic_to_percussive_ratio": 0.0313,
+        "dominant_resonance_frequency_hz": 0.0
+      },
+      "technical_origin_diagnosis": "frequency_sweep_transient_mimic (rapid downward chirp mimics gunshot Doppler / whistle transient)"
+    },
+    {
+      "alert_id": "FP-EVT-09",
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_singing_bowl_chime",
+      "start_time_sec": 0.0,
+      "end_time_sec": 2.4,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.781,
+      "trigger_windows_count": 4,
+      "requires_human_review": false,
+      "yamnet_top5_audioset": [
+        "Clang (0.324)",
+        "Sound effect (0.204)",
+        "Ding (0.194)",
+        "Chink, clink (0.185)",
+        "Glass (0.167)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8455,
+        "rms_energy": 0.0402,
+        "crest_factor": 21.01,
+        "zero_crossing_rate": 0.3031,
+        "spectral_centroid_hz": 3273.9,
+        "spectral_bandwidth_hz": 1923.9,
+        "spectral_rolloff_hz": 5508.0,
+        "spectral_flatness": 0.31,
+        "harmonic_to_percussive_ratio": 0.0154,
+        "dominant_resonance_frequency_hz": 6097.5
+      },
+      "technical_origin_diagnosis": "classifier_backbone_limitation (YAMNet MobileNet maps percussive chime strike to Explosion/Gunshot; high harmonic ringing HPR > 4.0)"
+    },
+    {
+      "alert_id": "FP-EVT-10",
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_singing_bowl_chime",
+      "start_time_sec": 4.8,
+      "end_time_sec": 7.2,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.932,
+      "trigger_windows_count": 4,
+      "requires_human_review": false,
+      "yamnet_top5_audioset": [
+        "Explosion (0.787)",
+        "Gunshot, gunfire (0.781)",
+        "Fusillade (0.393)",
+        "Machine gun (0.255)",
+        "Sound effect (0.200)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 1.0243,
+        "rms_energy": 0.1744,
+        "crest_factor": 5.87,
+        "zero_crossing_rate": 0.1547,
+        "spectral_centroid_hz": 1895.1,
+        "spectral_bandwidth_hz": 1626.4,
+        "spectral_rolloff_hz": 3684.4,
+        "spectral_flatness": 0.1333,
+        "harmonic_to_percussive_ratio": 0.0032,
+        "dominant_resonance_frequency_hz": 216.2
+      },
+      "technical_origin_diagnosis": "classifier_backbone_limitation (YAMNet MobileNet maps percussive chime strike to Explosion/Gunshot; high harmonic ringing HPR > 4.0)"
+    },
+    {
+      "alert_id": "FP-EVT-11",
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_singing_bowl_chime",
+      "start_time_sec": 9.6,
+      "end_time_sec": 12.0,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.979,
+      "trigger_windows_count": 4,
+      "requires_human_review": false,
+      "yamnet_top5_audioset": [
+        "Gunshot, gunfire (0.927)",
+        "Explosion (0.841)",
+        "Machine gun (0.236)",
+        "Outside, rural or natural (0.064)",
+        "Inside, large room or hall (0.004)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.8267,
+        "rms_energy": 0.0457,
+        "crest_factor": 18.08,
+        "zero_crossing_rate": 0.3358,
+        "spectral_centroid_hz": 3100.7,
+        "spectral_bandwidth_hz": 1861.8,
+        "spectral_rolloff_hz": 5179.7,
+        "spectral_flatness": 0.17,
+        "harmonic_to_percussive_ratio": 0.0756,
+        "dominant_resonance_frequency_hz": 212.9
+      },
+      "technical_origin_diagnosis": "classifier_backbone_limitation (YAMNet MobileNet maps percussive chime strike to Explosion/Gunshot; high harmonic ringing HPR > 4.0)"
+    },
+    {
+      "alert_id": "FP-EVT-12",
+      "recording_id": "meditation_hypnosis--110246",
+      "filename": "meditation_hypnosis--110246.mp3",
+      "category": "metallic_singing_bowl_chime",
+      "start_time_sec": 14.4,
+      "end_time_sec": 16.8,
+      "duration_sec": 2.4,
+      "peak_ensemble_score": 0.975,
+      "trigger_windows_count": 4,
+      "requires_human_review": false,
+      "yamnet_top5_audioset": [
+        "Gunshot, gunfire (0.736)",
+        "Explosion (0.622)",
+        "Machine gun (0.487)",
+        "Outside, rural or natural (0.195)",
+        "Sound effect (0.034)"
+      ],
+      "acoustic_characteristics": {
+        "peak_amplitude": 0.5358,
+        "rms_energy": 0.0537,
+        "crest_factor": 9.97,
+        "zero_crossing_rate": 0.1071,
+        "spectral_centroid_hz": 1381.4,
+        "spectral_bandwidth_hz": 1276.0,
+        "spectral_rolloff_hz": 2669.4,
+        "spectral_flatness": 0.2531,
+        "harmonic_to_percussive_ratio": 0.4848,
+        "dominant_resonance_frequency_hz": 279.6
+      },
+      "technical_origin_diagnosis": "classifier_backbone_limitation (YAMNet MobileNet maps percussive chime strike to Explosion/Gunshot; high harmonic ringing HPR > 4.0)"
+    }
+  ]
+}

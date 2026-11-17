@@ -1,0 +1,7 @@
+condition_id,architecture_profile,total_streams,gross_duration_seconds,gross_duration_hours,total_false_alerts,gross_far_per_hour,gross_far_poisson_95_ci_lower,gross_far_poisson_95_ci_upper,convention_a_excluded_seconds,convention_a_eligible_hours,convention_a_far_per_hour,convention_b_excluded_seconds,convention_b_eligible_hours,convention_b_far_per_hour
+COND1,Phase 14 Balanced Baseline,7,7031.93,1.9533,4,2.0478,0.558,5.2432,40.0,1.9422,2.0595,43.84,1.9411,2.0606
+COND2,Phase 17 Experimental Frozen Profile,7,7031.93,1.9533,21,10.751,6.655,16.434,210.0,1.895,11.0819,702.66,1.7581,11.9445
+COND3,Phase 17 State Reset Candidate,7,7031.93,1.9533,4,2.0478,0.558,5.2432,40.0,1.9422,2.0595,43.84,1.9411,2.0606
+COND4,Phase 36 Raw State Machine,7,7031.93,1.9533,3,1.5359,0.3167,4.4884,30.0,1.945,1.5424,32.88,1.9442,1.5431
+COND5,Phase 36 Legacy Suppression,7,7031.93,1.9533,3,1.5359,0.3167,4.4884,30.0,1.945,1.5424,32.88,1.9442,1.5431
+COND6,Phase 36 Conservative Suppression,7,7031.93,1.9533,3,1.5359,0.3167,4.4884,30.0,1.945,1.5424,32.88,1.9442,1.5431

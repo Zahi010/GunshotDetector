@@ -1,0 +1,129 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_28_INDEPENDENT_REPRODUCTION_CAMPAIGN_AWARE_AUDIT_AND_COOLDOWN_FORENSICS",
+  "archive_filename": "gunshot_detection_phase28.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase28.zip",
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+    "role": "Default Research Baseline (retained, undefeated)"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+    "role": "Selectable Experimental Profile (promotion formally rejected)"
+  },
+  "historical_baselines": {
+    "phase13": {
+      "file": "model_phase13.py",
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6"
+    },
+    "phase9": {
+      "file": "model_phase9.py",
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a"
+    }
+  },
+  "cumulative_benchmark_reproduction": {
+    "total_verified_continuous_streams": 23,
+    "total_independent_campaigns": 4,
+    "campaign_list": [
+      "CAMPAIGN-RPISOUND-UK (10 streams, 5.5000 h)",
+      "CAMPAIGN-CHEWMAGNA-UK (1 stream, 0.5833 h)",
+      "CAMPAIGN-BILBAO-ES (6 streams, 0.5625 h)",
+      "CAMPAIGN-AEROSONIC-AU (6 streams, 6.0000 h)"
+    ],
+    "gross_monitored_duration_seconds": 45525.575,
+    "gross_monitored_hours": 12.646,
+    "phase_14_balanced": {
+      "total_observed_alerts": 128,
+      "gross_alert_rate_per_hr": 10.1218,
+      "cooldown_cluster_extended_seconds": 453.92,
+      "cooldown_instantaneous_seconds": 255.84,
+      "eligible_cluster_extended_hours": 12.5199,
+      "eligible_alert_rate_per_hr": 10.2237,
+      "garwood_95_ci_alerts": [
+        91.31,
+        133.74
+      ],
+      "mtbfa_hours": 0.0978,
+      "mtbfa_minutes": 5.87
+    },
+    "phase_17_experimental": {
+      "total_observed_alerts": 159,
+      "gross_alert_rate_per_hr": 12.5732,
+      "cooldown_cluster_extended_seconds": 6385.2,
+      "cooldown_instantaneous_seconds": 316.56,
+      "eligible_cluster_extended_hours": 10.8723,
+      "eligible_alert_rate_per_hr": 14.6243,
+      "garwood_95_ci_alerts": [
+        119.53,
+        167.31
+      ],
+      "mtbfa_hours": 0.0684,
+      "mtbfa_minutes": 4.1
+    },
+    "statistical_reconciliation": {
+      "cumulative_alert_difference_p17_minus_p14": 31,
+      "percentage_alert_increase_p17": "+24.22%",
+      "p14_superior_streams": 5,
+      "p17_superior_streams": 3,
+      "tied_streams": 15,
+      "paired_wilcoxon_w": 8.0,
+      "paired_wilcoxon_p_exact": 0.1953125,
+      "sign_test_p_twosided": 0.7265625,
+      "leave_one_campaign_out_p14_superior_iterations": "3 of 4",
+      "baseline_decision": "RETAIN_PHASE_14_BALANCED_AS_DEFAULT_RESEARCH_BASELINE"
+    },
+    "cooldown_discrepancy_reconciliation": {
+      "historical_17_streams_cooldown_s": {
+        "phase14": 111.92,
+        "phase17": 101.92
+      },
+      "aerosonic_6_streams_cooldown_s": {
+        "phase14": 342.0,
+        "phase17": 6283.28
+      },
+      "actual_stream_sum_cooldown_s": {
+        "phase14": 453.92,
+        "phase17": 6385.2
+      },
+      "phase27_narrative_reported_cooldown_s": {
+        "phase14": 455.52,
+        "phase17": 6381.76
+      },
+      "delta_stream_sum_minus_narrative_s": {
+        "phase14": -1.6,
+        "phase17": 3.44
+      },
+      "reconciliation_status": "FULLY_TRACED_AND_RESOLVED"
+    }
+  },
+  "required_deliverables_manifest": [
+    "reports/phase28_final_report.md",
+    "reports/phase28_baseline_freeze.json",
+    "reports/phase28_reproduction_manifest.json",
+    "reports/phase28_metric_reconciliation.csv",
+    "reports/phase28_exposure_reproduction.csv",
+    "reports/phase28_cooldown_interval_ledger.csv",
+    "reports/phase28_cooldown_reconciliation.md",
+    "reports/phase28_campaign_aware_statistics.md",
+    "reports/phase28_campaign_summary.csv",
+    "reports/phase28_leave_one_campaign_out.csv",
+    "reports/phase28_aircraft_fragmentation_audit.md",
+    "reports/phase28_aircraft_event_sequences.csv",
+    "reports/phase28_poisson_and_heterogeneity_audit.md",
+    "reports/phase28_dataset_license_and_provenance_audit.md",
+    "reports/phase28_risk_and_limitation_register.md",
+    "reports/phase28_processing_manifest.json",
+    "reports/phase28_artifact_manifest.json",
+    "reports/phase28_test_results.txt",
+    "scripts/reproduce_phase28_analysis.py",
+    "tests/test_phase28_reproduction.py"
+  ],
+  "archive_size_bytes": 4586167,
+  "archive_sha256": "e6505e3597b406541efb005f1d69432653cbfc5603843695fdfd66af01324a72",
+  "total_archive_entries": 51
+}

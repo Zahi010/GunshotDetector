@@ -1,0 +1,79 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_30_CAMPAIGN_EXPANSION_INSTRUMENTED_INFERENCE_PROSPECTIVE_VALIDATION",
+  "archive_filename": "gunshot_detection_phase30.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase30.zip",
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+    "role": "Default Research Baseline (retained, undefeated in state-machine stability)",
+    "verified_thresholds": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0
+    }
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+    "role": "Selectable Experimental Profile (promotion formally rejected)",
+    "verified_thresholds": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "animal_suppression": true
+    }
+  },
+  "instrumentation_invariance": {
+    "wrapper_file": "gunshot/instrumented_detector.py",
+    "invariance_status": "EXACT_MATHEMATICAL_IDENTITY_VERIFIED",
+    "alert_counts": {
+      "phase14": 72,
+      "phase17": 108
+    },
+    "timestamp_deviation_seconds": 0.0,
+    "peak_score_deviation": 0.0
+  },
+  "mechanism_resolution_summary": {
+    "candidate_sequences_evaluated": 25,
+    "confirmed_animal_suppression_fragmentation": 11,
+    "partially_confirmed_animal_active_no_direct_drop": 5,
+    "not_observed_pure_acoustic_fluctuation": 9,
+    "state_machine_bug": "Omission of unconfirmed cluster reset (active_cluster = []) in Phase 17 allows cross-minute transient leakage"
+  },
+  "required_deliverables": [
+    "reports/phase30_final_report.md",
+    "reports/phase30_baseline_freeze.json",
+    "reports/phase30_instrumentation_design.md",
+    "reports/phase30_instrumentation_invariance_audit.md",
+    "reports/phase30_instrumented_event_log.csv",
+    "reports/phase30_instrumented_score_traces.csv",
+    "reports/phase30_suppression_mechanism_analysis.md",
+    "reports/phase30_suppression_mechanism_table.csv",
+    "reports/phase30_candidate_source_inventory.csv",
+    "reports/phase30_source_acceptance_audit.md",
+    "reports/phase30_acquisition_log.md",
+    "reports/phase30_recording_provenance.csv",
+    "reports/phase30_frozen_detector_results.csv",
+    "reports/phase30_campaign_comparison.csv",
+    "reports/phase30_exposure_accounting.csv",
+    "reports/phase30_statistical_analysis.md",
+    "reports/phase30_data_integrity_audit.md",
+    "reports/phase30_risk_and_limitation_register.md",
+    "reports/phase30_processing_manifest.json",
+    "reports/phase30_artifact_manifest.json",
+    "reports/phase30_test_results.txt",
+    "scripts/reproduce_phase30_analysis.py",
+    "tests/test_phase30_reproduction.py"
+  ],
+  "archive_size_bytes": 5451607,
+  "archive_sha256": "a50cc30c13f840f1d68cb111b868242562262e979d9b211d902b6573ab14ada4",
+  "total_archive_entries": 54
+}

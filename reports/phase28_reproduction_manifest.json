@@ -1,0 +1,46 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_28_INDEPENDENT_REPRODUCTION_CAMPAIGN_STATISTICS_COOLDOWN_FORENSICS",
+  "timestamp_utc": "2026-11-14T15:49:20.820143+00:00",
+  "baseline_models_verified": {
+    "model_phase14.py": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+    "model_phase17.py": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "reproduction_summary": {
+    "total_recordings": 23,
+    "total_campaigns": 4,
+    "gross_monitored_hours": 12.6458,
+    "phase14_balanced": {
+      "alerts": 128,
+      "gross_far": 10.1219,
+      "cooldown_s_actual": 453.92,
+      "eligible_hours": 12.5198,
+      "eligible_far": 10.2238,
+      "garwood_95_ci": [
+        8.5295,
+        12.1561
+      ]
+    },
+    "phase17_experimental": {
+      "alerts": 159,
+      "gross_far": 12.5733,
+      "cooldown_s_actual": 6385.2,
+      "eligible_hours": 10.8723,
+      "eligible_far": 14.6243,
+      "garwood_95_ci": [
+        12.4395,
+        17.0824
+      ]
+    },
+    "paired_comparison": {
+      "delta_alerts_p17_minus_p14": 31,
+      "p14_favored_streams": 5,
+      "p17_favored_streams": 3,
+      "tied_streams": 15,
+      "wilcoxon_w": 8.0,
+      "wilcoxon_p_twosided": 0.1953125,
+      "sign_test_p_twosided": 0.7265624999999999
+    },
+    "cooldown_reconciliation_verdict": "RECONCILED: Phase 27 narrative cited draft summary (455.52s / 6381.76s); actual exposure accounting CSV sums to 453.92s and 6385.20s; instantaneous union sums to 255.84s and 316.56s."
+  }
+}

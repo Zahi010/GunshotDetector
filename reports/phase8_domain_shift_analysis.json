@@ -1,0 +1,136 @@
+{
+  "report_title": "Phase 8 Cross-Domain Acoustic Distribution Shift Analysis",
+  "evaluator": "Senior Acoustic ML Researcher",
+  "dataset_split_profiles": {
+    "training_set": {
+      "count": 176,
+      "sample_rates_distribution": {
+        "16000": 176
+      },
+      "channels_distribution": {
+        "1": 176
+      },
+      "duration_sec": {
+        "mean": 12.53,
+        "median": 3.31,
+        "min": 0.18,
+        "max": 243.96
+      },
+      "rms_amplitude": {
+        "mean": 0.1049,
+        "median": 0.0829
+      },
+      "peak_amplitude": {
+        "mean": 0.7286,
+        "median": 0.8305
+      },
+      "crest_factor": {
+        "mean": 15.48,
+        "median": 10.33
+      }
+    },
+    "validation_set": {
+      "count": 34,
+      "sample_rates_distribution": {
+        "16000": 34
+      },
+      "channels_distribution": {
+        "1": 34
+      },
+      "duration_sec": {
+        "mean": 6.83,
+        "median": 3.47,
+        "min": 0.16,
+        "max": 31.25
+      },
+      "rms_amplitude": {
+        "mean": 0.0722,
+        "median": 0.0744
+      },
+      "peak_amplitude": {
+        "mean": 0.7171,
+        "median": 0.8088
+      },
+      "crest_factor": {
+        "mean": 16.21,
+        "median": 11.82
+      }
+    },
+    "historical_test_set": {
+      "count": 47,
+      "sample_rates_distribution": {
+        "16000": 47
+      },
+      "channels_distribution": {
+        "1": 47
+      },
+      "duration_sec": {
+        "mean": 9.51,
+        "median": 2.85,
+        "min": 0.42,
+        "max": 76.18
+      },
+      "rms_amplitude": {
+        "mean": 0.1291,
+        "median": 0.0985
+      },
+      "peak_amplitude": {
+        "mean": 0.7873,
+        "median": 0.7962
+      },
+      "crest_factor": {
+        "mean": 12.14,
+        "median": 7.67
+      }
+    },
+    "phase7_independent_evaluation_set": {
+      "count": 230,
+      "sample_rates_distribution": {
+        "44100": 200,
+        "48000": 19,
+        "12000": 8,
+        "16000": 3
+      },
+      "channels_distribution": {
+        "1": 225,
+        "2": 5
+      },
+      "duration_sec": {
+        "mean": 51.55,
+        "median": 5.0,
+        "min": 0.5,
+        "max": 3600.0
+      },
+      "rms_amplitude": {
+        "mean": 0.102,
+        "median": 0.087
+      },
+      "peak_amplitude": {
+        "mean": 0.7969,
+        "median": 0.9669
+      },
+      "crest_factor": {
+        "mean": 13.38,
+        "median": 8.88
+      }
+    }
+  },
+  "key_domain_shifts_identified": [
+    {
+      "dimension": "Sample Rate Discrepancy",
+      "finding": "Historical sets were predominantly 16 kHz or 44.1 kHz. Independent sensor recordings from ShotSpotter are natively sampled at 12 kHz, whereas Mitchell Roberts recordings are 48 kHz. Resampling to 12 kHz -> 16 kHz introduces band-limiting above 6 kHz."
+    },
+    {
+      "dimension": "Duration & Clip Truncation",
+      "finding": "Historical training files averaged 3.0s - 4.5s in duration, allowing multiple hopped windows across the gunshot and its reverberant decay. In contrast, 19 of the 27 independent gunshot files were trimmed to 0.50s, yielding only 1 analysis window."
+    },
+    {
+      "dimension": "Dynamic Range & Compression",
+      "finding": "Mitchell Roberts range clips were recorded with high-SPL microphones exhibiting steep crest factors (mean 12.8), whereas ShotSpotter street sensors have automatic gain control (AGC) and ambient street noise, compressing dynamic range."
+    },
+    {
+      "dimension": "Acoustic Reverberation",
+      "finding": "Historical gunshots had natural indoor/outdoor decays. The independent ShotSpotter District 5 & 7 recordings are situated in urban street canyons with severe brick-wall flutter echoes and traffic background noise."
+    }
+  ]
+}

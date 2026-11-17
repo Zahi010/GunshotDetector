@@ -1,0 +1,64 @@
+recording_id,partition,sub_category,v6_score,peak_raw_score,peak_adj_score,max_crest_db,avg_centroid_hz,n_windows,fsm_state_reached,max_candidate_windows,active_suppressions,failure_mechanism
+fsd50k_gun_40971,development,SINGLE_ROUND,0.3396,0.9704,0.3396,16.87,389.9,20,IDLE,0,fireworks_dominant; fireworks_standard; sub_bass_thud; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+fsd50k_gun_32799,development,SINGLE_ROUND,0.3435,0.9816,0.3435,14.11,307.6,18,IDLE,0,sub_bass_thud,GENERAL_SUPPRESSION_DROP
+fsd50k_gun_100465,development,SINGLE_ROUND,0.191,0.9548,0.191,17.93,3081.2,1,IDLE,0,ballistic_incoherence,BALLISTIC_INCOHERENCE_ATTENUATION
+fsd50k_gun_164020,development,SINGLE_ROUND,0.2922,0.974,0.2922,26.5,759.6,5,IDLE,0,ballistic_incoherence; mechanical_impact; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_184651,development,SINGLE_ROUND,0.5316,0.7997,0.5316,13.79,54.8,2,IDLE,0,sub_bass_thud,GENERAL_SUPPRESSION_DROP
+fsd50k_gun_51749,development,SINGLE_ROUND,0.9307,0.9307,0.9307,13.44,1153.6,1,CANDIDATE,1,none,SHORT_FILE_FSM_WINDOW_CUTOFF
+fsd50k_gun_238159,development,SINGLE_ROUND,0.0904,0.2582,0.0904,23.22,262.0,1,IDLE,0,sub_bass_thud,LOW_SNR_OCCLUDED_ATTENUATION
+fsd50k_gun_148166,development,SINGLE_ROUND,0.2504,0.8347,0.2504,17.99,593.9,2,IDLE,0,fireworks_dominant; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+fsd50k_gun_266977,development,SINGLE_ROUND,0.9103,0.9103,0.9103,18.19,511.1,2,CANDIDATE,1,sub_bass_thud,SHORT_FILE_FSM_WINDOW_CUTOFF
+fsd50k_gun_127846,development,SINGLE_ROUND,0.8832,0.8967,0.8832,14.87,70.7,15,CANDIDATE,1,sub_bass_thud; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_273303,development,SINGLE_ROUND,0.9472,0.9495,0.9472,13.06,33.7,5,CANDIDATE,1,sub_bass_thud,CONFIRMATION_BARRIER_UNMET
+fsd50k_gun_35799,development,SINGLE_ROUND,0.7528,0.9226,0.7528,21.92,1293.1,3,CANDIDATE,1,ballistic_incoherence,BALLISTIC_INCOHERENCE_ATTENUATION
+fsd50k_gun_191449,development,BURST_FIRE,0.1954,0.9253,0.1954,24.25,1330.6,18,IDLE,0,ballistic_incoherence; fireworks_dominant; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+fsd50k_gun_46263,development,SINGLE_ROUND,0.9125,0.9125,0.9125,16.51,302.4,2,CANDIDATE,1,sub_bass_thud,SHORT_FILE_FSM_WINDOW_CUTOFF
+fsd50k_gun_204009,development,SINGLE_ROUND,0.9477,0.9477,0.9477,21.65,500.1,5,CANDIDATE,1,sub_bass_thud; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_337166,development,SINGLE_ROUND,0.9522,0.9709,0.9522,21.21,236.8,8,CANDIDATE,1,ballistic_incoherence; sub_bass_thud; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_404816,development,SINGLE_ROUND,0.1178,0.3926,0.1178,22.34,433.6,5,IDLE,0,fireworks_dominant; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+fsd50k_gun_257364,development,BURST_FIRE,0.1776,0.6535,0.1776,19.81,721.0,5,IDLE,0,ballistic_incoherence; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_52593,development,SINGLE_ROUND,0.2355,0.785,0.2355,18.38,512.2,5,IDLE,0,sub_bass_thud; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_161195,development,SINGLE_ROUND,0.8921,0.8921,0.8921,12.61,468.5,1,CANDIDATE,1,none,SHORT_FILE_FSM_WINDOW_CUTOFF
+fsd50k_gun_138679,development,SINGLE_ROUND,0.9153,0.9153,0.9153,23.19,903.6,2,CANDIDATE,1,ballistic_incoherence,BALLISTIC_INCOHERENCE_ATTENUATION
+fsd50k_gun_220612,development,SINGLE_ROUND,0.1632,0.8159,0.1632,20.61,2298.7,1,IDLE,0,ballistic_incoherence,BALLISTIC_INCOHERENCE_ATTENUATION
+fsd50k_gun_171475,development,SINGLE_ROUND,0.3469,0.991,0.3469,19.17,96.3,25,IDLE,0,sub_bass_thud,GENERAL_SUPPRESSION_DROP
+fsd50k_gun_136766,development,SINGLE_ROUND,0.8351,0.8351,0.8351,11.09,1272.8,1,CANDIDATE,1,none,SHORT_FILE_FSM_WINDOW_CUTOFF
+fsd50k_gun_345844,development,SINGLE_ROUND,0.3459,0.9884,0.3459,17.89,95.4,12,IDLE,0,sub_bass_thud; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+fsd50k_gun_100144,development,SINGLE_ROUND,0.6734,0.6734,0.6734,28.47,612.2,14,IDLE,0,ballistic_incoherence; fireworks_dominant; sub_bass_thud; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+p15_pos_007_phase15_gunshot_pocket_ar15rapidpocket09,phase15_historical_holdout,gunshot_ballistic_event,0.9286,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_008_phase15_gunshot_pocket_ar15rapidpocket10,phase15_historical_holdout,gunshot_ballistic_event,0.3363,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_009_phase15_gunshot_pocket_ar15rapidpocket11,phase15_historical_holdout,gunshot_ballistic_event,0.2923,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_012_phase15_gunshot_pocket_berettasinglepocket09,phase15_historical_holdout,gunshot_ballistic_event,0.6294,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_013_phase15_gunshot_pocket_berettasinglepocket10,phase15_historical_holdout,gunshot_ballistic_event,0.3865,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_015_phase15_gunshot_pocket_berettarapidpocket07,phase15_historical_holdout,gunshot_ballistic_event,0.2491,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_023_phase15_gunshot_clean_ar15double10,phase15_historical_holdout,gunshot_ballistic_event,0.2722,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_031_phase15_gunshot_clean_berettadouble10,phase15_historical_holdout,gunshot_ballistic_event,0.2934,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_037_phase15_gunshot_clipped_ar15rapid08,phase15_historical_holdout,gunshot_ballistic_event,0.8786,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_038_phase15_gunshot_clipped_ar15rapid09,phase15_historical_holdout,gunshot_ballistic_event,0.2477,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_039_phase15_gunshot_clipped_ar15rapid10,phase15_historical_holdout,gunshot_ballistic_event,0.2964,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_043_phase15_gunshot_urban_shotspotter_d5_01,phase15_historical_holdout,gunshot_ballistic_event,0.2803,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_045_phase15_gunshot_urban_shotspotter_d5_03,phase15_historical_holdout,gunshot_ballistic_event,0.3482,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p15_pos_047_phase15_gunshot_scepter_calibration_01,phase15_historical_holdout,gunshot_ballistic_event,0.2438,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_001_phase12_gunshot_clipped_ar15_rapid_03,phase12_historical_holdout,gunshot_ballistic_event,0.1992,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_002_phase12_gunshot_clipped_ar15_rapid_04,phase12_historical_holdout,gunshot_ballistic_event,0.325,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_004_phase12_gunshot_clipped_ar15_rapid_06,phase12_historical_holdout,gunshot_ballistic_event,0.2555,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_006_phase12_gunshot_clipped_beretta_rapid_03,phase12_historical_holdout,gunshot_ballistic_event,0.1027,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_011_phase12_gunshot_pocket_ar15_single_02,phase12_historical_holdout,gunshot_ballistic_event,0.309,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_017_phase12_gunshot_pocket_ar15_rapid_03,phase12_historical_holdout,gunshot_ballistic_event,0.8512,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_020_phase12_gunshot_pocket_ar15_rapid_06,phase12_historical_holdout,gunshot_ballistic_event,0.2703,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_022_phase12_gunshot_pocket_beretta_single_03,phase12_historical_holdout,gunshot_ballistic_event,0.5443,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_023_phase12_gunshot_pocket_beretta_single_04,phase12_historical_holdout,gunshot_ballistic_event,0.2344,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_024_phase12_gunshot_pocket_beretta_single_05,phase12_historical_holdout,gunshot_ballistic_event,0.514,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_025_phase12_gunshot_pocket_beretta_single_06,phase12_historical_holdout,gunshot_ballistic_event,0.6071,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_028_phase12_gunshot_pocket_beretta_rapid_04,phase12_historical_holdout,gunshot_ballistic_event,0.326,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_029_phase12_gunshot_pocket_beretta_rapid_05,phase12_historical_holdout,gunshot_ballistic_event,0.2557,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_039_phase12_gunshot_clean_beretta_single_07,phase12_historical_holdout,gunshot_ballistic_event,0.2919,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_042_phase12_gunshot_clean_ar15_double_05,phase12_historical_holdout,gunshot_ballistic_event,0.9098,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+p12_pos_048_phase12_gunshot_urban_shotspotter_d7_03,phase12_historical_holdout,gunshot_ballistic_event,0.2967,0.0,0.0,0.0,0.0,0,IDLE,0,none,LOW_SNR_OCCLUDED_ATTENUATION
+P19-CAT-A-FP1-test_004,phase19_independent_positive,urban_field_shotspotter,0.2365,0.9232,0.2365,35.74,1002.1,19,IDLE,0,ballistic_incoherence; fireworks_dominant; silence_gate; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+P19-CAT-A-FP1-test_007,phase19_independent_positive,urban_field_shotspotter,0.2939,0.9798,0.2939,24.74,1265.7,19,IDLE,0,ballistic_incoherence; fireworks_dominant; silence_gate; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+P19-CAT-A-FP3-test_049,phase19_independent_positive,urban_field_shotspotter,0.2855,0.9516,0.2855,29.29,2331.5,19,IDLE,0,fireworks_dominant; silence_gate; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+P19-CAT-A-FP4-test_058,phase19_independent_positive,urban_field_shotspotter,0.2974,0.9915,0.2974,19.68,2817.1,19,IDLE,0,ballistic_incoherence; fireworks_dominant; silence_gate; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+P19-CAT-A-FP4-test_061,phase19_independent_positive,urban_field_shotspotter,0.2666,0.8885,0.2666,23.73,2435.1,19,IDLE,0,ballistic_incoherence; fireworks_dominant; silence_gate; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION
+P19-CAT-A-FP5-test_127,phase19_independent_positive,urban_field_shotspotter,0.2823,0.9409,0.2823,30.67,2657.6,19,IDLE,0,ballistic_incoherence; silence_gate; thunder_rumble,REVERB_THUNDER_OVER_SUPPRESSION
+P19-CAT-A-FP5-test_133,phase19_independent_positive,urban_field_shotspotter,0.1355,0.6775,0.1355,26.04,2578.5,19,IDLE,0,ballistic_incoherence; fireworks_dominant; silence_gate; thunder_rumble,PYROTECHNIC_OVER_SUPPRESSION

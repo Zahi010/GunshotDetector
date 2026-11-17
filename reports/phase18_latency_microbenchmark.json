@@ -1,0 +1,106 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "total_trials": 160,
+  "chunk_duration_ms": 480.0,
+  "tested_offsets_ms": [
+    0.0,
+    60.0,
+    120.0,
+    180.0,
+    240.0,
+    300.0,
+    360.0,
+    420.0
+  ],
+  "trials_per_offset": 20,
+  "latency_metrics": {
+    "onset_to_chunk_delay_ms": {
+      "median": 270.0,
+      "p95": 480.0,
+      "p99": 480.0,
+      "max": 480.0,
+      "min": 60.0,
+      "mean": 270.0,
+      "std": 137.48
+    },
+    "server_dsp_execution_ms": {
+      "median": 105.84,
+      "p95": 116.03,
+      "p99": 125.91,
+      "max": 152.31,
+      "min": 96.0,
+      "mean": 106.5,
+      "std": 6.68
+    },
+    "transport_overhead_ms": 55.5,
+    "chunk_to_alert_single_ms": {
+      "median": 161.34,
+      "p95": 171.53,
+      "p99": 181.41,
+      "max": 207.81,
+      "min": 151.5,
+      "mean": 162.0,
+      "std": 6.68
+    },
+    "total_glass_to_glass_single_window_ms": {
+      "median": 434.62,
+      "p95": 644.08,
+      "p99": 650.82,
+      "max": 651.37,
+      "min": 211.5,
+      "mean": 432.0,
+      "std": 138.29
+    },
+    "total_glass_to_glass_two_window_confirmed_ms": {
+      "median": 914.62,
+      "p95": 1124.08,
+      "p99": 1130.82,
+      "max": 1131.37,
+      "min": 691.5,
+      "mean": 912.0,
+      "std": 138.29
+    }
+  },
+  "per_offset_breakdown": {
+    "offset_0ms": {
+      "onset_to_chunk_delay_ms": 480.0,
+      "g2g_single_median_ms": 643.23,
+      "g2g_confirmed_median_ms": 1123.23
+    },
+    "offset_60ms": {
+      "onset_to_chunk_delay_ms": 420.0,
+      "g2g_single_median_ms": 581.35,
+      "g2g_confirmed_median_ms": 1061.35
+    },
+    "offset_120ms": {
+      "onset_to_chunk_delay_ms": 360.0,
+      "g2g_single_median_ms": 521.89,
+      "g2g_confirmed_median_ms": 1001.89
+    },
+    "offset_180ms": {
+      "onset_to_chunk_delay_ms": 300.0,
+      "g2g_single_median_ms": 458.51,
+      "g2g_confirmed_median_ms": 938.51
+    },
+    "offset_240ms": {
+      "onset_to_chunk_delay_ms": 240.0,
+      "g2g_single_median_ms": 401.49,
+      "g2g_confirmed_median_ms": 881.49
+    },
+    "offset_300ms": {
+      "onset_to_chunk_delay_ms": 180.0,
+      "g2g_single_median_ms": 340.26,
+      "g2g_confirmed_median_ms": 820.26
+    },
+    "offset_360ms": {
+      "onset_to_chunk_delay_ms": 120.0,
+      "g2g_single_median_ms": 282.09,
+      "g2g_confirmed_median_ms": 762.09
+    },
+    "offset_420ms": {
+      "onset_to_chunk_delay_ms": 60.0,
+      "g2g_single_median_ms": 214.34,
+      "g2g_confirmed_median_ms": 694.35
+    }
+  }
+}

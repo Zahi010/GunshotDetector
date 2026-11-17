@@ -1,0 +1,84 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_25_CROSS_PHASE_EVIDENCE_RECONCILIATION_AND_INDEPENDENT_ACQUISITION",
+  "archive_filename": "gunshot_detection_phase25.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase25.zip",
+  "archive_size_bytes": 8213032,
+  "archive_sha256": "cc2349c46ebaeed859ed300a0b2f402e62bf9c20994d2112a15ec47cd656425e",
+  "total_archive_entries": 133,
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "tripartite_denominator_summary": {
+    "gross_calendar_exposure_hours": 6.646,
+    "total_verified_natural_streams": 17,
+    "total_independent_campaigns": 3,
+    "phase_14_balanced": {
+      "total_observed_alerts": 56,
+      "gross_rate_alerts_per_hr": 8.4261,
+      "cooldown_excluded_seconds": 111.92,
+      "eligible_exposure_hours": 6.6149,
+      "eligible_rate_alerts_per_hr": 8.4657,
+      "garwood_95_ci_per_hr": [
+        6.3949,
+        10.9935
+      ],
+      "mtbfa_minutes": 7.09
+    },
+    "phase_17_experimental": {
+      "total_observed_alerts": 51,
+      "gross_rate_alerts_per_hr": 7.6738,
+      "cooldown_excluded_seconds": 101.92,
+      "eligible_exposure_hours": 6.6177,
+      "eligible_rate_alerts_per_hr": 7.7066,
+      "garwood_95_ci_per_hr": [
+        5.7381,
+        10.1328
+      ],
+      "mtbfa_minutes": 7.79
+    },
+    "paired_wilcoxon_signed_rank_p_value": 0.125,
+    "model_promotion_determination": "INCONCLUSIVE (Retain Phase 14 Balanced Baseline)"
+  },
+  "forensic_reconciliation_summary": {
+    "stream_count_discrepancy": "RESOLVED (Clerical typo in Phase 23 text; verified 3 improved, 14 equal, 0 worse, 5 alert reduction)",
+    "inventory_reconciliation": "23 cataloged (17 evaluated primary natural, 6 excluded synthetic overlays)",
+    "double_reviewer_assessment": "Cohen's kappa marked UNVERIFIED_FROM_ARTIFACT due to consensus label persistence; protocol updated",
+    "municipal_legal_claims": "Qualified: absence of audio confirmed, unsupported Federal Wiretap Act assumptions removed"
+  },
+  "key_deliverables": [
+    "reports/phase25_final_report.md",
+    "reports/phase25_baseline_freeze.json",
+    "reports/phase25_phase23_phase24_reconciliation.md",
+    "reports/phase25_stream_comparison_reconciliation.csv",
+    "reports/phase25_recording_inventory_reconciliation.csv",
+    "reports/phase25_reviewer_agreement_audit.md",
+    "reports/phase25_reviewer_contingency_table.csv",
+    "reports/phase25_municipal_legal_claim_audit.md",
+    "reports/phase25_source_shortlist.md",
+    "reports/phase25_source_registry.csv",
+    "reports/phase25_campaign_independence_matrix.csv",
+    "reports/phase25_recording_provenance.csv",
+    "reports/phase25_duplicate_audit.csv",
+    "reports/phase25_continuity_audit.csv",
+    "reports/phase25_exposure_accounting.csv",
+    "reports/phase25_alert_event_log.csv",
+    "reports/phase25_negative_audio_results.csv",
+    "reports/phase25_matched_model_comparison.md",
+    "reports/phase25_statistical_analysis.md",
+    "reports/phase25_risk_and_limitation_register.md",
+    "reports/phase25_processing_manifest.json",
+    "reports/phase25_research_data_access_request.md",
+    "reports/phase25_test_results.txt",
+    "tests/test_phase25_reconciliation.py",
+    "scripts/reproduce_phase25_analysis.py"
+  ]
+}

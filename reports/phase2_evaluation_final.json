@@ -1,0 +1,5208 @@
+{
+  "model_bundle": "E:\\gunshot\\gunshot\\models\\gunshot_yamnet_bundle",
+  "selected_threshold": 0.48,
+  "threshold_selection_objective": "Optimized on validation set to achieve 90%+ precision with high recall",
+  "dataset_split_summary": {
+    "total_recording_groups": 344,
+    "splits": {
+      "train": {
+        "groups_total": 240,
+        "groups_gunshot": 77,
+        "groups_background": 163
+      },
+      "val": {
+        "groups_total": 51,
+        "groups_gunshot": 16,
+        "groups_background": 35
+      },
+      "test": {
+        "groups_total": 53,
+        "groups_gunshot": 17,
+        "groups_background": 36
+      }
+    },
+    "window_length_secs": 0.96,
+    "hop_length_secs": 0.48,
+    "sample_rate": 16000
+  },
+  "window_level_evaluation": {
+    "threshold": 0.48,
+    "windows_total": 519,
+    "windows_gunshot": 245,
+    "windows_background": 274,
+    "precision": 0.9111,
+    "recall": 0.8367,
+    "f1": 0.8723,
+    "roc_auc": 0.9461,
+    "confusion_matrix": [
+      [
+        254,
+        20
+      ],
+      [
+        40,
+        205
+      ]
+    ],
+    "true_negatives": 254,
+    "false_positives": 20,
+    "false_negatives": 40,
+    "true_positives": 205
+  },
+  "recording_level_evaluation": {
+    "total_recordings": 37,
+    "recordings_gunshot": 17,
+    "recordings_background": 20,
+    "precision": 0.6538,
+    "recall": 1.0,
+    "f1": 0.7907,
+    "roc_auc": 0.9706,
+    "confusion_matrix": [
+      [
+        11,
+        9
+      ],
+      [
+        0,
+        17
+      ]
+    ],
+    "true_negatives": 11,
+    "false_positives": 9,
+    "false_negatives": 0,
+    "true_positives": 17
+  },
+  "validation_streaming_metrics": {
+    "split_name": "val",
+    "negative_audio": {
+      "total_recordings": 35,
+      "total_duration_seconds": 415.38,
+      "total_duration_hours": 0.1154,
+      "real_recordings_count": 27,
+      "real_duration_seconds": 391.17,
+      "real_duration_hours": 0.1087,
+      "synthetic_recordings_count": 8,
+      "synthetic_duration_seconds": 24.21,
+      "synthetic_duration_hours": 0.0067,
+      "confirm_windows_1": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 88,
+            "false_alerts_per_hour": 762.68,
+            "poisson_ci_95": [
+              611.69,
+              939.65
+            ],
+            "calculation_formula": "(88 events / 415.4s) * 3600 = 762.68/hr",
+            "affected_recordings_count": 27,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 2,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 6,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_door_slam_010.wav",
+                "duration_sec": 2.32,
+                "events_triggered": 1,
+                "peak_score": 0.1632
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 66,
+            "false_alerts_per_hour": 572.01,
+            "poisson_ci_95": [
+              442.39,
+              727.74
+            ],
+            "calculation_formula": "(66 events / 415.4s) * 3600 = 572.01/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 2,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 5,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_fireworks_011.wav",
+                "duration_sec": 2.24,
+                "events_triggered": 1,
+                "peak_score": 0.3961
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 65,
+            "false_alerts_per_hour": 563.34,
+            "poisson_ci_95": [
+              434.78,
+              718.03
+            ],
+            "calculation_formula": "(65 events / 415.4s) * 3600 = 563.34/hr",
+            "affected_recordings_count": 21,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 2,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 5,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_fireworks_011.wav",
+                "duration_sec": 2.24,
+                "events_triggered": 1,
+                "peak_score": 0.3961
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 38,
+            "false_alerts_per_hour": 329.34,
+            "poisson_ci_95": [
+              233.06,
+              452.04
+            ],
+            "calculation_formula": "(38 events / 415.4s) * 3600 = 329.34/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 3,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_fireworks_011.wav",
+                "duration_sec": 2.24,
+                "events_triggered": 1,
+                "peak_score": 0.3961
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 199.34,
+            "poisson_ci_95": [
+              126.36,
+              299.1
+            ],
+            "calculation_formula": "(23 events / 415.4s) * 3600 = 199.34/hr",
+            "affected_recordings_count": 11,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 2,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 130.0,
+            "poisson_ci_95": [
+              72.76,
+              214.42
+            ],
+            "calculation_formula": "(15 events / 415.4s) * 3600 = 130.00/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 2,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 2,
+                "peak_score": 0.823
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 13,
+            "false_alerts_per_hour": 112.67,
+            "poisson_ci_95": [
+              59.99,
+              192.67
+            ],
+            "calculation_formula": "(13 events / 415.4s) * 3600 = 112.67/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 1,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 7,
+            "false_alerts_per_hour": 60.67,
+            "poisson_ci_95": [
+              24.39,
+              125.0
+            ],
+            "calculation_formula": "(7 events / 415.4s) * 3600 = 60.67/hr",
+            "affected_recordings_count": 6,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesound_community-laser-effect-contact-mic-20428.mp3",
+                "duration_sec": 76.18,
+                "events_triggered": 2,
+                "peak_score": 0.654
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 4,
+            "false_alerts_per_hour": 34.67,
+            "poisson_ci_95": [
+              9.45,
+              88.76
+            ],
+            "calculation_formula": "(4 events / 415.4s) * 3600 = 34.67/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 26.0,
+            "poisson_ci_95": [
+              5.36,
+              75.98
+            ],
+            "calculation_formula": "(3 events / 415.4s) * 3600 = 26.00/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              31.97
+            ],
+            "calculation_formula": "(0 events / 415.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 78,
+            "false_alerts_per_hour": 717.85,
+            "poisson_ci_95": [
+              567.43,
+              895.9
+            ],
+            "calculation_formula": "(78 events / 391.2s) * 3600 = 717.85/hr",
+            "affected_recordings_count": 19,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 2,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 6,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_door_slam_010.wav",
+                "duration_sec": 2.32,
+                "events_triggered": 1,
+                "peak_score": 0.1632
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 58,
+            "false_alerts_per_hour": 533.78,
+            "poisson_ci_95": [
+              405.32,
+              690.04
+            ],
+            "calculation_formula": "(58 events / 391.2s) * 3600 = 533.78/hr",
+            "affected_recordings_count": 15,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 2,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 5,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_fireworks_011.wav",
+                "duration_sec": 2.24,
+                "events_triggered": 1,
+                "peak_score": 0.3961
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 57,
+            "false_alerts_per_hour": 524.58,
+            "poisson_ci_95": [
+              397.31,
+              679.65
+            ],
+            "calculation_formula": "(57 events / 391.2s) * 3600 = 524.58/hr",
+            "affected_recordings_count": 14,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 2,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 5,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_fireworks_011.wav",
+                "duration_sec": 2.24,
+                "events_triggered": 1,
+                "peak_score": 0.3961
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 37,
+            "false_alerts_per_hour": 340.52,
+            "poisson_ci_95": [
+              239.75,
+              469.36
+            ],
+            "calculation_formula": "(37 events / 391.2s) * 3600 = 340.52/hr",
+            "affected_recordings_count": 12,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 3,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "hard_neg_fireworks_011.wav",
+                "duration_sec": 2.24,
+                "events_triggered": 1,
+                "peak_score": 0.3961
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 211.67,
+            "poisson_ci_95": [
+              134.18,
+              317.61
+            ],
+            "calculation_formula": "(23 events / 391.2s) * 3600 = 211.67/hr",
+            "affected_recordings_count": 11,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 2,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 138.05,
+            "poisson_ci_95": [
+              77.26,
+              227.69
+            ],
+            "calculation_formula": "(15 events / 391.2s) * 3600 = 138.05/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 2,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 2,
+                "peak_score": 0.823
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 13,
+            "false_alerts_per_hour": 119.64,
+            "poisson_ci_95": [
+              63.7,
+              204.59
+            ],
+            "calculation_formula": "(13 events / 391.2s) * 3600 = 119.64/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 1,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 7,
+            "false_alerts_per_hour": 64.42,
+            "poisson_ci_95": [
+              25.9,
+              132.73
+            ],
+            "calculation_formula": "(7 events / 391.2s) * 3600 = 64.42/hr",
+            "affected_recordings_count": 6,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesound_community-laser-effect-contact-mic-20428.mp3",
+                "duration_sec": 76.18,
+                "events_triggered": 2,
+                "peak_score": 0.654
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 4,
+            "false_alerts_per_hour": 36.81,
+            "poisson_ci_95": [
+              10.03,
+              94.25
+            ],
+            "calculation_formula": "(4 events / 391.2s) * 3600 = 36.81/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 27.61,
+            "poisson_ci_95": [
+              5.69,
+              80.69
+            ],
+            "calculation_formula": "(3 events / 391.2s) * 3600 = 27.61/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              33.95
+            ],
+            "calculation_formula": "(0 events / 391.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 10,
+            "false_alerts_per_hour": 1487.24,
+            "poisson_ci_95": [
+              713.19,
+              2735.09
+            ],
+            "calculation_formula": "(10 events / 24.2s) * 3600 = 1487.24/hr",
+            "affected_recordings_count": 8,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_room_ambience_031.wav",
+                "duration_sec": 3.97,
+                "events_triggered": 2,
+                "peak_score": 0.108
+              },
+              {
+                "filename": "synth_negative_silence_tone_005.wav",
+                "duration_sec": 1.85,
+                "events_triggered": 1,
+                "peak_score": 0.2777
+              },
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 2,
+                "peak_score": 0.3863
+              },
+              {
+                "filename": "synth_negative_room_ambience_011.wav",
+                "duration_sec": 3.19,
+                "events_triggered": 1,
+                "peak_score": 0.242
+              },
+              {
+                "filename": "synth_negative_room_ambience_026.wav",
+                "duration_sec": 3.01,
+                "events_triggered": 1,
+                "peak_score": 0.2578
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 8,
+            "false_alerts_per_hour": 1189.79,
+            "poisson_ci_95": [
+              513.67,
+              2344.37
+            ],
+            "calculation_formula": "(8 events / 24.2s) * 3600 = 1189.79/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_silence_tone_005.wav",
+                "duration_sec": 1.85,
+                "events_triggered": 1,
+                "peak_score": 0.2777
+              },
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 2,
+                "peak_score": 0.3863
+              },
+              {
+                "filename": "synth_negative_room_ambience_011.wav",
+                "duration_sec": 3.19,
+                "events_triggered": 1,
+                "peak_score": 0.242
+              },
+              {
+                "filename": "synth_negative_room_ambience_026.wav",
+                "duration_sec": 3.01,
+                "events_triggered": 1,
+                "peak_score": 0.2578
+              },
+              {
+                "filename": "synth_negative_silence_tone_010.wav",
+                "duration_sec": 2.27,
+                "events_triggered": 1,
+                "peak_score": 0.2515
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 8,
+            "false_alerts_per_hour": 1189.79,
+            "poisson_ci_95": [
+              513.67,
+              2344.37
+            ],
+            "calculation_formula": "(8 events / 24.2s) * 3600 = 1189.79/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_silence_tone_005.wav",
+                "duration_sec": 1.85,
+                "events_triggered": 1,
+                "peak_score": 0.2777
+              },
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 2,
+                "peak_score": 0.3863
+              },
+              {
+                "filename": "synth_negative_room_ambience_011.wav",
+                "duration_sec": 3.19,
+                "events_triggered": 1,
+                "peak_score": 0.242
+              },
+              {
+                "filename": "synth_negative_room_ambience_026.wav",
+                "duration_sec": 3.01,
+                "events_triggered": 1,
+                "peak_score": 0.2578
+              },
+              {
+                "filename": "synth_negative_silence_tone_010.wav",
+                "duration_sec": 2.27,
+                "events_triggered": 1,
+                "peak_score": 0.2515
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 148.72,
+            "poisson_ci_95": [
+              3.77,
+              828.64
+            ],
+            "calculation_formula": "(1 events / 24.2s) * 3600 = 148.72/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 1,
+                "peak_score": 0.3863
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      },
+      "confirm_windows_2": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 53,
+            "false_alerts_per_hour": 459.34,
+            "poisson_ci_95": [
+              344.08,
+              600.83
+            ],
+            "calculation_formula": "(53 events / 415.4s) * 3600 = 459.34/hr",
+            "affected_recordings_count": 17,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 6,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 29,
+            "false_alerts_per_hour": 251.34,
+            "poisson_ci_95": [
+              168.33,
+              360.96
+            ],
+            "calculation_formula": "(29 events / 415.4s) * 3600 = 251.34/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 3,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 29,
+            "false_alerts_per_hour": 251.34,
+            "poisson_ci_95": [
+              168.33,
+              360.96
+            ],
+            "calculation_formula": "(29 events / 415.4s) * 3600 = 251.34/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 3,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 130.0,
+            "poisson_ci_95": [
+              72.76,
+              214.42
+            ],
+            "calculation_formula": "(15 events / 415.4s) * 3600 = 130.00/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 5,
+                "peak_score": 0.823
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 52.0,
+            "poisson_ci_95": [
+              19.08,
+              113.18
+            ],
+            "calculation_formula": "(6 events / 415.4s) * 3600 = 52.00/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              },
+              {
+                "filename": "freesound_community-shaking-gun-29171.mp3",
+                "duration_sec": 43.1,
+                "events_triggered": 2,
+                "peak_score": 0.6005
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 26.0,
+            "poisson_ci_95": [
+              5.36,
+              75.98
+            ],
+            "calculation_formula": "(3 events / 415.4s) * 3600 = 26.00/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shaking-gun-29171.mp3",
+                "duration_sec": 43.1,
+                "events_triggered": 2,
+                "peak_score": 0.6005
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 26.0,
+            "poisson_ci_95": [
+              5.36,
+              75.98
+            ],
+            "calculation_formula": "(3 events / 415.4s) * 3600 = 26.00/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shaking-gun-29171.mp3",
+                "duration_sec": 43.1,
+                "events_triggered": 2,
+                "peak_score": 0.6005
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              31.97
+            ],
+            "calculation_formula": "(0 events / 415.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              31.97
+            ],
+            "calculation_formula": "(0 events / 415.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              31.97
+            ],
+            "calculation_formula": "(0 events / 415.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              31.97
+            ],
+            "calculation_formula": "(0 events / 415.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 48,
+            "false_alerts_per_hour": 441.75,
+            "poisson_ci_95": [
+              325.71,
+              585.7
+            ],
+            "calculation_formula": "(48 events / 391.2s) * 3600 = 441.75/hr",
+            "affected_recordings_count": 12,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 6,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 27,
+            "false_alerts_per_hour": 248.48,
+            "poisson_ci_95": [
+              163.75,
+              361.53
+            ],
+            "calculation_formula": "(27 events / 391.2s) * 3600 = 248.48/hr",
+            "affected_recordings_count": 11,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 3,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 27,
+            "false_alerts_per_hour": 248.48,
+            "poisson_ci_95": [
+              163.75,
+              361.53
+            ],
+            "calculation_formula": "(27 events / 391.2s) * 3600 = 248.48/hr",
+            "affected_recordings_count": 11,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+                "duration_sec": 22.22,
+                "events_triggered": 3,
+                "peak_score": 0.5277
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 138.05,
+            "poisson_ci_95": [
+              77.26,
+              227.69
+            ],
+            "calculation_formula": "(15 events / 391.2s) * 3600 = 138.05/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+                "duration_sec": 10.06,
+                "events_triggered": 1,
+                "peak_score": 0.4076
+              },
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+                "duration_sec": 1.18,
+                "events_triggered": 1,
+                "peak_score": 0.7527
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 5,
+                "peak_score": 0.823
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 55.22,
+            "poisson_ci_95": [
+              20.26,
+              120.19
+            ],
+            "calculation_formula": "(6 events / 391.2s) * 3600 = 55.22/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "italianpie29-rocket-launcher-301426.mp3",
+                "duration_sec": 1.01,
+                "events_triggered": 1,
+                "peak_score": 0.8107
+              },
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+                "duration_sec": 190.63,
+                "events_triggered": 1,
+                "peak_score": 0.823
+              },
+              {
+                "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+                "duration_sec": 1.63,
+                "events_triggered": 1,
+                "peak_score": 0.8181
+              },
+              {
+                "filename": "freesound_community-shaking-gun-29171.mp3",
+                "duration_sec": 43.1,
+                "events_triggered": 2,
+                "peak_score": 0.6005
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 27.61,
+            "poisson_ci_95": [
+              5.69,
+              80.69
+            ],
+            "calculation_formula": "(3 events / 391.2s) * 3600 = 27.61/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shaking-gun-29171.mp3",
+                "duration_sec": 43.1,
+                "events_triggered": 2,
+                "peak_score": 0.6005
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 27.61,
+            "poisson_ci_95": [
+              5.69,
+              80.69
+            ],
+            "calculation_formula": "(3 events / 391.2s) * 3600 = 27.61/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+                "duration_sec": 1.87,
+                "events_triggered": 1,
+                "peak_score": 0.5473
+              },
+              {
+                "filename": "freesound_community-shaking-gun-29171.mp3",
+                "duration_sec": 43.1,
+                "events_triggered": 2,
+                "peak_score": 0.6005
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              33.95
+            ],
+            "calculation_formula": "(0 events / 391.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              33.95
+            ],
+            "calculation_formula": "(0 events / 391.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              33.95
+            ],
+            "calculation_formula": "(0 events / 391.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              33.95
+            ],
+            "calculation_formula": "(0 events / 391.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 5,
+            "false_alerts_per_hour": 743.62,
+            "poisson_ci_95": [
+              241.45,
+              1735.36
+            ],
+            "calculation_formula": "(5 events / 24.2s) * 3600 = 743.62/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_silence_tone_005.wav",
+                "duration_sec": 1.85,
+                "events_triggered": 1,
+                "peak_score": 0.2777
+              },
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 1,
+                "peak_score": 0.3863
+              },
+              {
+                "filename": "synth_negative_room_ambience_026.wav",
+                "duration_sec": 3.01,
+                "events_triggered": 1,
+                "peak_score": 0.2578
+              },
+              {
+                "filename": "synth_negative_silence_tone_010.wav",
+                "duration_sec": 2.27,
+                "events_triggered": 1,
+                "peak_score": 0.2515
+              },
+              {
+                "filename": "synth_negative_room_ambience_001.wav",
+                "duration_sec": 3.49,
+                "events_triggered": 1,
+                "peak_score": 0.2385
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 297.45,
+            "poisson_ci_95": [
+              36.02,
+              1074.49
+            ],
+            "calculation_formula": "(2 events / 24.2s) * 3600 = 297.45/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 1,
+                "peak_score": 0.3863
+              },
+              {
+                "filename": "synth_negative_room_ambience_026.wav",
+                "duration_sec": 3.01,
+                "events_triggered": 1,
+                "peak_score": 0.2578
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 297.45,
+            "poisson_ci_95": [
+              36.02,
+              1074.49
+            ],
+            "calculation_formula": "(2 events / 24.2s) * 3600 = 297.45/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_urban_rumble_007.wav",
+                "duration_sec": 4.25,
+                "events_triggered": 1,
+                "peak_score": 0.3863
+              },
+              {
+                "filename": "synth_negative_room_ambience_026.wav",
+                "duration_sec": 3.01,
+                "events_triggered": 1,
+                "peak_score": 0.2578
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              548.63
+            ],
+            "calculation_formula": "(0 events / 24.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      }
+    },
+    "positive_audio": {
+      "total_recordings": 16,
+      "total_duration_seconds": 138.66,
+      "total_duration_hours": 0.0385,
+      "confirm_windows_1": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 46,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 46,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 46,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 44,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 44,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.48,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 44,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 43,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 42,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 41,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 14,
+          "missed_count": 2,
+          "detection_rate": 0.875,
+          "missed_rate_fnr": 0.125,
+          "total_alert_events": 38,
+          "missed_events": [
+            {
+              "filename": "bannythecoolio-shotgun-shoots-enemy-425136.mp3",
+              "duration_seconds": 3.21,
+              "peak_model_score": 0.7312,
+              "events_detected": 0
+            },
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 14,
+          "missed_count": 2,
+          "detection_rate": 0.875,
+          "missed_rate_fnr": 0.125,
+          "total_alert_events": 32,
+          "missed_events": [
+            {
+              "filename": "bannythecoolio-shotgun-shoots-enemy-425136.mp3",
+              "duration_seconds": 3.21,
+              "peak_model_score": 0.7312,
+              "events_detected": 0
+            },
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        }
+      ],
+      "confirm_windows_2": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 39,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 38,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 38,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 36,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 36,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.48,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 36,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 36,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 35,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 35,
+          "missed_events": [
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 13,
+          "missed_count": 3,
+          "detection_rate": 0.8125,
+          "missed_rate_fnr": 0.1875,
+          "total_alert_events": 32,
+          "missed_events": [
+            {
+              "filename": "freesound_community-uzi-burst-100582.mp3",
+              "duration_seconds": 1.37,
+              "peak_model_score": 0.9093,
+              "events_detected": 0
+            },
+            {
+              "filename": "bannythecoolio-shotgun-shoots-enemy-425136.mp3",
+              "duration_seconds": 3.21,
+              "peak_model_score": 0.7312,
+              "events_detected": 0
+            },
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 10,
+          "missed_count": 6,
+          "detection_rate": 0.625,
+          "missed_rate_fnr": 0.375,
+          "total_alert_events": 18,
+          "missed_events": [
+            {
+              "filename": "freesound_community-uzi-burst-100582.mp3",
+              "duration_seconds": 1.37,
+              "peak_model_score": 0.9093,
+              "events_detected": 0
+            },
+            {
+              "filename": "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+              "duration_seconds": 2.38,
+              "peak_model_score": 0.9108,
+              "events_detected": 0
+            },
+            {
+              "filename": "bannythecoolio-shotgun-shoots-enemy-425136.mp3",
+              "duration_seconds": 3.21,
+              "peak_model_score": 0.7312,
+              "events_detected": 0
+            },
+            {
+              "filename": "bannythecoolio-retro-revolver-shoot-425133 (1).mp3",
+              "duration_seconds": 1.93,
+              "peak_model_score": 0.9206,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-heavymachinegun-6998 (1).mp3",
+              "duration_seconds": 36.53,
+              "peak_model_score": 0.9371,
+              "events_detected": 0
+            },
+            {
+              "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+              "duration_seconds": 4.55,
+              "peak_model_score": 0.594,
+              "events_detected": 0
+            }
+          ]
+        }
+      ]
+    },
+    "uncertainty_note": "Statistical Uncertainty Note: The val split contains 415.4 seconds (0.1154 hours) of negative audio. Because audio duration is under one hour, extrapolated hourly rates have wide 95% Poisson confidence intervals. Rates reflect instantaneous sensitivity on mechanical foley and must not be presented as stationary long-term estimates."
+  },
+  "held_out_test_streaming_metrics": {
+    "split_name": "test",
+    "negative_audio": {
+      "total_recordings": 36,
+      "total_duration_seconds": 203.64,
+      "total_duration_hours": 0.0566,
+      "real_recordings_count": 33,
+      "real_duration_seconds": 194.55,
+      "real_duration_hours": 0.054,
+      "synthetic_recordings_count": 3,
+      "synthetic_duration_seconds": 9.09,
+      "synthetic_duration_hours": 0.0025,
+      "confirm_windows_1": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 48,
+            "false_alerts_per_hour": 848.56,
+            "poisson_ci_95": [
+              625.66,
+              1125.07
+            ],
+            "calculation_formula": "(48 events / 203.6s) * 3600 = 848.56/hr",
+            "affected_recordings_count": 24,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "synth_negative_transient_knocks_044.wav",
+                "duration_sec": 3.02,
+                "events_triggered": 1,
+                "peak_score": 0.2783
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              },
+              {
+                "filename": "hard_neg_laser_contact_mic_005.wav",
+                "duration_sec": 1.88,
+                "events_triggered": 1,
+                "peak_score": 0.2463
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 41,
+            "false_alerts_per_hour": 724.81,
+            "poisson_ci_95": [
+              520.14,
+              983.29
+            ],
+            "calculation_formula": "(41 events / 203.6s) * 3600 = 724.81/hr",
+            "affected_recordings_count": 21,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "synth_negative_transient_knocks_044.wav",
+                "duration_sec": 3.02,
+                "events_triggered": 1,
+                "peak_score": 0.2783
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              },
+              {
+                "filename": "hard_neg_laser_contact_mic_005.wav",
+                "duration_sec": 1.88,
+                "events_triggered": 1,
+                "peak_score": 0.2463
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 41,
+            "false_alerts_per_hour": 724.81,
+            "poisson_ci_95": [
+              520.14,
+              983.29
+            ],
+            "calculation_formula": "(41 events / 203.6s) * 3600 = 724.81/hr",
+            "affected_recordings_count": 21,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "synth_negative_transient_knocks_044.wav",
+                "duration_sec": 3.02,
+                "events_triggered": 1,
+                "peak_score": 0.2783
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              },
+              {
+                "filename": "hard_neg_laser_contact_mic_005.wav",
+                "duration_sec": 1.88,
+                "events_triggered": 1,
+                "peak_score": 0.2463
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 30,
+            "false_alerts_per_hour": 530.35,
+            "poisson_ci_95": [
+              357.82,
+              757.11
+            ],
+            "calculation_formula": "(30 events / 203.6s) * 3600 = 530.35/hr",
+            "affected_recordings_count": 15,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "hard_neg_door_slam_006.wav",
+                "duration_sec": 1.7,
+                "events_triggered": 1,
+                "peak_score": 0.3545
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 26,
+            "false_alerts_per_hour": 459.64,
+            "poisson_ci_95": [
+              300.25,
+              673.47
+            ],
+            "calculation_formula": "(26 events / 203.6s) * 3600 = 459.64/hr",
+            "affected_recordings_count": 14,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 8,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5252
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 406.6,
+            "poisson_ci_95": [
+              257.75,
+              610.1
+            ],
+            "calculation_formula": "(23 events / 203.6s) * 3600 = 406.60/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 6,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5252
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 406.6,
+            "poisson_ci_95": [
+              257.75,
+              610.1
+            ],
+            "calculation_formula": "(23 events / 203.6s) * 3600 = 406.60/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 6,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5252
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 14,
+            "false_alerts_per_hour": 247.5,
+            "poisson_ci_95": [
+              135.31,
+              415.26
+            ],
+            "calculation_formula": "(14 events / 203.6s) * 3600 = 247.50/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 4,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-6-39793 (1).mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6983
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 10,
+            "false_alerts_per_hour": 176.78,
+            "poisson_ci_95": [
+              84.77,
+              325.11
+            ],
+            "calculation_formula": "(10 events / 203.6s) * 3600 = 176.78/hr",
+            "affected_recordings_count": 6,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 4,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.7638
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 106.07,
+            "poisson_ci_95": [
+              38.93,
+              230.87
+            ],
+            "calculation_formula": "(6 events / 203.6s) * 3600 = 106.07/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "freesound_community-gun-load1-98406 (1).mp3",
+                "duration_sec": 2.54,
+                "events_triggered": 1,
+                "peak_score": 0.9096
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 17.68,
+            "poisson_ci_95": [
+              0.45,
+              98.5
+            ],
+            "calculation_formula": "(1 events / 203.6s) * 3600 = 17.68/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "freesound_community-gun-load1-98406 (1).mp3",
+                "duration_sec": 2.54,
+                "events_triggered": 1,
+                "peak_score": 0.9096
+              }
+            ]
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 46,
+            "false_alerts_per_hour": 851.19,
+            "poisson_ci_95": [
+              623.18,
+              1135.37
+            ],
+            "calculation_formula": "(46 events / 194.6s) * 3600 = 851.19/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "hard_neg_laser_contact_mic_005.wav",
+                "duration_sec": 1.88,
+                "events_triggered": 1,
+                "peak_score": 0.2463
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "hard_neg_door_slam_006.wav",
+                "duration_sec": 1.7,
+                "events_triggered": 1,
+                "peak_score": 0.3545
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 39,
+            "false_alerts_per_hour": 721.66,
+            "poisson_ci_95": [
+              513.17,
+              986.53
+            ],
+            "calculation_formula": "(39 events / 194.6s) * 3600 = 721.66/hr",
+            "affected_recordings_count": 19,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "hard_neg_laser_contact_mic_005.wav",
+                "duration_sec": 1.88,
+                "events_triggered": 1,
+                "peak_score": 0.2463
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "hard_neg_door_slam_006.wav",
+                "duration_sec": 1.7,
+                "events_triggered": 1,
+                "peak_score": 0.3545
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 39,
+            "false_alerts_per_hour": 721.66,
+            "poisson_ci_95": [
+              513.17,
+              986.53
+            ],
+            "calculation_formula": "(39 events / 194.6s) * 3600 = 721.66/hr",
+            "affected_recordings_count": 19,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "hard_neg_laser_contact_mic_005.wav",
+                "duration_sec": 1.88,
+                "events_triggered": 1,
+                "peak_score": 0.2463
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "hard_neg_door_slam_006.wav",
+                "duration_sec": 1.7,
+                "events_triggered": 1,
+                "peak_score": 0.3545
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 30,
+            "false_alerts_per_hour": 555.12,
+            "poisson_ci_95": [
+              374.54,
+              792.47
+            ],
+            "calculation_formula": "(30 events / 194.6s) * 3600 = 555.12/hr",
+            "affected_recordings_count": 15,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "hard_neg_door_slam_006.wav",
+                "duration_sec": 1.7,
+                "events_triggered": 1,
+                "peak_score": 0.3545
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 26,
+            "false_alerts_per_hour": 481.11,
+            "poisson_ci_95": [
+              314.28,
+              704.93
+            ],
+            "calculation_formula": "(26 events / 194.6s) * 3600 = 481.11/hr",
+            "affected_recordings_count": 14,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "freesound_community-shooting-star-2-104073.mp3",
+                "duration_sec": 1.37,
+                "events_triggered": 1,
+                "peak_score": 0.4381
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 8,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5252
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 425.59,
+            "poisson_ci_95": [
+              269.79,
+              638.6
+            ],
+            "calculation_formula": "(23 events / 194.6s) * 3600 = 425.59/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 6,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5252
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 425.59,
+            "poisson_ci_95": [
+              269.79,
+              638.6
+            ],
+            "calculation_formula": "(23 events / 194.6s) * 3600 = 425.59/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 6,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5252
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 14,
+            "false_alerts_per_hour": 259.06,
+            "poisson_ci_95": [
+              141.63,
+              434.65
+            ],
+            "calculation_formula": "(14 events / 194.6s) * 3600 = 259.06/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "universfield-gun-reload-123781.mp3",
+                "duration_sec": 0.97,
+                "events_triggered": 1,
+                "peak_score": 0.6847
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 4,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-6-39793 (1).mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6983
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 10,
+            "false_alerts_per_hour": 185.04,
+            "poisson_ci_95": [
+              88.73,
+              340.3
+            ],
+            "calculation_formula": "(10 events / 194.6s) * 3600 = 185.04/hr",
+            "affected_recordings_count": 6,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 4,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.7638
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 111.02,
+            "poisson_ci_95": [
+              40.74,
+              241.65
+            ],
+            "calculation_formula": "(6 events / 194.6s) * 3600 = 111.02/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.8166
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "freesound_community-gun-load1-98406 (1).mp3",
+                "duration_sec": 2.54,
+                "events_triggered": 1,
+                "peak_score": 0.9096
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 18.5,
+            "poisson_ci_95": [
+              0.47,
+              103.1
+            ],
+            "calculation_formula": "(1 events / 194.6s) * 3600 = 18.50/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "freesound_community-gun-load1-98406 (1).mp3",
+                "duration_sec": 2.54,
+                "events_triggered": 1,
+                "peak_score": 0.9096
+              }
+            ]
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 792.25,
+            "poisson_ci_95": [
+              95.94,
+              2861.87
+            ],
+            "calculation_formula": "(2 events / 9.1s) * 3600 = 792.25/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_transient_knocks_044.wav",
+                "duration_sec": 3.02,
+                "events_triggered": 1,
+                "peak_score": 0.2783
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 792.25,
+            "poisson_ci_95": [
+              95.94,
+              2861.87
+            ],
+            "calculation_formula": "(2 events / 9.1s) * 3600 = 792.25/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_transient_knocks_044.wav",
+                "duration_sec": 3.02,
+                "events_triggered": 1,
+                "peak_score": 0.2783
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 792.25,
+            "poisson_ci_95": [
+              95.94,
+              2861.87
+            ],
+            "calculation_formula": "(2 events / 9.1s) * 3600 = 792.25/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_transient_knocks_044.wav",
+                "duration_sec": 3.02,
+                "events_triggered": 1,
+                "peak_score": 0.2783
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      },
+      "confirm_windows_2": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 26,
+            "false_alerts_per_hour": 459.64,
+            "poisson_ci_95": [
+              300.25,
+              673.47
+            ],
+            "calculation_formula": "(26 events / 203.6s) * 3600 = 459.64/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              },
+              {
+                "filename": "hard_neg_fireworks_005.wav",
+                "duration_sec": 2.56,
+                "events_triggered": 1,
+                "peak_score": 0.2914
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 2,
+                "peak_score": 0.6498
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 22,
+            "false_alerts_per_hour": 388.92,
+            "poisson_ci_95": [
+              243.74,
+              588.83
+            ],
+            "calculation_formula": "(22 events / 203.6s) * 3600 = 388.92/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 2,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 4,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 2,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 22,
+            "false_alerts_per_hour": 388.92,
+            "poisson_ci_95": [
+              243.74,
+              588.83
+            ],
+            "calculation_formula": "(22 events / 203.6s) * 3600 = 388.92/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 2,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 4,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 2,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 265.17,
+            "poisson_ci_95": [
+              148.42,
+              437.37
+            ],
+            "calculation_formula": "(15 events / 203.6s) * 3600 = 265.17/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 6,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 12,
+            "false_alerts_per_hour": 212.14,
+            "poisson_ci_95": [
+              109.62,
+              370.57
+            ],
+            "calculation_formula": "(12 events / 203.6s) * 3600 = 212.14/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 4,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 2,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 9,
+            "false_alerts_per_hour": 159.1,
+            "poisson_ci_95": [
+              72.75,
+              302.03
+            ],
+            "calculation_formula": "(9 events / 203.6s) * 3600 = 159.10/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 2,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 8,
+            "false_alerts_per_hour": 141.43,
+            "poisson_ci_95": [
+              61.06,
+              278.67
+            ],
+            "calculation_formula": "(8 events / 203.6s) * 3600 = 141.43/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 53.03,
+            "poisson_ci_95": [
+              10.94,
+              154.99
+            ],
+            "calculation_formula": "(3 events / 203.6s) * 3600 = 53.03/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 17.68,
+            "poisson_ci_95": [
+              0.45,
+              98.5
+            ],
+            "calculation_formula": "(1 events / 203.6s) * 3600 = 17.68/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 1,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 17.68,
+            "poisson_ci_95": [
+              0.45,
+              98.5
+            ],
+            "calculation_formula": "(1 events / 203.6s) * 3600 = 17.68/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 1,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              65.21
+            ],
+            "calculation_formula": "(0 events / 203.6s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 25,
+            "false_alerts_per_hour": 462.6,
+            "poisson_ci_95": [
+              299.37,
+              682.89
+            ],
+            "calculation_formula": "(25 events / 194.6s) * 3600 = 462.60/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 1,
+                "peak_score": 0.5614
+              },
+              {
+                "filename": "hard_neg_fireworks_005.wav",
+                "duration_sec": 2.56,
+                "events_triggered": 1,
+                "peak_score": 0.2914
+              },
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 2,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 22,
+            "false_alerts_per_hour": 407.09,
+            "poisson_ci_95": [
+              255.12,
+              616.34
+            ],
+            "calculation_formula": "(22 events / 194.6s) * 3600 = 407.09/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 2,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 4,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 2,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 22,
+            "false_alerts_per_hour": 407.09,
+            "poisson_ci_95": [
+              255.12,
+              616.34
+            ],
+            "calculation_formula": "(22 events / 194.6s) * 3600 = 407.09/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 9,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 2,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 4,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 2,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 277.56,
+            "poisson_ci_95": [
+              155.35,
+              457.8
+            ],
+            "calculation_formula": "(15 events / 194.6s) * 3600 = 277.56/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 6,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 3,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 12,
+            "false_alerts_per_hour": 222.05,
+            "poisson_ci_95": [
+              114.74,
+              387.88
+            ],
+            "calculation_formula": "(12 events / 194.6s) * 3600 = 222.05/hr",
+            "affected_recordings_count": 7,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 4,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 2,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 9,
+            "false_alerts_per_hour": 166.54,
+            "poisson_ci_95": [
+              76.15,
+              316.14
+            ],
+            "calculation_formula": "(9 events / 194.6s) * 3600 = 166.54/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 2,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 8,
+            "false_alerts_per_hour": 148.03,
+            "poisson_ci_95": [
+              63.91,
+              291.68
+            ],
+            "calculation_formula": "(8 events / 194.6s) * 3600 = 148.03/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              },
+              {
+                "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+                "duration_sec": 6.86,
+                "events_triggered": 1,
+                "peak_score": 0.6498
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.7113
+              },
+              {
+                "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+                "duration_sec": 19.82,
+                "events_triggered": 2,
+                "peak_score": 0.8378
+              },
+              {
+                "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+                "duration_sec": 10.49,
+                "events_triggered": 1,
+                "peak_score": 0.6347
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 55.51,
+            "poisson_ci_95": [
+              11.45,
+              162.23
+            ],
+            "calculation_formula": "(3 events / 194.6s) * 3600 = 55.51/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 3,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 18.5,
+            "poisson_ci_95": [
+              0.47,
+              103.1
+            ],
+            "calculation_formula": "(1 events / 194.6s) * 3600 = 18.50/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 1,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 18.5,
+            "poisson_ci_95": [
+              0.47,
+              103.1
+            ],
+            "calculation_formula": "(1 events / 194.6s) * 3600 = 18.50/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "ivanv70--229738.mp3",
+                "duration_sec": 55.88,
+                "events_triggered": 1,
+                "peak_score": 0.8732
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              68.26
+            ],
+            "calculation_formula": "(0 events / 194.6s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 396.12,
+            "poisson_ci_95": [
+              10.03,
+              2207.06
+            ],
+            "calculation_formula": "(1 events / 9.1s) * 3600 = 396.12/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_transient_knocks_009.wav",
+                "duration_sec": 3.8,
+                "events_triggered": 1,
+                "peak_score": 0.2392
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.48,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1461.25
+            ],
+            "calculation_formula": "(0 events / 9.1s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      }
+    },
+    "positive_audio": {
+      "total_recordings": 17,
+      "total_duration_seconds": 118.38,
+      "total_duration_hours": 0.0329,
+      "confirm_windows_1": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 39,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 39,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 39,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 39,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 38,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.48,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 38,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 38,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 37,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 35,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 15,
+          "missed_count": 2,
+          "detection_rate": 0.8824,
+          "missed_rate_fnr": 0.1176,
+          "total_alert_events": 33,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-39730.mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.7153,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-distant-gunshot-three-round-burst-82998.mp3",
+              "duration_seconds": 2.26,
+              "peak_model_score": 0.7213,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 13,
+          "missed_count": 4,
+          "detection_rate": 0.7647,
+          "missed_rate_fnr": 0.2353,
+          "total_alert_events": 28,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-39730.mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.7153,
+              "events_detected": 0
+            },
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-auto-gun-shots-312660 (1).mp3",
+              "duration_seconds": 5.04,
+              "peak_model_score": 0.8188,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-distant-gunshot-three-round-burst-82998.mp3",
+              "duration_seconds": 2.26,
+              "peak_model_score": 0.7213,
+              "events_detected": 0
+            }
+          ]
+        }
+      ],
+      "confirm_windows_2": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 36,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 36,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 36,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 36,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 34,
+          "missed_events": [
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.48,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 34,
+          "missed_events": [
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 34,
+          "missed_events": [
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 32,
+          "missed_events": [
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 13,
+          "missed_count": 4,
+          "detection_rate": 0.7647,
+          "missed_rate_fnr": 0.2353,
+          "total_alert_events": 26,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-39730.mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.7153,
+              "events_detected": 0
+            },
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-auto-gun-shots-312660 (1).mp3",
+              "duration_seconds": 5.04,
+              "peak_model_score": 0.8188,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-distant-gunshot-three-round-burst-82998.mp3",
+              "duration_seconds": 2.26,
+              "peak_model_score": 0.7213,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 13,
+          "missed_count": 4,
+          "detection_rate": 0.7647,
+          "missed_rate_fnr": 0.2353,
+          "total_alert_events": 26,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-39730.mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.7153,
+              "events_detected": 0
+            },
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-auto-gun-shots-312660 (1).mp3",
+              "duration_seconds": 5.04,
+              "peak_model_score": 0.8188,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-distant-gunshot-three-round-burst-82998.mp3",
+              "duration_seconds": 2.26,
+              "peak_model_score": 0.7213,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 13,
+          "missed_count": 4,
+          "detection_rate": 0.7647,
+          "missed_rate_fnr": 0.2353,
+          "total_alert_events": 23,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-39730.mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.7153,
+              "events_detected": 0
+            },
+            {
+              "filename": "eaglaxle-gun-shot-1-530788.mp3",
+              "duration_seconds": 1.1,
+              "peak_model_score": 0.8988,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-auto-gun-shots-312660 (1).mp3",
+              "duration_seconds": 5.04,
+              "peak_model_score": 0.8188,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-distant-gunshot-three-round-burst-82998.mp3",
+              "duration_seconds": 2.26,
+              "peak_model_score": 0.7213,
+              "events_detected": 0
+            }
+          ]
+        }
+      ]
+    },
+    "uncertainty_note": "Statistical Uncertainty Note: The test split contains 203.6 seconds (0.0566 hours) of negative audio. Because audio duration is under one hour, extrapolated hourly rates have wide 95% Poisson confidence intervals. Rates reflect instantaneous sensitivity on mechanical foley and must not be presented as stationary long-term estimates."
+  },
+  "operational_objectives_summary": {
+    "objective_f1_optimal": {
+      "threshold": 0.19,
+      "confirm_windows": 1,
+      "description": "Maximizes validation F1 score. Yields 100% gunshot recall on test set, but suffers 1,118.1 false alerts/hr on firearm foley."
+    },
+    "objective_nuisance_constrained": {
+      "threshold": 0.7,
+      "confirm_windows": 2,
+      "description": "Constrains false alerts to <100/hr on real foley and 0/hr on synthetic noise. Yields 82.3% gunshot recall (3 narrow shots missed)."
+    },
+    "objective_safety_critical": {
+      "target_rate_per_hour": 0.04,
+      "is_achievable": false,
+      "reason": "Achieving <= 1 false alert per day on continuous background is unachievable with current dataset without unacceptable (>50%) gunshot miss rates."
+    }
+  },
+  "latency_benchmark": {
+    "benchmark_window_length_secs": 0.96,
+    "benchmark_iterations": 30,
+    "hop_length_ms": 480.0,
+    "preprocessing_overhead_ms": 2.5,
+    "dispatch_overhead_ms": 0.2,
+    "latency_explanation": "Acoustic audio is captured continuously and sliced into 0.96s windows with a 0.48s hop stride. A sound occurring at an arbitrary time must wait up to 480ms for the hop buffer to fill before framing and inference occur. Model inference time alone (~185ms) is NOT end-to-end latency.",
+    "model_inference_latency": {
+      "mean_ms": 104.96,
+      "median_ms": 104.05,
+      "p95_ms": 116.27,
+      "p99_ms": 123.68,
+      "min_ms": 93.42,
+      "max_ms": 126.44,
+      "realtime_hop_budget_ms": 480.0,
+      "realtime_capable": true
+    },
+    "end_to_end_pipeline_latency": {
+      "confirm_windows_1": {
+        "mean_ms": 587.66,
+        "p95_ms": 598.97,
+        "description": "Capture hop buffer (480ms) + preprocessing (2.5ms) + YAMNet inference (~185ms) + dispatch (0.2ms)"
+      },
+      "confirm_windows_2": {
+        "mean_ms": 1067.66,
+        "p95_ms": 1078.97,
+        "description": "Capture hop buffer (480ms) + confirmation hop (480ms) + preprocessing + YAMNet inference + dispatch"
+      }
+    }
+  },
+  "tradeoff_table": [
+    {
+      "threshold": 0.1,
+      "precision": 0.5835,
+      "recall_detection_rate": 0.9837,
+      "missed_detection_rate_fnr": 0.0163,
+      "false_alarm_rate_fpr": 0.6277,
+      "f1_score": 0.7325,
+      "true_positives": 241,
+      "false_positives": 172,
+      "false_negatives": 4,
+      "true_negatives": 102
+    },
+    {
+      "threshold": 0.19,
+      "precision": 0.6851,
+      "recall_detection_rate": 0.9592,
+      "missed_detection_rate_fnr": 0.0408,
+      "false_alarm_rate_fpr": 0.3942,
+      "f1_score": 0.7993,
+      "true_positives": 235,
+      "false_positives": 108,
+      "false_negatives": 10,
+      "true_negatives": 166
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.7,
+      "recall_detection_rate": 0.9429,
+      "missed_detection_rate_fnr": 0.0571,
+      "false_alarm_rate_fpr": 0.3613,
+      "f1_score": 0.8035,
+      "true_positives": 231,
+      "false_positives": 99,
+      "false_negatives": 14,
+      "true_negatives": 175
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.7908,
+      "recall_detection_rate": 0.9102,
+      "missed_detection_rate_fnr": 0.0898,
+      "false_alarm_rate_fpr": 0.2153,
+      "f1_score": 0.8463,
+      "true_positives": 223,
+      "false_positives": 59,
+      "false_negatives": 22,
+      "true_negatives": 215
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.8699,
+      "recall_detection_rate": 0.8735,
+      "missed_detection_rate_fnr": 0.1265,
+      "false_alarm_rate_fpr": 0.1168,
+      "f1_score": 0.8717,
+      "true_positives": 214,
+      "false_positives": 32,
+      "false_negatives": 31,
+      "true_negatives": 242
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.9144,
+      "recall_detection_rate": 0.8286,
+      "missed_detection_rate_fnr": 0.1714,
+      "false_alarm_rate_fpr": 0.0693,
+      "f1_score": 0.8694,
+      "true_positives": 203,
+      "false_positives": 19,
+      "false_negatives": 42,
+      "true_negatives": 255
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.9594,
+      "recall_detection_rate": 0.7714,
+      "missed_detection_rate_fnr": 0.2286,
+      "false_alarm_rate_fpr": 0.0292,
+      "f1_score": 0.8552,
+      "true_positives": 189,
+      "false_positives": 8,
+      "false_negatives": 56,
+      "true_negatives": 266
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9733,
+      "recall_detection_rate": 0.7429,
+      "missed_detection_rate_fnr": 0.2571,
+      "false_alarm_rate_fpr": 0.0182,
+      "f1_score": 0.8426,
+      "true_positives": 182,
+      "false_positives": 5,
+      "false_negatives": 63,
+      "true_negatives": 269
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.9877,
+      "recall_detection_rate": 0.6571,
+      "missed_detection_rate_fnr": 0.3429,
+      "false_alarm_rate_fpr": 0.0073,
+      "f1_score": 0.7892,
+      "true_positives": 161,
+      "false_positives": 2,
+      "false_negatives": 84,
+      "true_negatives": 272
+    },
+    {
+      "threshold": 0.9,
+      "precision": 1.0,
+      "recall_detection_rate": 0.502,
+      "missed_detection_rate_fnr": 0.498,
+      "false_alarm_rate_fpr": 0.0,
+      "f1_score": 0.6685,
+      "true_positives": 123,
+      "false_positives": 0,
+      "false_negatives": 122,
+      "true_negatives": 274
+    }
+  ],
+  "metric_definitions": {
+    "gunshot_event_start": "Timestamp of the start of the first window whose model score exceeds the threshold.",
+    "gunshot_alert_confirmed": "When confirm_windows consecutive overlapping windows exceed the threshold.",
+    "refractory_cooldown": "2.0s lockout preventing repeat alerts on echoing or reverberant tails of the same gunshot.",
+    "end_to_end_latency": "Sum of hardware hop accumulation period (480ms), framing overhead (2.5ms), neural model inference (~185ms), and confirmation hop delay (0ms or 480ms)."
+  },
+  "dataset_gaps_disclosure": "Downloaded dataset lacks real-world recordings of fireworks, vehicle backfires, and slamming doors. Synthetic noise and simple synthesized knocks do not substitute for varied real-world negative recordings.",
+  "operational_safety_disclaimer": "CRITICAL DISCLAIMER: This gunshot detection model is designed for research, prototyping, and evaluation purposes only. It MUST NOT be relied upon as a primary safety system, emergency response trigger, or life-critical monitoring apparatus."
+}

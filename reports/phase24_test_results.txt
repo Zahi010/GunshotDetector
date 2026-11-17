@@ -1,0 +1,26 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 17 items
+
+tests/test_phase24_validation.py::test_model_hashes PASSED               [  5%]
+tests/test_phase24_validation.py::test_archive_hashes PASSED             [ 11%]
+tests/test_phase24_validation.py::test_provenance_schema PASSED          [ 17%]
+tests/test_phase24_validation.py::test_duplicate_detection PASSED        [ 23%]
+tests/test_phase24_validation.py::test_campaign_relationships PASSED     [ 29%]
+tests/test_phase24_validation.py::test_continuity_validation PASSED      [ 35%]
+tests/test_phase24_validation.py::test_negative_label_eligibility PASSED [ 41%]
+tests/test_phase24_validation.py::test_gross_exposure PASSED             [ 47%]
+tests/test_phase24_validation.py::test_cooldown_merging PASSED           [ 52%]
+tests/test_phase24_validation.py::test_no_double_counting PASSED         [ 58%]
+tests/test_phase24_validation.py::test_gross_alert_rate PASSED           [ 64%]
+tests/test_phase24_validation.py::test_cooldown_adjusted_rate PASSED     [ 70%]
+tests/test_phase24_validation.py::test_common_matched_exposure PASSED    [ 76%]
+tests/test_phase24_validation.py::test_garwood_bounds PASSED             [ 82%]
+tests/test_phase24_validation.py::test_alert_review_status PASSED        [ 88%]
+tests/test_phase24_validation.py::test_paired_model_comparison PASSED    [ 94%]
+tests/test_phase24_validation.py::test_safety_banners PASSED             [100%]
+
+============================= 17 passed in 1.46s ==============================

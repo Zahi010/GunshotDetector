@@ -1,0 +1,63 @@
+{
+  "phase": 18,
+  "title": "Independent Validation Audit, Data Lineage Reconciliation & Reproducibility",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "timestamp": "2026-11-13 18:32:20 UTC",
+  "archive": {
+    "filename": "gunshot_detection_phase18.zip",
+    "path": "E:\\gunshot\\gunshot_detection_phase18.zip",
+    "sha256": "90963ba0e8a70bee9f408473964f10ad0d4a94fcc46173961905761f3ada6b6c",
+    "size_bytes": 2418935811,
+    "size_mb": 2306.88,
+    "total_files": 3243,
+    "testzip_integrity": "PASSED"
+  },
+  "baseline_detectors": {
+    "model_phase14.py": {
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "role": "DEFAULT_PRODUCTION_BASELINE"
+    },
+    "model_phase17.py": {
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "role": "SELECTABLE_EXPERIMENTAL_DETECTOR"
+    },
+    "model_phase13.py": {
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "role": "FROZEN_HISTORICAL_COMPARATOR"
+    },
+    "model_phase9.py": {
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "role": "FROZEN_HISTORICAL_COMPARATOR"
+    }
+  },
+  "audit_deliverables": {
+    "canonical_event_table": "reports/phase18_canonical_event_table.csv",
+    "canonical_event_summary": "reports/phase18_canonical_event_summary.json",
+    "animal_suppression_lineage": "reports/phase18_animal_suppression_lineage.csv",
+    "animal_suppression_report": "reports/phase18_animal_suppression_provenance.md",
+    "global_lineage_matrix": "reports/phase18_global_lineage_matrix.csv",
+    "leakage_findings": "reports/phase18_leakage_findings.json",
+    "independence_audit_report": "reports/phase18_evaluation_independence_audit.md",
+    "reproduction_results": "reports/phase18_reproduction_results.json",
+    "metric_consistency": "reports/phase18_metric_consistency.json",
+    "reproducibility_report": "reports/phase18_reproducibility_report.md",
+    "latency_microbenchmark": "reports/phase18_latency_microbenchmark.json",
+    "latency_audit_report": "reports/phase18_latency_audit.md",
+    "test_suite": "tests/test_phase18_audit_and_integrity.py",
+    "test_results": "reports/phase18_test_results.txt",
+    "master_final_report": "reports/phase18_final_report.md"
+  },
+  "key_reconciled_metrics": {
+    "total_canonical_events": 39,
+    "phase14_balanced_detections": 23,
+    "phase14_balanced_recall_pct": 58.97,
+    "duplicate_alerts_count": 0,
+    "continuous_negative_exposure_hours": 6.65,
+    "phase14_balanced_negative_alerts": 56,
+    "phase14_balanced_alert_rate_per_hr": 8.43,
+    "phase14_high_precision_alert_rate_per_hr": 3.31,
+    "phase17_experimental_alert_rate_per_hr": 7.67,
+    "median_single_window_latency_ms": 434.62,
+    "median_two_window_confirmed_latency_ms": 914.62
+  }
+}

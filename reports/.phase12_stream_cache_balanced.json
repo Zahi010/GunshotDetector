@@ -1,0 +1,12 @@
+{
+  "exposure_hours": 2.0,
+  "false_alerts_count": 299,
+  "false_alerts_per_hour": 149.5,
+  "poisson_95_ci": [
+    133.03,
+    167.44
+  ],
+  "latency_ms_median": 115.06,
+  "latency_ms_p95": 137.59,
+  "latency_ms_max": 354.21
+}

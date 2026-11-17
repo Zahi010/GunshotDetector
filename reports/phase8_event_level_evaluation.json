@@ -1,0 +1,2238 @@
+{
+  "report_title": "Phase 8 Comprehensive Event-Level Acoustic Evaluation Report",
+  "evaluator": "Senior Acoustic ML Researcher",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "diagnostic_phase7_independent_set": {
+    "phase7": {
+      "model_name": "Phase 7 Frozen Baseline (tau=0.75, N=2)",
+      "total_annotated_physical_events": 27,
+      "true_positive_events_tp": 4,
+      "missed_physical_events_fn": 23,
+      "false_alert_events_fp": 12,
+      "duplicate_alerts_count": 0,
+      "event_recall": 14.81,
+      "event_precision": 25.0,
+      "event_f1": 18.6,
+      "recording_level_recall": 18.52,
+      "mean_detection_delay_ms": 120.0,
+      "matched_events": [
+        {
+          "canonical_event_id": "EV-P7-0002",
+          "recording_id": "shotspotter_chicago_d5_sensor2",
+          "filename": 0,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.83,
+          "gt_end_sec": 1.63,
+          "det_start_sec": 0.48,
+          "det_end_sec": 2.4,
+          "peak_score": 0.939,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0003",
+          "recording_id": "shotspotter_chicago_d5_sensor3",
+          "filename": 0,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.83,
+          "gt_end_sec": 1.63,
+          "det_start_sec": 0.96,
+          "det_end_sec": 2.4,
+          "peak_score": 0.895,
+          "onset_delay_ms": 130.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0004",
+          "recording_id": "shotspotter_chicago_d5_sensor4",
+          "filename": 0,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.95,
+          "gt_end_sec": 1.75,
+          "det_start_sec": 0.48,
+          "det_end_sec": 2.4,
+          "peak_score": 0.961,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0007",
+          "recording_id": "shotspotter_chicago_d7_sensor3",
+          "filename": 0,
+          "acoustic_condition": "urban_street_canyon",
+          "gt_start_sec": 3.97,
+          "gt_end_sec": 4.77,
+          "det_start_sec": 4.32,
+          "det_end_sec": 6.72,
+          "peak_score": 0.858,
+          "onset_delay_ms": 350.0
+        }
+      ],
+      "missed_events": [
+        {
+          "canonical_event_id": "EV-P7-0001",
+          "recording_id": "shotspotter_chicago_d5_sensor1",
+          "filename": 1,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.834,
+          "gt_end_sec": 1.634,
+          "duration_sec": 0.8,
+          "overall_score": 0.7789
+        },
+        {
+          "canonical_event_id": "EV-P7-0005",
+          "recording_id": "shotspotter_chicago_d7_sensor1",
+          "filename": 1,
+          "acoustic_condition": "urban_street_canyon",
+          "gt_start_sec": 9.622,
+          "gt_end_sec": 9.983,
+          "duration_sec": 0.361,
+          "overall_score": 0.965
+        },
+        {
+          "canonical_event_id": "EV-P7-0006",
+          "recording_id": "shotspotter_chicago_d7_sensor2",
+          "filename": 1,
+          "acoustic_condition": "urban_street_canyon",
+          "gt_start_sec": 4.218,
+          "gt_end_sec": 5.018,
+          "duration_sec": 0.8,
+          "overall_score": 0.8512
+        },
+        {
+          "canonical_event_id": "EV-P7-0008",
+          "recording_id": "shotspotter_scepter_test",
+          "filename": 1,
+          "acoustic_condition": "outdoor_reverberant",
+          "gt_start_sec": 1.782,
+          "gt_end_sec": 2.582,
+          "duration_sec": 0.8,
+          "overall_score": 0.411
+        },
+        {
+          "canonical_event_id": "EV-P7-0009",
+          "recording_id": "mitchell_ar15_single_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.014,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.493,
+          "overall_score": 0.7259
+        },
+        {
+          "canonical_event_id": "EV-P7-0010",
+          "recording_id": "mitchell_ar15_single_02",
+          "filename": 1,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.01,
+          "gt_end_sec": 0.557,
+          "duration_sec": 0.547,
+          "overall_score": 0.7504
+        },
+        {
+          "canonical_event_id": "EV-P7-0011",
+          "recording_id": "mitchell_ar15_single_03",
+          "filename": 1,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.046,
+          "gt_end_sec": 0.557,
+          "duration_sec": 0.511,
+          "overall_score": 0.8454
+        },
+        {
+          "canonical_event_id": "EV-P7-0012",
+          "recording_id": "mitchell_ar15_single_04",
+          "filename": 1,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.042,
+          "gt_end_sec": 0.57,
+          "duration_sec": 0.528,
+          "overall_score": 0.6405
+        },
+        {
+          "canonical_event_id": "EV-P7-0013",
+          "recording_id": "mitchell_ar15_double_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_rapid_double",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.512,
+          "duration_sec": 0.512,
+          "overall_score": 0.6795
+        },
+        {
+          "canonical_event_id": "EV-P7-0014",
+          "recording_id": "mitchell_ar15_double_02",
+          "filename": 1,
+          "acoustic_condition": "rifle_rapid_double",
+          "gt_start_sec": 0.014,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.493,
+          "overall_score": 0.8292
+        },
+        {
+          "canonical_event_id": "EV-P7-0015",
+          "recording_id": "mitchell_ar15_double_03",
+          "filename": 1,
+          "acoustic_condition": "rifle_rapid_double",
+          "gt_start_sec": 0.218,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.289,
+          "overall_score": 0.8634
+        },
+        {
+          "canonical_event_id": "EV-P7-0016",
+          "recording_id": "mitchell_ar15_rapid_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_rapid_burst",
+          "gt_start_sec": 0.274,
+          "gt_end_sec": 0.512,
+          "duration_sec": 0.238,
+          "overall_score": 0.8359
+        },
+        {
+          "canonical_event_id": "EV-P7-0017",
+          "recording_id": "mitchell_ar15_rapid_02",
+          "filename": 1,
+          "acoustic_condition": "rifle_rapid_burst",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.507,
+          "overall_score": 0.8482
+        },
+        {
+          "canonical_event_id": "EV-P7-0018",
+          "recording_id": "mitchell_ar15_pocket_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_pocket_low_snr",
+          "gt_start_sec": 0.006,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.501,
+          "overall_score": 0.6851
+        },
+        {
+          "canonical_event_id": "EV-P7-0019",
+          "recording_id": "mitchell_ar15_pocket_rapid",
+          "filename": 1,
+          "acoustic_condition": "rifle_pocket_rapid_low_snr",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.503,
+          "duration_sec": 0.503,
+          "overall_score": 0.8032
+        },
+        {
+          "canonical_event_id": "EV-P7-0020",
+          "recording_id": "mitchell_beretta_single_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_single",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "duration_sec": 0.52,
+          "overall_score": 0.4801
+        },
+        {
+          "canonical_event_id": "EV-P7-0021",
+          "recording_id": "mitchell_beretta_single_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_single",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "duration_sec": 0.52,
+          "overall_score": 0.7851
+        },
+        {
+          "canonical_event_id": "EV-P7-0022",
+          "recording_id": "mitchell_beretta_single_03",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_single",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "duration_sec": 0.52,
+          "overall_score": 0.8485
+        },
+        {
+          "canonical_event_id": "EV-P7-0023",
+          "recording_id": "mitchell_beretta_double_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_rapid_double",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "duration_sec": 0.52,
+          "overall_score": 0.9083
+        },
+        {
+          "canonical_event_id": "EV-P7-0024",
+          "recording_id": "mitchell_beretta_double_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_rapid_double",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.507,
+          "overall_score": 0.7964
+        },
+        {
+          "canonical_event_id": "EV-P7-0025",
+          "recording_id": "mitchell_beretta_rapid_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_rapid_burst",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.5,
+          "duration_sec": 0.5,
+          "overall_score": 0.6477
+        },
+        {
+          "canonical_event_id": "EV-P7-0026",
+          "recording_id": "mitchell_beretta_rapid_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_rapid_burst",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "duration_sec": 0.52,
+          "overall_score": 0.9521
+        },
+        {
+          "canonical_event_id": "EV-P7-0027",
+          "recording_id": "mitchell_beretta_pocket_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_pocket_low_snr",
+          "gt_start_sec": 0.03,
+          "gt_end_sec": 0.537,
+          "duration_sec": 0.507,
+          "overall_score": 0.7622
+        }
+      ],
+      "false_alerts_sample": [
+        {
+          "recording_id": "1-115545-A-48",
+          "filename": "1-115545-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.945,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-115545-B-48",
+          "filename": "1-115545-B-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.865,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-115545-C-48",
+          "filename": "1-115545-C-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.936,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-115546-A-48",
+          "filename": "1-115546-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.96,
+          "end_time_sec": 3.36,
+          "peak_score": 0.83,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-24524-A-19",
+          "filename": "1-24524-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.96,
+          "end_time_sec": 2.88,
+          "peak_score": 0.846,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-25777-A-48",
+          "filename": "1-25777-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.44,
+          "peak_score": 0.916,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-D-48",
+          "filename": "2-117615-D-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.771,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117616-A-48",
+          "filename": "2-117616-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 3.84,
+          "peak_score": 0.966,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-A-19",
+          "filename": "2-39945-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.855,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-A-19",
+          "filename": "2-39945-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 3.36,
+          "end_time_sec": 5.28,
+          "peak_score": 0.822,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-B-19",
+          "filename": "2-39945-B-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 1.92,
+          "end_time_sec": 3.36,
+          "peak_score": 0.841,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-C-19",
+          "filename": "2-39945-C-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.92,
+          "peak_score": 0.901,
+          "verdict": "False Alert"
+        }
+      ]
+    },
+    "phase8": {
+      "model_name": "Phase 8 Adaptive Detector",
+      "total_annotated_physical_events": 27,
+      "true_positive_events_tp": 18,
+      "missed_physical_events_fn": 9,
+      "false_alert_events_fp": 27,
+      "duplicate_alerts_count": 0,
+      "event_recall": 66.67,
+      "event_precision": 40.0,
+      "event_f1": 50.0,
+      "recording_level_recall": 74.07,
+      "mean_detection_delay_ms": 7.2,
+      "matched_events": [
+        {
+          "canonical_event_id": "EV-P7-0002",
+          "recording_id": "shotspotter_chicago_d5_sensor2",
+          "filename": 0,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.83,
+          "gt_end_sec": 1.63,
+          "det_start_sec": 0.48,
+          "det_end_sec": 2.4,
+          "peak_score": 0.939,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0003",
+          "recording_id": "shotspotter_chicago_d5_sensor3",
+          "filename": 0,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.83,
+          "gt_end_sec": 1.63,
+          "det_start_sec": 0.96,
+          "det_end_sec": 2.4,
+          "peak_score": 0.895,
+          "onset_delay_ms": 130.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0004",
+          "recording_id": "shotspotter_chicago_d5_sensor4",
+          "filename": 0,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.95,
+          "gt_end_sec": 1.75,
+          "det_start_sec": 0.48,
+          "det_end_sec": 2.4,
+          "peak_score": 0.961,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0006",
+          "recording_id": "shotspotter_chicago_d7_sensor2",
+          "filename": 0,
+          "acoustic_condition": "urban_street_canyon",
+          "gt_start_sec": 4.218,
+          "gt_end_sec": 5.018,
+          "det_start_sec": 2.88,
+          "det_end_sec": 5.28,
+          "peak_score": 0.851,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0009",
+          "recording_id": "mitchell_ar15_single_01",
+          "filename": 0,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.014,
+          "gt_end_sec": 0.507,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.726,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0010",
+          "recording_id": "mitchell_ar15_single_02",
+          "filename": 0,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.01,
+          "gt_end_sec": 0.557,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.75,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0011",
+          "recording_id": "mitchell_ar15_single_03",
+          "filename": 0,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.046,
+          "gt_end_sec": 0.557,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.845,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0014",
+          "recording_id": "mitchell_ar15_double_02",
+          "filename": 0,
+          "acoustic_condition": "rifle_rapid_double",
+          "gt_start_sec": 0.014,
+          "gt_end_sec": 0.507,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.829,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0015",
+          "recording_id": "mitchell_ar15_double_03",
+          "filename": 0,
+          "acoustic_condition": "rifle_rapid_double",
+          "gt_start_sec": 0.218,
+          "gt_end_sec": 0.507,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.863,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0016",
+          "recording_id": "mitchell_ar15_rapid_01",
+          "filename": 0,
+          "acoustic_condition": "rifle_rapid_burst",
+          "gt_start_sec": 0.274,
+          "gt_end_sec": 0.512,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.836,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0017",
+          "recording_id": "mitchell_ar15_rapid_02",
+          "filename": 0,
+          "acoustic_condition": "rifle_rapid_burst",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.507,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.848,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0019",
+          "recording_id": "mitchell_ar15_pocket_rapid",
+          "filename": 0,
+          "acoustic_condition": "rifle_pocket_rapid_low_snr",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.503,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.803,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0021",
+          "recording_id": "mitchell_beretta_single_02",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_single",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.785,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0022",
+          "recording_id": "mitchell_beretta_single_03",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_single",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.849,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0023",
+          "recording_id": "mitchell_beretta_double_01",
+          "filename": 0,
+          "acoustic_condition": "handgun_rapid_double",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.908,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0024",
+          "recording_id": "mitchell_beretta_double_02",
+          "filename": 0,
+          "acoustic_condition": "handgun_rapid_double",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.507,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.796,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0026",
+          "recording_id": "mitchell_beretta_rapid_02",
+          "filename": 0,
+          "acoustic_condition": "handgun_rapid_burst",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.952,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P7-0027",
+          "recording_id": "mitchell_beretta_pocket_01",
+          "filename": 0,
+          "acoustic_condition": "handgun_pocket_low_snr",
+          "gt_start_sec": 0.03,
+          "gt_end_sec": 0.537,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.762,
+          "onset_delay_ms": 0.0
+        }
+      ],
+      "missed_events": [
+        {
+          "canonical_event_id": "EV-P7-0001",
+          "recording_id": "shotspotter_chicago_d5_sensor1",
+          "filename": 1,
+          "acoustic_condition": "urban_sensor_distant",
+          "gt_start_sec": 0.834,
+          "gt_end_sec": 1.634,
+          "duration_sec": 0.8,
+          "overall_score": 0.7789
+        },
+        {
+          "canonical_event_id": "EV-P7-0005",
+          "recording_id": "shotspotter_chicago_d7_sensor1",
+          "filename": 1,
+          "acoustic_condition": "urban_street_canyon",
+          "gt_start_sec": 9.622,
+          "gt_end_sec": 9.983,
+          "duration_sec": 0.361,
+          "overall_score": 0.965
+        },
+        {
+          "canonical_event_id": "EV-P7-0007",
+          "recording_id": "shotspotter_chicago_d7_sensor3",
+          "filename": 1,
+          "acoustic_condition": "urban_street_canyon",
+          "gt_start_sec": 3.97,
+          "gt_end_sec": 4.77,
+          "duration_sec": 0.8,
+          "overall_score": 0.9548
+        },
+        {
+          "canonical_event_id": "EV-P7-0008",
+          "recording_id": "shotspotter_scepter_test",
+          "filename": 1,
+          "acoustic_condition": "outdoor_reverberant",
+          "gt_start_sec": 1.782,
+          "gt_end_sec": 2.582,
+          "duration_sec": 0.8,
+          "overall_score": 0.411
+        },
+        {
+          "canonical_event_id": "EV-P7-0012",
+          "recording_id": "mitchell_ar15_single_04",
+          "filename": 1,
+          "acoustic_condition": "rifle_outdoor_single",
+          "gt_start_sec": 0.042,
+          "gt_end_sec": 0.57,
+          "duration_sec": 0.528,
+          "overall_score": 0.6405
+        },
+        {
+          "canonical_event_id": "EV-P7-0013",
+          "recording_id": "mitchell_ar15_double_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_rapid_double",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.512,
+          "duration_sec": 0.512,
+          "overall_score": 0.6795
+        },
+        {
+          "canonical_event_id": "EV-P7-0018",
+          "recording_id": "mitchell_ar15_pocket_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_pocket_low_snr",
+          "gt_start_sec": 0.006,
+          "gt_end_sec": 0.507,
+          "duration_sec": 0.501,
+          "overall_score": 0.6851
+        },
+        {
+          "canonical_event_id": "EV-P7-0020",
+          "recording_id": "mitchell_beretta_single_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_single",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.52,
+          "duration_sec": 0.52,
+          "overall_score": 0.4801
+        },
+        {
+          "canonical_event_id": "EV-P7-0025",
+          "recording_id": "mitchell_beretta_rapid_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_rapid_burst",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.5,
+          "duration_sec": 0.5,
+          "overall_score": 0.6477
+        }
+      ],
+      "false_alerts_sample": [
+        {
+          "recording_id": "1-115521-A-19",
+          "filename": "1-115521-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.96,
+          "end_time_sec": 1.92,
+          "peak_score": 0.928,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-115545-A-48",
+          "filename": "1-115545-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.945,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-115545-B-48",
+          "filename": "1-115545-B-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.865,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-115545-C-48",
+          "filename": "1-115545-C-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.96,
+          "end_time_sec": 3.36,
+          "peak_score": 0.939,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-160563-B-48",
+          "filename": "1-160563-B-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 3.36,
+          "peak_score": 0.864,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-24524-A-19",
+          "filename": "1-24524-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.96,
+          "end_time_sec": 2.88,
+          "peak_score": 0.846,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-24524-C-19",
+          "filename": "1-24524-C-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.96,
+          "end_time_sec": 3.36,
+          "peak_score": 0.891,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "1-25777-A-48",
+          "filename": "1-25777-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.44,
+          "peak_score": 0.916,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-109374-A-16",
+          "filename": "2-109374-A-16.wav",
+          "acoustic_condition": "wind",
+          "start_time_sec": 3.36,
+          "end_time_sec": 4.32,
+          "peak_score": 0.854,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-A-48",
+          "filename": "2-117615-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.48,
+          "end_time_sec": 1.92,
+          "peak_score": 0.947,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-A-48",
+          "filename": "2-117615-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 3.84,
+          "end_time_sec": 5.28,
+          "peak_score": 0.713,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-B-48",
+          "filename": "2-117615-B-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 2.4,
+          "end_time_sec": 4.8,
+          "peak_score": 0.815,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-B-48",
+          "filename": "2-117615-B-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 4.32,
+          "end_time_sec": 5.28,
+          "peak_score": 0.836,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-C-48",
+          "filename": "2-117615-C-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.44,
+          "peak_score": 0.856,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-D-48",
+          "filename": "2-117615-D-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.44,
+          "peak_score": 0.826,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-D-48",
+          "filename": "2-117615-D-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.771,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117615-D-48",
+          "filename": "2-117615-D-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 3.36,
+          "end_time_sec": 5.28,
+          "peak_score": 0.771,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117616-A-48",
+          "filename": "2-117616-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 0.0,
+          "end_time_sec": 0.96,
+          "peak_score": 0.943,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-117616-A-48",
+          "filename": "2-117616-A-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 1.44,
+          "end_time_sec": 3.84,
+          "peak_score": 0.966,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39443-B-19",
+          "filename": "2-39443-B-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.762,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-A-19",
+          "filename": "2-39945-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 1.44,
+          "end_time_sec": 2.88,
+          "peak_score": 0.855,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-A-19",
+          "filename": "2-39945-A-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 3.36,
+          "end_time_sec": 5.28,
+          "peak_score": 0.821,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-B-19",
+          "filename": "2-39945-B-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.0,
+          "end_time_sec": 0.96,
+          "peak_score": 0.9,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-B-19",
+          "filename": "2-39945-B-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 1.92,
+          "end_time_sec": 2.88,
+          "peak_score": 0.841,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "2-39945-C-19",
+          "filename": "2-39945-C-19.wav",
+          "acoustic_condition": "thunderstorm",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.92,
+          "peak_score": 0.901,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "3-119120-D-48",
+          "filename": "3-119120-D-48.wav",
+          "acoustic_condition": "fireworks",
+          "start_time_sec": 4.32,
+          "end_time_sec": 5.28,
+          "peak_score": 0.83,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "3-203371-A-39",
+          "filename": "3-203371-A-39.wav",
+          "acoustic_condition": "glass_breaking",
+          "start_time_sec": 0.0,
+          "end_time_sec": 0.96,
+          "peak_score": 0.834,
+          "verdict": "False Alert"
+        }
+      ]
+    }
+  },
+  "phase8_final_source_independent_set": {
+    "phase7": {
+      "model_name": "Phase 7 Frozen Baseline (tau=0.75, N=2)",
+      "total_annotated_physical_events": 43,
+      "true_positive_events_tp": 0,
+      "missed_physical_events_fn": 43,
+      "false_alert_events_fp": 12,
+      "duplicate_alerts_count": 0,
+      "event_recall": 0.0,
+      "event_precision": 0.0,
+      "event_f1": 0.0,
+      "recording_level_recall": 0.0,
+      "mean_detection_delay_ms": 0.0,
+      "matched_events": [],
+      "missed_events": [
+        {
+          "canonical_event_id": "EV-P8-0001",
+          "recording_id": "mitchell_mossberg_12g_01",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "duration_sec": 0.486,
+          "overall_score": 0.7708
+        },
+        {
+          "canonical_event_id": "EV-P8-0002",
+          "recording_id": "mitchell_mossberg_12g_02",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.482,
+          "duration_sec": 0.482,
+          "overall_score": 0.8311
+        },
+        {
+          "canonical_event_id": "EV-P8-0003",
+          "recording_id": "mitchell_mossberg_12g_03",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "duration_sec": 0.486,
+          "overall_score": 0.8785
+        },
+        {
+          "canonical_event_id": "EV-P8-0004",
+          "recording_id": "mitchell_mossberg_12g_04",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "duration_sec": 0.498,
+          "overall_score": 0.8427
+        },
+        {
+          "canonical_event_id": "EV-P8-0005",
+          "recording_id": "mitchell_mossberg_12g_05",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "duration_sec": 0.486,
+          "overall_score": 0.6024
+        },
+        {
+          "canonical_event_id": "EV-P8-0006",
+          "recording_id": "mitchell_mossberg_12g_06",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.514,
+          "duration_sec": 0.514,
+          "overall_score": 0.8636
+        },
+        {
+          "canonical_event_id": "EV-P8-0007",
+          "recording_id": "mitchell_mossberg_12g_07",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "duration_sec": 0.498,
+          "overall_score": 0.7544
+        },
+        {
+          "canonical_event_id": "EV-P8-0008",
+          "recording_id": "mitchell_mossberg_12g_08",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.048,
+          "gt_end_sec": 0.568,
+          "duration_sec": 0.52,
+          "overall_score": 0.7746
+        },
+        {
+          "canonical_event_id": "EV-P8-0009",
+          "recording_id": "mitchell_colt_ar15_01",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "duration_sec": 0.498,
+          "overall_score": 0.8121
+        },
+        {
+          "canonical_event_id": "EV-P8-0010",
+          "recording_id": "mitchell_colt_ar15_02",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.462,
+          "duration_sec": 0.462,
+          "overall_score": 0.9086
+        },
+        {
+          "canonical_event_id": "EV-P8-0011",
+          "recording_id": "mitchell_colt_ar15_03",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.478,
+          "duration_sec": 0.478,
+          "overall_score": 0.8817
+        },
+        {
+          "canonical_event_id": "EV-P8-0012",
+          "recording_id": "mitchell_colt_ar15_04",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.7605
+        },
+        {
+          "canonical_event_id": "EV-P8-0013",
+          "recording_id": "mitchell_colt_ar15_05",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.462,
+          "duration_sec": 0.462,
+          "overall_score": 0.8474
+        },
+        {
+          "canonical_event_id": "EV-P8-0014",
+          "recording_id": "mitchell_colt_ar15_06",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.462,
+          "duration_sec": 0.462,
+          "overall_score": 0.9248
+        },
+        {
+          "canonical_event_id": "EV-P8-0015",
+          "recording_id": "mitchell_colt_ar15_07",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.8985
+        },
+        {
+          "canonical_event_id": "EV-P8-0016",
+          "recording_id": "mitchell_colt_ar15_08",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.47,
+          "duration_sec": 0.47,
+          "overall_score": 0.9217
+        },
+        {
+          "canonical_event_id": "EV-P8-0017",
+          "recording_id": "mitchell_colt_ar15_09",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.7869
+        },
+        {
+          "canonical_event_id": "EV-P8-0018",
+          "recording_id": "mitchell_colt_ar15_10",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.6815
+        },
+        {
+          "canonical_event_id": "EV-P8-0019",
+          "recording_id": "mitchell_colt_ar15_11",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.466,
+          "duration_sec": 0.466,
+          "overall_score": 0.7547
+        },
+        {
+          "canonical_event_id": "EV-P8-0020",
+          "recording_id": "mitchell_colt_ar15_12",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.466,
+          "duration_sec": 0.466,
+          "overall_score": 0.6111
+        },
+        {
+          "canonical_event_id": "EV-P8-0021",
+          "recording_id": "mitchell_colt_ar15_13",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.503,
+          "duration_sec": 0.503,
+          "overall_score": 0.87
+        },
+        {
+          "canonical_event_id": "EV-P8-0022",
+          "recording_id": "mitchell_glock17_9mm_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "duration_sec": 0.498,
+          "overall_score": 0.9007
+        },
+        {
+          "canonical_event_id": "EV-P8-0023",
+          "recording_id": "mitchell_glock17_9mm_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "duration_sec": 0.494,
+          "overall_score": 0.8606
+        },
+        {
+          "canonical_event_id": "EV-P8-0024",
+          "recording_id": "mitchell_glock17_9mm_03",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.502,
+          "duration_sec": 0.502,
+          "overall_score": 0.7873
+        },
+        {
+          "canonical_event_id": "EV-P8-0025",
+          "recording_id": "mitchell_glock17_9mm_04",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.478,
+          "duration_sec": 0.478,
+          "overall_score": 0.8513
+        },
+        {
+          "canonical_event_id": "EV-P8-0026",
+          "recording_id": "mitchell_glock17_9mm_05",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.51,
+          "duration_sec": 0.51,
+          "overall_score": 0.7389
+        },
+        {
+          "canonical_event_id": "EV-P8-0027",
+          "recording_id": "mitchell_glock17_9mm_06",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "duration_sec": 0.494,
+          "overall_score": 0.7902
+        },
+        {
+          "canonical_event_id": "EV-P8-0028",
+          "recording_id": "mitchell_glock17_9mm_07",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.493,
+          "duration_sec": 0.493,
+          "overall_score": 0.7383
+        },
+        {
+          "canonical_event_id": "EV-P8-0029",
+          "recording_id": "mitchell_glock17_9mm_08",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "duration_sec": 0.494,
+          "overall_score": 0.711
+        },
+        {
+          "canonical_event_id": "EV-P8-0030",
+          "recording_id": "mitchell_glock17_9mm_09",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.506,
+          "duration_sec": 0.506,
+          "overall_score": 0.7397
+        },
+        {
+          "canonical_event_id": "EV-P8-0031",
+          "recording_id": "mitchell_glock17_9mm_10",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "duration_sec": 0.486,
+          "overall_score": 0.722
+        },
+        {
+          "canonical_event_id": "EV-P8-0032",
+          "recording_id": "mitchell_glock17_9mm_11",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.478,
+          "duration_sec": 0.478,
+          "overall_score": 0.6435
+        },
+        {
+          "canonical_event_id": "EV-P8-0033",
+          "recording_id": "mitchell_ak47_762_01",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.488,
+          "duration_sec": 0.488,
+          "overall_score": 0.7532
+        },
+        {
+          "canonical_event_id": "EV-P8-0034",
+          "recording_id": "mitchell_ak47_762_02",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.502,
+          "duration_sec": 0.502,
+          "overall_score": 0.8737
+        },
+        {
+          "canonical_event_id": "EV-P8-0035",
+          "recording_id": "mitchell_ak47_762_03",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.096,
+          "gt_end_sec": 0.517,
+          "duration_sec": 0.421,
+          "overall_score": 0.5989
+        },
+        {
+          "canonical_event_id": "EV-P8-0036",
+          "recording_id": "mitchell_ak47_762_04",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "duration_sec": 0.498,
+          "overall_score": 0.6505
+        },
+        {
+          "canonical_event_id": "EV-P8-0037",
+          "recording_id": "mitchell_ak47_762_05",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "duration_sec": 0.494,
+          "overall_score": 0.5961
+        },
+        {
+          "canonical_event_id": "EV-P8-0038",
+          "recording_id": "mitchell_colt45_single_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_heavy_caliber",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.502,
+          "duration_sec": 0.502,
+          "overall_score": 0.6761
+        },
+        {
+          "canonical_event_id": "EV-P8-0039",
+          "recording_id": "mitchell_colt45_single_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_heavy_caliber",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.496,
+          "duration_sec": 0.496,
+          "overall_score": 0.5046
+        },
+        {
+          "canonical_event_id": "EV-P8-0040",
+          "recording_id": "mitchell_colt1911_45_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.5429
+        },
+        {
+          "canonical_event_id": "EV-P8-0041",
+          "recording_id": "mitchell_colt1911_45_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.4623
+        },
+        {
+          "canonical_event_id": "EV-P8-0042",
+          "recording_id": "mitchell_colt_govt_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.47,
+          "duration_sec": 0.47,
+          "overall_score": 0.7935
+        },
+        {
+          "canonical_event_id": "EV-P8-0043",
+          "recording_id": "mitchell_colt_govt_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.506,
+          "duration_sec": 0.506,
+          "overall_score": 0.5082
+        }
+      ],
+      "false_alerts_sample": [
+        {
+          "recording_id": "esc50_p8_helicopter_rotor_1-181071-A-40",
+          "filename": "1-181071-A-40.wav",
+          "acoustic_condition": "esc50_class_40",
+          "start_time_sec": 0.96,
+          "end_time_sec": 3.36,
+          "peak_score": 0.826,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_helicopter_rotor_1-181071-B-40",
+          "filename": "1-181071-B-40.wav",
+          "acoustic_condition": "esc50_class_40",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.91,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_1-30226-A-0",
+          "filename": "1-30226-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 0.48,
+          "end_time_sec": 2.88,
+          "peak_score": 0.782,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_1-43382-A-1",
+          "filename": "1-43382-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 1.44,
+          "end_time_sec": 3.36,
+          "peak_score": 0.796,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-100786-A-1",
+          "filename": "2-100786-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.96,
+          "end_time_sec": 2.4,
+          "peak_score": 0.807,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_2-114587-A-0",
+          "filename": "2-114587-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 0.96,
+          "end_time_sec": 2.88,
+          "peak_score": 0.814,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-65750-A-1",
+          "filename": "2-65750-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.847,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-71162-A-1",
+          "filename": "2-71162-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.96,
+          "end_time_sec": 2.88,
+          "peak_score": 0.766,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-81270-A-1",
+          "filename": "2-81270-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 3.36,
+          "end_time_sec": 5.28,
+          "peak_score": 0.812,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-95035-A-1",
+          "filename": "2-95035-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.48,
+          "end_time_sec": 2.88,
+          "peak_score": 0.876,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-95258-A-1",
+          "filename": "2-95258-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.811,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_3-134049-A-1",
+          "filename": "3-134049-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.96,
+          "end_time_sec": 3.36,
+          "peak_score": 0.778,
+          "verdict": "False Alert"
+        }
+      ]
+    },
+    "phase8": {
+      "model_name": "Phase 8 Adaptive Detector",
+      "total_annotated_physical_events": 43,
+      "true_positive_events_tp": 31,
+      "missed_physical_events_fn": 12,
+      "false_alert_events_fp": 21,
+      "duplicate_alerts_count": 0,
+      "event_recall": 72.09,
+      "event_precision": 59.62,
+      "event_f1": 65.26,
+      "recording_level_recall": 72.09,
+      "mean_detection_delay_ms": 0.0,
+      "matched_events": [
+        {
+          "canonical_event_id": "EV-P8-0001",
+          "recording_id": "mitchell_mossberg_12g_01",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.771,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0002",
+          "recording_id": "mitchell_mossberg_12g_02",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.482,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.831,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0003",
+          "recording_id": "mitchell_mossberg_12g_03",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.879,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0004",
+          "recording_id": "mitchell_mossberg_12g_04",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.843,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0006",
+          "recording_id": "mitchell_mossberg_12g_06",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.514,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.864,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0007",
+          "recording_id": "mitchell_mossberg_12g_07",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.754,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0008",
+          "recording_id": "mitchell_mossberg_12g_08",
+          "filename": 0,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.048,
+          "gt_end_sec": 0.568,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.775,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0009",
+          "recording_id": "mitchell_colt_ar15_01",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.812,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0010",
+          "recording_id": "mitchell_colt_ar15_02",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.462,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.909,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0011",
+          "recording_id": "mitchell_colt_ar15_03",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.478,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.882,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0012",
+          "recording_id": "mitchell_colt_ar15_04",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.761,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0013",
+          "recording_id": "mitchell_colt_ar15_05",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.462,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.847,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0014",
+          "recording_id": "mitchell_colt_ar15_06",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.462,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.925,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0015",
+          "recording_id": "mitchell_colt_ar15_07",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.898,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0016",
+          "recording_id": "mitchell_colt_ar15_08",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.47,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.922,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0017",
+          "recording_id": "mitchell_colt_ar15_09",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.787,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0019",
+          "recording_id": "mitchell_colt_ar15_11",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.466,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.755,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0021",
+          "recording_id": "mitchell_colt_ar15_13",
+          "filename": 0,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.503,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.87,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0022",
+          "recording_id": "mitchell_glock17_9mm_01",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.901,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0023",
+          "recording_id": "mitchell_glock17_9mm_02",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.861,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0024",
+          "recording_id": "mitchell_glock17_9mm_03",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.502,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.787,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0025",
+          "recording_id": "mitchell_glock17_9mm_04",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.478,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.851,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0026",
+          "recording_id": "mitchell_glock17_9mm_05",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.51,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.739,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0027",
+          "recording_id": "mitchell_glock17_9mm_06",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.79,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0028",
+          "recording_id": "mitchell_glock17_9mm_07",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.493,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.738,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0029",
+          "recording_id": "mitchell_glock17_9mm_08",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.711,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0030",
+          "recording_id": "mitchell_glock17_9mm_09",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.506,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.74,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0031",
+          "recording_id": "mitchell_glock17_9mm_10",
+          "filename": 0,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.722,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0033",
+          "recording_id": "mitchell_ak47_762_01",
+          "filename": 0,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.488,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.753,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0034",
+          "recording_id": "mitchell_ak47_762_02",
+          "filename": 0,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.502,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.874,
+          "onset_delay_ms": 0.0
+        },
+        {
+          "canonical_event_id": "EV-P8-0042",
+          "recording_id": "mitchell_colt_govt_01",
+          "filename": 0,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.47,
+          "det_start_sec": 0.0,
+          "det_end_sec": 0.96,
+          "peak_score": 0.793,
+          "onset_delay_ms": 0.0
+        }
+      ],
+      "missed_events": [
+        {
+          "canonical_event_id": "EV-P8-0005",
+          "recording_id": "mitchell_mossberg_12g_05",
+          "filename": 1,
+          "acoustic_condition": "shotgun_heavy_blast",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.486,
+          "duration_sec": 0.486,
+          "overall_score": 0.6024
+        },
+        {
+          "canonical_event_id": "EV-P8-0018",
+          "recording_id": "mitchell_colt_ar15_10",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.6815
+        },
+        {
+          "canonical_event_id": "EV-P8-0020",
+          "recording_id": "mitchell_colt_ar15_12",
+          "filename": 1,
+          "acoustic_condition": "rifle_supersonic_crack",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.466,
+          "duration_sec": 0.466,
+          "overall_score": 0.6111
+        },
+        {
+          "canonical_event_id": "EV-P8-0032",
+          "recording_id": "mitchell_glock17_9mm_11",
+          "filename": 1,
+          "acoustic_condition": "handgun_range_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.478,
+          "duration_sec": 0.478,
+          "overall_score": 0.6435
+        },
+        {
+          "canonical_event_id": "EV-P8-0035",
+          "recording_id": "mitchell_ak47_762_03",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.096,
+          "gt_end_sec": 0.517,
+          "duration_sec": 0.421,
+          "overall_score": 0.5989
+        },
+        {
+          "canonical_event_id": "EV-P8-0036",
+          "recording_id": "mitchell_ak47_762_04",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.498,
+          "duration_sec": 0.498,
+          "overall_score": 0.6505
+        },
+        {
+          "canonical_event_id": "EV-P8-0037",
+          "recording_id": "mitchell_ak47_762_05",
+          "filename": 1,
+          "acoustic_condition": "assault_rifle_high_energy",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.494,
+          "duration_sec": 0.494,
+          "overall_score": 0.5961
+        },
+        {
+          "canonical_event_id": "EV-P8-0038",
+          "recording_id": "mitchell_colt45_single_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_heavy_caliber",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.502,
+          "duration_sec": 0.502,
+          "overall_score": 0.6761
+        },
+        {
+          "canonical_event_id": "EV-P8-0039",
+          "recording_id": "mitchell_colt45_single_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_heavy_caliber",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.496,
+          "duration_sec": 0.496,
+          "overall_score": 0.5046
+        },
+        {
+          "canonical_event_id": "EV-P8-0040",
+          "recording_id": "mitchell_colt1911_45_01",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.5429
+        },
+        {
+          "canonical_event_id": "EV-P8-0041",
+          "recording_id": "mitchell_colt1911_45_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.458,
+          "duration_sec": 0.458,
+          "overall_score": 0.4623
+        },
+        {
+          "canonical_event_id": "EV-P8-0043",
+          "recording_id": "mitchell_colt_govt_02",
+          "filename": 1,
+          "acoustic_condition": "handgun_1911_sharp",
+          "gt_start_sec": 0.0,
+          "gt_end_sec": 0.506,
+          "duration_sec": 0.506,
+          "overall_score": 0.5082
+        }
+      ],
+      "false_alerts_sample": [
+        {
+          "recording_id": "esc50_p8_helicopter_rotor_1-181071-A-40",
+          "filename": "1-181071-A-40.wav",
+          "acoustic_condition": "esc50_class_40",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.866,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_helicopter_rotor_1-181071-B-40",
+          "filename": "1-181071-B-40.wav",
+          "acoustic_condition": "esc50_class_40",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.91,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_helicopter_rotor_1-181071-B-40",
+          "filename": "1-181071-B-40.wav",
+          "acoustic_condition": "esc50_class_40",
+          "start_time_sec": 1.92,
+          "end_time_sec": 4.32,
+          "peak_score": 0.928,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_1-30226-A-0",
+          "filename": "1-30226-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 0.48,
+          "end_time_sec": 2.88,
+          "peak_score": 0.782,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_1-32318-A-0",
+          "filename": "1-32318-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 3.36,
+          "end_time_sec": 5.28,
+          "peak_score": 0.759,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_1-40730-A-1",
+          "filename": "1-40730-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.92,
+          "peak_score": 0.859,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_1-43382-A-1",
+          "filename": "1-43382-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 1.44,
+          "peak_score": 0.727,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_1-43382-A-1",
+          "filename": "1-43382-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 1.44,
+          "end_time_sec": 3.36,
+          "peak_score": 0.797,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_1-44831-A-1",
+          "filename": "1-44831-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.839,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_1-59513-A-0",
+          "filename": "1-59513-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 2.4,
+          "end_time_sec": 4.8,
+          "peak_score": 0.833,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_1-85362-A-0",
+          "filename": "1-85362-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 2.4,
+          "end_time_sec": 4.8,
+          "peak_score": 0.78,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-100786-A-1",
+          "filename": "2-100786-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.855,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_dog_bark_2-114587-A-0",
+          "filename": "2-114587-A-0.wav",
+          "acoustic_condition": "esc50_class_0",
+          "start_time_sec": 0.96,
+          "end_time_sec": 2.88,
+          "peak_score": 0.814,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-65750-A-1",
+          "filename": "2-65750-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.847,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-71162-A-1",
+          "filename": "2-71162-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.48,
+          "end_time_sec": 2.88,
+          "peak_score": 0.766,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-81270-A-1",
+          "filename": "2-81270-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 1.44,
+          "end_time_sec": 3.84,
+          "peak_score": 0.844,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-95035-A-1",
+          "filename": "2-95035-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.48,
+          "end_time_sec": 2.88,
+          "peak_score": 0.876,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-95258-A-1",
+          "filename": "2-95258-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.811,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_2-95258-B-1",
+          "filename": "2-95258-B-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.803,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_3-116135-A-1",
+          "filename": "3-116135-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.48,
+          "end_time_sec": 1.92,
+          "peak_score": 0.753,
+          "verdict": "False Alert"
+        },
+        {
+          "recording_id": "esc50_p8_rooster_call_3-134049-A-1",
+          "filename": "3-134049-A-1.wav",
+          "acoustic_condition": "esc50_class_1",
+          "start_time_sec": 0.0,
+          "end_time_sec": 2.4,
+          "peak_score": 0.778,
+          "verdict": "False Alert"
+        }
+      ]
+    }
+  }
+}

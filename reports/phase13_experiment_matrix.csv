@@ -1,0 +1,9 @@
+experiment_id,tp,fn,fp,precision,recall,f1,duplicate_alerts,pocket_recall,pocket_tp_fn,fireworks_fp_total,thunder_fp_total,description
+BASELINE_PHASE9,32,21,56,36.36,60.38,45.39,0,50.0,2/4,0/2,0/2,"Frozen Phase 9 detector (score<0.88 semantic escape, unconfirmed score>=0.88 dispatch, crest 9.5dB)"
+EXP_A_TEMPORAL_AGGREGATION,33,20,54,37.93,62.26,47.14,0,50.0,2/4,0/2,0/2,"Single-window immediate dispatch requires crest >= 12.0 dB, otherwise requires N=2 confirmation"
+EXP_C_SEMANTIC_GATING,27,26,53,33.75,50.94,40.6,0,50.0,2/4,0/2,0/2,"Relative Semantic Dominance (suppress if semantic >= 1.5*gun, no raw_score < 0.88 ceiling)"
+EXP_D_CREST_FACTOR_8_8DB,33,20,56,37.08,62.26,46.48,0,75.0,3/4,0/2,0/2,Lower short-clip crest guard from 9.5 dB to 8.8 dB for muffled gunshot recovery
+EXP_D_CREST_FACTOR_8_5DB,33,20,56,37.08,62.26,46.48,0,75.0,3/4,0/2,0/2,Lower short-clip crest guard to 8.5 dB (test over-relaxation threshold)
+EXP_E_CALIBRATION_TEMP1_35,19,34,12,61.29,35.85,45.24,0,50.0,2/4,0/2,0/2,Ensemble probability calibration using temperature scaling (T=1.35) on dev validation
+EXP_F_EVENT_CLUSTERING_2_5S,32,21,56,36.36,60.38,45.39,0,50.0,2/4,0/2,0/2,Extend refractory cooldown from 1.5s to 2.5s to suppress multipath reflection tails
+PHASE13_CANDIDATE_COMBINED,28,25,52,35.0,52.83,42.11,0,75.0,3/4,0/2,0/2,Phase 13 Full Candidate: Relative Dominance + 12dB Guarded Dispatch + 8.8dB Crest + 2.5s Cooldown

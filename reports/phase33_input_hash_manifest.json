@@ -1,0 +1,126 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_33_FORENSIC_AUDIT_INPUT_HASH_MANIFEST",
+  "inputs": {
+    "E:\\gunshot\\gunshot\\model_phase14.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase14.py",
+      "size_bytes": 23340,
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\model_phase17.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase17.py",
+      "size_bytes": 29067,
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\model_phase13.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase13.py",
+      "size_bytes": 22252,
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\model_phase9.py": {
+      "path": "E:\\gunshot\\gunshot\\model_phase9.py",
+      "size_bytes": 17719,
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\experiments\\phase31\\model_phase17_state_reset_candidate.py": {
+      "path": "E:\\gunshot\\gunshot\\experiments\\phase31\\model_phase17_state_reset_candidate.py",
+      "size_bytes": 29718,
+      "sha256": "c144b917b56532787e2a9198f2cad4a77dc2095b57962f31d11d250a4d5d9ea5",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\feature_extractor.py": {
+      "path": "E:\\gunshot\\gunshot\\feature_extractor.py",
+      "size_bytes": 6218,
+      "sha256": "1c665b7c1749de98337da0726627710fffe0dcfa56335291b666ae7abcbae94f",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\config.py": {
+      "path": "E:\\gunshot\\gunshot\\config.py",
+      "size_bytes": 2619,
+      "sha256": "55749f9d46d561d131fad374064021b73c08274e2a79954efd08570b029b1858",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot_detection_phase32.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase32.zip",
+      "size_bytes": 4545869,
+      "sha256": "b27bbb6336e3d0bb229ac10ade6c669b3d917d5ba58e91617c5c3cdd1eadddfb",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot_detection_phase31.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase31.zip",
+      "size_bytes": 4564376,
+      "sha256": "92a4f4d9882d0d69edf1cacc390244ef480fea09a1bc80351787297c0e361c47",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot_detection_phase30.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase30.zip",
+      "size_bytes": 5451607,
+      "sha256": "a50cc30c13f840f1d68cb111b868242562262e979d9b211d902b6573ab14ada4",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot_detection_phase29.zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase29.zip",
+      "size_bytes": 4593850,
+      "sha256": "23a3f8af3dc74db6bc71b0babbc813bb0e96d1bbd4ca2001cb508b8756081dd5",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase32_final_report.md": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase32_final_report.md",
+      "size_bytes": 12822,
+      "sha256": "be19950bf8e0e708f30cf6e57480a1995fcbb11d87e1c939f4fc1ed8abddd54b",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase32_factorial_results.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase32_factorial_results.csv",
+      "size_bytes": 5313,
+      "sha256": "f4f5d6d26f5b2509c518fc5c7b7b97adfa07e904efcf99985ab90ca77c45e96e",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase32_state_machine_test_vectors.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase32_state_machine_test_vectors.csv",
+      "size_bytes": 1937,
+      "sha256": "6a9f0c0d9455a72fc0db6917e0d5eb052750175eb466fd92a9eeec8862295e16",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase32_artifact_manifest.json": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase32_artifact_manifest.json",
+      "size_bytes": 5643,
+      "sha256": "623171564aee1e95d3d8b8e9b2d5e79aa1c58f90658805cfd476ec811541efc0",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase31_recording_master_registry.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase31_recording_master_registry.csv",
+      "size_bytes": 13219,
+      "sha256": "8b6921251a57f8b629ddb5c6926b6c739bef3809df56ac19e4de0c1775348106",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase31_campaign_assignment_changes.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase31_campaign_assignment_changes.csv",
+      "size_bytes": 2042,
+      "sha256": "611b66373462ee8fb6479fbf65869d6811846f039e108c45c669d589b877f151",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase30_instrumented_score_traces.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase30_instrumented_score_traces.csv",
+      "size_bytes": 7878926,
+      "sha256": "43cb7851af20e1892ebc839d62838c1bbb3216067f8e5babc98b66128d689dd9",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase20_canonical_event_manifest.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase20_canonical_event_manifest.csv",
+      "size_bytes": 16427,
+      "sha256": "6c3e5d5c07cb5102ee7160c0272e90d5c98cdb4659538ee58ad276855d971691",
+      "status": "VERIFIED"
+    },
+    "E:\\gunshot\\gunshot\\reports\\phase22_alert_event_timeline.csv": {
+      "path": "E:\\gunshot\\gunshot\\reports\\phase22_alert_event_timeline.csv",
+      "size_bytes": 3829,
+      "sha256": "71d49e88e8bdaf7bf53d94bf8df4ced8d5025012383116877af9ec5ff301d8c3",
+      "status": "VERIFIED"
+    }
+  }
+}

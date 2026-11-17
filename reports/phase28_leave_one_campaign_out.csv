@@ -1,0 +1,5 @@
+excluded_campaign,remaining_streams,remaining_gross_hr,p14_alerts,p17_alerts,delta_alerts,p14_gross_far,p17_gross_far,delta_gross_far,p14_eligible_hr,p17_eligible_hr,p14_eligible_far,p17_eligible_far,delta_eligible_far,p14_favored_streams,p17_favored_streams,tied_streams,paired_wilcoxon_w,paired_wilcoxon_p,predominant_model
+CAMPAIGN-AEROSONIC-AU,17,6.6458,56,51,5,8.4264,7.674,0.7524,6.6149,6.6176,8.4657,7.7067,0.759,0,3,14,0.0,0.25,Phase 17 Superior
+CAMPAIGN-BILBAO-ES,17,12.0833,96,130,-34,7.9448,10.7587,-2.8138,11.9748,10.3257,8.0168,12.5899,-4.5731,5,1,11,2.0,0.09375,Phase 14 Superior
+CAMPAIGN-CHEWMAGNA-UK,22,12.0625,128,159,-31,10.6114,13.1813,-2.5699,11.9365,10.289,10.7234,15.4534,-4.73,5,3,14,8.0,0.1953125,Phase 14 Superior
+CAMPAIGN-RPISOUND-UK,13,7.1458,104,137,-33,14.554,19.1721,-4.6181,7.0332,5.3846,14.787,25.4429,-10.6559,5,2,6,4.0,0.109375,Phase 14 Superior

@@ -1,0 +1,11 @@
+{
+  "framework": "tensorflow/keras",
+  "backbone": "google/yamnet (frozen AudioSet MobileNet)",
+  "input_embedding_dim": 1024,
+  "sample_rate": 16000,
+  "window_length_secs": 0.96,
+  "hop_length_secs": 0.48,
+  "window_samples": 15360,
+  "hop_samples": 7680,
+  "architecture_summary": "Input(1024) -> Dense(128, relu) -> BN -> Dropout(0.3) -> Dense(32, relu) -> Dropout(0.2) -> Dense(1, sigmoid)"
+}

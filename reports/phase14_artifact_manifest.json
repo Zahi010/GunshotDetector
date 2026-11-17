@@ -1,0 +1,57 @@
+{
+  "phase": 14,
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "archive_filename": "gunshot_detection_phase14.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase14.zip",
+  "archive_sha256": "37807435378d313efbec89a3671b714cb33f8b1ddef4ca91141956ae5082d144",
+  "archive_size_bytes": 1276941409,
+  "archive_size_mb": 1217.79,
+  "file_count": 2939,
+  "timestamp_utc": "2026-10-30T08:40:01Z",
+  "key_deliverables": [
+    "reports/phase14_reproducibility_audit.md",
+    "reports/phase14_dataset_provenance_audit.md",
+    "reports/phase14_source_overlap_matrix.csv",
+    "reports/phase14_duplicate_and_near_duplicate_audit.json",
+    "reports/phase14_false_negative_forensics.md",
+    "reports/phase14_event_level_comparison.csv",
+    "reports/phase14_fireworks_thunder_analysis.md",
+    "reports/phase14_pocket_occlusion_analysis.md",
+    "reports/phase14_experiment_matrix.csv",
+    "reports/phase14_statistical_comparison.md",
+    "reports/phase14_continuous_benchmark_evaluation.json",
+    "reports/phase14_final_report.md",
+    "reports/phase14_artifact_manifest.json",
+    "model_phase14.py",
+    "scripts/run_phase14_audit.py",
+    "scripts/run_phase14_experiments.py",
+    "scripts/evaluate_phase14_continuous.py",
+    "tests/test_phase14_regression.py"
+  ],
+  "prior_archives_verified": {
+    "Phase 8": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353"
+    },
+    "Phase 9": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0"
+    },
+    "Phase 10": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d"
+    },
+    "Phase 11": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef"
+    },
+    "Phase 12": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a"
+    },
+    "Phase 13": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561"
+    }
+  }
+}

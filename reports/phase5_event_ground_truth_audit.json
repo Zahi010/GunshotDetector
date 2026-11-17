@@ -1,0 +1,610 @@
+{
+  "audit_title": "Phase 5 Canonical Event Ground Truth Audit",
+  "timestamp": "2026-10-28",
+  "summary": {
+    "total_raw_gunshot_files": 150,
+    "unique_physical_recordings_sha256": 110,
+    "duplicate_raw_file_copies": 40,
+    "total_raw_rows_in_phase3_events_csv": 351,
+    "total_canonical_physical_events": 238,
+    "duplicate_event_rows_removed": 113,
+    "split_breakdown": {
+      "train": {
+        "recordings": 77,
+        "events": 199
+      },
+      "val": {
+        "recordings": 16,
+        "events": 22
+      },
+      "test": {
+        "recordings": 17,
+        "events": 17
+      }
+    }
+  },
+  "duplicate_files_registry": [
+    {
+      "sha256": "1787c27af9272f0f0ea79bf388f0c36fdbf92c3a1097549377ba59cc261c7d4b",
+      "primary_filename": "49053354-machine-gun-307468.mp3",
+      "base_stem": "49053354-machine-gun-307468",
+      "duplicate_aliases": [
+        "49053354-machine-gun-307468 (1).mp3",
+        "49053354-machine-gun-307468 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "test"
+    },
+    {
+      "sha256": "49e8bb1970fce9df326489b74fdd9982a681fef067ac7e3ec75a30860f1b23e0",
+      "primary_filename": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079.mp3",
+      "base_stem": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079",
+      "duplicate_aliases": [
+        "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (1).mp3",
+        "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "train"
+    },
+    {
+      "sha256": "83ab7b9bc92286ce1b046113c3caea2e2e1ad43a58b7930a59a2e0bbf761deef",
+      "primary_filename": "alice_soundz-gun-shot-sound-effect-224087.mp3",
+      "base_stem": "alice_soundz-gun-shot-sound-effect-224087",
+      "duplicate_aliases": [
+        "alice_soundz-gun-shot-sound-effect-224087 (1).mp3",
+        "alice_soundz-gun-shot-sound-effect-224087 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "train"
+    },
+    {
+      "sha256": "7cfbc4a4332ee1f4cceeb0798728363ef40a7de1f38b3ebe27a099d0b71751f9",
+      "primary_filename": "bannythecoolio-retro-revolver-shoot-425133.mp3",
+      "base_stem": "bannythecoolio-retro-revolver-shoot-425133",
+      "duplicate_aliases": [
+        "bannythecoolio-retro-revolver-shoot-425133 (1).mp3",
+        "bannythecoolio-retro-revolver-shoot-425133 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "train"
+    },
+    {
+      "sha256": "70b99f1299876d49bd99248891aae9acfc597bdd7f5d3691bc7d7302faf31cf2",
+      "primary_filename": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831.mp3",
+      "base_stem": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831",
+      "duplicate_aliases": [
+        "freesound_community-ar15-rifle-shot-from-50-yards-away-98831 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "acc22e1d7fb2d1b0a57e842999386e12409242a338722e719d863239e723c1b7",
+      "primary_filename": "freesound_community-clean-machine-gun-burst-98224.mp3",
+      "base_stem": "freesound_community-clean-machine-gun-burst-98224",
+      "duplicate_aliases": [
+        "freesound_community-clean-machine-gun-burst-98224 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "test"
+    },
+    {
+      "sha256": "274fe7f9106354f72dafbd67e5038292d0b5bf809de97e314f0644beea9753e2",
+      "primary_filename": "freesound_community-five-seven-gun-shot-and-silenced-104500.mp3",
+      "base_stem": "freesound_community-five-seven-gun-shot-and-silenced-104500",
+      "duplicate_aliases": [
+        "freesound_community-five-seven-gun-shot-and-silenced-104500 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "aa36f2798a7c990fff8a6f4be577dd972a842ad3a851baeda44552572bd6aa4a",
+      "primary_filename": "freesound_community-gun-shot-56254.mp3",
+      "base_stem": "freesound_community-gun-shot-56254",
+      "duplicate_aliases": [
+        "freesound_community-gun-shot-56254 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "997c52b4d8e5dd14c1e8ef36eca48a6b162b89aaacc17acd98dad2636a7356ae",
+      "primary_filename": "freesound_community-gun-shot-83336.mp3",
+      "base_stem": "freesound_community-gun-shot-83336",
+      "duplicate_aliases": [
+        "freesound_community-gun-shot-83336 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "val"
+    },
+    {
+      "sha256": "806706ebf57181f718d77829c272345cbaebaa5bb959657e7d767a678a9b779f",
+      "primary_filename": "freesound_community-gun-shots-from-a-distance-10-39760.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-10-39760",
+      "duplicate_aliases": [
+        "freesound_community-gun-shots-from-a-distance-10-39760 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "val"
+    },
+    {
+      "sha256": "5311eba0a59a8a2c41b7f93da71b57b2c717eb25c98c9667e9641e6c50a1edbe",
+      "primary_filename": "freesound_community-gun-shots-from-a-distance-12-96410.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-12-96410",
+      "duplicate_aliases": [
+        "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "val"
+    },
+    {
+      "sha256": "224aa8e2759c526ebb61189bdbbb5b38c2d62457e7726057a9218c04f418f679",
+      "primary_filename": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "duplicate_aliases": [
+        "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+        "freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+        "freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3"
+      ],
+      "duplicate_count": 3,
+      "split": "test"
+    },
+    {
+      "sha256": "ea9c64c392d56c9d607469482b253286153d9de9f46e119818b7d5c39bfda6ee",
+      "primary_filename": "freesound_community-gunshot_001-82585.mp3",
+      "base_stem": "freesound_community-gunshot_001-82585",
+      "duplicate_aliases": [
+        "freesound_community-gunshot_001-82585 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "bd6c1dd61e5d8f9866325b2cfc7b10197909b1470bd1e9638e8edce8a39f4313",
+      "primary_filename": "freesound_community-handgun_shot-80212.mp3",
+      "base_stem": "freesound_community-handgun_shot-80212",
+      "duplicate_aliases": [
+        "freesound_community-handgun_shot-80212 (1).mp3",
+        "freesound_community-handgun_shot-80212 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "train"
+    },
+    {
+      "sha256": "fe6a64950602e20f1b7cbaea61883d7e4d54d9ba8334978b94728828fa377380",
+      "primary_filename": "freesound_community-heavymachinegun-6998.mp3",
+      "base_stem": "freesound_community-heavymachinegun-6998",
+      "duplicate_aliases": [
+        "freesound_community-heavymachinegun-6998 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "0c18da2b5ae9dd66e417d502fc4e7af7f0ced6f99c825513cbf59f5ecdfc5ee4",
+      "primary_filename": "freesound_community-machine-guns1-50827.mp3",
+      "base_stem": "freesound_community-machine-guns1-50827",
+      "duplicate_aliases": [
+        "freesound_community-machine-guns1-50827 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "94e7187e8be6f52d3482830536b08a6f9100df299399b79a77e8c6c1e2e96004",
+      "primary_filename": "freesound_community-realistic-gun-fire-100696.mp3",
+      "base_stem": "freesound_community-realistic-gun-fire-100696",
+      "duplicate_aliases": [
+        "freesound_community-realistic-gun-fire-100696 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "7180bbb8acb968836b1c0f116a1bb65230e08e1a31885b9358ed2d35988a4148",
+      "primary_filename": "freesound_community-shots-fired-62748.mp3",
+      "base_stem": "freesound_community-shots-fired-62748",
+      "duplicate_aliases": [
+        "freesound_community-shots-fired-62748 (1).mp3",
+        "freesound_community-shots-fired-62748 (2).mp3",
+        "freesound_community-shots-fired-62748 (3).mp3"
+      ],
+      "duplicate_count": 3,
+      "split": "train"
+    },
+    {
+      "sha256": "592ce78842fd4b690d46e720e5cb0890efea0b4e19bf06c5038df39015f85c61",
+      "primary_filename": "freesound_community-sniper-rifle-firing-2-39885.mp3",
+      "base_stem": "freesound_community-sniper-rifle-firing-2-39885",
+      "duplicate_aliases": [
+        "freesound_community-sniper-rifle-firing-2-39885 (1).mp3",
+        "freesound_community-sniper-rifle-firing-2-39885 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "train"
+    },
+    {
+      "sha256": "ac3b70b5c4a22d6d894bae71a28cca5bb6ec07acdcfd58c5d74111b2947eab7f",
+      "primary_filename": "freesound_community-war-ambience-loop-32930.mp3",
+      "base_stem": "freesound_community-war-ambience-loop-32930",
+      "duplicate_aliases": [
+        "freesound_community-war-ambience-loop-32930 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "21bb10f1c04d5f449be227e6ccf524410f3904567c3d60529ff41f3f80327fca",
+      "primary_filename": "jasonlee3071-firing-range-140155.mp3",
+      "base_stem": "jasonlee3071-firing-range-140155",
+      "duplicate_aliases": [
+        "jasonlee3071-firing-range-140155 (1).mp3",
+        "jasonlee3071-firing-range-140155 (2).mp3"
+      ],
+      "duplicate_count": 2,
+      "split": "train"
+    },
+    {
+      "sha256": "4dd65e296d266189f518aeebf29cd128c2e424732f7f47060875db459da3837c",
+      "primary_filename": "koiroylers-pistal-gun-355832.mp3",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "duplicate_aliases": [
+        "koiroylers-pistal-gun-355832 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "test"
+    },
+    {
+      "sha256": "08d59d0b5dd3f677107f9dffa9296ee60a88e3be00909f32bca11c9a00cfe0e0",
+      "primary_filename": "magiaz-revolver_firing-511498.mp3",
+      "base_stem": "magiaz-revolver_firing-511498",
+      "duplicate_aliases": [
+        "magiaz-revolver_firing-511498 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "4f8562ab32117aae96478f4319cc8d01e9f37039e9998a67a63b9e8f3ecbc227",
+      "primary_filename": "rzalmanialmani-gun-clean-sound-in-mp3-150561.mp3",
+      "base_stem": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+      "duplicate_aliases": [
+        "rzalmanialmani-gun-clean-sound-in-mp3-150561 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "4e12a5c8283f348bb5b3e2179ca73eae7a9eb510bdaf2c5fcbb72caefe89fbdd",
+      "primary_filename": "soundreality-auto-gun-shots-312660.mp3",
+      "base_stem": "soundreality-auto-gun-shots-312660",
+      "duplicate_aliases": [
+        "soundreality-auto-gun-shots-312660 (1).mp3"
+      ],
+      "duplicate_count": 1,
+      "split": "train"
+    },
+    {
+      "sha256": "9fd084c5b67280ec82dedbdb1f88fd6f7276664b5740ace7c2632d0d5876d11d",
+      "primary_filename": "sovetsky_rastov72-aa-12-sound-effect-265676.mp3",
+      "base_stem": "sovetsky_rastov72-aa-12-sound-effect-265676",
+      "duplicate_aliases": [
+        "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+        "sovetsky_rastov72-aa-12-sound-effect-265676 (2).mp3",
+        "sovetsky_rastov72-aa-12-sound-effect-265676 (3).mp3",
+        "sovetsky_rastov72-aa-12-sound-effect-265676 (4).mp3"
+      ],
+      "duplicate_count": 4,
+      "split": "train"
+    }
+  ],
+  "test_split_canonical_events": [
+    {
+      "canonical_event_id": "EV-GUN-0001",
+      "recording_id": "REC-GUN-0001",
+      "base_stem": "49053354-machine-gun-307468",
+      "primary_filename": "49053354-machine-gun-307468.mp3",
+      "sha256": "1787c27af9272f0f0ea79bf388f0c36fdbf92c3a1097549377ba59cc261c7d4b",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.015,
+      "end_time_sec": 1.435,
+      "peak_time_sec": 0.24,
+      "duration_sec": 1.42,
+      "estimated_snr_db": 46.3,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 2,
+      "duplicate_aliases": "[\"49053354-machine-gun-307468 (1).mp3\", \"49053354-machine-gun-307468 (2).mp3\"]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0027",
+      "recording_id": "REC-GUN-0009",
+      "base_stem": "capaholiczsfx-machine-gun-529098",
+      "primary_filename": "capaholiczsfx-machine-gun-529098.mp3",
+      "sha256": "4a105a90ddc7c202c80077accb5f4af8e39af5edacd375f5cfc01d4407276c69",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.63,
+      "peak_time_sec": 0.57,
+      "duration_sec": 1.63,
+      "estimated_snr_db": 86.2,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0047",
+      "recording_id": "REC-GUN-0026",
+      "base_stem": "freesound_community-clean-machine-gun-burst-98224",
+      "primary_filename": "freesound_community-clean-machine-gun-burst-98224.mp3",
+      "sha256": "acc22e1d7fb2d1b0a57e842999386e12409242a338722e719d863239e723c1b7",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.12,
+      "end_time_sec": 1.435,
+      "peak_time_sec": 1.275,
+      "duration_sec": 1.315,
+      "estimated_snr_db": 26.4,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 1,
+      "duplicate_aliases": "[\"freesound_community-clean-machine-gun-burst-98224 (1).mp3\"]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0080",
+      "recording_id": "REC-GUN-0041",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-10-39761",
+      "primary_filename": "freesound_community-gun-shots-from-a-distance-10-39761.mp3",
+      "sha256": "40267c9816627691f06b6634fd5581982708d63f70ae4153bbebf98300e163ea",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.0,
+      "end_time_sec": 2.695,
+      "peak_time_sec": 0.045,
+      "duration_sec": 2.695,
+      "estimated_snr_db": 74.9,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0082",
+      "recording_id": "REC-GUN-0043",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-13-39758",
+      "primary_filename": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+      "sha256": "22c729159a280604a9a83c1abbb5ad945b39fe79fff86a0f2b6b05a61e8248e7",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.0,
+      "end_time_sec": 2.35,
+      "peak_time_sec": 0.18,
+      "duration_sec": 2.35,
+      "estimated_snr_db": 68.6,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0086",
+      "recording_id": "REC-GUN-0047",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "primary_filename": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "sha256": "224aa8e2759c526ebb61189bdbbb5b38c2d62457e7726057a9218c04f418f679",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.015,
+      "end_time_sec": 1.795,
+      "peak_time_sec": 0.135,
+      "duration_sec": 1.78,
+      "estimated_snr_db": 101.4,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 3,
+      "duplicate_aliases": "[\"freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3\", \"freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3\", \"freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3\"]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0107",
+      "recording_id": "REC-GUN-0056",
+      "base_stem": "freesound_community-gunshot-46489",
+      "primary_filename": "freesound_community-gunshot-46489.mp3",
+      "sha256": "8cec9d42261cee62eddd74405feab4198aef9771993ee0195169e6d88bb6aba2",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.12,
+      "end_time_sec": 0.535,
+      "peak_time_sec": 0.165,
+      "duration_sec": 0.415,
+      "estimated_snr_db": 39.9,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0124",
+      "recording_id": "REC-GUN-0067",
+      "base_stem": "freesound_community-machine-gun-burst-43670",
+      "primary_filename": "freesound_community-machine-gun-burst-43670.mp3",
+      "sha256": "3027138bc7e7b130df00e094c50d1362477b8589e98755ced31616562ddc483b",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.435,
+      "peak_time_sec": 0.045,
+      "duration_sec": 1.435,
+      "estimated_snr_db": 27.8,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0174",
+      "recording_id": "REC-GUN-0069",
+      "base_stem": "freesound_community-machinegunloopwav-14862",
+      "primary_filename": "freesound_community-machinegunloopwav-14862.mp3",
+      "sha256": "2df8c28cafb810f157f88f8bc200a83dac279990ee1092cb51c0844633686ad2",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.0,
+      "end_time_sec": 7.465,
+      "peak_time_sec": 1.995,
+      "duration_sec": 7.465,
+      "estimated_snr_db": 73.3,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0192",
+      "recording_id": "REC-GUN-0080",
+      "base_stem": "freesound_community-uzi-burst-100582",
+      "primary_filename": "freesound_community-uzi-burst-100582.mp3",
+      "sha256": "781dc123f5592de1bc752664508b197cb03a6d210bb6eaf851c471d7ada5abd9",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.075,
+      "end_time_sec": 1.195,
+      "peak_time_sec": 1.035,
+      "duration_sec": 1.12,
+      "estimated_snr_db": 88.9,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0207",
+      "recording_id": "REC-GUN-0086",
+      "base_stem": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716",
+      "primary_filename": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716.mp3",
+      "sha256": "bcfe7518553743833f422a3e4f992e84b4594e372b00940bc4cfbdcb5d710b01",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.12,
+      "end_time_sec": 2.695,
+      "peak_time_sec": 0.66,
+      "duration_sec": 2.575,
+      "estimated_snr_db": 55.0,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0209",
+      "recording_id": "REC-GUN-0088",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "primary_filename": "koiroylers-pistal-gun-355832.mp3",
+      "sha256": "4dd65e296d266189f518aeebf29cd128c2e424732f7f47060875db459da3837c",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.18,
+      "end_time_sec": 1.945,
+      "peak_time_sec": 0.225,
+      "duration_sec": 1.765,
+      "estimated_snr_db": 53.4,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 1,
+      "duplicate_aliases": "[\"koiroylers-pistal-gun-355832 (1).mp3\"]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0214",
+      "recording_id": "REC-GUN-0093",
+      "base_stem": "magiaz-shot-458506",
+      "primary_filename": "magiaz-shot-458506.mp3",
+      "sha256": "51ac62a0fea8c59c2ab843f22beb55e59b5b422938326f9fc6259080c1254540",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.0,
+      "end_time_sec": 1.765,
+      "peak_time_sec": 0.045,
+      "duration_sec": 1.765,
+      "estimated_snr_db": 78.9,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0216",
+      "recording_id": "REC-GUN-0095",
+      "base_stem": "pwlpl-semi-automatic-weapon-sound-effect-359246",
+      "primary_filename": "pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "sha256": "35baf28d5389900a20e1386eb0d6d6e608b3020c286ac9624072d00bf9e7207c",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.495,
+      "end_time_sec": 5.845,
+      "peak_time_sec": 2.415,
+      "duration_sec": 5.35,
+      "estimated_snr_db": 75.7,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0230",
+      "recording_id": "REC-GUN-0102",
+      "base_stem": "soundreality-gun-shot-341144",
+      "primary_filename": "soundreality-gun-shot-341144.mp3",
+      "sha256": "1fa25252a5989c121b251215a3b28cee45bdd4f986d439782d4df093a7146776",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.09,
+      "end_time_sec": 1.375,
+      "peak_time_sec": 0.15,
+      "duration_sec": 1.285,
+      "estimated_snr_db": 100.2,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0232",
+      "recording_id": "REC-GUN-0104",
+      "base_stem": "sovetsky_rastov72-m240-sound-effect-331683",
+      "primary_filename": "sovetsky_rastov72-m240-sound-effect-331683.mp3",
+      "sha256": "67aff88f30541819b269b0d04774d799813853076fa80c0dab1cae8946ff9e2a",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.36,
+      "end_time_sec": 1.075,
+      "peak_time_sec": 0.435,
+      "duration_sec": 0.715,
+      "estimated_snr_db": 37.8,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    },
+    {
+      "canonical_event_id": "EV-GUN-0235",
+      "recording_id": "REC-GUN-0108",
+      "base_stem": "u_b6hqzcpu1z-handgun-sound-effect-432110",
+      "primary_filename": "u_b6hqzcpu1z-handgun-sound-effect-432110.mp3",
+      "sha256": "fcfbdb418bb6493f4e942f25ce0d4ca93e38cb7c88a8fcd645cdf7521fd5e950",
+      "split": "test",
+      "event_index": 1,
+      "start_time_sec": 0.36,
+      "end_time_sec": 0.91,
+      "peak_time_sec": 0.405,
+      "duration_sec": 0.55,
+      "estimated_snr_db": 91.5,
+      "confidence": 0.99,
+      "duplicate_aliases_count": 0,
+      "duplicate_aliases": "[]",
+      "verification_method": "sha256_bit_exact_provenance_and_spectral_verification"
+    }
+  ]
+}

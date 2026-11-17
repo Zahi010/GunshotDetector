@@ -1,0 +1,64 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_23_FIRST_50_HOUR_NEGATIVE_EXPOSURE_BENCHMARK",
+  "archive_filename": "gunshot_detection_phase23.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase23.zip",
+  "archive_size_bytes": 8194616,
+  "archive_sha256": "5ce4e64715829d9b52111b6d6322f251976e1ce99e829d9dfbe0858a7e1644c8",
+  "total_archive_entries": 123,
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "negative_exposure_summary": {
+    "target_exposure_hours": 50.0,
+    "achieved_verified_natural_exposure_hours": 6.6149,
+    "shortfall_hours": 43.3851,
+    "total_verified_natural_streams": 17,
+    "total_independent_campaigns": 3,
+    "phase_14_balanced": {
+      "total_alerts": 56,
+      "eligible_rate_alerts_per_hr": 8.4657,
+      "garwood_95_ci_per_hr": [
+        6.3949,
+        10.9935
+      ],
+      "mtbfa_minutes": 7.1
+    },
+    "phase_17_experimental": {
+      "total_alerts": 51,
+      "eligible_rate_alerts_per_hr": 7.7066,
+      "garwood_95_ci_per_hr": [
+        5.7381,
+        10.1328
+      ],
+      "mtbfa_minutes": 7.8
+    },
+    "wilcoxon_paired_recording_level_p_value": 0.125,
+    "model_promotion_determination": "INCONCLUSIVE (Retain Phase 14 Balanced Baseline)"
+  },
+  "key_deliverables": [
+    "reports/phase23_final_report.md",
+    "reports/phase23_source_shortlist.md",
+    "reports/phase23_source_registry.csv",
+    "reports/phase23_recording_provenance.csv",
+    "reports/phase23_duplicate_audit.csv",
+    "reports/phase23_source_eligibility_report.md",
+    "reports/phase23_exposure_accounting.csv",
+    "reports/phase23_negative_audio_results.csv",
+    "reports/phase23_model_comparison.md",
+    "reports/phase23_baseline_freeze.json",
+    "reports/phase23_processing_manifest.json",
+    "reports/phase23_risk_and_limitation_register.md",
+    "reports/phase23_test_results.txt",
+    "tests/test_phase23_ingestion.py",
+    "scripts/reproduce_phase23_analysis.py"
+  ]
+}

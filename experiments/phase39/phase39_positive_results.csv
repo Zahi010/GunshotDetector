@@ -1,0 +1,7 @@
+condition_id,architecture_profile,total_positive_clips,clip_level_detected_tp,clip_level_false_negatives,clip_level_recall,clip_recall_95_ci_lower,clip_recall_95_ci_upper,duplicate_alerts_count,total_emitted_alerts_on_tp,duplicate_alert_rate,duplicate_alert_rate_formula
+COND1,Phase 14 Balanced Baseline,120,74,46,0.6167,0.5235,0.7039,28,102,0.2745,duplicate_alerts / (tp_clips + duplicate_alerts)
+COND2,Phase 17 Experimental Frozen Profile,120,92,28,0.7667,0.6807,0.839,26,118,0.2203,duplicate_alerts / (tp_clips + duplicate_alerts)
+COND3,Phase 17 State Reset Candidate,120,77,43,0.6417,0.549,0.7271,22,99,0.2222,duplicate_alerts / (tp_clips + duplicate_alerts)
+COND4,Phase 36 Raw State Machine,120,77,43,0.6417,0.549,0.7271,13,90,0.1444,duplicate_alerts / (tp_clips + duplicate_alerts)
+COND5,Phase 36 Legacy Suppression,120,77,43,0.6417,0.549,0.7271,13,90,0.1444,duplicate_alerts / (tp_clips + duplicate_alerts)
+COND6,Phase 36 Conservative Suppression,120,77,43,0.6417,0.549,0.7271,13,90,0.1444,duplicate_alerts / (tp_clips + duplicate_alerts)

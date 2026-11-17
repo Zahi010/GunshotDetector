@@ -1,0 +1,184 @@
+{
+  "audit_timestamp": "2026-10-29T09:41:57Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "device_tested": {
+    "device_id": 1,
+    "device_name": "Microphone (Realtek(R) Audio)",
+    "native_sample_rate": 44100,
+    "channels_recorded": 2,
+    "blocksize_frames": 2048,
+    "nominal_block_duration_ms": 46.44
+  },
+  "capture_session": {
+    "target_duration_sec": 5.0,
+    "elapsed_wall_time_sec": 5.42,
+    "measured_audio_duration_sec": 3.99,
+    "total_samples_captured": 176128,
+    "total_blocks_processed": 86,
+    "dropped_frames": 4096,
+    "clipping_events": 0
+  },
+  "acoustic_measurements": {
+    "min_amplitude": -0.0516357421875,
+    "max_amplitude": 0.054931640625,
+    "peak_amplitude": 0.054931640625,
+    "rms_amplitude": 0.0038005008827894926,
+    "rms_dbfs": -48.4,
+    "crest_factor_db": 23.2,
+    "ambient_noise_profile": "Quiet interior ambient room"
+  },
+  "buffer_and_timing_stability": {
+    "mean_callback_interval_ms": 57.75,
+    "p95_callback_interval_ms": 118.03,
+    "max_callback_interval_ms": 556.31,
+    "callback_jitter_ms": 11.31
+  },
+  "streaming_inference_telemetry": {
+    "median_cpu_processing_time_ms": 0.47,
+    "p95_cpu_processing_time_ms": 117.68,
+    "alerts_triggered_on_ambient": 0,
+    "final_stream_time_sec": 3.36
+  },
+  "available_hardware_devices": [
+    {
+      "device_id": 0,
+      "name": "Microsoft Sound Mapper - Input",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 0
+    },
+    {
+      "device_id": 1,
+      "name": "Microphone (Realtek(R) Audio)",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 0
+    },
+    {
+      "device_id": 5,
+      "name": "Primary Sound Capture Driver",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 1
+    },
+    {
+      "device_id": 6,
+      "name": "Microphone (Realtek(R) Audio)",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 1
+    },
+    {
+      "device_id": 12,
+      "name": "Microphone (Realtek(R) Audio)",
+      "max_channels": 2,
+      "default_sr": 48000.0,
+      "hostapi": 2
+    },
+    {
+      "device_id": 16,
+      "name": "PC Speaker (Realtek HD Audio output with HAP)",
+      "max_channels": 2,
+      "default_sr": 48000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 17,
+      "name": "Mic in at front panel (black) (Mic in at front panel (black))",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 18,
+      "name": "Microphone (Realtek HD Audio Mic input)",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 19,
+      "name": "Stereo Mix (Realtek HD Audio Stereo input)",
+      "max_channels": 2,
+      "default_sr": 48000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 20,
+      "name": "Input ()",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 23,
+      "name": "Input (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(HUAWEI nova 3e))",
+      "max_channels": 1,
+      "default_sr": 8000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 26,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(Airdopes Atom 81 Pro))",
+      "max_channels": 1,
+      "default_sr": 8000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 28,
+      "name": "Input (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(BINT YASIR))",
+      "max_channels": 1,
+      "default_sr": 8000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 31,
+      "name": "Input (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(Zahi's S21 FE))",
+      "max_channels": 1,
+      "default_sr": 8000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 32,
+      "name": "Input ()",
+      "max_channels": 8,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 35,
+      "name": "Input ()",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 38,
+      "name": "Headset (@System32\\drivers\\bthhfenum.sys,#2;%1 Hands-Free%0\r\n;(OnePlus Bullets Wireless Z))",
+      "max_channels": 1,
+      "default_sr": 8000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 40,
+      "name": "Input (@System32\\drivers\\bthhfenum.sys,#4;%1 Hands-Free HF Audio%0\r\n;(OnePlus 9 Pro 5G))",
+      "max_channels": 1,
+      "default_sr": 8000.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 41,
+      "name": "Input ()",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    },
+    {
+      "device_id": 42,
+      "name": "Input ()",
+      "max_channels": 2,
+      "default_sr": 44100.0,
+      "hostapi": 3
+    }
+  ]
+}

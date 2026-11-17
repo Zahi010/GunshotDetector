@@ -1,0 +1,7 @@
+condition_id,architecture_profile,total_reviewed_clips,triggered_clips_count,overall_trigger_rate,trigger_rate_95_ci_lower,trigger_rate_95_ci_upper,fireworks_trigger_rate,thunder_explosion_trigger_rate,animal_bark_trigger_rate,aircraft_trigger_rate,door_slam_trigger_rate,tools_impact_trigger_rate
+COND1,Phase 14 Balanced Baseline,120,16,0.1333,0.0782,0.2075,0.4,0.25,0.0,0.15,0.0,0.0
+COND2,Phase 17 Experimental Frozen Profile,120,35,0.2917,0.2123,0.3816,0.6,0.55,0.05,0.2,0.3,0.05
+COND3,Phase 17 State Reset Candidate,120,20,0.1667,0.1049,0.2456,0.55,0.3,0.0,0.15,0.0,0.0
+COND4,Phase 36 Raw State Machine,120,22,0.1833,0.1186,0.2643,0.55,0.3,0.05,0.15,0.05,0.0
+COND5,Phase 36 Legacy Suppression,120,22,0.1833,0.1186,0.2643,0.55,0.3,0.05,0.15,0.05,0.0
+COND6,Phase 36 Conservative Suppression,120,22,0.1833,0.1186,0.2643,0.55,0.3,0.05,0.15,0.05,0.0

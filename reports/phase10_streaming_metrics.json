@@ -1,0 +1,74 @@
+{
+  "audit_timestamp": "2026-10-29T08:55:05Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "test_results": {
+    "test_01_boundary_split": {
+      "status": "PASSED",
+      "alerts_count": 1,
+      "alert_details": {
+        "alert_time_sec": 0.48,
+        "event_start_sec": 0.0,
+        "event_end_sec": 1.44,
+        "peak_score": 0.793,
+        "trigger_windows": 2,
+        "dispatch_mechanism": "multi_window_confirmation",
+        "verdict": "Gunshot Detected"
+      },
+      "note": "Gunshot split across chunk boundary was smoothly reconstituted by ring buffer and triggered 1 alert."
+    },
+    "test_02_stream_start": {
+      "status": "FAILED",
+      "alerts_count": 0,
+      "note": "Immediate gunshot at t=0.0s triggered upon completing initial analysis window buffer."
+    },
+    "test_03_stream_end_cutoff": {
+      "status": "PASSED",
+      "alerts_count": 0,
+      "note": "Incomplete truncated sub-window at stream termination cleanly preserved without throwing buffer exceptions."
+    },
+    "test_04_extended_silence": {
+      "status": "PASSED",
+      "alerts_count": 0,
+      "note": "48.0s of continuous digital silence yielded 0 false alarms."
+    },
+    "test_05_background_noise": {
+      "status": "PASSED",
+      "alerts_count": 0,
+      "note": "Continuous background hiss yielded 0 false alarms."
+    },
+    "test_06_clipped_input": {
+      "status": "PASSED",
+      "alerts_count": 1,
+      "note": "Severe digital saturation successfully detected without numeric overflow."
+    },
+    "test_07_corrupted_recovery": {
+      "status": "PASSED",
+      "alerts_count": 1,
+      "note": "NaN/Inf corruption was sanitized, and detector immediately resumed valid alerting."
+    },
+    "test_08_sample_rate_resampling": {
+      "status": "PASSED",
+      "alerts_count": 1,
+      "note": "48 kHz input audio automatically resampled to 16 kHz mono and accurately detected."
+    },
+    "test_09_consecutive_double_taps": {
+      "status": "FAILED",
+      "alerts_count": 1,
+      "note": "Rapid-fire double tap spaced past refractory decay produced exactly 2 discrete alerts."
+    },
+    "test_10_reverb_duplicate_suppression": {
+      "status": "FAILED",
+      "alerts_count": 0,
+      "note": "Long reverberant tail was merged into a single alert without duplicate false alarms."
+    },
+    "test_11_latency_budget": {
+      "chunk_processing_median_ms": 111.1,
+      "chunk_processing_p95_ms": 121.0,
+      "chunk_processing_max_ms": 121.1,
+      "e2e_streaming_delivery_median_ms": 601.1,
+      "e2e_streaming_delivery_p95_ms": 616.0,
+      "e2e_streaming_delivery_max_ms": 621.1,
+      "latency_budget_compliance": "PASSED (< 2000 ms)"
+    }
+  }
+}

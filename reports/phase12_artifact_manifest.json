@@ -1,0 +1,68 @@
+{
+  "audit_phase": "Phase 12",
+  "audit_timestamp": "2026-10-29T10:57:28Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "environment": {
+    "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "win32"
+  },
+  "model_bundle_artifacts": {
+    "catboost_model.joblib": "a34d2d80e2815b56c6de4fc6ba784f9bea4f35add2ab351be3e66df4b47d40b9",
+    "classifier_head.keras": "1142278dd5848f0344433448af4185f5ea1f987f6109a297e1b774c9001fba8a",
+    "lightgbm_model.joblib": "3de5e30a6c869f22d1cf98e77533b7497fa9553a67c2476b84314f91bc997fb3",
+    "xgboost_model.joblib": "fd1aeccd5666da10dab4aebd3c6cf30ca7b3124237860b5325b176933cd5aa69",
+    "threshold.json": "6dcd1b4a942463c85e62dbad8f44fa65d86eac8e1746a45c45b4719feb801ecd",
+    "model_config.json": "fdeb8551a21f74a121aa47603465b441f0d978653c2a8668e3c48a8b6d98f81b"
+  },
+  "deployment_archives": {
+    "phase8_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase8.zip",
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "size_bytes": 485193859,
+      "integrity_testzip": "PASSED",
+      "historical_immutability": "VERIFIED_MATCH"
+    },
+    "phase9_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase9.zip",
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "size_bytes": 865883024,
+      "integrity_testzip": "PASSED",
+      "historical_immutability": "VERIFIED_MATCH"
+    },
+    "phase10_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase10.zip",
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "size_bytes": 865952822,
+      "integrity_testzip": "PASSED",
+      "historical_immutability": "VERIFIED_MATCH"
+    },
+    "phase11_zip": {
+      "path": "e:\\gunshot\\gunshot_detection_phase11.zip",
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "size_bytes": 865990752,
+      "integrity_testzip": "PASSED",
+      "historical_immutability": "VERIFIED_MATCH"
+    },
+    "phase12_zip": {
+      "path": "E:\\gunshot\\gunshot_detection_phase12.zip",
+      "sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a",
+      "size_bytes": 1099676680,
+      "file_count": 2900,
+      "integrity_testzip": "PASSED"
+    }
+  },
+  "manifest_artifacts": {
+    "phase10_evaluation_manifest.csv": "1890fa151db28211e72464aee37ff79b0b513496731e49e0c061423d06164f17",
+    "phase11_field_collection_manifest.csv": "554b18049eca409c33510b0c857ea5aae9ed1ef8e808acc59bf1235931336c4b",
+    "phase12_independent_eval_manifest.csv": "621c6319fe7d3f648de3d902beff324595cc0a29b83a2808e1203856433ca657"
+  },
+  "reports_artifacts": {
+    "phase12_dataset_inventory.md": "952775bf01cab2ad7ddb9fc6f6ceb9eb1c504b5f0331f5c51efde417714835c0",
+    "phase12_existing_data_provenance.json": "e6dfefb6511d8d1f787c6d0c4ab204f6a6481b363b3101b47a4e4071fabe50cf",
+    "phase12_duplicate_and_overlap_audit.json": "0b88ef395fb360b58cd93d5104aec69b74559fbf1825c0c2488831b5c16158ad",
+    "phase12_annotation_protocol.md": "d98508865582a816a0603bd80ea10ee14c8b0084a36b517224418335e194e946",
+    "phase12_annotation_quality.json": "8f9a9a657a9ec06ed114a080672a17f5fcbc845bb91ed90532f2b459780a7ec0",
+    "phase12_evaluation_results.json": "b87123033db730dfa9effcd93fdbcbc1d085a7a200062b30a5277c84b842579e",
+    "phase12_final_report.md": "c770e58cf9a669570babe89bc3066e6c6560bed6c62c153a89a34594fc8c2c5b"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_30_CAMPAIGN_EXPANSION_INSTRUMENTED_INFERENCE_PROSPECTIVE_VALIDATION",
+  "timestamp_iso": "2026-11-15T13:30:00Z",
+  "benchmark_summary": {
+    "total_independent_campaigns": 4,
+    "total_verified_continuous_recordings": 23,
+    "gross_monitored_seconds": 45525.575,
+    "gross_monitored_hours": 12.646,
+    "phase14_observed_alerts": 128,
+    "phase17_observed_alerts": 159,
+    "net_alert_difference_p17_minus_p14": 31,
+    "phase14_convention_a_far": 10.179,
+    "phase17_convention_a_far": 12.6612,
+    "phase14_convention_b_far": 10.2237,
+    "phase17_convention_b_far": 14.6243
+  },
+  "statistical_tests": {
+    "stream_level_tied_recordings": 15,
+    "stream_level_favoring_phase14": 5,
+    "stream_level_favoring_phase17": 3,
+    "paired_wilcoxon_statistic_w": 8.0,
+    "paired_wilcoxon_p_exact": 0.1953125,
+    "sign_test_two_sided_p_exact": 0.7265625,
+    "campaign_level_favoring_phase17": 3,
+    "campaign_level_favoring_phase14": 1,
+    "g4_small_sample_power_limitation": "EXACT_TWO_SIDED_SIGN_TEST_MIN_P_0.125_CANNOT_REACH_0.05"
+  },
+  "instrumented_inference_audit": {
+    "instrumented_wrapper_file": "gunshot/instrumented_detector.py",
+    "evaluated_recordings_count": 6,
+    "total_sub_windows_logged": 44994,
+    "phase14_invariance_alert_count": 72,
+    "phase17_invariance_alert_count": 108,
+    "invariance_deviation_seconds": 0.0,
+    "invariance_status": "EXACT_MATHEMATICAL_IDENTITY_VERIFIED"
+  },
+  "aircraft_suppression_mechanism_resolution": {
+    "candidate_sequences_evaluated": 25,
+    "confirmed_animal_suppression_fragmentation": 11,
+    "partially_confirmed_animal_active_no_direct_drop": 5,
+    "not_observed_pure_acoustic_fluctuation": 9,
+    "core_mechanism_conclusion": "Animal suppression attenuating score by 0.30x accounts for 11 out of 25 fragmentation episodes (44%). In addition, the lack of active_cluster clearing in Phase 17 state machine allows delayed multi-minute cross-interval accumulation."
+  },
+  "baseline_decision": {
+    "default_research_baseline": "Phase 14 Balanced (RETAINED)",
+    "selectable_experimental_profile": "Phase 17 Experimental (PROMOTION_REJECTED)",
+    "rationale": "Phase 14 maintains lower cumulative false alert rates across 12.65 hours, generates 36 fewer alerts in aviation distractor environments, exhibits 14x less cooldown dead-time under Convention B, and contains a verified stable state machine."
+  }
+}

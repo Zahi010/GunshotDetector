@@ -1,0 +1,6 @@
+comparison,model_a,model_b,both_detected,model_a_only,model_b_only,neither_detected,total_discordant,unadjusted_exact_mcnemar_p_value,absolute_recall_difference_pp,paired_diff_95_ci_lower_pp,paired_diff_95_ci_upper_pp,recording_level_mean_diff_pp,recording_level_wilcoxon_p_value,position_level_gain_range,holm_adjusted_p_value,statistically_significant_unadjusted_05,statistically_significant_holm_05
+Phase 14 Balanced vs Phase 13 Balanced,phase_14_balanced,phase_13_balanced,13,14,3,20,17,0.01273,-22.0,-36.97,-7.03,-21.67,0.05469,[-6 to +0],0.06363,True,False
+Phase 14 Balanced vs Phase 17 Experimental,phase_14_balanced,phase_17_experimental,27,0,6,17,6,0.03125,12.0,2.99,21.01,13.33,0.0625,[+0 to +3],0.125,True,False
+Phase 14 Balanced vs Phase 14 High-Sensitivity,phase_14_balanced,phase_14_hs,22,5,0,23,5,0.0625,-10.0,-18.32,-1.68,-11.67,0.25,[-4 to +0],0.1875,False,False
+Phase 14 Balanced vs Phase 14 High-Precision,phase_14_balanced,phase_14_hp,22,5,2,21,7,0.45312,-6.0,-16.24,4.24,-5.0,0.625,[-3 to +2],0.90625,False,False
+Phase 14 Balanced vs Phase 9 Balanced,phase_14_balanced,phase_9_balanced,25,2,3,20,5,1.0,2.0,-6.75,10.75,5.0,0.5,[-2 to +2],1.0,False,False

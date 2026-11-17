@@ -1,0 +1,16 @@
+stream_filename,description,duration_hours,v9_alerts,v9_alerts_per_hr,v10_alerts,v10_alerts_per_hr
+phase17_urban_exterior_plaza_30min.wav,Phase 17 Urban Exterior Plaza,0.09,0,0.0,0,0.0
+phase17_urban_exterior_terrace_30min.wav,Phase 17 Urban Exterior Terrace,0.09,0,0.0,0,0.0
+phase17_urban_exterior_walkway_30min.wav,Phase 17 Urban Exterior Walkway,0.1,0,0.0,0,0.0
+phase17_urban_interior_arcade_30min.wav,Phase 17 Urban Interior Arcade,0.11,0,0.0,0,0.0
+phase17_urban_interior_commercial_30min.wav,Phase 17 Urban Interior Commercial,0.09,0,0.0,0,0.0
+phase17_urban_interior_hall_30min.wav,Phase 17 Urban Interior Hall,0.09,0,0.0,0,0.0
+1_AUDIO_16k.wav,Phase 27 AeroSonic Aviation YPAD 01,1.0,0,0.0,0,0.0
+2_AUDIO_16k.wav,Phase 27 AeroSonic Aviation YPAD 02,1.0,1,1.0,1,1.0
+3_AUDIO_16k.wav,Phase 27 AeroSonic Aviation YPAD 03,1.0,0,0.0,0,0.0
+4_AUDIO_16k.wav,Phase 27 AeroSonic Aviation YPAD 04,1.0,1,1.0,1,1.0
+5_AUDIO_16k.wav,Phase 27 AeroSonic Aviation YPAD 05,1.0,3,3.0,3,3.0
+6_AUDIO_16k.wav,Phase 27 AeroSonic Aviation YPAD 06,1.0,0,0.0,0,0.0
+continuous_stream_01_urban_transit_sirens_1hr.wav,Phase 8 Urban Transit & Sirens,1.0,1,1.0,1,1.0
+continuous_stream_02_domestic_interior_transients_1hr.wav,Phase 8 Domestic Interior Transients,1.0,0,0.0,0,0.0
+continuous_stream_03_outdoor_natural_ambience_1hr.wav,Phase 8 Outdoor Natural Ambience,1.0,1,1.0,1,1.0

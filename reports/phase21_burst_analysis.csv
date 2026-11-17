@@ -1,0 +1,21 @@
+stream_id,firing_position,test_id,sequence_type,firearm_caliber,round_count,first_round_timestamp_s,last_round_timestamp_s,burst_total_duration_s,inter_shot_intervals_s,phase_14_detected_rounds,phase_17_detected_rounds,round_gain,phase_14_first_round_detected,phase_17_first_round_detected,phase_14_trailing_detected_count,phase_17_trailing_detected_count,phase_14_incident_detected,phase_17_incident_detected,incident_gain,cooldown_window_conflict,cooldown_interaction_diagnosis,duplicate_alerts_observed
+P19-CAT-A-FP1-test_001,FP1,test_001,3_ROUND_BURST,.45 ACP Handgun,3,2.543,4.816,2.273,1.104; 1.169,1,1,0,False,False,1,1,True,True,0,False,BURST_SPAN_EXCEEDS_COOLDOWN,False
+P19-CAT-A-FP1-test_004,FP1,test_004,SINGLE_SHOT,.45 ACP Handgun,1,3.562,3.562,0.0,N/A_SINGLE_SHOT,0,1,1,False,True,0,0,False,True,1,False,NOT_APPLICABLE_SINGLE_SHOT,False
+P19-CAT-A-FP1-test_007,FP1,test_007,3_ROUND_BURST,.40 S&W Handgun,3,4.287,5.793,1.506,0.809; 0.697,1,1,0,True,True,0,0,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP1-test_013,FP1,test_013,3_ROUND_BURST,9x19mm Handgun,3,3.763,4.895,1.132,0.387; 0.745,0,1,1,False,True,0,0,False,True,1,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP2-test_019,FP2,test_019,3_ROUND_BURST,.45 ACP Handgun,3,2.476,4.162,1.686,0.652; 1.034,1,1,0,False,False,1,1,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP2-test_022,FP2,test_022,SINGLE_SHOT,.45 ACP Handgun,1,2.602,2.602,0.0,N/A_SINGLE_SHOT,1,1,0,True,True,0,0,True,True,0,False,NOT_APPLICABLE_SINGLE_SHOT,False
+P19-CAT-A-FP2-test_025,FP2,test_025,3_ROUND_BURST,.40 S&W Handgun,3,2.566,3.887,1.321,0.721; 0.6,1,1,0,False,False,1,1,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP2-test_031,FP2,test_031,3_ROUND_BURST,9x19mm Handgun,3,2.246,3.509,1.263,0.592; 0.671,3,3,0,True,True,2,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP3-test_037,FP3,test_037,3_ROUND_BURST,.45 ACP Handgun,3,2.828,4.44,1.612,0.768; 0.844,2,3,1,False,True,2,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP3-test_040,FP3,test_040,SINGLE_SHOT,.45 ACP Handgun,1,3.139,3.139,0.0,N/A_SINGLE_SHOT,1,1,0,True,True,0,0,True,True,0,False,NOT_APPLICABLE_SINGLE_SHOT,False
+P19-CAT-A-FP3-test_043,FP3,test_043,3_ROUND_BURST,.40 S&W Handgun,3,3.633,4.743,1.11,0.556; 0.554,3,3,0,True,True,2,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP3-test_049,FP3,test_049,3_ROUND_BURST,9x19mm Handgun,3,3.162,4.459,1.297,0.704; 0.593,0,0,0,False,False,0,0,False,False,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP4-test_055,FP4,test_055,3_ROUND_BURST,.45 ACP Handgun,3,3.304,4.603,1.299,0.732; 0.567,2,3,1,True,True,1,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP4-test_058,FP4,test_058,SINGLE_SHOT,.45 ACP Handgun,1,3.021,3.021,0.0,N/A_SINGLE_SHOT,1,1,0,True,True,0,0,True,True,0,False,NOT_APPLICABLE_SINGLE_SHOT,False
+P19-CAT-A-FP4-test_061,FP4,test_061,3_ROUND_BURST,.40 S&W Handgun,3,3.108,4.359,1.251,0.575; 0.676,3,3,0,True,True,2,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP4-test_067,FP4,test_067,3_ROUND_BURST,9x19mm Handgun,3,3.786,4.846,1.06,0.525; 0.535,0,2,2,False,True,0,1,False,True,1,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP5-test_127,FP5,test_127,3_ROUND_BURST,.45 ACP Handgun,3,3.008,3.821,0.813,0.426; 0.387,0,0,0,False,False,0,0,False,False,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP5-test_130,FP5,test_130,SINGLE_SHOT,.45 ACP Handgun,1,3.11,3.11,0.0,N/A_SINGLE_SHOT,1,1,0,True,True,0,0,True,True,0,False,NOT_APPLICABLE_SINGLE_SHOT,False
+P19-CAT-A-FP5-test_133,FP5,test_133,3_ROUND_BURST,.40 S&W Handgun,3,3.343,4.232,0.889,0.459; 0.43,3,3,0,True,True,2,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False
+P19-CAT-A-FP5-test_139,FP5,test_139,3_ROUND_BURST,9x19mm Handgun,3,2.833,3.905,1.072,0.547; 0.525,3,3,0,True,True,2,2,True,True,0,True,BURST_INTERVAL_WITHIN_2.0S_COOLDOWN,False

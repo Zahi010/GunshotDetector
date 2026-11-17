@@ -1,0 +1,23 @@
+source_provenance,total_recordings,positives_total,v6_pos_detected,v6_pos_recall_pct,v7_pos_detected,v7_pos_recall_pct,v8_pos_detected,v8_pos_recall_pct,negatives_total,v6_false_alarms,v6_fpr_pct,v7_false_alarms,v7_fpr_pct,v8_false_alarms,v8_fpr_pct
+Curated Hard Negative Corpus (balloon_burst),12,0,0,,0,,0,,12,12,100.0,12,100.0,12,100.0
+Curated Hard Negative Corpus (door_slam),12,0,0,,0,,0,,12,0,0.0,1,8.33,8,66.67
+Curated Hard Negative Corpus (fireworks),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+Curated Hard Negative Corpus (laser_contact_mic),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+Curated Hard Negative Corpus (metal_hammer_impact),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+Curated Hard Negative Corpus (percussion_transient),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+Curated Hard Negative Corpus (thunder_rumble),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+Curated Hard Negative Corpus (toy_gun_pop),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+Curated Hard Negative Corpus (vehicle_backfire),12,0,0,,0,,0,,12,0,0.0,0,0.0,0,0.0
+ESC-50 Class 39 (Untouched Folds 1-3),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_coughing),20,0,0,,0,,0,,20,1,5.0,2,10.0,3,15.0
+ESC-50 Dataset (mimic_crying_baby),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_dog_bark),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_emergency_siren),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_footsteps),20,0,0,,0,,0,,20,1,5.0,1,5.0,1,5.0
+ESC-50 Dataset (mimic_helicopter_rotor),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_pouring_water),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_rooster_call),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+ESC-50 Dataset (mimic_sea_waves),20,0,0,,0,,0,,20,0,0.0,0,0.0,0,0.0
+Mitchell Roberts Ballistic Archive (Phase 8 Final Eval),43,43,23,53.49,27,62.79,28,65.12,0,0,,0,,0,
+Mitchell Roberts GunshotClassifier (Phase 7 Independent Test),19,19,11,57.89,14,73.68,15,78.95,0,0,,0,,0,
+ShotSpotter Research Archive (Phase 7 Independent Test),3,3,1,33.33,3,100.0,2,66.67,0,0,,0,,0,

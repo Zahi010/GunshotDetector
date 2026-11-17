@@ -1,0 +1,44 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Feature extraction & training caches
+.cache_features/
+.cache_features_phase2/
+catboost_info/
+*.pkl
+*.npy
+*.npz
+scratch/*.joblib
+
+# Large audio data & media files (Exceeds GitHub 100MB limit and repo recommendations)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.aif
+*.aiff
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Retain dataset metadata & manifests
+!data/manifests/
+!data/manifests/**
+!configs/
+!configs/**
+
+# Saved live alert audio captures
+saved_alerts/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/

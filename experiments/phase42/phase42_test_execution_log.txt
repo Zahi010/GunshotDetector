@@ -1,0 +1,24 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 15 items
+
+gunshot/tests/test_phase42_audit.py::TestPhase42SafetyAndProtocol::test_mandatory_safety_designation_in_reports PASSED [  6%]
+gunshot/tests/test_phase42_audit.py::TestDetectorModelFreezeHashes::test_detector_freeze_integrity PASSED [ 13%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamAContinuousDenominator::test_continuous_reconciliation_csv_exists_and_valid PASSED [ 20%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamAContinuousDenominator::test_stream_level_results_table PASSED [ 26%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamBFireworksReconciliation::test_fireworks_decision_counts PASSED [ 33%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamBFireworksReconciliation::test_candidate_defect_identification PASSED [ 40%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamCConfidenceIntervals::test_physical_rate_non_negativity PASSED [ 46%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamCConfidenceIntervals::test_rate_difference_ci_contains_zero PASSED [ 53%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamDRecordistAnalysis::test_recordist_counts_and_clusters PASSED [ 60%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamDRecordistAnalysis::test_wilcoxon_identity_explanation PASSED [ 66%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamEPositiveDeduplication::test_deduplication_metrics_and_deltas PASSED [ 73%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamFMechanismValidation::test_counterfactual_crest_audit PASSED [ 80%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamGAuthoritativeBenchmark::test_authoritative_benchmark_completeness PASSED [ 86%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamGAuthoritativeBenchmark::test_discrepancy_register_completeness PASSED [ 93%]
+gunshot/tests/test_phase42_audit.py::TestWorkstreamGAuthoritativeBenchmark::test_claim_evidence_matrix_completeness PASSED [100%]
+
+============================= 15 passed in 2.09s ==============================

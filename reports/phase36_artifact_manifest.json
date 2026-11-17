@@ -1,0 +1,145 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_36_EXPERIMENTAL_ACOUSTIC_EVENT_DETECTION_BRANCH",
+  "branch_identifier": "PHASE36_EXPERIMENTAL_EVENT_STATE_BRANCH_V1",
+  "release_archive": {
+    "file_name": "gunshot_detection_phase36.zip",
+    "destination_path": "E:/gunshot/gunshot_detection_phase36.zip",
+    "size_bytes": 135373,
+    "sha256": "901a15a3d3966e38c42d21ca8cb1c60755908785a088f9ecb63f89a81d101327"
+  },
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "role": "Default Research Baseline (strictly retained)"
+  },
+  "evaluation_summary": {
+    "total_evaluation_recordings": 87,
+    "partitions": {
+      "continuous_negative": "4 streams (5.0 gross hours)",
+      "controlled_positive": "20 streams (53 annotated ballistic rounds)",
+      "reviewed_distractors": "60 curated forensic distractor clips"
+    },
+    "conditions_evaluated": 6,
+    "phase14_recall": 0.5283,
+    "phase36_raw_recall": 0.5283,
+    "phase36_conservative_recall": 0.5283
+  },
+  "artifacts": {
+    "README.md": {
+      "relative_path": "README.md",
+      "size_bytes": 8886,
+      "sha256": "0c4d712e7bd06afbaa3acef11a3e289ec8cab670feac8d00743d1095a1415a76"
+    },
+    "app.py": {
+      "relative_path": "app.py",
+      "size_bytes": 20960,
+      "sha256": "f2e881c3a600e7e746efe99db290b3f0a7c689c00ba354712dbe9c36e073475e"
+    },
+    "config.py": {
+      "relative_path": "config.py",
+      "size_bytes": 2619,
+      "sha256": "55749f9d46d561d131fad374064021b73c08274e2a79954efd08570b029b1858"
+    },
+    "requirements.txt": {
+      "relative_path": "requirements.txt",
+      "size_bytes": 387,
+      "sha256": "09e524f2e80a893c079f8c75298dc61847f8d4de631a0405d1609c6f3ab28f8a"
+    },
+    "feature_extractor.py": {
+      "relative_path": "feature_extractor.py",
+      "size_bytes": 6218,
+      "sha256": "1c665b7c1749de98337da0726627710fffe0dcfa56335291b666ae7abcbae94f"
+    },
+    "model.py": {
+      "relative_path": "model.py",
+      "size_bytes": 19241,
+      "sha256": "ccf8f6c2bcf23ebeeea77ec2fed217c584f2a50497a11c12da9ae48baea11e2b"
+    },
+    "model_phase14.py": {
+      "relative_path": "model_phase14.py",
+      "size_bytes": 23340,
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+    },
+    "model_phase17.py": {
+      "relative_path": "model_phase17.py",
+      "size_bytes": 29067,
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+    },
+    "model_phase17_state_reset_candidate.py": {
+      "relative_path": "experiments/phase31/model_phase17_state_reset_candidate.py",
+      "size_bytes": 29718,
+      "sha256": "c144b917b56532787e2a9198f2cad4a77dc2095b57962f31d11d250a4d5d9ea5"
+    },
+    "config_phase36.json": {
+      "relative_path": "experiments/phase36/config_phase36.json",
+      "size_bytes": 1336,
+      "sha256": "80eb5756f8475fc27a4e3093dfebba2fdd69f7f8e33f493bc42e728e1ebc1f9c"
+    },
+    "event_state_machine.py": {
+      "relative_path": "experiments/phase36/event_state_machine.py",
+      "size_bytes": 24905,
+      "sha256": "a91e9bc6d0ab9ca805817a406857d31e1f482f7d8815b0eaf7fee9075cd23c31"
+    },
+    "acoustic_features.py": {
+      "relative_path": "experiments/phase36/acoustic_features.py",
+      "size_bytes": 9811,
+      "sha256": "e3e47fe8c5ec10b815ea14df30cf745f8ebd394c8303f2029a554dbfda1eb4c1"
+    },
+    "model_phase36.py": {
+      "relative_path": "experiments/phase36/model_phase36.py",
+      "size_bytes": 13891,
+      "sha256": "2774ab4cae0fca6d2f3646b443694fefa40d6837ff195f1d216ae7ff7732563a"
+    },
+    "phase36_final_report.md": {
+      "relative_path": "reports/phase36_final_report.md",
+      "size_bytes": 6229,
+      "sha256": "d66f779ea4552a9bb8f54861751db80de8a14b17fd3ec568aead45d671b0df32"
+    },
+    "phase36_experiment_protocol.md": {
+      "relative_path": "reports/phase36_experiment_protocol.md",
+      "size_bytes": 3802,
+      "sha256": "6eabd34ae216cdcbb7006c6a4bf6f7d43307e4bd6940655fe00dc5b0f04fcb6c"
+    },
+    "phase36_dataset_registry.csv": {
+      "relative_path": "reports/phase36_dataset_registry.csv",
+      "size_bytes": 29130,
+      "sha256": "f70fccf51f4675264eb75e67aeeb20ad067cf00268932cb29b04a2f5e2315ac7"
+    },
+    "phase36_condition_results.csv": {
+      "relative_path": "reports/phase36_condition_results.csv",
+      "size_bytes": 1652,
+      "sha256": "f48a51c9b5071c9d0aed713ed908d30c5c49cc0811be73e80394ae16bf45999a"
+    },
+    "phase36_event_metrics.csv": {
+      "relative_path": "reports/phase36_event_metrics.csv",
+      "size_bytes": 1044,
+      "sha256": "f832d496dfefc64ed4cc6b3ef1fdc6d9644de597be5b1658b3094482f625eabb"
+    },
+    "phase36_background_metrics.csv": {
+      "relative_path": "reports/phase36_background_metrics.csv",
+      "size_bytes": 4279,
+      "sha256": "d35b29b66994ad96a9b812908fe1a33d5d05889d7a11746a30ffbbeb3e38b860"
+    },
+    "phase36_state_transition_log.csv": {
+      "relative_path": "reports/phase36_state_transition_log.csv",
+      "size_bytes": 514035,
+      "sha256": "d18841fafd648fb0712f6f15e0b006372e8498247f3ca56b388d036449c6e627"
+    },
+    "phase36_input_hash_manifest.json": {
+      "relative_path": "reports/phase36_input_hash_manifest.json",
+      "size_bytes": 1184,
+      "sha256": "5c74691364c0109ed5eb53744714f207db4bfb93d72a0498bf7b774913427282"
+    },
+    "reproduce_phase36.py": {
+      "relative_path": "scripts/reproduce_phase36.py",
+      "size_bytes": 45293,
+      "sha256": "18cbe3ac7ee9d85ad72258751a5969cb70166ce438c98ee12ac9bb96fa95699f"
+    },
+    "test_phase36.py": {
+      "relative_path": "tests/test_phase36.py",
+      "size_bytes": 16757,
+      "sha256": "fe8d31560d5fc37a772af4abfaa2a932307081e2aa87a7469fb416050dbb5633"
+    }
+  }
+}

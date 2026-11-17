@@ -1,0 +1,13 @@
+model,category,provenance,total_events,detected,missed,false_alerts,recall_pct,precision_pct,f1_score,wilson_95_ci_lower_pct,wilson_95_ci_upper_pct,median_latency_ms
+Phase 14 Balanced (Default Baseline),Category A (Natural Continuous Pittsburgh),SOURCE_INDEPENDENT_EXTERNAL,50,27,23,0,54.0,100.0,0.7013,40.4,67.03,811.0
+Phase 14 Balanced (Default Baseline),Category B (Pre-Cropped External 9lash),PRE_CROPPED_EXTERNAL_CLIP,3,1,2,0,33.33,100.0,0.5,6.15,79.23,0.0
+Phase 14 High-Precision,Category A (Natural Continuous Pittsburgh),SOURCE_INDEPENDENT_EXTERNAL,50,24,26,0,48.0,100.0,0.6486,34.8,61.49,825.5
+Phase 14 High-Precision,Category B (Pre-Cropped External 9lash),PRE_CROPPED_EXTERNAL_CLIP,3,1,2,0,33.33,100.0,0.5,6.15,79.23,0.0
+Phase 14 High-Sensitivity,Category A (Natural Continuous Pittsburgh),SOURCE_INDEPENDENT_EXTERNAL,50,22,28,0,44.0,100.0,0.6111,31.16,57.69,825.5
+Phase 14 High-Sensitivity,Category B (Pre-Cropped External 9lash),PRE_CROPPED_EXTERNAL_CLIP,3,1,2,0,33.33,100.0,0.5,6.15,79.23,0.0
+Phase 17 Experimental (Animal Suppression),Category A (Natural Continuous Pittsburgh),SOURCE_INDEPENDENT_EXTERNAL,50,33,17,0,66.0,100.0,0.7952,52.15,77.56,637.0
+Phase 17 Experimental (Animal Suppression),Category B (Pre-Cropped External 9lash),PRE_CROPPED_EXTERNAL_CLIP,3,2,1,0,66.67,100.0,0.8,20.77,93.85,0.0
+Phase 9 Balanced (Historical Baseline),Category A (Natural Continuous Pittsburgh),SOURCE_INDEPENDENT_EXTERNAL,50,28,22,1,56.0,96.55,0.7089,42.31,68.84,669.0
+Phase 9 Balanced (Historical Baseline),Category B (Pre-Cropped External 9lash),PRE_CROPPED_EXTERNAL_CLIP,3,1,2,0,33.33,100.0,0.5,6.15,79.23,0.0
+Phase 14 Balanced (Default Baseline),Category C (Calibrated Transparent Streams Phase 17/18),CALIBRATED_TRANSPARENT_EVALUATION,33,23,10,8,69.7,74.19,0.7188,52.68,82.64,625.0
+Phase 14 Balanced (Default Baseline),Category D (Historically Related Mitchell Range 2015),HISTORICALLY_RELATED_SESSION,42,35,7,5,83.33,87.5,0.8537,69.24,91.88,480.0

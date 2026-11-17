@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 21 items
+
+gunshot/tests/test_phase27_acquisition_statistics.py::test_01_frozen_detector_hashes PASSED [  4%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_02_historical_release_archives PASSED [  9%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_03_baseline_freeze_report PASSED [ 14%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_04_source_metadata_verification PASSED [ 19%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_05_download_integrity PASSED [ 23%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_06_provenance_schema_and_counts PASSED [ 28%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_07_duplicate_detection PASSED [ 33%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_08_continuity_audit PASSED [ 38%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_09_negative_label_eligibility PASSED [ 42%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_10_exposure_calculations PASSED [ 47%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_11_cooldown_interval_union_and_no_duplicated_exposure PASSED [ 52%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_12_paired_difference_reconstruction PASSED [ 57%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_13_zero_difference_handling_and_wilcoxon_rank_calculation PASSED [ 61%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_14_exact_sign_test_calculations PASSED [ 66%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_15_vmr_and_poisson_overdispersion PASSED [ 71%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_16_garwood_poisson_ci_calculations PASSED [ 76%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_17_gross_and_eligible_alert_rate_audit PASSED [ 80%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_18_common_matched_exposure_comparison PASSED [ 85%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_19_distractor_analysis_cluster_fragmentation PASSED [ 90%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_20_model_role_terminology PASSED [ 95%]
+gunshot/tests/test_phase27_acquisition_statistics.py::test_21_mandatory_safety_designation PASSED [100%]
+
+============================= 21 passed in 1.55s ==============================

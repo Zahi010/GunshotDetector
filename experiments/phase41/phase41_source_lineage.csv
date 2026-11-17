@@ -1,0 +1,7 @@
+partition_name,total_recordings,unique_waveforms,total_duration_hours,total_duration_seconds,unique_uploaders_or_recordists,recordings_per_uploader_ratio,top_uploader_identity,top_uploader_clip_count,top_uploader_concentration_pct,unique_campaigns_or_sessions,primary_source_repositories,source_clustering_risk_level,audit_classification,evidence_label
+PARTITION_PROSPECTIVE_POSITIVE,120,119,0.1442,519.29,120,1.0,18hiltc,1,0.83,120,FSD50K_dev,LOW,INDEPENDENT_SOURCES,VERIFIED_FROM_PHYSICAL_FILE
+PARTITION_FIREWORKS_CHALLENGE,100,100,0.3041,1094.87,87,1.15,dobroide,2,2.0,87,FSD50K_dev,LOW,INDEPENDENT_SOURCES,VERIFIED_FROM_PHYSICAL_FILE
+PARTITION_OTHER_DISTRACTORS,120,120,0.274,986.56,109,1.1,InspectorJ,3,2.5,109,FSD50K_dev,LOW,INDEPENDENT_SOURCES,VERIFIED_FROM_PHYSICAL_FILE
+PARTITION_ALL_DISTRACTORS,220,220,0.5782,2081.44,188,1.17,InspectorJ,4,1.82,188,FSD50K_dev,LOW,INDEPENDENT_SOURCES,VERIFIED_FROM_PHYSICAL_FILE
+PARTITION_CONTINUOUS_AMBIENT,28,28,4.2182,15185.6,19,1.47,Vincent Duseigne,8,28.57,28,"Archive.org_RadioAporee, Radio_Aporee_Maps_ArchiveOrg",MODERATE,SOURCE_CLUSTERED,VERIFIED_FROM_PHYSICAL_FILE
+TOTAL_EVALUATION_CORPUS,368,367,4.9406,17786.33,310,1.19,Vincent Duseigne,8,2.17,336,"Archive.org_RadioAporee, FSD50K_dev, Radio_Aporee_Maps_ArchiveOrg",LOW,INDEPENDENT_SOURCES,VERIFIED_FROM_PHYSICAL_FILE

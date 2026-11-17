@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Standalone Real-Time Gunshot Sound Detection Application using Google YAMNet Audio AI.">
+    <title>Real-Time Gunshot Sound Detector | YAMNet Deep Learning</title>
+    <link rel="stylesheet" href="/static/css/style.css?v=2">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon" aria-hidden="true">&#9889;</div>
+                <div class="logo-title">
+                    <h1>Real-Time Gunshot Sound Detector</h1>
+                    <span class="badge-tag">YAMNet 1024-d Backbone &bull; 16 kHz Mono &bull; Live Stream</span>
+                </div>
+            </div>
+            <div class="system-status">
+                <span id="modelStatusBadge" class="badge-tag" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">
+                    &#10003; Model Bundle Active
+                </span>
+            </div>
+        </header>
+
+        <!-- Safety Disclaimer Banner -->
+        <aside class="disclaimer-banner" role="alert">
+            <span style="font-size: 20px;">&#9888;</span>
+            <div>
+                <strong>Operational Safety Notice:</strong> This gunshot detector is built for research and evaluation. It is <em>not</em> certified or dependable for life-safety, emergency 911 dispatch, or active tactical defense. Classification is driven by neural network acoustic features, not loudness or volume alone.
+            </div>
+        </aside>
+
+        <!-- Alert Notification Box -->
+        <div id="alertBox" class="alert-box" role="alert">
+            <span id="alertMsg">An error occurred.</span>
+        </div>
+
+        <!-- Mode Selector Navigation Tabs -->
+        <nav class="tabs-nav" aria-label="Detection Modes" style="margin-bottom: 24px;">
+            <button type="button" id="tabLiveBtn" class="tab-btn active">
+                &#127908; Continuous Live Microphone Detection
+            </button>
+            <button type="button" id="tabUploadBtn" class="tab-btn">
+                &#128193; Audio File Upload &amp; Analysis
+            </button>
+        </nav>
+
+        <!-- ======================================================== -->
+        <!-- SECTION 1: CONTINUOUS LIVE MICROPHONE DETECTION MODE -->
+        <!-- ======================================================== -->
+        <div id="liveDetectionView">
+            <!-- Full-Width Live Alert Banner -->
+            <div id="liveAlertBanner" class="live-alert-banner" style="display: none;">
+                <div class="alert-pulse-circle"></div>
+                <div>
+                    <h2 id="liveAlertTitle" style="font-size: 19px; font-weight: 800; color: #ff334b;">
+                        &#9888; GUNSHOT-LIKE ACOUSTIC EVENT DETECTED
+                    </h2>
+                    <p id="liveAlertDetails" style="font-size: 13px; color: #cbd5e1;">
+                        Timestamp: <strong id="liveAlertTime">--:--:--</strong> | Score: <strong id="liveAlertScore">0.00</strong> | Profile: <strong id="liveAlertProfile">balanced</strong>
+                    </p>
+                    <p style="font-size: 11px; color: #fca5a5; margin-top: 2px;">
+                        RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY
+                    </p>
+                </div>
+                <div style="margin-left: auto;">
+                    <span class="badge-danger" style="font-size: 12px; padding: 6px 12px;">ACOUSTIC EVENT</span>
+                </div>
+            </div>
+
+            <div class="main-grid">
+                <!-- Left Card: Live Mic Stream Controls & Meter -->
+                <section class="card" aria-labelledby="liveControlsTitle">
+                    <h2 id="liveControlsTitle" class="card-title">
+                        <span>&#127908;</span> Microphone &amp; Continuous Listener
+                    </h2>
+
+                    <!-- Live Status Indicator -->
+                    <div class="live-status-card">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <div id="liveStatusDot" class="status-dot standby"></div>
+                                <span id="liveStatusText" style="font-weight: 700; font-size: 15px;">Standby (Ready to Listen)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span id="liveLatencyDisplay" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent-cyan);">Latency: -- ms</span>
+                                <span id="liveTimerDisplay" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--text-muted);">00:00:00</span>
+                            </div>
+                        </div>
+
+                        <!-- Operating Profile Dropdown -->
+                        <div class="control-item" style="margin-bottom: 12px;">
+                            <label for="operatingProfileSelect" style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Acoustic Operating Profile:</label>
+                            <select id="operatingProfileSelect" class="styled-select" aria-label="Select acoustic detection profile">
+                                <option value="balanced" selected>Balanced Profile (Recommended Default: Base 0.75, High 0.88, Crest &ge; 9.5 dB)</option>
+                                <option value="high_precision">High-Precision Profile (Low False-Alarm: Base 0.80, High 0.90, Crest &ge; 10.0 dB)</option>
+                                <option value="high_sensitivity">High-Sensitivity Profile (High Recall: Base 0.70, High 0.82, Crest &ge; 9.0 dB)</option>
+                            </select>
+                        </div>
+
+                        <!-- Microphone Device Dropdown -->
+                        <div class="control-item" style="margin-bottom: 12px;">
+                            <label for="micDeviceSelect" style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Audio Input Device:</label>
+                            <select id="micDeviceSelect" class="styled-select" aria-label="Select audio input microphone">
+                                <option value="default">Default System Microphone</option>
+                            </select>
+                        </div>
+
+                        <!-- Browser Audio DSP Toggle -->
+                        <div class="control-item" style="margin-bottom: 14px;">
+                            <label class="checkbox-label" style="font-size: 12px;">
+                                <input type="checkbox" id="rawAudioDspCheckbox" checked>
+                                <span><strong>Raw Audio Mode:</strong> Bypass Browser Speech DSP</span>
+                                <span id="appliedDspBadge" style="font-size: 11px; color: var(--accent-cyan); margin-left: 8px; display: none;"></span>
+                            </label>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px; line-height: 1.4;">
+                                Disables browser Acoustic Echo Cancellation (AEC), Auto Gain Control (AGC), and Noise Suppression. Recommended: browser speech filters often distort sharp gunshot transients or clamp impulse peaks.
+                            </div>
+                        </div>
+
+                        <!-- Real-time VU Audio Level Meter -->
+                        <div class="control-item" style="margin-bottom: 14px;">
+                            <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+                                <span style="color: var(--text-muted);">Microphone Level (RMS Activity):</span>
+                                <span id="micRmsDisplay" style="font-family: 'JetBrains Mono', monospace; color: var(--text-muted);">-&infin; dB</span>
+                            </div>
+                            <div class="meter-bar-track">
+                                <div id="micMeterFill" class="meter-bar-fill" style="width: 0%;"></div>
+                            </div>
+                            <span style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+                                Classification is driven by neural network acoustic features, not loudness or volume alone.
+                            </span>
+                        </div>
+
+                        <!-- Real-time Neural Gunshot Score Bar -->
+                        <div class="control-item" style="margin-bottom: 16px;">
+                            <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+                                <span>Gunshot Model Score (YAMNet Output):</span>
+                                <span id="liveScoreDisplay" style="font-family: 'JetBrains Mono', monospace; font-weight: 700; color: var(--accent-cyan);">0.000</span>
+                            </div>
+                            <div class="meter-bar-track" style="position: relative;">
+                                <div id="scoreMeterFill" class="meter-bar-fill score" style="width: 0%;"></div>
+                                <div id="thresholdMarker" class="threshold-marker" title="Detection Threshold" style="left: 19%;"></div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 10px; color: var(--text-muted); margin-top: 2px;">
+                                <span>0.00 (Background)</span>
+                                <span>Threshold Marker</span>
+                                <span>1.00 (Gunshot)</span>
+                            </div>
+                        </div>
+
+                        <!-- Big Toggle Button -->
+                        <div style="display: flex; gap: 10px;">
+                            <button type="button" id="startLiveBtn" class="btn-primary" style="flex: 1; background: linear-gradient(135deg, #10b981, #059669);">
+                                &#9658; Start Continuous Listening
+                            </button>
+                            <button type="button" id="stopLiveBtn" class="btn-primary" style="flex: 1; background: linear-gradient(135deg, #ef4444, #b91c1c); display: none;">
+                                &#10074;&#10074; Stop Listening
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Configurable Detection & Alert Settings -->
+                    <div class="control-group">
+                        <div class="control-item">
+                            <div class="control-header">
+                                <label for="liveSensitivitySlider">Detection Threshold (Sensitivity):</label>
+                                <span id="liveSensitivityValue" class="control-value">0.19</span>
+                            </div>
+                            <input type="range" id="liveSensitivitySlider" min="0.05" max="0.95" step="0.01" value="0.19">
+                            <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+                                <span>Sensitive (0.10)</span>
+                                <span>Validation Threshold (0.19)</span>
+                                <span>Conservative (0.80)</span>
+                            </div>
+                        </div>
+
+                        <div class="control-item">
+                            <div class="control-header">
+                                <label for="confirmWindowsSelect">Window Confirmation Count:</label>
+                                <span id="confirmWindowsValue" class="control-value">1 Window</span>
+                            </div>
+                            <select id="confirmWindowsSelect" class="styled-select">
+                                <option value="1">1 Window (Fastest response - 0.48s)</option>
+                                <option value="2">2 Consecutive Windows (Suppresses brief glitches)</option>
+                                <option value="3">3 Consecutive Windows (Strict sustained gunfire)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-item">
+                            <div class="control-header">
+                                <label for="liveCooldownSlider">Alert Cooldown Window:</label>
+                                <span id="liveCooldownValue" class="control-value">2.0s</span>
+                            </div>
+                            <input type="range" id="liveCooldownSlider" min="1.0" max="10.0" step="0.5" value="2.0">
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">
+                                Prevents multiple alerts from one gunshot or rapid bursts within this duration.
+                            </div>
+                        </div>
+
+                        <!-- Alert Type Toggles -->
+                        <div style="background: rgba(0,0,0,0.2); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 8px;">
+                            <label style="font-size: 12px; font-weight: 700; color: #fff;">Alert Notification Channels:</label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="soundAlertCheckbox" checked>
+                                <span>Play audible alert tone on detection</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="desktopNotifyCheckbox" checked>
+                                <span>Show system desktop notification</span>
+                            </label>
+                            <label class="checkbox-label" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 8px; margin-top: 4px;">
+                                <input type="checkbox" id="optInSaveClipsCheckbox">
+                                <span><strong>Opt-in:</strong> Save 2s audio clip to <code>saved_alerts/</code> when alert triggers</span>
+                            </label>
+                            <span style="font-size: 11px; color: var(--text-muted); margin-left: 24px;">
+                                Audio is NOT recorded or saved by default to protect user privacy.
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Card: Live Alert History Log -->
+                <section class="card" aria-labelledby="liveHistoryTitle">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+                        <h2 id="liveHistoryTitle" class="card-title" style="margin-bottom: 0;">
+                            <span>&#128227;</span> Live Alert History
+                        </h2>
+                        <span id="liveAlertsCountBadge" class="badge-tag">0 Alerts</span>
+                    </div>
+
+                    <div class="events-box" style="max-height: 480px; min-height: 280px;">
+                        <table class="events-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Detected Timestamp</th>
+                                    <th>Score</th>
+                                    <th>Status</th>
+                                    <th>Saved Clip</th>
+                                </tr>
+                            </thead>
+                            <tbody id="liveAlertsTableBody">
+                                <tr id="noLiveAlertsRow">
+                                    <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 36px 14px;">
+                                        <div style="font-size: 32px; margin-bottom: 8px; opacity: 0.4;">&#128737;</div>
+                                        <div>No gunshot alerts triggered. Continuous listener is clean.</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Calibration & Safety Disclosure -->
+                    <div class="callout-box" style="margin-top: 20px;">
+                        <strong>Confidence Calibration Notice:</strong> The gunshot score is a raw sigmoid probability output. It has not undergone formal Platt scaling or Isotonic calibration on in-situ acoustic arrays. Do not treat scores as certified Bayesian posterior probabilities.
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- SECTION 2: AUDIO FILE UPLOAD & FORENSIC ANALYSIS MODE -->
+        <!-- ======================================================== -->
+        <div id="fileUploadView" style="display: none;">
+            <div class="main-grid">
+                <!-- Left: File Upload & Settings -->
+                <section class="card" aria-labelledby="uploadSectionTitle">
+                    <h2 id="uploadSectionTitle" class="card-title">
+                        <span>&#128193;</span> Upload Audio File
+                    </h2>
+
+                    <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Drop audio file or click to browse">
+                        <div class="dropzone-icon">&#8682;</div>
+                        <div class="dropzone-title">Drop audio file here or click to browse</div>
+                        <div class="dropzone-hint">Supports MP3, WAV, FLAC, OGG, M4A (up to 32 MB)</div>
+                        <input type="file" id="audioFileInput" accept=".mp3,.wav,.ogg,.flac,.m4a,audio/*" style="display: none;">
+                    </div>
+                    <div id="fileInfo" style="display: none; margin-top: 14px; font-size: 13px; color: var(--accent-cyan);">
+                        Selected: <strong id="fileNameDisplay">file.mp3</strong>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-item" style="margin-bottom: 12px;">
+                            <label for="uploadOperatingProfileSelect" style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Operating Profile:</label>
+                            <select id="uploadOperatingProfileSelect" class="styled-select" aria-label="Select acoustic detection profile">
+                                <option value="balanced" selected>Balanced Profile (Default: Base 0.75, High 0.88)</option>
+                                <option value="high_precision">High-Precision Profile (Low False-Alarm: Base 0.80, High 0.90)</option>
+                                <option value="high_sensitivity">High-Sensitivity Profile (High Recall: Base 0.70, High 0.82)</option>
+                            </select>
+                        </div>
+
+                        <div class="control-item">
+                            <div class="control-header">
+                                <label for="sensitivitySlider">Detection Threshold (Sensitivity):</label>
+                                <span id="sensitivityValue" class="control-value">0.47</span>
+                            </div>
+                            <input type="range" id="sensitivitySlider" min="0.10" max="0.90" step="0.01" value="0.47">
+                        </div>
+
+                        <div class="control-item">
+                            <div class="control-header">
+                                <label for="mergeWindowSlider">Nearby Event Merge Window:</label>
+                                <span id="mergeWindowValue" class="control-value">1.0s</span>
+                            </div>
+                            <input type="range" id="mergeWindowSlider" min="0.2" max="3.0" step="0.1" value="1.0">
+                        </div>
+
+                        <button type="button" id="runDetectionBtn" class="btn-primary">
+                            Analyze Audio File
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Right: File Results & Waveform -->
+                <section class="card results-card" aria-labelledby="uploadResultsTitle">
+                    <h2 id="uploadResultsTitle" class="card-title">
+                        <span>&#128266;</span> File Analysis Results
+                    </h2>
+
+                    <div id="resultsSection" style="display: none; flex-direction: column; gap: 20px;">
+                        <div id="verdictBanner" class="verdict-banner">
+                            <div class="verdict-text">
+                                <h3 id="verdictTitle" style="font-size: 18px;">Analysis Complete</h3>
+                                <p id="verdictSubtitle">Detection completed.</p>
+                            </div>
+                            <div class="verdict-score">
+                                <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Peak Score</div>
+                                <div id="scoreDisplay" class="score-val">0.000</div>
+                            </div>
+                        </div>
+
+                        <div class="audio-player-box">
+                            <canvas id="waveformCanvas" aria-label="Audio waveform graph with detection highlights"></canvas>
+                            <div class="audio-controls">
+                                <button type="button" id="playPauseBtn" class="play-btn" aria-label="Play or pause audio">
+                                    &#9658;
+                                </button>
+                                <span id="timeDisplay" class="time-display">00:00 / 00:00</span>
+                                <div style="margin-left: auto; font-size: 11px; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
+                                    <span style="display: inline-block; width: 12px; height: 12px; background: rgba(255, 51, 75, 0.4); border: 1px solid #ff334b; border-radius: 2px;"></span>
+                                    Gunshot Event
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Detected Gunshot Events</h4>
+                            <div class="events-box">
+                                <table class="events-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Timestamp Span</th>
+                                            <th>Peak Time</th>
+                                            <th>Duration</th>
+                                            <th>Peak Score</th>
+                                            <th>Verdict</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="eventsTableBody">
+                                        <tr id="noEventsRow">
+                                            <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 18px;">
+                                                No gunshot events detected above the current sensitivity threshold.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="emptyState" style="text-align: center; padding: 48px 20px; color: var(--text-muted);">
+                        <div style="font-size: 42px; margin-bottom: 12px; opacity: 0.5;">&#127911;</div>
+                        <p style="font-size: 14px;">Select an audio recording to visualize waveform and detected gunshot timestamps.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js?v=2"></script>
+</body>
+</html>

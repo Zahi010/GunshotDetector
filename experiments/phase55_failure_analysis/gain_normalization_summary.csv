@@ -1,0 +1,6 @@
+method,fn_recovered,fn_recovery_pct,post_gain_total_recall,tn_false_alarms,tn_false_alarm_pct,post_gain_total_fp,post_gain_total_fpr,net_gain_benefit
+baseline,0,0.0,70.9,0,0.0,48,22.12,0
+peak_norm_0.95,3,7.69,73.13,6,3.55,54,24.88,-3
+peak_norm_0.70,3,7.69,73.13,9,5.33,57,26.27,-6
+rms_norm_neg20db,5,12.82,74.63,6,3.55,54,24.88,-1
+boost_6db,3,7.69,73.13,2,1.18,50,23.04,1

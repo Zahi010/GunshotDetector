@@ -1,0 +1,21 @@
+stream_id,firing_position,test_id,sequence_type,firearm_caliber,ground_truth_round_count,phase_14_detections,phase_17_detections,phase_14_round_recall,phase_17_round_recall,round_recall_difference,phase_14_incident_detected,phase_17_incident_detected,incident_status_change,discordant_physical_events
+P19-CAT-A-FP1-test_001,FP1,test_001,3_ROUND_BURST,.45 ACP Handgun,3,1,1,0.3333,0.3333,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP1-test_004,FP1,test_004,SINGLE_SHOT,.45 ACP Handgun,1,0,1,0.0,1.0,1.0,False,True,PHASE17_NEW_INCIDENT,1
+P19-CAT-A-FP1-test_007,FP1,test_007,3_ROUND_BURST,.40 S&W Handgun,3,1,1,0.3333,0.3333,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP1-test_013,FP1,test_013,3_ROUND_BURST,9x19mm Handgun,3,0,1,0.0,0.3333,0.3333,False,True,PHASE17_NEW_INCIDENT,1
+P19-CAT-A-FP2-test_019,FP2,test_019,3_ROUND_BURST,.45 ACP Handgun,3,1,1,0.3333,0.3333,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP2-test_022,FP2,test_022,SINGLE_SHOT,.45 ACP Handgun,1,1,1,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP2-test_025,FP2,test_025,3_ROUND_BURST,.40 S&W Handgun,3,1,1,0.3333,0.3333,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP2-test_031,FP2,test_031,3_ROUND_BURST,9x19mm Handgun,3,3,3,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP3-test_037,FP3,test_037,3_ROUND_BURST,.45 ACP Handgun,3,2,3,0.6667,1.0,0.3333,True,True,SAME_STATUS,1
+P19-CAT-A-FP3-test_040,FP3,test_040,SINGLE_SHOT,.45 ACP Handgun,1,1,1,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP3-test_043,FP3,test_043,3_ROUND_BURST,.40 S&W Handgun,3,3,3,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP3-test_049,FP3,test_049,3_ROUND_BURST,9x19mm Handgun,3,0,0,0.0,0.0,0.0,False,False,SAME_STATUS,0
+P19-CAT-A-FP4-test_055,FP4,test_055,3_ROUND_BURST,.45 ACP Handgun,3,2,3,0.6667,1.0,0.3333,True,True,SAME_STATUS,1
+P19-CAT-A-FP4-test_058,FP4,test_058,SINGLE_SHOT,.45 ACP Handgun,1,1,1,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP4-test_061,FP4,test_061,3_ROUND_BURST,.40 S&W Handgun,3,3,3,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP4-test_067,FP4,test_067,3_ROUND_BURST,9x19mm Handgun,3,0,2,0.0,0.6667,0.6667,False,True,PHASE17_NEW_INCIDENT,2
+P19-CAT-A-FP5-test_127,FP5,test_127,3_ROUND_BURST,.45 ACP Handgun,3,0,0,0.0,0.0,0.0,False,False,SAME_STATUS,0
+P19-CAT-A-FP5-test_130,FP5,test_130,SINGLE_SHOT,.45 ACP Handgun,1,1,1,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP5-test_133,FP5,test_133,3_ROUND_BURST,.40 S&W Handgun,3,3,3,1.0,1.0,0.0,True,True,SAME_STATUS,0
+P19-CAT-A-FP5-test_139,FP5,test_139,3_ROUND_BURST,9x19mm Handgun,3,3,3,1.0,1.0,0.0,True,True,SAME_STATUS,0

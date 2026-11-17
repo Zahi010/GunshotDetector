@@ -1,0 +1,529 @@
+{
+  "audit_timestamp": "2026-10-29T08:50:31Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "latency": {
+    "cpu_inference_median_ms": 119.0,
+    "cpu_inference_p95_ms": 133.8,
+    "streaming_latency_median_ms": 609.0,
+    "streaming_latency_p95_ms": 628.8
+  },
+  "profiles": {
+    "baseline_phase8": {
+      "configuration": {
+        "model_choice": "ensemble",
+        "tau_base": 0.7,
+        "tau_high": 0.82,
+        "tau_off": 0.45,
+        "confirm_windows": 2,
+        "cooldown_secs": 1.5,
+        "semantic_gating_mode": "phase8",
+        "allow_short_clip_exception": true,
+        "crest_factor_guard": false,
+        "min_crest_factor_db": 0.0
+      },
+      "phase8_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9802,
+          "precision": 0.0613,
+          "recall": 0.7209,
+          "f1": 0.1129,
+          "roc_auc": 0.9854,
+          "pr_auc": 0.135,
+          "ece": 0.1709
+        },
+        "event_metrics": {
+          "tp": 31,
+          "fp": 21,
+          "fn": 12,
+          "duplicates": 0,
+          "total_predicted_events": 52,
+          "total_ground_truth_events": 43,
+          "precision": 0.5962,
+          "recall": 0.7209,
+          "f1": 0.6526,
+          "short_clip_recovery_pct": 72.1,
+          "short_clip_recovered": 31,
+          "short_clip_total": 43
+        },
+        "continuous_streaming": {
+          "total_alerts": 102,
+          "total_hours": 3.0,
+          "alerts_per_hour": 34.0
+        },
+        "false_alert_categories": {
+          "mimic_helicopter_rotor": 3,
+          "mimic_dog_bark": 5,
+          "mimic_rooster_call": 13,
+          "continuous_stream_01_urban_transit_sirens_1hr.wav": 24,
+          "continuous_stream_03_outdoor_natural_ambience_1hr.wav": 78
+        },
+        "missed_event_categories": {
+          "gunshot": 12
+        }
+      },
+      "phase7_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9874,
+          "precision": 0.0769,
+          "recall": 0.5106,
+          "f1": 0.1337,
+          "roc_auc": 0.9815,
+          "pr_auc": 0.0781,
+          "ece": 0.0495
+        },
+        "event_metrics": {
+          "tp": 18,
+          "fp": 30,
+          "fn": 9,
+          "duplicates": 0,
+          "total_predicted_events": 48,
+          "total_ground_truth_events": 27,
+          "precision": 0.375,
+          "recall": 0.6667,
+          "f1": 0.48,
+          "short_clip_recovery_pct": 73.7,
+          "short_clip_recovered": 14,
+          "short_clip_total": 19
+        },
+        "continuous_streaming": {
+          "total_alerts": 75,
+          "total_hours": 3.0,
+          "alerts_per_hour": 25.0
+        },
+        "false_alert_categories": {
+          "gunshot": 3,
+          "weather_transient_thunder": 10,
+          "pyrotechnic_blast": 15,
+          "ambient_broadband_wind": 1,
+          "sharp_brittle_impact": 1,
+          "continuous_stream_02_weather_thunder_and_rain_1hr.wav": 49,
+          "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav": 26
+        },
+        "missed_event_categories": {
+          "gunshot": 9
+        }
+      },
+      "validation_split": {
+        "window_metrics": {
+          "accuracy": 0.7024,
+          "precision": 0.931,
+          "recall": 0.5114,
+          "f1": 0.6601,
+          "roc_auc": 0.7674,
+          "pr_auc": 0.8532,
+          "ece": 0.137
+        },
+        "event_metrics": {
+          "tp": 0,
+          "fp": 45,
+          "fn": 0,
+          "duplicates": 0,
+          "total_predicted_events": 45,
+          "total_ground_truth_events": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "short_clip_recovery_pct": 100.0,
+          "short_clip_recovered": 0,
+          "short_clip_total": 0
+        },
+        "continuous_streaming": {
+          "total_alerts": 0,
+          "total_hours": 0.0,
+          "alerts_per_hour": 0.0
+        },
+        "false_alert_categories": {
+          "background": 3,
+          "gunshot": 42
+        },
+        "missed_event_categories": {}
+      }
+    },
+    "phase9_balanced": {
+      "configuration": {
+        "model_choice": "ensemble",
+        "tau_base": 0.75,
+        "tau_high": 0.88,
+        "tau_off": 0.48,
+        "confirm_windows": 2,
+        "cooldown_secs": 2.0,
+        "semantic_gating_mode": "all",
+        "allow_short_clip_exception": true,
+        "crest_factor_guard": true,
+        "min_crest_factor_db": 9.5
+      },
+      "phase8_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9894,
+          "precision": 0.0967,
+          "recall": 0.6047,
+          "f1": 0.1667,
+          "roc_auc": 0.9894,
+          "pr_auc": 0.1449,
+          "ece": 0.1618
+        },
+        "event_metrics": {
+          "tp": 26,
+          "fp": 12,
+          "fn": 17,
+          "duplicates": 0,
+          "total_predicted_events": 38,
+          "total_ground_truth_events": 43,
+          "precision": 0.6842,
+          "recall": 0.6047,
+          "f1": 0.642,
+          "short_clip_recovery_pct": 60.5,
+          "short_clip_recovered": 26,
+          "short_clip_total": 43
+        },
+        "continuous_streaming": {
+          "total_alerts": 38,
+          "total_hours": 3.0,
+          "alerts_per_hour": 12.7
+        },
+        "false_alert_categories": {
+          "mimic_helicopter_rotor": 3,
+          "mimic_dog_bark": 1,
+          "mimic_rooster_call": 8,
+          "continuous_stream_01_urban_transit_sirens_1hr.wav": 12,
+          "continuous_stream_03_outdoor_natural_ambience_1hr.wav": 26
+        },
+        "missed_event_categories": {
+          "gunshot": 17
+        }
+      },
+      "phase7_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9897,
+          "precision": 0.088,
+          "recall": 0.4681,
+          "f1": 0.1481,
+          "roc_auc": 0.9815,
+          "pr_auc": 0.0782,
+          "ece": 0.0493
+        },
+        "event_metrics": {
+          "tp": 16,
+          "fp": 18,
+          "fn": 11,
+          "duplicates": 0,
+          "total_predicted_events": 34,
+          "total_ground_truth_events": 27,
+          "precision": 0.4706,
+          "recall": 0.5926,
+          "f1": 0.5246,
+          "short_clip_recovery_pct": 68.4,
+          "short_clip_recovered": 13,
+          "short_clip_total": 19
+        },
+        "continuous_streaming": {
+          "total_alerts": 45,
+          "total_hours": 3.0,
+          "alerts_per_hour": 15.0
+        },
+        "false_alert_categories": {
+          "gunshot": 3,
+          "weather_transient_thunder": 8,
+          "pyrotechnic_blast": 7,
+          "continuous_stream_02_weather_thunder_and_rain_1hr.wav": 34,
+          "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav": 11
+        },
+        "missed_event_categories": {
+          "gunshot": 11
+        }
+      },
+      "validation_split": {
+        "window_metrics": {
+          "accuracy": 0.6767,
+          "precision": 0.952,
+          "recall": 0.4508,
+          "f1": 0.6118,
+          "roc_auc": 0.766,
+          "pr_auc": 0.8526,
+          "ece": 0.1375
+        },
+        "event_metrics": {
+          "tp": 0,
+          "fp": 38,
+          "fn": 0,
+          "duplicates": 0,
+          "total_predicted_events": 38,
+          "total_ground_truth_events": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "short_clip_recovery_pct": 100.0,
+          "short_clip_recovered": 0,
+          "short_clip_total": 0
+        },
+        "continuous_streaming": {
+          "total_alerts": 0,
+          "total_hours": 0.0,
+          "alerts_per_hour": 0.0
+        },
+        "false_alert_categories": {
+          "gunshot": 38
+        },
+        "missed_event_categories": {}
+      }
+    },
+    "phase9_high_precision": {
+      "configuration": {
+        "model_choice": "ensemble",
+        "tau_base": 0.8,
+        "tau_high": 0.9,
+        "tau_off": 0.5,
+        "confirm_windows": 2,
+        "cooldown_secs": 2.5,
+        "semantic_gating_mode": "all",
+        "allow_short_clip_exception": true,
+        "crest_factor_guard": true,
+        "min_crest_factor_db": 10.0
+      },
+      "phase8_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9945,
+          "precision": 0.128,
+          "recall": 0.3721,
+          "f1": 0.1905,
+          "roc_auc": 0.9894,
+          "pr_auc": 0.1449,
+          "ece": 0.1618
+        },
+        "event_metrics": {
+          "tp": 16,
+          "fp": 5,
+          "fn": 27,
+          "duplicates": 0,
+          "total_predicted_events": 21,
+          "total_ground_truth_events": 43,
+          "precision": 0.7619,
+          "recall": 0.3721,
+          "f1": 0.5,
+          "short_clip_recovery_pct": 37.2,
+          "short_clip_recovered": 16,
+          "short_clip_total": 43
+        },
+        "continuous_streaming": {
+          "total_alerts": 15,
+          "total_hours": 3.0,
+          "alerts_per_hour": 5.0
+        },
+        "false_alert_categories": {
+          "mimic_helicopter_rotor": 3,
+          "mimic_rooster_call": 2,
+          "continuous_stream_01_urban_transit_sirens_1hr.wav": 7,
+          "continuous_stream_03_outdoor_natural_ambience_1hr.wav": 8
+        },
+        "missed_event_categories": {
+          "gunshot": 27
+        }
+      },
+      "phase7_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.992,
+          "precision": 0.0929,
+          "recall": 0.3617,
+          "f1": 0.1478,
+          "roc_auc": 0.9815,
+          "pr_auc": 0.0782,
+          "ece": 0.0493
+        },
+        "event_metrics": {
+          "tp": 11,
+          "fp": 12,
+          "fn": 16,
+          "duplicates": 0,
+          "total_predicted_events": 23,
+          "total_ground_truth_events": 27,
+          "precision": 0.4783,
+          "recall": 0.4074,
+          "f1": 0.44,
+          "short_clip_recovery_pct": 42.1,
+          "short_clip_recovered": 8,
+          "short_clip_total": 19
+        },
+        "continuous_streaming": {
+          "total_alerts": 36,
+          "total_hours": 3.0,
+          "alerts_per_hour": 12.0
+        },
+        "false_alert_categories": {
+          "gunshot": 3,
+          "weather_transient_thunder": 2,
+          "pyrotechnic_blast": 7,
+          "continuous_stream_02_weather_thunder_and_rain_1hr.wav": 27,
+          "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav": 9
+        },
+        "missed_event_categories": {
+          "gunshot": 16
+        }
+      },
+      "validation_split": {
+        "window_metrics": {
+          "accuracy": 0.651,
+          "precision": 0.9633,
+          "recall": 0.3977,
+          "f1": 0.563,
+          "roc_auc": 0.766,
+          "pr_auc": 0.8526,
+          "ece": 0.1375
+        },
+        "event_metrics": {
+          "tp": 0,
+          "fp": 35,
+          "fn": 0,
+          "duplicates": 0,
+          "total_predicted_events": 35,
+          "total_ground_truth_events": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "short_clip_recovery_pct": 100.0,
+          "short_clip_recovered": 0,
+          "short_clip_total": 0
+        },
+        "continuous_streaming": {
+          "total_alerts": 0,
+          "total_hours": 0.0,
+          "alerts_per_hour": 0.0
+        },
+        "false_alert_categories": {
+          "gunshot": 35
+        },
+        "missed_event_categories": {}
+      }
+    },
+    "phase9_high_sensitivity": {
+      "configuration": {
+        "model_choice": "ensemble",
+        "tau_base": 0.7,
+        "tau_high": 0.82,
+        "tau_off": 0.45,
+        "confirm_windows": 2,
+        "cooldown_secs": 1.5,
+        "semantic_gating_mode": "all",
+        "allow_short_clip_exception": true,
+        "crest_factor_guard": true,
+        "min_crest_factor_db": 9.0
+      },
+      "phase8_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9849,
+          "precision": 0.0797,
+          "recall": 0.7209,
+          "f1": 0.1435,
+          "roc_auc": 0.9894,
+          "pr_auc": 0.1449,
+          "ece": 0.1618
+        },
+        "event_metrics": {
+          "tp": 31,
+          "fp": 17,
+          "fn": 12,
+          "duplicates": 0,
+          "total_predicted_events": 48,
+          "total_ground_truth_events": 43,
+          "precision": 0.6458,
+          "recall": 0.7209,
+          "f1": 0.6813,
+          "short_clip_recovery_pct": 72.1,
+          "short_clip_recovered": 31,
+          "short_clip_total": 43
+        },
+        "continuous_streaming": {
+          "total_alerts": 82,
+          "total_hours": 3.0,
+          "alerts_per_hour": 27.3
+        },
+        "false_alert_categories": {
+          "mimic_helicopter_rotor": 3,
+          "mimic_dog_bark": 1,
+          "mimic_rooster_call": 13,
+          "continuous_stream_01_urban_transit_sirens_1hr.wav": 24,
+          "continuous_stream_03_outdoor_natural_ambience_1hr.wav": 58
+        },
+        "missed_event_categories": {
+          "gunshot": 12
+        }
+      },
+      "phase7_diagnostic_set": {
+        "window_metrics": {
+          "accuracy": 0.9874,
+          "precision": 0.0769,
+          "recall": 0.5106,
+          "f1": 0.1337,
+          "roc_auc": 0.9815,
+          "pr_auc": 0.0782,
+          "ece": 0.0493
+        },
+        "event_metrics": {
+          "tp": 18,
+          "fp": 30,
+          "fn": 9,
+          "duplicates": 0,
+          "total_predicted_events": 48,
+          "total_ground_truth_events": 27,
+          "precision": 0.375,
+          "recall": 0.6667,
+          "f1": 0.48,
+          "short_clip_recovery_pct": 73.7,
+          "short_clip_recovered": 14,
+          "short_clip_total": 19
+        },
+        "continuous_streaming": {
+          "total_alerts": 75,
+          "total_hours": 3.0,
+          "alerts_per_hour": 25.0
+        },
+        "false_alert_categories": {
+          "gunshot": 3,
+          "weather_transient_thunder": 10,
+          "pyrotechnic_blast": 15,
+          "ambient_broadband_wind": 1,
+          "sharp_brittle_impact": 1,
+          "continuous_stream_02_weather_thunder_and_rain_1hr.wav": 49,
+          "continuous_stream_03_bells_fireworks_and_crowd_1hr.wav": 26
+        },
+        "missed_event_categories": {
+          "gunshot": 9
+        }
+      },
+      "validation_split": {
+        "window_metrics": {
+          "accuracy": 0.7024,
+          "precision": 0.931,
+          "recall": 0.5114,
+          "f1": 0.6601,
+          "roc_auc": 0.766,
+          "pr_auc": 0.8526,
+          "ece": 0.1375
+        },
+        "event_metrics": {
+          "tp": 0,
+          "fp": 45,
+          "fn": 0,
+          "duplicates": 0,
+          "total_predicted_events": 45,
+          "total_ground_truth_events": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "short_clip_recovery_pct": 100.0,
+          "short_clip_recovered": 0,
+          "short_clip_total": 0
+        },
+        "continuous_streaming": {
+          "total_alerts": 0,
+          "total_hours": 0.0,
+          "alerts_per_hour": 0.0
+        },
+        "false_alert_categories": {
+          "background": 3,
+          "gunshot": 42
+        },
+        "missed_event_categories": {}
+      }
+    }
+  }
+}

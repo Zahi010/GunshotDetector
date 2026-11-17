@@ -1,0 +1,3227 @@
+{
+  "summary": {
+    "total_files": 257,
+    "readable_files": 257,
+    "unreadable_files": 0,
+    "duplicate_copies": 71,
+    "unique_recording_groups": 186,
+    "total_duration_minutes": 48.08,
+    "min_duration_seconds": 0.16,
+    "max_duration_seconds": 243.96,
+    "mean_duration_seconds": 11.23
+  },
+  "formats": {
+    "MP3": 257
+  },
+  "sample_rates": {
+    "44100": 69,
+    "48000": 59,
+    "24000": 128,
+    "22050": 1
+  },
+  "channels": {
+    "2": 226,
+    "1": 31
+  },
+  "categories": {
+    "gunshot_automatic_burst": 39,
+    "gunshot_single": 97,
+    "scifi_laser_toy": 39,
+    "gun_battle_ambience": 10,
+    "firearm_foley_mechanics": 30,
+    "ambient_foley_music": 11,
+    "gunshot_artillery_mortar": 4,
+    "projectile_flyby": 1,
+    "heavy_launcher_motor": 4,
+    "projectile_ricochet": 2,
+    "firearm_foley_shell_impact": 15,
+    "impact_punch_foley": 5
+  },
+  "duplicates": [
+    {
+      "duplicate_file": "49053354-machine-gun-307468 (2).mp3",
+      "original_file": "49053354-machine-gun-307468 (1).mp3",
+      "hash": "b63dc8d3e9d2e69390147556b96e7e02"
+    },
+    {
+      "duplicate_file": "49053354-machine-gun-307468.mp3",
+      "original_file": "49053354-machine-gun-307468 (1).mp3",
+      "hash": "b63dc8d3e9d2e69390147556b96e7e02"
+    },
+    {
+      "duplicate_file": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (2).mp3",
+      "original_file": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (1).mp3",
+      "hash": "e0d65e5f92ba8a10e9262921e359a91c"
+    },
+    {
+      "duplicate_file": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079.mp3",
+      "original_file": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (1).mp3",
+      "hash": "e0d65e5f92ba8a10e9262921e359a91c"
+    },
+    {
+      "duplicate_file": "alice_soundz-gun-shot-sound-effect-224087 (2).mp3",
+      "original_file": "alice_soundz-gun-shot-sound-effect-224087 (1).mp3",
+      "hash": "eefca254ed1c64a29db3a17b0880892c"
+    },
+    {
+      "duplicate_file": "alice_soundz-gun-shot-sound-effect-224087.mp3",
+      "original_file": "alice_soundz-gun-shot-sound-effect-224087 (1).mp3",
+      "hash": "eefca254ed1c64a29db3a17b0880892c"
+    },
+    {
+      "duplicate_file": "bannythecoolio-retro-revolver-shoot-425133 (2).mp3",
+      "original_file": "bannythecoolio-retro-revolver-shoot-425133 (1).mp3",
+      "hash": "e683e07c7cf07c907ffa0128cdc49f7d"
+    },
+    {
+      "duplicate_file": "bannythecoolio-retro-revolver-shoot-425133.mp3",
+      "original_file": "bannythecoolio-retro-revolver-shoot-425133 (1).mp3",
+      "hash": "e683e07c7cf07c907ffa0128cdc49f7d"
+    },
+    {
+      "duplicate_file": "floraphonic-scifi-gun-shoot-5-266421 (2).mp3",
+      "original_file": "floraphonic-scifi-gun-shoot-5-266421 (1).mp3",
+      "hash": "d6b691ae1f4287a19b81190d9d03d8d1"
+    },
+    {
+      "duplicate_file": "floraphonic-scifi-gun-shoot-5-266421.mp3",
+      "original_file": "floraphonic-scifi-gun-shoot-5-266421 (1).mp3",
+      "hash": "d6b691ae1f4287a19b81190d9d03d8d1"
+    },
+    {
+      "duplicate_file": "flutie8211-ray-guns-firing-461698.mp3",
+      "original_file": "flutie8211-ray-guns-firing-461698 (1).mp3",
+      "hash": "53cd2512dbb129bfd63cc035c60980bc"
+    },
+    {
+      "duplicate_file": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (2).mp3",
+      "original_file": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (1).mp3",
+      "hash": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "duplicate_file": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (3).mp3",
+      "original_file": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (1).mp3",
+      "hash": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "duplicate_file": "freeeverythingxx-gun-cocking-sound-ver-2-270161.mp3",
+      "original_file": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (1).mp3",
+      "hash": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "duplicate_file": "freesound_community-22-rifle-dryfiring-87480 (2).mp3",
+      "original_file": "freesound_community-22-rifle-dryfiring-87480 (1).mp3",
+      "hash": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "duplicate_file": "freesound_community-22-rifle-dryfiring-87480 (3).mp3",
+      "original_file": "freesound_community-22-rifle-dryfiring-87480 (1).mp3",
+      "hash": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "duplicate_file": "freesound_community-22-rifle-dryfiring-87480.mp3",
+      "original_file": "freesound_community-22-rifle-dryfiring-87480 (1).mp3",
+      "hash": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "duplicate_file": "freesound_community-8-bit-fireball-81148.mp3",
+      "original_file": "freesound_community-8-bit-fireball-81148 (1).mp3",
+      "hash": "c6e625d1d655269d380e92a57844f5f7"
+    },
+    {
+      "duplicate_file": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831.mp3",
+      "original_file": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831 (1).mp3",
+      "hash": "f4cf42ff4c4a4e885847207fe57fdcc6"
+    },
+    {
+      "duplicate_file": "freesound_community-clean-machine-gun-burst-98224.mp3",
+      "original_file": "freesound_community-clean-machine-gun-burst-98224 (1).mp3",
+      "hash": "7c8a4b98a66194cfb62fb1e85c28068a"
+    },
+    {
+      "duplicate_file": "freesound_community-cp99-reload-96252.mp3",
+      "original_file": "freesound_community-cp99-reload-96252 (1).mp3",
+      "hash": "0902543b38b086a6400d8847b8017e01"
+    },
+    {
+      "duplicate_file": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771.mp3",
+      "original_file": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+      "hash": "89d72cced411fda4a479a3ad65673b7c"
+    },
+    {
+      "duplicate_file": "freesound_community-five-seven-gun-shot-and-silenced-104500.mp3",
+      "original_file": "freesound_community-five-seven-gun-shot-and-silenced-104500 (1).mp3",
+      "hash": "e7edba2373fb224402f8232574d5d6cd"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-dry-firing-13-96416.mp3",
+      "original_file": "freesound_community-gun-dry-firing-13-96416 (1).mp3",
+      "hash": "3ffd62dd105819ec63c25cfe9c2ea3fb"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-dry-firing-6-39793.mp3",
+      "original_file": "freesound_community-gun-dry-firing-6-39793 (1).mp3",
+      "hash": "bef69a1a867a82229de118351da6caac"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-load1-98406.mp3",
+      "original_file": "freesound_community-gun-load1-98406 (1).mp3",
+      "hash": "56c8c07c868d9cb725470efad4525e19"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shot-56254.mp3",
+      "original_file": "freesound_community-gun-shot-56254 (1).mp3",
+      "hash": "bdfdba81b4c0b3229bd022e3e06a5d1c"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shot-83336.mp3",
+      "original_file": "freesound_community-gun-shot-83336 (1).mp3",
+      "hash": "b927d9f36ebedf3c7886ae7c6fe1f761"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shots-from-a-distance-10-39760.mp3",
+      "original_file": "freesound_community-gun-shots-from-a-distance-10-39760 (1).mp3",
+      "hash": "c4673d98e21d1a9a8008184473dd39c7"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shots-from-a-distance-12-96410.mp3",
+      "original_file": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+      "hash": "6fda45e3d158868f5fe455b1efec26a3"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+      "original_file": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "hash": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3",
+      "original_file": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "hash": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "duplicate_file": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "original_file": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "hash": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "duplicate_file": "freesound_community-gunshot_001-82585.mp3",
+      "original_file": "freesound_community-gunshot_001-82585 (1).mp3",
+      "hash": "e8f5626f23e5727a8c4d535a5d2f04f1"
+    },
+    {
+      "duplicate_file": "freesound_community-hammer-cocking-back-on-pistol-8-39884.mp3",
+      "original_file": "freesound_community-hammer-cocking-back-on-pistol-8-39884 (1).mp3",
+      "hash": "72dd2454abc159cc16e0dc4e9b49f523"
+    },
+    {
+      "duplicate_file": "freesound_community-handgun_shot-80212 (2).mp3",
+      "original_file": "freesound_community-handgun_shot-80212 (1).mp3",
+      "hash": "2aeb9b5afe84dd7c25f70c2e6510896f"
+    },
+    {
+      "duplicate_file": "freesound_community-handgun_shot-80212.mp3",
+      "original_file": "freesound_community-handgun_shot-80212 (1).mp3",
+      "hash": "2aeb9b5afe84dd7c25f70c2e6510896f"
+    },
+    {
+      "duplicate_file": "freesound_community-heavymachinegun-6998.mp3",
+      "original_file": "freesound_community-heavymachinegun-6998 (1).mp3",
+      "hash": "ea223bb8c2c66c1990e44a59d87fa37f"
+    },
+    {
+      "duplicate_file": "freesound_community-machine-guns1-50827.mp3",
+      "original_file": "freesound_community-machine-guns1-50827 (1).mp3",
+      "hash": "66b98faf439424f665dbf18e86aaf7e6"
+    },
+    {
+      "duplicate_file": "freesound_community-nerf-shots-102238.mp3",
+      "original_file": "freesound_community-nerf-shots-102238 (1).mp3",
+      "hash": "39779463a69e3a106401db4e11249172"
+    },
+    {
+      "duplicate_file": "freesound_community-realistic-gun-fire-100696.mp3",
+      "original_file": "freesound_community-realistic-gun-fire-100696 (1).mp3",
+      "hash": "7b6bb444ec739ca88b2dcb09923e641a"
+    },
+    {
+      "duplicate_file": "freesound_community-ricochet-4-101446.mp3",
+      "original_file": "freesound_community-ricochet-4-101446 (1).mp3",
+      "hash": "5badb45d7b4b47dfcb883095b14f2138"
+    },
+    {
+      "duplicate_file": "freesound_community-shells-hitting-ground-21-39754 (2).mp3",
+      "original_file": "freesound_community-shells-hitting-ground-21-39754 (1).mp3",
+      "hash": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "duplicate_file": "freesound_community-shells-hitting-ground-21-39754 (3).mp3",
+      "original_file": "freesound_community-shells-hitting-ground-21-39754 (1).mp3",
+      "hash": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "duplicate_file": "freesound_community-shells-hitting-ground-21-39754.mp3",
+      "original_file": "freesound_community-shells-hitting-ground-21-39754 (1).mp3",
+      "hash": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "duplicate_file": "freesound_community-shells-hitting-ground-35-39790.mp3",
+      "original_file": "freesound_community-shells-hitting-ground-35-39790 (1).mp3",
+      "hash": "50712b6e262160a58371727989bed02e"
+    },
+    {
+      "duplicate_file": "freesound_community-shells-hitting-ground-44-27506.mp3",
+      "original_file": "freesound_community-shells-hitting-ground-44-27506 (1).mp3",
+      "hash": "bacae2aa48b7911a754d949382e48a67"
+    },
+    {
+      "duplicate_file": "freesound_community-shots-fired-62748 (2).mp3",
+      "original_file": "freesound_community-shots-fired-62748 (1).mp3",
+      "hash": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "duplicate_file": "freesound_community-shots-fired-62748 (3).mp3",
+      "original_file": "freesound_community-shots-fired-62748 (1).mp3",
+      "hash": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "duplicate_file": "freesound_community-shots-fired-62748.mp3",
+      "original_file": "freesound_community-shots-fired-62748 (1).mp3",
+      "hash": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "duplicate_file": "freesound_community-sniper-rifle-firing-2-39885 (2).mp3",
+      "original_file": "freesound_community-sniper-rifle-firing-2-39885 (1).mp3",
+      "hash": "25c6655ae8401565371d894b6f58c454"
+    },
+    {
+      "duplicate_file": "freesound_community-sniper-rifle-firing-2-39885.mp3",
+      "original_file": "freesound_community-sniper-rifle-firing-2-39885 (1).mp3",
+      "hash": "25c6655ae8401565371d894b6f58c454"
+    },
+    {
+      "duplicate_file": "freesound_community-war-ambience-loop-32930.mp3",
+      "original_file": "freesound_community-war-ambience-loop-32930 (1).mp3",
+      "hash": "e8ed71e7e5cc5d81a6073b7ea7330cfc"
+    },
+    {
+      "duplicate_file": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831.mp3",
+      "original_file": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831 (1).mp3",
+      "hash": "47e24041aebb449a03b910f5a5c4267e"
+    },
+    {
+      "duplicate_file": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (2).mp3",
+      "original_file": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+      "hash": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "duplicate_file": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (3).mp3",
+      "original_file": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+      "hash": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "duplicate_file": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830.mp3",
+      "original_file": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+      "hash": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "duplicate_file": "jasonlee3071-firing-range-140155 (2).mp3",
+      "original_file": "jasonlee3071-firing-range-140155 (1).mp3",
+      "hash": "19ccfd97b0cf3fd74d6bc7494c5aa07d"
+    },
+    {
+      "duplicate_file": "jasonlee3071-firing-range-140155.mp3",
+      "original_file": "jasonlee3071-firing-range-140155 (1).mp3",
+      "hash": "19ccfd97b0cf3fd74d6bc7494c5aa07d"
+    },
+    {
+      "duplicate_file": "koiroylers-pistal-gun-355832.mp3",
+      "original_file": "koiroylers-pistal-gun-355832 (1).mp3",
+      "hash": "4854f21799235a9546fa0332f4bd0d99"
+    },
+    {
+      "duplicate_file": "magiaz-revolver_firing-511498.mp3",
+      "original_file": "magiaz-revolver_firing-511498 (1).mp3",
+      "hash": "b2f81bd310ef1be338b6c18e7cd097a1"
+    },
+    {
+      "duplicate_file": "rzalmanialmani-gun-clean-sound-in-mp3-150561.mp3",
+      "original_file": "rzalmanialmani-gun-clean-sound-in-mp3-150561 (1).mp3",
+      "hash": "9458169abace48a0f577df0e675b4986"
+    },
+    {
+      "duplicate_file": "soundreality-auto-gun-shots-312660.mp3",
+      "original_file": "soundreality-auto-gun-shots-312660 (1).mp3",
+      "hash": "c86c6d958fdba627eae6f7c7516f3303"
+    },
+    {
+      "duplicate_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (2).mp3",
+      "original_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+      "hash": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "duplicate_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (3).mp3",
+      "original_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+      "hash": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "duplicate_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (4).mp3",
+      "original_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+      "hash": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "duplicate_file": "sovetsky_rastov72-aa-12-sound-effect-265676.mp3",
+      "original_file": "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+      "hash": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "duplicate_file": "spinopel-toy-gun-364850 (2).mp3",
+      "original_file": "spinopel-toy-gun-364850 (1).mp3",
+      "hash": "0030ae013c2dc4fa5260f778358a066b"
+    },
+    {
+      "duplicate_file": "spinopel-toy-gun-364850.mp3",
+      "original_file": "spinopel-toy-gun-364850 (1).mp3",
+      "hash": "0030ae013c2dc4fa5260f778358a066b"
+    },
+    {
+      "duplicate_file": "trading_nation-distorted-impact-explosion-185554.mp3",
+      "original_file": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+      "hash": "5dd19579c6c1857f651050106757da7f"
+    },
+    {
+      "duplicate_file": "wings_of_freedom-laze-gem-414066.mp3",
+      "original_file": "wings_of_freedom-laze-gem-414066 (1).mp3",
+      "hash": "3329289f1f6dbd67647144ac2feb475c"
+    }
+  ],
+  "unreadable": [],
+  "files": [
+    {
+      "filename": "49053354-machine-gun-307468 (1).mp3",
+      "base_stem": "49053354-machine-gun-307468",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.961,
+      "is_content_duplicate": false,
+      "md5": "b63dc8d3e9d2e69390147556b96e7e02"
+    },
+    {
+      "filename": "49053354-machine-gun-307468 (2).mp3",
+      "base_stem": "49053354-machine-gun-307468",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.961,
+      "is_content_duplicate": true,
+      "md5": "b63dc8d3e9d2e69390147556b96e7e02"
+    },
+    {
+      "filename": "49053354-machine-gun-307468.mp3",
+      "base_stem": "49053354-machine-gun-307468",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.961,
+      "is_content_duplicate": true,
+      "md5": "b63dc8d3e9d2e69390147556b96e7e02"
+    },
+    {
+      "filename": "ahsbt-akm-gunshot-368240.mp3",
+      "base_stem": "ahsbt-akm-gunshot-368240",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.543,
+      "is_content_duplicate": false,
+      "md5": "4d362905ec9d8c7c135c6471e982b82c"
+    },
+    {
+      "filename": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (1).mp3",
+      "base_stem": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.944,
+      "is_content_duplicate": false,
+      "md5": "e0d65e5f92ba8a10e9262921e359a91c"
+    },
+    {
+      "filename": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079 (2).mp3",
+      "base_stem": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.944,
+      "is_content_duplicate": true,
+      "md5": "e0d65e5f92ba8a10e9262921e359a91c"
+    },
+    {
+      "filename": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079.mp3",
+      "base_stem": "ajhartman42295-50-caliber-rifle-shot-with-shell-ping-132079",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.944,
+      "is_content_duplicate": true,
+      "md5": "e0d65e5f92ba8a10e9262921e359a91c"
+    },
+    {
+      "filename": "akivavita-grappling-gun-132447.mp3",
+      "base_stem": "akivavita-grappling-gun-132447",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 3.164,
+      "is_content_duplicate": false,
+      "md5": "3f1126df751c73996548488edaf9bcc3"
+    },
+    {
+      "filename": "alex_jauk-firearm-loads-and-shoots-197042.mp3",
+      "base_stem": "alex_jauk-firearm-loads-and-shoots-197042",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.376,
+      "is_content_duplicate": false,
+      "md5": "be7c7262683fe240c9ebf733f62b025a"
+    },
+    {
+      "filename": "alice_soundz-gun-shot-sound-effect-224087 (1).mp3",
+      "base_stem": "alice_soundz-gun-shot-sound-effect-224087",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 3.478,
+      "is_content_duplicate": false,
+      "md5": "eefca254ed1c64a29db3a17b0880892c"
+    },
+    {
+      "filename": "alice_soundz-gun-shot-sound-effect-224087 (2).mp3",
+      "base_stem": "alice_soundz-gun-shot-sound-effect-224087",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 3.478,
+      "is_content_duplicate": true,
+      "md5": "eefca254ed1c64a29db3a17b0880892c"
+    },
+    {
+      "filename": "alice_soundz-gun-shot-sound-effect-224087.mp3",
+      "base_stem": "alice_soundz-gun-shot-sound-effect-224087",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 3.478,
+      "is_content_duplicate": true,
+      "md5": "eefca254ed1c64a29db3a17b0880892c"
+    },
+    {
+      "filename": "armed_unit-distant-war-377958.mp3",
+      "base_stem": "armed_unit-distant-war-377958",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 234.681,
+      "is_content_duplicate": false,
+      "md5": "483c841e7d9fbc0fd4a24d7ea5d7db81"
+    },
+    {
+      "filename": "bannythecoolio-retro-revolver-shoot-425133 (1).mp3",
+      "base_stem": "bannythecoolio-retro-revolver-shoot-425133",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.935,
+      "is_content_duplicate": false,
+      "md5": "e683e07c7cf07c907ffa0128cdc49f7d"
+    },
+    {
+      "filename": "bannythecoolio-retro-revolver-shoot-425133 (2).mp3",
+      "base_stem": "bannythecoolio-retro-revolver-shoot-425133",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.935,
+      "is_content_duplicate": true,
+      "md5": "e683e07c7cf07c907ffa0128cdc49f7d"
+    },
+    {
+      "filename": "bannythecoolio-retro-revolver-shoot-425133.mp3",
+      "base_stem": "bannythecoolio-retro-revolver-shoot-425133",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.935,
+      "is_content_duplicate": true,
+      "md5": "e683e07c7cf07c907ffa0128cdc49f7d"
+    },
+    {
+      "filename": "bannythecoolio-shotgun-shoots-enemy-425136.mp3",
+      "base_stem": "bannythecoolio-shotgun-shoots-enemy-425136",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 3.217,
+      "is_content_duplicate": false,
+      "md5": "4ccfffa6ce92623af9b754a20c3f6f89"
+    },
+    {
+      "filename": "capaholiczsfx-machine-gun-529098.mp3",
+      "base_stem": "capaholiczsfx-machine-gun-529098",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.736,
+      "is_content_duplicate": false,
+      "md5": "0e47a3ed7cc37289bb1ee7bd2c5e3f99"
+    },
+    {
+      "filename": "chakong-gunshot-sfx-foley-impact-shot-gun-xploson-sound-chakongaudio-182540.mp3",
+      "base_stem": "chakong-gunshot-sfx-foley-impact-shot-gun-xploson-sound-chakongaudio-182540",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.38,
+      "is_content_duplicate": false,
+      "md5": "5bf1e8d9800766e710f4a887d0240007"
+    },
+    {
+      "filename": "chakong-laser-gun-shot-sound-future-sci-fi-lazer-wobble-chakongaudio-174883.mp3",
+      "base_stem": "chakong-laser-gun-shot-sound-future-sci-fi-lazer-wobble-chakongaudio-174883",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.376,
+      "is_content_duplicate": false,
+      "md5": "b0ca85f1f7eedbd32e949b0d31a0c7f6"
+    },
+    {
+      "filename": "creator-12-gun-dry-fire-611057.mp3",
+      "base_stem": "creator-12-gun-dry-fire-611057",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 5.784,
+      "is_content_duplicate": false,
+      "md5": "aabdbc30c818fa453a18396ecb8157a9"
+    },
+    {
+      "filename": "dennish18-machine-gun-129928.mp3",
+      "base_stem": "dennish18-machine-gun-129928",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 4.128,
+      "is_content_duplicate": false,
+      "md5": "f17b9a63153d8f0af2ad90b1c33902d8"
+    },
+    {
+      "filename": "dragon-studio-gun-reload-2-511308.mp3",
+      "base_stem": "dragon-studio-gun-reload-2-511308",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.512,
+      "is_content_duplicate": false,
+      "md5": "005fc030a9d8f44cb45f3b428834f464"
+    },
+    {
+      "filename": "dragon-studio-gun-reload-511309.mp3",
+      "base_stem": "dragon-studio-gun-reload-511309",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.512,
+      "is_content_duplicate": false,
+      "md5": "fad3c034f4a5d67077c9d63572af2480"
+    },
+    {
+      "filename": "dragon-studio-gunshot-511311.mp3",
+      "base_stem": "dragon-studio-gunshot-511311",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.232,
+      "is_content_duplicate": false,
+      "md5": "adb67b485e5914f7d3bf7133918781cf"
+    },
+    {
+      "filename": "driken5482-retro-laser-1-236669.mp3",
+      "base_stem": "driken5482-retro-laser-1-236669",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.183,
+      "is_content_duplicate": false,
+      "md5": "2acea06089a595e8faa7daa81c1913d8"
+    },
+    {
+      "filename": "eaglaxle-gun-shot-1-530788.mp3",
+      "base_stem": "eaglaxle-gun-shot-1-530788",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.104,
+      "is_content_duplicate": false,
+      "md5": "71f1cab57ed34ad3558ee7df20ec9fca"
+    },
+    {
+      "filename": "floraphonic-scifi-gun-shoot-1-266417.mp3",
+      "base_stem": "floraphonic-scifi-gun-shoot-1-266417",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 0.864,
+      "is_content_duplicate": false,
+      "md5": "763dd8041891b79089dad2c56acfb081"
+    },
+    {
+      "filename": "floraphonic-scifi-gun-shoot-5-266421 (1).mp3",
+      "base_stem": "floraphonic-scifi-gun-shoot-5-266421",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.184,
+      "is_content_duplicate": false,
+      "md5": "d6b691ae1f4287a19b81190d9d03d8d1"
+    },
+    {
+      "filename": "floraphonic-scifi-gun-shoot-5-266421 (2).mp3",
+      "base_stem": "floraphonic-scifi-gun-shoot-5-266421",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.184,
+      "is_content_duplicate": true,
+      "md5": "d6b691ae1f4287a19b81190d9d03d8d1"
+    },
+    {
+      "filename": "floraphonic-scifi-gun-shoot-5-266421.mp3",
+      "base_stem": "floraphonic-scifi-gun-shoot-5-266421",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 2.184,
+      "is_content_duplicate": true,
+      "md5": "d6b691ae1f4287a19b81190d9d03d8d1"
+    },
+    {
+      "filename": "flutie8211-ff-gun-shot-amp-reverb-echo-603843.mp3",
+      "base_stem": "flutie8211-ff-gun-shot-amp-reverb-echo-603843",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": false,
+      "md5": "f759d65600e5fa212c9a9f9a8195510b"
+    },
+    {
+      "filename": "flutie8211-ray-guns-firing-461698 (1).mp3",
+      "base_stem": "flutie8211-ray-guns-firing-461698",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 6.864,
+      "is_content_duplicate": false,
+      "md5": "53cd2512dbb129bfd63cc035c60980bc"
+    },
+    {
+      "filename": "flutie8211-ray-guns-firing-461698.mp3",
+      "base_stem": "flutie8211-ray-guns-firing-461698",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 6.864,
+      "is_content_duplicate": true,
+      "md5": "53cd2512dbb129bfd63cc035c60980bc"
+    },
+    {
+      "filename": "foisal72-gun-fire-346766.mp3",
+      "base_stem": "foisal72-gun-fire-346766",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 7.558,
+      "is_content_duplicate": false,
+      "md5": "25f14c9613c13da72c623f79d06ee15d"
+    },
+    {
+      "filename": "foisal72-gun-fire-475286.mp3",
+      "base_stem": "foisal72-gun-fire-475286",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.746,
+      "is_content_duplicate": false,
+      "md5": "7fffef76ead5b40ef53de9ddda587868"
+    },
+    {
+      "filename": "foisal72-gun-load-475276.mp3",
+      "base_stem": "foisal72-gun-load-475276",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 0.732,
+      "is_content_duplicate": false,
+      "md5": "1fe65dcf814708746cd768e15978cbf6"
+    },
+    {
+      "filename": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (1).mp3",
+      "base_stem": "freeeverythingxx-gun-cocking-sound-ver-2-270161",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.118,
+      "is_content_duplicate": false,
+      "md5": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "filename": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (2).mp3",
+      "base_stem": "freeeverythingxx-gun-cocking-sound-ver-2-270161",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.118,
+      "is_content_duplicate": true,
+      "md5": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "filename": "freeeverythingxx-gun-cocking-sound-ver-2-270161 (3).mp3",
+      "base_stem": "freeeverythingxx-gun-cocking-sound-ver-2-270161",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.118,
+      "is_content_duplicate": true,
+      "md5": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "filename": "freeeverythingxx-gun-cocking-sound-ver-2-270161.mp3",
+      "base_stem": "freeeverythingxx-gun-cocking-sound-ver-2-270161",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.118,
+      "is_content_duplicate": true,
+      "md5": "785ee100a21640febb9cc34a55659eb5"
+    },
+    {
+      "filename": "freesound_community-20190601_space_warning_gun_ambience-28929.mp3",
+      "base_stem": "freesound_community-20190601_space_warning_gun_ambience-28929",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 31.248,
+      "is_content_duplicate": false,
+      "md5": "4539f85919b6732a52f4ca302035d7f2"
+    },
+    {
+      "filename": "freesound_community-22-caliber-gunfire-with-ricochet-96358.mp3",
+      "base_stem": "freesound_community-22-caliber-gunfire-with-ricochet-96358",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.144,
+      "is_content_duplicate": false,
+      "md5": "c4fc1031244b97a273756e3ddb5b4892"
+    },
+    {
+      "filename": "freesound_community-22-rifle-dryfiring-87480 (1).mp3",
+      "base_stem": "freesound_community-22-rifle-dryfiring-87480",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.418,
+      "is_content_duplicate": false,
+      "md5": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "filename": "freesound_community-22-rifle-dryfiring-87480 (2).mp3",
+      "base_stem": "freesound_community-22-rifle-dryfiring-87480",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.418,
+      "is_content_duplicate": true,
+      "md5": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "filename": "freesound_community-22-rifle-dryfiring-87480 (3).mp3",
+      "base_stem": "freesound_community-22-rifle-dryfiring-87480",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.418,
+      "is_content_duplicate": true,
+      "md5": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "filename": "freesound_community-22-rifle-dryfiring-87480.mp3",
+      "base_stem": "freesound_community-22-rifle-dryfiring-87480",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.418,
+      "is_content_duplicate": true,
+      "md5": "058c9e56519b67cce5089fa082e4cc18"
+    },
+    {
+      "filename": "freesound_community-22multpl2-103719.mp3",
+      "base_stem": "freesound_community-22multpl2-103719",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 8.856,
+      "is_content_duplicate": false,
+      "md5": "2315c05d5d198ed3dbf8f84d89041737"
+    },
+    {
+      "filename": "freesound_community-50-cal-mg-104736.mp3",
+      "base_stem": "freesound_community-50-cal-mg-104736",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.768,
+      "is_content_duplicate": false,
+      "md5": "a9f3bf4571ea1db330199d51bc0d3d82"
+    },
+    {
+      "filename": "freesound_community-8-bit-fireball-81148 (1).mp3",
+      "base_stem": "freesound_community-8-bit-fireball-81148",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.936,
+      "is_content_duplicate": false,
+      "md5": "c6e625d1d655269d380e92a57844f5f7"
+    },
+    {
+      "filename": "freesound_community-8-bit-fireball-81148.mp3",
+      "base_stem": "freesound_community-8-bit-fireball-81148",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.936,
+      "is_content_duplicate": true,
+      "md5": "c6e625d1d655269d380e92a57844f5f7"
+    },
+    {
+      "filename": "freesound_community-9mm-pistol-shoot-short-reverb-7152.mp3",
+      "base_stem": "freesound_community-9mm-pistol-shoot-short-reverb-7152",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 1.491,
+      "is_content_duplicate": false,
+      "md5": "c65c7796a3d0d60259db3fbfbad77832"
+    },
+    {
+      "filename": "freesound_community-ammo-loaded-into-magazine-1-39781.mp3",
+      "base_stem": "freesound_community-ammo-loaded-into-magazine-1-39781",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "00426b4087a85c78020b3d03f5ef5ce2"
+    },
+    {
+      "filename": "freesound_community-ar15-real-recording-99253.mp3",
+      "base_stem": "freesound_community-ar15-real-recording-99253",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.568,
+      "is_content_duplicate": false,
+      "md5": "bbb8590b14b728dbbe4963c3e2b12d77"
+    },
+    {
+      "filename": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831 (1).mp3",
+      "base_stem": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 3.896,
+      "is_content_duplicate": false,
+      "md5": "f4cf42ff4c4a4e885847207fe57fdcc6"
+    },
+    {
+      "filename": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831.mp3",
+      "base_stem": "freesound_community-ar15-rifle-shot-from-50-yards-away-98831",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 3.896,
+      "is_content_duplicate": true,
+      "md5": "f4cf42ff4c4a4e885847207fe57fdcc6"
+    },
+    {
+      "filename": "freesound_community-artillery-gunfire-14607.mp3",
+      "base_stem": "freesound_community-artillery-gunfire-14607",
+      "category": "gunshot_artillery_mortar",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 6.96,
+      "is_content_duplicate": false,
+      "md5": "693707f2b4da0490ebf41ca576a86dfc"
+    },
+    {
+      "filename": "freesound_community-automatic_weapon_firing-83185.mp3",
+      "base_stem": "freesound_community-automatic_weapon_firing-83185",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.056,
+      "is_content_duplicate": false,
+      "md5": "67be3c8dfc2171550ad57f878c834632"
+    },
+    {
+      "filename": "freesound_community-big-laser-beam-94884.mp3",
+      "base_stem": "freesound_community-big-laser-beam-94884",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 6.264,
+      "is_content_duplicate": false,
+      "md5": "542ea6257ddcdef7f80bd6ca3beb7b68"
+    },
+    {
+      "filename": "freesound_community-bow-release-bow-and-arrow-4-101936.mp3",
+      "base_stem": "freesound_community-bow-release-bow-and-arrow-4-101936",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.872,
+      "is_content_duplicate": false,
+      "md5": "007ff426be132311c4d6e7a132d3cc90"
+    },
+    {
+      "filename": "freesound_community-bullet-flyby-5-39879.mp3",
+      "base_stem": "freesound_community-bullet-flyby-5-39879",
+      "category": "projectile_flyby",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.984,
+      "is_content_duplicate": false,
+      "md5": "4360ffa9b6ab9d56e608ed5b0a5f6fa5"
+    },
+    {
+      "filename": "freesound_community-burstfirewav-14443.mp3",
+      "base_stem": "freesound_community-burstfirewav-14443",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.864,
+      "is_content_duplicate": false,
+      "md5": "7fa5bc46ae90c7c9d5440f90669cf89b"
+    },
+    {
+      "filename": "freesound_community-clean-machine-gun-burst-98224 (1).mp3",
+      "base_stem": "freesound_community-clean-machine-gun-burst-98224",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.632,
+      "is_content_duplicate": false,
+      "md5": "7c8a4b98a66194cfb62fb1e85c28068a"
+    },
+    {
+      "filename": "freesound_community-clean-machine-gun-burst-98224.mp3",
+      "base_stem": "freesound_community-clean-machine-gun-burst-98224",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.632,
+      "is_content_duplicate": true,
+      "md5": "7c8a4b98a66194cfb62fb1e85c28068a"
+    },
+    {
+      "filename": "freesound_community-cp99-reload-96252 (1).mp3",
+      "base_stem": "freesound_community-cp99-reload-96252",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.24,
+      "is_content_duplicate": false,
+      "md5": "0902543b38b086a6400d8847b8017e01"
+    },
+    {
+      "filename": "freesound_community-cp99-reload-96252.mp3",
+      "base_stem": "freesound_community-cp99-reload-96252",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.24,
+      "is_content_duplicate": true,
+      "md5": "0902543b38b086a6400d8847b8017e01"
+    },
+    {
+      "filename": "freesound_community-distant-gunshot-95790.mp3",
+      "base_stem": "freesound_community-distant-gunshot-95790",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.384,
+      "is_content_duplicate": false,
+      "md5": "90b955ff7752aa69d7555acbfc6ea0b8"
+    },
+    {
+      "filename": "freesound_community-distant-gunshot-three-round-burst-82998.mp3",
+      "base_stem": "freesound_community-distant-gunshot-three-round-burst-82998",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.256,
+      "is_content_duplicate": false,
+      "md5": "54ba350093c4a3ed51118e83d8e9a0b6"
+    },
+    {
+      "filename": "freesound_community-distantshot-105199.mp3",
+      "base_stem": "freesound_community-distantshot-105199",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.088,
+      "is_content_duplicate": false,
+      "md5": "cda758a6b1f7ee1ca6b5a9a8d45df7cb"
+    },
+    {
+      "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771 (1).mp3",
+      "base_stem": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 190.632,
+      "is_content_duplicate": false,
+      "md5": "89d72cced411fda4a479a3ad65673b7c"
+    },
+    {
+      "filename": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771.mp3",
+      "base_stem": "freesound_community-epic-game-music-by-kris-klavenes-3-mins-49771",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 190.632,
+      "is_content_duplicate": true,
+      "md5": "89d72cced411fda4a479a3ad65673b7c"
+    },
+    {
+      "filename": "freesound_community-five-seven-gun-shot-and-silenced-104500 (1).mp3",
+      "base_stem": "freesound_community-five-seven-gun-shot-and-silenced-104500",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.976,
+      "is_content_duplicate": false,
+      "md5": "e7edba2373fb224402f8232574d5d6cd"
+    },
+    {
+      "filename": "freesound_community-five-seven-gun-shot-and-silenced-104500.mp3",
+      "base_stem": "freesound_community-five-seven-gun-shot-and-silenced-104500",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.976,
+      "is_content_duplicate": true,
+      "md5": "e7edba2373fb224402f8232574d5d6cd"
+    },
+    {
+      "filename": "freesound_community-flash-laser-gun-84914.mp3",
+      "base_stem": "freesound_community-flash-laser-gun-84914",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 9.696,
+      "is_content_duplicate": false,
+      "md5": "759a4c6c8ca1d6f86a6d9cbfde7f5ade"
+    },
+    {
+      "filename": "freesound_community-glock-19-handgun-pistol-30812.mp3",
+      "base_stem": "freesound_community-glock-19-handgun-pistol-30812",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 28.728,
+      "is_content_duplicate": false,
+      "md5": "535390daec155dd198c94bc0bee062ac"
+    },
+    {
+      "filename": "freesound_community-gun-battle-long-34065.mp3",
+      "base_stem": "freesound_community-gun-battle-long-34065",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 20.232,
+      "is_content_duplicate": false,
+      "md5": "16c80d82521158531639384d869a2598"
+    },
+    {
+      "filename": "freesound_community-gun-cock-stapeler-95646.mp3",
+      "base_stem": "freesound_community-gun-cock-stapeler-95646",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.696,
+      "is_content_duplicate": false,
+      "md5": "4cfa72629fad58f016498413b4471425"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+      "base_stem": "freesound_community-gun-dry-firing-1-96426",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "cc33170fbd2581f12fdb64b600563308"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-13-96416 (1).mp3",
+      "base_stem": "freesound_community-gun-dry-firing-13-96416",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "3ffd62dd105819ec63c25cfe9c2ea3fb"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-13-96416.mp3",
+      "base_stem": "freesound_community-gun-dry-firing-13-96416",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "3ffd62dd105819ec63c25cfe9c2ea3fb"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-3-39820.mp3",
+      "base_stem": "freesound_community-gun-dry-firing-3-39820",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "44e0d95c841590a25cb3df6e23956700"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-6-39793 (1).mp3",
+      "base_stem": "freesound_community-gun-dry-firing-6-39793",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "bef69a1a867a82229de118351da6caac"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-6-39793.mp3",
+      "base_stem": "freesound_community-gun-dry-firing-6-39793",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "bef69a1a867a82229de118351da6caac"
+    },
+    {
+      "filename": "freesound_community-gun-dry-firing-9-96427.mp3",
+      "base_stem": "freesound_community-gun-dry-firing-9-96427",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "fa5ba98c76a7ddb1ca7fe635627ca0e7"
+    },
+    {
+      "filename": "freesound_community-gun-firing-from-a-distance-12-39881.mp3",
+      "base_stem": "freesound_community-gun-firing-from-a-distance-12-39881",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.96,
+      "is_content_duplicate": false,
+      "md5": "fc785c8c2662adcc8c2cede65ca62df8"
+    },
+    {
+      "filename": "freesound_community-gun-firing-from-a-distance-18-39880.mp3",
+      "base_stem": "freesound_community-gun-firing-from-a-distance-18-39880",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.592,
+      "is_content_duplicate": false,
+      "md5": "9deda0ddcd867957e518e3c4caa37788"
+    },
+    {
+      "filename": "freesound_community-gun-load1-98406 (1).mp3",
+      "base_stem": "freesound_community-gun-load1-98406",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.544,
+      "is_content_duplicate": false,
+      "md5": "56c8c07c868d9cb725470efad4525e19"
+    },
+    {
+      "filename": "freesound_community-gun-load1-98406.mp3",
+      "base_stem": "freesound_community-gun-load1-98406",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.544,
+      "is_content_duplicate": true,
+      "md5": "56c8c07c868d9cb725470efad4525e19"
+    },
+    {
+      "filename": "freesound_community-gun-shot-1-7069.mp3",
+      "base_stem": "freesound_community-gun-shot-1-7069",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.888,
+      "is_content_duplicate": false,
+      "md5": "5616bad0d5080cc87fbbc6e8d985ad1e"
+    },
+    {
+      "filename": "freesound_community-gun-shot-56254 (1).mp3",
+      "base_stem": "freesound_community-gun-shot-56254",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.944,
+      "is_content_duplicate": false,
+      "md5": "bdfdba81b4c0b3229bd022e3e06a5d1c"
+    },
+    {
+      "filename": "freesound_community-gun-shot-56254.mp3",
+      "base_stem": "freesound_community-gun-shot-56254",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.944,
+      "is_content_duplicate": true,
+      "md5": "bdfdba81b4c0b3229bd022e3e06a5d1c"
+    },
+    {
+      "filename": "freesound_community-gun-shot-6178.mp3",
+      "base_stem": "freesound_community-gun-shot-6178",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.128,
+      "is_content_duplicate": false,
+      "md5": "5e232a266b92efb83df5f46073b3cb08"
+    },
+    {
+      "filename": "freesound_community-gun-shot-83336 (1).mp3",
+      "base_stem": "freesound_community-gun-shot-83336",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.664,
+      "is_content_duplicate": false,
+      "md5": "b927d9f36ebedf3c7886ae7c6fe1f761"
+    },
+    {
+      "filename": "freesound_community-gun-shot-83336.mp3",
+      "base_stem": "freesound_community-gun-shot-83336",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.664,
+      "is_content_duplicate": true,
+      "md5": "b927d9f36ebedf3c7886ae7c6fe1f761"
+    },
+    {
+      "filename": "freesound_community-gun-shots-91526.mp3",
+      "base_stem": "freesound_community-gun-shots-91526",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 1.281,
+      "is_content_duplicate": false,
+      "md5": "29fe9ea45b9cb79fdead8b7d9123c59b"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-10-39760 (1).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-10-39760",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.68,
+      "is_content_duplicate": false,
+      "md5": "c4673d98e21d1a9a8008184473dd39c7"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-10-39760.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-10-39760",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.68,
+      "is_content_duplicate": true,
+      "md5": "c4673d98e21d1a9a8008184473dd39c7"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-10-39761.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-10-39761",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.032,
+      "is_content_duplicate": false,
+      "md5": "c928c20010c74782ab55816011c6016b"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-12-96410",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.952,
+      "is_content_duplicate": false,
+      "md5": "6fda45e3d158868f5fe455b1efec26a3"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-12-96410.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-12-96410",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.952,
+      "is_content_duplicate": true,
+      "md5": "6fda45e3d158868f5fe455b1efec26a3"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-13-39758",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.048,
+      "is_content_duplicate": false,
+      "md5": "c9844f73b85cb066d85f820f404ed6fe"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-13-96423.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-13-96423",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.96,
+      "is_content_duplicate": false,
+      "md5": "028bec4e3fe65fd14146cf98fd75673e"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-17-39757.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-17-39757",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.136,
+      "is_content_duplicate": false,
+      "md5": "8b8e1b9613dff229a8525f438563256b"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-39730.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-39730",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.744,
+      "is_content_duplicate": false,
+      "md5": "9445eff9fd2d2e7246cdc8721f7896a8"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.744,
+      "is_content_duplicate": false,
+      "md5": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.744,
+      "is_content_duplicate": true,
+      "md5": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.744,
+      "is_content_duplicate": true,
+      "md5": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.744,
+      "is_content_duplicate": true,
+      "md5": "492925f4968c76d7a30c5e0879d817f1"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-22-39723.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-22-39723",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.208,
+      "is_content_duplicate": false,
+      "md5": "2c00a1decd5bd4e0be6f78546b3148bb"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-4-39727.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-4-39727",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.592,
+      "is_content_duplicate": false,
+      "md5": "a5607452dded872d8430f417dac3f2c7"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-6-39721.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-6-39721",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.728,
+      "is_content_duplicate": false,
+      "md5": "b119c476080fc950df11f6a682cc5ebf"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-8-39860.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-8-39860",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 6.528,
+      "is_content_duplicate": false,
+      "md5": "86dea357f5a3797b49a5effb771e459c"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-9-96408.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-9-96408",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 8.832,
+      "is_content_duplicate": false,
+      "md5": "18f58ce68cc648b3b3e59c104ebd6f2e"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-long-distance-3-39728.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-long-distance-3-39728",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.744,
+      "is_content_duplicate": false,
+      "md5": "d3f5feb08c1a141495231fe85f9cb918"
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-long-distance-9-39725.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-long-distance-9-39725",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.592,
+      "is_content_duplicate": false,
+      "md5": "d6cb7bc7a7d51d7c12a2d1dd85667560"
+    },
+    {
+      "filename": "freesound_community-gun_9mm_25m_180_off_axis_debris_m10-71503.mp3",
+      "base_stem": "freesound_community-gun_9mm_25m_180_off_axis_debris_m10-71503",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 30.168,
+      "is_content_duplicate": false,
+      "md5": "651efbf0a804fac915e0c120dbbbf25e"
+    },
+    {
+      "filename": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883.mp3",
+      "base_stem": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 18.24,
+      "is_content_duplicate": false,
+      "md5": "de1b1db7fa74fbfa775235219188d596"
+    },
+    {
+      "filename": "freesound_community-gunshot-46489.mp3",
+      "base_stem": "freesound_community-gunshot-46489",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.904,
+      "is_content_duplicate": false,
+      "md5": "b6a5922578d9f842887a9410a721dfe1"
+    },
+    {
+      "filename": "freesound_community-gunshot_001-82585 (1).mp3",
+      "base_stem": "freesound_community-gunshot_001-82585",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.72,
+      "is_content_duplicate": false,
+      "md5": "e8f5626f23e5727a8c4d535a5d2f04f1"
+    },
+    {
+      "filename": "freesound_community-gunshot_001-82585.mp3",
+      "base_stem": "freesound_community-gunshot_001-82585",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.72,
+      "is_content_duplicate": true,
+      "md5": "e8f5626f23e5727a8c4d535a5d2f04f1"
+    },
+    {
+      "filename": "freesound_community-hammer-cocking-back-on-pistol-8-39884 (1).mp3",
+      "base_stem": "freesound_community-hammer-cocking-back-on-pistol-8-39884",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "72dd2454abc159cc16e0dc4e9b49f523"
+    },
+    {
+      "filename": "freesound_community-hammer-cocking-back-on-pistol-8-39884.mp3",
+      "base_stem": "freesound_community-hammer-cocking-back-on-pistol-8-39884",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "72dd2454abc159cc16e0dc4e9b49f523"
+    },
+    {
+      "filename": "freesound_community-handgun_shot-80212 (1).mp3",
+      "base_stem": "freesound_community-handgun_shot-80212",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.136,
+      "is_content_duplicate": false,
+      "md5": "2aeb9b5afe84dd7c25f70c2e6510896f"
+    },
+    {
+      "filename": "freesound_community-handgun_shot-80212 (2).mp3",
+      "base_stem": "freesound_community-handgun_shot-80212",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.136,
+      "is_content_duplicate": true,
+      "md5": "2aeb9b5afe84dd7c25f70c2e6510896f"
+    },
+    {
+      "filename": "freesound_community-handgun_shot-80212.mp3",
+      "base_stem": "freesound_community-handgun_shot-80212",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.136,
+      "is_content_duplicate": true,
+      "md5": "2aeb9b5afe84dd7c25f70c2e6510896f"
+    },
+    {
+      "filename": "freesound_community-heavymachinegun-6998 (1).mp3",
+      "base_stem": "freesound_community-heavymachinegun-6998",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 36.528,
+      "is_content_duplicate": false,
+      "md5": "ea223bb8c2c66c1990e44a59d87fa37f"
+    },
+    {
+      "filename": "freesound_community-heavymachinegun-6998.mp3",
+      "base_stem": "freesound_community-heavymachinegun-6998",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 36.528,
+      "is_content_duplicate": true,
+      "md5": "ea223bb8c2c66c1990e44a59d87fa37f"
+    },
+    {
+      "filename": "freesound_community-kimber-1911-shooting-87831.mp3",
+      "base_stem": "freesound_community-kimber-1911-shooting-87831",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 6.744,
+      "is_content_duplicate": false,
+      "md5": "bafa428b19c93149c7d17338cae1c05e"
+    },
+    {
+      "filename": "freesound_community-large-machine-gun-80793.mp3",
+      "base_stem": "freesound_community-large-machine-gun-80793",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 2.432,
+      "is_content_duplicate": false,
+      "md5": "85ad242f6ebff39070f303692391a951"
+    },
+    {
+      "filename": "freesound_community-laser-compilation-05-31597.mp3",
+      "base_stem": "freesound_community-laser-compilation-05-31597",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 62.76,
+      "is_content_duplicate": false,
+      "md5": "91769dfd5c1e6b5da3c7ec5e6721e372"
+    },
+    {
+      "filename": "freesound_community-laser-effect-contact-mic-20428.mp3",
+      "base_stem": "freesound_community-laser-effect-contact-mic-20428",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 76.176,
+      "is_content_duplicate": false,
+      "md5": "b05e9b777ed4c81d6e31d574a131b6b4"
+    },
+    {
+      "filename": "freesound_community-laser-gun-81720.mp3",
+      "base_stem": "freesound_community-laser-gun-81720",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.136,
+      "is_content_duplicate": false,
+      "md5": "a0d994d06ca467d05749aa7c8ff823e1"
+    },
+    {
+      "filename": "freesound_community-lasers-foley_1-2-91576.mp3",
+      "base_stem": "freesound_community-lasers-foley_1-2-91576",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.888,
+      "is_content_duplicate": false,
+      "md5": "bcddbcfc5e1aea674e1032c58ac89c9a"
+    },
+    {
+      "filename": "freesound_community-launching-anti-tank-missiles-33736.mp3",
+      "base_stem": "freesound_community-launching-anti-tank-missiles-33736",
+      "category": "heavy_launcher_motor",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 22.92,
+      "is_content_duplicate": false,
+      "md5": "81e35eb9c070f819d5576769cc6f3964"
+    },
+    {
+      "filename": "freesound_community-lhs-gunshots-85275.mp3",
+      "base_stem": "freesound_community-lhs-gunshots-85275",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 5.304,
+      "is_content_duplicate": false,
+      "md5": "eb8165a30643c44a5eaed81f0c8cab2e"
+    },
+    {
+      "filename": "freesound_community-m-327-mortar-shots-105800.mp3",
+      "base_stem": "freesound_community-m-327-mortar-shots-105800",
+      "category": "gunshot_artillery_mortar",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.832,
+      "is_content_duplicate": false,
+      "md5": "4ec8898378821ce43431a0d21a7086cc"
+    },
+    {
+      "filename": "freesound_community-m16-rifle-shots-105797.mp3",
+      "base_stem": "freesound_community-m16-rifle-shots-105797",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 7.68,
+      "is_content_duplicate": false,
+      "md5": "b5b31369a7e01dc4f878aed2d1a41ba7"
+    },
+    {
+      "filename": "freesound_community-m4-assault-rifle-long-burst-102682.mp3",
+      "base_stem": "freesound_community-m4-assault-rifle-long-burst-102682",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 3.888,
+      "is_content_duplicate": false,
+      "md5": "8163e4fa1f5378390ed3fa1b783842b3"
+    },
+    {
+      "filename": "freesound_community-machine-gun-burst-43670.mp3",
+      "base_stem": "freesound_community-machine-gun-burst-43670",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.44,
+      "is_content_duplicate": false,
+      "md5": "cb95a40c5a339c665447bcef63bf82e6"
+    },
+    {
+      "filename": "freesound_community-machine-guns1-50827 (1).mp3",
+      "base_stem": "freesound_community-machine-guns1-50827",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 243.96,
+      "is_content_duplicate": false,
+      "md5": "66b98faf439424f665dbf18e86aaf7e6"
+    },
+    {
+      "filename": "freesound_community-machine-guns1-50827.mp3",
+      "base_stem": "freesound_community-machine-guns1-50827",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 243.96,
+      "is_content_duplicate": true,
+      "md5": "66b98faf439424f665dbf18e86aaf7e6"
+    },
+    {
+      "filename": "freesound_community-machinegunloopwav-14862.mp3",
+      "base_stem": "freesound_community-machinegunloopwav-14862",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 9.168,
+      "is_content_duplicate": false,
+      "md5": "bb6023635803e3381063498d941c2636"
+    },
+    {
+      "filename": "freesound_community-mortar-shots-88650.mp3",
+      "base_stem": "freesound_community-mortar-shots-88650",
+      "category": "gunshot_artillery_mortar",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 12.024,
+      "is_content_duplicate": false,
+      "md5": "c4ffc6fc8a3ae55e07a57701795e739e"
+    },
+    {
+      "filename": "freesound_community-musket-82280.mp3",
+      "base_stem": "freesound_community-musket-82280",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.776,
+      "is_content_duplicate": false,
+      "md5": "61476238eb83ac3b0f59290a51504be0"
+    },
+    {
+      "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+      "base_stem": "freesound_community-nerf-shots-102238",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 11.256,
+      "is_content_duplicate": false,
+      "md5": "39779463a69e3a106401db4e11249172"
+    },
+    {
+      "filename": "freesound_community-nerf-shots-102238.mp3",
+      "base_stem": "freesound_community-nerf-shots-102238",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 11.256,
+      "is_content_duplicate": true,
+      "md5": "39779463a69e3a106401db4e11249172"
+    },
+    {
+      "filename": "freesound_community-realistic-gun-fire-100696 (1).mp3",
+      "base_stem": "freesound_community-realistic-gun-fire-100696",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.512,
+      "is_content_duplicate": false,
+      "md5": "7b6bb444ec739ca88b2dcb09923e641a"
+    },
+    {
+      "filename": "freesound_community-realistic-gun-fire-100696.mp3",
+      "base_stem": "freesound_community-realistic-gun-fire-100696",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.512,
+      "is_content_duplicate": true,
+      "md5": "7b6bb444ec739ca88b2dcb09923e641a"
+    },
+    {
+      "filename": "freesound_community-ricochet-4-101446 (1).mp3",
+      "base_stem": "freesound_community-ricochet-4-101446",
+      "category": "projectile_ricochet",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.92,
+      "is_content_duplicate": false,
+      "md5": "5badb45d7b4b47dfcb883095b14f2138"
+    },
+    {
+      "filename": "freesound_community-ricochet-4-101446.mp3",
+      "base_stem": "freesound_community-ricochet-4-101446",
+      "category": "projectile_ricochet",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.92,
+      "is_content_duplicate": true,
+      "md5": "5badb45d7b4b47dfcb883095b14f2138"
+    },
+    {
+      "filename": "freesound_community-rocket-launch-76003.mp3",
+      "base_stem": "freesound_community-rocket-launch-76003",
+      "category": "heavy_launcher_motor",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 26.64,
+      "is_content_duplicate": false,
+      "md5": "96625827917a1a72163e50ccc8a46aaa"
+    },
+    {
+      "filename": "freesound_community-sci-fi-gun-shot-x6-14447.mp3",
+      "base_stem": "freesound_community-sci-fi-gun-shot-x6-14447",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 9.36,
+      "is_content_duplicate": false,
+      "md5": "0d086f6e943bee881d33f5a0179e0166"
+    },
+    {
+      "filename": "freesound_community-semiautorifleshotwav-14725.mp3",
+      "base_stem": "freesound_community-semiautorifleshotwav-14725",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 6.048,
+      "is_content_duplicate": false,
+      "md5": "98505d46a0c5604b847294101b03313e"
+    },
+    {
+      "filename": "freesound_community-shaking-gun-29171.mp3",
+      "base_stem": "freesound_community-shaking-gun-29171",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 43.104,
+      "is_content_duplicate": false,
+      "md5": "08b7876ba265b4a342268da1b9cd6c7b"
+    },
+    {
+      "filename": "freesound_community-shell-hitting-ground-36-39821.mp3",
+      "base_stem": "freesound_community-shell-hitting-ground-36-39821",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.728,
+      "is_content_duplicate": false,
+      "md5": "a37ad2d3760d220f08ea922a2ab8b190"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-19-39780.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-19-39780",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "47aa4e661399e05c72dee71a71008363"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-20-39858.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-20-39858",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "d404573248e16e54375bf9299983c5c6"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-21-39754 (1).mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-21-39754",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-21-39754 (2).mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-21-39754",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-21-39754 (3).mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-21-39754",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-21-39754.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-21-39754",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "e3d0d5fa29fa8999cb07438d416c5148"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-34-96424.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-34-96424",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.752,
+      "is_content_duplicate": false,
+      "md5": "20a0ff340b6fb8c28db4e87b2abddbd3"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-35-39790 (1).mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-35-39790",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": false,
+      "md5": "50712b6e262160a58371727989bed02e"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-35-39790.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-35-39790",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.896,
+      "is_content_duplicate": true,
+      "md5": "50712b6e262160a58371727989bed02e"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-40-39791.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-40-39791",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.56,
+      "is_content_duplicate": false,
+      "md5": "43be0d9aa9ca51662a2db13e0b5dc4b8"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-41-39859.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-41-39859",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.512,
+      "is_content_duplicate": false,
+      "md5": "20e2ed11ee81950cd738346e6405d7d3"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-44-27506 (1).mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-44-27506",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 14.832,
+      "is_content_duplicate": false,
+      "md5": "bacae2aa48b7911a754d949382e48a67"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-44-27506.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-44-27506",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 14.832,
+      "is_content_duplicate": true,
+      "md5": "bacae2aa48b7911a754d949382e48a67"
+    },
+    {
+      "filename": "freesound_community-shells-hitting-ground-47-27505.mp3",
+      "base_stem": "freesound_community-shells-hitting-ground-47-27505",
+      "category": "firearm_foley_shell_impact",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 22.224,
+      "is_content_duplicate": false,
+      "md5": "c5983a5a745ea8edc27a5ebf27c71ee6"
+    },
+    {
+      "filename": "freesound_community-shooting-star-2-104073.mp3",
+      "base_stem": "freesound_community-shooting-star-2-104073",
+      "category": "heavy_launcher_motor",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.368,
+      "is_content_duplicate": false,
+      "md5": "71a93d4c5e4d8a5383ad55cc43fe9ba2"
+    },
+    {
+      "filename": "freesound_community-shotgun-kaliber-20-compressed-the-spike-by-12-db-wav-100826.mp3",
+      "base_stem": "freesound_community-shotgun-kaliber-20-compressed-the-spike-by-12-db-wav-100826",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.968,
+      "is_content_duplicate": false,
+      "md5": "de53f26447abd9531d15ba1caca0c2b0"
+    },
+    {
+      "filename": "freesound_community-shotgun-shooting-things-105837.mp3",
+      "base_stem": "freesound_community-shotgun-shooting-things-105837",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 9.816,
+      "is_content_duplicate": false,
+      "md5": "30eecec1a7cc744fb18ac48f4cf7348b"
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748 (1).mp3",
+      "base_stem": "freesound_community-shots-fired-62748",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 18.6,
+      "is_content_duplicate": false,
+      "md5": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748 (2).mp3",
+      "base_stem": "freesound_community-shots-fired-62748",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 18.6,
+      "is_content_duplicate": true,
+      "md5": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748 (3).mp3",
+      "base_stem": "freesound_community-shots-fired-62748",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 18.6,
+      "is_content_duplicate": true,
+      "md5": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748.mp3",
+      "base_stem": "freesound_community-shots-fired-62748",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 18.6,
+      "is_content_duplicate": true,
+      "md5": "11351824a606ed3e16f8d5330689718e"
+    },
+    {
+      "filename": "freesound_community-sniper-rifle-firing-2-39885 (1).mp3",
+      "base_stem": "freesound_community-sniper-rifle-firing-2-39885",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.224,
+      "is_content_duplicate": false,
+      "md5": "25c6655ae8401565371d894b6f58c454"
+    },
+    {
+      "filename": "freesound_community-sniper-rifle-firing-2-39885 (2).mp3",
+      "base_stem": "freesound_community-sniper-rifle-firing-2-39885",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.224,
+      "is_content_duplicate": true,
+      "md5": "25c6655ae8401565371d894b6f58c454"
+    },
+    {
+      "filename": "freesound_community-sniper-rifle-firing-2-39885.mp3",
+      "base_stem": "freesound_community-sniper-rifle-firing-2-39885",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 4.224,
+      "is_content_duplicate": true,
+      "md5": "25c6655ae8401565371d894b6f58c454"
+    },
+    {
+      "filename": "freesound_community-taking-photo-with-camera-36437.mp3",
+      "base_stem": "freesound_community-taking-photo-with-camera-36437",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 0.816,
+      "is_content_duplicate": false,
+      "md5": "33822c63b3ebc11a653b2f311687b57f"
+    },
+    {
+      "filename": "freesound_community-turret-fire-85337.mp3",
+      "base_stem": "freesound_community-turret-fire-85337",
+      "category": "gunshot_artillery_mortar",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.592,
+      "is_content_duplicate": false,
+      "md5": "613a87fe804f0708ae4cf2ee6d43e4a0"
+    },
+    {
+      "filename": "freesound_community-unrelenting-shotgun-14832.mp3",
+      "base_stem": "freesound_community-unrelenting-shotgun-14832",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 2.928,
+      "is_content_duplicate": false,
+      "md5": "f8713e821f550f1392839c9e10c532e6"
+    },
+    {
+      "filename": "freesound_community-uzi-burst-100582.mp3",
+      "base_stem": "freesound_community-uzi-burst-100582",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 1.368,
+      "is_content_duplicate": false,
+      "md5": "34cd90898cf5911626fc04a7b4b92606"
+    },
+    {
+      "filename": "freesound_community-war-ambience-loop-32930 (1).mp3",
+      "base_stem": "freesound_community-war-ambience-loop-32930",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 23.856,
+      "is_content_duplicate": false,
+      "md5": "e8ed71e7e5cc5d81a6073b7ea7330cfc"
+    },
+    {
+      "filename": "freesound_community-war-ambience-loop-32930.mp3",
+      "base_stem": "freesound_community-war-ambience-loop-32930",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 23.856,
+      "is_content_duplicate": true,
+      "md5": "e8ed71e7e5cc5d81a6073b7ea7330cfc"
+    },
+    {
+      "filename": "freesound_community-windy-desert-gun-battle-33660.mp3",
+      "base_stem": "freesound_community-windy-desert-gun-battle-33660",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 35.904,
+      "is_content_duplicate": false,
+      "md5": "55f92495069fd5d34aa7bf26f1a89db1"
+    },
+    {
+      "filename": "freesound_community-wurtia-robto-90525.mp3",
+      "base_stem": "freesound_community-wurtia-robto-90525",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 22050,
+      "channels": 1,
+      "duration_seconds": 7.582,
+      "is_content_duplicate": false,
+      "md5": "58be391acdd888e5eee5734f4b896e1a"
+    },
+    {
+      "filename": "freesounds-4u-gun-mag-insert-1-395178.mp3",
+      "base_stem": "freesounds-4u-gun-mag-insert-1-395178",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.632,
+      "is_content_duplicate": false,
+      "md5": "9692dc0a3b444554acb8baba244de44d"
+    },
+    {
+      "filename": "fronbondi_skegs-foley-gate-latch-opening-and-closing-sound-effect-254262.mp3",
+      "base_stem": "fronbondi_skegs-foley-gate-latch-opening-and-closing-sound-effect-254262",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 15.048,
+      "is_content_duplicate": false,
+      "md5": "5022c0a55e55e1eeafe137536f8cb21c"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831 (1).mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": false,
+      "md5": "47e24041aebb449a03b910f5a5c4267e"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831.mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": true,
+      "md5": "47e24041aebb449a03b910f5a5c4267e"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832.mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-02-firing-shots-set-sound-effects-459832",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": false,
+      "md5": "54ea5bfb52ebbdbb630afbda3399bc51"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (1).mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": false,
+      "md5": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (2).mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": true,
+      "md5": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830 (3).mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": true,
+      "md5": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830.mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-03-firing-shots-set-sound-effects-459830",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": true,
+      "md5": "f6ecdd28cc8238dc191ff41207399e12"
+    },
+    {
+      "filename": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874.mp3",
+      "base_stem": "fronbondi_skegs-sfx-laserbeam-style-05-firing-shots-set-sound-effects-459874",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 19.824,
+      "is_content_duplicate": false,
+      "md5": "0224e0c1f8af667b72611bf193666f5f"
+    },
+    {
+      "filename": "italianpie29-rocket-launcher-301426.mp3",
+      "base_stem": "italianpie29-rocket-launcher-301426",
+      "category": "heavy_launcher_motor",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.008,
+      "is_content_duplicate": false,
+      "md5": "44fef8809acfcc8a22eef7228340f9ac"
+    },
+    {
+      "filename": "ivanv70--229738.mp3",
+      "base_stem": "ivanv70--229738",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 55.937,
+      "is_content_duplicate": false,
+      "md5": "370183a1edcd53257fe495242ab4b39b"
+    },
+    {
+      "filename": "jasonlee3071-firing-range-140155 (1).mp3",
+      "base_stem": "jasonlee3071-firing-range-140155",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 22.536,
+      "is_content_duplicate": false,
+      "md5": "19ccfd97b0cf3fd74d6bc7494c5aa07d"
+    },
+    {
+      "filename": "jasonlee3071-firing-range-140155 (2).mp3",
+      "base_stem": "jasonlee3071-firing-range-140155",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 22.536,
+      "is_content_duplicate": true,
+      "md5": "19ccfd97b0cf3fd74d6bc7494c5aa07d"
+    },
+    {
+      "filename": "jasonlee3071-firing-range-140155.mp3",
+      "base_stem": "jasonlee3071-firing-range-140155",
+      "category": "gun_battle_ambience",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 22.536,
+      "is_content_duplicate": true,
+      "md5": "19ccfd97b0cf3fd74d6bc7494c5aa07d"
+    },
+    {
+      "filename": "kalsstockmedia-a-laser-gunshot-scifi-sound-410619.mp3",
+      "base_stem": "kalsstockmedia-a-laser-gunshot-scifi-sound-410619",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 4.032,
+      "is_content_duplicate": false,
+      "md5": "d3df2ea81a4a34001642c01149d63e72"
+    },
+    {
+      "filename": "kalsstockmedia-earsplitting-noisy-machine-gun-long-burst-continuous-309727.mp3",
+      "base_stem": "kalsstockmedia-earsplitting-noisy-machine-gun-long-burst-continuous-309727",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 8.107,
+      "is_content_duplicate": false,
+      "md5": "cad5b66b6ff4a3bdc64be13a0cdf7f70"
+    },
+    {
+      "filename": "kalsstockmedia-machine-gun-bursts-gun-sounds-309721.mp3",
+      "base_stem": "kalsstockmedia-machine-gun-bursts-gun-sounds-309721",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 5.596,
+      "is_content_duplicate": false,
+      "md5": "afb9c46187ce3446a7df5bf4aad30a38"
+    },
+    {
+      "filename": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716.mp3",
+      "base_stem": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.929,
+      "is_content_duplicate": false,
+      "md5": "1b97ad0b3107e1cd8745627f604f5c6b"
+    },
+    {
+      "filename": "kave_msri-ak47-machine-gun-burst-sfx-332103.mp3",
+      "base_stem": "kave_msri-ak47-machine-gun-burst-sfx-332103",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 6.093,
+      "is_content_duplicate": false,
+      "md5": "c7b8fb92aa4d8f465ae65b09aee7beae"
+    },
+    {
+      "filename": "koiroylers-pistal-gun-355832 (1).mp3",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.118,
+      "is_content_duplicate": false,
+      "md5": "4854f21799235a9546fa0332f4bd0d99"
+    },
+    {
+      "filename": "koiroylers-pistal-gun-355832.mp3",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.118,
+      "is_content_duplicate": true,
+      "md5": "4854f21799235a9546fa0332f4bd0d99"
+    },
+    {
+      "filename": "lordsonny-plasma-gun-fire-162136.mp3",
+      "base_stem": "lordsonny-plasma-gun-fire-162136",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 6.015,
+      "is_content_duplicate": false,
+      "md5": "27eb1a79b33b7c6d76ee48ec25ed85a3"
+    },
+    {
+      "filename": "lucadialessandro-shooting-sound-fx-159024.mp3",
+      "base_stem": "lucadialessandro-shooting-sound-fx-159024",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 0.157,
+      "is_content_duplicate": false,
+      "md5": "3dbf0a877492b82a9229282e9c36aad0"
+    },
+    {
+      "filename": "magiaz-revolver_firing-511498 (1).mp3",
+      "base_stem": "magiaz-revolver_firing-511498",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": false,
+      "md5": "b2f81bd310ef1be338b6c18e7cd097a1"
+    },
+    {
+      "filename": "magiaz-revolver_firing-511498.mp3",
+      "base_stem": "magiaz-revolver_firing-511498",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": true,
+      "md5": "b2f81bd310ef1be338b6c18e7cd097a1"
+    },
+    {
+      "filename": "magiaz-rifle_shots-511497.mp3",
+      "base_stem": "magiaz-rifle_shots-511497",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": false,
+      "md5": "5d98206c89e0b2643f66db485241c979"
+    },
+    {
+      "filename": "magiaz-rifle_shots-511506.mp3",
+      "base_stem": "magiaz-rifle_shots-511506",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": false,
+      "md5": "d9ee5b18dc9005f0067a3eab97c5979b"
+    },
+    {
+      "filename": "magiaz-shot-458506.mp3",
+      "base_stem": "magiaz-shot-458506",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.112,
+      "is_content_duplicate": false,
+      "md5": "5fb864819a04980f53aefd33e969d2fa"
+    },
+    {
+      "filename": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271.mp3",
+      "base_stem": "masirez-arrow-release-from-bow-sound-effect-string-snap-and-projectile-304271",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.488,
+      "is_content_duplicate": false,
+      "md5": "972fac23d507729af810320a2989ad9f"
+    },
+    {
+      "filename": "meditation_hypnosis--110246.mp3",
+      "base_stem": "meditation_hypnosis--110246",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 17.887,
+      "is_content_duplicate": false,
+      "md5": "4214165a8c818a154b9896a9648e54ff"
+    },
+    {
+      "filename": "obitgames-rifle-gun-shooting-391562.mp3",
+      "base_stem": "obitgames-rifle-gun-shooting-391562",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 2.85,
+      "is_content_duplicate": false,
+      "md5": "cf36b2a3e4595969c0f2496e2d13e90e"
+    },
+    {
+      "filename": "pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "base_stem": "pwlpl-semi-automatic-weapon-sound-effect-359246",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 8.107,
+      "is_content_duplicate": false,
+      "md5": "e23eef94a94708bbfaa81dfabcf68952"
+    },
+    {
+      "filename": "pwlpl-semi-automatic-weapon-sound-effect-359247.mp3",
+      "base_stem": "pwlpl-semi-automatic-weapon-sound-effect-359247",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 8.107,
+      "is_content_duplicate": false,
+      "md5": "ef92af7204101a38a3a3cbed5923aafa"
+    },
+    {
+      "filename": "ribhavagrawal-gun-shots-230534.mp3",
+      "base_stem": "ribhavagrawal-gun-shots-230534",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.144,
+      "is_content_duplicate": false,
+      "md5": "43a1abded233b004bf35eb595d8144eb"
+    },
+    {
+      "filename": "rohhsadotcom-buried-exploding-grand-slap-from-wide-range-impacts-volume-two-403792.mp3",
+      "base_stem": "rohhsadotcom-buried-exploding-grand-slap-from-wide-range-impacts-volume-two-403792",
+      "category": "impact_punch_foley",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.301,
+      "is_content_duplicate": false,
+      "md5": "beb8845dafa151c87be288c81957c2a7"
+    },
+    {
+      "filename": "rohhsadotcom-rough-bright-glossy-impact-from-wide-range-impacts-volume-two-403796.mp3",
+      "base_stem": "rohhsadotcom-rough-bright-glossy-impact-from-wide-range-impacts-volume-two-403796",
+      "category": "impact_punch_foley",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 3.217,
+      "is_content_duplicate": false,
+      "md5": "9c90c8583276670956700875ae85ca8b"
+    },
+    {
+      "filename": "rohhsadotcom-thick-bursting-resonant-punch-from-wide-range-impacts-volume-two-403797.mp3",
+      "base_stem": "rohhsadotcom-thick-bursting-resonant-punch-from-wide-range-impacts-volume-two-403797",
+      "category": "impact_punch_foley",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 3.661,
+      "is_content_duplicate": false,
+      "md5": "157172c1ecad3303b9fefc3d3eba6c40"
+    },
+    {
+      "filename": "rzalmanialmani-gun-clean-sound-in-mp3-150561 (1).mp3",
+      "base_stem": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 34.075,
+      "is_content_duplicate": false,
+      "md5": "9458169abace48a0f577df0e675b4986"
+    },
+    {
+      "filename": "rzalmanialmani-gun-clean-sound-in-mp3-150561.mp3",
+      "base_stem": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 34.075,
+      "is_content_duplicate": true,
+      "md5": "9458169abace48a0f577df0e675b4986"
+    },
+    {
+      "filename": "scottishperson-sound-effects-single-gun-shot-247124.mp3",
+      "base_stem": "scottishperson-sound-effects-single-gun-shot-247124",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 4.603,
+      "is_content_duplicate": false,
+      "md5": "2a90f453e4b8a63329e048ed91d044d2"
+    },
+    {
+      "filename": "snoops_audio-06-weaponry-t-51-carbine-b-343799.mp3",
+      "base_stem": "snoops_audio-06-weaponry-t-51-carbine-b-343799",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 4.55,
+      "is_content_duplicate": false,
+      "md5": "d75a565fb078d357d22d545f62c283c6"
+    },
+    {
+      "filename": "soundreality-auto-gun-shots-312660 (1).mp3",
+      "base_stem": "soundreality-auto-gun-shots-312660",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": false,
+      "md5": "c86c6d958fdba627eae6f7c7516f3303"
+    },
+    {
+      "filename": "soundreality-auto-gun-shots-312660.mp3",
+      "base_stem": "soundreality-auto-gun-shots-312660",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.04,
+      "is_content_duplicate": true,
+      "md5": "c86c6d958fdba627eae6f7c7516f3303"
+    },
+    {
+      "filename": "soundreality-gun-shot-341144.mp3",
+      "base_stem": "soundreality-gun-shot-341144",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 5.496,
+      "is_content_duplicate": false,
+      "md5": "c77f704ba7936086f1933ad9cd1d6f37"
+    },
+    {
+      "filename": "soundreality-laser-gun-280344.mp3",
+      "base_stem": "soundreality-laser-gun-280344",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 6.024,
+      "is_content_duplicate": false,
+      "md5": "5896ae5154a2da8e9f67812174303a53"
+    },
+    {
+      "filename": "soundreality-sci-fi-gun-shot-312659.mp3",
+      "base_stem": "soundreality-sci-fi-gun-shot-312659",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.968,
+      "is_content_duplicate": false,
+      "md5": "a762e30f68352b1d20a0945ebdae4b86"
+    },
+    {
+      "filename": "sovetsky_rastov72-aa-12-sound-effect-265676 (1).mp3",
+      "base_stem": "sovetsky_rastov72-aa-12-sound-effect-265676",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.38,
+      "is_content_duplicate": false,
+      "md5": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "filename": "sovetsky_rastov72-aa-12-sound-effect-265676 (2).mp3",
+      "base_stem": "sovetsky_rastov72-aa-12-sound-effect-265676",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.38,
+      "is_content_duplicate": true,
+      "md5": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "filename": "sovetsky_rastov72-aa-12-sound-effect-265676 (3).mp3",
+      "base_stem": "sovetsky_rastov72-aa-12-sound-effect-265676",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.38,
+      "is_content_duplicate": true,
+      "md5": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "filename": "sovetsky_rastov72-aa-12-sound-effect-265676 (4).mp3",
+      "base_stem": "sovetsky_rastov72-aa-12-sound-effect-265676",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.38,
+      "is_content_duplicate": true,
+      "md5": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "filename": "sovetsky_rastov72-aa-12-sound-effect-265676.mp3",
+      "base_stem": "sovetsky_rastov72-aa-12-sound-effect-265676",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 2.38,
+      "is_content_duplicate": true,
+      "md5": "fe41062dfbda62e4e4f5ed94cfef7264"
+    },
+    {
+      "filename": "sovetsky_rastov72-m240-sound-effect-331683.mp3",
+      "base_stem": "sovetsky_rastov72-m240-sound-effect-331683",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.883,
+      "is_content_duplicate": false,
+      "md5": "a40af1188c59af3cfec4e9069aa54eba"
+    },
+    {
+      "filename": "sovetsky_rastov72-saiga-12-sound-effect-303483.mp3",
+      "base_stem": "sovetsky_rastov72-saiga-12-sound-effect-303483",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 1.831,
+      "is_content_duplicate": false,
+      "md5": "7a25da1e422fcc712fb393882842dadb"
+    },
+    {
+      "filename": "spinopel-toy-gun-364850 (1).mp3",
+      "base_stem": "spinopel-toy-gun-364850",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.654,
+      "is_content_duplicate": false,
+      "md5": "0030ae013c2dc4fa5260f778358a066b"
+    },
+    {
+      "filename": "spinopel-toy-gun-364850 (2).mp3",
+      "base_stem": "spinopel-toy-gun-364850",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.654,
+      "is_content_duplicate": true,
+      "md5": "0030ae013c2dc4fa5260f778358a066b"
+    },
+    {
+      "filename": "spinopel-toy-gun-364850.mp3",
+      "base_stem": "spinopel-toy-gun-364850",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 0.654,
+      "is_content_duplicate": true,
+      "md5": "0030ae013c2dc4fa5260f778358a066b"
+    },
+    {
+      "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+      "base_stem": "trading_nation-distorted-impact-explosion-185554",
+      "category": "impact_punch_foley",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 4.498,
+      "is_content_duplicate": false,
+      "md5": "5dd19579c6c1857f651050106757da7f"
+    },
+    {
+      "filename": "trading_nation-distorted-impact-explosion-185554.mp3",
+      "base_stem": "trading_nation-distorted-impact-explosion-185554",
+      "category": "impact_punch_foley",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 4.498,
+      "is_content_duplicate": true,
+      "md5": "5dd19579c6c1857f651050106757da7f"
+    },
+    {
+      "filename": "u_62htdrvg4y-gun-shot-359196.mp3",
+      "base_stem": "u_62htdrvg4y-gun-shot-359196",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 24000,
+      "channels": 2,
+      "duration_seconds": 5.952,
+      "is_content_duplicate": false,
+      "md5": "6d28354833c60f767af6e6a7b9f4e98f"
+    },
+    {
+      "filename": "u_6y9n97bgg6-caulking-gun-back-381411.mp3",
+      "base_stem": "u_6y9n97bgg6-caulking-gun-back-381411",
+      "category": "ambient_foley_music",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 0.984,
+      "is_content_duplicate": false,
+      "md5": "792bec0951442f497018a2a382a71d7e"
+    },
+    {
+      "filename": "u_b6hqzcpu1z-handgun-sound-effect-432110.mp3",
+      "base_stem": "u_b6hqzcpu1z-handgun-sound-effect-432110",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.872,
+      "is_content_duplicate": false,
+      "md5": "66bac6f824005f760dc4b2b7ab67ad3c"
+    },
+    {
+      "filename": "u_f09vejvoga-gun-shot-350315.mp3",
+      "base_stem": "u_f09vejvoga-gun-shot-350315",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 8.52,
+      "is_content_duplicate": false,
+      "md5": "b128073eec201cbf51c1021a25c13360"
+    },
+    {
+      "filename": "universfield-gun-reload-123781.mp3",
+      "base_stem": "universfield-gun-reload-123781",
+      "category": "firearm_foley_mechanics",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 0.968,
+      "is_content_duplicate": false,
+      "md5": "dd7231cfb41127203793e1eadd661179"
+    },
+    {
+      "filename": "universfield-pistol-shot-278821.mp3",
+      "base_stem": "universfield-pistol-shot-278821",
+      "category": "gunshot_single",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 2,
+      "duration_seconds": 1.992,
+      "is_content_duplicate": false,
+      "md5": "3cae30d54ca659da167a829483fcb6f2"
+    },
+    {
+      "filename": "voicebosch-laser-gun-174976.mp3",
+      "base_stem": "voicebosch-laser-gun-174976",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 22.621,
+      "is_content_duplicate": false,
+      "md5": "e21f81d31152332f7f902f81f26c4cf7"
+    },
+    {
+      "filename": "wings_of_freedom-continuous-shooting-pistol-438574.mp3",
+      "base_stem": "wings_of_freedom-continuous-shooting-pistol-438574",
+      "category": "gunshot_automatic_burst",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 1,
+      "duration_seconds": 5.047,
+      "is_content_duplicate": false,
+      "md5": "4a4471ab9b9e51648d66b89bd981b442"
+    },
+    {
+      "filename": "wings_of_freedom-laze-gem-414066 (1).mp3",
+      "base_stem": "wings_of_freedom-laze-gem-414066",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 10.068,
+      "is_content_duplicate": false,
+      "md5": "3329289f1f6dbd67647144ac2feb475c"
+    },
+    {
+      "filename": "wings_of_freedom-laze-gem-414066.mp3",
+      "base_stem": "wings_of_freedom-laze-gem-414066",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 44100,
+      "channels": 2,
+      "duration_seconds": 10.068,
+      "is_content_duplicate": true,
+      "md5": "3329289f1f6dbd67647144ac2feb475c"
+    },
+    {
+      "filename": "xpmonster-toy-gun-reloading-amp-shooting-419582.mp3",
+      "base_stem": "xpmonster-toy-gun-reloading-amp-shooting-419582",
+      "category": "scifi_laser_toy",
+      "format": "MP3",
+      "samplerate": 48000,
+      "channels": 1,
+      "duration_seconds": 1.176,
+      "is_content_duplicate": false,
+      "md5": "e7379b1e5df23a40483698be191402ef"
+    }
+  ]
+}

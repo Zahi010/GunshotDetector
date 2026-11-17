@@ -1,0 +1,13 @@
+vector_id,scenario_name,description,expected_alert_count,phase14_alert_count,phase14_verdict,phase17_alert_count,phase17_verdict,candidate_alert_count,candidate_verdict
+VEC-01,Isolated Unconfirmed Spike,"Single window at 0.78, followed by silence (0.10). No 2nd window.",0,0,PASS,1,FAIL_DEFECT,0,PASS
+VEC-02,Unrelated Spikes Across Short Gap (3s),"Spike at 0.0s (0.78), silence for 3s, Spike at 3.0s (0.78), silence.",0,0,PASS,1,FAIL_DEFECT,0,PASS
+VEC-03,Unrelated Spikes Across Long Gap (100s),"Spike at 0.0s (0.78), silence for 100s, Spike at 100.0s (0.78), silence.",0,0,PASS,1,FAIL_DEFECT,0,PASS
+VEC-04,Three Unrelated Spikes Across Gaps,"Three isolated spikes at t=0s, t=20s, t=40s (all 0.78). None confirmed.",0,0,PASS,2,FAIL_DEFECT,0,PASS
+VEC-05,Consecutive Qualifying Windows,"Two consecutive windows >= 0.75 (0.78, 0.79), then silence.",1,1,PASS,1,PASS,1,PASS
+VEC-06,Genuine Immediate Qualification,Single window >= 0.88 (0.92) with high crest factor (15.0 dB >= 12.0 dB).,1,1,PASS,1,PASS,1,PASS
+VEC-07,Recording-Boundary State Isolation,File 1 ends with trailing unconfirmed spike (0.78); File 2 starts with unconfirmed spike (0.78).,0,0,PASS,2,FAIL_DEFECT,0,PASS
+VEC-08,Empty Window Sequence,Empty list of window results passed to merger.,0,0,PASS,0,PASS,0,PASS
+VEC-09,Irregular Timestamp Intervals,"Irregular hops: t=0.0s (0.78), silence at t=0.48s (0.10), jump to t=15.0s (0.78), silence at t=15.48s (0.10).",0,0,PASS,1,FAIL_DEFECT,0,PASS
+VEC-10,End-of-Stream Trailing Flush Guard,"Stream ends immediately after an unconfirmed window [0.10, 0.78]. Must not flush.",0,0,PASS,1,FAIL_DEFECT,0,PASS
+VEC-11,Previously Confirmed Active Event,"Sustained event spanning 4 windows (0.78, 0.79, 0.81, 0.76), then decay (0.10).",1,1,PASS,1,PASS,1,PASS
+VEC-12,Confirmed Event Followed by Unconfirmed Spike,"Confirmed event at t=0s (0.78, 0.79), silence for 5s, trailing spike at t=5s (0.78).",1,1,PASS,2,FAIL_DEFECT,1,PASS

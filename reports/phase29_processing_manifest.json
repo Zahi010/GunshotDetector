@@ -1,0 +1,47 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_29_CONFIGURATION_VERIFICATION_AIRCRAFT_VALIDATION_ROBUSTNESS_AUDIT",
+  "timestamp_epoch": 1794673537.5504901,
+  "timestamp_iso": "2026-11-14T16:25:37Z",
+  "execution_host": "WINDOWS_WORKSTATION",
+  "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "input_reports_verified": [
+    "reports/phase28_final_report.md",
+    "reports/phase28_baseline_freeze.json",
+    "reports/phase28_metric_reconciliation.csv",
+    "reports/phase28_exposure_reproduction.csv",
+    "reports/phase28_cooldown_interval_ledger.csv",
+    "reports/phase28_aircraft_event_sequences.csv",
+    "reports/phase27_recording_provenance.csv",
+    "reports/phase27_exposure_accounting.csv"
+  ],
+  "generated_deliverables": [
+    "reports/phase29_final_report.md",
+    "reports/phase29_baseline_freeze.json",
+    "reports/phase29_threshold_provenance_audit.md",
+    "reports/phase29_runtime_configuration_manifest.csv",
+    "reports/phase29_aircraft_mechanism_validation.md",
+    "reports/phase29_aircraft_sequence_reconstruction.csv",
+    "reports/phase29_aircraft_evidence_gaps.csv",
+    "reports/phase29_cooldown_convention_audit.md",
+    "reports/phase29_campaign_rate_robustness.md",
+    "reports/phase29_campaign_rate_table.csv",
+    "reports/phase29_loco_reproduction.csv",
+    "reports/phase29_statistical_reproduction.md",
+    "reports/phase29_reproducibility_audit.md",
+    "reports/phase29_risk_and_limitation_register.md",
+    "reports/phase29_processing_manifest.json",
+    "reports/phase29_artifact_manifest.json",
+    "reports/phase29_test_results.txt",
+    "scripts/reproduce_phase29_analysis.py",
+    "tests/test_phase29_reproduction.py"
+  ],
+  "verification_summary": {
+    "frozen_model_hashes": "ALL_MATCHED",
+    "threshold_discrepancy_verdict": "RESOLVED_TYPOGRAPHICAL_ERROR_IN_PHASE27_NARRATIVE",
+    "aircraft_fragmentation_verdict": "PARTIALLY_SUPPORTED_UNVERIFIED_INTERMEDIATE_TRACES",
+    "cooldown_conventions_reproduced": "CONVENTION_A_AND_B_EXACTLY_REPRODUCED",
+    "exposure_rate_robustness": "PHASE_14_AGGREGATE_ADVANTAGE_RETAINED_AEROSONIC_DEPENDENT",
+    "benchmark_limitation_acknowledgement": "FOUR_CAMPAIGNS_INSUFFICIENT_FOR_GENERALIZATION"
+  }
+}

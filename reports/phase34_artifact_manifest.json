@@ -1,0 +1,140 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_34_FINAL_STREAM_LEVEL_PROVENANCE_AND_EXPOSURE_INTEGRITY_AUDIT",
+  "archive_filename": "gunshot_detection_phase34.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase34.zip",
+  "archive_size_bytes": 4552249,
+  "archive_sha256": "1c961893c89285a48c5bf2a61a09b3dd71860febc12ac2fb56f0e43fd2a41208",
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "test_execution_record": {
+    "test_command": "pytest gunshot/tests/test_phase34_reproduction.py -v",
+    "exit_status": 0,
+    "passed_tests": 12,
+    "failed_tests": 0,
+    "pass_rate_pct": 100.0
+  },
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+    "size_bytes": 23340,
+    "role": "Default Research Baseline (retained; free from state-machine defects)",
+    "verified_thresholds": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0
+    }
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+    "size_bytes": 29067,
+    "role": "Selectable Experimental Profile (promotion rejected; confirmed 8/12 state-machine defect and aircraft fragmentation)",
+    "state_machine_defect": "Confirmed omission of 'else: active_cluster = []' and unguarded EOF flush"
+  },
+  "experimental_candidate_patch": {
+    "model": "Phase 17 State-Reset Candidate",
+    "file": "experiments/phase31/model_phase17_state_reset_candidate.py",
+    "sha256": "c144b917b56532787e2a9198f2cad4a77dc2095b57962f31d11d250a4d5d9ea5",
+    "size_bytes": 29718,
+    "role": "Quarantined Diagnostic Reference (regression tests: 12/12 PASS; schema divergence noted)"
+  },
+  "workstream_1_inventory_summary": {
+    "canonical_stream_count": 23,
+    "unique_hashes_count": 23,
+    "exact_duration_seconds": 45525.5755,
+    "exact_duration_hours": 12.645993194444445,
+    "rounded_duration_hours": 12.646
+  },
+  "workstream_2_duration_summary": {
+    "authoritative_campaigns": {
+      "CAMPAIGN-SOUTHAMPTON-EXP1": "10 streams, 19,800.0000 s (5.5000 hr)",
+      "CAMPAIGN-CHEW-MAGNA": "1 stream, 2,100.0000 s (0.5833 hr)",
+      "CAMPAIGN-BILBAO": "6 streams, 2,025.5755 s (0.5627 hr)",
+      "CAMPAIGN-ADELAIDE-AEROSONIC": "6 streams, 21,600.0000 s (6.0000 hr)"
+    },
+    "phase33_text_discrepancy_diagnosis": "Phase 31 matches physical audio WAV headers bit-for-bit. Phase 33 text report Section 5.2 contained an accidental clerical transposition from Phase 32 narrative. Phase 33 CSV registry was already physically accurate."
+  },
+  "workstream_3_exposure_summary": {
+    "phase14_total_alerts": 128,
+    "phase17_total_alerts": 159,
+    "alert_difference_p14_minus_p17": -31,
+    "phase14_gross_far": 10.1218,
+    "phase17_gross_far": 12.5732,
+    "phase14_conv_a_far": 10.179,
+    "phase17_conv_a_far": 12.6611,
+    "phase14_conv_b_far": 10.2237,
+    "phase17_conv_b_far": 14.6243,
+    "aerosonic_conv_b_inflation_p17_seconds": 6283.28
+  },
+  "workstream_4_independence_summary": {
+    "genuine_independent_campaigns_count": 4,
+    "adelaide_exposure_share_pct": 47.45,
+    "adelaide_alert_share_pct": 62.72,
+    "bilbao_alert_share_pct": 21.25,
+    "paired_zero_difference_streams": 15,
+    "paired_nonzero_difference_streams": 8
+  },
+  "workstream_5_statistical_method_summary": {
+    "exact_tied_rank_permutation_p": 0.2109375,
+    "exact_untied_combinatorial_p": 0.1953125,
+    "scipy_asymptotic_normal_p": 0.1562601,
+    "pratt_p": 0.3675438,
+    "exact_sign_test_p": 0.7265625,
+    "pittsburgh_strict_mcnemar_p": 0.21875
+  },
+  "governance_decision": {
+    "default_research_baseline": "Phase 14 Balanced",
+    "phase17_promotion_status": "REJECTED_DO_NOT_PROMOTE",
+    "candidate_patch_status": "EXPERIMENTAL_DIAGNOSTIC_ONLY",
+    "life_safety_operational_deployment": "STRICTLY_PROHIBITED"
+  },
+  "packaged_files_count": 42,
+  "packaged_files": [
+    "README.md",
+    "app.py",
+    "config.py",
+    "data/phase27/source_metadata/LICENSE.txt",
+    "data/phase27/source_metadata/environment_class_mappings.csv",
+    "data/phase27/source_metadata/locations.json",
+    "experiments/phase31/model_phase17_state_reset_candidate.py",
+    "feature_extractor.py",
+    "model.py",
+    "model_phase13.py",
+    "model_phase14.py",
+    "model_phase17.py",
+    "model_phase8.py",
+    "model_phase9.py",
+    "models/gunshot_yamnet_bundle/catboost_model.joblib",
+    "models/gunshot_yamnet_bundle/class_mapping.json",
+    "models/gunshot_yamnet_bundle/classifier_head.keras",
+    "models/gunshot_yamnet_bundle/lightgbm_model.joblib",
+    "models/gunshot_yamnet_bundle/metadata.json",
+    "models/gunshot_yamnet_bundle/model_config.json",
+    "models/gunshot_yamnet_bundle/threshold.json",
+    "models/gunshot_yamnet_bundle/xgboost_model.joblib",
+    "reports/phase34_authoritative_statistical_method_register.csv",
+    "reports/phase34_campaign_independence_audit.md",
+    "reports/phase34_campaign_level_metrics.csv",
+    "reports/phase34_campaign_mapping_comparison.csv",
+    "reports/phase34_canonical_23_stream_registry.csv",
+    "reports/phase34_duration_comparison.csv",
+    "reports/phase34_duration_discrepancy_analysis.md",
+    "reports/phase34_exposure_reproduction.md",
+    "reports/phase34_final_report.md",
+    "reports/phase34_historical_corrections.md",
+    "reports/phase34_historical_discrepancy_register.csv",
+    "reports/phase34_input_hash_manifest.json",
+    "reports/phase34_paired_metric_reconciliation.csv",
+    "reports/phase34_statistical_reconciliation.md",
+    "reports/phase34_stream_level_detector_metrics.csv",
+    "reports/phase34_test_execution_log.txt",
+    "requirements.txt",
+    "scripts/package_phase34_archive.py",
+    "scripts/reproduce_phase34_audit.py",
+    "tests/test_phase34_reproduction.py"
+  ]
+}

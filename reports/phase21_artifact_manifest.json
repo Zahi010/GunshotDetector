@@ -1,0 +1,53 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_21_CLUSTER_AWARE_VALIDATION",
+  "archive_filename": "gunshot_detection_phase21.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase21.zip",
+  "archive_size_bytes": 8211219,
+  "archive_sha256": "b065747b0e6118d228336bee7f8c3811890b638a25070d3ce2a047c329b3e225",
+  "total_archive_entries": 137,
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_production_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "statistical_summary": {
+    "unadjusted_event_mcnemar_p_value": 0.03125,
+    "incident_level_mcnemar_p_value": 0.25,
+    "holm_adjusted_mcnemar_p_value": 0.125,
+    "lopo_exclude_fp4_p_value": 0.25,
+    "category_a_quiescent_background_seconds": 140.416,
+    "garwood_95_upper_bound_alerts_per_hour": 77.033,
+    "category_d_phase_14_balanced_recall": 0.8333
+  },
+  "key_deliverables": [
+    "reports/phase21_final_report.md",
+    "reports/phase21_baseline_freeze.json",
+    "reports/phase21_event_cluster_hierarchy.csv",
+    "reports/phase21_event_level_reproduction.csv",
+    "reports/phase21_event_contingency.json",
+    "reports/phase21_event_level_statistics.md",
+    "reports/phase21_recording_level_results.csv",
+    "reports/phase21_recording_level_comparison.md",
+    "reports/phase21_position_level_results.csv",
+    "reports/phase21_burst_analysis.csv",
+    "reports/phase21_clustered_statistics.md",
+    "reports/phase21_cluster_bootstrap_results.json",
+    "reports/phase21_leave_one_position_out.csv",
+    "reports/phase21_negative_exposure_timeline.csv",
+    "reports/phase21_false_alert_statistics.json",
+    "reports/phase21_false_alert_exposure_correction.md",
+    "reports/phase21_category_d_reconciliation.md",
+    "reports/phase21_category_d_corrected_metrics.json",
+    "reports/phase21_all_model_comparisons.csv",
+    "reports/phase21_test_results.txt",
+    "tests/test_phase21_cluster_aware_audit.py",
+    "scripts/reproduce_phase21_cluster_aware_analysis.py"
+  ]
+}

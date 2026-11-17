@@ -1,0 +1,1186 @@
+{
+  "phase": 14,
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "archive_verification": {
+    "gunshot_detection_phase8.zip": {
+      "exists": true,
+      "size_mb": 462.72,
+      "actual_sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "expected_sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "matched": true
+    },
+    "gunshot_detection_phase9.zip": {
+      "exists": true,
+      "size_mb": 825.77,
+      "actual_sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "expected_sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "matched": true
+    },
+    "gunshot_detection_phase10.zip": {
+      "exists": true,
+      "size_mb": 825.84,
+      "actual_sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "expected_sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "matched": true
+    },
+    "gunshot_detection_phase11.zip": {
+      "exists": true,
+      "size_mb": 825.87,
+      "actual_sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "expected_sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "matched": true
+    },
+    "gunshot_detection_phase12.zip": {
+      "exists": true,
+      "size_mb": 1048.73,
+      "actual_sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a",
+      "expected_sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a",
+      "matched": true
+    },
+    "gunshot_detection_phase13.zip": {
+      "exists": true,
+      "size_mb": 1276.98,
+      "actual_sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561",
+      "expected_sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561",
+      "matched": true
+    }
+  },
+  "dev_benchmark_reproduction": {
+    "BASELINE_PHASE9": {
+      "tp": 32,
+      "fn": 21,
+      "fp": 56,
+      "tn": 213,
+      "precision": 36.36,
+      "recall": 60.38,
+      "f1": 45.39,
+      "pocket_recall": 50.0,
+      "pocket_tp": 2,
+      "pocket_fn": 2,
+      "duplicate_alerts": 0
+    },
+    "CANDIDATE_PHASE13": {
+      "tp": 28,
+      "fn": 25,
+      "fp": 52,
+      "tn": 214,
+      "precision": 35.0,
+      "recall": 52.83,
+      "f1": 42.11,
+      "pocket_recall": 75.0,
+      "pocket_tp": 3,
+      "pocket_fn": 1,
+      "duplicate_alerts": 0
+    }
+  },
+  "continuous_benchmark_reproduction": {
+    "exposure_hours": 2.0,
+    "baseline_alerts": 193,
+    "candidate_alerts": 129,
+    "baseline_rate_per_hr": 96.5,
+    "candidate_rate_per_hr": 64.5,
+    "reduction_percent": 33.16,
+    "baseline_categories": {
+      "fireworks": 165,
+      "thunder_and_weather": 25,
+      "general_ambience": 3
+    },
+    "candidate_categories": {
+      "fireworks": 113,
+      "thunder_and_weather": 13,
+      "general_ambience": 3
+    }
+  },
+  "provenance_summary": {
+    "total_continuous_benchmark_tracks": 120,
+    "total_reused_from_phase7_eval": 88,
+    "total_reused_from_phase8_eval": 10,
+    "total_reused_from_phase10_eval": 10,
+    "total_reused_from_phase12_final_test": 0,
+    "total_reused_from_phase12_res_val": 0,
+    "classification_breakdown": {
+      "HISTORICALLY_USED": 120
+    },
+    "duplicate_tracks_count": 98,
+    "duplicate_tracks_details": [
+      {
+        "filename": "1-115545-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "3ac50abf1e7c9b3086585d7d786c2f6b7b4b884108ceb4c4f643f8e3fa4caaab",
+        "decoded_sha256": "25f2e89741f002205c161fb92b476b093e988c8b2057719b964678ef2e30a374",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115545-B-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "5f0f6888b96325412665b9265ffecfc6337f07d9e71bf98205304f9e28fd34a2",
+        "decoded_sha256": "d15b798a1d7c5646727ff84ddf5583d00a01d2695cbb65ffc90a316f06e7778d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115545-C-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "8f377a0ec82ef2e7c0e7b59714180edc0a4bc039b8f362d2eeead8b1e6c5bd58",
+        "decoded_sha256": "912b4eecbaab86beafa170ef02bf04097a144ce2a2c8824af054ecd9baf36700",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115546-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "abb7aaa557626692d532e71ec5257399df56df36cae6657c63522425dde0581f",
+        "decoded_sha256": "d3634be8c171f82be401b127d7ccf6cbc610faa4ed3c629fd5b2e68f0bb666d8",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-160563-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "853c5ceac82891c53d4c8f918ee74e91fa56187c5c5c0442020440f2e4bfcd84",
+        "decoded_sha256": "7b157329f334e043eac02c4bd3ea88578c7674492eebdad5c9d80ea5da59731b",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-160563-B-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "810d1ca90e7a6b3ce1b84dcd918b11c010c38a0b0c3a0ae95f96f9c91c789c49",
+        "decoded_sha256": "09a79a816c0f52db198584f457d2b6c5fb0e32ce65ef552731cc32216dd71eb4",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-25777-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "b8e4b7411b687d7aea986070bee7ea02b2f13a6aec6c176961b7e53263a2c3af",
+        "decoded_sha256": "4b1e59854a8c926733b72afa7c43f58107ab824c2a1ab733fb22ad044d41839b",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-25781-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "7a3a19a4d9c8eda970c76dd5c04fa9bb030475625aa94431bb5710ce59a028e4",
+        "decoded_sha256": "ffa7e2249b7b47e08d1ab58cceedd0540c40ddb074a192992a3213b5d6de3fbb",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117615-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "767834d60f2684da8efbcfa1a91709670bce90919ef579cc36bb13ff514f1f08",
+        "decoded_sha256": "5e096fcbc8f62e5a8ff4224dcc5a2df70906ae7f00822f8c59acee7b5ada7549",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117615-B-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "1dfdaa1f7b217ba393c52ce9bb70a945393ab3b73af9b1ce56627a56d38caabb",
+        "decoded_sha256": "ab366544fae380d1ddc1958b33d348f834aaa9bc6b1867a36cd06756189d9421",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117615-C-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "e5a9aeaddae0a2e5bc5fd757607654c2883836679baeff21d44a3d2cc32dd88e",
+        "decoded_sha256": "da99903d221e16133194ee2346644f3c7444bcd9d408fdbc90702b6a5d7d5fbc",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117615-D-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "53e46153374aff6b0d291cddc20065d9421356aaea08cd6fdb930c7f55af523f",
+        "decoded_sha256": "7be7aa5c9c32688404a5bfe89f7069120a0a5d6cad02ffa5a2280c0afa328e4b",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117615-E-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "bbc06aa38e2b5126fc5d1f7fa4ea4d92c6819080ef264935985af53f7b160db4",
+        "decoded_sha256": "9e82248e3da3b5f7f5e8903ff5a56b0faab97d4ab3d6f73ca909b7ef56379fae",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117616-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "f87acf8b797d8ae54c604106f9e51e01f1f6f1b00bfe8b69af089b8160d0b6b8",
+        "decoded_sha256": "5eb2d34ae6f288e2f08ecf7f1e05b89aec39bf324fbe1c3f2cf0fe8337e63456",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-117617-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "c772c0024807c6d571e08afc929b564fa1cfaea367ef686cf4ccd2fa0db6acc0",
+        "decoded_sha256": "2afdb5af078bbb0ea24c9f7a61a3854b512b331e3f95c6176553821152f69845",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-165801-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "1d6a5f08886c020928e6c93af4c27d04995e74e42b0be4a99f32fd7bc292ec4a",
+        "decoded_sha256": "243e0347e11fecea98b615b3f69b5de1a4e484244d63cd334f150ceea921cced",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-119120-A-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "baad57c9428d78f0e0de5eaa79fff661478c37433bfd6cb6031c0c92135a4cc0",
+        "decoded_sha256": "c30beba5c5af9c3bbba200fcc4e237042f6a5b2eb5b4cf128acfa608e603b6c1",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-119120-B-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "3dbb97983366a994bd607b064da52879a47b68f7194f202987aa45e0d947cf9e",
+        "decoded_sha256": "c22e670ff225bd0f72a6e346ccba7bd38d1b8368536c12f9fc0e8986be94260a",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-119120-C-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "d055eb62ef340654913fda0c1a7c9c16a185016458bb0f33af20f134bf0f81c5",
+        "decoded_sha256": "55add9c099b89cdd4aa7b61080d001c368af216f7b4a8fb689755178b48643f6",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-119120-D-48.wav",
+        "category": "fireworks",
+        "raw_sha256": "1da8694228e5a3ac0a90c85f431f49a4d51583128cd8bc440bfda30b67cb7999",
+        "decoded_sha256": "f3598250348ce83e69676a45b5c2ddec6d496c8434db7c2f974ea52fdac2dbf6",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-101296-A-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "b0323e17979ff3d840ce3f9b7f13bf800a69a48f62632162b964efc9bfe4ef10",
+        "decoded_sha256": "0f8a4fdf4f2a21464ede8eb18c4b1c4997b3293f0bcfc9785e59e1dd88ad6f55",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-101296-B-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "bdad401df959569dc44ad26fff3ff097de5ac98cde763eb37a557a4ab441440f",
+        "decoded_sha256": "54218e84aed23aa673ebe4ff451fad47f28ac92ab8653d84386a64d06da7f684",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115521-A-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "87c3f36e376c3c26faac723d3d1a8ba0af76c8b3e1b456cfe4062975e67b88d2",
+        "decoded_sha256": "7f816ecf80974789ea088b788b9df0fd170f2777b17647a8395e35884535b78f",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-137296-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "73e2dd5e66dda29f76a54b53c3c8e33441d105fc35c1d231bfbd8f7a18442969",
+        "decoded_sha256": "73c418a0129b08af2ca9fb20351a7bdd1acc9f8889add4d2d30557cd4f375b0d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-23222-A-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "680bc85f2f6fb1f0fef85a1f4f059bc7b6957a30d0a0b3dd8e93c287216cbbd5",
+        "decoded_sha256": "bfeef94bf6e7682a844596c0da5d6a70101b9fbf06237dc6b240ab22597d5af7",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-23222-B-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "a48701b1104510004ad4d425bf0dbc8d55b8febd1a603b9e72c1a74075b45c23",
+        "decoded_sha256": "d503168cb7e124c32beea8cd39c506b13eba1465f9766f0667ac854173c4bf7e",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-24524-A-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "a0a8af38dc93186bdaef63b0eff44853604d4c2ba8a2f329109c784a8fab3f67",
+        "decoded_sha256": "b27f3f8c652233241d4fa30cb9c00b4662f41119bb481312ff53c7321331b4a5",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-24524-B-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "661ff207a4373a81a5311745e1d51b79bb42ac9825a87a592d21637aa514dbf3",
+        "decoded_sha256": "99d7f909b1a4cad6cb63763a55a8b07657cf975b6271cf254846280a1db51570",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-24524-C-19.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "3116ac95bb308961b1581d3db91e9926581ce901507828cf210d5540239239d3",
+        "decoded_sha256": "03ec305b81a5014b9569de9e2e45d9630a8bb2744e810f43e5e6087ec8b4b690",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-29532-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "f7161457776ff69adbb903e870a3ecf532228a033de6896f25af2f4ce77c5f68",
+        "decoded_sha256": "2eb3ff859a7faee0bc7aeb844b7ea848d14849c1026a26aca4620b16c81893e8",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-47709-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "179c0a007da435841be8bca63bb0aa44fefc1af1b9dbb2a413f9c0acff805fea",
+        "decoded_sha256": "c341616a49c9f420b9c06d6180ceca979a28062876cb79bca02165f04165f0ea",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-47714-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "cfcba34eb24f53b5be2c5a824c664dc376890631490c29a46655abb43b19ae8b",
+        "decoded_sha256": "0b7f0b2d8eec1d24019c112fe9d61b5845798c72109494a3ceb69bc2f67efa4b",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-51035-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "d8b851e1a4210e2a8ef92ce603b4dabe12743a51318a59d3b1d393e856de12b0",
+        "decoded_sha256": "b77a51659537dd3743f90897947cd58ba4cc14721fd94e9ddab91d90c01ebc39",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-51036-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "77aee0377d909fb77cd085ef1a1828c8aec3da8306e8ca7cf8c17f5c77ae3111",
+        "decoded_sha256": "ce1d94951a4e3e89f73031d5cbe78d9e206b7220bc101e18e60c50fbdf585970",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-51037-A-16.wav",
+        "category": "thunder_and_weather",
+        "raw_sha256": "3609c5ef4959aab64c320e757d5d7d6aab49ab027ba9cf955de00874d16e8b23",
+        "decoded_sha256": "83ba37af1e64f46940e072bb2aae937c81d63da64210c7e1ca830d1942ae1d9d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-116765-A-41.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "1199ff6d4f5040bf20f06a441276bcd6448b1e1de4f098ce3e47d856ee97ce33",
+        "decoded_sha256": "04565424740200e0f7e4cbcb517939a2953f7db05e998790e0621008c14616fb",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-17124-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "9d5e01e07a386ee36c2e73f40817d132a54d91c936eccc01414280abca5a4209",
+        "decoded_sha256": "fb2f05c5e1a3ea6fd6696ef796b769f0a748d6a852987ae592da69200e06b97f",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-19026-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "67bb2fe5cf138930eb6a6a84bedeb7284093076738cd47ef73cc8b3b8393ff40",
+        "decoded_sha256": "232e96fe045b85bc2fb6d46ea1241ab56d392b87bcf7a766ae13cf40ca825d5c",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-19898-A-41.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "02afa3102978b5fb16f9c6237d90231abb74318873309600f01caf4776746944",
+        "decoded_sha256": "8b92b36b1a4d6e67bc53ca3c7867cc14c668401567f3b1cf4156d4e03263e8c1",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-19898-B-41.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "cab4735712a7727e16cc1946308f80034c926c59ed467dccf539f39bebe8d61d",
+        "decoded_sha256": "207e5db21853a48f0f7be9889ea6d940b3ad760ec5e26f25904126d968ae8f2e",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-19898-C-41.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "04f11bf73d8b4df3c64b523a334f42f44053045478810093bf028fb02a82448e",
+        "decoded_sha256": "f15a6204d13c8a90011205c5bdcd34c4cb8e503c3633f3bc159450f0899273a8",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-24074-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "ebdbc03e89c6a41c8ce1df7b12d4e2c4bb3f91345c43e7d75a1ed1357ff5f7e0",
+        "decoded_sha256": "a05b6e64c0530e9269eaed895d7686509c3ba9e7db132f86256c92e85dae3e1a",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-24076-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "723edafd5bda638184bab5038745b6cafc9c813440b236175074d4d42b142d94",
+        "decoded_sha256": "18017df7b561faa8cc95611d3e0ba4fb1c89cd0dc7604879c4626db1a36cb2a7",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-254507-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "ebe976ccd285cb44e6585d889f2a8759c5de47e9940f638ecaa300def46e544a",
+        "decoded_sha256": "c40e937cfda0d52afd097bd585a56bf1a3284ef4d9ce1f11bdeadfb02a56007e",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-26176-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "f1972b41b111a56e84d4fff30dd2e628521d6c699693adc60c14985c4cfdbf25",
+        "decoded_sha256": "37730965b7ff10168247bbb4dbb0ff9bbda09624262ab7146ccc26689f316762",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-26177-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "65655fc14cb749884c5965a42912decebf922aa6b51f1e27f56da7f35d1d381f",
+        "decoded_sha256": "f53244af6178fc7266b6b68571487eb9cfd415427fd4662b2fea55a2e219602f",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-28808-A-43.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "23c54679c820a7f6a71674df1ef064afffd3344d8ea859d9c5978301ce2736a5",
+        "decoded_sha256": "dc023d10ce2b0b8951174bd8a81fda450d243f143991d9d1a08a66766dfa291e",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-47250-A-41.wav",
+        "category": "engine_machinery",
+        "raw_sha256": "81312e10f426ae6312c29a97fd4227ef36bcae323c520ddff4b8e890d458772d",
+        "decoded_sha256": "9fea79b7ce762c56c5a8d95bb6fd285aacf60ae0ee7545a66c379cf94aaeb64d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-101336-A-30.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "e738266e395e378102f74e0920b05ff5937543788420d5b2a6b8d3df8bdb3910",
+        "decoded_sha256": "f0b3815f039fe500f9095a7c61eaa219db5bb27e99455f83f2ab1aef7db651f9",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-101404-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "a5e9ca3a735d31404f93194af687d2eca85e4a940ccda0675755b410342e8474",
+        "decoded_sha256": "3b368ce9238b4afb122bd895c0cf1320da753a1e9cc1fb59e32fc9e562c677b7",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-103995-A-30.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "1c1d3e65b7a58658766180d2faeeb9bdd1fe7405119bf100d9cd2f671a6e2b11",
+        "decoded_sha256": "98c4cfd52f6af0f0c43da12acfc2ef7b53c782d4f2310b5a46bbd9cfe4d625b2",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-103999-A-30.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "f33db9ec0b036d0dd17c911d456c33a59c0fc85974245a85fed56b8d2568724e",
+        "decoded_sha256": "d040cf383a1430790db2e8b33807c591dd3be1960ad6769bf69c35f320ae3c85",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-104089-A-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "2b6ec14aafc6ed98c833c5c7e56780d283f3ceaea0d4c3c142b2f49fcc2fd215",
+        "decoded_sha256": "598c7e325693fbbe4354695cd3392fb96666f859af3a30f855bb3ca18cb61bc7",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-104089-B-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "61adeef196a98fc7b2c22104cd160bded3ce89b7e9867814b22e40a08e993291",
+        "decoded_sha256": "3036c154493587cc1131fcf24c235767cbb9864cedfb0ef001ff61a0eca12689",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-105224-A-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "a91622b0235b622d7913ae2cc9af3785a546356310507bb7ffd6f1cb6d38ab85",
+        "decoded_sha256": "2270f7f1f528fa80fbf56855ffb40a18bd858e65dc66c905072a28b2f1a26f54",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-110537-A-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "9d061b30110d82a33f97eb42146d20e827b34683983a4e10fe83765f58f9d4d5",
+        "decoded_sha256": "0afc3de1aea3e52c03c9c364e1c732086abb773395f81f94240f45f08d59311d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115920-A-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "8ed0886be0b6491573df97a5541b270415f95573cfef9b9ff0360a2b0d042bb6",
+        "decoded_sha256": "04ca241b3ed5c36e10f621000cd9e645475373351e83b34bff4fd37491b0a450",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115920-B-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "1674d1ae06080afb7d4d91b3228fe1ab8fd4f27170c5ad76751db4e844aaf0e2",
+        "decoded_sha256": "2418ca9b9e332cf7c9e5f050bdcc6b71ab202f3d5a2959de2f157b9fb80a6513",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-115921-A-22.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "b87d30852b565dd2b7d5c33b6ef5d4bbaaf1c03235f98a85fde1d3ba70f1c027",
+        "decoded_sha256": "1452ece08b615eab87ca525963d837095172e50376d8c5785a6a41e139dc9d5e",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-20133-A-39.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "db6946133c37fbd4513fe932dbb71e0b077bf7d240beaed339eb6c88e48c903b",
+        "decoded_sha256": "a0318eec75be5d112f7ebc6f554d063b9a839a440ac9291a98100b31a88426e2",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-26188-A-30.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "655277d3f1c75ddc67aada3ab350bd6029fea04d288b9c747e10bc84cc802de1",
+        "decoded_sha256": "7c462f6c49ce07e146d97a0594fc82f2dd68a1953793e708a81b07a78ed4982a",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-41615-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "2d31544f7e5ba3eb21f20e115d7bf8dc1ad23508806625ed628436c8a77852ca",
+        "decoded_sha256": "0640d1197821767474354ba1caf732f1fa1f02ff1b662f6eaa99b4a02fc5c2d7",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-43764-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "4ff56bb3e83b36fd9cf7e3225860cbbea3a407ab7e8eed4420c89ba7bb0fd805",
+        "decoded_sha256": "6eef8a6131176dd567faf061867610b7cce954ac87016f64ef5a5fa1219b4101",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-52290-A-30.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "09082f42b1ee2bc467eab41e2251419eb29fbf0b8bb7ab72a4b04812641c5dc6",
+        "decoded_sha256": "5156a9ff35a8231895efe6452607800e5a0c4817fcda173282544860cdfd0705",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-58846-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "4079bd5c988db8589acc487a512da50a339d9a08215f9df1d765962e47069889",
+        "decoded_sha256": "366aa4a4df1ba1bd7c00ffad50d26aa9f5620d2cecc127487328df79b7103d7a",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-60676-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "f78f154c98a28b64cf6fb5f063bdd83e68a14cea47cf494076b5c4059a549b70",
+        "decoded_sha256": "e718541281e3a671abcfa65f6b7a35035e0eb71e7afa00d165b015993a83853d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-68670-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "6399c82dec4718aad6731fa799d93a8f234e20603f034235f7786596e5717c39",
+        "decoded_sha256": "79b76eee63fb293c6d8a9c939384ea80396cbaa2d07a4d365563de245a7095b9",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-68734-A-34.wav",
+        "category": "sharp_impacts",
+        "raw_sha256": "121ac4bd64ee4295536a9f99f6d676bdacc1d71dd4c57dd05f9ac1e3ba651589",
+        "decoded_sha256": "89d9bcc8bca749bf16b18720e1dc6905b9a27e34ad85b7fdaa6c9dfd3c02a97c",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-13571-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "92baf64d0e246d513e7a94e3778459558dcc222ec7cd30b12c58092a3d903142",
+        "decoded_sha256": "9b13111252aa8c3ca10ccf793e0d1251f6e796ba2951b8a51ee5f14e29323426",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-13572-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "fdbfa0391e7433b24a268a0f716afd057ca7f75c79fe0245f5072869baf19018",
+        "decoded_sha256": "9da2dbc8e8f99dc71cf1912d35dd71201d1d3590891bbc7088665bfeafeaa71d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-21421-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "4547302835eb89a4fddaebca32b56e26784cc8453f7ee1984c014ffc8af6819e",
+        "decoded_sha256": "d15abce875454c4a43c51349a4c9d124d354884fc60b47403538f71ba2118795",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-22804-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "2212340e03c7e481a21f0e4845f54dc521d6c8a5c961d3421445b85f9bdf1ca9",
+        "decoded_sha256": "0aafa7774e9f43c06144b9daafd20631e56a6e9e79832e521f3b6563d6380690",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-40154-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "ea7a0ee2d9bd383afbe44dbec23fb3688ca0f96fe90758b6d952d3e8ce33513b",
+        "decoded_sha256": "a25e57af70da5f38a855b030acc0a4c53b74bc50034d13b9b90ec29754e5503b",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-48298-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "da6a7b9e762834c586b6e4e273754a3255f9910b781cd4c29997df7aa7ecc9a6",
+        "decoded_sha256": "539d93296461ccff4acf652888a2945ff02da004ba3e786781f159ebdbbf91f7",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-54747-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "a0664359aa21e7b44f8de962632c9ed2bca9f86728056ae8dd14ae7ac5cd0330",
+        "decoded_sha256": "238e882c781c1852e51129f8b94740a9c544f026c5581c9458563ec6056dd28d",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-56907-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "e0de072c2a397fb68b373c758ebf13481ade9c6330444180d40b0518cfb62ff3",
+        "decoded_sha256": "13ad831d863f79898a612d3674472bfe9f88ebc6df902a3fd6d1fbcd3af861aa",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-56926-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "1583d0be06e9869e2647770cc58c35018337157ca1652bfb7b911e6139e6cb03",
+        "decoded_sha256": "baeea0ddf4e0f689ed29f301e78e5a05d325548d1c8c7224e31d9dc317a34881",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-57191-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "9a8b14997744a923922052ac97d9a43ac1ec9d39e04b8a89649dc0d58177d8f1",
+        "decoded_sha256": "ce01590be5bebd7c8febe3a93ed34498e639ed1cdc774b4a044b0334c2271b23",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-59565-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "c592d9af027fb1e53d98bcb330f013854a498ab6953b0528d3606718a3a27a8e",
+        "decoded_sha256": "d6361df1454db8c4eaf2b60872df0b82e1270346fb6a5269d9825e21b76937ac",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-59566-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "81ff3870e169f9ceb10a4ebe58be40c5b7a30ef9f21cf215bbbd5a747eb4bcbe",
+        "decoded_sha256": "e664554f5554f5caa7e055322e91e45c3254c3423bec415217b673055f1db0b6",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-61618-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "495ea1156f726d49eec02edeed6a8be6f5dce80d3262fd4da50134870e09e24d",
+        "decoded_sha256": "62c1208cb7443836ace3dda5c38293fcb6ea4c689effb44f3f396bded1f2e734",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-77346-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "ebc3196bb19c9174e56d5a5cc1c37e6e296803a340ef057eddeb60401e219531",
+        "decoded_sha256": "5fef0f14e46267cefd36b57dafb294b7b24b5e0b90b7a897fc8bf3a7b6486a8f",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-77347-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "e071e9a3fe23d98359303ba0a6e98531fd32060302988700de36798345b25de3",
+        "decoded_sha256": "148e8d1999ffea6cfa5032321d3758b0ff1328690409b337719e571afec2bedd",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-78381-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "8b402796ab92ed28495b1f9f93c22db4c916cc40fa1459e1376078acf8f1bd43",
+        "decoded_sha256": "2f8b1b169e3b54597725ac300f049a31e31076cda3cb4b5fa1664ad695443857",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-111102-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "d8761cb9528326a37bd8fba7ab3d9330dcdb6d1cc73798a21a6d069ba1c539cb",
+        "decoded_sha256": "c1fdc9023efb92feb25074c806529751306f65db0079d32c2a9a63074102ef15",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-111102-B-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "ae91dd8bd047cd9046ab7f429a4a34d32254749dc9bdde00ed6a22444fa5d37a",
+        "decoded_sha256": "b62ed7f73d193490022294996291781344670e12924f60b0d51f8f8e05aa1067",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-122110-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "c6a19ee5012def48fb7aecf119fc7aea76907da1d7689d2e649675f2059e99e0",
+        "decoded_sha256": "bd4f7f37ac8b4c8b45ceace4e7c3587435a7f908b63c781c52cbbe1d74fe1dcf",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "3-139109-A-46.wav",
+        "category": "metallic_chimes",
+        "raw_sha256": "af64f85921ab2491f4dc060eeada635c2a547d96afb3731e1386661165e96af1",
+        "decoded_sha256": "face157b8ded9697fc934066d837dcf540dea97749dab43b509c1adb3f8a6a4f",
+        "overlap_with": [
+          "phase7_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-17150-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "3d278bc2034dfb83881491a8eec97de6f1239f0a5b8a7c02be46b5aab0a51609",
+        "decoded_sha256": "31a0885f5ea405163387266b715bb411a47b87a19006f80250607a0793cd30e2",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-17565-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "bf16e25363a2d5824c07e96dc05defcb87e1d9dcd47bfd241a9d25e01b411209",
+        "decoded_sha256": "18cbaf65a7af4b30cddb302d30fe4d0201790b839c3c5fce195409dccd94854b",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-17742-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "57c4d44ed80ad163ac63353ea98a7b286cfbe5ceb844cc57959b70c08ce5dde9",
+        "decoded_sha256": "4d02226216f8623caf0d9a38626f62aa671142b57bb179282a2a47f82feb626b",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-17808-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "e6a90f134fe2f2eaa759b2b01ec831d6f86e300522fb0a5d19e050df16c606af",
+        "decoded_sha256": "c651fa2155a92b8776c2b7bed4151e8383a9c4224caf978c4acea515438b77ce",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-17808-B-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "f28b0f8158b6a5adfa4bca5df5c71963c839dd22815440c8b3e220ef2016a365",
+        "decoded_sha256": "a6333003cdc7da25a9d56a5b75d2caf8fec0ecb00ef3b60a4054cd8901e2a2ce",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-4211-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "6e8d15a855d1622c1f7dcd12e00ba2bfc3b65a316947e1bbdcaa0be0157175db",
+        "decoded_sha256": "bee02f84991b1b9ff16b76571658ef95af869a588f50835dceb87fbf73a5c428",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-46272-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "d48f5f4994b0ac7bbd4983f7c4cb3bdee0a3fe15bdbd0ac8f0fba7450d75c678",
+        "decoded_sha256": "9c69c019b891d4b20a830f05c41eddbb7fc9fa37b6e7d5ad0ae05016cd011b2d",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "1-7057-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "f92e52f9ab78d700dc10bcbc36020082613e669db245961b3205e8394c075da6",
+        "decoded_sha256": "63e6de543f05006c4f2dfac48e339f7d9e538e87786c0d515a5a5b352ab4ce13",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-18766-A-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "10a98a61a73baee8028c19b9de330261f2dae87f57b2792457d81e46a544697a",
+        "decoded_sha256": "5f9aad8ccd0e5b80587bbdee1bc76a6a0602fc84c924637b979747ddfe12145a",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      },
+      {
+        "filename": "2-18766-B-12.wav",
+        "category": "general_ambience",
+        "raw_sha256": "ce9d67f6f6b8d093d3dc2d14088251d76b2772210733908d01b0ecc08c349fe4",
+        "decoded_sha256": "2f3ac6ebe7b64ee6fd2f0a1e520e0d95c4e7e1e4e43deeb3de3a195f1082f79f",
+        "overlap_with": [
+          "phase8_final_eval",
+          "phase10_eval"
+        ],
+        "duplicate_type": "EXACT_REUSED_TRACK"
+      }
+    ]
+  },
+  "fireworks_and_thunder": {
+    "fireworks": {
+      "count": 20,
+      "mean_crest_db": 27.83,
+      "mean_centroid_hz": 680.8,
+      "mean_low_freq_ratio": 0.441,
+      "p9_total_alerts": 7,
+      "p13_total_alerts": 6,
+      "reduction_percent": 14.29
+    },
+    "thunder": {
+      "count": 60,
+      "mean_crest_db": 16.59,
+      "mean_centroid_hz": 916.5,
+      "mean_low_freq_ratio": 0.558,
+      "p9_total_alerts": 9,
+      "p13_total_alerts": 8,
+      "reduction_percent": 11.11
+    }
+  },
+  "pocket_occlusion": {
+    "sample_count": 4,
+    "threshold_evaluations": {
+      "9.5": {
+        "min_crest_db": 9.5,
+        "pocket_tp": 2,
+        "pocket_total": 4,
+        "pocket_recall": 50.0,
+        "overall_pos_detected": 34,
+        "overall_neg_fp": 54
+      },
+      "8.8": {
+        "min_crest_db": 8.8,
+        "pocket_tp": 3,
+        "pocket_total": 4,
+        "pocket_recall": 75.0,
+        "overall_pos_detected": 35,
+        "overall_neg_fp": 54
+      },
+      "8.5": {
+        "min_crest_db": 8.5,
+        "pocket_tp": 3,
+        "pocket_total": 4,
+        "pocket_recall": 75.0,
+        "overall_pos_detected": 35,
+        "overall_neg_fp": 54
+      }
+    },
+    "sample_details": [
+      {
+        "recording_id": "p12_pos_015_phase12_gunshot_pocket_ar15_single_06",
+        "filepath": "data\\phase12_independent_test\\gunshots\\phase12_gunshot_pocket_ar15_single_06.wav",
+        "source_split": "phase12_reserved_val",
+        "duration_sec": 0.53,
+        "crest_factor_db": 22.93,
+        "max_raw_score": 0.8707,
+        "yamnet_gunshot_max": 0.2899
+      },
+      {
+        "recording_id": "p12_pos_020_phase12_gunshot_pocket_ar15_rapid_06",
+        "filepath": "data\\phase12_independent_test\\gunshots\\phase12_gunshot_pocket_ar15_rapid_06.wav",
+        "source_split": "phase12_reserved_val",
+        "duration_sec": 0.51,
+        "crest_factor_db": 9.49,
+        "max_raw_score": 0.7511,
+        "yamnet_gunshot_max": 0.1145
+      },
+      {
+        "recording_id": "p12_pos_025_phase12_gunshot_pocket_beretta_single_06",
+        "filepath": "data\\phase12_independent_test\\gunshots\\phase12_gunshot_pocket_beretta_single_06.wav",
+        "source_split": "phase12_reserved_val",
+        "duration_sec": 0.53,
+        "crest_factor_db": 19.12,
+        "max_raw_score": 0.6499,
+        "yamnet_gunshot_max": 0.1959
+      },
+      {
+        "recording_id": "p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06",
+        "filepath": "data\\phase12_independent_test\\gunshots\\phase12_gunshot_pocket_beretta_rapid_06.wav",
+        "source_split": "phase12_reserved_val",
+        "duration_sec": 26.24,
+        "crest_factor_db": 22.07,
+        "max_raw_score": 0.9191,
+        "yamnet_gunshot_max": 0.5966
+      }
+    ]
+  },
+  "execution_time_seconds": 302.47
+}

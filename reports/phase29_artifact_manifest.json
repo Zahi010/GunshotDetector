@@ -1,0 +1,96 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_29_CONFIGURATION_VERIFICATION_AIRCRAFT_VALIDATION_ROBUSTNESS_AUDIT",
+  "archive_filename": "gunshot_detection_phase29.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase29.zip",
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+    "role": "Default Research Baseline (retained, undefeated in state-machine stability)",
+    "verified_thresholds": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0
+    }
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+    "role": "Selectable Experimental Profile (promotion formally rejected)",
+    "verified_thresholds": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "animal_suppression": true
+    }
+  },
+  "audit_resolution_summary": {
+    "threshold_discrepancy": {
+      "status": "RESOLVED",
+      "finding": "Phase 27 narrative claim of 0.55/0.40 was a clerical documentation error in markdown reports; both models executed with 0.75/0.88/0.48 in Python code."
+    },
+    "aircraft_fragmentation_mechanism": {
+      "status": "PARTIALLY_SUPPORTED_UNVERIFIED_INTERMEDIATES",
+      "finding": "Elevated RMS and alert clustering confirmed; intermediate sub-window score drops and animal suppression bits unlogged in raw data."
+    },
+    "exposure_cooldown_conventions": {
+      "convention_a_instantaneous": {
+        "p14_cooldown_s": 255.84,
+        "p17_cooldown_s": 316.56,
+        "p14_far_per_hr": 10.179,
+        "p17_far_per_hr": 12.6612
+      },
+      "convention_b_cluster_extended": {
+        "p14_cooldown_s": 453.92,
+        "p17_cooldown_s": 6385.2,
+        "p14_far_per_hr": 10.2237,
+        "p17_far_per_hr": 14.6243
+      }
+    },
+    "campaign_rate_robustness": {
+      "total_campaigns": 4,
+      "gross_monitored_hours": 12.646,
+      "total_streams": 23,
+      "bilbao_traffic_far": ">50.0 alerts/hr (Severe Urban Alert Saturation)",
+      "aerosonic_airport_p14_advantage": "36 fewer alerts (Accounts for 116% of cumulative P14 lead)",
+      "terrestrial_3_campaigns_p17_advantage": "5 fewer alerts (P17 FAR = 7.69/hr vs P14 FAR = 8.47/hr)"
+    },
+    "statistical_inference": {
+      "paired_wilcoxon_w": 8.0,
+      "paired_wilcoxon_p_exact": 0.1953125,
+      "sign_test_p_twosided": 0.7265625,
+      "generalization_inference": "BOUNDED_BY_G4_CAMPAIGNS"
+    }
+  },
+  "required_deliverables": [
+    "reports/phase29_final_report.md",
+    "reports/phase29_baseline_freeze.json",
+    "reports/phase29_threshold_provenance_audit.md",
+    "reports/phase29_runtime_configuration_manifest.csv",
+    "reports/phase29_aircraft_mechanism_validation.md",
+    "reports/phase29_aircraft_sequence_reconstruction.csv",
+    "reports/phase29_aircraft_evidence_gaps.csv",
+    "reports/phase29_cooldown_convention_audit.md",
+    "reports/phase29_campaign_rate_robustness.md",
+    "reports/phase29_campaign_rate_table.csv",
+    "reports/phase29_loco_reproduction.csv",
+    "reports/phase29_statistical_reproduction.md",
+    "reports/phase29_reproducibility_audit.md",
+    "reports/phase29_risk_and_limitation_register.md",
+    "reports/phase29_processing_manifest.json",
+    "reports/phase29_artifact_manifest.json",
+    "reports/phase29_test_results.txt",
+    "scripts/reproduce_phase29_analysis.py",
+    "tests/test_phase29_reproduction.py"
+  ],
+  "archive_size_bytes": 4593850,
+  "archive_sha256": "23a3f8af3dc74db6bc71b0babbc813bb0e96d1bbd4ca2001cb508b8756081dd5",
+  "total_archive_entries": 54
+}

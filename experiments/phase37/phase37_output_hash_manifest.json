@@ -1,0 +1,54 @@
+{
+  "experiments/phase37/phase37_dataset_lineage.csv": {
+    "size_bytes": 49073,
+    "sha256": "ed97b731c844716c08764143d7fb3f6e46df9452e8e5a16f33b27904f244d1e8"
+  },
+  "experiments/phase37/phase37_dataset_independence_report.md": {
+    "size_bytes": 4516,
+    "sha256": "ae613604f453eb73040c37ead3d86f43ffd4b4ee5e8d9b31635ec62c4b4fa6fb"
+  },
+  "experiments/phase37/phase37_suppression_ablation_audit.csv": {
+    "size_bytes": 9451,
+    "sha256": "a5b1f2cadf282c377edc7dfe8b92603b2a6634538cab630134131a897b23e388"
+  },
+  "experiments/phase37/phase37_condition_pairwise_comparison.csv": {
+    "size_bytes": 1649,
+    "sha256": "9216200682a5315dc5b1b256be1c509a686bec68cd13386fae4561521cafb50f"
+  },
+  "experiments/phase37/phase37_ablation_findings.md": {
+    "size_bytes": 3917,
+    "sha256": "0e55d4ec467a3de8f1b274aa600d77426e4e1da76beef6d5f7018c7a0dd571b5"
+  },
+  "experiments/phase37/phase37_ballistic_matching_audit.csv": {
+    "size_bytes": 13936,
+    "sha256": "7b6cc93078693e31e5cd9d636aa6f8b6204d0db17ba37bd73a381c481d00e55a"
+  },
+  "experiments/phase37/phase37_ballistic_metrics_reproduction.md": {
+    "size_bytes": 2756,
+    "sha256": "a0c0c39d4b33648402c1f17f5f66d24a12a3e1d470ca1d937f187ffc0446b905"
+  },
+  "experiments/phase37/phase37_background_metrics_reproduction.csv": {
+    "size_bytes": 6207,
+    "sha256": "53b02059943315caa7352917a417231b19dff0930d25782308c6d8aff3f56282"
+  },
+  "experiments/phase37/phase37_background_audit.md": {
+    "size_bytes": 2983,
+    "sha256": "c9887aae014c02e64cfe5798686e4cd89f6306b3bdd47505ef233959ac85cb2e"
+  },
+  "experiments/phase37/phase37_latency_audit.md": {
+    "size_bytes": 3836,
+    "sha256": "74c3512aa9004240379f21a894de5a189c6b0610f41d561eb4ca55d7a96080c9"
+  },
+  "experiments/phase37/phase37_archive_provenance_audit.md": {
+    "size_bytes": 2596,
+    "sha256": "1b3775178df57fd920df44b4f3c0e046419e3eec5596b46e1ad77005c2fa72f0"
+  },
+  "experiments/phase37/phase37_final_audit_report.md": {
+    "size_bytes": 8991,
+    "sha256": "2dcfa7385269617aef35afd2ccdaff07c74dfdd332ab49f9b92acd2a788dd652"
+  },
+  "experiments/phase37/phase37_input_hash_manifest.json": {
+    "size_bytes": 2514,
+    "sha256": "1a8f07d8280e657c5733e8878ed6de9361be09c2c14b911768de2fe1baf4ae59"
+  }
+}

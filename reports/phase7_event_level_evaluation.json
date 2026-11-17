@@ -1,0 +1,596 @@
+{
+  "report_title": "Phase 7 Event-Level Physical Detection and Timing Verification Report",
+  "evaluator": "Senior Acoustic ML Engineer",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "operating_configuration": {
+    "threshold": 0.75,
+    "threshold_off": 0.5,
+    "confirm_windows": 2,
+    "cooldown_secs": 2.0
+  },
+  "matching_policy": {
+    "type": "Strict 1-to-1 canonical physical event matching",
+    "onset_tolerance_seconds": 0.75,
+    "cooldown_policy": "Adaptive Refractory Cooldown (2.0s cooldown, resets if inter-shot decay < threshold_off=0.50)",
+    "duplicate_alert_handling": "Secondary alerts fired on an already-matched physical event are flagged as duplicate detections and excluded from True Positives."
+  },
+  "historical_benchmark_test_set": {
+    "total_physical_events": 43,
+    "true_positive_events": 32,
+    "missed_physical_events": 11,
+    "duplicate_alerts_count": 22,
+    "false_alert_events": 0,
+    "event_recall": 74.42,
+    "event_precision": 100.0,
+    "event_f1": 85.33,
+    "matched_events": [
+      {
+        "gt_event_id": "EV-GUN-0231",
+        "recording_id": "REC-GUN-0103",
+        "gt_start_sec": 0.12,
+        "gt_end_sec": 1.66,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.943,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -120.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0231",
+        "recording_id": "REC-GUN-0103",
+        "gt_start_sec": 0.12,
+        "gt_end_sec": 1.66,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.943,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -120.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0231",
+        "recording_id": "REC-GUN-0103",
+        "gt_start_sec": 0.12,
+        "gt_end_sec": 1.66,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.943,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -120.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0231",
+        "recording_id": "REC-GUN-0103",
+        "gt_start_sec": 0.12,
+        "gt_end_sec": 1.66,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.943,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -120.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0231",
+        "recording_id": "REC-GUN-0103",
+        "gt_start_sec": 0.12,
+        "gt_end_sec": 1.66,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.943,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -120.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0236",
+        "recording_id": "REC-GUN-0109",
+        "gt_start_sec": 0.09,
+        "gt_end_sec": 8.485,
+        "det_start_sec": 1.44,
+        "det_end_sec": 2.88,
+        "peak_score": 0.89,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 1350.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0088",
+        "recording_id": "REC-GUN-0049",
+        "gt_start_sec": 0.045,
+        "gt_end_sec": 3.955,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.979,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -45.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0110",
+        "recording_id": "REC-GUN-0060",
+        "gt_start_sec": 0.0,
+        "gt_end_sec": 32.38,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.985,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 0.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0110",
+        "recording_id": "REC-GUN-0060",
+        "gt_start_sec": 0.0,
+        "gt_end_sec": 32.38,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.985,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 0.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0068",
+        "recording_id": "REC-GUN-0032",
+        "gt_start_sec": 0.0,
+        "gt_end_sec": 16.225,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.985,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 0.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0174",
+        "recording_id": "REC-GUN-0069",
+        "gt_start_sec": 0.0,
+        "gt_end_sec": 7.465,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.98,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 0.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0043",
+        "recording_id": "REC-GUN-0022",
+        "gt_start_sec": 0.405,
+        "gt_end_sec": 3.67,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.915,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -405.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0043",
+        "recording_id": "REC-GUN-0022",
+        "gt_start_sec": 0.405,
+        "gt_end_sec": 3.67,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.915,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -405.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0197",
+        "recording_id": "REC-GUN-0082",
+        "gt_start_sec": 0.18,
+        "gt_end_sec": 17.08,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.918,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -180.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0198",
+        "recording_id": "REC-GUN-0082",
+        "gt_start_sec": 17.535,
+        "gt_end_sec": 24.445,
+        "det_start_sec": 19.68,
+        "det_end_sec": 22.08,
+        "peak_score": 0.969,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 2145.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0199",
+        "recording_id": "REC-GUN-0082",
+        "gt_start_sec": 24.78,
+        "gt_end_sec": 35.695,
+        "det_start_sec": 24.48,
+        "det_end_sec": 26.88,
+        "peak_score": 0.964,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -300.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0028",
+        "recording_id": "REC-GUN-0010",
+        "gt_start_sec": 0.3,
+        "gt_end_sec": 1.69,
+        "det_start_sec": 0.0,
+        "det_end_sec": 2.4,
+        "peak_score": 0.971,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -300.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0200",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 0.075,
+        "gt_end_sec": 2.725,
+        "det_start_sec": 0.96,
+        "det_end_sec": 3.36,
+        "peak_score": 0.909,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 885.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0202",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 6.9,
+        "gt_end_sec": 14.215,
+        "det_start_sec": 12.48,
+        "det_end_sec": 13.92,
+        "peak_score": 0.859,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 5580.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0203",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 14.715,
+        "gt_end_sec": 17.755,
+        "det_start_sec": 14.88,
+        "det_end_sec": 17.28,
+        "peak_score": 0.856,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 165.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0204",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 18.405,
+        "gt_end_sec": 21.265,
+        "det_start_sec": 20.64,
+        "det_end_sec": 22.08,
+        "peak_score": 0.916,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 2235.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0200",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 0.075,
+        "gt_end_sec": 2.725,
+        "det_start_sec": 0.96,
+        "det_end_sec": 3.36,
+        "peak_score": 0.909,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 885.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0202",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 6.9,
+        "gt_end_sec": 14.215,
+        "det_start_sec": 12.48,
+        "det_end_sec": 13.92,
+        "peak_score": 0.859,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 5580.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0203",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 14.715,
+        "gt_end_sec": 17.755,
+        "det_start_sec": 14.88,
+        "det_end_sec": 17.28,
+        "peak_score": 0.856,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 165.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0204",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 18.405,
+        "gt_end_sec": 21.265,
+        "det_start_sec": 20.64,
+        "det_end_sec": 22.08,
+        "peak_score": 0.916,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 2235.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0200",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 0.075,
+        "gt_end_sec": 2.725,
+        "det_start_sec": 0.96,
+        "det_end_sec": 3.36,
+        "peak_score": 0.909,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 885.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0202",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 6.9,
+        "gt_end_sec": 14.215,
+        "det_start_sec": 12.48,
+        "det_end_sec": 13.92,
+        "peak_score": 0.859,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 5580.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0203",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 14.715,
+        "gt_end_sec": 17.755,
+        "det_start_sec": 14.88,
+        "det_end_sec": 17.28,
+        "peak_score": 0.856,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 165.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0204",
+        "recording_id": "REC-GUN-0083",
+        "gt_start_sec": 18.405,
+        "gt_end_sec": 21.265,
+        "det_start_sec": 20.64,
+        "det_end_sec": 22.08,
+        "peak_score": 0.916,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 2235.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0209",
+        "recording_id": "REC-GUN-0088",
+        "gt_start_sec": 0.18,
+        "gt_end_sec": 1.945,
+        "det_start_sec": 0.0,
+        "det_end_sec": 1.44,
+        "peak_score": 0.902,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -180.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0209",
+        "recording_id": "REC-GUN-0088",
+        "gt_start_sec": 0.18,
+        "gt_end_sec": 1.945,
+        "det_start_sec": 0.0,
+        "det_end_sec": 1.44,
+        "peak_score": 0.902,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -180.0
+      },
+      {
+        "gt_event_id": "EV-GUN-0207",
+        "recording_id": "REC-GUN-0086",
+        "gt_start_sec": 0.12,
+        "gt_end_sec": 2.695,
+        "det_start_sec": 0.96,
+        "det_end_sec": 2.4,
+        "peak_score": 0.989,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 840.0
+      }
+    ],
+    "missed_events": [
+      "EV-GUN-0042",
+      "EV-GUN-0069",
+      "EV-GUN-0070",
+      "EV-GUN-0215",
+      "EV-GUN-0190",
+      "EV-GUN-0201",
+      "EV-GUN-0201",
+      "EV-GUN-0201",
+      "EV-GUN-0211",
+      "EV-GUN-0211",
+      "EV-GUN-0073"
+    ]
+  },
+  "independent_evaluation_test_set": {
+    "total_physical_events": 27,
+    "true_positive_events": 4,
+    "missed_physical_events": 23,
+    "duplicate_alerts_count": 0,
+    "false_alert_events": 56,
+    "event_recall": 14.81,
+    "event_precision": 6.67,
+    "event_f1": 9.2,
+    "matched_events": [
+      {
+        "gt_event_id": "EV-P7-0002",
+        "recording_id": "shotspotter_chicago_d5_sensor2",
+        "gt_start_sec": 0.83,
+        "gt_end_sec": 1.63,
+        "det_start_sec": 0.48,
+        "det_end_sec": 2.4,
+        "peak_score": 0.939,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -350.0
+      },
+      {
+        "gt_event_id": "EV-P7-0003",
+        "recording_id": "shotspotter_chicago_d5_sensor3",
+        "gt_start_sec": 0.83,
+        "gt_end_sec": 1.63,
+        "det_start_sec": 0.96,
+        "det_end_sec": 2.4,
+        "peak_score": 0.895,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 130.0
+      },
+      {
+        "gt_event_id": "EV-P7-0004",
+        "recording_id": "shotspotter_chicago_d5_sensor4",
+        "gt_start_sec": 0.95,
+        "gt_end_sec": 1.75,
+        "det_start_sec": 0.48,
+        "det_end_sec": 2.4,
+        "peak_score": 0.961,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": -470.0
+      },
+      {
+        "gt_event_id": "EV-P7-0007",
+        "recording_id": "shotspotter_chicago_d7_sensor3",
+        "gt_start_sec": 3.97,
+        "gt_end_sec": 4.77,
+        "det_start_sec": 4.32,
+        "det_end_sec": 6.72,
+        "peak_score": 0.858,
+        "trigger_windows": 2,
+        "offline_onset_delta_ms": 350.0
+      }
+    ],
+    "missed_events": [
+      "EV-P7-0001",
+      "EV-P7-0005",
+      "EV-P7-0006",
+      "EV-P7-0008",
+      "EV-P7-0009",
+      "EV-P7-0010",
+      "EV-P7-0011",
+      "EV-P7-0012",
+      "EV-P7-0013",
+      "EV-P7-0014",
+      "EV-P7-0015",
+      "EV-P7-0016",
+      "EV-P7-0017",
+      "EV-P7-0018",
+      "EV-P7-0019",
+      "EV-P7-0020",
+      "EV-P7-0021",
+      "EV-P7-0022",
+      "EV-P7-0023",
+      "EV-P7-0024",
+      "EV-P7-0025",
+      "EV-P7-0026",
+      "EV-P7-0027"
+    ],
+    "mimic_rejection_by_category": {
+      "weather_transient_thunder": {
+        "total_files": 20,
+        "fp_events": 5
+      },
+      "percussive_wood_knock": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "metallic_click_transient": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "sharp_percussive_handclap": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "pyrotechnic_blast": {
+        "total_files": 20,
+        "fp_events": 7
+      },
+      "machinery_continuous": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "metallic_resonance_bell": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "ambient_broadband_wind": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "vehicle_impulse": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "sharp_brittle_impact": {
+        "total_files": 20,
+        "fp_events": 0
+      },
+      "continuous_ambient_stream": {
+        "total_files": 3,
+        "fp_events": 42
+      }
+    }
+  },
+  "rapid_fire_and_closely_spaced_gunshot_analysis": [
+    {
+      "recording_id": "mitchell_ar15_double_01",
+      "category": "gunshot",
+      "physical_events_count": 1,
+      "detected_alerts_count": 0,
+      "matched_events_count": 0,
+      "duplicate_alerts_count": 0,
+      "inter_shot_decay_observed": false,
+      "notes": "Missed due to short window clipping"
+    },
+    {
+      "recording_id": "mitchell_ar15_double_02",
+      "category": "gunshot",
+      "physical_events_count": 1,
+      "detected_alerts_count": 0,
+      "matched_events_count": 0,
+      "duplicate_alerts_count": 0,
+      "inter_shot_decay_observed": false,
+      "notes": "Missed due to short window clipping"
+    },
+    {
+      "recording_id": "mitchell_ar15_double_03",
+      "category": "gunshot",
+      "physical_events_count": 1,
+      "detected_alerts_count": 0,
+      "matched_events_count": 0,
+      "duplicate_alerts_count": 0,
+      "inter_shot_decay_observed": false,
+      "notes": "Missed due to short window clipping"
+    },
+    {
+      "recording_id": "mitchell_beretta_double_01",
+      "category": "gunshot",
+      "physical_events_count": 1,
+      "detected_alerts_count": 0,
+      "matched_events_count": 0,
+      "duplicate_alerts_count": 0,
+      "inter_shot_decay_observed": false,
+      "notes": "Missed due to short window clipping"
+    },
+    {
+      "recording_id": "mitchell_beretta_double_02",
+      "category": "gunshot",
+      "physical_events_count": 1,
+      "detected_alerts_count": 0,
+      "matched_events_count": 0,
+      "duplicate_alerts_count": 0,
+      "inter_shot_decay_observed": false,
+      "notes": "Missed due to short window clipping"
+    }
+  ],
+  "timing_and_latency_analysis": {
+    "offline_algorithm_onset_delta_ms": {
+      "description": "Timestamp offset between analysis window start and ground-truth impulse onset (hop quantization)",
+      "mean": 777.6,
+      "median": 0.0,
+      "min": -470.0,
+      "max": 5580.0
+    },
+    "end_to_end_streaming_detection_delay_ms": {
+      "description": "True physical latency from sound wave arrival to alert output (WindowBuffer + HopConfirm + Inference + HopQuantization)",
+      "components_ms": {
+        "window_buffer_accumulation": 960.0,
+        "hop_confirmation_wait": 480.0,
+        "neural_model_inference": 93.1,
+        "alert_generation_overhead": 1.5,
+        "mean_hop_quantization_offset": 777.6
+      },
+      "mean": 2407.1,
+      "median": 1534.6,
+      "min": 1534.6,
+      "max": 7114.6
+    }
+  }
+}

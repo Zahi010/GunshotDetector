@@ -1,0 +1,57 @@
+{
+  "phase": 18,
+  "action": "BASELINE_FREEZE_AND_INDEPENDENT_AUDIT",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "timestamp_utc": "2026-11-13T23:38:00Z",
+  "verified_models": {
+    "model_phase14.py": {
+      "path": "E:/gunshot/gunshot/model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "size_bytes": 23340,
+      "role": "Default Production Detector Baseline (Phase 14 Calibrated Semantic Gating)",
+      "status": "VERIFIED_LOCKED"
+    },
+    "model_phase13.py": {
+      "path": "E:/gunshot/gunshot/model_phase13.py",
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "size_bytes": 22252,
+      "role": "Frozen Historical Comparator (Phase 13 Two-Window Streaming)",
+      "status": "VERIFIED_LOCKED"
+    },
+    "model_phase9.py": {
+      "path": "E:/gunshot/gunshot/model_phase9.py",
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "size_bytes": 17719,
+      "role": "Frozen Historical Comparator (Phase 9 Single-Window Baseline)",
+      "status": "VERIFIED_LOCKED"
+    },
+    "model_phase17.py": {
+      "path": "E:/gunshot/gunshot/model_phase17.py",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "size_bytes": 29067,
+      "role": "Selectable Experimental Detector (Phase 17 Animal Semantic Suppression Candidate)",
+      "status": "VERIFIED_LOCKED"
+    }
+  },
+  "verified_archives": {
+    "Phase 17": {
+      "path": "E:/gunshot/gunshot_detection_phase17.zip",
+      "sha256": "028bb95bced4456020e5d9860cb01ddca3d2944779d31db76ba2b20f99e2bc41",
+      "size_bytes": 2418868636,
+      "size_mb": 2306.81,
+      "status": "VERIFIED_LOCKED"
+    },
+    "Phase 16": {
+      "path": "E:/gunshot/gunshot_detection_phase16.zip",
+      "sha256": "386298c4a4a251b4728d14d5903265ebe18c63404f87d0eba47bbcce442f65b4",
+      "size_bytes": 1997728986,
+      "size_mb": 1905.18,
+      "status": "VERIFIED_LOCKED"
+    }
+  },
+  "discrepancy_analysis": {
+    "checksum_mismatches_detected": 0,
+    "notes": "All baseline detector files and deployment archives match the Phase 17 report and artifact manifest exactly with zero deviation."
+  }
+}
+

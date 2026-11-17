@@ -1,0 +1,717 @@
+{
+  "title": "Phase 4 Missed Gunshot Events & Low-SNR Acoustic Investigation",
+  "timestamp": "2026-10-28",
+  "phase3_reported_missed_events_count": 7,
+  "investigation_summary": {
+    "root_cause_of_7_misses": "Manifest duplicate indexing collision in evaluate_event_level.py",
+    "physical_events_in_test_set": 17,
+    "physical_events_detected_by_detector": 17,
+    "true_physical_event_recall": 1.0,
+    "artifact_explanation": "In Phase 3, evaluate_event_level.py loaded gunshot_events.csv using a dictionary keyed by base_stem. Four test recordings had multiple duplicate files in raw data (e.g. filename (1).mp3, (2).mp3). Each duplicate row was appended to events_by_stem[base_stem], producing 24 annotated events across 17 test recordings. The detector ran on the single primary test file and detected the physical event (TP=17), but the 7 duplicate entries remained unmatched under strict 1-to-1 matching and were counted as FN=7.",
+    "genuine_acoustic_challenge_identified": "While all 17 physical gunshot events triggered alerts, several individual low-SNR windows (late reverberation tails and distant shots) scored between 0.15 and 0.54, falling below the 0.55 threshold. Phase 4 addresses this via low-SNR data augmentation, hysteresis thresholding, and source-balanced training."
+  },
+  "phase3_missed_events_detailed_audit": [
+    {
+      "miss_id": "MISS-01",
+      "source_recording": "freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "duplicate_file_in_raw": "freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+      "primary_test_file": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.015,
+        "end_time_sec": 1.795,
+        "peak_time_sec": 0.135,
+        "duration_sec": 1.78
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 1.1801,
+        "rms_energy": 0.2356,
+        "estimated_snr_db": 35.93,
+        "spectral_centroid_hz": 1841.7,
+        "spectral_bandwidth_hz": 1625.1,
+        "spectral_rolloff_hz": 3529.0,
+        "spectral_flatness": 0.0459
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.96
+      },
+      "model_member_scores": {
+        "residual_mlp": 0.9935,
+        "catboost": 0.8197,
+        "lightgbm": 0.8124,
+        "xgboost": 0.8497
+      },
+      "ensemble": {
+        "final_score": 0.8658,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file 'freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3' sharing base stem 'freesound_community-gun-shots-from-a-distance-19-96417' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[freesound_community-gun-shots-from-a-distance-19-96417] contained 4 duplicate ground-truth entries for the exact same physical gunshot at t=[0.015s - 1.795s]. The detector correctly fired an alert for the gunshot (score=0.8658 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #2 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    },
+    {
+      "miss_id": "MISS-02",
+      "source_recording": "freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "duplicate_file_in_raw": "freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3",
+      "primary_test_file": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.015,
+        "end_time_sec": 1.795,
+        "peak_time_sec": 0.135,
+        "duration_sec": 1.78
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 1.1801,
+        "rms_energy": 0.2356,
+        "estimated_snr_db": 35.93,
+        "spectral_centroid_hz": 1841.7,
+        "spectral_bandwidth_hz": 1625.1,
+        "spectral_rolloff_hz": 3529.0,
+        "spectral_flatness": 0.0459
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.96
+      },
+      "model_member_scores": {
+        "residual_mlp": 0.9935,
+        "catboost": 0.8197,
+        "lightgbm": 0.8124,
+        "xgboost": 0.8497
+      },
+      "ensemble": {
+        "final_score": 0.8658,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file 'freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3' sharing base stem 'freesound_community-gun-shots-from-a-distance-19-96417' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[freesound_community-gun-shots-from-a-distance-19-96417] contained 4 duplicate ground-truth entries for the exact same physical gunshot at t=[0.015s - 1.795s]. The detector correctly fired an alert for the gunshot (score=0.8658 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #3 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    },
+    {
+      "miss_id": "MISS-03",
+      "source_recording": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "duplicate_file_in_raw": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "primary_test_file": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.015,
+        "end_time_sec": 1.795,
+        "peak_time_sec": 0.135,
+        "duration_sec": 1.78
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 1.1801,
+        "rms_energy": 0.2356,
+        "estimated_snr_db": 35.93,
+        "spectral_centroid_hz": 1841.7,
+        "spectral_bandwidth_hz": 1625.1,
+        "spectral_rolloff_hz": 3529.0,
+        "spectral_flatness": 0.0459
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.96
+      },
+      "model_member_scores": {
+        "residual_mlp": 0.9935,
+        "catboost": 0.8197,
+        "lightgbm": 0.8124,
+        "xgboost": 0.8497
+      },
+      "ensemble": {
+        "final_score": 0.8658,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file 'freesound_community-gun-shots-from-a-distance-19-96417.mp3' sharing base stem 'freesound_community-gun-shots-from-a-distance-19-96417' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[freesound_community-gun-shots-from-a-distance-19-96417] contained 4 duplicate ground-truth entries for the exact same physical gunshot at t=[0.015s - 1.795s]. The detector correctly fired an alert for the gunshot (score=0.8658 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #4 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    },
+    {
+      "miss_id": "MISS-04",
+      "source_recording": "freesound_community-clean-machine-gun-burst-98224.mp3",
+      "base_stem": "freesound_community-clean-machine-gun-burst-98224",
+      "duplicate_file_in_raw": "freesound_community-clean-machine-gun-burst-98224.mp3",
+      "primary_test_file": "freesound_community-clean-machine-gun-burst-98224 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.12,
+        "end_time_sec": 1.435,
+        "peak_time_sec": 1.275,
+        "duration_sec": 1.315
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 0.9499,
+        "rms_energy": 0.1275,
+        "estimated_snr_db": 5.86,
+        "spectral_centroid_hz": 2988.3,
+        "spectral_bandwidth_hz": 2243.1,
+        "spectral_rolloff_hz": 5743.2,
+        "spectral_flatness": 0.2088
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.955
+      },
+      "model_member_scores": {
+        "residual_mlp": 1.0,
+        "catboost": 0.9706,
+        "lightgbm": 0.9799,
+        "xgboost": 0.9734
+      },
+      "ensemble": {
+        "final_score": 0.9807,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file 'freesound_community-clean-machine-gun-burst-98224.mp3' sharing base stem 'freesound_community-clean-machine-gun-burst-98224' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[freesound_community-clean-machine-gun-burst-98224] contained 2 duplicate ground-truth entries for the exact same physical gunshot at t=[0.120s - 1.435s]. The detector correctly fired an alert for the gunshot (score=0.9807 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #2 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    },
+    {
+      "miss_id": "MISS-05",
+      "source_recording": "koiroylers-pistal-gun-355832.mp3",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "duplicate_file_in_raw": "koiroylers-pistal-gun-355832.mp3",
+      "primary_test_file": "koiroylers-pistal-gun-355832 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.18,
+        "end_time_sec": 1.945,
+        "peak_time_sec": 0.225,
+        "duration_sec": 1.765
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 0.5731,
+        "rms_energy": 0.0485,
+        "estimated_snr_db": 23.53,
+        "spectral_centroid_hz": 1224.0,
+        "spectral_bandwidth_hz": 1560.8,
+        "spectral_rolloff_hz": 2458.1,
+        "spectral_flatness": 0.0275
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.96
+      },
+      "model_member_scores": {
+        "residual_mlp": 0.9605,
+        "catboost": 0.8472,
+        "lightgbm": 0.8298,
+        "xgboost": 0.834
+      },
+      "ensemble": {
+        "final_score": 0.8692,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file 'koiroylers-pistal-gun-355832.mp3' sharing base stem 'koiroylers-pistal-gun-355832' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[koiroylers-pistal-gun-355832] contained 2 duplicate ground-truth entries for the exact same physical gunshot at t=[0.180s - 1.945s]. The detector correctly fired an alert for the gunshot (score=0.8692 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #2 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    },
+    {
+      "miss_id": "MISS-06",
+      "source_recording": "49053354-machine-gun-307468 (2).mp3",
+      "base_stem": "49053354-machine-gun-307468",
+      "duplicate_file_in_raw": "49053354-machine-gun-307468 (2).mp3",
+      "primary_test_file": "49053354-machine-gun-307468 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.015,
+        "end_time_sec": 1.435,
+        "peak_time_sec": 0.24,
+        "duration_sec": 1.42
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 1.4943,
+        "rms_energy": 0.2195,
+        "estimated_snr_db": 21.88,
+        "spectral_centroid_hz": 1942.5,
+        "spectral_bandwidth_hz": 1614.6,
+        "spectral_rolloff_hz": 3636.9,
+        "spectral_flatness": 0.0841
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.955
+      },
+      "model_member_scores": {
+        "residual_mlp": 0.9912,
+        "catboost": 0.9299,
+        "lightgbm": 0.9117,
+        "xgboost": 0.9162
+      },
+      "ensemble": {
+        "final_score": 0.9387,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file '49053354-machine-gun-307468 (2).mp3' sharing base stem '49053354-machine-gun-307468' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[49053354-machine-gun-307468] contained 3 duplicate ground-truth entries for the exact same physical gunshot at t=[0.015s - 1.435s]. The detector correctly fired an alert for the gunshot (score=0.9387 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #2 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    },
+    {
+      "miss_id": "MISS-07",
+      "source_recording": "49053354-machine-gun-307468.mp3",
+      "base_stem": "49053354-machine-gun-307468",
+      "duplicate_file_in_raw": "49053354-machine-gun-307468.mp3",
+      "primary_test_file": "49053354-machine-gun-307468 (1).mp3",
+      "event_timestamp": {
+        "start_time_sec": 0.015,
+        "end_time_sec": 1.435,
+        "peak_time_sec": 0.24,
+        "duration_sec": 1.42
+      },
+      "ground_truth_annotation_confidence": 0.99,
+      "acoustics": {
+        "peak_amplitude": 1.4943,
+        "rms_energy": 0.2195,
+        "estimated_snr_db": 21.88,
+        "spectral_centroid_hz": 1942.5,
+        "spectral_bandwidth_hz": 1614.6,
+        "spectral_rolloff_hz": 3636.9,
+        "spectral_flatness": 0.0841
+      },
+      "representative_evaluation_window": {
+        "window_index": 1,
+        "start_time_sec": 0.48,
+        "end_time_sec": 1.44,
+        "overlap_with_event_sec": 0.955
+      },
+      "model_member_scores": {
+        "residual_mlp": 0.9912,
+        "catboost": 0.9299,
+        "lightgbm": 0.9117,
+        "xgboost": 0.9162
+      },
+      "ensemble": {
+        "final_score": 0.9387,
+        "operating_threshold": 0.55,
+        "window_passed_threshold": true,
+        "weights": [
+          0.25,
+          0.35,
+          0.25,
+          0.15
+        ]
+      },
+      "physical_recording_detected": true,
+      "miss_classification": "annotation_manifest_duplicate_artifact",
+      "root_cause_explanation": "Duplicate raw recording file '49053354-machine-gun-307468.mp3' sharing base stem '49053354-machine-gun-307468' was annotated independently in gunshot_events.csv. When evaluating the single deduplicated test file, events_by_stem[49053354-machine-gun-307468] contained 3 duplicate ground-truth entries for the exact same physical gunshot at t=[0.015s - 1.435s]. The detector correctly fired an alert for the gunshot (score=0.9387 >= 0.55), matching ground truth #1. Because match_events enforces strict 1-to-1 matching, duplicate entry #3 had no remaining unmatched detection and was erroneously tallied as a missed gunshot (FN). The physical audio was actually detected with high confidence.",
+      "action_taken": "Deduplicate ground truth events by (primary_file, event_index) so that each physical event is evaluated exactly once without phantom inflation."
+    }
+  ],
+  "low_snr_trailing_windows_audit": [
+    {
+      "recording": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-13-39758",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "overlap_with_event_sec": 0.91,
+      "score": 0.0893,
+      "member_scores": {
+        "residual_mlp": 0.1638,
+        "catboost": 0.0839,
+        "lightgbm": 0.044,
+        "xgboost": 0.053
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0333,
+        "rms_energy": 0.0058,
+        "estimated_snr_db": 11.13,
+        "spectral_centroid_hz": 655.8,
+        "spectral_bandwidth_hz": 1321.9,
+        "spectral_rolloff_hz": 1221.3,
+        "spectral_flatness": 0.002
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-13-39758",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "overlap_with_event_sec": 0.43,
+      "score": 0.0053,
+      "member_scores": {
+        "residual_mlp": 0.0036,
+        "catboost": 0.0065,
+        "lightgbm": 0.0023,
+        "xgboost": 0.0105
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0107,
+        "rms_energy": 0.0022,
+        "estimated_snr_db": 15.79,
+        "spectral_centroid_hz": 801.5,
+        "spectral_bandwidth_hz": 1578.7,
+        "spectral_rolloff_hz": 1681.4,
+        "spectral_flatness": 0.0021
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "soundreality-gun-shot-341144.mp3",
+      "base_stem": "soundreality-gun-shot-341144",
+      "window_index": 0,
+      "start_time_sec": 0.0,
+      "end_time_sec": 0.96,
+      "overlap_with_event_sec": 0.87,
+      "score": 0.4241,
+      "member_scores": {
+        "residual_mlp": 0.445,
+        "catboost": 0.4323,
+        "lightgbm": 0.4028,
+        "xgboost": 0.4055
+      },
+      "acoustics": {
+        "peak_amplitude": 1.0257,
+        "rms_energy": 0.1688,
+        "estimated_snr_db": 104.55,
+        "spectral_centroid_hz": 1398.2,
+        "spectral_bandwidth_hz": 1155.6,
+        "spectral_rolloff_hz": 2312.0,
+        "spectral_flatness": 0.1468
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "soundreality-gun-shot-341144.mp3",
+      "base_stem": "soundreality-gun-shot-341144",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "overlap_with_event_sec": 0.415,
+      "score": 0.0211,
+      "member_scores": {
+        "residual_mlp": 0.0,
+        "catboost": 0.0402,
+        "lightgbm": 0.0162,
+        "xgboost": 0.0199
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0359,
+        "rms_energy": 0.0067,
+        "estimated_snr_db": 34.88,
+        "spectral_centroid_hz": 913.7,
+        "spectral_bandwidth_hz": 916.9,
+        "spectral_rolloff_hz": 1523.1,
+        "spectral_flatness": 0.0017
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "base_stem": "freesound_community-gun-shots-from-a-distance-19-96417",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "overlap_with_event_sec": 0.355,
+      "score": 0.5036,
+      "member_scores": {
+        "residual_mlp": 0.5893,
+        "catboost": 0.4741,
+        "lightgbm": 0.4776,
+        "xgboost": 0.473
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0364,
+        "rms_energy": 0.0037,
+        "estimated_snr_db": 24.42,
+        "spectral_centroid_hz": 1186.6,
+        "spectral_bandwidth_hz": 1453.8,
+        "spectral_rolloff_hz": 2204.9,
+        "spectral_flatness": 0.0192
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716.mp3",
+      "base_stem": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716",
+      "window_index": 1,
+      "start_time_sec": 0.48,
+      "end_time_sec": 1.44,
+      "overlap_with_event_sec": 0.96,
+      "score": 0.145,
+      "member_scores": {
+        "residual_mlp": 0.0028,
+        "catboost": 0.2246,
+        "lightgbm": 0.1492,
+        "xgboost": 0.1894
+      },
+      "acoustics": {
+        "peak_amplitude": 0.7998,
+        "rms_energy": 0.1002,
+        "estimated_snr_db": 31.18,
+        "spectral_centroid_hz": 2043.3,
+        "spectral_bandwidth_hz": 1741.7,
+        "spectral_rolloff_hz": 3999.5,
+        "spectral_flatness": 0.1073
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716.mp3",
+      "base_stem": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716",
+      "window_index": 4,
+      "start_time_sec": 1.92,
+      "end_time_sec": 2.88,
+      "overlap_with_event_sec": 0.775,
+      "score": 0.2221,
+      "member_scores": {
+        "residual_mlp": 0.2227,
+        "catboost": 0.222,
+        "lightgbm": 0.2171,
+        "xgboost": 0.2301
+      },
+      "acoustics": {
+        "peak_amplitude": 0.6533,
+        "rms_energy": 0.0794,
+        "estimated_snr_db": 48.6,
+        "spectral_centroid_hz": 1781.9,
+        "spectral_bandwidth_hz": 1725.1,
+        "spectral_rolloff_hz": 3537.4,
+        "spectral_flatness": 0.082
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716.mp3",
+      "base_stem": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716",
+      "window_index": 5,
+      "start_time_sec": 2.4,
+      "end_time_sec": 3.36,
+      "overlap_with_event_sec": 0.295,
+      "score": 0.2102,
+      "member_scores": {
+        "residual_mlp": 0.0004,
+        "catboost": 0.2467,
+        "lightgbm": 0.2647,
+        "xgboost": 0.3837
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0373,
+        "rms_energy": 0.0051,
+        "estimated_snr_db": 27.53,
+        "spectral_centroid_hz": 1200.4,
+        "spectral_bandwidth_hz": 1476.9,
+        "spectral_rolloff_hz": 2214.0,
+        "spectral_flatness": 0.0209
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "base_stem": "pwlpl-semi-automatic-weapon-sound-effect-359246",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "overlap_with_event_sec": 0.96,
+      "score": 0.4537,
+      "member_scores": {
+        "residual_mlp": 0.4614,
+        "catboost": 0.4619,
+        "lightgbm": 0.4525,
+        "xgboost": 0.4236
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0208,
+        "rms_energy": 0.0034,
+        "estimated_snr_db": 7.48,
+        "spectral_centroid_hz": 1683.1,
+        "spectral_bandwidth_hz": 1275.5,
+        "spectral_rolloff_hz": 2857.1,
+        "spectral_flatness": 0.024
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "base_stem": "pwlpl-semi-automatic-weapon-sound-effect-359246",
+      "window_index": 8,
+      "start_time_sec": 3.84,
+      "end_time_sec": 4.8,
+      "overlap_with_event_sec": 0.96,
+      "score": 0.3081,
+      "member_scores": {
+        "residual_mlp": 0.351,
+        "catboost": 0.2509,
+        "lightgbm": 0.3143,
+        "xgboost": 0.3598
+      },
+      "acoustics": {
+        "peak_amplitude": 0.6716,
+        "rms_energy": 0.0812,
+        "estimated_snr_db": 17.22,
+        "spectral_centroid_hz": 2420.0,
+        "spectral_bandwidth_hz": 1839.7,
+        "spectral_rolloff_hz": 4586.6,
+        "spectral_flatness": 0.1289
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "base_stem": "pwlpl-semi-automatic-weapon-sound-effect-359246",
+      "window_index": 11,
+      "start_time_sec": 5.28,
+      "end_time_sec": 6.24,
+      "overlap_with_event_sec": 0.565,
+      "score": 0.3267,
+      "member_scores": {
+        "residual_mlp": 0.1095,
+        "catboost": 0.3591,
+        "lightgbm": 0.461,
+        "xgboost": 0.3889
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0286,
+        "rms_energy": 0.0035,
+        "estimated_snr_db": 8.28,
+        "spectral_centroid_hz": 1468.4,
+        "spectral_bandwidth_hz": 1047.7,
+        "spectral_rolloff_hz": 2436.0,
+        "spectral_flatness": 0.0102
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "koiroylers-pistal-gun-355832 (1).mp3",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "window_index": 2,
+      "start_time_sec": 0.96,
+      "end_time_sec": 1.92,
+      "overlap_with_event_sec": 0.96,
+      "score": 0.1998,
+      "member_scores": {
+        "residual_mlp": 0.0384,
+        "catboost": 0.2545,
+        "lightgbm": 0.269,
+        "xgboost": 0.2256
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0112,
+        "rms_energy": 0.004,
+        "estimated_snr_db": 1.29,
+        "spectral_centroid_hz": 748.7,
+        "spectral_bandwidth_hz": 1380.9,
+        "spectral_rolloff_hz": 1411.4,
+        "spectral_flatness": 0.0012
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "koiroylers-pistal-gun-355832 (1).mp3",
+      "base_stem": "koiroylers-pistal-gun-355832",
+      "window_index": 3,
+      "start_time_sec": 1.44,
+      "end_time_sec": 2.4,
+      "overlap_with_event_sec": 0.505,
+      "score": 0.0075,
+      "member_scores": {
+        "residual_mlp": 0.0036,
+        "catboost": 0.0052,
+        "lightgbm": 0.0034,
+        "xgboost": 0.0259
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0066,
+        "rms_energy": 0.0031,
+        "estimated_snr_db": 12.1,
+        "spectral_centroid_hz": 606.1,
+        "spectral_bandwidth_hz": 1332.0,
+        "spectral_rolloff_hz": 996.4,
+        "spectral_flatness": 0.0238
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    },
+    {
+      "recording": "freesound_community-machinegunloopwav-14862.mp3",
+      "base_stem": "freesound_community-machinegunloopwav-14862",
+      "window_index": 15,
+      "start_time_sec": 7.2,
+      "end_time_sec": 8.16,
+      "overlap_with_event_sec": 0.265,
+      "score": 0.1218,
+      "member_scores": {
+        "residual_mlp": 0.1543,
+        "catboost": 0.1309,
+        "lightgbm": 0.088,
+        "xgboost": 0.1029
+      },
+      "acoustics": {
+        "peak_amplitude": 0.0089,
+        "rms_energy": 0.002,
+        "estimated_snr_db": 8.96,
+        "spectral_centroid_hz": 729.3,
+        "spectral_bandwidth_hz": 1110.3,
+        "spectral_rolloff_hz": 1068.1,
+        "spectral_flatness": 0.0018
+      },
+      "diagnosis": "Late reverberation decay / low acoustic energy. The onset window fired the alert, but the trailing window dissipated into environmental noise (SNR < 15 dB), dropping below the 0.55 classification threshold."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_23_INDEPENDENT_NEGATIVE_AUDIO_ACQUISITION_AND_BENCHMARK",
+  "verification_timestamp": "2026-11-14T18:45:00Z",
+  "models": {
+    "model_phase14.py": {
+      "file": "model_phase14.py",
+      "path": "E:\\gunshot\\gunshot\\model_phase14.py",
+      "role": "DEFAULT_RESEARCH_BASELINE",
+      "expected_sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "actual_sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "expected_size_bytes": 23340,
+      "actual_size_bytes": 23340,
+      "status": "VERIFIED"
+    },
+    "model_phase17.py": {
+      "file": "model_phase17.py",
+      "path": "E:\\gunshot\\gunshot\\model_phase17.py",
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE",
+      "expected_sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "actual_sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "expected_size_bytes": 29067,
+      "actual_size_bytes": 29067,
+      "status": "VERIFIED"
+    },
+    "model_phase13.py": {
+      "file": "model_phase13.py",
+      "path": "E:\\gunshot\\gunshot\\model_phase13.py",
+      "role": "FROZEN_HISTORICAL_COMPARATOR",
+      "expected_sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "actual_sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "expected_size_bytes": 22252,
+      "actual_size_bytes": 22252,
+      "status": "VERIFIED"
+    },
+    "model_phase9.py": {
+      "file": "model_phase9.py",
+      "path": "E:\\gunshot\\gunshot\\model_phase9.py",
+      "role": "FROZEN_HISTORICAL_COMPARATOR",
+      "expected_sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "actual_sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "expected_size_bytes": 17719,
+      "actual_size_bytes": 17719,
+      "status": "VERIFIED"
+    }
+  },
+  "archives": {
+    "gunshot_detection_phase22.zip": {
+      "file": "gunshot_detection_phase22.zip",
+      "path": "E:\\gunshot\\gunshot_detection_phase22.zip",
+      "role": "FROZEN_HISTORICAL_RELEASE_ARCHIVE_P22",
+      "expected_sha256": "160d327072c3515e945ca5cdf89038f14b6ef1919b1e4865278affab52ad4de5",
+      "actual_sha256": "160d327072c3515e945ca5cdf89038f14b6ef1919b1e4865278affab52ad4de5",
+      "expected_size_bytes": 8199741,
+      "actual_size_bytes": 8199741,
+      "status": "VERIFIED"
+    },
+    "gunshot_detection_phase21.zip": {
+      "file": "gunshot_detection_phase21.zip",
+      "path": "E:\\gunshot\\gunshot_detection_phase21.zip",
+      "role": "FROZEN_HISTORICAL_RELEASE_ARCHIVE_P21",
+      "expected_sha256": "b065747b0e6118d228336bee7f8c3811890b638a25070d3ce2a047c329b3e225",
+      "actual_sha256": "b065747b0e6118d228336bee7f8c3811890b638a25070d3ce2a047c329b3e225",
+      "expected_size_bytes": 8211219,
+      "actual_size_bytes": 8211219,
+      "status": "VERIFIED"
+    },
+    "gunshot_detection_phase20.zip": {
+      "file": "gunshot_detection_phase20.zip",
+      "path": "E:\\gunshot\\gunshot_detection_phase20.zip",
+      "role": "FROZEN_HISTORICAL_RELEASE_ARCHIVE_P20",
+      "expected_sha256": "dda7427f2dbffcb178f6d9ade0abb80fbfc491751f04de5dc0db1b4731c31c89",
+      "actual_sha256": "dda7427f2dbffcb178f6d9ade0abb80fbfc491751f04de5dc0db1b4731c31c89",
+      "expected_size_bytes": 8205938,
+      "actual_size_bytes": 8205938,
+      "status": "VERIFIED"
+    }
+  },
+  "canonical_data_verification": {
+    "phase20_canonical_event_manifest.csv": {
+      "file": "phase20_canonical_event_manifest.csv",
+      "path": "E:\\gunshot\\gunshot\\reports\\phase20_canonical_event_manifest.csv",
+      "role": "CANONICAL_GROUND_TRUTH_MANIFEST",
+      "expected_sha256": "6c3e5d5c07cb5102ee7160c0272e90d5c98cdb4659538ee58ad276855d971691",
+      "actual_sha256": "6c3e5d5c07cb5102ee7160c0272e90d5c98cdb4659538ee58ad276855d971691",
+      "expected_size_bytes": 16427,
+      "actual_size_bytes": 16427,
+      "status": "VERIFIED"
+    }
+  },
+  "freeze_status": "PASS"
+}

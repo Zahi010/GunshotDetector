@@ -1,0 +1,5162 @@
+{
+  "model_bundle": "E:\\gunshot\\gunshot\\models\\gunshot_yamnet_bundle",
+  "selected_threshold": 0.55,
+  "threshold_selection_objective": "Optimized on validation set to achieve >=90% accuracy and high recall while minimizing false alarms",
+  "dataset_split_summary": {
+    "total_recording_groups": 644,
+    "splits": {
+      "train": {
+        "groups_total": 450,
+        "groups_gunshot": 77,
+        "groups_background": 373
+      },
+      "val": {
+        "groups_total": 96,
+        "groups_gunshot": 16,
+        "groups_background": 80
+      },
+      "test": {
+        "groups_total": 98,
+        "groups_gunshot": 17,
+        "groups_background": 81
+      }
+    },
+    "window_length_secs": 0.96,
+    "hop_length_secs": 0.48,
+    "sample_rate": 16000
+  },
+  "window_level_evaluation": {
+    "threshold": 0.55,
+    "windows_total": 873,
+    "windows_gunshot": 79,
+    "windows_background": 794,
+    "precision": 0.4783,
+    "recall": 0.8354,
+    "f1": 0.6083,
+    "roc_auc": 0.9283,
+    "confusion_matrix": [
+      [
+        722,
+        72
+      ],
+      [
+        13,
+        66
+      ]
+    ],
+    "true_negatives": 722,
+    "false_positives": 72,
+    "false_negatives": 13,
+    "true_positives": 66
+  },
+  "recording_level_evaluation": {
+    "total_recordings": 98,
+    "recordings_gunshot": 17,
+    "recordings_background": 81,
+    "precision": 0.4857,
+    "recall": 1.0,
+    "f1": 0.6538,
+    "roc_auc": 0.9622,
+    "confusion_matrix": [
+      [
+        63,
+        18
+      ],
+      [
+        0,
+        17
+      ]
+    ],
+    "true_negatives": 63,
+    "false_positives": 18,
+    "false_negatives": 0,
+    "true_positives": 17
+  },
+  "validation_streaming_metrics": {
+    "split_name": "val",
+    "negative_audio": {
+      "total_recordings": 80,
+      "total_duration_seconds": 363.23,
+      "total_duration_hours": 0.1009,
+      "real_recordings_count": 70,
+      "real_duration_seconds": 337.44,
+      "real_duration_hours": 0.0937,
+      "synthetic_recordings_count": 10,
+      "synthetic_duration_seconds": 25.79,
+      "synthetic_duration_hours": 0.0072,
+      "confirm_windows_1": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 62,
+            "false_alerts_per_hour": 614.49,
+            "poisson_ci_95": [
+              471.13,
+              787.75
+            ],
+            "calculation_formula": "(62 events / 363.2s) * 3600 = 614.49/hr",
+            "affected_recordings_count": 47,
+            "affected_recordings": [
+              {
+                "filename": "2-173607-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2309
+              },
+              {
+                "filename": "2-125520-A-43.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.1993
+              },
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "1-103999-A-30.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.1493
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 42,
+            "false_alerts_per_hour": 416.27,
+            "poisson_ci_95": [
+              300.01,
+              562.67
+            ],
+            "calculation_formula": "(42 events / 363.2s) * 3600 = 416.27/hr",
+            "affected_recordings_count": 31,
+            "affected_recordings": [
+              {
+                "filename": "2-173607-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2309
+              },
+              {
+                "filename": "2-125520-A-43.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.1993
+              },
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "1-155858-B-25.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.2685
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 41,
+            "false_alerts_per_hour": 406.36,
+            "poisson_ci_95": [
+              291.61,
+              551.27
+            ],
+            "calculation_formula": "(41 events / 363.2s) * 3600 = 406.36/hr",
+            "affected_recordings_count": 30,
+            "affected_recordings": [
+              {
+                "filename": "2-173607-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2309
+              },
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "1-155858-B-25.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.2685
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 19,
+            "false_alerts_per_hour": 188.31,
+            "poisson_ci_95": [
+              113.38,
+              294.07
+            ],
+            "calculation_formula": "(19 events / 363.2s) * 3600 = 188.31/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "1-84536-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.3345
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 12,
+            "false_alerts_per_hour": 118.93,
+            "poisson_ci_95": [
+              61.45,
+              207.75
+            ],
+            "calculation_formula": "(12 events / 363.2s) * 3600 = 118.93/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 5,
+            "false_alerts_per_hour": 49.56,
+            "poisson_ci_95": [
+              16.09,
+              115.65
+            ],
+            "calculation_formula": "(5 events / 363.2s) * 3600 = 49.56/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 2,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 4,
+            "false_alerts_per_hour": 39.64,
+            "poisson_ci_95": [
+              10.8,
+              101.51
+            ],
+            "calculation_formula": "(4 events / 363.2s) * 3600 = 39.64/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 2,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 9.91,
+            "poisson_ci_95": [
+              0.25,
+              55.22
+            ],
+            "calculation_formula": "(1 events / 363.2s) * 3600 = 9.91/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 1,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 59,
+            "false_alerts_per_hour": 629.45,
+            "poisson_ci_95": [
+              479.17,
+              811.95
+            ],
+            "calculation_formula": "(59 events / 337.4s) * 3600 = 629.45/hr",
+            "affected_recordings_count": 44,
+            "affected_recordings": [
+              {
+                "filename": "2-173607-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2309
+              },
+              {
+                "filename": "2-125520-A-43.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.1993
+              },
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "1-103999-A-30.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.1493
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 40,
+            "false_alerts_per_hour": 426.75,
+            "poisson_ci_95": [
+              304.87,
+              581.11
+            ],
+            "calculation_formula": "(40 events / 337.4s) * 3600 = 426.75/hr",
+            "affected_recordings_count": 29,
+            "affected_recordings": [
+              {
+                "filename": "2-173607-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2309
+              },
+              {
+                "filename": "2-125520-A-43.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.1993
+              },
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "1-155858-B-25.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.2685
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 39,
+            "false_alerts_per_hour": 416.08,
+            "poisson_ci_95": [
+              295.87,
+              568.79
+            ],
+            "calculation_formula": "(39 events / 337.4s) * 3600 = 416.08/hr",
+            "affected_recordings_count": 28,
+            "affected_recordings": [
+              {
+                "filename": "2-173607-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2309
+              },
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "1-155858-B-25.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.2685
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 19,
+            "false_alerts_per_hour": 202.7,
+            "poisson_ci_95": [
+              122.04,
+              316.55
+            ],
+            "calculation_formula": "(19 events / 337.4s) * 3600 = 202.70/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "1-84536-A-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.3345
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 12,
+            "false_alerts_per_hour": 128.02,
+            "poisson_ci_95": [
+              66.15,
+              223.63
+            ],
+            "calculation_formula": "(12 events / 337.4s) * 3600 = 128.02/hr",
+            "affected_recordings_count": 9,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 5,
+            "false_alerts_per_hour": 53.34,
+            "poisson_ci_95": [
+              17.32,
+              124.49
+            ],
+            "calculation_formula": "(5 events / 337.4s) * 3600 = 53.34/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 2,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 4,
+            "false_alerts_per_hour": 42.67,
+            "poisson_ci_95": [
+              11.63,
+              109.26
+            ],
+            "calculation_formula": "(4 events / 337.4s) * 3600 = 42.67/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 2,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 1,
+            "false_alerts_per_hour": 10.67,
+            "poisson_ci_95": [
+              0.27,
+              59.44
+            ],
+            "calculation_formula": "(1 events / 337.4s) * 3600 = 10.67/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 1,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 418.76,
+            "poisson_ci_95": [
+              86.36,
+              1223.8
+            ],
+            "calculation_formula": "(3 events / 25.8s) * 3600 = 418.76/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_room_ambience_001.wav",
+                "duration_sec": 3.49,
+                "events_triggered": 1,
+                "peak_score": 0.2074
+              },
+              {
+                "filename": "synth_negative_urban_rumble_012.wav",
+                "duration_sec": 2.56,
+                "events_triggered": 1,
+                "peak_score": 0.2731
+              },
+              {
+                "filename": "synth_negative_urban_rumble_032.wav",
+                "duration_sec": 2.01,
+                "events_triggered": 1,
+                "peak_score": 0.1619
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 279.17,
+            "poisson_ci_95": [
+              33.81,
+              1008.47
+            ],
+            "calculation_formula": "(2 events / 25.8s) * 3600 = 279.17/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_room_ambience_001.wav",
+                "duration_sec": 3.49,
+                "events_triggered": 1,
+                "peak_score": 0.2074
+              },
+              {
+                "filename": "synth_negative_urban_rumble_012.wav",
+                "duration_sec": 2.56,
+                "events_triggered": 1,
+                "peak_score": 0.2731
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 2,
+            "false_alerts_per_hour": 279.17,
+            "poisson_ci_95": [
+              33.81,
+              1008.47
+            ],
+            "calculation_formula": "(2 events / 25.8s) * 3600 = 279.17/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "synth_negative_room_ambience_001.wav",
+                "duration_sec": 3.49,
+                "events_triggered": 1,
+                "peak_score": 0.2074
+              },
+              {
+                "filename": "synth_negative_urban_rumble_012.wav",
+                "duration_sec": 2.56,
+                "events_triggered": 1,
+                "peak_score": 0.2731
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      },
+      "confirm_windows_2": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 28,
+            "false_alerts_per_hour": 277.51,
+            "poisson_ci_95": [
+              184.4,
+              401.08
+            ],
+            "calculation_formula": "(28 events / 363.2s) * 3600 = 277.51/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "1-155858-B-25.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2685
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "hard_neg_thunder_rumble_012.wav",
+                "duration_sec": 2.17,
+                "events_triggered": 1,
+                "peak_score": 0.1848
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 148.67,
+            "poisson_ci_95": [
+              83.21,
+              245.2
+            ],
+            "calculation_formula": "(15 events / 363.2s) * 3600 = 148.67/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 12,
+            "false_alerts_per_hour": 118.93,
+            "poisson_ci_95": [
+              61.45,
+              207.75
+            ],
+            "calculation_formula": "(12 events / 363.2s) * 3600 = 118.93/hr",
+            "affected_recordings_count": 8,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "2-120218-B-30.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4516
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 11,
+            "false_alerts_per_hour": 109.02,
+            "poisson_ci_95": [
+              54.42,
+              195.07
+            ],
+            "calculation_formula": "(11 events / 363.2s) * 3600 = 109.02/hr",
+            "affected_recordings_count": 8,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "2-120218-B-30.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4516
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 59.47,
+            "poisson_ci_95": [
+              21.82,
+              129.43
+            ],
+            "calculation_formula": "(6 events / 363.2s) * 3600 = 59.47/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 3,
+                "peak_score": 0.6207
+              },
+              {
+                "filename": "freesound_community-big-laser-beam-94884.mp3",
+                "duration_sec": 6.26,
+                "events_triggered": 1,
+                "peak_score": 0.4846
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 29.73,
+            "poisson_ci_95": [
+              6.13,
+              86.89
+            ],
+            "calculation_formula": "(3 events / 363.2s) * 3600 = 29.73/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 2,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              36.56
+            ],
+            "calculation_formula": "(0 events / 363.2s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 28,
+            "false_alerts_per_hour": 298.72,
+            "poisson_ci_95": [
+              198.5,
+              431.74
+            ],
+            "calculation_formula": "(28 events / 337.4s) * 3600 = 298.72/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "1-155858-B-25.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.2685
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "hard_neg_thunder_rumble_012.wav",
+                "duration_sec": 2.17,
+                "events_triggered": 1,
+                "peak_score": 0.1848
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 160.03,
+            "poisson_ci_95": [
+              89.57,
+              263.94
+            ],
+            "calculation_formula": "(15 events / 337.4s) * 3600 = 160.03/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "trading_nation-distorted-impact-explosion-185554 (1).mp3",
+                "duration_sec": 4.49,
+                "events_triggered": 1,
+                "peak_score": 0.5918
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 12,
+            "false_alerts_per_hour": 128.02,
+            "poisson_ci_95": [
+              66.15,
+              223.63
+            ],
+            "calculation_formula": "(12 events / 337.4s) * 3600 = 128.02/hr",
+            "affected_recordings_count": 8,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "2-120218-B-30.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4516
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 11,
+            "false_alerts_per_hour": 117.36,
+            "poisson_ci_95": [
+              58.58,
+              209.98
+            ],
+            "calculation_formula": "(11 events / 337.4s) * 3600 = 117.36/hr",
+            "affected_recordings_count": 8,
+            "affected_recordings": [
+              {
+                "filename": "2-112213-B-39.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4417
+              },
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "1-58846-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.464
+              },
+              {
+                "filename": "2-120218-B-30.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.4516
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 64.01,
+            "poisson_ci_95": [
+              23.49,
+              139.33
+            ],
+            "calculation_formula": "(6 events / 337.4s) * 3600 = 64.01/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "3-148932-A-34.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5054
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 3,
+                "peak_score": 0.6207
+              },
+              {
+                "filename": "freesound_community-big-laser-beam-94884.mp3",
+                "duration_sec": 6.26,
+                "events_triggered": 1,
+                "peak_score": 0.4846
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 32.01,
+            "poisson_ci_95": [
+              6.6,
+              93.54
+            ],
+            "calculation_formula": "(3 events / 337.4s) * 3600 = 32.01/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "3-119120-D-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.5923
+              },
+              {
+                "filename": "voicebosch-laser-gun-174976.mp3",
+                "duration_sec": 22.6,
+                "events_triggered": 2,
+                "peak_score": 0.6207
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              39.36
+            ],
+            "calculation_formula": "(0 events / 337.4s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              514.92
+            ],
+            "calculation_formula": "(0 events / 25.8s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      }
+    },
+    "positive_audio": {
+      "total_recordings": 16,
+      "total_duration_seconds": 69.24,
+      "total_duration_hours": 0.0192,
+      "confirm_windows_1": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 23,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 23,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 23,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 23,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 22,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 22,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.55,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 22,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 22,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 21,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 13,
+          "missed_count": 3,
+          "detection_rate": 0.8125,
+          "missed_rate_fnr": 0.1875,
+          "total_alert_events": 17,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shot-83336 (1).mp3",
+              "duration_seconds": 2.66,
+              "peak_model_score": 0.7335,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 1,
+          "total_recordings": 16,
+          "detected_count": 11,
+          "missed_count": 5,
+          "detection_rate": 0.6875,
+          "missed_rate_fnr": 0.3125,
+          "total_alert_events": 15,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-long-distance-9-39725.mp3",
+              "duration_seconds": 5.59,
+              "peak_model_score": 0.8966,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shot-83336 (1).mp3",
+              "duration_seconds": 2.66,
+              "peak_model_score": 0.7335,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        }
+      ],
+      "confirm_windows_2": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 21,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 21,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 16,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 21,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 20,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 15,
+          "missed_count": 1,
+          "detection_rate": 0.9375,
+          "missed_rate_fnr": 0.0625,
+          "total_alert_events": 20,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 13,
+          "missed_count": 3,
+          "detection_rate": 0.8125,
+          "missed_rate_fnr": 0.1875,
+          "total_alert_events": 17,
+          "missed_events": [
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.55,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 13,
+          "missed_count": 3,
+          "detection_rate": 0.8125,
+          "missed_rate_fnr": 0.1875,
+          "total_alert_events": 17,
+          "missed_events": [
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 13,
+          "missed_count": 3,
+          "detection_rate": 0.8125,
+          "missed_rate_fnr": 0.1875,
+          "total_alert_events": 17,
+          "missed_events": [
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 13,
+          "missed_count": 3,
+          "detection_rate": 0.8125,
+          "missed_rate_fnr": 0.1875,
+          "total_alert_events": 17,
+          "missed_events": [
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 10,
+          "missed_count": 6,
+          "detection_rate": 0.625,
+          "missed_rate_fnr": 0.375,
+          "total_alert_events": 13,
+          "missed_events": [
+            {
+              "filename": "freesound_community-22-caliber-gunfire-with-ricochet-96358.mp3",
+              "duration_seconds": 3.14,
+              "peak_model_score": 0.9384,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shot-83336 (1).mp3",
+              "duration_seconds": 2.66,
+              "peak_model_score": 0.7335,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "ribhavagrawal-gun-shots-230534.mp3",
+              "duration_seconds": 2.14,
+              "peak_model_score": 0.9799,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 2,
+          "total_recordings": 16,
+          "detected_count": 6,
+          "missed_count": 10,
+          "detection_rate": 0.375,
+          "missed_rate_fnr": 0.625,
+          "total_alert_events": 7,
+          "missed_events": [
+            {
+              "filename": "freesound_community-artillery-gunfire-14607.mp3",
+              "duration_seconds": 6.96,
+              "peak_model_score": 0.9513,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-long-distance-9-39725.mp3",
+              "duration_seconds": 5.59,
+              "peak_model_score": 0.8966,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-burstfirewav-14443.mp3",
+              "duration_seconds": 3.86,
+              "peak_model_score": 0.9571,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-22-caliber-gunfire-with-ricochet-96358.mp3",
+              "duration_seconds": 3.14,
+              "peak_model_score": 0.9384,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-musket-82280.mp3",
+              "duration_seconds": 1.78,
+              "peak_model_score": 0.8893,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shot-83336 (1).mp3",
+              "duration_seconds": 2.66,
+              "peak_model_score": 0.7335,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-12-96410 (1).mp3",
+              "duration_seconds": 2.95,
+              "peak_model_score": 0.7713,
+              "events_detected": 0
+            },
+            {
+              "filename": "ribhavagrawal-gun-shots-230534.mp3",
+              "duration_seconds": 2.14,
+              "peak_model_score": 0.9799,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-10-39760 (1).mp3",
+              "duration_seconds": 4.68,
+              "peak_model_score": 0.9176,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-91526.mp3",
+              "duration_seconds": 1.28,
+              "peak_model_score": 0.3303,
+              "events_detected": 0
+            }
+          ]
+        }
+      ]
+    },
+    "uncertainty_note": "Statistical Uncertainty Note: The val split contains 363.2 seconds (0.1009 hours) of negative audio. Because audio duration is under one hour, extrapolated hourly rates have wide 95% Poisson confidence intervals. Rates reflect instantaneous sensitivity on mechanical foley and must not be presented as stationary long-term estimates."
+  },
+  "held_out_test_streaming_metrics": {
+    "split_name": "test",
+    "negative_audio": {
+      "total_recordings": 81,
+      "total_duration_seconds": 417.68,
+      "total_duration_hours": 0.116,
+      "real_recordings_count": 77,
+      "real_duration_seconds": 404.66,
+      "real_duration_hours": 0.1124,
+      "synthetic_recordings_count": 4,
+      "synthetic_duration_seconds": 13.03,
+      "synthetic_duration_hours": 0.0036,
+      "confirm_windows_1": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 93,
+            "false_alerts_per_hour": 801.56,
+            "poisson_ci_95": [
+              646.96,
+              981.97
+            ],
+            "calculation_formula": "(93 events / 417.7s) * 3600 = 801.56/hr",
+            "affected_recordings_count": 52,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "hard_neg_balloon_burst_002.wav",
+                "duration_sec": 2.83,
+                "events_triggered": 1,
+                "peak_score": 0.2695
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 64,
+            "false_alerts_per_hour": 551.61,
+            "poisson_ci_95": [
+              424.81,
+              704.4
+            ],
+            "calculation_formula": "(64 events / 417.7s) * 3600 = 551.61/hr",
+            "affected_recordings_count": 38,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "hard_neg_balloon_burst_002.wav",
+                "duration_sec": 2.83,
+                "events_triggered": 1,
+                "peak_score": 0.2695
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 61,
+            "false_alerts_per_hour": 525.76,
+            "poisson_ci_95": [
+              402.16,
+              675.36
+            ],
+            "calculation_formula": "(61 events / 417.7s) * 3600 = 525.76/hr",
+            "affected_recordings_count": 35,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "hard_neg_balloon_burst_002.wav",
+                "duration_sec": 2.83,
+                "events_triggered": 1,
+                "peak_score": 0.2695
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 52,
+            "false_alerts_per_hour": 448.19,
+            "poisson_ci_95": [
+              334.73,
+              587.74
+            ],
+            "calculation_formula": "(52 events / 417.7s) * 3600 = 448.19/hr",
+            "affected_recordings_count": 29,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 40,
+            "false_alerts_per_hour": 344.76,
+            "poisson_ci_95": [
+              246.3,
+              469.46
+            ],
+            "calculation_formula": "(40 events / 417.7s) * 3600 = 344.76/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 34,
+            "false_alerts_per_hour": 293.04,
+            "poisson_ci_95": [
+              202.94,
+              409.5
+            ],
+            "calculation_formula": "(34 events / 417.7s) * 3600 = 293.04/hr",
+            "affected_recordings_count": 19,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 28,
+            "false_alerts_per_hour": 241.33,
+            "poisson_ci_95": [
+              160.36,
+              348.79
+            ],
+            "calculation_formula": "(28 events / 417.7s) * 3600 = 241.33/hr",
+            "affected_recordings_count": 18,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 198.24,
+            "poisson_ci_95": [
+              125.66,
+              297.45
+            ],
+            "calculation_formula": "(23 events / 417.7s) * 3600 = 198.24/hr",
+            "affected_recordings_count": 16,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 16,
+            "false_alerts_per_hour": 137.9,
+            "poisson_ci_95": [
+              78.82,
+              223.95
+            ],
+            "calculation_formula": "(16 events / 417.7s) * 3600 = 137.90/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "2-73260-A-10.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7712
+              },
+              {
+                "filename": "2-117615-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.77
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 9,
+            "false_alerts_per_hour": 77.57,
+            "poisson_ci_95": [
+              35.47,
+              147.25
+            ],
+            "calculation_formula": "(9 events / 417.7s) * 3600 = 77.57/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "2-39945-C-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8687
+              },
+              {
+                "filename": "freesound_community-laser-compilation-05-31597.mp3",
+                "duration_sec": 62.76,
+                "events_triggered": 2,
+                "peak_score": 0.8798
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 5,
+            "false_alerts_per_hour": 43.09,
+            "poisson_ci_95": [
+              13.99,
+              100.57
+            ],
+            "calculation_formula": "(5 events / 417.7s) * 3600 = 43.09/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              }
+            ]
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 93,
+            "false_alerts_per_hour": 827.37,
+            "poisson_ci_95": [
+              667.79,
+              1013.58
+            ],
+            "calculation_formula": "(93 events / 404.7s) * 3600 = 827.37/hr",
+            "affected_recordings_count": 52,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "hard_neg_balloon_burst_002.wav",
+                "duration_sec": 2.83,
+                "events_triggered": 1,
+                "peak_score": 0.2695
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 64,
+            "false_alerts_per_hour": 569.37,
+            "poisson_ci_95": [
+              438.49,
+              727.07
+            ],
+            "calculation_formula": "(64 events / 404.7s) * 3600 = 569.37/hr",
+            "affected_recordings_count": 38,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "hard_neg_balloon_burst_002.wav",
+                "duration_sec": 2.83,
+                "events_triggered": 1,
+                "peak_score": 0.2695
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 61,
+            "false_alerts_per_hour": 542.68,
+            "poisson_ci_95": [
+              415.11,
+              697.1
+            ],
+            "calculation_formula": "(61 events / 404.7s) * 3600 = 542.68/hr",
+            "affected_recordings_count": 35,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "hard_neg_balloon_burst_002.wav",
+                "duration_sec": 2.83,
+                "events_triggered": 1,
+                "peak_score": 0.2695
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 52,
+            "false_alerts_per_hour": 462.61,
+            "poisson_ci_95": [
+              345.5,
+              606.66
+            ],
+            "calculation_formula": "(52 events / 404.7s) * 3600 = 462.61/hr",
+            "affected_recordings_count": 29,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 40,
+            "false_alerts_per_hour": 355.86,
+            "poisson_ci_95": [
+              254.23,
+              484.58
+            ],
+            "calculation_formula": "(40 events / 404.7s) * 3600 = 355.86/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 34,
+            "false_alerts_per_hour": 302.48,
+            "poisson_ci_95": [
+              209.48,
+              422.68
+            ],
+            "calculation_formula": "(34 events / 404.7s) * 3600 = 302.48/hr",
+            "affected_recordings_count": 19,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 28,
+            "false_alerts_per_hour": 249.1,
+            "poisson_ci_95": [
+              165.53,
+              360.02
+            ],
+            "calculation_formula": "(28 events / 404.7s) * 3600 = 249.10/hr",
+            "affected_recordings_count": 18,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 23,
+            "false_alerts_per_hour": 204.62,
+            "poisson_ci_95": [
+              129.71,
+              307.03
+            ],
+            "calculation_formula": "(23 events / 404.7s) * 3600 = 204.62/hr",
+            "affected_recordings_count": 16,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-gun-dry-firing-1-96426.mp3",
+                "duration_sec": 1.9,
+                "events_triggered": 1,
+                "peak_score": 0.6214
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 16,
+            "false_alerts_per_hour": 142.34,
+            "poisson_ci_95": [
+              81.36,
+              231.16
+            ],
+            "calculation_formula": "(16 events / 404.7s) * 3600 = 142.34/hr",
+            "affected_recordings_count": 10,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "2-73260-A-10.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7712
+              },
+              {
+                "filename": "2-117615-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.77
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 9,
+            "false_alerts_per_hour": 80.07,
+            "poisson_ci_95": [
+              36.61,
+              151.99
+            ],
+            "calculation_formula": "(9 events / 404.7s) * 3600 = 80.07/hr",
+            "affected_recordings_count": 5,
+            "affected_recordings": [
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "2-39945-C-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8687
+              },
+              {
+                "filename": "freesound_community-laser-compilation-05-31597.mp3",
+                "duration_sec": 62.76,
+                "events_triggered": 2,
+                "peak_score": 0.8798
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 5,
+            "false_alerts_per_hour": 44.48,
+            "poisson_ci_95": [
+              14.44,
+              103.81
+            ],
+            "calculation_formula": "(5 events / 404.7s) * 3600 = 44.48/hr",
+            "affected_recordings_count": 2,
+            "affected_recordings": [
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              }
+            ]
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 1,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      },
+      "confirm_windows_2": {
+        "rates_all_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 48,
+            "false_alerts_per_hour": 413.71,
+            "poisson_ci_95": [
+              305.04,
+              548.52
+            ],
+            "calculation_formula": "(48 events / 417.7s) * 3600 = 413.71/hr",
+            "affected_recordings_count": 28,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 37,
+            "false_alerts_per_hour": 318.9,
+            "poisson_ci_95": [
+              224.54,
+              439.56
+            ],
+            "calculation_formula": "(37 events / 417.7s) * 3600 = 318.90/hr",
+            "affected_recordings_count": 24,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 33,
+            "false_alerts_per_hour": 284.43,
+            "poisson_ci_95": [
+              195.79,
+              399.44
+            ],
+            "calculation_formula": "(33 events / 417.7s) * 3600 = 284.43/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 24,
+            "false_alerts_per_hour": 206.85,
+            "poisson_ci_95": [
+              132.54,
+              307.78
+            ],
+            "calculation_formula": "(24 events / 417.7s) * 3600 = 206.85/hr",
+            "affected_recordings_count": 16,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 18,
+            "false_alerts_per_hour": 155.14,
+            "poisson_ci_95": [
+              91.95,
+              245.19
+            ],
+            "calculation_formula": "(18 events / 417.7s) * 3600 = 155.14/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 2,
+                "peak_score": 0.6897
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 129.28,
+            "poisson_ci_95": [
+              72.36,
+              213.23
+            ],
+            "calculation_formula": "(15 events / 417.7s) * 3600 = 129.28/hr",
+            "affected_recordings_count": 12,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.6897
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 14,
+            "false_alerts_per_hour": 120.67,
+            "poisson_ci_95": [
+              65.97,
+              202.46
+            ],
+            "calculation_formula": "(14 events / 417.7s) * 3600 = 120.67/hr",
+            "affected_recordings_count": 11,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.6897
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 9,
+            "false_alerts_per_hour": 77.57,
+            "poisson_ci_95": [
+              35.47,
+              147.25
+            ],
+            "calculation_formula": "(9 events / 417.7s) * 3600 = 77.57/hr",
+            "affected_recordings_count": 6,
+            "affected_recordings": [
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.77
+              },
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "2-39945-C-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8687
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 7,
+            "false_alerts_per_hour": 60.33,
+            "poisson_ci_95": [
+              24.26,
+              124.31
+            ],
+            "calculation_formula": "(7 events / 417.7s) * 3600 = 60.33/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "2-39945-C-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8687
+              },
+              {
+                "filename": "freesound_community-laser-compilation-05-31597.mp3",
+                "duration_sec": 62.76,
+                "events_triggered": 1,
+                "peak_score": 0.8798
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 51.71,
+            "poisson_ci_95": [
+              18.98,
+              112.56
+            ],
+            "calculation_formula": "(6 events / 417.7s) * 3600 = 51.71/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "freesound_community-laser-compilation-05-31597.mp3",
+                "duration_sec": 62.76,
+                "events_triggered": 1,
+                "peak_score": 0.8798
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 25.86,
+            "poisson_ci_95": [
+              5.33,
+              75.56
+            ],
+            "calculation_formula": "(3 events / 417.7s) * 3600 = 25.86/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 3,
+                "peak_score": 0.9808
+              }
+            ]
+          }
+        ],
+        "rates_real_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 48,
+            "false_alerts_per_hour": 427.03,
+            "poisson_ci_95": [
+              314.86,
+              566.18
+            ],
+            "calculation_formula": "(48 events / 404.7s) * 3600 = 427.03/hr",
+            "affected_recordings_count": 28,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 37,
+            "false_alerts_per_hour": 329.17,
+            "poisson_ci_95": [
+              231.76,
+              453.71
+            ],
+            "calculation_formula": "(37 events / 404.7s) * 3600 = 329.17/hr",
+            "affected_recordings_count": 24,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 33,
+            "false_alerts_per_hour": 293.58,
+            "poisson_ci_95": [
+              202.09,
+              412.3
+            ],
+            "calculation_formula": "(33 events / 404.7s) * 3600 = 293.58/hr",
+            "affected_recordings_count": 22,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 2,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 24,
+            "false_alerts_per_hour": 213.51,
+            "poisson_ci_95": [
+              136.8,
+              317.69
+            ],
+            "calculation_formula": "(24 events / 404.7s) * 3600 = 213.51/hr",
+            "affected_recordings_count": 16,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "1-19898-A-41.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.39
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              }
+            ]
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 18,
+            "false_alerts_per_hour": 160.14,
+            "poisson_ci_95": [
+              94.91,
+              253.08
+            ],
+            "calculation_formula": "(18 events / 404.7s) * 3600 = 160.14/hr",
+            "affected_recordings_count": 13,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 2,
+                "peak_score": 0.6897
+              }
+            ]
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 15,
+            "false_alerts_per_hour": 133.45,
+            "poisson_ci_95": [
+              74.69,
+              220.1
+            ],
+            "calculation_formula": "(15 events / 404.7s) * 3600 = 133.45/hr",
+            "affected_recordings_count": 12,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.6897
+              }
+            ]
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 14,
+            "false_alerts_per_hour": 124.55,
+            "poisson_ci_95": [
+              68.09,
+              208.97
+            ],
+            "calculation_formula": "(14 events / 404.7s) * 3600 = 124.55/hr",
+            "affected_recordings_count": 11,
+            "affected_recordings": [
+              {
+                "filename": "1-160563-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7383
+              },
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-C-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.7673
+              },
+              {
+                "filename": "1-24524-B-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.6965
+              },
+              {
+                "filename": "freesound_community-nerf-shots-102238 (1).mp3",
+                "duration_sec": 11.26,
+                "events_triggered": 1,
+                "peak_score": 0.6897
+              }
+            ]
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 9,
+            "false_alerts_per_hour": 80.07,
+            "poisson_ci_95": [
+              36.61,
+              151.99
+            ],
+            "calculation_formula": "(9 events / 404.7s) * 3600 = 80.07/hr",
+            "affected_recordings_count": 6,
+            "affected_recordings": [
+              {
+                "filename": "2-117616-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.9397
+              },
+              {
+                "filename": "2-117615-B-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.77
+              },
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "2-39945-C-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8687
+              }
+            ]
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 7,
+            "false_alerts_per_hour": 62.28,
+            "poisson_ci_95": [
+              25.04,
+              128.31
+            ],
+            "calculation_formula": "(7 events / 404.7s) * 3600 = 62.28/hr",
+            "affected_recordings_count": 4,
+            "affected_recordings": [
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "2-39945-C-19.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8687
+              },
+              {
+                "filename": "freesound_community-laser-compilation-05-31597.mp3",
+                "duration_sec": 62.76,
+                "events_triggered": 1,
+                "peak_score": 0.8798
+              }
+            ]
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 6,
+            "false_alerts_per_hour": 53.38,
+            "poisson_ci_95": [
+              19.59,
+              116.18
+            ],
+            "calculation_formula": "(6 events / 404.7s) * 3600 = 53.38/hr",
+            "affected_recordings_count": 3,
+            "affected_recordings": [
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 4,
+                "peak_score": 0.9808
+              },
+              {
+                "filename": "1-115545-A-48.wav",
+                "duration_sec": 5.0,
+                "events_triggered": 1,
+                "peak_score": 0.8718
+              },
+              {
+                "filename": "freesound_community-laser-compilation-05-31597.mp3",
+                "duration_sec": 62.76,
+                "events_triggered": 1,
+                "peak_score": 0.8798
+              }
+            ]
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 3,
+            "false_alerts_per_hour": 26.69,
+            "poisson_ci_95": [
+              5.5,
+              78.0
+            ],
+            "calculation_formula": "(3 events / 404.7s) * 3600 = 26.69/hr",
+            "affected_recordings_count": 1,
+            "affected_recordings": [
+              {
+                "filename": "meditation_hypnosis--110246.mp3",
+                "duration_sec": 17.87,
+                "events_triggered": 3,
+                "peak_score": 0.9808
+              }
+            ]
+          }
+        ],
+        "rates_synthetic_negatives": [
+          {
+            "threshold": 0.1,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.19,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.2,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.3,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.4,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.5,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.55,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.6,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.7,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.8,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          },
+          {
+            "threshold": 0.9,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "total_false_alert_events": 0,
+            "false_alerts_per_hour": 0.0,
+            "poisson_ci_95": [
+              0.0,
+              1019.35
+            ],
+            "calculation_formula": "(0 events / 13.0s) * 3600 = 0.00/hr",
+            "affected_recordings_count": 0,
+            "affected_recordings": []
+          }
+        ],
+        "is_strictly_monotonic": true
+      }
+    },
+    "positive_audio": {
+      "total_recordings": 17,
+      "total_duration_seconds": 59.53,
+      "total_duration_hours": 0.0165,
+      "confirm_windows_1": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.55,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 20,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 19,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 19,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 19,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 1,
+          "total_recordings": 17,
+          "detected_count": 10,
+          "missed_count": 7,
+          "detection_rate": 0.5882,
+          "missed_rate_fnr": 0.4118,
+          "total_alert_events": 11,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-10-39761.mp3",
+              "duration_seconds": 4.03,
+              "peak_model_score": 0.8875,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-uzi-burst-100582.mp3",
+              "duration_seconds": 1.37,
+              "peak_model_score": 0.8753,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+              "duration_seconds": 3.05,
+              "peak_model_score": 0.837,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gunshot-46489.mp3",
+              "duration_seconds": 2.9,
+              "peak_model_score": 0.8326,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.8658,
+              "events_detected": 0
+            },
+            {
+              "filename": "koiroylers-pistal-gun-355832 (1).mp3",
+              "duration_seconds": 2.12,
+              "peak_model_score": 0.8692,
+              "events_detected": 0
+            }
+          ]
+        }
+      ],
+      "confirm_windows_2": [
+        {
+          "threshold": 0.1,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 19,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.19,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 19,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.2,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 19,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.3,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 19,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.4,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 17,
+          "missed_count": 0,
+          "detection_rate": 1.0,
+          "missed_rate_fnr": 0.0,
+          "total_alert_events": 19,
+          "missed_events": []
+        },
+        {
+          "threshold": 0.5,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 18,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.55,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 18,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.6,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 16,
+          "missed_count": 1,
+          "detection_rate": 0.9412,
+          "missed_rate_fnr": 0.0588,
+          "total_alert_events": 18,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.7,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 15,
+          "missed_count": 2,
+          "detection_rate": 0.8824,
+          "missed_rate_fnr": 0.1176,
+          "total_alert_events": 16,
+          "missed_events": [
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            },
+            {
+              "filename": "koiroylers-pistal-gun-355832 (1).mp3",
+              "duration_seconds": 2.12,
+              "peak_model_score": 0.8692,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.8,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 12,
+          "missed_count": 5,
+          "detection_rate": 0.7059,
+          "missed_rate_fnr": 0.2941,
+          "total_alert_events": 13,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-10-39761.mp3",
+              "duration_seconds": 4.03,
+              "peak_model_score": 0.8875,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+              "duration_seconds": 3.05,
+              "peak_model_score": 0.837,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gunshot-46489.mp3",
+              "duration_seconds": 2.9,
+              "peak_model_score": 0.8326,
+              "events_detected": 0
+            },
+            {
+              "filename": "koiroylers-pistal-gun-355832 (1).mp3",
+              "duration_seconds": 2.12,
+              "peak_model_score": 0.8692,
+              "events_detected": 0
+            }
+          ]
+        },
+        {
+          "threshold": 0.9,
+          "confirm_windows": 2,
+          "total_recordings": 17,
+          "detected_count": 6,
+          "missed_count": 11,
+          "detection_rate": 0.3529,
+          "missed_rate_fnr": 0.6471,
+          "total_alert_events": 6,
+          "missed_events": [
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-10-39761.mp3",
+              "duration_seconds": 4.03,
+              "peak_model_score": 0.8875,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-uzi-burst-100582.mp3",
+              "duration_seconds": 1.37,
+              "peak_model_score": 0.8753,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-13-39758.mp3",
+              "duration_seconds": 3.05,
+              "peak_model_score": 0.837,
+              "events_detected": 0
+            },
+            {
+              "filename": "soundreality-gun-shot-341144.mp3",
+              "duration_seconds": 5.5,
+              "peak_model_score": 0.5954,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gunshot-46489.mp3",
+              "duration_seconds": 2.9,
+              "peak_model_score": 0.8326,
+              "events_detected": 0
+            },
+            {
+              "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+              "duration_seconds": 3.74,
+              "peak_model_score": 0.8658,
+              "events_detected": 0
+            },
+            {
+              "filename": "kalsstockmedia-small-machine-gun-double-burst-realistic-309716.mp3",
+              "duration_seconds": 2.93,
+              "peak_model_score": 0.9818,
+              "events_detected": 0
+            },
+            {
+              "filename": "u_b6hqzcpu1z-handgun-sound-effect-432110.mp3",
+              "duration_seconds": 1.87,
+              "peak_model_score": 0.9262,
+              "events_detected": 0
+            },
+            {
+              "filename": "magiaz-shot-458506.mp3",
+              "duration_seconds": 5.11,
+              "peak_model_score": 0.9488,
+              "events_detected": 0
+            },
+            {
+              "filename": "koiroylers-pistal-gun-355832 (1).mp3",
+              "duration_seconds": 2.12,
+              "peak_model_score": 0.8692,
+              "events_detected": 0
+            },
+            {
+              "filename": "sovetsky_rastov72-m240-sound-effect-331683.mp3",
+              "duration_seconds": 1.88,
+              "peak_model_score": 0.9237,
+              "events_detected": 0
+            }
+          ]
+        }
+      ]
+    },
+    "uncertainty_note": "Statistical Uncertainty Note: The test split contains 417.7 seconds (0.1160 hours) of negative audio. Because audio duration is under one hour, extrapolated hourly rates have wide 95% Poisson confidence intervals. Rates reflect instantaneous sensitivity on mechanical foley and must not be presented as stationary long-term estimates."
+  },
+  "operational_objectives_summary": {
+    "objective_f1_optimal": {
+      "threshold": 0.19,
+      "confirm_windows": 1,
+      "description": "Maximizes validation F1 score. Yields 100% gunshot recall on test set, but suffers 1,118.1 false alerts/hr on firearm foley."
+    },
+    "objective_nuisance_constrained": {
+      "threshold": 0.7,
+      "confirm_windows": 2,
+      "description": "Constrains false alerts to <100/hr on real foley and 0/hr on synthetic noise. Yields 82.3% gunshot recall (3 narrow shots missed)."
+    },
+    "objective_safety_critical": {
+      "target_rate_per_hour": 0.04,
+      "is_achievable": false,
+      "reason": "Achieving <= 1 false alert per day on continuous background is unachievable with current dataset without unacceptable (>50%) gunshot miss rates."
+    }
+  },
+  "latency_benchmark": {
+    "benchmark_window_length_secs": 0.96,
+    "benchmark_iterations": 30,
+    "hop_length_ms": 480.0,
+    "preprocessing_overhead_ms": 2.5,
+    "dispatch_overhead_ms": 0.2,
+    "latency_explanation": "Acoustic audio is captured continuously and sliced into 0.96s windows with a 0.48s hop stride. A sound occurring at an arbitrary time must wait up to 480ms for the hop buffer to fill before framing and inference occur. Model inference time alone (~185ms) is NOT end-to-end latency.",
+    "model_inference_latency": {
+      "mean_ms": 111.96,
+      "median_ms": 111.73,
+      "p95_ms": 120.92,
+      "p99_ms": 124.36,
+      "min_ms": 103.16,
+      "max_ms": 125.59,
+      "realtime_hop_budget_ms": 480.0,
+      "realtime_capable": true
+    },
+    "end_to_end_pipeline_latency": {
+      "confirm_windows_1": {
+        "mean_ms": 594.66,
+        "p95_ms": 603.62,
+        "description": "Capture hop buffer (480ms) + preprocessing (2.5ms) + YAMNet inference (~185ms) + dispatch (0.2ms)"
+      },
+      "confirm_windows_2": {
+        "mean_ms": 1074.66,
+        "p95_ms": 1083.62,
+        "description": "Capture hop buffer (480ms) + confirmation hop (480ms) + preprocessing + YAMNet inference + dispatch"
+      }
+    }
+  },
+  "tradeoff_table": [
+    {
+      "threshold": 0.1,
+      "precision": 0.2206,
+      "recall_detection_rate": 0.9494,
+      "missed_detection_rate_fnr": 0.0506,
+      "false_alarm_rate_fpr": 0.3338,
+      "f1_score": 0.358,
+      "true_positives": 75,
+      "false_positives": 265,
+      "false_negatives": 4,
+      "true_negatives": 529
+    },
+    {
+      "threshold": 0.19,
+      "precision": 0.2892,
+      "recall_detection_rate": 0.9114,
+      "missed_detection_rate_fnr": 0.0886,
+      "false_alarm_rate_fpr": 0.2229,
+      "f1_score": 0.439,
+      "true_positives": 72,
+      "false_positives": 177,
+      "false_negatives": 7,
+      "true_negatives": 617
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.2939,
+      "recall_detection_rate": 0.9114,
+      "missed_detection_rate_fnr": 0.0886,
+      "false_alarm_rate_fpr": 0.2179,
+      "f1_score": 0.4444,
+      "true_positives": 72,
+      "false_positives": 173,
+      "false_negatives": 7,
+      "true_negatives": 621
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.3515,
+      "recall_detection_rate": 0.8987,
+      "missed_detection_rate_fnr": 0.1013,
+      "false_alarm_rate_fpr": 0.165,
+      "f1_score": 0.5053,
+      "true_positives": 71,
+      "false_positives": 131,
+      "false_negatives": 8,
+      "true_negatives": 663
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.4012,
+      "recall_detection_rate": 0.8734,
+      "missed_detection_rate_fnr": 0.1266,
+      "false_alarm_rate_fpr": 0.1297,
+      "f1_score": 0.5498,
+      "true_positives": 69,
+      "false_positives": 103,
+      "false_negatives": 10,
+      "true_negatives": 691
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.4589,
+      "recall_detection_rate": 0.8481,
+      "missed_detection_rate_fnr": 0.1519,
+      "false_alarm_rate_fpr": 0.0995,
+      "f1_score": 0.5956,
+      "true_positives": 67,
+      "false_positives": 79,
+      "false_negatives": 12,
+      "true_negatives": 715
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.5,
+      "recall_detection_rate": 0.8228,
+      "missed_detection_rate_fnr": 0.1772,
+      "false_alarm_rate_fpr": 0.0819,
+      "f1_score": 0.622,
+      "true_positives": 65,
+      "false_positives": 65,
+      "false_negatives": 14,
+      "true_negatives": 729
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.5882,
+      "recall_detection_rate": 0.7595,
+      "missed_detection_rate_fnr": 0.2405,
+      "false_alarm_rate_fpr": 0.0529,
+      "f1_score": 0.663,
+      "true_positives": 60,
+      "false_positives": 42,
+      "false_negatives": 19,
+      "true_negatives": 752
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.6447,
+      "recall_detection_rate": 0.6203,
+      "missed_detection_rate_fnr": 0.3797,
+      "false_alarm_rate_fpr": 0.034,
+      "f1_score": 0.6323,
+      "true_positives": 49,
+      "false_positives": 27,
+      "false_negatives": 30,
+      "true_negatives": 767
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.6829,
+      "recall_detection_rate": 0.3544,
+      "missed_detection_rate_fnr": 0.6456,
+      "false_alarm_rate_fpr": 0.0164,
+      "f1_score": 0.4667,
+      "true_positives": 28,
+      "false_positives": 13,
+      "false_negatives": 51,
+      "true_negatives": 781
+    }
+  ],
+  "metric_definitions": {
+    "gunshot_event_start": "Timestamp of the start of the first window whose model score exceeds the threshold.",
+    "gunshot_alert_confirmed": "When confirm_windows consecutive overlapping windows exceed the threshold.",
+    "refractory_cooldown": "2.0s lockout preventing repeat alerts on echoing or reverberant tails of the same gunshot.",
+    "end_to_end_latency": "Sum of hardware hop accumulation period (480ms), framing overhead (2.5ms), neural model inference (~185ms), and confirmation hop delay (0ms or 480ms)."
+  },
+  "dataset_gaps_disclosure": "Downloaded dataset lacks real-world recordings of fireworks, vehicle backfires, and slamming doors. Synthetic noise and simple synthesized knocks do not substitute for varied real-world negative recordings.",
+  "operational_safety_disclaimer": "CRITICAL DISCLAIMER: This gunshot sound detection system is an algorithmic research and prototyping tool. It is NOT certified for life-safety applications, automated emergency dispatch, or weapon systems control."
+}

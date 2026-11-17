@@ -1,0 +1,247 @@
+{
+  "report_title": "Phase 8 Validation Operating Point Optimization & Candidate Comparison",
+  "evaluator": "Senior Acoustic ML Researcher",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "dataset_split": "Validation Split Only (No Independent Test Set Exposure)",
+  "selection_rationale": "Selected the operating point maximizing Event F1 and Event Recall while maintaining high precision and sub-2.0s latency.",
+  "recommended_configuration": {
+    "id": "frozen_phase7_baseline",
+    "name": "Phase 7 Frozen Baseline (tau=0.75, N=2)",
+    "operating_parameters": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.75,
+      "threshold_off": 0.5,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "short_clip_exception": false,
+      "semantic_mimic_gating": false
+    },
+    "window_level_validation_metrics": {
+      "accuracy": 96.41,
+      "precision": 95.74,
+      "recall": 78.95,
+      "f1": 86.54,
+      "roc_auc": 97.5,
+      "pr_auc": 94.17
+    },
+    "event_level_validation_metrics": {
+      "total_annotated_events": 73,
+      "true_positive_events": 53,
+      "missed_events_fn": 20,
+      "false_alert_events_fp": 3,
+      "duplicate_alerts": 47,
+      "event_recall": 72.6,
+      "event_precision": 94.64,
+      "event_f1": 82.17,
+      "recording_recall": 87.5
+    },
+    "timing_and_latency": {
+      "mean_onset_delay_ms": 302.8,
+      "model_inference_latency_ms": 152.3,
+      "streaming_hop_buffering_ms": 480.0,
+      "end_to_end_streaming_delay_ms": 935.1
+    }
+  },
+  "candidate_configurations": [
+    {
+      "id": "frozen_phase7_baseline",
+      "name": "Phase 7 Frozen Baseline (tau=0.75, N=2)",
+      "operating_parameters": {
+        "threshold_base": 0.75,
+        "threshold_high": 0.75,
+        "threshold_off": 0.5,
+        "confirm_windows": 2,
+        "cooldown_secs": 2.0,
+        "short_clip_exception": false,
+        "semantic_mimic_gating": false
+      },
+      "window_level_validation_metrics": {
+        "accuracy": 96.41,
+        "precision": 95.74,
+        "recall": 78.95,
+        "f1": 86.54,
+        "roc_auc": 97.5,
+        "pr_auc": 94.17
+      },
+      "event_level_validation_metrics": {
+        "total_annotated_events": 73,
+        "true_positive_events": 53,
+        "missed_events_fn": 20,
+        "false_alert_events_fp": 3,
+        "duplicate_alerts": 47,
+        "event_recall": 72.6,
+        "event_precision": 94.64,
+        "event_f1": 82.17,
+        "recording_recall": 87.5
+      },
+      "timing_and_latency": {
+        "mean_onset_delay_ms": 302.8,
+        "model_inference_latency_ms": 152.3,
+        "streaming_hop_buffering_ms": 480.0,
+        "end_to_end_streaming_delay_ms": 935.1
+      }
+    },
+    {
+      "id": "candidate_a_permissive_single_window",
+      "name": "Candidate A: Permissive Single-Window (tau=0.75, N=1)",
+      "operating_parameters": {
+        "threshold_base": 0.75,
+        "threshold_high": 0.75,
+        "threshold_off": 0.5,
+        "confirm_windows": 1,
+        "cooldown_secs": 2.0,
+        "short_clip_exception": true,
+        "semantic_mimic_gating": false
+      },
+      "window_level_validation_metrics": {
+        "accuracy": 96.41,
+        "precision": 95.74,
+        "recall": 78.95,
+        "f1": 86.54,
+        "roc_auc": 97.5,
+        "pr_auc": 94.17
+      },
+      "event_level_validation_metrics": {
+        "total_annotated_events": 73,
+        "true_positive_events": 53,
+        "missed_events_fn": 20,
+        "false_alert_events_fp": 3,
+        "duplicate_alerts": 47,
+        "event_recall": 72.6,
+        "event_precision": 94.64,
+        "event_f1": 82.17,
+        "recording_recall": 87.5
+      },
+      "timing_and_latency": {
+        "mean_onset_delay_ms": 302.8,
+        "model_inference_latency_ms": 152.3,
+        "streaming_hop_buffering_ms": 480.0,
+        "end_to_end_streaming_delay_ms": 935.1
+      }
+    },
+    {
+      "id": "candidate_b_dual_threshold_confirm",
+      "name": "Candidate B: Dual-Threshold Confirmation (tau=0.70, tau_high=0.82)",
+      "operating_parameters": {
+        "threshold_base": 0.7,
+        "threshold_high": 0.82,
+        "threshold_off": 0.45,
+        "confirm_windows": 2,
+        "cooldown_secs": 1.5,
+        "short_clip_exception": false,
+        "semantic_mimic_gating": false
+      },
+      "window_level_validation_metrics": {
+        "accuracy": 96.79,
+        "precision": 93.2,
+        "recall": 84.21,
+        "f1": 88.48,
+        "roc_auc": 97.5,
+        "pr_auc": 94.17
+      },
+      "event_level_validation_metrics": {
+        "total_annotated_events": 73,
+        "true_positive_events": 52,
+        "missed_events_fn": 21,
+        "false_alert_events_fp": 3,
+        "duplicate_alerts": 41,
+        "event_recall": 71.23,
+        "event_precision": 94.55,
+        "event_f1": 81.25,
+        "recording_recall": 93.75
+      },
+      "timing_and_latency": {
+        "mean_onset_delay_ms": 200.5,
+        "model_inference_latency_ms": 152.3,
+        "streaming_hop_buffering_ms": 480.0,
+        "end_to_end_streaming_delay_ms": 832.8
+      }
+    },
+    {
+      "id": "candidate_c_adaptive_short_clip_pathway",
+      "name": "Candidate C: Dual-Threshold + Short-Clip Pathway",
+      "operating_parameters": {
+        "threshold_base": 0.7,
+        "threshold_high": 0.82,
+        "threshold_off": 0.45,
+        "confirm_windows": 2,
+        "cooldown_secs": 1.5,
+        "short_clip_exception": true,
+        "semantic_mimic_gating": false
+      },
+      "window_level_validation_metrics": {
+        "accuracy": 96.79,
+        "precision": 93.2,
+        "recall": 84.21,
+        "f1": 88.48,
+        "roc_auc": 97.5,
+        "pr_auc": 94.17
+      },
+      "event_level_validation_metrics": {
+        "total_annotated_events": 73,
+        "true_positive_events": 52,
+        "missed_events_fn": 21,
+        "false_alert_events_fp": 3,
+        "duplicate_alerts": 41,
+        "event_recall": 71.23,
+        "event_precision": 94.55,
+        "event_f1": 81.25,
+        "recording_recall": 93.75
+      },
+      "timing_and_latency": {
+        "mean_onset_delay_ms": 200.5,
+        "model_inference_latency_ms": 152.3,
+        "streaming_hop_buffering_ms": 480.0,
+        "end_to_end_streaming_delay_ms": 832.8
+      }
+    },
+    {
+      "id": "candidate_d_phase8_full_adaptive",
+      "name": "Candidate D: Phase 8 Full Adaptive Detector (+ Semantic Mimic Gating)",
+      "operating_parameters": {
+        "threshold_base": 0.7,
+        "threshold_high": 0.82,
+        "threshold_off": 0.45,
+        "confirm_windows": 2,
+        "cooldown_secs": 1.5,
+        "short_clip_exception": true,
+        "semantic_mimic_gating": true
+      },
+      "window_level_validation_metrics": {
+        "accuracy": 96.79,
+        "precision": 93.2,
+        "recall": 84.21,
+        "f1": 88.48,
+        "roc_auc": 97.5,
+        "pr_auc": 94.17
+      },
+      "event_level_validation_metrics": {
+        "total_annotated_events": 73,
+        "true_positive_events": 52,
+        "missed_events_fn": 21,
+        "false_alert_events_fp": 3,
+        "duplicate_alerts": 42,
+        "event_recall": 71.23,
+        "event_precision": 94.55,
+        "event_f1": 81.25,
+        "recording_recall": 93.75
+      },
+      "timing_and_latency": {
+        "mean_onset_delay_ms": 216.9,
+        "model_inference_latency_ms": 152.3,
+        "streaming_hop_buffering_ms": 480.0,
+        "end_to_end_streaming_delay_ms": 849.2
+      }
+    }
+  ],
+  "system_profiling": {
+    "initial_memory_mb": 0.0,
+    "final_memory_mb": 0.0,
+    "memory_delta_mb": 0.0,
+    "inference_latency_ms": {
+      "mean": 152.3,
+      "p50": 133.78,
+      "p95": 171.78
+    }
+  }
+}

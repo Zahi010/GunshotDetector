@@ -1,0 +1,12 @@
+{
+  "model_type": "Calibrated Hybrid Ensemble (Residual MLP + CatBoost + LightGBM)",
+  "ensemble_weights": [
+    0.3,
+    0.4,
+    0.3
+  ],
+  "input_dim": 1024,
+  "sample_rate": 16000,
+  "window_length_secs": 0.96,
+  "hop_length_secs": 0.48
+}

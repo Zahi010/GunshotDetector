@@ -1,0 +1,130 @@
+{
+  "detector_name": "detector_improvement_v7",
+  "version": "7.0.0",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "created_at": "2026-11-16",
+  "description": "Detector Improvement V7 with Ballistic Shockwave Pyrotechnic Override, Thunder Reverberation Protection, Sub-Bass Backfire Discrimination, and High-Confidence Single-Impulse Adaptation",
+  
+  "energy_gate": {
+    "enabled": true,
+    "min_rms_energy": 0.001,
+    "min_peak_amplitude": 0.005
+  },
+
+  "condition_estimator": {
+    "enabled": true,
+    "alpha": 0.20,
+    "hysteresis_windows_occluded": 3,
+    "hysteresis_windows_clear": 2,
+    "hysteresis_windows_rumble": 2,
+    "clear_mode_criteria": {
+      "min_rolloff_ema": 0.20,
+      "min_high_ema": 0.075,
+      "min_mid_to_low_ema": 0.60
+    },
+    "occluded_mode_criteria": {
+      "max_rolloff_ema": 0.14,
+      "max_high_ema": 0.055,
+      "min_mid_ema": 0.35
+    },
+    "rumble_override": {
+      "min_low_ratio": 0.70,
+      "max_mid_to_low": 0.50
+    }
+  },
+
+  "mode_policies": {
+    "CLEAR_NORMAL": {
+      "threshold_base": 0.70,
+      "threshold_high": 0.85,
+      "threshold_off": 0.40,
+      "confirm_windows": 2,
+      "single_impulse_min_crest_db": 12.0,
+      "single_impulse_high_conf_crest_db": 11.0,
+      "single_impulse_min_score": 0.70,
+      "energy_decay_db": 8.5,
+      "allow_single_impulse_exception": true,
+      "cooldown_secs": 1.50
+    },
+    "DEGRADED_OCCLUDED": {
+      "threshold_base": 0.62,
+      "threshold_high": 0.80,
+      "threshold_off": 0.40,
+      "confirm_windows": 2,
+      "single_impulse_min_crest_db": 10.5,
+      "single_impulse_high_conf_crest_db": 10.0,
+      "single_impulse_min_score": 0.62,
+      "energy_decay_db": 7.0,
+      "allow_single_impulse_exception": true,
+      "cooldown_secs": 1.50
+    },
+    "UNKNOWN": {
+      "threshold_base": 0.70,
+      "threshold_high": 0.85,
+      "threshold_off": 0.40,
+      "confirm_windows": 2,
+      "single_impulse_min_crest_db": 13.5,
+      "single_impulse_high_conf_crest_db": 11.5,
+      "single_impulse_min_score": 0.70,
+      "energy_decay_db": 8.0,
+      "allow_single_impulse_exception": true,
+      "cooldown_secs": 1.50
+    }
+  },
+
+  "suppression_rules": {
+    "ballistic_coherence": {
+      "enabled": true,
+      "max_pure_gun": 0.08,
+      "max_ballistic": 0.10,
+      "saturation_pure_gun": 0.04,
+      "saturation_ballistic": 0.04,
+      "attenuation": 0.20
+    },
+    "sub_bass_thud": {
+      "enabled": true,
+      "min_low_ratio": 0.70,
+      "max_high_ratio": 0.008,
+      "max_centroid_hz": 450.0,
+      "min_cap_gun": 0.35,
+      "cap_to_pure_ratio": 1.5,
+      "max_pure_gun": 0.20,
+      "attenuation": 0.25
+    },
+    "glass_shatter": {
+      "enabled": true,
+      "threshold": 0.30,
+      "min_high_band_ratio": 0.25,
+      "gun_score_max": 0.20,
+      "attenuation": 0.35
+    },
+    "thunder": {
+      "enabled": true,
+      "threshold": 0.20,
+      "low_band_threshold": 0.65,
+      "mid_to_low_max": 0.55,
+      "gun_score_max": 0.15,
+      "ballistic_shockwave_max": 0.20,
+      "attenuation": 0.30
+    },
+    "fireworks": {
+      "enabled": true,
+      "dominant_threshold": 0.45,
+      "dominant_ratio": 1.8,
+      "dominant_attenuation": 0.15,
+      "standard_threshold": 0.25,
+      "standard_ratio": 2.5,
+      "standard_attenuation": 0.30,
+      "ballistic_override_threshold": 0.40,
+      "ballistic_override_ratio": 0.85
+    },
+    "mechanical_impact": {
+      "enabled": true,
+      "impact_threshold": 0.25,
+      "impact_to_gun_ratio": 1.5,
+      "gun_score_max": 0.20,
+      "attenuation": 0.35
+    }
+  }
+}
+

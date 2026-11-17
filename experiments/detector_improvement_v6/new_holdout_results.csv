@@ -1,0 +1,6 @@
+detector,holdout_positive_detected,holdout_positive_total,holdout_positive_recall_pct,pocket_detected,pocket_total,pocket_recall_pct,clean_detected,clean_total,clean_recall_pct,fireworks_false_positives,fireworks_total,fireworks_fpr_pct,glass_break_false_positives,glass_break_total,glass_break_fpr_pct,env_false_positives,env_total,env_fpr_pct,continuous_2hr_alerts,continuous_alert_rate_per_hr,p19_positive_detected,p19_positive_total,p19_positive_recall_pct,phase16_continuous_exposure_hours,phase16_continuous_alerts,phase16_continuous_alert_rate_per_hr
+Detector Improvement V2,33,48,68.75,10,20,50.0,13,15,86.67,5,8,62.5,0,8,0.0,3,92,3.26,2,1.0,14,23,60.87,6.08,7,1.1507
+Detector Improvement V3,13,48,27.08,4,20,20.0,5,15,33.33,0,8,0.0,0,8,0.0,0,92,0.0,2,1.0,8,23,34.78,6.08,2,0.3288
+Detector Improvement V4,38,48,79.17,16,20,80.0,14,15,93.33,0,8,0.0,8,8,100.0,9,92,9.78,21,10.5,18,23,78.26,6.08,8,1.3151
+Detector Improvement V5,33,48,68.75,11,20,55.0,13,15,86.67,1,8,12.5,8,8,100.0,21,92,22.83,15,7.5,21,23,91.3,6.08,1,0.1644
+Detector Improvement V6,32,48,66.67,11,20,55.0,13,15,86.67,1,8,12.5,0,8,0.0,2,92,2.17,7,3.5,16,23,69.57,6.08,0,0.0

@@ -1,0 +1,3232 @@
+{
+  "audit_timestamp": "2026-10-28",
+  "total_positive_recordings_audited": 150,
+  "recordings_with_significant_silence": 55,
+  "silence_handling_summary": {
+    "physical_audio_trimming_conducted": false,
+    "original_source_recordings_preserved": true,
+    "window_level_relabeling_applied": true,
+    "training_boundary_exclusion_applied": true,
+    "live_energy_squelch_gate_active": true,
+    "reverberation_decay_preservation": "0.15s minimum overlap captures acoustic onset and reverberation decay while excluding pure trailing silence"
+  },
+  "affected_recordings": [
+    {
+      "filename": "alex_jauk-firearm-loads-and-shoots-197042.mp3",
+      "file_path": "data\\raw\\gunshots\\alex_jauk-firearm-loads-and-shoots-197042.mp3",
+      "original_duration_sec": 2.376,
+      "processed_duration_sec": 2.376,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.045,
+          "end_sec": 0.655,
+          "duration_sec": 0.61,
+          "snr_db": 69.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.045,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.721,
+      "total_silence_sec": 1.766,
+      "silence_ratio": 0.743,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "armed_unit-distant-war-377958.mp3",
+      "file_path": "data\\raw\\gunshots\\armed_unit-distant-war-377958.mp3",
+      "original_duration_sec": 234.423,
+      "processed_duration_sec": 234.423,
+      "physical_audio_modified": false,
+      "events_count": 19,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 9.0,
+          "end_sec": 17.38,
+          "duration_sec": 8.38,
+          "snr_db": 47.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 24.21,
+          "end_sec": 41.515,
+          "duration_sec": 17.305,
+          "snr_db": 47.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 43.305,
+          "end_sec": 45.67,
+          "duration_sec": 2.365,
+          "snr_db": 47.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 53.7,
+          "end_sec": 55.87,
+          "duration_sec": 2.17,
+          "snr_db": 34.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 57.225,
+          "end_sec": 57.475,
+          "duration_sec": 0.25,
+          "snr_db": 22.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 59.22,
+          "end_sec": 66.49,
+          "duration_sec": 7.27,
+          "snr_db": 45.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 76.515,
+          "end_sec": 80.275,
+          "duration_sec": 3.76,
+          "snr_db": 27.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 8,
+          "start_sec": 81.87,
+          "end_sec": 104.365,
+          "duration_sec": 22.495,
+          "snr_db": 47.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 9,
+          "start_sec": 106.44,
+          "end_sec": 117.895,
+          "duration_sec": 11.455,
+          "snr_db": 47.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 10,
+          "start_sec": 121.905,
+          "end_sec": 133.855,
+          "duration_sec": 11.95,
+          "snr_db": 40.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 11,
+          "start_sec": 135.99,
+          "end_sec": 138.475,
+          "duration_sec": 2.485,
+          "snr_db": 37.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 12,
+          "start_sec": 139.845,
+          "end_sec": 147.01,
+          "duration_sec": 7.165,
+          "snr_db": 48.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 13,
+          "start_sec": 151.83,
+          "end_sec": 155.71,
+          "duration_sec": 3.88,
+          "snr_db": 27.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 14,
+          "start_sec": 163.59,
+          "end_sec": 173.065,
+          "duration_sec": 9.475,
+          "snr_db": 46.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 15,
+          "start_sec": 174.405,
+          "end_sec": 179.26,
+          "duration_sec": 4.855,
+          "snr_db": 47.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 16,
+          "start_sec": 192.915,
+          "end_sec": 196.555,
+          "duration_sec": 3.64,
+          "snr_db": 37.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 17,
+          "start_sec": 209.22,
+          "end_sec": 210.505,
+          "duration_sec": 1.285,
+          "snr_db": 27.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 18,
+          "start_sec": 213.84,
+          "end_sec": 218.02,
+          "duration_sec": 4.18,
+          "snr_db": 44.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 19,
+          "start_sec": 218.595,
+          "end_sec": 230.11,
+          "duration_sec": 11.515,
+          "snr_db": 43.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 9.0,
+      "internal_silence_sec": 85.23,
+      "trailing_silence_sec": 4.313,
+      "total_silence_sec": 98.543,
+      "silence_ratio": 0.42,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "dennish18-machine-gun-129928.mp3",
+      "file_path": "data\\raw\\gunshots\\dennish18-machine-gun-129928.mp3",
+      "original_duration_sec": 4.128,
+      "processed_duration_sec": 4.128,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 1.795,
+          "duration_sec": 1.795,
+          "snr_db": 95.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.333,
+      "total_silence_sec": 2.333,
+      "silence_ratio": 0.565,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "flutie8211-ff-gun-shot-amp-reverb-echo-603843.mp3",
+      "file_path": "data\\raw\\gunshots\\flutie8211-ff-gun-shot-amp-reverb-echo-603843.mp3",
+      "original_duration_sec": 5.04,
+      "processed_duration_sec": 5.04,
+      "physical_audio_modified": false,
+      "events_count": 3,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 1.855,
+          "duration_sec": 1.855,
+          "snr_db": 59.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 2.19,
+          "end_sec": 2.44,
+          "duration_sec": 0.25,
+          "snr_db": 30.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 4.305,
+          "end_sec": 5.035,
+          "duration_sec": 0.73,
+          "snr_db": 27.6,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 2.2,
+      "trailing_silence_sec": 0.005,
+      "total_silence_sec": 2.205,
+      "silence_ratio": 0.437,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "foisal72-gun-fire-346766.mp3",
+      "file_path": "data\\raw\\gunshots\\foisal72-gun-fire-346766.mp3",
+      "original_duration_sec": 7.549,
+      "processed_duration_sec": 7.549,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.54,
+          "end_sec": 4.825,
+          "duration_sec": 4.285,
+          "snr_db": 94.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.54,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.724,
+      "total_silence_sec": 3.264,
+      "silence_ratio": 0.432,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-22multpl2-103719.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-22multpl2-103719.mp3",
+      "original_duration_sec": 8.856,
+      "processed_duration_sec": 8.856,
+      "physical_audio_modified": false,
+      "events_count": 2,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.405,
+          "end_sec": 1.345,
+          "duration_sec": 0.94,
+          "snr_db": 60.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 1.695,
+          "end_sec": 2.575,
+          "duration_sec": 0.88,
+          "snr_db": 60.8,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.405,
+      "internal_silence_sec": 0.35,
+      "trailing_silence_sec": 6.281,
+      "total_silence_sec": 7.036,
+      "silence_ratio": 0.794,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-burstfirewav-14443.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-burstfirewav-14443.mp3",
+      "original_duration_sec": 3.864,
+      "processed_duration_sec": 3.864,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.045,
+          "end_sec": 1.645,
+          "duration_sec": 1.6,
+          "snr_db": 75.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.045,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.219,
+      "total_silence_sec": 2.264,
+      "silence_ratio": 0.586,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-glock-19-handgun-pistol-30812.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-glock-19-handgun-pistol-30812.mp3",
+      "original_duration_sec": 28.728,
+      "processed_duration_sec": 28.728,
+      "physical_audio_modified": false,
+      "events_count": 15,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.3,
+          "end_sec": 0.55,
+          "duration_sec": 0.25,
+          "snr_db": 86.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 2.25,
+          "end_sec": 2.5,
+          "duration_sec": 0.25,
+          "snr_db": 73.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 3.87,
+          "end_sec": 4.12,
+          "duration_sec": 0.25,
+          "snr_db": 94.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 5.88,
+          "end_sec": 6.13,
+          "duration_sec": 0.25,
+          "snr_db": 72.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 7.35,
+          "end_sec": 7.6,
+          "duration_sec": 0.25,
+          "snr_db": 91.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 9.075,
+          "end_sec": 9.325,
+          "duration_sec": 0.25,
+          "snr_db": 90.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 10.92,
+          "end_sec": 11.17,
+          "duration_sec": 0.25,
+          "snr_db": 96.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 8,
+          "start_sec": 13.095,
+          "end_sec": 13.54,
+          "duration_sec": 0.445,
+          "snr_db": 83.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 9,
+          "start_sec": 15.69,
+          "end_sec": 15.94,
+          "duration_sec": 0.25,
+          "snr_db": 94.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 10,
+          "start_sec": 18.78,
+          "end_sec": 19.03,
+          "duration_sec": 0.25,
+          "snr_db": 89.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 11,
+          "start_sec": 20.91,
+          "end_sec": 21.28,
+          "duration_sec": 0.37,
+          "snr_db": 96.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 12,
+          "start_sec": 22.785,
+          "end_sec": 23.035,
+          "duration_sec": 0.25,
+          "snr_db": 92.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 13,
+          "start_sec": 24.84,
+          "end_sec": 25.09,
+          "duration_sec": 0.25,
+          "snr_db": 94.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 14,
+          "start_sec": 26.955,
+          "end_sec": 27.535,
+          "duration_sec": 0.58,
+          "snr_db": 80.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 15,
+          "start_sec": 28.455,
+          "end_sec": 28.705,
+          "duration_sec": 0.25,
+          "snr_db": 94.6,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.3,
+      "internal_silence_sec": 24.01,
+      "trailing_silence_sec": 0.023,
+      "total_silence_sec": 24.333,
+      "silence_ratio": 0.847,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-10-39760 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-10-39760 (1).mp3",
+      "original_duration_sec": 4.68,
+      "processed_duration_sec": 4.68,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.12,
+          "end_sec": 2.395,
+          "duration_sec": 2.275,
+          "snr_db": 98.8,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.12,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.285,
+      "total_silence_sec": 2.405,
+      "silence_ratio": 0.514,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-10-39760.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-10-39760.mp3",
+      "original_duration_sec": 4.68,
+      "processed_duration_sec": 4.68,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.12,
+          "end_sec": 2.395,
+          "duration_sec": 2.275,
+          "snr_db": 98.8,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.12,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.285,
+      "total_silence_sec": 2.405,
+      "silence_ratio": 0.514,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-13-96423.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-13-96423.mp3",
+      "original_duration_sec": 3.96,
+      "processed_duration_sec": 3.96,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 2.365,
+          "duration_sec": 2.365,
+          "snr_db": 65.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.595,
+      "total_silence_sec": 1.595,
+      "silence_ratio": 0.403,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-17-39757.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-17-39757.mp3",
+      "original_duration_sec": 5.136,
+      "processed_duration_sec": 5.136,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.225,
+          "end_sec": 2.8,
+          "duration_sec": 2.575,
+          "snr_db": 98.5,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.225,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.336,
+      "total_silence_sec": 2.561,
+      "silence_ratio": 0.499,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-19-96417 (1).mp3",
+      "original_duration_sec": 3.744,
+      "processed_duration_sec": 3.744,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.015,
+          "end_sec": 1.795,
+          "duration_sec": 1.78,
+          "snr_db": 101.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.015,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.949,
+      "total_silence_sec": 1.964,
+      "silence_ratio": 0.525,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-19-96417 (2).mp3",
+      "original_duration_sec": 3.744,
+      "processed_duration_sec": 3.744,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.015,
+          "end_sec": 1.795,
+          "duration_sec": 1.78,
+          "snr_db": 101.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.015,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.949,
+      "total_silence_sec": 1.964,
+      "silence_ratio": 0.525,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-19-96417 (3).mp3",
+      "original_duration_sec": 3.744,
+      "processed_duration_sec": 3.744,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.015,
+          "end_sec": 1.795,
+          "duration_sec": 1.78,
+          "snr_db": 101.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.015,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.949,
+      "total_silence_sec": 1.964,
+      "silence_ratio": 0.525,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-19-96417.mp3",
+      "original_duration_sec": 3.744,
+      "processed_duration_sec": 3.744,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.015,
+          "end_sec": 1.795,
+          "duration_sec": 1.78,
+          "snr_db": 101.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.015,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.949,
+      "total_silence_sec": 1.964,
+      "silence_ratio": 0.525,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-distance-4-39727.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-distance-4-39727.mp3",
+      "original_duration_sec": 5.592,
+      "processed_duration_sec": 5.592,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.045,
+          "end_sec": 3.955,
+          "duration_sec": 3.91,
+          "snr_db": 70.5,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.045,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.637,
+      "total_silence_sec": 1.682,
+      "silence_ratio": 0.301,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun-shots-from-a-long-distance-9-39725.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun-shots-from-a-long-distance-9-39725.mp3",
+      "original_duration_sec": 5.592,
+      "processed_duration_sec": 5.592,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 3.43,
+          "duration_sec": 3.43,
+          "snr_db": 98.8,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.162,
+      "total_silence_sec": 2.162,
+      "silence_ratio": 0.387,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883.mp3",
+      "original_duration_sec": 18.24,
+      "processed_duration_sec": 18.24,
+      "physical_audio_modified": false,
+      "events_count": 7,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 1.665,
+          "end_sec": 4.435,
+          "duration_sec": 2.77,
+          "snr_db": 49.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 4.905,
+          "end_sec": 6.28,
+          "duration_sec": 1.375,
+          "snr_db": 51.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 10.23,
+          "end_sec": 11.365,
+          "duration_sec": 1.135,
+          "snr_db": 49.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 12.495,
+          "end_sec": 14.8,
+          "duration_sec": 2.305,
+          "snr_db": 52.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 15.315,
+          "end_sec": 15.97,
+          "duration_sec": 0.655,
+          "snr_db": 52.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 16.335,
+          "end_sec": 16.81,
+          "duration_sec": 0.475,
+          "snr_db": 47.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 17.625,
+          "end_sec": 17.875,
+          "duration_sec": 0.25,
+          "snr_db": 29.8,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 1.665,
+      "internal_silence_sec": 7.245,
+      "trailing_silence_sec": 0.365,
+      "total_silence_sec": 9.275,
+      "silence_ratio": 0.508,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gunshot-46489.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gunshot-46489.mp3",
+      "original_duration_sec": 2.904,
+      "processed_duration_sec": 2.904,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.12,
+          "end_sec": 0.535,
+          "duration_sec": 0.415,
+          "snr_db": 39.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.12,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.369,
+      "total_silence_sec": 2.489,
+      "silence_ratio": 0.857,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-gun_9mm_25m_180_off_axis_debris_m10-71503.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-gun_9mm_25m_180_off_axis_debris_m10-71503.mp3",
+      "original_duration_sec": 30.168,
+      "processed_duration_sec": 30.168,
+      "physical_audio_modified": false,
+      "events_count": 5,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 1.305,
+          "end_sec": 2.995,
+          "duration_sec": 1.69,
+          "snr_db": 64.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 8.31,
+          "end_sec": 10.045,
+          "duration_sec": 1.735,
+          "snr_db": 64.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 13.575,
+          "end_sec": 15.235,
+          "duration_sec": 1.66,
+          "snr_db": 63.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 19.485,
+          "end_sec": 21.13,
+          "duration_sec": 1.645,
+          "snr_db": 63.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 24.435,
+          "end_sec": 26.05,
+          "duration_sec": 1.615,
+          "snr_db": 65.3,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 1.305,
+      "internal_silence_sec": 16.4,
+      "trailing_silence_sec": 4.118,
+      "total_silence_sec": 21.823,
+      "silence_ratio": 0.723,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-heavymachinegun-6998 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-heavymachinegun-6998 (1).mp3",
+      "original_duration_sec": 36.528,
+      "processed_duration_sec": 36.528,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 32.38,
+          "duration_sec": 32.38,
+          "snr_db": 62.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 4.148,
+      "total_silence_sec": 4.148,
+      "silence_ratio": 0.114,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-heavymachinegun-6998.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-heavymachinegun-6998.mp3",
+      "original_duration_sec": 36.528,
+      "processed_duration_sec": 36.528,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 32.38,
+          "duration_sec": 32.38,
+          "snr_db": 62.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 4.148,
+      "total_silence_sec": 4.148,
+      "silence_ratio": 0.114,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-lhs-gunshots-85275.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-lhs-gunshots-85275.mp3",
+      "original_duration_sec": 5.304,
+      "processed_duration_sec": 5.304,
+      "physical_audio_modified": false,
+      "events_count": 4,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.12,
+          "end_sec": 0.535,
+          "duration_sec": 0.415,
+          "snr_db": 89.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 1.275,
+          "end_sec": 1.705,
+          "duration_sec": 0.43,
+          "snr_db": 96.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 2.205,
+          "end_sec": 3.46,
+          "duration_sec": 1.255,
+          "snr_db": 96.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 4.11,
+          "end_sec": 4.75,
+          "duration_sec": 0.64,
+          "snr_db": 93.6,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.12,
+      "internal_silence_sec": 1.89,
+      "trailing_silence_sec": 0.554,
+      "total_silence_sec": 2.564,
+      "silence_ratio": 0.483,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-m16-rifle-shots-105797.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-m16-rifle-shots-105797.mp3",
+      "original_duration_sec": 7.68,
+      "processed_duration_sec": 7.68,
+      "physical_audio_modified": false,
+      "events_count": 5,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.015,
+          "end_sec": 1.15,
+          "duration_sec": 1.135,
+          "snr_db": 79.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 1.755,
+          "end_sec": 2.845,
+          "duration_sec": 1.09,
+          "snr_db": 75.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 3.225,
+          "end_sec": 4.06,
+          "duration_sec": 0.835,
+          "snr_db": 79.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 5.085,
+          "end_sec": 5.875,
+          "duration_sec": 0.79,
+          "snr_db": 77.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 6.51,
+          "end_sec": 7.6,
+          "duration_sec": 1.09,
+          "snr_db": 77.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.015,
+      "internal_silence_sec": 2.645,
+      "trailing_silence_sec": 0.08,
+      "total_silence_sec": 2.74,
+      "silence_ratio": 0.357,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-machine-guns1-50827 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-machine-guns1-50827 (1).mp3",
+      "original_duration_sec": 243.96,
+      "processed_duration_sec": 243.96,
+      "physical_audio_modified": false,
+      "events_count": 49,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 5.67,
+          "end_sec": 8.26,
+          "duration_sec": 2.59,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 8.61,
+          "end_sec": 9.895,
+          "duration_sec": 1.285,
+          "snr_db": 87.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 10.23,
+          "end_sec": 13.24,
+          "duration_sec": 3.01,
+          "snr_db": 87.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 13.59,
+          "end_sec": 17.905,
+          "duration_sec": 4.315,
+          "snr_db": 93.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 18.27,
+          "end_sec": 21.115,
+          "duration_sec": 2.845,
+          "snr_db": 87.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 21.48,
+          "end_sec": 26.11,
+          "duration_sec": 4.63,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 26.445,
+          "end_sec": 28.09,
+          "duration_sec": 1.645,
+          "snr_db": 87.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 8,
+          "start_sec": 28.995,
+          "end_sec": 29.695,
+          "duration_sec": 0.7,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 9,
+          "start_sec": 31.425,
+          "end_sec": 34.015,
+          "duration_sec": 2.59,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 10,
+          "start_sec": 34.365,
+          "end_sec": 34.96,
+          "duration_sec": 0.595,
+          "snr_db": 86.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 11,
+          "start_sec": 36.72,
+          "end_sec": 39.7,
+          "duration_sec": 2.98,
+          "snr_db": 88.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 12,
+          "start_sec": 40.995,
+          "end_sec": 42.07,
+          "duration_sec": 1.075,
+          "snr_db": 88.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 13,
+          "start_sec": 48.03,
+          "end_sec": 51.01,
+          "duration_sec": 2.98,
+          "snr_db": 93.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 14,
+          "start_sec": 55.44,
+          "end_sec": 55.915,
+          "duration_sec": 0.475,
+          "snr_db": 75.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 15,
+          "start_sec": 56.865,
+          "end_sec": 57.34,
+          "duration_sec": 0.475,
+          "snr_db": 75.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 16,
+          "start_sec": 57.99,
+          "end_sec": 58.795,
+          "duration_sec": 0.805,
+          "snr_db": 77.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 17,
+          "start_sec": 59.61,
+          "end_sec": 60.46,
+          "duration_sec": 0.85,
+          "snr_db": 86.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 18,
+          "start_sec": 65.88,
+          "end_sec": 68.47,
+          "duration_sec": 2.59,
+          "snr_db": 88.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 19,
+          "start_sec": 68.82,
+          "end_sec": 70.105,
+          "duration_sec": 1.285,
+          "snr_db": 88.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 20,
+          "start_sec": 70.455,
+          "end_sec": 73.39,
+          "duration_sec": 2.935,
+          "snr_db": 82.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 21,
+          "start_sec": 77.13,
+          "end_sec": 86.14,
+          "duration_sec": 9.01,
+          "snr_db": 93.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 22,
+          "start_sec": 111.3,
+          "end_sec": 113.89,
+          "duration_sec": 2.59,
+          "snr_db": 93.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 23,
+          "start_sec": 114.255,
+          "end_sec": 115.525,
+          "duration_sec": 1.27,
+          "snr_db": 85.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 24,
+          "start_sec": 115.875,
+          "end_sec": 118.87,
+          "duration_sec": 2.995,
+          "snr_db": 85.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 25,
+          "start_sec": 119.22,
+          "end_sec": 123.535,
+          "duration_sec": 4.315,
+          "snr_db": 86.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 26,
+          "start_sec": 123.915,
+          "end_sec": 125.77,
+          "duration_sec": 1.855,
+          "snr_db": 86.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 27,
+          "start_sec": 142.185,
+          "end_sec": 144.325,
+          "duration_sec": 2.14,
+          "snr_db": 72.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 28,
+          "start_sec": 145.395,
+          "end_sec": 146.53,
+          "duration_sec": 1.135,
+          "snr_db": 72.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 29,
+          "start_sec": 147.015,
+          "end_sec": 149.89,
+          "duration_sec": 2.875,
+          "snr_db": 72.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 30,
+          "start_sec": 150.36,
+          "end_sec": 151.87,
+          "duration_sec": 1.51,
+          "snr_db": 72.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 31,
+          "start_sec": 158.28,
+          "end_sec": 158.755,
+          "duration_sec": 0.475,
+          "snr_db": 76.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 32,
+          "start_sec": 160.635,
+          "end_sec": 163.495,
+          "duration_sec": 2.86,
+          "snr_db": 77.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 33,
+          "start_sec": 164.895,
+          "end_sec": 165.865,
+          "duration_sec": 0.97,
+          "snr_db": 77.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 34,
+          "start_sec": 170.16,
+          "end_sec": 173.695,
+          "duration_sec": 3.535,
+          "snr_db": 77.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 35,
+          "start_sec": 174.165,
+          "end_sec": 176.635,
+          "duration_sec": 2.47,
+          "snr_db": 78.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 36,
+          "start_sec": 177.12,
+          "end_sec": 177.58,
+          "duration_sec": 0.46,
+          "snr_db": 74.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 37,
+          "start_sec": 180.585,
+          "end_sec": 184.57,
+          "duration_sec": 3.985,
+          "snr_db": 94.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 38,
+          "start_sec": 185.1,
+          "end_sec": 190.015,
+          "duration_sec": 4.915,
+          "snr_db": 92.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 39,
+          "start_sec": 191.94,
+          "end_sec": 195.115,
+          "duration_sec": 3.175,
+          "snr_db": 76.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 40,
+          "start_sec": 195.585,
+          "end_sec": 198.31,
+          "duration_sec": 2.725,
+          "snr_db": 75.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 41,
+          "start_sec": 204.75,
+          "end_sec": 207.475,
+          "duration_sec": 2.725,
+          "snr_db": 74.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 42,
+          "start_sec": 207.945,
+          "end_sec": 209.11,
+          "duration_sec": 1.165,
+          "snr_db": 75.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 43,
+          "start_sec": 209.58,
+          "end_sec": 212.455,
+          "duration_sec": 2.875,
+          "snr_db": 75.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 44,
+          "start_sec": 212.925,
+          "end_sec": 214.45,
+          "duration_sec": 1.525,
+          "snr_db": 76.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 45,
+          "start_sec": 220.845,
+          "end_sec": 221.365,
+          "duration_sec": 0.52,
+          "snr_db": 80.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 46,
+          "start_sec": 223.2,
+          "end_sec": 226.03,
+          "duration_sec": 2.83,
+          "snr_db": 74.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 47,
+          "start_sec": 227.505,
+          "end_sec": 228.34,
+          "duration_sec": 0.835,
+          "snr_db": 67.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 48,
+          "start_sec": 229.02,
+          "end_sec": 229.45,
+          "duration_sec": 0.43,
+          "snr_db": 70.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 49,
+          "start_sec": 230.55,
+          "end_sec": 230.815,
+          "duration_sec": 0.265,
+          "snr_db": 66.0,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 5.67,
+      "internal_silence_sec": 116.055,
+      "trailing_silence_sec": 13.145,
+      "total_silence_sec": 134.87,
+      "silence_ratio": 0.553,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-machine-guns1-50827.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-machine-guns1-50827.mp3",
+      "original_duration_sec": 243.96,
+      "processed_duration_sec": 243.96,
+      "physical_audio_modified": false,
+      "events_count": 49,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 5.67,
+          "end_sec": 8.26,
+          "duration_sec": 2.59,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 8.61,
+          "end_sec": 9.895,
+          "duration_sec": 1.285,
+          "snr_db": 87.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 10.23,
+          "end_sec": 13.24,
+          "duration_sec": 3.01,
+          "snr_db": 87.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 13.59,
+          "end_sec": 17.905,
+          "duration_sec": 4.315,
+          "snr_db": 93.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 18.27,
+          "end_sec": 21.115,
+          "duration_sec": 2.845,
+          "snr_db": 87.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 21.48,
+          "end_sec": 26.11,
+          "duration_sec": 4.63,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 26.445,
+          "end_sec": 28.09,
+          "duration_sec": 1.645,
+          "snr_db": 87.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 8,
+          "start_sec": 28.995,
+          "end_sec": 29.695,
+          "duration_sec": 0.7,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 9,
+          "start_sec": 31.425,
+          "end_sec": 34.015,
+          "duration_sec": 2.59,
+          "snr_db": 93.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 10,
+          "start_sec": 34.365,
+          "end_sec": 34.96,
+          "duration_sec": 0.595,
+          "snr_db": 86.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 11,
+          "start_sec": 36.72,
+          "end_sec": 39.7,
+          "duration_sec": 2.98,
+          "snr_db": 88.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 12,
+          "start_sec": 40.995,
+          "end_sec": 42.07,
+          "duration_sec": 1.075,
+          "snr_db": 88.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 13,
+          "start_sec": 48.03,
+          "end_sec": 51.01,
+          "duration_sec": 2.98,
+          "snr_db": 93.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 14,
+          "start_sec": 55.44,
+          "end_sec": 55.915,
+          "duration_sec": 0.475,
+          "snr_db": 75.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 15,
+          "start_sec": 56.865,
+          "end_sec": 57.34,
+          "duration_sec": 0.475,
+          "snr_db": 75.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 16,
+          "start_sec": 57.99,
+          "end_sec": 58.795,
+          "duration_sec": 0.805,
+          "snr_db": 77.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 17,
+          "start_sec": 59.61,
+          "end_sec": 60.46,
+          "duration_sec": 0.85,
+          "snr_db": 86.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 18,
+          "start_sec": 65.88,
+          "end_sec": 68.47,
+          "duration_sec": 2.59,
+          "snr_db": 88.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 19,
+          "start_sec": 68.82,
+          "end_sec": 70.105,
+          "duration_sec": 1.285,
+          "snr_db": 88.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 20,
+          "start_sec": 70.455,
+          "end_sec": 73.39,
+          "duration_sec": 2.935,
+          "snr_db": 82.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 21,
+          "start_sec": 77.13,
+          "end_sec": 86.14,
+          "duration_sec": 9.01,
+          "snr_db": 93.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 22,
+          "start_sec": 111.3,
+          "end_sec": 113.89,
+          "duration_sec": 2.59,
+          "snr_db": 93.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 23,
+          "start_sec": 114.255,
+          "end_sec": 115.525,
+          "duration_sec": 1.27,
+          "snr_db": 85.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 24,
+          "start_sec": 115.875,
+          "end_sec": 118.87,
+          "duration_sec": 2.995,
+          "snr_db": 85.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 25,
+          "start_sec": 119.22,
+          "end_sec": 123.535,
+          "duration_sec": 4.315,
+          "snr_db": 86.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 26,
+          "start_sec": 123.915,
+          "end_sec": 125.77,
+          "duration_sec": 1.855,
+          "snr_db": 86.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 27,
+          "start_sec": 142.185,
+          "end_sec": 144.325,
+          "duration_sec": 2.14,
+          "snr_db": 72.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 28,
+          "start_sec": 145.395,
+          "end_sec": 146.53,
+          "duration_sec": 1.135,
+          "snr_db": 72.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 29,
+          "start_sec": 147.015,
+          "end_sec": 149.89,
+          "duration_sec": 2.875,
+          "snr_db": 72.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 30,
+          "start_sec": 150.36,
+          "end_sec": 151.87,
+          "duration_sec": 1.51,
+          "snr_db": 72.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 31,
+          "start_sec": 158.28,
+          "end_sec": 158.755,
+          "duration_sec": 0.475,
+          "snr_db": 76.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 32,
+          "start_sec": 160.635,
+          "end_sec": 163.495,
+          "duration_sec": 2.86,
+          "snr_db": 77.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 33,
+          "start_sec": 164.895,
+          "end_sec": 165.865,
+          "duration_sec": 0.97,
+          "snr_db": 77.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 34,
+          "start_sec": 170.16,
+          "end_sec": 173.695,
+          "duration_sec": 3.535,
+          "snr_db": 77.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 35,
+          "start_sec": 174.165,
+          "end_sec": 176.635,
+          "duration_sec": 2.47,
+          "snr_db": 78.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 36,
+          "start_sec": 177.12,
+          "end_sec": 177.58,
+          "duration_sec": 0.46,
+          "snr_db": 74.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 37,
+          "start_sec": 180.585,
+          "end_sec": 184.57,
+          "duration_sec": 3.985,
+          "snr_db": 94.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 38,
+          "start_sec": 185.1,
+          "end_sec": 190.015,
+          "duration_sec": 4.915,
+          "snr_db": 92.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 39,
+          "start_sec": 191.94,
+          "end_sec": 195.115,
+          "duration_sec": 3.175,
+          "snr_db": 76.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 40,
+          "start_sec": 195.585,
+          "end_sec": 198.31,
+          "duration_sec": 2.725,
+          "snr_db": 75.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 41,
+          "start_sec": 204.75,
+          "end_sec": 207.475,
+          "duration_sec": 2.725,
+          "snr_db": 74.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 42,
+          "start_sec": 207.945,
+          "end_sec": 209.11,
+          "duration_sec": 1.165,
+          "snr_db": 75.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 43,
+          "start_sec": 209.58,
+          "end_sec": 212.455,
+          "duration_sec": 2.875,
+          "snr_db": 75.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 44,
+          "start_sec": 212.925,
+          "end_sec": 214.45,
+          "duration_sec": 1.525,
+          "snr_db": 76.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 45,
+          "start_sec": 220.845,
+          "end_sec": 221.365,
+          "duration_sec": 0.52,
+          "snr_db": 80.2,
+          "confidence": 0.99
+        },
+        {
+          "index": 46,
+          "start_sec": 223.2,
+          "end_sec": 226.03,
+          "duration_sec": 2.83,
+          "snr_db": 74.8,
+          "confidence": 0.99
+        },
+        {
+          "index": 47,
+          "start_sec": 227.505,
+          "end_sec": 228.34,
+          "duration_sec": 0.835,
+          "snr_db": 67.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 48,
+          "start_sec": 229.02,
+          "end_sec": 229.45,
+          "duration_sec": 0.43,
+          "snr_db": 70.0,
+          "confidence": 0.99
+        },
+        {
+          "index": 49,
+          "start_sec": 230.55,
+          "end_sec": 230.815,
+          "duration_sec": 0.265,
+          "snr_db": 66.0,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 5.67,
+      "internal_silence_sec": 116.055,
+      "trailing_silence_sec": 13.145,
+      "total_silence_sec": 134.87,
+      "silence_ratio": 0.553,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-machinegunloopwav-14862.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-machinegunloopwav-14862.mp3",
+      "original_duration_sec": 9.168,
+      "processed_duration_sec": 9.168,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 7.465,
+          "duration_sec": 7.465,
+          "snr_db": 73.3,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.703,
+      "total_silence_sec": 1.703,
+      "silence_ratio": 0.186,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-mortar-shots-88650.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-mortar-shots-88650.mp3",
+      "original_duration_sec": 12.024,
+      "processed_duration_sec": 12.024,
+      "physical_audio_modified": false,
+      "events_count": 4,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 1.005,
+          "end_sec": 2.65,
+          "duration_sec": 1.645,
+          "snr_db": 103.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 3.99,
+          "end_sec": 4.99,
+          "duration_sec": 1.0,
+          "snr_db": 104.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 6.0,
+          "end_sec": 7.075,
+          "duration_sec": 1.075,
+          "snr_db": 103.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 7.995,
+          "end_sec": 10.27,
+          "duration_sec": 2.275,
+          "snr_db": 104.1,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 1.005,
+      "internal_silence_sec": 3.27,
+      "trailing_silence_sec": 1.754,
+      "total_silence_sec": 6.029,
+      "silence_ratio": 0.501,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-semiautorifleshotwav-14725.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-semiautorifleshotwav-14725.mp3",
+      "original_duration_sec": 6.048,
+      "processed_duration_sec": 6.048,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.03,
+          "end_sec": 2.53,
+          "duration_sec": 2.5,
+          "snr_db": 98.8,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.03,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 3.518,
+      "total_silence_sec": 3.548,
+      "silence_ratio": 0.587,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-shotgun-kaliber-20-compressed-the-spike-by-12-db-wav-100826.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-shotgun-kaliber-20-compressed-the-spike-by-12-db-wav-100826.mp3",
+      "original_duration_sec": 4.968,
+      "processed_duration_sec": 4.968,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.705,
+          "end_sec": 2.86,
+          "duration_sec": 2.155,
+          "snr_db": 47.3,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.705,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.108,
+      "total_silence_sec": 2.813,
+      "silence_ratio": 0.566,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-shots-fired-62748 (1).mp3",
+      "original_duration_sec": 18.6,
+      "processed_duration_sec": 18.6,
+      "physical_audio_modified": false,
+      "events_count": 3,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.495,
+          "end_sec": 9.775,
+          "duration_sec": 9.28,
+          "snr_db": 31.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 10.425,
+          "end_sec": 11.365,
+          "duration_sec": 0.94,
+          "snr_db": 23.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 12.345,
+          "end_sec": 15.04,
+          "duration_sec": 2.695,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.495,
+      "internal_silence_sec": 1.63,
+      "trailing_silence_sec": 3.56,
+      "total_silence_sec": 5.685,
+      "silence_ratio": 0.306,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748 (2).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-shots-fired-62748 (2).mp3",
+      "original_duration_sec": 18.6,
+      "processed_duration_sec": 18.6,
+      "physical_audio_modified": false,
+      "events_count": 3,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.495,
+          "end_sec": 9.775,
+          "duration_sec": 9.28,
+          "snr_db": 31.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 10.425,
+          "end_sec": 11.365,
+          "duration_sec": 0.94,
+          "snr_db": 23.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 12.345,
+          "end_sec": 15.04,
+          "duration_sec": 2.695,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.495,
+      "internal_silence_sec": 1.63,
+      "trailing_silence_sec": 3.56,
+      "total_silence_sec": 5.685,
+      "silence_ratio": 0.306,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748 (3).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-shots-fired-62748 (3).mp3",
+      "original_duration_sec": 18.6,
+      "processed_duration_sec": 18.6,
+      "physical_audio_modified": false,
+      "events_count": 3,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.495,
+          "end_sec": 9.775,
+          "duration_sec": 9.28,
+          "snr_db": 31.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 10.425,
+          "end_sec": 11.365,
+          "duration_sec": 0.94,
+          "snr_db": 23.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 12.345,
+          "end_sec": 15.04,
+          "duration_sec": 2.695,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.495,
+      "internal_silence_sec": 1.63,
+      "trailing_silence_sec": 3.56,
+      "total_silence_sec": 5.685,
+      "silence_ratio": 0.306,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-shots-fired-62748.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-shots-fired-62748.mp3",
+      "original_duration_sec": 18.6,
+      "processed_duration_sec": 18.6,
+      "physical_audio_modified": false,
+      "events_count": 3,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.495,
+          "end_sec": 9.775,
+          "duration_sec": 9.28,
+          "snr_db": 31.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 10.425,
+          "end_sec": 11.365,
+          "duration_sec": 0.94,
+          "snr_db": 23.1,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 12.345,
+          "end_sec": 15.04,
+          "duration_sec": 2.695,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.495,
+      "internal_silence_sec": 1.63,
+      "trailing_silence_sec": 3.56,
+      "total_silence_sec": 5.685,
+      "silence_ratio": 0.306,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-sniper-rifle-firing-2-39885 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-sniper-rifle-firing-2-39885 (1).mp3",
+      "original_duration_sec": 4.224,
+      "processed_duration_sec": 4.224,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 2.455,
+          "duration_sec": 2.455,
+          "snr_db": 99.6,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.769,
+      "total_silence_sec": 1.769,
+      "silence_ratio": 0.419,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-sniper-rifle-firing-2-39885 (2).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-sniper-rifle-firing-2-39885 (2).mp3",
+      "original_duration_sec": 4.224,
+      "processed_duration_sec": 4.224,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 2.455,
+          "duration_sec": 2.455,
+          "snr_db": 99.6,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.769,
+      "total_silence_sec": 1.769,
+      "silence_ratio": 0.419,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-sniper-rifle-firing-2-39885.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-sniper-rifle-firing-2-39885.mp3",
+      "original_duration_sec": 4.224,
+      "processed_duration_sec": 4.224,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 2.455,
+          "duration_sec": 2.455,
+          "snr_db": 99.6,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.769,
+      "total_silence_sec": 1.769,
+      "silence_ratio": 0.419,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-war-ambience-loop-32930 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-war-ambience-loop-32930 (1).mp3",
+      "original_duration_sec": 23.856,
+      "processed_duration_sec": 23.856,
+      "physical_audio_modified": false,
+      "events_count": 4,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.03,
+          "end_sec": 0.76,
+          "duration_sec": 0.73,
+          "snr_db": 40.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 1.215,
+          "end_sec": 14.395,
+          "duration_sec": 13.18,
+          "snr_db": 42.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 14.835,
+          "end_sec": 16.885,
+          "duration_sec": 2.05,
+          "snr_db": 41.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 17.28,
+          "end_sec": 21.49,
+          "duration_sec": 4.21,
+          "snr_db": 43.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.03,
+      "internal_silence_sec": 1.29,
+      "trailing_silence_sec": 2.366,
+      "total_silence_sec": 3.686,
+      "silence_ratio": 0.155,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "freesound_community-war-ambience-loop-32930.mp3",
+      "file_path": "data\\raw\\gunshots\\freesound_community-war-ambience-loop-32930.mp3",
+      "original_duration_sec": 23.856,
+      "processed_duration_sec": 23.856,
+      "physical_audio_modified": false,
+      "events_count": 4,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.03,
+          "end_sec": 0.76,
+          "duration_sec": 0.73,
+          "snr_db": 40.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 1.215,
+          "end_sec": 14.395,
+          "duration_sec": 13.18,
+          "snr_db": 42.6,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 14.835,
+          "end_sec": 16.885,
+          "duration_sec": 2.05,
+          "snr_db": 41.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 17.28,
+          "end_sec": 21.49,
+          "duration_sec": 4.21,
+          "snr_db": 43.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.03,
+      "internal_silence_sec": 1.29,
+      "trailing_silence_sec": 2.366,
+      "total_silence_sec": 3.686,
+      "silence_ratio": 0.155,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "jasonlee3071-firing-range-140155 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\jasonlee3071-firing-range-140155 (1).mp3",
+      "original_duration_sec": 22.536,
+      "processed_duration_sec": 22.536,
+      "physical_audio_modified": false,
+      "events_count": 5,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.075,
+          "end_sec": 2.725,
+          "duration_sec": 2.65,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 3.21,
+          "end_sec": 6.265,
+          "duration_sec": 3.055,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 6.9,
+          "end_sec": 14.215,
+          "duration_sec": 7.315,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 14.715,
+          "end_sec": 17.755,
+          "duration_sec": 3.04,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 18.405,
+          "end_sec": 21.265,
+          "duration_sec": 2.86,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.075,
+      "internal_silence_sec": 2.27,
+      "trailing_silence_sec": 1.271,
+      "total_silence_sec": 3.616,
+      "silence_ratio": 0.16,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "jasonlee3071-firing-range-140155 (2).mp3",
+      "file_path": "data\\raw\\gunshots\\jasonlee3071-firing-range-140155 (2).mp3",
+      "original_duration_sec": 22.536,
+      "processed_duration_sec": 22.536,
+      "physical_audio_modified": false,
+      "events_count": 5,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.075,
+          "end_sec": 2.725,
+          "duration_sec": 2.65,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 3.21,
+          "end_sec": 6.265,
+          "duration_sec": 3.055,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 6.9,
+          "end_sec": 14.215,
+          "duration_sec": 7.315,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 14.715,
+          "end_sec": 17.755,
+          "duration_sec": 3.04,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 18.405,
+          "end_sec": 21.265,
+          "duration_sec": 2.86,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.075,
+      "internal_silence_sec": 2.27,
+      "trailing_silence_sec": 1.271,
+      "total_silence_sec": 3.616,
+      "silence_ratio": 0.16,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "jasonlee3071-firing-range-140155.mp3",
+      "file_path": "data\\raw\\gunshots\\jasonlee3071-firing-range-140155.mp3",
+      "original_duration_sec": 22.536,
+      "processed_duration_sec": 22.536,
+      "physical_audio_modified": false,
+      "events_count": 5,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.075,
+          "end_sec": 2.725,
+          "duration_sec": 2.65,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 3.21,
+          "end_sec": 6.265,
+          "duration_sec": 3.055,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 6.9,
+          "end_sec": 14.215,
+          "duration_sec": 7.315,
+          "snr_db": 27.4,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 14.715,
+          "end_sec": 17.755,
+          "duration_sec": 3.04,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 18.405,
+          "end_sec": 21.265,
+          "duration_sec": 2.86,
+          "snr_db": 25.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.075,
+      "internal_silence_sec": 2.27,
+      "trailing_silence_sec": 1.271,
+      "total_silence_sec": 3.616,
+      "silence_ratio": 0.16,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "kalsstockmedia-earsplitting-noisy-machine-gun-long-burst-continuous-309727.mp3",
+      "file_path": "data\\raw\\gunshots\\kalsstockmedia-earsplitting-noisy-machine-gun-long-burst-continuous-309727.mp3",
+      "original_duration_sec": 8.098,
+      "processed_duration_sec": 8.098,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.03,
+          "end_sec": 6.58,
+          "duration_sec": 6.55,
+          "snr_db": 49.7,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.03,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.518,
+      "total_silence_sec": 1.548,
+      "silence_ratio": 0.191,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "kave_msri-ak47-machine-gun-burst-sfx-332103.mp3",
+      "file_path": "data\\raw\\gunshots\\kave_msri-ak47-machine-gun-burst-sfx-332103.mp3",
+      "original_duration_sec": 6.087,
+      "processed_duration_sec": 6.087,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.225,
+          "end_sec": 2.395,
+          "duration_sec": 2.17,
+          "snr_db": 98.7,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.225,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 3.692,
+      "total_silence_sec": 3.917,
+      "silence_ratio": 0.643,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "magiaz-revolver_firing-511498 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\magiaz-revolver_firing-511498 (1).mp3",
+      "original_duration_sec": 5.04,
+      "processed_duration_sec": 5.04,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 1.51,
+          "duration_sec": 1.51,
+          "snr_db": 78.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 3.53,
+      "total_silence_sec": 3.53,
+      "silence_ratio": 0.7,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "magiaz-revolver_firing-511498.mp3",
+      "file_path": "data\\raw\\gunshots\\magiaz-revolver_firing-511498.mp3",
+      "original_duration_sec": 5.04,
+      "processed_duration_sec": 5.04,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 1.51,
+          "duration_sec": 1.51,
+          "snr_db": 78.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 3.53,
+      "total_silence_sec": 3.53,
+      "silence_ratio": 0.7,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "magiaz-rifle_shots-511497.mp3",
+      "file_path": "data\\raw\\gunshots\\magiaz-rifle_shots-511497.mp3",
+      "original_duration_sec": 5.04,
+      "processed_duration_sec": 5.04,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 1.99,
+          "duration_sec": 1.99,
+          "snr_db": 79.1,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 3.05,
+      "total_silence_sec": 3.05,
+      "silence_ratio": 0.605,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "magiaz-shot-458506.mp3",
+      "file_path": "data\\raw\\gunshots\\magiaz-shot-458506.mp3",
+      "original_duration_sec": 5.112,
+      "processed_duration_sec": 5.112,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.0,
+          "end_sec": 1.765,
+          "duration_sec": 1.765,
+          "snr_db": 78.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.0,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 3.347,
+      "total_silence_sec": 3.347,
+      "silence_ratio": 0.655,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "file_path": "data\\raw\\gunshots\\pwlpl-semi-automatic-weapon-sound-effect-359246.mp3",
+      "original_duration_sec": 8.098,
+      "processed_duration_sec": 8.098,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.495,
+          "end_sec": 5.845,
+          "duration_sec": 5.35,
+          "snr_db": 75.7,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.495,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 2.253,
+      "total_silence_sec": 2.748,
+      "silence_ratio": 0.339,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "pwlpl-semi-automatic-weapon-sound-effect-359247.mp3",
+      "file_path": "data\\raw\\gunshots\\pwlpl-semi-automatic-weapon-sound-effect-359247.mp3",
+      "original_duration_sec": 8.098,
+      "processed_duration_sec": 8.098,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.18,
+          "end_sec": 6.355,
+          "duration_sec": 6.175,
+          "snr_db": 71.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.18,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.743,
+      "total_silence_sec": 1.923,
+      "silence_ratio": 0.237,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "rzalmanialmani-gun-clean-sound-in-mp3-150561 (1).mp3",
+      "file_path": "data\\raw\\gunshots\\rzalmanialmani-gun-clean-sound-in-mp3-150561 (1).mp3",
+      "original_duration_sec": 34.038,
+      "processed_duration_sec": 34.038,
+      "physical_audio_modified": false,
+      "events_count": 7,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.09,
+          "end_sec": 6.94,
+          "duration_sec": 6.85,
+          "snr_db": 41.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 7.65,
+          "end_sec": 22.33,
+          "duration_sec": 14.68,
+          "snr_db": 41.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 23.025,
+          "end_sec": 26.065,
+          "duration_sec": 3.04,
+          "snr_db": 40.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 26.535,
+          "end_sec": 27.835,
+          "duration_sec": 1.3,
+          "snr_db": 41.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 28.305,
+          "end_sec": 29.605,
+          "duration_sec": 1.3,
+          "snr_db": 40.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 30.09,
+          "end_sec": 31.39,
+          "duration_sec": 1.3,
+          "snr_db": 40.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 31.86,
+          "end_sec": 33.16,
+          "duration_sec": 1.3,
+          "snr_db": 41.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.09,
+      "internal_silence_sec": 3.3,
+      "trailing_silence_sec": 0.878,
+      "total_silence_sec": 4.268,
+      "silence_ratio": 0.125,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "rzalmanialmani-gun-clean-sound-in-mp3-150561.mp3",
+      "file_path": "data\\raw\\gunshots\\rzalmanialmani-gun-clean-sound-in-mp3-150561.mp3",
+      "original_duration_sec": 34.038,
+      "processed_duration_sec": 34.038,
+      "physical_audio_modified": false,
+      "events_count": 7,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.09,
+          "end_sec": 6.94,
+          "duration_sec": 6.85,
+          "snr_db": 41.7,
+          "confidence": 0.99
+        },
+        {
+          "index": 2,
+          "start_sec": 7.65,
+          "end_sec": 22.33,
+          "duration_sec": 14.68,
+          "snr_db": 41.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 3,
+          "start_sec": 23.025,
+          "end_sec": 26.065,
+          "duration_sec": 3.04,
+          "snr_db": 40.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 4,
+          "start_sec": 26.535,
+          "end_sec": 27.835,
+          "duration_sec": 1.3,
+          "snr_db": 41.9,
+          "confidence": 0.99
+        },
+        {
+          "index": 5,
+          "start_sec": 28.305,
+          "end_sec": 29.605,
+          "duration_sec": 1.3,
+          "snr_db": 40.5,
+          "confidence": 0.99
+        },
+        {
+          "index": 6,
+          "start_sec": 30.09,
+          "end_sec": 31.39,
+          "duration_sec": 1.3,
+          "snr_db": 40.3,
+          "confidence": 0.99
+        },
+        {
+          "index": 7,
+          "start_sec": 31.86,
+          "end_sec": 33.16,
+          "duration_sec": 1.3,
+          "snr_db": 41.9,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.09,
+      "internal_silence_sec": 3.3,
+      "trailing_silence_sec": 0.878,
+      "total_silence_sec": 4.268,
+      "silence_ratio": 0.125,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "soundreality-gun-shot-341144.mp3",
+      "file_path": "data\\raw\\gunshots\\soundreality-gun-shot-341144.mp3",
+      "original_duration_sec": 5.496,
+      "processed_duration_sec": 5.496,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.09,
+          "end_sec": 1.375,
+          "duration_sec": 1.285,
+          "snr_db": 100.2,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.09,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 4.121,
+      "total_silence_sec": 4.211,
+      "silence_ratio": 0.766,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    },
+    {
+      "filename": "u_62htdrvg4y-gun-shot-359196.mp3",
+      "file_path": "data\\raw\\gunshots\\u_62htdrvg4y-gun-shot-359196.mp3",
+      "original_duration_sec": 5.952,
+      "processed_duration_sec": 5.952,
+      "physical_audio_modified": false,
+      "events_count": 1,
+      "events": [
+        {
+          "index": 1,
+          "start_sec": 0.045,
+          "end_sec": 4.345,
+          "duration_sec": 4.3,
+          "snr_db": 80.5,
+          "confidence": 0.99
+        }
+      ],
+      "leading_silence_sec": 0.045,
+      "internal_silence_sec": 0.0,
+      "trailing_silence_sec": 1.607,
+      "total_silence_sec": 1.652,
+      "silence_ratio": 0.278,
+      "handling_in_phase3": {
+        "physical_trimming": false,
+        "window_relabeling": "Windows with event overlap <= 0.02s relabeled as negative (label=0)",
+        "boundary_windows": "Windows with overlap 0.02s - 0.15s excluded from training as ambiguous",
+        "training_inclusion": "Silent windows retained in training cache with negative label",
+        "test_evaluation": "Evaluated with timestamp-aware ground truth label 0 and legacy whole-file label 1",
+        "live_inference": "Energy Squelch Gate zeros out windows with RMS < 1e-4 (-80 dBFS)"
+      }
+    }
+  ]
+}

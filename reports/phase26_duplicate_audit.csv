@@ -1,0 +1,3 @@
+hash,first_recording_id,filename,cross_phase_lineage,intra_phase_collision,status
+d418574854a32aab2f243618d4011b422195b5fb288473714b9caee0ac2007a2,P26-NAT-STR-01,phase16_industrial_compressor_pneumatic_60min.wav,Phase 16 -> Phase 17 -> Phase 23 -> Phase 24 -> Phase 25 -> Phase 26,NONE,LEGITIMATE_CANONICAL_STREAM_LINEAGE
+ALL_PRIMARY_STREAMS,P26-NAT-STR-01_TO_17,17_PRIMARY_NATURAL_STREAMS,Continuous verification across releases,ZERO_DUPLICATES_WITHIN_PHASE_26,ZERO_EXACT_DUPLICATES_DETECTED

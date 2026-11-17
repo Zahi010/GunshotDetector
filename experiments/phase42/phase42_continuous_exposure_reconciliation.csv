@@ -1,0 +1,29 @@
+stream_id,campaign_or_session,recordist,source_duration_sec,decoded_duration_sec,evaluated_duration_sec,conv_b_excluded_sec_cond1,eligible_sec_cond1,conv_b_excluded_sec_cond6,eligible_sec_cond6,alerts_cond1,alerts_cond2,alerts_cond3,alerts_cond4,alerts_cond5,alerts_cond6,inclusion_reason
+p38_cont_01_goussainville,France_Urban_ValDOise_2018,Vincent Duseigne,3599.86,3599.86,3599.86,11.2,3588.66,7.84,3592.02,3,13,3,2,2,2,Independent prospective continuous ambient evaluation stream
+p38_cont_02_binche,Belgium_Industrial_Hainaut_2018,Vincent Duseigne,2039.96,2039.96,2039.96,0.0,2039.96,0.0,2039.96,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p38_cont_03_hautmont,France_Nord_Suburban_2018,Vincent Duseigne,600.1,600.1,600.1,0.0,600.1,0.0,600.1,0,1,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p38_cont_04_courcelles,Belgium_Industrial_Factory_2018,Vincent Duseigne,360.14,360.14,360.14,0.0,360.14,0.0,360.14,0,3,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p38_cont_05_hameln,Germany_Rail_Station_2021,sonoquilibrium,141.42,141.42,141.42,0.0,141.42,0.0,141.42,0,1,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p38_cont_06_neringos,Lithuania_Curonian_Spit_2015,john grzinich,180.2,180.2,180.2,0.0,180.2,0.0,180.2,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p38_cont_07_devon,UK_Rural_Devon_2014,Andy Dickinson,110.36,110.36,110.36,6.32,104.04,6.32,104.04,1,3,1,1,1,1,Independent prospective continuous ambient evaluation stream
+p39_cont_01_crete_cave,Greece_Crete_Cave_2019,alas23/sala,179.0,179.0,179.0,0.0,179.0,0.0,179.0,0,4,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_02_bad_berka,Germany_Thuringia_Suburban_2021,Samuel Kudjodzi,1067.0,1067.0,1067.0,0.0,1067.0,0.0,1067.0,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_03_abergavenny,UK_Wales_Garden_2021,Curtis James,1069.06,1069.06,1069.06,7.76,1061.3,7.76,1061.3,1,7,1,1,1,1,Independent prospective continuous ambient evaluation stream
+p39_cont_04_chevilly,France_Loiret_Irrigation_2018,Vincent Duseigne,360.14,360.14,360.14,0.0,360.14,0.0,360.14,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_05_montataire,France_Oise_Industrial_2018,Vincent Duseigne,339.22,339.22,339.22,0.0,339.22,0.0,339.22,0,1,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_06_aincourt,France_ValdOise_Sanatorium_2018,Vincent Duseigne,240.14,240.14,240.14,0.0,240.14,0.0,240.14,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_07_camping,France_CharenteMaritime_Coastal_2018,Vincent Duseigne,240.14,240.14,240.14,0.0,240.14,0.0,240.14,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_08_aubignan,France_Vaucluse_Storm_2012,Frank Schulte,485.1,485.1,485.1,0.0,485.1,0.0,485.1,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p39_cont_09_poznan,Poland_GreaterPoland_Urban_2012,Maciej Janasik,300.0,300.0,300.0,7.36,292.64,7.36,292.64,2,4,2,2,2,2,Independent prospective continuous ambient evaluation stream
+p40_cont_01_tartu,Estonia_Tartu_Courtyard_2015,Patrick McGinley,300.0,300.0,300.0,4.4,295.6,4.4,295.6,1,5,1,1,1,1,Independent prospective continuous ambient evaluation stream
+p40_cont_02_tromsdalen,Norway_Tromsdalen_Forest_2023,Angus Carlyle,313.95,313.95,313.95,0.0,313.95,0.0,313.95,0,2,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_03_bruxelles,Belgium_Bruxelles_Park_2020,Flavien Gillié,300.0,300.0,300.0,53.28,246.72,46.08,253.92,15,31,15,12,12,12,Independent prospective continuous ambient evaluation stream
+p40_cont_04_sivry,Belgium_SivryRance_Woods_2015,Simon Lebel,298.0,298.0,298.0,0.0,298.0,0.0,298.0,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_05_hamburg,Germany_Hamburg_Port_2016,Patrick McGinley,472.45,472.45,472.45,8.32,464.13,8.8,463.65,2,8,2,2,2,2,Independent prospective continuous ambient evaluation stream
+p40_cont_06_abcoude,Netherlands_Abcoude_Rural_2018,Jillis Molenaar,323.09,323.09,323.09,0.0,323.09,0.0,323.09,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_07_chindrieux,France_Savoie_Lake_2022,Georges Castagne,298.15,298.15,298.15,0.0,298.15,0.0,298.15,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_08_yeruham,Israel_Negev_Desert_2023,Eyal Nach,309.67,309.67,309.67,0.0,309.67,0.0,309.67,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_09_bad_berka_suburban,Germany_Thuringia_Suburban_2022,Samuel Kudjodzi,292.5,292.5,292.5,0.0,292.5,0.0,292.5,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_10_portland_first,USA_Oregon_Portland_2023,jmfosterpdx,316.14,316.14,316.14,0.0,316.14,0.0,316.14,0,0,0,0,0,0,Independent prospective continuous ambient evaluation stream
+p40_cont_11_fukutsu_japan,Japan_Fukuoka_Fukutsu_2023,Thomas Martin Nutt,324.51,324.51,324.51,18.08,306.43,14.72,309.79,5,14,5,4,4,4,Independent prospective continuous ambient evaluation stream
+p40_cont_12_blanca_spain,Spain_Murcia_Blanca_2023,The LFTT Library,325.29,325.29,325.29,3.92,321.37,3.92,321.37,1,7,1,1,1,1,Independent prospective continuous ambient evaluation stream

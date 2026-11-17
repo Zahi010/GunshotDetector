@@ -1,0 +1,42 @@
+{
+  "phase": 14,
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "benchmark_audio": "data\\phase13_matched_continuous\\phase13_matched_continuous_2hr.wav",
+  "exposure_hours": 2.0,
+  "baseline_phase9": {
+    "total_alerts": 193,
+    "alerts_per_hour": 96.5,
+    "categories": {
+      "fireworks": 165,
+      "thunder_and_weather": 25,
+      "general_ambience": 3
+    }
+  },
+  "comparator_phase13": {
+    "total_alerts": 129,
+    "alerts_per_hour": 64.5,
+    "categories": {
+      "fireworks": 113,
+      "thunder_and_weather": 13,
+      "general_ambience": 3
+    }
+  },
+  "candidate_phase14": {
+    "profile": "balanced",
+    "total_alerts": 168,
+    "alerts_per_hour": 84.0,
+    "reduction_vs_p9_pct": 12.95,
+    "categories": {
+      "fireworks": 152,
+      "thunder_and_weather": 13,
+      "general_ambience": 3
+    },
+    "paired_diff_per_hr": -12.5,
+    "paired_95_ci": [
+      -31.5,
+      0.0
+    ],
+    "median_latency_ms": 123.2,
+    "p95_latency_ms": 142.97
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "evaluation_timestamp": "2026-10-28 14:43:14",
+  "model_architecture": "Calibrated Hybrid Ensemble (Residual MLP + CatBoost + LightGBM)",
+  "operating_presets": {
+    "high_recall_sensitive": 0.35,
+    "balanced_optimal": 0.19,
+    "high_precision_conservative": 0.48,
+    "ultra_low_false_alarm": 0.52
+  },
+  "window_metrics_by_preset": {
+    "high_recall_sensitive": {
+      "threshold": 0.35,
+      "accuracy": 0.8574,
+      "precision": 0.8178,
+      "recall": 0.898,
+      "f1_score": 0.856,
+      "roc_auc": 0.9461,
+      "confusion_matrix": [
+        [
+          225,
+          49
+        ],
+        [
+          25,
+          220
+        ]
+      ],
+      "true_positives": 220,
+      "false_positives": 49,
+      "false_negatives": 25,
+      "true_negatives": 225
+    },
+    "balanced_optimal": {
+      "threshold": 0.19,
+      "accuracy": 0.7726,
+      "precision": 0.6851,
+      "recall": 0.9592,
+      "f1_score": 0.7993,
+      "roc_auc": 0.9461,
+      "confusion_matrix": [
+        [
+          166,
+          108
+        ],
+        [
+          10,
+          235
+        ]
+      ],
+      "true_positives": 235,
+      "false_positives": 108,
+      "false_negatives": 10,
+      "true_negatives": 166
+    },
+    "high_precision_conservative": {
+      "threshold": 0.48,
+      "accuracy": 0.8844,
+      "precision": 0.9111,
+      "recall": 0.8367,
+      "f1_score": 0.8723,
+      "roc_auc": 0.9461,
+      "confusion_matrix": [
+        [
+          254,
+          20
+        ],
+        [
+          40,
+          205
+        ]
+      ],
+      "true_positives": 205,
+      "false_positives": 20,
+      "false_negatives": 40,
+      "true_negatives": 254
+    },
+    "ultra_low_false_alarm": {
+      "threshold": 0.52,
+      "accuracy": 0.8882,
+      "precision": 0.9309,
+      "recall": 0.8245,
+      "f1_score": 0.8745,
+      "roc_auc": 0.9461,
+      "confusion_matrix": [
+        [
+          259,
+          15
+        ],
+        [
+          43,
+          202
+        ]
+      ],
+      "true_positives": 202,
+      "false_positives": 15,
+      "false_negatives": 43,
+      "true_negatives": 259
+    }
+  },
+  "recording_level_metrics": {
+    "threshold": 0.48,
+    "total_recordings": 37,
+    "gunshot_recordings_detected": 17,
+    "gunshot_recordings_total": 17,
+    "gunshot_recall": 1.0,
+    "background_recordings_rejected": 11,
+    "background_recordings_total": 20,
+    "background_rejection_rate": 0.55,
+    "precision": 0.6538,
+    "f1_score": 0.7907
+  },
+  "tradeoff_table": [
+    {
+      "threshold": 0.35,
+      "accuracy": 0.8574,
+      "precision": 0.8178,
+      "recall": 0.898,
+      "f1_score": 0.856,
+      "fp": 49,
+      "fn": 25
+    },
+    {
+      "threshold": 0.19,
+      "accuracy": 0.7726,
+      "precision": 0.6851,
+      "recall": 0.9592,
+      "f1_score": 0.7993,
+      "fp": 108,
+      "fn": 10
+    },
+    {
+      "threshold": 0.48,
+      "accuracy": 0.8844,
+      "precision": 0.9111,
+      "recall": 0.8367,
+      "f1_score": 0.8723,
+      "fp": 20,
+      "fn": 40
+    },
+    {
+      "threshold": 0.52,
+      "accuracy": 0.8882,
+      "precision": 0.9309,
+      "recall": 0.8245,
+      "f1_score": 0.8745,
+      "fp": 15,
+      "fn": 43
+    }
+  ]
+}

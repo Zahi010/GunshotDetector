@@ -1,0 +1,662 @@
+[
+  {
+    "firing_point": "FP1",
+    "test_name": "test_001",
+    "description": ".45 ACP 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-1409",
+    "wav_filename": "test_001.audio.SCP-00-BNQ-1409.wav",
+    "avg_snr_db": 14.85165875,
+    "pulse_count_sensor": 8,
+    "pulse_offsets": [
+      [
+        2.544,
+        23.0599,
+        93.1679
+      ],
+      [
+        2.543,
+        24.2304,
+        93.1679
+      ],
+      [
+        3.228,
+        10.4224,
+        90.6268
+      ],
+      [
+        3.647,
+        17.8298,
+        92.4626
+      ],
+      [
+        4.331,
+        10.033,
+        90.155
+      ],
+      [
+        4.816,
+        20.0176,
+        92.551
+      ],
+      [
+        5.5,
+        11.0175,
+        90.1584
+      ],
+      [
+        7.136,
+        2.20267,
+        67.4995
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP1",
+    "test_name": "test_004",
+    "description": ".45 ACP single shot",
+    "rounds_ground_truth": 1,
+    "sensor_serial": "SCP-00-BNQ-1120",
+    "wav_filename": "test_004.audio.SCP-00-BNQ-1120.wav",
+    "avg_snr_db": 14.399793333333333,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        3.562,
+        20.5867,
+        91.932
+      ],
+      [
+        3.879,
+        7.01688,
+        79.0323
+      ],
+      [
+        4.093,
+        15.5958,
+        86.4023
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP1",
+    "test_name": "test_007",
+    "description": ".40 S&W 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-1635",
+    "wav_filename": "test_007.audio.SCP-00-BNQ-1635.wav",
+    "avg_snr_db": 27.675966666666667,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        4.287,
+        30.0053,
+        93.4171
+      ],
+      [
+        5.096,
+        27.4003,
+        93.3736
+      ],
+      [
+        5.793,
+        25.6223,
+        93.4112
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP1",
+    "test_name": "test_013",
+    "description": "9x19mm 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNG-5567",
+    "wav_filename": "test_013.audio.SCP-00-BNG-5567.wav",
+    "avg_snr_db": 21.408859999999997,
+    "pulse_count_sensor": 5,
+    "pulse_offsets": [
+      [
+        3.763,
+        34.0965,
+        93.1819
+      ],
+      [
+        3.767,
+        27.0588,
+        93.1819
+      ],
+      [
+        4.15,
+        20.4617,
+        93.0668
+      ],
+      [
+        4.895,
+        22.7096,
+        92.9537
+      ],
+      [
+        5.461,
+        2.7177,
+        74.2001
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP2",
+    "test_name": "test_019",
+    "description": ".45 ACP 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-0559",
+    "wav_filename": "test_019.audio.SCP-00-BNQ-0559.wav",
+    "avg_snr_db": 27.320766666666668,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        2.476,
+        31.36,
+        94.5831
+      ],
+      [
+        3.128,
+        20.6862,
+        95.0247
+      ],
+      [
+        4.162,
+        29.9161,
+        95.3856
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP2",
+    "test_name": "test_022",
+    "description": ".45 ACP single shot",
+    "rounds_ground_truth": 1,
+    "sensor_serial": "SCP-00-BNQ-0559",
+    "wav_filename": "test_022.audio.SCP-00-BNQ-0559.wav",
+    "avg_snr_db": 33.008,
+    "pulse_count_sensor": 1,
+    "pulse_offsets": [
+      [
+        2.602,
+        33.008,
+        94.181
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP2",
+    "test_name": "test_025",
+    "description": ".40 S&W 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-0559",
+    "wav_filename": "test_025.audio.SCP-00-BNQ-0559.wav",
+    "avg_snr_db": 23.27163333333333,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        2.566,
+        27.1763,
+        93.8639
+      ],
+      [
+        3.287,
+        23.767,
+        94.354
+      ],
+      [
+        3.887,
+        18.8716,
+        94.3869
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP2",
+    "test_name": "test_031",
+    "description": "9x19mm 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-0559",
+    "wav_filename": "test_031.audio.SCP-00-BNQ-0559.wav",
+    "avg_snr_db": 24.0425,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        2.246,
+        29.0492,
+        94.0795
+      ],
+      [
+        2.838,
+        17.8135,
+        94.7545
+      ],
+      [
+        3.509,
+        25.2648,
+        95.019
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP3",
+    "test_name": "test_037",
+    "description": ".45 ACP 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-2143",
+    "wav_filename": "test_037.audio.SCP-00-BNQ-2143.wav",
+    "avg_snr_db": 17.466773333333332,
+    "pulse_count_sensor": 6,
+    "pulse_offsets": [
+      [
+        2.828,
+        24.681,
+        93.8307
+      ],
+      [
+        3.596,
+        24.8951,
+        93.6033
+      ],
+      [
+        4.375,
+        16.9286,
+        72.8039
+      ],
+      [
+        4.44,
+        22.5798,
+        93.9392
+      ],
+      [
+        5.22,
+        13.1631,
+        71.3929
+      ],
+      [
+        5.364,
+        2.55304,
+        65.4697
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP3",
+    "test_name": "test_040",
+    "description": ".45 ACP single shot",
+    "rounds_ground_truth": 1,
+    "sensor_serial": "SCP-00-BNG-5545",
+    "wav_filename": "test_040.audio.SCP-00-BNG-5545.wav",
+    "avg_snr_db": 18.9653,
+    "pulse_count_sensor": 1,
+    "pulse_offsets": [
+      [
+        3.139,
+        18.9653,
+        84.5061
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP3",
+    "test_name": "test_043",
+    "description": ".40 S&W 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-2143",
+    "wav_filename": "test_043.audio.SCP-00-BNQ-2143.wav",
+    "avg_snr_db": 22.666069999999998,
+    "pulse_count_sensor": 5,
+    "pulse_offsets": [
+      [
+        3.633,
+        33.3822,
+        93.3406
+      ],
+      [
+        3.637,
+        24.1479,
+        93.3406
+      ],
+      [
+        4.189,
+        25.4609,
+        93.5749
+      ],
+      [
+        4.743,
+        24.3579,
+        93.3356
+      ],
+      [
+        5.524,
+        5.98145,
+        65.9909
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP3",
+    "test_name": "test_049",
+    "description": "9x19mm 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-2143",
+    "wav_filename": "test_049.audio.SCP-00-BNQ-2143.wav",
+    "avg_snr_db": 17.341332,
+    "pulse_count_sensor": 5,
+    "pulse_offsets": [
+      [
+        3.162,
+        23.0658,
+        93.5188
+      ],
+      [
+        3.866,
+        25.0332,
+        93.802
+      ],
+      [
+        4.459,
+        22.124,
+        93.5402
+      ],
+      [
+        5.239,
+        13.5564,
+        71.3819
+      ],
+      [
+        5.383,
+        2.92726,
+        67.1272
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP4",
+    "test_name": "test_055",
+    "description": ".45 ACP 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-1651",
+    "wav_filename": "test_055.audio.SCP-00-BNQ-1651.wav",
+    "avg_snr_db": 21.828999999999997,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        3.304,
+        25.1419,
+        89.5835
+      ],
+      [
+        4.036,
+        21.7939,
+        90.7245
+      ],
+      [
+        4.603,
+        18.5512,
+        90.7245
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP4",
+    "test_name": "test_058",
+    "description": ".45 ACP single shot",
+    "rounds_ground_truth": 1,
+    "sensor_serial": "SCP-00-BNG-5606",
+    "wav_filename": "test_058.audio.SCP-00-BNG-5606.wav",
+    "avg_snr_db": 11.673032000000001,
+    "pulse_count_sensor": 5,
+    "pulse_offsets": [
+      [
+        3.021,
+        26.943,
+        94.475
+      ],
+      [
+        3.32,
+        5.91576,
+        81.7501
+      ],
+      [
+        3.583,
+        6.1577,
+        77.9229
+      ],
+      [
+        4.163,
+        6.5116,
+        73.0564
+      ],
+      [
+        4.274,
+        12.8371,
+        79.5541
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP4",
+    "test_name": "test_061",
+    "description": ".40 S&W 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNG-5573",
+    "wav_filename": "test_061.audio.SCP-00-BNG-5573.wav",
+    "avg_snr_db": 27.30073333333333,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        3.108,
+        32.2973,
+        93.926
+      ],
+      [
+        3.683,
+        23.3186,
+        93.91
+      ],
+      [
+        4.359,
+        26.2863,
+        94.2244
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP4",
+    "test_name": "test_067",
+    "description": "9x19mm 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-1705",
+    "wav_filename": "test_067.audio.SCP-00-BNQ-1705.wav",
+    "avg_snr_db": 24.806775000000002,
+    "pulse_count_sensor": 4,
+    "pulse_offsets": [
+      [
+        3.786,
+        25.5853,
+        93.4031
+      ],
+      [
+        4.311,
+        25.734,
+        93.2711
+      ],
+      [
+        4.846,
+        24.7585,
+        93.2392
+      ],
+      [
+        4.847,
+        23.1493,
+        93.2392
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP5",
+    "test_name": "test_127",
+    "description": ".45 ACP 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-1392",
+    "wav_filename": "test_127.audio.SCP-00-BNQ-1392.wav",
+    "avg_snr_db": 12.949509999999998,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        3.008,
+        15.5165,
+        80.999
+      ],
+      [
+        3.434,
+        14.5366,
+        82.9613
+      ],
+      [
+        3.821,
+        8.79543,
+        81.6016
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP5",
+    "test_name": "test_130",
+    "description": ".45 ACP single shot",
+    "rounds_ground_truth": 1,
+    "sensor_serial": "SCP-00-BNQ-2167",
+    "wav_filename": "test_130.audio.SCP-00-BNQ-2167.wav",
+    "avg_snr_db": 11.73267,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        3.11,
+        18.074,
+        78.5369
+      ],
+      [
+        3.129,
+        11.1918,
+        78.6043
+      ],
+      [
+        3.19,
+        5.93221,
+        78.8675
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP5",
+    "test_name": "test_133",
+    "description": ".40 S&W 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-0933",
+    "wav_filename": "test_133.audio.SCP-00-BNQ-0933.wav",
+    "avg_snr_db": 18.491333333333333,
+    "pulse_count_sensor": 3,
+    "pulse_offsets": [
+      [
+        3.343,
+        19.2549,
+        82.1283
+      ],
+      [
+        3.802,
+        16.8764,
+        81.6752
+      ],
+      [
+        4.232,
+        19.3427,
+        82.478
+      ]
+    ]
+  },
+  {
+    "firing_point": "FP5",
+    "test_name": "test_139",
+    "description": "9x19mm 3-round burst",
+    "rounds_ground_truth": 3,
+    "sensor_serial": "SCP-00-BNQ-1493",
+    "wav_filename": "test_139.audio.SCP-00-BNQ-1493.wav",
+    "avg_snr_db": 9.054758571428572,
+    "pulse_count_sensor": 14,
+    "pulse_offsets": [
+      [
+        2.833,
+        24.9524,
+        94.7155
+      ],
+      [
+        2.928,
+        5.92944,
+        92.6945
+      ],
+      [
+        3.38,
+        17.8568,
+        95.452
+      ],
+      [
+        3.475,
+        5.47995,
+        92.7081
+      ],
+      [
+        3.905,
+        21.1709,
+        94.9476
+      ],
+      [
+        3.999,
+        4.6811,
+        92.3095
+      ],
+      [
+        5.9,
+        3.41107,
+        66.1483
+      ],
+      [
+        6.826,
+        7.6681,
+        66.5285
+      ],
+      [
+        6.927,
+        4.18694,
+        64.7209
+      ],
+      [
+        6.986,
+        4.07637,
+        65.618
+      ],
+      [
+        7.373,
+        6.72513,
+        66.6179
+      ],
+      [
+        7.475,
+        5.97523,
+        64.8416
+      ],
+      [
+        7.897,
+        7.82678,
+        66.0116
+      ],
+      [
+        7.997,
+        6.82641,
+        64.3101
+      ]
+    ]
+  }
+]

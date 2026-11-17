@@ -1,0 +1,31 @@
+session_id,model,total_events,detected,missed,recall_pct,wilson_95_ci_lower_pct,wilson_95_ci_upper_pct
+FP1,Phase 14 Balanced (Default Baseline),10,2,8,20.0,5.67,50.98
+FP1,Phase 14 High-Precision,10,0,10,0.0,0.0,27.75
+FP1,Phase 14 High-Sensitivity,10,2,8,20.0,5.67,50.98
+FP1,Phase 17 Experimental (Animal Suppression),10,4,6,40.0,16.82,68.73
+FP1,Phase 9 Balanced (Historical Baseline),10,4,6,40.0,16.82,68.73
+FP2,Phase 14 Balanced (Default Baseline),10,6,4,60.0,31.27,83.18
+FP2,Phase 14 High-Precision,10,8,2,80.0,49.02,94.33
+FP2,Phase 14 High-Sensitivity,10,5,5,50.0,23.66,76.34
+FP2,Phase 17 Experimental (Animal Suppression),10,6,4,60.0,31.27,83.18
+FP2,Phase 9 Balanced (Historical Baseline),10,4,6,40.0,16.82,68.73
+FP3,Phase 14 Balanced (Default Baseline),10,6,4,60.0,31.27,83.18
+FP3,Phase 14 High-Precision,10,6,4,60.0,31.27,83.18
+FP3,Phase 14 High-Sensitivity,10,6,4,60.0,31.27,83.18
+FP3,Phase 17 Experimental (Animal Suppression),10,7,3,70.0,39.68,89.22
+FP3,Phase 9 Balanced (Historical Baseline),10,7,3,70.0,39.68,89.22
+FP4,Phase 14 Balanced (Default Baseline),10,6,4,60.0,31.27,83.18
+FP4,Phase 14 High-Precision,10,6,4,60.0,31.27,83.18
+FP4,Phase 14 High-Sensitivity,10,2,8,20.0,5.67,50.98
+FP4,Phase 17 Experimental (Animal Suppression),10,9,1,90.0,59.58,98.21
+FP4,Phase 9 Balanced (Historical Baseline),10,6,4,60.0,31.27,83.18
+FP5,Phase 14 Balanced (Default Baseline),10,7,3,70.0,39.68,89.22
+FP5,Phase 14 High-Precision,10,4,6,40.0,16.82,68.73
+FP5,Phase 14 High-Sensitivity,10,7,3,70.0,39.68,89.22
+FP5,Phase 17 Experimental (Animal Suppression),10,7,3,70.0,39.68,89.22
+FP5,Phase 9 Balanced (Historical Baseline),10,7,3,70.0,39.68,89.22
+SESSION_9LASH,Phase 14 Balanced (Default Baseline),3,1,2,33.33,6.15,79.23
+SESSION_9LASH,Phase 14 High-Precision,3,1,2,33.33,6.15,79.23
+SESSION_9LASH,Phase 14 High-Sensitivity,3,1,2,33.33,6.15,79.23
+SESSION_9LASH,Phase 17 Experimental (Animal Suppression),3,2,1,66.67,20.77,93.85
+SESSION_9LASH,Phase 9 Balanced (Historical Baseline),3,1,2,33.33,6.15,79.23

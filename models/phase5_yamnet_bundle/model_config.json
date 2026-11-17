@@ -1,0 +1,14 @@
+{
+  "model_name": "Phase 4 Calibrated Stacking Ensemble",
+  "architecture": "Calibrated Quad-Ensemble (Residual MLP + CatBoost + LightGBM + XGBoost)",
+  "embedding_dimension": 1024,
+  "input_backbone": "Google YAMNet (Frozen 1024-d AudioSet MobileNet)",
+  "ensemble_weights": [
+    0.25,
+    0.35,
+    0.25,
+    0.15
+  ],
+  "training_windows_count": 8697,
+  "features_used": "YAMNet 1024-d embeddings with Low-SNR noise/distance augmentation & metallic chimes hard negatives"
+}

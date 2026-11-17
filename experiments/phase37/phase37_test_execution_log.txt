@@ -1,0 +1,22 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 13 items
+
+tests/test_phase37_audit.py::TestFrozenModelImmutability::test_all_frozen_hashes PASSED [  7%]
+tests/test_phase37_audit.py::TestDatasetLineageAndIndependence::test_lineage_registry_structure PASSED [ 15%]
+tests/test_phase37_audit.py::TestDatasetLineageAndIndependence::test_positive_recordings_historical_overlap PASSED [ 23%]
+tests/test_phase37_audit.py::TestDatasetLineageAndIndependence::test_continuous_negative_streams_historical_overlap PASSED [ 30%]
+tests/test_phase37_audit.py::TestDatasetLineageAndIndependence::test_distractor_clips_historical_lineage PASSED [ 38%]
+tests/test_phase37_audit.py::TestSuppressionAblationAudit::test_attenuated_transition_windows_count PASSED [ 46%]
+tests/test_phase37_audit.py::TestSuppressionAblationAudit::test_sub_threshold_attenuation_mechanism PASSED [ 53%]
+tests/test_phase37_audit.py::TestSuppressionAblationAudit::test_pairwise_condition_metrics PASSED [ 61%]
+tests/test_phase37_audit.py::TestBallisticEventMatchingAudit::test_annotated_rounds_accounting PASSED [ 69%]
+tests/test_phase37_audit.py::TestBallisticEventMatchingAudit::test_recall_and_precision_reproduction PASSED [ 76%]
+tests/test_phase37_audit.py::TestContinuousBackgroundAndArchiveIntegrity::test_background_metrics_reproduction PASSED [ 84%]
+tests/test_phase37_audit.py::TestContinuousBackgroundAndArchiveIntegrity::test_archive_reconciliation_and_crc PASSED [ 92%]
+tests/test_phase37_audit.py::TestContinuousBackgroundAndArchiveIntegrity::test_phase37_audit_archive_crc PASSED [100%]
+
+============================= 13 passed in 0.69s ==============================

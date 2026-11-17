@@ -1,0 +1,172 @@
+{
+  "system_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "disclaimer": "Uncertified acoustic research software. Never deploy for autonomous emergency dispatch, tactical police response, active-shooter alerting, automated evacuation, lockdown, or life-critical physical security. Safe recorded audio playback only; no live-fire testing.",
+  "branch_identifier": "DETECTOR_IMPROVEMENT_V5",
+  "created_at": "2026-11-16",
+  "provenance": {
+    "base_acoustic_model": "models/gunshot_yamnet_bundle",
+    "fusion_classifier": "experiments/detector_improvement_v4/fusion_model.joblib",
+    "physical_features": [
+      "physical_crest_factor_db",
+      "spectral_flatness",
+      "high_band_ratio_ge_2500hz",
+      "mid_band_ratio_500_2500hz",
+      "low_band_ratio_lt_500hz",
+      "mid_to_low_energy_ratio",
+      "channel_rolloff_ratio",
+      "spectral_centroid_hz"
+    ],
+    "semantic_features": [
+      "yamnet_gunshot",
+      "yamnet_ballistic",
+      "yamnet_fireworks",
+      "yamnet_thunder",
+      "yamnet_mechanical_impact",
+      "yamnet_glass_shatter",
+      "yamnet_non_target"
+    ],
+    "condition_adaptation": {
+      "smoother_type": "exponential_moving_average",
+      "ema_alpha": 0.25,
+      "hysteresis_min_windows": 2,
+      "modes": {
+        "CLEAR_NORMAL": {
+          "description": "Clear-path open-air acoustic environment with high-frequency transmission",
+          "rolloff_min": 0.22,
+          "high_band_min": 0.08,
+          "confirmation_policy": {
+            "threshold_base": 0.70,
+            "threshold_high": 0.85,
+            "threshold_off": 0.45,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "single_impulse_min_score": 0.70,
+            "single_impulse_min_crest_db": 13.5
+          }
+        },
+        "DEGRADED_OCCLUDED": {
+          "description": "Fabric-obstructed or pocket-worn sensor with high-frequency attenuation and strong mid-band energy",
+          "rolloff_max": 0.18,
+          "high_band_max": 0.075,
+          "mid_band_min": 0.38,
+          "mid_to_low_min": 0.85,
+          "confirmation_policy": {
+            "threshold_base": 0.62,
+            "threshold_high": 0.80,
+            "threshold_off": 0.40,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "single_impulse_min_score": 0.62,
+            "single_impulse_min_crest_db": 11.5
+          }
+        },
+        "UNKNOWN": {
+          "description": "Ambiguous, heavy low-frequency rumble, or insufficient acoustic evidence",
+          "low_band_trigger": 0.65,
+          "mid_to_low_trigger": 0.60,
+          "confirmation_policy": {
+            "threshold_base": 0.68,
+            "threshold_high": 0.83,
+            "threshold_off": 0.42,
+            "confirm_windows": 2,
+            "cooldown_secs": 2.0,
+            "single_impulse_min_score": 0.68,
+            "single_impulse_min_crest_db": 13.0
+          }
+        }
+      }
+    },
+    "semantic_suppression": {
+      "coherence_safeguard": {
+        "enabled": true,
+        "ballistic_max_threshold": 0.015,
+        "non_target_threshold": 0.12,
+        "attenuation": 0.20
+      },
+      "thunder": {
+        "enabled": true,
+        "threshold": 0.20,
+        "low_band_threshold": 0.65,
+        "mid_to_low_max": 0.55,
+        "gun_score_max": 0.15,
+        "attenuation": 0.30
+      },
+      "fireworks": {
+        "enabled": true,
+        "dominant_threshold": 0.45,
+        "dominant_ratio": 1.8,
+        "dominant_gun_max": 0.25,
+        "dominant_attenuation": 0.30,
+        "standard_threshold": 0.30,
+        "standard_ratio": 1.5,
+        "standard_gun_max": 0.12,
+        "standard_attenuation": 0.35
+      },
+      "glass": {
+        "enabled": true,
+        "threshold": 0.30,
+        "min_high_band_ratio": 0.30,
+        "gun_score_max": 0.20,
+        "attenuation": 0.35
+      },
+      "mechanical_impact": {
+        "enabled": true,
+        "impact_threshold": 0.25,
+        "impact_to_gun_ratio": 1.5,
+        "gun_score_max": 0.20,
+        "attenuation": 0.35
+      },
+      "canine": {
+        "enabled": true,
+        "threshold": 0.30,
+        "attenuation": 0.25
+      },
+      "crackle": {
+        "enabled": true,
+        "threshold": 0.35,
+        "attenuation": 0.30
+      },
+      "siren": {
+        "enabled": true,
+        "threshold": 0.25,
+        "attenuation": 0.20
+      }
+    }
+  },
+  "profiles": {
+    "condition_adaptive": {
+      "mode": "adaptive",
+      "default_fallback_mode": "UNKNOWN",
+      "max_hop_gap_s": 0.60,
+      "min_crest_factor_db": 7.5,
+      "allow_single_impulse_exception": true
+    },
+    "conservative": {
+      "mode": "fixed_clear",
+      "threshold_base": 0.70,
+      "threshold_high": 0.85,
+      "threshold_off": 0.45,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "max_hop_gap_s": 0.60,
+      "min_crest_factor_db": 7.5,
+      "single_impulse_min_crest_db": 13.5,
+      "allow_single_impulse_exception": true,
+      "single_impulse_min_score": 0.70
+    },
+    "balanced": {
+      "mode": "fixed_v4_balanced",
+      "threshold_base": 0.62,
+      "threshold_high": 0.80,
+      "threshold_off": 0.40,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "max_hop_gap_s": 0.60,
+      "min_crest_factor_db": 7.5,
+      "single_impulse_min_crest_db": 11.5,
+      "allow_single_impulse_exception": true,
+      "single_impulse_min_score": 0.62
+    }
+  }
+}
+

@@ -1,0 +1,7 @@
+condition_id,condition_name,continuous_gross_far,continuous_gross_far_95_ci,conv_b_excluded_seconds,conv_b_far,positive_event_recall,positive_recall_95_ci,positive_precision,positive_f1,duplicate_rate,burst_overlap_rate,distractor_trigger_rate,animal_bark_trigger_rate,aircraft_trigger_rate,fireworks_trigger_rate
+COND1,Phase 14 Balanced Baseline,2.0478,"[0.56, 5.24]",43.84,2.0606,61.7% (74/120),"[52.3%, 70.4%]",100.0%,0.7629,27.5%,61.4%,13.3% (16/120),0.0%,15.0%,40.0%
+COND2,Phase 17 Experimental Frozen Profile,10.751,"[6.66, 16.43]",702.66,11.9445,76.7% (92/120),"[68.1%, 83.9%]",100.0%,0.8679,22.0%,74.3%,29.2% (35/120),5.0%,20.0%,60.0%
+COND3,Phase 17 State Reset Candidate,2.0478,"[0.56, 5.24]",43.84,2.0606,64.2% (77/120),"[54.9%, 72.7%]",100.0%,0.7817,22.2%,63.6%,16.7% (20/120),0.0%,15.0%,55.0%
+COND4,Phase 36 Raw State Machine,1.5359,"[0.32, 4.49]",32.88,1.5431,64.2% (77/120),"[54.9%, 72.7%]",100.0%,0.7817,14.4%,63.6%,18.3% (22/120),5.0%,15.0%,55.0%
+COND5,Phase 36 Legacy Suppression,1.5359,"[0.32, 4.49]",32.88,1.5431,64.2% (77/120),"[54.9%, 72.7%]",100.0%,0.7817,14.4%,63.6%,18.3% (22/120),5.0%,15.0%,55.0%
+COND6,Phase 36 Conservative Suppression,1.5359,"[0.32, 4.49]",32.88,1.5431,64.2% (77/120),"[54.9%, 72.7%]",100.0%,0.7817,14.4%,63.6%,18.3% (22/120),5.0%,15.0%,55.0%

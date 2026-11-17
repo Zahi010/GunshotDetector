@@ -1,0 +1,10 @@
+{
+  "bundle_version": "4.0.0",
+  "created_at": "2026-10-28 16:20:42",
+  "framework": "TensorFlow 2.19.0 + CatBoost + LightGBM + XGBoost",
+  "sample_rate": 16000,
+  "window_samples": 15360,
+  "hop_samples": 7680,
+  "confidence_calibrated": true,
+  "safety_disclaimer": "RESEARCH DEMONSTRATION ONLY. NOT CERTIFIED FOR ACTIVE LIFE SAFETY OR 911 DISPATCH."
+}

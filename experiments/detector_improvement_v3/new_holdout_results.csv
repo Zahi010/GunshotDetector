@@ -1,0 +1,6 @@
+detector,holdout_positive_detected,holdout_positive_total,holdout_positive_recall_pct,holdout_fireworks_false_positives,holdout_fireworks_total,holdout_fireworks_fpr_pct,holdout_env_false_positives,holdout_env_total,holdout_env_fpr_pct,continuous_2hr_alerts,continuous_hours,continuous_alert_rate_per_hr
+Phase 14 Baseline,35,47,74.47,2,10,20.0,1,90,1.11,12,2.0,6.0
+Phase 36 Refractory,35,47,74.47,2,10,20.0,1,90,1.11,10,2.0,5.0
+Detector Improvement V1,35,47,74.47,2,10,20.0,1,90,1.11,4,2.0,2.0
+Detector Improvement V2,33,47,70.21,4,10,40.0,1,90,1.11,2,2.0,1.0
+Detector Improvement V3,13,47,27.66,0,10,0.0,3,90,3.33,4,2.0,2.0

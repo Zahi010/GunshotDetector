@@ -1,0 +1,7 @@
+condition_id,architecture_profile,entry_level_total_clips,entry_level_detected_tp,entry_level_false_negatives,entry_level_recall,entry_level_recall_95_ci_lower,entry_level_recall_95_ci_upper,deduplicated_total_clips,deduplicated_detected_tp,deduplicated_false_negatives,deduplicated_recall,deduplicated_recall_95_ci_lower,deduplicated_recall_95_ci_upper,recall_delta_percentage_points,duplicate_alerts_count,entry_level_duplicate_alert_rate,deduplicated_duplicate_alert_rate
+COND1,Phase 14 Balanced Baseline,120,74,46,0.6167,0.5235,0.7039,119,73,46,0.6134,0.5198,0.7013,-0.32,28,0.2745,0.2772
+COND2,Phase 17 Experimental Frozen Profile,120,92,28,0.7667,0.6807,0.839,119,91,28,0.7647,0.6782,0.8376,-0.2,26,0.2203,0.2222
+COND3,Phase 17 State Reset Candidate,120,77,43,0.6417,0.549,0.7271,119,76,43,0.6387,0.5455,0.7247,-0.3,22,0.2222,0.2245
+COND4,Phase 36 Raw State Machine,120,77,43,0.6417,0.549,0.7271,119,76,43,0.6387,0.5455,0.7247,-0.3,13,0.1444,0.1461
+COND5,Phase 36 Legacy Suppression,120,77,43,0.6417,0.549,0.7271,119,76,43,0.6387,0.5455,0.7247,-0.3,13,0.1444,0.1461
+COND6,Phase 36 Conservative Suppression,120,77,43,0.6417,0.549,0.7271,119,76,43,0.6387,0.5455,0.7247,-0.3,13,0.1444,0.1461

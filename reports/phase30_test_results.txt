@@ -1,0 +1,27 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 18 items
+
+gunshot/tests/test_phase30_reproduction.py::test_01_frozen_model_hashes PASSED [  5%]
+gunshot/tests/test_phase30_reproduction.py::test_02_runtime_configuration_consistency PASSED [ 11%]
+gunshot/tests/test_phase30_reproduction.py::test_03_instrumented_versus_original_invariance PASSED [ 16%]
+gunshot/tests/test_phase30_reproduction.py::test_04_score_trace_timestamp_alignment PASSED [ 22%]
+gunshot/tests/test_phase30_reproduction.py::test_05_suppression_state_logging PASSED [ 27%]
+gunshot/tests/test_phase30_reproduction.py::test_06_alert_event_reconstruction PASSED [ 33%]
+gunshot/tests/test_phase30_reproduction.py::test_07_cooldown_accounting_both_conventions PASSED [ 38%]
+gunshot/tests/test_phase30_reproduction.py::test_08_recording_duration_preservation PASSED [ 44%]
+gunshot/tests/test_phase30_reproduction.py::test_09_source_provenance_completeness PASSED [ 50%]
+gunshot/tests/test_phase30_reproduction.py::test_10_dataset_license_metadata PASSED [ 55%]
+gunshot/tests/test_phase30_reproduction.py::test_11_continuous_audio_eligibility PASSED [ 61%]
+gunshot/tests/test_phase30_reproduction.py::test_12_duplicate_recording_detection PASSED [ 66%]
+gunshot/tests/test_phase30_reproduction.py::test_13_campaign_grouping PASSED [ 72%]
+gunshot/tests/test_phase30_reproduction.py::test_14_gross_and_eligible_exposure PASSED [ 77%]
+gunshot/tests/test_phase30_reproduction.py::test_15_paired_comparison_reproduction PASSED [ 83%]
+gunshot/tests/test_phase30_reproduction.py::test_16_leave_one_campaign_out_calculations PASSED [ 88%]
+gunshot/tests/test_phase30_reproduction.py::test_17_deterministic_analysis PASSED [ 94%]
+gunshot/tests/test_phase30_reproduction.py::test_18_release_archive_integrity PASSED [100%]
+
+============================= 18 passed in 1.70s ==============================

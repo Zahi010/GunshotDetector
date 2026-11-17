@@ -1,0 +1,107 @@
+{
+  "Phase 9 Baseline": {
+    "total_windows": 328,
+    "positive_windows": 28,
+    "negative_windows": 300,
+    "window_accuracy": 93.9,
+    "window_precision": 61.76,
+    "window_recall": 75.0,
+    "window_f1": 67.74,
+    "window_roc_auc": 0.9742,
+    "window_pr_auc": 0.6661,
+    "confusion_matrix": [
+      [
+        287,
+        13
+      ],
+      [
+        7,
+        21
+      ]
+    ]
+  },
+  "Phase 13 Candidate": {
+    "total_windows": 328,
+    "positive_windows": 28,
+    "negative_windows": 300,
+    "window_accuracy": 94.21,
+    "window_precision": 64.52,
+    "window_recall": 71.43,
+    "window_f1": 67.8,
+    "window_roc_auc": 0.972,
+    "window_pr_auc": 0.7014,
+    "confusion_matrix": [
+      [
+        289,
+        11
+      ],
+      [
+        8,
+        20
+      ]
+    ]
+  },
+  "Phase 14 Balanced": {
+    "total_windows": 328,
+    "positive_windows": 28,
+    "negative_windows": 300,
+    "window_accuracy": 94.21,
+    "window_precision": 63.64,
+    "window_recall": 75.0,
+    "window_f1": 68.85,
+    "window_roc_auc": 0.9768,
+    "window_pr_auc": 0.6885,
+    "confusion_matrix": [
+      [
+        288,
+        12
+      ],
+      [
+        7,
+        21
+      ]
+    ]
+  },
+  "Phase 14 High-Precision": {
+    "total_windows": 328,
+    "positive_windows": 28,
+    "negative_windows": 300,
+    "window_accuracy": 94.51,
+    "window_precision": 72.73,
+    "window_recall": 57.14,
+    "window_f1": 64.0,
+    "window_roc_auc": 0.9768,
+    "window_pr_auc": 0.6885,
+    "confusion_matrix": [
+      [
+        294,
+        6
+      ],
+      [
+        12,
+        16
+      ]
+    ]
+  },
+  "Phase 14 High-Sensitivity": {
+    "total_windows": 328,
+    "positive_windows": 28,
+    "negative_windows": 300,
+    "window_accuracy": 94.51,
+    "window_precision": 62.5,
+    "window_recall": 89.29,
+    "window_f1": 73.53,
+    "window_roc_auc": 0.9767,
+    "window_pr_auc": 0.6881,
+    "confusion_matrix": [
+      [
+        285,
+        15
+      ],
+      [
+        3,
+        25
+      ]
+    ]
+  }
+}

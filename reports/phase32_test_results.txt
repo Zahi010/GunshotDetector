@@ -1,0 +1,24 @@
+PHASE 32 AUTOMATED TEST SUITE EXECUTION RESULTS
+MANDATORY SAFETY DESIGNATION: RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY
+================================================================================
+
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 10 items
+
+gunshot/tests/test_phase32_reproduction.py::test_baseline_freeze_hashes PASSED [ 10%]
+gunshot/tests/test_phase32_reproduction.py::test_factorial_ablation_alert_totals PASSED [ 20%]
+gunshot/tests/test_phase32_reproduction.py::test_factorial_main_effects_and_interaction PASSED [ 30%]
+gunshot/tests/test_phase32_reproduction.py::test_aircraft_sequences_vs_ambient_ablation PASSED [ 40%]
+gunshot/tests/test_phase32_reproduction.py::test_state_machine_12_vectors PASSED [ 50%]
+gunshot/tests/test_phase32_reproduction.py::test_streaming_chunk_state_leakage PASSED [ 60%]
+gunshot/tests/test_phase32_reproduction.py::test_wilcoxon_reconciliation_exact_and_asymptotic PASSED [ 70%]
+gunshot/tests/test_phase32_reproduction.py::test_pittsburgh_event_matching_audit PASSED [ 80%]
+gunshot/tests/test_phase32_reproduction.py::test_continuous_benchmark_recheck PASSED [ 90%]
+gunshot/tests/test_phase32_reproduction.py::test_safety_designation_compliance PASSED [100%]
+
+============================= 10 passed in 4.60s ==============================
+

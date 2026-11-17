@@ -1,0 +1,29 @@
+condition_id,condition_label,recording_id,alert_count,gross_duration_hr,gross_far
+A,"Condition A (Suppression ON, Defective Reset)",P27-AERO-STR-01,23,1.0,23.0
+A,"Condition A (Suppression ON, Defective Reset)",P27-AERO-STR-02,5,1.0,5.0
+A,"Condition A (Suppression ON, Defective Reset)",P27-AERO-STR-03,7,1.0,7.0
+A,"Condition A (Suppression ON, Defective Reset)",P27-AERO-STR-04,10,1.0,10.0
+A,"Condition A (Suppression ON, Defective Reset)",P27-AERO-STR-05,28,1.0,28.0
+A,"Condition A (Suppression ON, Defective Reset)",P27-AERO-STR-06,35,1.0,35.0
+A,"Condition A (Suppression ON, Defective Reset)",CORPUS_TOTAL,108,6.0,18.0
+B,"Condition B (Suppression OFF, Defective Reset)",P27-AERO-STR-01,25,1.0,25.0
+B,"Condition B (Suppression OFF, Defective Reset)",P27-AERO-STR-02,6,1.0,6.0
+B,"Condition B (Suppression OFF, Defective Reset)",P27-AERO-STR-03,16,1.0,16.0
+B,"Condition B (Suppression OFF, Defective Reset)",P27-AERO-STR-04,12,1.0,12.0
+B,"Condition B (Suppression OFF, Defective Reset)",P27-AERO-STR-05,34,1.0,34.0
+B,"Condition B (Suppression OFF, Defective Reset)",P27-AERO-STR-06,37,1.0,37.0
+B,"Condition B (Suppression OFF, Defective Reset)",CORPUS_TOTAL,130,6.0,21.6667
+C,"Condition C (Suppression ON, Corrected Reset)",P27-AERO-STR-01,14,1.0,14.0
+C,"Condition C (Suppression ON, Corrected Reset)",P27-AERO-STR-02,3,1.0,3.0
+C,"Condition C (Suppression ON, Corrected Reset)",P27-AERO-STR-03,3,1.0,3.0
+C,"Condition C (Suppression ON, Corrected Reset)",P27-AERO-STR-04,7,1.0,7.0
+C,"Condition C (Suppression ON, Corrected Reset)",P27-AERO-STR-05,13,1.0,13.0
+C,"Condition C (Suppression ON, Corrected Reset)",P27-AERO-STR-06,26,1.0,26.0
+C,"Condition C (Suppression ON, Corrected Reset)",CORPUS_TOTAL,66,6.0,11.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,P27-AERO-STR-01,15,1.0,15.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,P27-AERO-STR-02,3,1.0,3.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,P27-AERO-STR-03,7,1.0,7.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,P27-AERO-STR-04,8,1.0,8.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,P27-AERO-STR-05,17,1.0,17.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,P27-AERO-STR-06,22,1.0,22.0
+D,CORRECTED-CANDIDATE / SUPPRESSION-OFF,CORPUS_TOTAL,72,6.0,12.0

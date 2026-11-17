@@ -1,0 +1,49 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_32_FACTORIAL_DEFECT_ABLATION_STATISTICAL_RECONCILIATION_EVENT_AUDIT",
+  "factorial_ablation_summary": {
+    "condition_a_alerts": 108,
+    "condition_b_alerts": 130,
+    "condition_c_alerts": 66,
+    "condition_d_alerts": 72,
+    "suppression_effect_defective": -22,
+    "suppression_effect_corrected": -6,
+    "reset_effect_suppression_on": 42,
+    "reset_effect_suppression_off": 58,
+    "interaction_effect": -16,
+    "interaction_verdict": "SIGNIFICANT_NON_ZERO_INTERACTION (-16 alerts; mechanisms are non-additive)"
+  },
+  "wilcoxon_reconciliation_summary": {
+    "phase29_30_exact_two_sided_p": 0.1953125,
+    "phase31_asymptotic_normal_p": 0.15626,
+    "root_cause": "Phase 29/30 used combinatorial exact distribution for untied ranks (50/256 = 0.1953125); Phase 31 used default SciPy asymptotic normal approximation without continuity correction (z=-1.4178, p=0.15626).",
+    "exact_tied_permutation_p": 0.2109375,
+    "pratt_zero_p": 0.36754,
+    "exact_sign_test_p": 0.72656
+  },
+  "pittsburgh_audit_summary": {
+    "scheduled_rounds": 50,
+    "recordings_count": 20,
+    "historical_multicredit_recall": {
+      "phase14": "27/50 (54.0%)",
+      "phase17": "33/50 (66.0%)",
+      "mcnemar_p": 0.03125
+    },
+    "strict_one_to_one_recall": {
+      "phase14": "15/50 (30.0%)",
+      "phase17": "19/50 (38.0%)",
+      "exact_p": 0.21875
+    },
+    "recording_level_detections": {
+      "phase14": "15/20 (75.0%)",
+      "phase17": "18/20 (90.0%)",
+      "exact_p": 0.25
+    },
+    "audit_finding": "Historical p=0.03125 was driven by duplicate alert reuse across rapid multi-shot bursts. Under strict 1-to-1 matching, difference is not statistically significant (p=0.21875)."
+  },
+  "governance_decision": {
+    "default_research_baseline": "Phase 14 Balanced",
+    "phase17_promotion_status": "REJECTED_DO_NOT_PROMOTE",
+    "candidate_patch_status": "EXPERIMENTAL_DIAGNOSTIC_ONLY"
+  }
+}

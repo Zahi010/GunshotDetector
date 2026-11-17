@@ -1,0 +1,59 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "audit_phase": "PHASE_20_PITTSBURGH_AUDIT",
+  "total_positive_recordings": 23,
+  "category_a_recordings": 20,
+  "category_b_recordings": 3,
+  "total_canonical_events": 53,
+  "unique_event_ids": 53,
+  "category_a_events": 50,
+  "category_b_events": 3,
+  "category_a_events_by_firing_position": {
+    "FP1": 10,
+    "FP2": 10,
+    "FP3": 10,
+    "FP4": 10,
+    "FP5": 10
+  },
+  "category_a_events_by_caliber": {
+    ".45 ACP": 20,
+    ".40 S&W": 15,
+    "9x19mm": 15
+  },
+  "category_b_events_by_session": {
+    "SESSION_9LASH": 3
+  },
+  "category_a_model_detections": {
+    "phase_14_balanced": {
+      "detected": 27,
+      "total": 50,
+      "recall_pct": 54.0
+    },
+    "phase_14_hp": {
+      "detected": 24,
+      "total": 50,
+      "recall_pct": 48.0
+    },
+    "phase_14_hs": {
+      "detected": 22,
+      "total": 50,
+      "recall_pct": 44.0
+    },
+    "phase_17_experimental": {
+      "detected": 33,
+      "total": 50,
+      "recall_pct": 66.0
+    },
+    "phase_9_balanced": {
+      "detected": 28,
+      "total": 50,
+      "recall_pct": 56.0
+    },
+    "phase_13_balanced": {
+      "detected": 16,
+      "total": 50,
+      "recall_pct": 32.0
+    }
+  },
+  "accounting_reconciliation_verdict": "PERFECT_RECONCILIATION_ZERO_DISCREPANCIES"
+}

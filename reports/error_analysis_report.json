@@ -1,0 +1,1176 @@
+{
+  "threshold": 0.295,
+  "total_test_windows": 519,
+  "tp_count": 230,
+  "tn_count": 161,
+  "fp_count": 113,
+  "fn_count": 15,
+  "precision": 0.6706,
+  "recall": 0.9388,
+  "f1": 0.7823,
+  "accuracy": 0.7534,
+  "top_fp_recordings": [
+    {
+      "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+      "count": 45,
+      "mean_score": 0.4612,
+      "max_score": 0.7313,
+      "windows": [
+        {
+          "window_index": 83,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 0.96,
+          "end_time": 1.92,
+          "score": 0.6094,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 88,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 3.36,
+          "end_time": 4.32,
+          "score": 0.5448,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 92,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 5.28,
+          "end_time": 6.24,
+          "score": 0.5704,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 93,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 5.76,
+          "end_time": 6.72,
+          "score": 0.548,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 94,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 6.24,
+          "end_time": 7.2,
+          "score": 0.5819,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 98,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 8.16,
+          "end_time": 9.12,
+          "score": 0.5397,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 110,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 13.92,
+          "end_time": 14.88,
+          "score": 0.7256,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 121,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 19.2,
+          "end_time": 20.16,
+          "score": 0.4051,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 135,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 25.92,
+          "end_time": 26.88,
+          "score": 0.3718,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 141,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 28.8,
+          "end_time": 29.76,
+          "score": 0.4537,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 142,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 29.28,
+          "end_time": 30.24,
+          "score": 0.2998,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 143,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 29.76,
+          "end_time": 30.72,
+          "score": 0.3709,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 149,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 32.64,
+          "end_time": 33.6,
+          "score": 0.3357,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 150,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 33.12,
+          "end_time": 34.08,
+          "score": 0.3031,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 161,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 38.4,
+          "end_time": 39.36,
+          "score": 0.3726,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 162,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 38.88,
+          "end_time": 39.84,
+          "score": 0.3737,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 163,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 39.36,
+          "end_time": 40.32,
+          "score": 0.5676,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 169,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 42.24,
+          "end_time": 43.2,
+          "score": 0.329,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 173,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 44.16,
+          "end_time": 45.12,
+          "score": 0.4307,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 174,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 44.64,
+          "end_time": 45.6,
+          "score": 0.4629,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 176,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 45.6,
+          "end_time": 46.56,
+          "score": 0.707,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 178,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 46.56,
+          "end_time": 47.52,
+          "score": 0.5969,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 185,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 49.92,
+          "end_time": 50.88,
+          "score": 0.3574,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 191,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 52.8,
+          "end_time": 53.76,
+          "score": 0.3638,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 192,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 53.28,
+          "end_time": 54.24,
+          "score": 0.3615,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 200,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 57.12,
+          "end_time": 58.08,
+          "score": 0.3552,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 201,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 57.6,
+          "end_time": 58.56,
+          "score": 0.4615,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 203,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 58.56,
+          "end_time": 59.52,
+          "score": 0.4892,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 204,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 59.04,
+          "end_time": 60.0,
+          "score": 0.511,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 205,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 59.52,
+          "end_time": 60.48,
+          "score": 0.6336,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 206,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 60.0,
+          "end_time": 60.96,
+          "score": 0.4459,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 209,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 61.44,
+          "end_time": 62.4,
+          "score": 0.3424,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 212,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 62.88,
+          "end_time": 63.84,
+          "score": 0.6087,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 213,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 63.36,
+          "end_time": 64.32,
+          "score": 0.3219,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 216,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 64.8,
+          "end_time": 65.76,
+          "score": 0.4673,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 217,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 65.28,
+          "end_time": 66.24,
+          "score": 0.7313,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 219,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 66.24,
+          "end_time": 67.2,
+          "score": 0.3634,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 225,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 69.12,
+          "end_time": 70.08,
+          "score": 0.3246,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 227,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 70.08,
+          "end_time": 71.04,
+          "score": 0.5299,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 228,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 70.56,
+          "end_time": 71.52,
+          "score": 0.3539,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 229,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 71.04,
+          "end_time": 72.0,
+          "score": 0.6026,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 232,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 72.48,
+          "end_time": 73.44,
+          "score": 0.3668,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 233,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 72.96,
+          "end_time": 73.92,
+          "score": 0.3698,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 235,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 73.92,
+          "end_time": 74.88,
+          "score": 0.3502,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 238,
+          "recording_id": "freesound_community-laser-effect-contact-mic-20428",
+          "start_time": 75.216,
+          "end_time": 76.176,
+          "score": 0.5417,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+      "count": 30,
+      "mean_score": 0.4663,
+      "max_score": 0.7445,
+      "windows": [
+        {
+          "window_index": 12,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.4462,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 13,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.523,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 15,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 1.44,
+          "end_time": 2.4,
+          "score": 0.4317,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 17,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 2.4,
+          "end_time": 3.36,
+          "score": 0.3561,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 18,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 2.88,
+          "end_time": 3.84,
+          "score": 0.5662,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 19,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 3.36,
+          "end_time": 4.32,
+          "score": 0.3324,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 20,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 3.84,
+          "end_time": 4.8,
+          "score": 0.3703,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 21,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 4.32,
+          "end_time": 5.28,
+          "score": 0.7445,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 22,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 4.8,
+          "end_time": 5.76,
+          "score": 0.3895,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 23,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 5.28,
+          "end_time": 6.24,
+          "score": 0.5413,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 24,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 5.76,
+          "end_time": 6.72,
+          "score": 0.6897,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 25,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 6.24,
+          "end_time": 7.2,
+          "score": 0.6361,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 26,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 6.72,
+          "end_time": 7.68,
+          "score": 0.5097,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 27,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 7.2,
+          "end_time": 8.16,
+          "score": 0.3582,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 31,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 9.12,
+          "end_time": 10.08,
+          "score": 0.4237,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 32,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 9.6,
+          "end_time": 10.56,
+          "score": 0.5097,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 33,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 10.08,
+          "end_time": 11.04,
+          "score": 0.3008,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 35,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 11.04,
+          "end_time": 12.0,
+          "score": 0.5299,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 36,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 11.52,
+          "end_time": 12.48,
+          "score": 0.3296,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 37,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 12.0,
+          "end_time": 12.96,
+          "score": 0.3725,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 38,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 12.48,
+          "end_time": 13.44,
+          "score": 0.3298,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 41,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 13.92,
+          "end_time": 14.88,
+          "score": 0.3641,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 42,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 14.4,
+          "end_time": 15.36,
+          "score": 0.564,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 43,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 14.88,
+          "end_time": 15.84,
+          "score": 0.3162,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 46,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 16.32,
+          "end_time": 17.28,
+          "score": 0.3272,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 47,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 16.8,
+          "end_time": 17.76,
+          "score": 0.5435,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 48,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 17.28,
+          "end_time": 18.24,
+          "score": 0.5228,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 49,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 17.76,
+          "end_time": 18.72,
+          "score": 0.6417,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 50,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 18.24,
+          "end_time": 19.2,
+          "score": 0.5097,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 51,
+          "recording_id": "fronbondi_skegs-sfx-laserbeam-style-01-firing-shots-set-sound-effects-459831",
+          "start_time": 18.72,
+          "end_time": 19.68,
+          "score": 0.5097,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-nerf-shots-102238",
+      "count": 21,
+      "mean_score": 0.5349,
+      "max_score": 0.7438,
+      "windows": [
+        {
+          "window_index": 239,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.4017,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 240,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.6426,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 241,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 0.96,
+          "end_time": 1.92,
+          "score": 0.4938,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 242,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 1.44,
+          "end_time": 2.4,
+          "score": 0.4827,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 243,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 1.92,
+          "end_time": 2.88,
+          "score": 0.5977,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 244,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 2.4,
+          "end_time": 3.36,
+          "score": 0.6227,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 245,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 2.88,
+          "end_time": 3.84,
+          "score": 0.7438,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 246,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 3.36,
+          "end_time": 4.32,
+          "score": 0.5009,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 247,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 3.84,
+          "end_time": 4.8,
+          "score": 0.6332,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 248,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 4.32,
+          "end_time": 5.28,
+          "score": 0.4789,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 249,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 4.8,
+          "end_time": 5.76,
+          "score": 0.6054,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 250,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 5.28,
+          "end_time": 6.24,
+          "score": 0.448,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 251,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 5.76,
+          "end_time": 6.72,
+          "score": 0.5572,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 252,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 6.24,
+          "end_time": 7.2,
+          "score": 0.6259,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 253,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 6.72,
+          "end_time": 7.68,
+          "score": 0.4716,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 254,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 7.2,
+          "end_time": 8.16,
+          "score": 0.3948,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 255,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 7.68,
+          "end_time": 8.64,
+          "score": 0.5984,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 256,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 8.16,
+          "end_time": 9.12,
+          "score": 0.6196,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 257,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 8.64,
+          "end_time": 9.6,
+          "score": 0.3087,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 258,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 9.12,
+          "end_time": 10.08,
+          "score": 0.5869,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 259,
+          "recording_id": "freesound_community-nerf-shots-102238",
+          "start_time": 9.6,
+          "end_time": 10.56,
+          "score": 0.4178,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-gun-dry-firing-9-96427",
+      "count": 3,
+      "mean_score": 0.462,
+      "max_score": 0.5136,
+      "windows": [
+        {
+          "window_index": 0,
+          "recording_id": "freesound_community-gun-dry-firing-9-96427",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.3626,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 1,
+          "recording_id": "freesound_community-gun-dry-firing-9-96427",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.5136,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 2,
+          "recording_id": "freesound_community-gun-dry-firing-9-96427",
+          "start_time": 0.936,
+          "end_time": 1.896,
+          "score": 0.5097,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-gun-load1-98406",
+      "count": 3,
+      "mean_score": 0.4744,
+      "max_score": 0.6415,
+      "windows": [
+        {
+          "window_index": 77,
+          "recording_id": "freesound_community-gun-load1-98406",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.3352,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 78,
+          "recording_id": "freesound_community-gun-load1-98406",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.6415,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 79,
+          "recording_id": "freesound_community-gun-load1-98406",
+          "start_time": 0.96,
+          "end_time": 1.92,
+          "score": 0.4465,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "dragon-studio-gun-reload-511309",
+      "count": 2,
+      "mean_score": 0.5475,
+      "max_score": 0.7327,
+      "windows": [
+        {
+          "window_index": 10,
+          "recording_id": "dragon-studio-gun-reload-511309",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.3623,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 11,
+          "recording_id": "dragon-studio-gun-reload-511309",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.7327,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "freesounds-4u-gun-mag-insert-1-395178",
+      "count": 2,
+      "mean_score": 0.4588,
+      "max_score": 0.5685,
+      "windows": [
+        {
+          "window_index": 53,
+          "recording_id": "freesounds-4u-gun-mag-insert-1-395178",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.5685,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 54,
+          "recording_id": "freesounds-4u-gun-mag-insert-1-395178",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.3492,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-bow-release-bow-and-arrow-4-101936",
+      "count": 2,
+      "mean_score": 0.5809,
+      "max_score": 0.6084,
+      "windows": [
+        {
+          "window_index": 75,
+          "recording_id": "freesound_community-bow-release-bow-and-arrow-4-101936",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.6084,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 76,
+          "recording_id": "freesound_community-bow-release-bow-and-arrow-4-101936",
+          "start_time": 0.912,
+          "end_time": 1.872,
+          "score": 0.5534,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "dragon-studio-gun-reload-2-511308",
+      "count": 2,
+      "mean_score": 0.4098,
+      "max_score": 0.4395,
+      "windows": [
+        {
+          "window_index": 268,
+          "recording_id": "dragon-studio-gun-reload-2-511308",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.3802,
+          "ground_truth": 0
+        },
+        {
+          "window_index": 269,
+          "recording_id": "dragon-studio-gun-reload-2-511308",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.4395,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "xpmonster-toy-gun-reloading-amp-shooting-419582",
+      "count": 1,
+      "mean_score": 0.491,
+      "max_score": 0.491,
+      "windows": [
+        {
+          "window_index": 52,
+          "recording_id": "xpmonster-toy-gun-reloading-amp-shooting-419582",
+          "start_time": 0.0,
+          "end_time": 0.96,
+          "score": 0.491,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "spinopel-toy-gun-364850",
+      "count": 1,
+      "mean_score": 0.3865,
+      "max_score": 0.3865,
+      "windows": [
+        {
+          "window_index": 55,
+          "recording_id": "spinopel-toy-gun-364850",
+          "start_time": 0.0,
+          "end_time": 0.653,
+          "score": 0.3865,
+          "ground_truth": 0
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-22-rifle-dryfiring-87480",
+      "count": 1,
+      "mean_score": 0.3573,
+      "max_score": 0.3573,
+      "windows": [
+        {
+          "window_index": 70,
+          "recording_id": "freesound_community-22-rifle-dryfiring-87480",
+          "start_time": 0.0,
+          "end_time": 0.418,
+          "score": 0.3573,
+          "ground_truth": 0
+        }
+      ]
+    }
+  ],
+  "top_fn_recordings": [
+    {
+      "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+      "count": 7,
+      "mean_score": 0.1367,
+      "min_score": 0.0246,
+      "windows": [
+        {
+          "window_index": 289,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 7.2,
+          "end_time": 8.16,
+          "score": 0.0246,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 290,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 7.68,
+          "end_time": 8.64,
+          "score": 0.1041,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 291,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 8.16,
+          "end_time": 9.12,
+          "score": 0.2276,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 321,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 22.56,
+          "end_time": 23.52,
+          "score": 0.1028,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 322,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 23.04,
+          "end_time": 24.0,
+          "score": 0.1429,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 323,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 23.52,
+          "end_time": 24.48,
+          "score": 0.1483,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 343,
+          "recording_id": "rzalmanialmani-gun-clean-sound-in-mp3-150561",
+          "start_time": 33.078,
+          "end_time": 34.038,
+          "score": 0.2067,
+          "ground_truth": 1
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883",
+      "count": 4,
+      "mean_score": 0.1428,
+      "min_score": 0.045,
+      "windows": [
+        {
+          "window_index": 371,
+          "recording_id": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.0481,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 384,
+          "recording_id": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883",
+          "start_time": 6.72,
+          "end_time": 7.68,
+          "score": 0.045,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 385,
+          "recording_id": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883",
+          "start_time": 7.2,
+          "end_time": 8.16,
+          "score": 0.2342,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 389,
+          "recording_id": "freesound_community-gunfire-identify-weapon-ak47-shotgun_pistol_long-gun-2-25883",
+          "start_time": 9.12,
+          "end_time": 10.08,
+          "score": 0.244,
+          "ground_truth": 1
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-m-327-mortar-shots-105800",
+      "count": 2,
+      "mean_score": 0.0123,
+      "min_score": 0.0109,
+      "windows": [
+        {
+          "window_index": 491,
+          "recording_id": "freesound_community-m-327-mortar-shots-105800",
+          "start_time": 0.48,
+          "end_time": 1.44,
+          "score": 0.0137,
+          "ground_truth": 1
+        },
+        {
+          "window_index": 492,
+          "recording_id": "freesound_community-m-327-mortar-shots-105800",
+          "start_time": 0.96,
+          "end_time": 1.92,
+          "score": 0.0109,
+          "ground_truth": 1
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-war-ambience-loop-32930",
+      "count": 1,
+      "mean_score": 0.0814,
+      "min_score": 0.0814,
+      "windows": [
+        {
+          "window_index": 420,
+          "recording_id": "freesound_community-war-ambience-loop-32930",
+          "start_time": 2.88,
+          "end_time": 3.84,
+          "score": 0.0814,
+          "ground_truth": 1
+        }
+      ]
+    },
+    {
+      "recording_id": "freesound_community-m4-assault-rifle-long-burst-102682",
+      "count": 1,
+      "mean_score": 0.2601,
+      "min_score": 0.2601,
+      "windows": [
+        {
+          "window_index": 500,
+          "recording_id": "freesound_community-m4-assault-rifle-long-burst-102682",
+          "start_time": 2.4,
+          "end_time": 3.36,
+          "score": 0.2601,
+          "ground_truth": 1
+        }
+      ]
+    }
+  ]
+}

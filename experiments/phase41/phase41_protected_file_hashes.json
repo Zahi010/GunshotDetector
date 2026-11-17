@@ -1,0 +1,55 @@
+{
+  "audit_phase": "PHASE_41",
+  "description": "Pre-audit protected file baseline hashes recorded before executing Phase 41 audit workflows.",
+  "timestamp": "2026-11-16T13:51:00Z",
+  "protected_files": {
+    "model_phase14.py": {
+      "byte_size": 23340,
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+    },
+    "model_phase17.py": {
+      "byte_size": 29067,
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+    },
+    "experiments/phase31/model_phase17_state_reset_candidate.py": {
+      "byte_size": 29718,
+      "sha256": "c144b917b56532787e2a9198f2cad4a77dc2095b57962f31d11d250a4d5d9ea5"
+    },
+    "experiments/phase36/model_phase36.py": {
+      "byte_size": 13891,
+      "sha256": "2774ab4cae0fca6d2f3646b443694fefa40d6837ff195f1d216ae7ff7732563a"
+    },
+    "experiments/phase36/event_state_machine.py": {
+      "byte_size": 24905,
+      "sha256": "a91e9bc6d0ab9ca805817a406857d31e1f482f7d8815b0eaf7fee9075cd23c31"
+    },
+    "experiments/phase36/acoustic_features.py": {
+      "byte_size": 9812,
+      "sha256": "5cc775f97b8e9f2c62018efe6f3fc6d64913cfcb5ffd470a1daba625c6510a51"
+    },
+    "feature_extractor.py": {
+      "byte_size": 6218,
+      "sha256": "1c665b7c1749de98337da0726627710fffe0dcfa56335291b666ae7abcbae94f"
+    },
+    "config.py": {
+      "byte_size": 2619,
+      "sha256": "55749f9d46d561d131fad374064021b73c08274e2a79954efd08570b029b1858"
+    },
+    "experiments/phase38/phase38_detector_freeze_manifest.json": {
+      "byte_size": 4126,
+      "sha256": "1767cb0f598f62164b46dd08e56f1a9ed7ab38187f55bd46750b0ce920dddc5b"
+    },
+    "experiments/phase39/phase39_detector_freeze_manifest.json": {
+      "byte_size": 2663,
+      "sha256": "f71591daf46ff7a74f91ef207eb1b2308b9006116c12324dffce9c5ad8e80c88"
+    },
+    "experiments/phase40/phase40_output_hash_manifest.json": {
+      "byte_size": 5972,
+      "sha256": "64a2ef130d1746f644da4799c9bb765aefb8480cb038f1de7cef591f12270f18"
+    },
+    "experiments/phase40/phase40_evaluation_protocol.md": {
+      "byte_size": 5575,
+      "sha256": "05aa77bd3fb30f7c472fa1b2db2862283bf1bf5fd25111142ae95993245b1fc7"
+    }
+  }
+}

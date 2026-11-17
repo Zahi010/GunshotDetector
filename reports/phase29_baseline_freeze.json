@@ -1,0 +1,86 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_29_CONFIGURATION_VERIFICATION_AIRCRAFT_VALIDATION_ROBUSTNESS_AUDIT",
+  "frozen_models": {
+    "model_phase14.py": {
+      "role": "DEFAULT_RESEARCH_BASELINE",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "size_bytes": 23340,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "model_phase17.py": {
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "size_bytes": 29067,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "model_phase13.py": {
+      "role": "HISTORICAL_COMPARATOR",
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "size_bytes": 22252,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "model_phase9.py": {
+      "role": "HISTORICAL_COMPARATOR",
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "size_bytes": 17719,
+      "verification": "MATCH_CONFIRMED"
+    }
+  },
+  "configuration_files": {
+    "config.py": "55749f9d46d561d131fad374064021b73c08274e2a79954efd08570b029b1858",
+    "feature_extractor.py": "1c665b7c1749de98337da0726627710fffe0dcfa56335291b666ae7abcbae94f",
+    "model.py": "ccf8f6c2bcf23ebeeea77ec2fed217c584f2a50497a11c12da9ae48baea11e2b",
+    "models/gunshot_yamnet_bundle/threshold.json": "6dcd1b4a942463c85e62dbad8f44fa65d86eac8e1746a45c45b4719feb801ecd",
+    "models/gunshot_yamnet_bundle/metadata.json": "ca2544ac0a2c0086ad74a4492ccf06a223a87115d6ea718113f4a513e10a19a4",
+    "models/gunshot_yamnet_bundle/model_config.json": "fdeb8551a21f74a121aa47603465b441f0d978653c2a8668e3c48a8b6d98f81b"
+  },
+  "release_archives": {
+    "gunshot_detection_phase28.zip": {
+      "sha256": "e6505e3597b406541efb005f1d69432653cbfc5603843695fdfd66af01324a72",
+      "size_bytes": 4586167,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase27.zip": {
+      "sha256": "59c27ccdb74a8e17c269eddd3d8965a6a9350cc0b9f45687b792e5ba1dfb490d",
+      "size_bytes": 4610265,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase26.zip": {
+      "sha256": "df8d3e0165c98b1b093e93d6edf12a43a6c831c6818122a23da4c3db29ea5c01",
+      "size_bytes": 8218546,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase25.zip": {
+      "sha256": "cc2349c46ebaeed859ed300a0b2f402e62bf9c20994d2112a15ec47cd656425e",
+      "size_bytes": 8213032,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase24.zip": {
+      "sha256": "3e732e0716160f2d77b71ceff3e01a49f3d933e397bf29bf222fec771a8832b8",
+      "size_bytes": 8215859,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase23.zip": {
+      "sha256": "5ce4e64715829d9b52111b6d6322f251976e1ce99e829d9dfbe0858a7e1644c8",
+      "size_bytes": 8194616,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase22.zip": {
+      "sha256": "160d327072c3515e945ca5cdf89038f14b6ef1919b1e4865278affab52ad4de5",
+      "size_bytes": 8199741,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase21.zip": {
+      "sha256": "b065747b0e6118d228336bee7f8c3811890b638a25070d3ce2a047c329b3e225",
+      "size_bytes": 8211219,
+      "verification": "MATCH_CONFIRMED"
+    },
+    "gunshot_detection_phase20.zip": {
+      "sha256": "dda7427f2dbffcb178f6d9ade0abb80fbfc491751f04de5dc0db1b4731c31c89",
+      "size_bytes": 8205938,
+      "verification": "MATCH_CONFIRMED"
+    }
+  },
+  "status": "ALL_HASHES_VERIFIED"
+}

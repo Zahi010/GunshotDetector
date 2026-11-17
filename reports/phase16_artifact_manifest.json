@@ -1,0 +1,297 @@
+{
+  "phase": 16,
+  "title": "Natural Continuous Audio Validation, Source Independence & End-to-End System Audit",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "archive": {
+    "path": "E:\\gunshot\\gunshot_detection_phase16.zip",
+    "size_bytes": 1997721700,
+    "size_mb": 1905.18,
+    "file_count": 3164,
+    "sha256": "386298c4a4a251b4728d14d5903265ebe18c63404f87d0eba47bbcce442f65b4",
+    "integrity_verified": true
+  },
+  "prior_archives": {
+    "Phase 8": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "path": "e:\\gunshot\\gunshot_detection_phase8.zip"
+    },
+    "Phase 9": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "path": "e:\\gunshot\\gunshot_detection_phase9.zip"
+    },
+    "Phase 10": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "path": "e:\\gunshot\\gunshot_detection_phase10.zip"
+    },
+    "Phase 11": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "path": "e:\\gunshot\\gunshot_detection_phase11.zip"
+    },
+    "Phase 12": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a",
+      "path": "e:\\gunshot\\gunshot_detection_phase12.zip"
+    },
+    "Phase 13": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561",
+      "path": "e:\\gunshot\\gunshot_detection_phase13.zip"
+    },
+    "Phase 14": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "37807435378d313efbec89a3671b714cb33f8b1ddef4ca91141956ae5082d144",
+      "path": "e:\\gunshot\\gunshot_detection_phase14.zip"
+    },
+    "Phase 15": {
+      "status": "VERIFIED_INTACT",
+      "sha256": "9ae819de02b9520aa105ecad8db871aa583cc204778bca20e7b9d1018ea6b08c",
+      "path": "e:\\gunshot\\gunshot_detection_phase15.zip"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "model_phase14.py",
+      "category": "PRIMARY_DETECTOR",
+      "description": "Phase 14 frozen detector implementation",
+      "size_bytes": 23340,
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "model_phase13.py",
+      "category": "BASELINE_COMPARATOR",
+      "description": "Phase 13 frozen detector implementation",
+      "size_bytes": 22252,
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "model_phase9.py",
+      "category": "BASELINE_COMPARATOR",
+      "description": "Phase 9 frozen detector implementation",
+      "size_bytes": 17719,
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "app.py",
+      "category": "REALTIME_SERVER",
+      "description": "Flask real-time inference server and streaming endpoints",
+      "size_bytes": 18660,
+      "sha256": "839cc9013b2e1407ff760d74124e3d4d76d155862c782b48f7d497afde0843a3",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/freeze_phase16_baseline.py",
+      "category": "AUDIT_TOOL",
+      "description": "Historical archive and baseline freeze script",
+      "size_bytes": 4310,
+      "sha256": "ae65e113a90a6a13cf5357baa6b8a48a0687f29b1af62bea0bc4407f57f65b28",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/run_phase16_source_audit.py",
+      "category": "AUDIT_TOOL",
+      "description": "Positive gunshot source lineage and overlap audit",
+      "size_bytes": 28001,
+      "sha256": "6d0667b4ba7181e6ba4834871e30d4f029aab7d2777036d7d93a970ed76a3541",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/acquire_phase16_continuous_dataset.py",
+      "category": "ACQUISITION_PIPELINE",
+      "description": "Natural continuous audio acquisition & resampler",
+      "size_bytes": 23180,
+      "sha256": "b1024215b8d9f565b75a727089da9f10ccd7fc9b1dec4b3092d7a8509d46fa33",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/run_phase16_animal_and_boundary_forensics.py",
+      "category": "DIAGNOSTIC_TOOL",
+      "description": "Animal vocalization and boundary artifact forensic analyzer",
+      "size_bytes": 26137,
+      "sha256": "fa08290c799a191d9a9265c80d3654800e4a863d1a6507e6a9a1682697fdf438",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/run_phase16_continuous_evaluation.py",
+      "category": "EVALUATION_PIPELINE",
+      "description": "Continuous multi-detector streaming evaluation pipeline",
+      "size_bytes": 28905,
+      "sha256": "0640aceaddd468537e39d3acb20e881e0cb11ea560c8cb14855eb21e3de9cfa0",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/run_phase16_latency_audit.py",
+      "category": "BENCHMARK_TOOL",
+      "description": "Full-stack browser-to-server latency microbenchmark",
+      "size_bytes": 13986,
+      "sha256": "a507ceca228cb855468cb70c95d92e5f907096f7cb6685579a91c6b1261ee996",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/run_phase16_statistical_analysis.py",
+      "category": "STATISTICAL_TOOL",
+      "description": "Poisson uncertainty and paired bootstrap analyzer",
+      "size_bytes": 18529,
+      "sha256": "c291ced66098dd95632aef09e79e6583cbfdabce34753505b6cad8eb93fff8fc",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "scripts/package_phase16_archive.py",
+      "category": "PACKAGING_TOOL",
+      "description": "Workspace packager and archive verifier",
+      "size_bytes": 10736,
+      "sha256": "6924400b1bf14ddd5397c4e93eaeb0808fbf19e8e6eacf62ca6fdc3e46b6ded3",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "tests/test_phase16_provenance_integrity.py",
+      "category": "UNIT_TEST",
+      "description": "Cryptographic provenance and baseline freeze test suite",
+      "size_bytes": 5065,
+      "sha256": "840d06bf7579c523b889cefeb01e5c4facc5808f646a3b6c996bc3b1803e4978",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "tests/test_phase16_evaluation_integrity.py",
+      "category": "UNIT_TEST",
+      "description": "Continuous audio and diagnostic report integrity test suite",
+      "size_bytes": 4948,
+      "sha256": "2346e2a27b63ca2a8ac9ea93a4ca5e8d17cf531f3c42234e3f1ffdf9ef7ef7a3",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_baseline_freeze.json",
+      "category": "AUDIT_REPORT",
+      "description": "Cryptographic freeze digests of baselines and historical archives",
+      "size_bytes": 5644,
+      "sha256": "e640914f98af32f0925c98aad24321f449dc1caafbda235961fdbae5dc4f5baf",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_positive_source_lineage.md",
+      "category": "AUDIT_REPORT",
+      "description": "Ballistic gunshot provenance and recording session disclosure",
+      "size_bytes": 8238,
+      "sha256": "68c76f445feb2f117c7f6beda7bbee7e1b76fc51025d56a440279225fee6b873",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_positive_source_overlap.csv",
+      "category": "DATA_MANIFEST",
+      "description": "Granular provenance classification for 47 positive gunshots",
+      "size_bytes": 17937,
+      "sha256": "67811ab1479884e0811794bba94008d0d3bcc8a0dbfee9bd2cd211bec686ed15",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_recording_session_audit.json",
+      "category": "AUDIT_REPORT",
+      "description": "Formal recording-session linkage and overlap counts",
+      "size_bytes": 77749,
+      "sha256": "514f76031e8dd3c5809560dfb8e9025feb59f553dfc9a3aa63847ff9647a1ca4",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_blind_source_audit.md",
+      "category": "AUDIT_REPORT",
+      "description": "Phase 15 discrete blind set post-evaluation audit & retirement",
+      "size_bytes": 4411,
+      "sha256": "135398b93772187ff5d4cbd6b8a27d963f9bf440c8e80cbc53ebcbd0493e12d7",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_continuous_source_manifest.csv",
+      "category": "DATA_MANIFEST",
+      "description": "Natural continuous environmental audio metadata and hashes",
+      "size_bytes": 6074,
+      "sha256": "401b2c2ac89f53974066b586e7ac90c7f6026b750398634d62b894d8c238c915",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_continuous_provenance_audit.md",
+      "category": "AUDIT_REPORT",
+      "description": "Continuous environmental suite provenance and licensing audit",
+      "size_bytes": 5874,
+      "sha256": "e27820d0acdbf240578cded6411ff8b3eb2c6c118762761b3d1f9066d017c376",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_animal_false_positive_analysis.md",
+      "category": "FORENSIC_REPORT",
+      "description": "Animal vocalization false-positive deep-dive and candidate rule",
+      "size_bytes": 6039,
+      "sha256": "7f832adf8c697a08789cd78cfcaa127d0599a3b61cc4e4a880ef1910f8b7ae9c",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_boundary_analysis.md",
+      "category": "FORENSIC_REPORT",
+      "description": "Artificial concatenation boundary transient analysis and metric separation",
+      "size_bytes": 4876,
+      "sha256": "ad5b107d158165063e793a0ed7062dac9c8d1c52eab588f38e591c26c0daeec4",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_latency_audit.md",
+      "category": "SYSTEM_REPORT",
+      "description": "Browser-to-server end-to-end latency audit and microbenchmarks",
+      "size_bytes": 6323,
+      "sha256": "9991a00c6e9670af6682842e418f49ea5747eb3e2c727820c49ffac5f33c42ba",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_natural_continuous_comparison.md",
+      "category": "EVALUATION_REPORT",
+      "description": "Baseline comparison across 6+ hours of natural continuous audio",
+      "size_bytes": 5066,
+      "sha256": "d12c49fc0b3531c110bd26650c0bcab9268b795e016cde0f74ede6bc47c4991f",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_alert_timeline.csv",
+      "category": "EVALUATION_DATA",
+      "description": "Timestamped event timeline for all continuous false positive alerts",
+      "size_bytes": 5166,
+      "sha256": "54d76d887f4fecd796b59943a03a5e6f46148a01f955c19e8dfc3e6ad68bbff2",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_category_breakdown.csv",
+      "category": "EVALUATION_DATA",
+      "description": "Category-by-category false alert rates across operating profiles",
+      "size_bytes": 512,
+      "sha256": "2fb379c7524fed3f63b9a1f8d1bc450857a375a3a43bcf044bff211b44dd0b38",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_continuous_metrics.json",
+      "category": "EVALUATION_DATA",
+      "description": "Structured JSON continuous evaluation metrics",
+      "size_bytes": 7810,
+      "sha256": "c445673bbeb8dfed515d97e574bde3473a82b3f55dd1e37020095a5595bb1cc1",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_statistical_analysis.md",
+      "category": "STATISTICAL_REPORT",
+      "description": "Poisson confidence intervals, rate ratios, and paired bootstrap",
+      "size_bytes": 4971,
+      "sha256": "ab0f5e76ff82f815623638215c95454ac017716a8b3732c0608283fcc0ea8732",
+      "status": "VERIFIED"
+    },
+    {
+      "path": "reports/phase16_final_report.md",
+      "category": "MASTER_REPORT",
+      "description": "Phase 16 Master Technical Report",
+      "size_bytes": 22652,
+      "sha256": "52535cd2a9127f7322a1d1f4bfe8a9dc402c233c07b1890034d434ac212eb52d",
+      "status": "VERIFIED"
+    }
+  ]
+}

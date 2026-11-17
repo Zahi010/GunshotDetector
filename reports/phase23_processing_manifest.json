@@ -1,0 +1,64 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_23_FIRST_50_HOUR_NEGATIVE_EXPOSURE_BENCHMARK",
+  "timestamp": "2026-11-14T18:55:00Z",
+  "primary_benchmark_corpus": {
+    "category": "VERIFIED_NEGATIVE",
+    "total_streams": 17,
+    "total_independent_campaigns": 3,
+    "campaigns": [
+      "CAMPAIGN-RPISOUND-UK",
+      "CAMPAIGN-CHEWMAGNA-UK",
+      "CAMPAIGN-BILBAO-ES"
+    ],
+    "total_independent_sessions": 17,
+    "gross_duration_seconds": 23925.57,
+    "gross_duration_hours": 6.646,
+    "hours_decoded_successfully": 6.646,
+    "hours_verified_continuous": 6.646,
+    "hours_verified_negative": 6.646,
+    "hours_classified_ambiguous": 0.0,
+    "hours_excluded": 0.0
+  },
+  "target_shortfall_audit": {
+    "target_exposure_hours": 50.0,
+    "achieved_eligible_hours": 6.646,
+    "shortfall_hours": 43.354,
+    "shortfall_reasons": [
+      "SONYC-UST V1 & V2 consist exclusively of 10-second discrete clips (18,510 files); concatenation creates artificial boundary transients and is rejected.",
+      "TAU Urban Acoustic Scenes (DCASE) is pre-segmented into 10-second slices and is rejected for continuous benchmarking.",
+      "Bulk downloads of multi-gigabyte uncompressed WAVs from Zenodo face rate limiting (HTTP 403) and 73.4 GB drive capacity limits.",
+      "Synthetic padding, looping, or concatenation strictly prohibited by protocol to preserve scientific integrity."
+    ]
+  },
+  "model_performance_summary": {
+    "Phase 14 Balanced": {
+      "role": "DEFAULT_RESEARCH_BASELINE",
+      "total_observed_alerts": 56,
+      "gross_duration_hours": 6.646,
+      "cooldown_excluded_hours": 0.0311,
+      "net_eligible_exposure_hours": 6.6149,
+      "alerts_per_eligible_hour": 8.4657,
+      "garwood_95_ci_per_hour": [
+        6.3949,
+        10.9935
+      ],
+      "mtbfa_hours": 0.12,
+      "mtbfa_minutes": 7.09
+    },
+    "Phase 17 Experimental": {
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE",
+      "total_observed_alerts": 51,
+      "gross_duration_hours": 6.646,
+      "cooldown_excluded_hours": 0.0283,
+      "net_eligible_exposure_hours": 6.6177,
+      "alerts_per_eligible_hour": 7.7066,
+      "garwood_95_ci_per_hour": [
+        5.7381,
+        10.1328
+      ],
+      "mtbfa_hours": 0.13,
+      "mtbfa_minutes": 7.79
+    }
+  }
+}

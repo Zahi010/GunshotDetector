@@ -1,0 +1,82 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_24_LONG_DURATION_MUNICIPAL_AUDIO_ACQUISITION_MULTI_CAMPAIGN_VALIDATION",
+  "archive_filename": "gunshot_detection_phase24.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase24.zip",
+  "archive_size_bytes": 8215859,
+  "archive_sha256": "3e732e0716160f2d77b71ceff3e01a49f3d933e397bf29bf222fec771a8832b8",
+  "total_archive_entries": 129,
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "tripartite_denominator_summary": {
+    "gross_calendar_exposure_hours": 6.646,
+    "total_verified_natural_streams": 17,
+    "total_independent_campaigns": 3,
+    "phase_14_balanced": {
+      "total_observed_alerts": 56,
+      "gross_rate_alerts_per_hr": 8.4261,
+      "cooldown_excluded_seconds": 111.92,
+      "eligible_exposure_hours": 6.6149,
+      "eligible_rate_alerts_per_hr": 8.4657,
+      "garwood_95_ci_per_hr": [
+        6.3949,
+        10.9935
+      ],
+      "mtbfa_minutes": 7.09
+    },
+    "phase_17_experimental": {
+      "total_observed_alerts": 51,
+      "gross_rate_alerts_per_hr": 7.6738,
+      "cooldown_excluded_seconds": 101.92,
+      "eligible_exposure_hours": 6.6177,
+      "eligible_rate_alerts_per_hr": 7.7066,
+      "garwood_95_ci_per_hr": [
+        5.7381,
+        10.1328
+      ],
+      "mtbfa_minutes": 7.79
+    },
+    "paired_wilcoxon_signed_rank_p_value": 0.125,
+    "model_promotion_determination": "INCONCLUSIVE (Retain Phase 14 Balanced Baseline)"
+  },
+  "blinded_alert_review_summary": {
+    "total_alerts_reviewed": 107,
+    "reviewer1": "R1_Acoustic_DSP",
+    "reviewer2": "R2_Forensic_Audio",
+    "adjudication_status": "CONFIRMED_NON_TARGET (100%)",
+    "inter_rater_agreement_rate": 0.9813,
+    "cohens_kappa": 0.96
+  },
+  "key_deliverables": [
+    "reports/phase24_final_report.md",
+    "reports/phase24_baseline_freeze.json",
+    "reports/phase24_source_shortlist.md",
+    "reports/phase24_source_registry.csv",
+    "reports/phase24_campaign_independence_matrix.csv",
+    "reports/phase24_recording_provenance.csv",
+    "reports/phase24_duplicate_audit.csv",
+    "reports/phase24_continuity_audit.csv",
+    "reports/phase24_exposure_accounting.csv",
+    "reports/phase24_denominator_reconciliation.md",
+    "reports/phase24_alert_event_log.csv",
+    "reports/phase24_alert_review_registry.csv",
+    "reports/phase24_distractor_analysis.md",
+    "reports/phase24_negative_audio_results.csv",
+    "reports/phase24_matched_model_comparison.md",
+    "reports/phase24_statistical_analysis.md",
+    "reports/phase24_risk_and_limitation_register.md",
+    "reports/phase24_processing_manifest.json",
+    "reports/phase24_test_results.txt",
+    "tests/test_phase24_validation.py",
+    "scripts/reproduce_phase24_analysis.py"
+  ]
+}

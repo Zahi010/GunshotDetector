@@ -1,0 +1,73 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "reconciliation_target": "Category D (Mitchell 2015 Range Recordings) Recall Discrepancy",
+  "identified_discrepancy": {
+    "phase_19_reported_value": "83.33% (Phase 14 Balanced on 42-clip set)",
+    "phase_20_reported_value": "89.3% (Mistakenly attributed to Phase 14 Balanced in cross-category table)",
+    "discrepancy_nature": "REPORTING_CONFLATION_BETWEEN_PROFILES_AND_DENOMINATORS"
+  },
+  "provenance_investigation": {
+    "dataset_variant_1_discrete_blind_test_28_events": {
+      "source_phase": "Phase 15 & Phase 16",
+      "eval_set_description": "Blind discrete ballistic evaluation set from Mitchell et al. (testing subset)",
+      "denominator_genuine_events": 28,
+      "phase_14_high_sensitivity": {
+        "detected": 25,
+        "missed": 3,
+        "false_alerts": 5,
+        "event_recall": 0.8929,
+        "event_recall_pct": "89.29% (~89.3%)",
+        "event_precision_pct": "83.33% (25/30)"
+      },
+      "phase_14_balanced": {
+        "detected": 21,
+        "missed": 7,
+        "false_alerts": 3,
+        "event_recall": 0.75,
+        "event_recall_pct": "75.00%",
+        "event_precision_pct": "87.50% (21/24)"
+      },
+      "phase_14_high_precision": {
+        "detected": 16,
+        "missed": 12,
+        "false_alerts": 1,
+        "event_recall": 0.5714,
+        "event_recall_pct": "57.14%",
+        "event_precision_pct": "94.12% (16/17)"
+      },
+      "adc_clipped_subset_6_events": {
+        "phase_14_balanced_detected": 5,
+        "phase_14_balanced_recall": 0.8333,
+        "phase_14_balanced_recall_pct": "83.33% (5/6)"
+      }
+    },
+    "dataset_variant_2_comprehensive_range_42_clips": {
+      "source_phase": "Phase 19 (Category D)",
+      "eval_set_description": "Comprehensive Mitchell 2015 range recording archive (18 direct + 6 clipped + 18 muffled)",
+      "denominator_genuine_events": 42,
+      "phase_14_balanced": {
+        "detected": 35,
+        "missed": 7,
+        "false_alerts": 5,
+        "event_recall": 0.8333,
+        "event_recall_pct": "83.33% (35/42)",
+        "event_precision_pct": "87.50% (35/40)"
+      },
+      "phase_17_experimental": {
+        "detected": 38,
+        "missed": 4,
+        "false_alerts": 3,
+        "event_recall": 0.9048,
+        "event_recall_pct": "90.48% (38/42)"
+      }
+    }
+  },
+  "audit_verdict": {
+    "is_83_33_percent_valid": true,
+    "valid_scope_for_83_33": "Phase 14 Balanced on the 42-clip Category D comprehensive range set (35/42 = 83.33%), and Phase 14 High-Sensitivity precision on 28 events (25/30 = 83.33%), and Phase 14 Balanced clipped recall (5/6 = 83.33%).",
+    "is_89_3_percent_valid": true,
+    "valid_scope_for_89_3": "Phase 14 High-Sensitivity recall on the 28-event blind discrete range test set (25/28 = 89.29% ~ 89.3%).",
+    "root_cause_of_discrepancy": "In Phase 20's phase20_cross_category_interpretation.md, the author cited 'Phase 14 Balanced: 89.3%' in the summary table. This was a clerical reporting error: 89.29% belonged to Phase 14 High-Sensitivity on the 28-event set. The correct Phase 14 Balanced recall is 83.33% (35/42) on the 42-clip Category D benchmark, and 75.00% (21/28) on the 28-event discrete benchmark.",
+    "correction_action": "Documented in audit trail. Historical files preserved. Canonical Category D recall for Phase 14 Balanced is certified as 83.33% (35/42)."
+  }
+}

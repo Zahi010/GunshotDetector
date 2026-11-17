@@ -1,0 +1,10 @@
+{
+  "selected_optimal_threshold": 0.19,
+  "threshold_selection_criterion": "Optimized on validation set to maximize F1 score while penalizing false alarms",
+  "presets": {
+    "high_recall_sensitive": 0.15,
+    "balanced_optimal": 0.19,
+    "high_precision_conservative": 0.25
+  },
+  "event_merge_window_secs": 1.0
+}

@@ -1,0 +1,248 @@
+{
+  "evaluation_name": "Phase 16 Naturally Continuous Negative Evaluation",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "total_exposure_seconds": 21900.0,
+  "total_exposure_hours": 6.083,
+  "number_of_streams": 11,
+  "detector_summaries": {
+    "Phase 9 Baseline": {
+      "total_alerts": 6,
+      "rate_per_hour": 0.99,
+      "mtbfa_minutes": 60.8,
+      "exposure_hours": 6.08
+    },
+    "Phase 13 Candidate": {
+      "total_alerts": 6,
+      "rate_per_hour": 0.99,
+      "mtbfa_minutes": 60.8,
+      "exposure_hours": 6.08
+    },
+    "Phase 14 Balanced": {
+      "total_alerts": 6,
+      "rate_per_hour": 0.99,
+      "mtbfa_minutes": 60.8,
+      "exposure_hours": 6.08
+    },
+    "Phase 14 High-Precision": {
+      "total_alerts": 0,
+      "rate_per_hour": 0.0,
+      "mtbfa_minutes": 365.0,
+      "exposure_hours": 6.08
+    },
+    "Phase 14 High-Sensitivity": {
+      "total_alerts": 11,
+      "rate_per_hour": 1.81,
+      "mtbfa_minutes": 33.2,
+      "exposure_hours": 6.08
+    }
+  },
+  "category_breakdown": [
+    {
+      "category": "general_indoor_ambience",
+      "exposure_hours": 1.0,
+      "p9_alerts": 0,
+      "p9_rate_per_hr": 0.0,
+      "p13_alerts": 0,
+      "p13_rate_per_hr": 0.0,
+      "p14_b_alerts": 0,
+      "p14_b_rate_per_hr": 0.0,
+      "p14_hp_alerts": 0,
+      "p14_hp_rate_per_hr": 0.0,
+      "p14_hs_alerts": 0,
+      "p14_hs_rate_per_hr": 0.0
+    },
+    {
+      "category": "industrial_and_mechanical",
+      "exposure_hours": 2.5,
+      "p9_alerts": 0,
+      "p9_rate_per_hr": 0.0,
+      "p13_alerts": 0,
+      "p13_rate_per_hr": 0.0,
+      "p14_b_alerts": 0,
+      "p14_b_rate_per_hr": 0.0,
+      "p14_hp_alerts": 0,
+      "p14_hp_rate_per_hr": 0.0,
+      "p14_hs_alerts": 0,
+      "p14_hs_rate_per_hr": 0.0
+    },
+    {
+      "category": "natural_weather",
+      "exposure_hours": 0.583,
+      "p9_alerts": 0,
+      "p9_rate_per_hr": 0.0,
+      "p13_alerts": 0,
+      "p13_rate_per_hr": 0.0,
+      "p14_b_alerts": 0,
+      "p14_b_rate_per_hr": 0.0,
+      "p14_hp_alerts": 0,
+      "p14_hp_rate_per_hr": 0.0,
+      "p14_hs_alerts": 0,
+      "p14_hs_rate_per_hr": 0.0
+    },
+    {
+      "category": "percussive_acoustic_mimics",
+      "exposure_hours": 0.5,
+      "p9_alerts": 0,
+      "p9_rate_per_hr": 0.0,
+      "p13_alerts": 0,
+      "p13_rate_per_hr": 0.0,
+      "p14_b_alerts": 0,
+      "p14_b_rate_per_hr": 0.0,
+      "p14_hp_alerts": 0,
+      "p14_hp_rate_per_hr": 0.0,
+      "p14_hs_alerts": 0,
+      "p14_hs_rate_per_hr": 0.0
+    },
+    {
+      "category": "public_spaces",
+      "exposure_hours": 0.5,
+      "p9_alerts": 0,
+      "p9_rate_per_hr": 0.0,
+      "p13_alerts": 0,
+      "p13_rate_per_hr": 0.0,
+      "p14_b_alerts": 0,
+      "p14_b_rate_per_hr": 0.0,
+      "p14_hp_alerts": 0,
+      "p14_hp_rate_per_hr": 0.0,
+      "p14_hs_alerts": 0,
+      "p14_hs_rate_per_hr": 0.0
+    },
+    {
+      "category": "traffic_and_road",
+      "exposure_hours": 1.0,
+      "p9_alerts": 6,
+      "p9_rate_per_hr": 6.0,
+      "p13_alerts": 6,
+      "p13_rate_per_hr": 6.0,
+      "p14_b_alerts": 6,
+      "p14_b_rate_per_hr": 6.0,
+      "p14_hp_alerts": 0,
+      "p14_hp_rate_per_hr": 0.0,
+      "p14_hs_alerts": 11,
+      "p14_hs_rate_per_hr": 11.0
+    }
+  ],
+  "streams": [
+    {
+      "filename": "phase16_industrial_compressor_pneumatic_60min.wav",
+      "stream_id": "P16-STREAM-01",
+      "category": "industrial_and_mechanical",
+      "duration_seconds": 3600.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_industrial_exhaust_ventilation_30min.wav",
+      "stream_id": "P16-STREAM-02",
+      "category": "industrial_and_mechanical",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_industrial_concrete_mixer_30min.wav",
+      "stream_id": "P16-STREAM-03",
+      "category": "industrial_and_mechanical",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_industrial_monoblock_pump_30min.wav",
+      "stream_id": "P16-STREAM-04",
+      "category": "industrial_and_mechanical",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_traffic_road_arterial_30min.wav",
+      "stream_id": "P16-STREAM-05",
+      "category": "traffic_and_road",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 6,
+      "Phase 13 Candidate_alerts": 6,
+      "Phase 14 Balanced_alerts": 6,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 11
+    },
+    {
+      "filename": "phase16_traffic_transit_train_30min.wav",
+      "stream_id": "P16-STREAM-06",
+      "category": "traffic_and_road",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_public_space_canteen_plaza_30min.wav",
+      "stream_id": "P16-STREAM-07",
+      "category": "public_spaces",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_percussion_acoustic_drums_30min.wav",
+      "stream_id": "P16-STREAM-08",
+      "category": "percussive_acoustic_mimics",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_indoor_appliance_washing_machine_30min.wav",
+      "stream_id": "P16-STREAM-09",
+      "category": "general_indoor_ambience",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_indoor_interior_laptop_exhaust_30min.wav",
+      "stream_id": "P16-STREAM-10",
+      "category": "general_indoor_ambience",
+      "duration_seconds": 1800.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    },
+    {
+      "filename": "phase16_natural_weather_aquatic_reservoir_35min.wav",
+      "stream_id": "P16-STREAM-11",
+      "category": "natural_weather",
+      "duration_seconds": 2100.0,
+      "Phase 9 Baseline_alerts": 0,
+      "Phase 13 Candidate_alerts": 0,
+      "Phase 14 Balanced_alerts": 0,
+      "Phase 14 High-Precision_alerts": 0,
+      "Phase 14 High-Sensitivity_alerts": 0
+    }
+  ]
+}

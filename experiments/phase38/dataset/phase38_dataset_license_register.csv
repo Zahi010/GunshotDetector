@@ -1,0 +1,8 @@
+license_type,recordings_count,partitions_represented,sources_represented,commercial_use_permitted,redistribution_permitted,attribution_required
+CC BY 3.0,5,PARTITION_PROSPECTIVE_CONTINUOUS,Radio_Aporee_Maps_ArchiveOrg,Yes,Yes,Yes
+CC BY-NC-ND 3.0,1,PARTITION_PROSPECTIVE_CONTINUOUS,Radio_Aporee_Maps_ArchiveOrg,No (Non-Commercial Research Only),Yes (Unmodified with Attribution),Yes
+Public Domain Mark 1.0,1,PARTITION_PROSPECTIVE_CONTINUOUS,Radio_Aporee_Maps_ArchiveOrg,Yes,Yes,No (Public Domain / CC0)
+http://creativecommons.org/licenses/by-nc/3.0/,24,PARTITION_PROSPECTIVE_DISTRACTOR; PARTITION_PROSPECTIVE_POSITIVE,FSD50K_dev,No (Non-Commercial Research Only),Yes,Yes
+http://creativecommons.org/licenses/by/3.0/,113,PARTITION_PROSPECTIVE_DISTRACTOR; PARTITION_PROSPECTIVE_POSITIVE,FSD50K_dev,Yes,Yes,Yes
+http://creativecommons.org/licenses/sampling+/1.0/,11,PARTITION_PROSPECTIVE_DISTRACTOR; PARTITION_PROSPECTIVE_POSITIVE,FSD50K_dev,Yes,Yes,Yes
+http://creativecommons.org/publicdomain/zero/1.0/,92,PARTITION_PROSPECTIVE_DISTRACTOR; PARTITION_PROSPECTIVE_POSITIVE,FSD50K_dev,Yes,Yes,No (Public Domain / CC0)

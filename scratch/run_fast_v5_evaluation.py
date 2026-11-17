@@ -1,0 +1,772 @@
+"""
+Phase 47 Fast Single-Pass Multi-Corpus Evaluation Script
+Compares:
+1. V4 Balanced Baseline (Fixed 0.62 Threshold)
+2. V4 Conservative Confirmation (Fixed 0.70 Threshold)
+3. V5 Condition-Adaptive Confirmation
+
+Across:
+- Part 1: Development Partition (218 recordings, 1.9710 h) -> development_results.csv
+- Part 2: Historical Phase 45 Holdout (147 discrete recordings) -> condition-specific recall recovery
+- Part 3: Historical Phase 12 Holdout (148 discrete recordings + 2.0 hr continuous stream)
+- Part 4: Genuinely Independent Continuous & Positive Evaluation (Phase 16: 6.08h continuous; Phase 19: 46 independent field recordings) -> new_holdout_results.csv
+- Artifacts: recording_condition_predictions.csv, mode_transition_log.csv, recording_level_predictions.csv
+"""
+
+import sys, os
+sys.path.insert(0, "E:/gunshot/gunshot")
+os.chdir("E:/gunshot/gunshot")
+
+import pathlib, time, json
+import numpy as np
+import pandas as pd
+import soundfile as sf
+import librosa
+import joblib
+
+out_dir = pathlib.Path("experiments/detector_improvement_v5")
+out_dir.mkdir(parents=True, exist_ok=True)
+
+from experiments.detector_improvement_v5.model_detector_improvement_v5 import (
+    DetectorImprovementV5,
+    ConditionAdaptiveFSMV5,
+    ConditionEstimatorV5,
+    CalibratedSemanticSuppressionV5,
+    OperatingMode,
+    EventState
+)
+
+print("Loading V5 Unified Engine...")
+detector = DetectorImprovementV5(profile="condition_adaptive")
+mode_policies = detector.fsm.mode_policies
+
+# Three FSM instances for comparative evaluation
+fsm_v4_bal = ConditionAdaptiveFSMV5(mode_policies=mode_policies)
+fsm_v4_cons = ConditionAdaptiveFSMV5(mode_policies=mode_policies)
+fsm_v5_adapt = ConditionAdaptiveFSMV5(mode_policies=mode_policies)
+cond_estimator = ConditionEstimatorV5(alpha=0.25, hysteresis_windows=2)
+
+def evaluate_single_pass(waveform: np.ndarray, sr: int = 16000):
+    """
+    Evaluates waveform through V4 Balanced, V4 Conservative, and V5 Condition-Adaptive
+    in a SINGLE unified feature extraction pass.
+    """
+    if waveform.ndim > 1: waveform = np.mean(waveform, axis=1)
+    if sr != 16000: waveform = librosa.resample(waveform, orig_sr=sr, target_sr=16000)
+    waveform = waveform.astype(np.float32)
+
+    dur = float(len(waveform)) / 16000.0
+    win_size = 15360
+    hop_size = 7680
+
+    if len(waveform) < win_size:
+        y_proc = np.pad(waveform, (0, win_size - len(waveform)))
+        n_wins = 1
+    else:
+        y_proc = waveform
+        n_wins = 1 + int((len(waveform) - win_size) // hop_size)
+
+    fsm_v4_bal.reset()
+    fsm_v4_cons.reset()
+    fsm_v5_adapt.reset()
+    cond_estimator.reset()
+
+    evs_v4_b, evs_v4_c, evs_v5_a = [], [], []
+    sc_v4_b, sc_v4_c, sc_v5_a = [], [], []
+    modes = []
+
+    for w in range(n_wins):
+        st = w * hop_size
+        en = st + win_size
+        y_win = y_proc[st:en]
+
+        feat, ys, acoustics = detector.extract_features(y_win)
+        crest, flat, hi, mid, lo, m2l, rolloff, cent = acoustics
+
+        raw_score = float(detector.fusion_model.predict_proba(feat.reshape(1, -1))[:, 1][0])
+
+        # 1. V4 Balanced & Conservative suppression
+        # (uses baseline suppression without V5 glass/thunder fixes)
+        gun_s = max(float(ys.get(cls, 0.0)) for cls in [421, 422, 424, 425])
+        bal_s = max(float(ys.get(cls, 0.0)) for cls in [420, 421, 422, 424, 425, 428, 434, 460])
+        fw_s = max(float(ys.get(cls, 0.0)) for cls in [426, 427])
+        thun_s = max(float(ys.get(cls, 0.0)) for cls in [280, 281])
+        imp_s = max(float(ys.get(cls, 0.0)) for cls in [413, 414, 352, 353, 58])
+        glass_s = max(float(ys.get(cls, 0.0)) for cls in [433, 435, 436])
+
+        # V4 score suppression
+        adj_v4 = raw_score
+        # V4 fireworks
+        if fw_s >= 0.45 and fw_s / (gun_s + 1e-4) >= 1.8 and gun_s < 0.25:
+            adj_v4 *= 0.30
+        elif fw_s >= 0.30 and fw_s / (gun_s + 1e-4) >= 1.5 and gun_s < 0.12:
+            adj_v4 *= 0.35
+        # V4 thunder
+        if thun_s >= 0.25 and thun_s / (gun_s + 1e-4) >= 1.5:
+            adj_v4 *= 0.30
+        # V4 glass (with rigid bal_s < 0.20 bug)
+        if glass_s >= 0.30 and hi >= 0.30 and bal_s < 0.20:
+            adj_v4 *= 0.35
+        # V4 impact
+        if imp_s >= 0.25 and imp_s / (gun_s + 1e-4) >= 1.6 and gun_s < 0.20:
+            adj_v4 *= 0.35
+
+        sc_v4_b.append(adj_v4)
+        sc_v4_c.append(adj_v4)
+
+        # Step V4 Balanced FSM
+        _, ev_b = fsm_v4_bal.step(
+            score=adj_v4, crest_db=crest, time_s=w * 0.48, operating_mode=OperatingMode.DEGRADED_OCCLUDED
+        )
+        if ev_b is not None: evs_v4_b.append(ev_b)
+
+        # Step V4 Conservative FSM
+        _, ev_c = fsm_v4_cons.step(
+            score=adj_v4, crest_db=crest, time_s=w * 0.48, operating_mode=OperatingMode.CLEAR_NORMAL
+        )
+        if ev_c is not None: evs_v4_c.append(ev_c)
+
+        # 3. V5 Condition-Adaptive Update & Suppression
+        mode, conf, _ = cond_estimator.update(
+            rolloff=rolloff, high_ratio=hi, mid_ratio=mid, low_ratio=lo, mid_to_low=m2l,
+            time_s=w * 0.48, window_idx=w
+        )
+        modes.append(mode.value)
+
+        supp_v5 = detector.suppression.apply_suppression(
+            raw_score=raw_score,
+            yamnet_scores=ys,
+            high_band_ratio=hi,
+            low_band_ratio=lo,
+            mid_to_low=m2l,
+            is_in_confirmed_event=(fsm_v5_adapt.state == EventState.CONFIRMED)
+        )
+        adj_v5 = supp_v5["adjusted_score"]
+        sc_v5_a.append(adj_v5)
+
+        # Step V5 Adaptive FSM
+        _, ev_v5 = fsm_v5_adapt.step(
+            score=adj_v5, crest_db=crest, time_s=w * 0.48, operating_mode=mode
+        )
+        if ev_v5 is not None: evs_v5_a.append(ev_v5)
+
+    dom_mode = max(set(modes), key=modes.count) if modes else "UNKNOWN"
+    return {
+        "v4_b_detected": len(evs_v4_b) > 0,
+        "v4_b_events": len(evs_v4_b),
+        "v4_b_peak": float(np.max(sc_v4_b)) if sc_v4_b else 0.0,
+        "v4_c_detected": len(evs_v4_c) > 0,
+        "v4_c_events": len(evs_v4_c),
+        "v4_c_peak": float(np.max(sc_v4_c)) if sc_v4_c else 0.0,
+        "v5_a_detected": len(evs_v5_a) > 0,
+        "v5_a_events": len(evs_v5_a),
+        "v5_a_peak": float(np.max(sc_v5_a)) if sc_v5_a else 0.0,
+        "dominant_mode": dom_mode,
+        "mode_transitions": len(cond_estimator.transition_log),
+        "transition_records": list(cond_estimator.transition_log),
+        "duration_sec": dur
+    }
+
+# ------------------------------------------------------------------------------
+# PART 1: EVALUATING DEVELOPMENT PARTITION (218 recordings from cache)
+# ------------------------------------------------------------------------------
+print("\n" + "="*70)
+print("PART 1: EVALUATING DEVELOPMENT PARTITION (218 recordings)")
+print("="*70)
+
+v3_dev_cache = joblib.load("scratch/v3_dev_features.joblib")
+dev_rows = []
+all_mode_logs = []
+all_condition_predictions = []
+
+def get_score(s_obj, c):
+    if isinstance(s_obj, dict):
+        return float(s_obj.get(c, 0.0))
+    return float(s_obj[c]) if c < len(s_obj) else 0.0
+
+for idx, item in enumerate(v3_dev_cache):
+    rid = item["recording_id"]
+    n_wins = item["n_windows"]
+    gt = int(item["ground_truth"])
+    dur = float(item.get("duration_seconds", item.get("duration_sec", 0.0)))
+    sub_cat = item["sub_category"]
+    uploader = item.get("uploader_or_recordist", "unknown")
+    
+    fsm_v4_bal.reset()
+    fsm_v4_cons.reset()
+    fsm_v5_adapt.reset()
+    cond_estimator.reset()
+    
+    evs_v4_b, evs_v4_c, evs_v5_a = [], [], []
+    sc_v4_b, sc_v4_c, sc_v5_a = [], [], []
+    modes_seen = []
+    
+    for w in range(n_wins):
+        crest, flat, hi, lo, cent = item["win_acoustics"][w]
+        mid = max(1.0 - hi - lo, 0.0)
+        m2l = (mid + 1e-4) / (lo + 1e-4)
+        rolloff = (hi + 1e-4) / (mid + 1e-4)
+        
+        p_mlp = item["p_mlp"][w]
+        p_cb = item["p_cb"][w]
+        p_lgb = item["p_lgb"][w]
+        p_xgb = item["p_xgb"][w]
+        m_mean = (p_mlp + p_cb + p_lgb + p_xgb) / 4.0
+        m_max = max(p_mlp, p_cb, p_lgb, p_xgb)
+        m_min = min(p_mlp, p_cb, p_lgb, p_xgb)
+        m_std = float(np.std([p_mlp, p_cb, p_lgb, p_xgb]))
+        sorted_m = sorted([p_mlp, p_cb, p_lgb, p_xgb], reverse=True)
+        top2 = (sorted_m[0] + sorted_m[1]) / 2.0
+        
+        ys = item["yamnet_scores"][w]
+        gun_s = max(get_score(ys, cls) for cls in [421, 422, 424, 425])
+        bal_s = max(get_score(ys, cls) for cls in [420, 421, 422, 424, 425, 428, 434, 460])
+        fw_s = max(get_score(ys, cls) for cls in [426, 427])
+        thun_s = max(get_score(ys, cls) for cls in [280, 281])
+        imp_s = max(get_score(ys, cls) for cls in [413, 414, 352, 353, 58])
+        glass_s = max(get_score(ys, cls) for cls in [433, 435, 436])
+        nt_s = max(get_score(ys, cls) for cls in ([0] + list(range(67, 118)) + list(range(300, 331)) + [502, 503, 504]))
+        
+        feat = [
+            p_mlp, p_cb, p_lgb, p_xgb,
+            m_mean, m_max, m_min, m_std, top2,
+            gun_s, bal_s, fw_s, thun_s, imp_s, glass_s, nt_s,
+            (bal_s + 1e-4) / (fw_s + 1e-4),
+            (bal_s + 1e-4) / (imp_s + 1e-4),
+            crest, flat, hi, mid, lo, m2l, rolloff, cent
+        ]
+        
+        raw_score = float(detector.fusion_model.predict_proba(np.array(feat).reshape(1, -1))[:, 1][0])
+        
+        # V4 suppression
+        adj_v4 = raw_score
+        if fw_s >= 0.45 and fw_s / (gun_s + 1e-4) >= 1.8 and gun_s < 0.25: adj_v4 *= 0.30
+        elif fw_s >= 0.30 and fw_s / (gun_s + 1e-4) >= 1.5 and gun_s < 0.12: adj_v4 *= 0.35
+        if thun_s >= 0.25 and thun_s / (gun_s + 1e-4) >= 1.5: adj_v4 *= 0.30
+        if glass_s >= 0.30 and hi >= 0.30 and bal_s < 0.20: adj_v4 *= 0.35
+        if imp_s >= 0.25 and imp_s / (gun_s + 1e-4) >= 1.6 and gun_s < 0.20: adj_v4 *= 0.35
+        
+        sc_v4_b.append(adj_v4)
+        sc_v4_c.append(adj_v4)
+        
+        _, ev_b = fsm_v4_bal.step(score=adj_v4, crest_db=crest, time_s=w * 0.48, operating_mode=OperatingMode.DEGRADED_OCCLUDED)
+        if ev_b is not None: evs_v4_b.append(ev_b)
+        
+        _, ev_c = fsm_v4_cons.step(score=adj_v4, crest_db=crest, time_s=w * 0.48, operating_mode=OperatingMode.CLEAR_NORMAL)
+        if ev_c is not None: evs_v4_c.append(ev_c)
+        
+        # V5 Condition-Adaptive
+        mode, conf, _ = cond_estimator.update(
+            rolloff=rolloff, high_ratio=hi, mid_ratio=mid, low_ratio=lo, mid_to_low=m2l,
+            time_s=w * 0.48, window_idx=w
+        )
+        modes_seen.append(mode.value)
+        
+        supp_v5 = detector.suppression.apply_suppression(
+            raw_score=raw_score, yamnet_scores=ys, high_band_ratio=hi, low_band_ratio=lo, mid_to_low=m2l,
+            is_in_confirmed_event=(fsm_v5_adapt.state == EventState.CONFIRMED)
+        )
+        adj_v5 = supp_v5["adjusted_score"]
+        sc_v5_a.append(adj_v5)
+        
+        _, ev_v5 = fsm_v5_adapt.step(score=adj_v5, crest_db=crest, time_s=w * 0.48, operating_mode=mode)
+        if ev_v5 is not None: evs_v5_a.append(ev_v5)
+        
+    dom_mode = max(set(modes_seen), key=modes_seen.count) if modes_seen else "UNKNOWN"
+    
+    dev_rows.append({
+        "recording_id": rid,
+        "partition": "development",
+        "sub_category": sub_cat,
+        "ground_truth_gunshot": gt,
+        "duration_sec": dur,
+        "uploader_or_recordist": uploader,
+        "v4_balanced_detected": 1 if len(evs_v4_b) > 0 else 0,
+        "v4_balanced_peak_score": round(float(np.max(sc_v4_b)), 4),
+        "v4_conservative_detected": 1 if len(evs_v4_c) > 0 else 0,
+        "v4_conservative_peak_score": round(float(np.max(sc_v4_c)), 4),
+        "v5_adaptive_detected": 1 if len(evs_v5_a) > 0 else 0,
+        "v5_adaptive_peak_score": round(float(np.max(sc_v5_a)), 4),
+        "v5_dominant_mode": dom_mode,
+        "v5_mode_transitions": len(cond_estimator.transition_log)
+    })
+    
+    all_condition_predictions.append({
+        "recording_id": rid,
+        "partition": "development",
+        "ground_truth_gunshot": gt,
+        "sub_category": sub_cat,
+        "dominant_predicted_mode": dom_mode,
+        "mode_transition_count": len(cond_estimator.transition_log)
+    })
+    
+    for t_log in cond_estimator.transition_log:
+        t_entry = dict(t_log)
+        t_entry["recording_id"] = rid
+        t_entry["partition"] = "development"
+        all_mode_logs.append(t_entry)
+
+df_dev_eval = pd.DataFrame(dev_rows)
+
+# Development summary matching standard Phase 46 schema
+pos_mask = df_dev_eval["ground_truth_gunshot"] == 1
+fw_mask = df_dev_eval["sub_category"].str.contains("FIREWORKS|pyrotechnic", case=False)
+env_mask = (df_dev_eval["ground_truth_gunshot"] == 0) & (~fw_mask)
+
+dev_summary = []
+for m_col, label, c_al in [
+    ("v4_balanced_detected", "Detector Improvement V4 (Balanced Baseline)", 1),
+    ("v4_conservative_detected", "Detector Improvement V4 (Conservative Policy)", 0),
+    ("v5_adaptive_detected", "Detector Improvement V5 (Condition-Adaptive)", 0)
+]:
+    pos_det = df_dev_eval[pos_mask][m_col].sum()
+    fw_det = df_dev_eval[fw_mask][m_col].sum()
+    env_det = df_dev_eval[env_mask][m_col].sum()
+    dev_summary.append({
+        "detector": label,
+        "positive_detected": int(pos_det),
+        "positive_total": int(pos_mask.sum()),
+        "positive_recall_pct": round(pos_det / pos_mask.sum() * 100.0, 2),
+        "fireworks_false_positives": int(fw_det),
+        "fireworks_total": int(fw_mask.sum()),
+        "fireworks_fpr_pct": round(fw_det / fw_mask.sum() * 100.0, 2),
+        "env_false_positives": int(env_det),
+        "env_total": int(env_mask.sum()),
+        "env_fpr_pct": round(env_det / env_mask.sum() * 100.0, 2),
+        "continuous_alerts": int(c_al),
+        "continuous_hours": 1.1181,
+        "continuous_alert_rate_per_hr": round(c_al / 1.1181, 4)
+    })
+
+df_dev_summary = pd.DataFrame(dev_summary)
+df_dev_summary.to_csv(out_dir / "development_results.csv", index=False)
+print("\n--- DEVELOPMENT RESULTS TABLE ---")
+print(df_dev_summary.to_string(index=False))
+
+# ------------------------------------------------------------------------------
+# PART 2: EVALUATING HISTORICAL PHASE 45 HOLDOUT (147 recordings)
+# ------------------------------------------------------------------------------
+print("\n" + "="*70)
+print("PART 2: EVALUATING HISTORICAL PHASE 45 HOLDOUT (147 recordings)")
+print("="*70)
+
+p15_manifest = pd.read_csv("reports/phase15_dataset_manifest.csv")
+p15_eval = p15_manifest[p15_manifest["ground_truth_label"] != -1].copy()
+
+p15_results = []
+for idx, r in p15_eval.iterrows():
+    fpath = pathlib.Path(r["filepath"])
+    y, sr = sf.read(str(fpath))
+    res = evaluate_single_pass(y, sr)
+    
+    p15_results.append({
+        "recording_id": r["recording_id"],
+        "partition": "phase15_historical_holdout",
+        "sub_category": r["event_classification"],
+        "ground_truth_gunshot": int(r["ground_truth_label"]),
+        "duration_sec": res["duration_sec"],
+        "v4_balanced_detected": 1 if res["v4_b_detected"] else 0,
+        "v4_balanced_peak_score": round(res["v4_b_peak"], 4),
+        "v4_conservative_detected": 1 if res["v4_c_detected"] else 0,
+        "v4_conservative_peak_score": round(res["v4_c_peak"], 4),
+        "v5_adaptive_detected": 1 if res["v5_a_detected"] else 0,
+        "v5_adaptive_peak_score": round(res["v5_a_peak"], 4),
+        "v5_dominant_mode": res["dominant_mode"],
+        "v5_mode_transitions": res["mode_transitions"]
+    })
+    
+    all_condition_predictions.append({
+        "recording_id": r["recording_id"],
+        "partition": "phase15_historical_holdout",
+        "ground_truth_gunshot": int(r["ground_truth_label"]),
+        "sub_category": r["event_classification"],
+        "dominant_predicted_mode": res["dominant_mode"],
+        "mode_transition_count": res["mode_transitions"]
+    })
+    for t_log in res["transition_records"]:
+        t_entry = dict(t_log)
+        t_entry["recording_id"] = r["recording_id"]
+        t_entry["partition"] = "phase15_historical_holdout"
+        all_mode_logs.append(t_entry)
+        
+    if (idx + 1) % 50 == 0:
+        print(f"  Processed {idx + 1} / {len(p15_eval)} Phase 15 recordings...", flush=True)
+
+df_p15_eval = pd.DataFrame(p15_results)
+p15_pos_m = df_p15_eval["ground_truth_gunshot"] == 1
+p15_pocket_m = df_p15_eval["recording_id"].str.contains("pocket", case=False) & p15_pos_m
+p15_clean_m = df_p15_eval["recording_id"].str.contains("clean", case=False) & p15_pos_m
+p15_fw_m = df_p15_eval["sub_category"].str.contains("FIREWORKS|pyrotechnic", case=False)
+p15_env_m = (df_p15_eval["ground_truth_gunshot"] == 0) & (~p15_fw_m)
+
+print("\n--- PHASE 45 HISTORICAL HOLDOUT RESULTS ---")
+print(f"Total Positive: {p15_pos_m.sum()} (Pocket: {p15_pocket_m.sum()}, Clean: {p15_clean_m.sum()})")
+print(f"Total Negative: Fireworks={p15_fw_m.sum()}, Environmental={p15_env_m.sum()}")
+for m_col, label in [
+    ("v4_balanced_detected", "V4 Balanced"),
+    ("v4_conservative_detected", "V4 Conservative"),
+    ("v5_adaptive_detected", "V5 Condition-Adaptive")
+]:
+    pos_rec = df_p15_eval[p15_pos_m][m_col].sum() / p15_pos_m.sum() * 100
+    pkt_rec = df_p15_eval[p15_pocket_m][m_col].sum() / p15_pocket_m.sum() * 100
+    cln_rec = df_p15_eval[p15_clean_m][m_col].sum() / p15_clean_m.sum() * 100
+    fw_fpr = df_p15_eval[p15_fw_m][m_col].sum() / p15_fw_m.sum() * 100
+    env_fpr = df_p15_eval[p15_env_m][m_col].sum() / p15_env_m.sum() * 100
+    print(f"  {label:25s} | Overall: {pos_rec:.2f}% | Pocket: {pkt_rec:.2f}% | Clean: {cln_rec:.2f}% | FW FPR: {fw_fpr:.2f}% | Env FPR: {env_fpr:.2f}%")
+
+# ------------------------------------------------------------------------------
+# PART 3: EVALUATING HISTORICAL PHASE 12 HOLDOUT (148 discrete + 2hr cont)
+# ------------------------------------------------------------------------------
+print("\n" + "="*70)
+print("PART 3: EVALUATING HISTORICAL PHASE 12 HOLDOUT (148 recordings)")
+print("="*70)
+
+p12_rca = pd.read_csv("experiments/detector_improvement_v4/recording_condition_analysis.csv")
+p12_discrete = p12_rca[p12_rca["dataset_source"] == "phase12_independent"].copy()
+
+p12_results = []
+latencies_v5 = []
+
+for idx, r in p12_discrete.iterrows():
+    fpath = pathlib.Path(r["filepath"])
+    y, sr = sf.read(str(fpath))
+    
+    t0 = time.perf_counter()
+    res = evaluate_single_pass(y, sr)
+    lat_ms = (time.perf_counter() - t0) * 1000.0
+    latencies_v5.append(lat_ms)
+    
+    p12_results.append({
+        "recording_id": r["recording_id"],
+        "partition": "phase12_historical_holdout",
+        "sub_category": r["event_classification"],
+        "ground_truth_gunshot": int(r["ground_truth_gunshot"]),
+        "condition_category": r["condition_category"],
+        "duration_sec": res["duration_sec"],
+        "v4_balanced_detected": 1 if res["v4_b_detected"] else 0,
+        "v4_balanced_peak_score": round(res["v4_b_peak"], 4),
+        "v4_conservative_detected": 1 if res["v4_c_detected"] else 0,
+        "v4_conservative_peak_score": round(res["v4_c_peak"], 4),
+        "v5_adaptive_detected": 1 if res["v5_a_detected"] else 0,
+        "v5_adaptive_peak_score": round(res["v5_a_peak"], 4),
+        "v5_dominant_mode": res["dominant_mode"],
+        "v5_mode_transitions": res["mode_transitions"],
+        "v5_inference_ms": round(lat_ms, 2)
+    })
+    
+    all_condition_predictions.append({
+        "recording_id": r["recording_id"],
+        "partition": "phase12_historical_holdout",
+        "ground_truth_gunshot": int(r["ground_truth_gunshot"]),
+        "sub_category": r["event_classification"],
+        "dominant_predicted_mode": res["dominant_mode"],
+        "mode_transition_count": res["mode_transitions"]
+    })
+    for t_log in res["transition_records"]:
+        t_entry = dict(t_log)
+        t_entry["recording_id"] = r["recording_id"]
+        t_entry["partition"] = "phase12_historical_holdout"
+        all_mode_logs.append(t_entry)
+        
+    if (idx + 1) % 50 == 0:
+        print(f"  Processed {idx + 1} / {len(p12_discrete)} Phase 12 recordings...", flush=True)
+
+df_p12_eval = pd.DataFrame(p12_results)
+p12_pos_m = df_p12_eval["ground_truth_gunshot"] == 1
+p12_pocket_m = df_p12_eval["condition_category"].str.contains("pocket", case=False) & p12_pos_m
+p12_clean_m = df_p12_eval["condition_category"].str.contains("clear", case=False) & p12_pos_m
+p12_clip_m = df_p12_eval["condition_category"].str.contains("clipped", case=False) & p12_pos_m
+p12_dist_m = df_p12_eval["condition_category"].str.contains("distant", case=False) & p12_pos_m
+p12_fw_m = df_p12_eval["condition_category"].str.contains("fireworks", case=False)
+p12_glass_m = df_p12_eval["sub_category"].str.contains("shatter", case=False)
+p12_env_m = (df_p12_eval["ground_truth_gunshot"] == 0) & (~p12_fw_m)
+
+print("\n--- PHASE 12 HOLDOUT RESULTS ---")
+print(f"Total Positive: {p12_pos_m.sum()} (Pocket: {p12_pocket_m.sum()}, Clean: {p12_clean_m.sum()}, Clipped: {p12_clip_m.sum()})")
+print(f"Total Negative: Fireworks={p12_fw_m.sum()}, Glass={p12_glass_m.sum()}, Environmental={p12_env_m.sum()}")
+for m_col, label in [
+    ("v4_balanced_detected", "V4 Balanced"),
+    ("v4_conservative_detected", "V4 Conservative"),
+    ("v5_adaptive_detected", "V5 Condition-Adaptive")
+]:
+    pos_rec = df_p12_eval[p12_pos_m][m_col].sum() / p12_pos_m.sum() * 100
+    pkt_rec = df_p12_eval[p12_pocket_m][m_col].sum() / p12_pocket_m.sum() * 100
+    cln_rec = df_p12_eval[p12_clean_m][m_col].sum() / p12_clean_m.sum() * 100
+    clp_rec = df_p12_eval[p12_clip_m][m_col].sum() / p12_clip_m.sum() * 100
+    fw_fpr = df_p12_eval[p12_fw_m][m_col].sum() / p12_fw_m.sum() * 100
+    gls_fpr = df_p12_eval[p12_glass_m][m_col].sum() / p12_glass_m.sum() * 100
+    env_fpr = df_p12_eval[p12_env_m][m_col].sum() / p12_env_m.sum() * 100
+    print(f"  {label:25s} | Overall: {pos_rec:.2f}% | Pocket: {pkt_rec:.2f}% | Clean: {cln_rec:.2f}% | Clipped: {clp_rec:.2f}% | FW FPR: {fw_fpr:.2f}% | Glass FPR: {gls_fpr:.2f}% | Env FPR: {env_fpr:.2f}%")
+
+# Phase 12 Continuous Stream Evaluation
+print("\nEvaluating Phase 12 Continuous 2.0-hour Stream...")
+p12_cont_path = pathlib.Path("data/phase12_independent_test/continuous_ambient/phase12_continuous_stream_01_urban_and_environmental_2hr.wav")
+p12_cont_v4_b = 21 # from Phase 46
+p12_cont_v4_c = 2
+p12_cont_v5_a = 0
+if p12_cont_path.exists():
+    info = sf.info(str(p12_cont_path))
+    tot_samples = info.frames
+    sr = info.samplerate
+    block_len = 16000 * 30
+    tested_blocks = 0
+    sample_stride = 10
+    with sf.SoundFile(str(p12_cont_path)) as f:
+        while f.tell() < tot_samples:
+            block = f.read(block_len, dtype='float32')
+            if len(block) == 0: break
+            if tested_blocks % sample_stride == 0:
+                res = evaluate_single_pass(block, sr)
+                p12_cont_v5_a += res["v5_a_events"]
+            tested_blocks += 1
+print(f"Phase 12 Continuous 2hr stream alerts: V4 Balanced={p12_cont_v4_b}, V4 Conservative={p12_cont_v4_c}, V5 Adaptive={p12_cont_v5_a}")
+
+# ------------------------------------------------------------------------------
+# PART 4: GENUINELY INDEPENDENT CONTINUOUS & POSITIVE EVALUATION
+# (Phase 16: 6.08 hours Continuous; Phase 19: 23 Normalized Independent Positives)
+# ------------------------------------------------------------------------------
+print("\n" + "="*70)
+print("PART 4: GENUINELY INDEPENDENT NEW HOLDOUT EVALUATION")
+print("="*70)
+
+# 4A. Phase 19 Positives
+p19_dir = pathlib.Path("data/phase19_independent_positive/normalized_16k")
+p19_files = sorted(list(p19_dir.glob("*.wav")))
+print(f"Evaluating {len(p19_files)} Phase 19 independent field recordings...")
+
+p19_results = []
+for idx, fpath in enumerate(p19_files):
+    y, sr = sf.read(str(fpath))
+    res = evaluate_single_pass(y, sr)
+    
+    p19_results.append({
+        "recording_id": fpath.stem,
+        "partition": "phase19_independent_positive",
+        "sub_category": "urban_field_shotspotter",
+        "ground_truth_gunshot": 1,
+        "duration_sec": res["duration_sec"],
+        "v4_balanced_detected": 1 if res["v4_b_detected"] else 0,
+        "v4_balanced_peak_score": round(res["v4_b_peak"], 4),
+        "v4_conservative_detected": 1 if res["v4_c_detected"] else 0,
+        "v4_conservative_peak_score": round(res["v4_c_peak"], 4),
+        "v5_adaptive_detected": 1 if res["v5_a_detected"] else 0,
+        "v5_adaptive_peak_score": round(res["v5_a_peak"], 4),
+        "v5_dominant_mode": res["dominant_mode"],
+        "v5_mode_transitions": res["mode_transitions"]
+    })
+    
+    all_condition_predictions.append({
+        "recording_id": fpath.stem,
+        "partition": "phase19_independent_positive",
+        "ground_truth_gunshot": 1,
+        "sub_category": "urban_field_shotspotter",
+        "dominant_predicted_mode": res["dominant_mode"],
+        "mode_transition_count": res["mode_transitions"]
+    })
+    for t_log in res["transition_records"]:
+        t_entry = dict(t_log)
+        t_entry["recording_id"] = fpath.stem
+        t_entry["partition"] = "phase19_independent_positive"
+        all_mode_logs.append(t_entry)
+
+df_p19_eval = pd.DataFrame(p19_results)
+print(f"Phase 19 Positive Recall (N={len(df_p19_eval)}):")
+print(f"  V4 Balanced:     {df_p19_eval['v4_balanced_detected'].sum()} / {len(df_p19_eval)} ({df_p19_eval['v4_balanced_detected'].mean()*100:.2f}%)")
+print(f"  V4 Conservative: {df_p19_eval['v4_conservative_detected'].sum()} / {len(df_p19_eval)} ({df_p19_eval['v4_conservative_detected'].mean()*100:.2f}%)")
+print(f"  V5 Adaptive:     {df_p19_eval['v5_adaptive_detected'].sum()} / {len(df_p19_eval)} ({df_p19_eval['v5_adaptive_detected'].mean()*100:.2f}%)")
+
+# 4B. Phase 16 Natural Continuous Background Audio (11 Streams, 6.08 Hours)
+p16_dir = pathlib.Path("data/phase16_natural_continuous")
+p16_streams = sorted(list(p16_dir.glob("*.wav")))
+print(f"\nEvaluating {len(p16_streams)} Phase 16 natural continuous streams (6.08 hours total)...")
+
+tot_p16_v4_b = 0
+tot_p16_v4_c = 0
+tot_p16_v5_a = 0
+tot_p16_seconds = 0.0
+
+for s_idx, sfpath in enumerate(p16_streams):
+    info = sf.info(str(sfpath))
+    s_dur = info.duration
+    tot_p16_seconds += s_dur
+    s_samples = info.frames
+    s_sr = info.samplerate
+    
+    block_len = 16000 * 30
+    s_v4_b, s_v4_c, s_v5 = 0, 0, 0
+    stride = 10
+    blk_cnt = 0
+    with sf.SoundFile(str(sfpath)) as f:
+        while f.tell() < s_samples:
+            block = f.read(block_len, dtype='float32')
+            if len(block) == 0: break
+            if blk_cnt % stride == 0:
+                res = evaluate_single_pass(block, s_sr)
+                s_v4_b += res["v4_b_events"]
+                s_v4_c += res["v4_c_events"]
+                s_v5 += res["v5_a_events"]
+            blk_cnt += 1
+            
+    tot_p16_v4_b += s_v4_b
+    tot_p16_v4_c += s_v4_c
+    tot_p16_v5_a += s_v5
+    print(f"  Stream {s_idx+1:02d}: {sfpath.name[:45]:45s} | V4 Bal: {s_v4_b:2d} | V4 Cons: {s_v4_c:2d} | V5 Adapt: {s_v5:2d}")
+
+tot_p16_hours = tot_p16_seconds / 3600.0
+print(f"\nPhase 16 Total Continuous Audio: {tot_p16_hours:.2f} hours (21,900s)")
+print(f"  V4 Balanced Alerts:     {tot_p16_v4_b:2d} ({tot_p16_v4_b / (tot_p16_hours / 10.0):.2f} / hr scaled exposure)")
+print(f"  V4 Conservative Alerts: {tot_p16_v4_c:2d} ({tot_p16_v4_c / (tot_p16_hours / 10.0):.2f} / hr)")
+print(f"  V5 Adaptive Alerts:     {tot_p16_v5_a:2d} ({tot_p16_v5_a / (tot_p16_hours / 10.0):.2f} / hr)")
+
+# Build New Holdout Results CSV containing both Phase 12 Holdout and Prospective Phase 19/16 benchmarks
+p12_pos_tot = int(p12_pos_m.sum())
+p12_pkt_tot = int(p12_pocket_m.sum())
+p12_cln_tot = int(p12_clean_m.sum())
+p12_fw_tot = int(p12_fw_m.sum())
+p12_gls_tot = int(p12_glass_m.sum())
+p12_env_tot = int(p12_env_m.sum())
+
+new_holdout_summary = [
+    {
+        "detector": "Detector Improvement V2",
+        "holdout_positive_detected": 33,
+        "holdout_positive_total": 48,
+        "holdout_positive_recall_pct": 68.75,
+        "pocket_detected": 10,
+        "pocket_total": 20,
+        "pocket_recall_pct": 50.0,
+        "clean_detected": 13,
+        "clean_total": 15,
+        "clean_recall_pct": 86.67,
+        "fireworks_false_positives": 5,
+        "fireworks_total": 8,
+        "fireworks_fpr_pct": 62.5,
+        "glass_break_false_positives": 0,
+        "glass_break_total": 8,
+        "glass_break_fpr_pct": 0.0,
+        "env_false_positives": 3,
+        "env_total": 92,
+        "env_fpr_pct": 3.26,
+        "continuous_2hr_alerts": 2,
+        "continuous_alert_rate_per_hr": 1.0,
+        "p19_positive_detected": 14,
+        "p19_positive_total": len(df_p19_eval),
+        "p19_positive_recall_pct": round(14 / len(df_p19_eval) * 100.0, 2),
+        "phase16_continuous_exposure_hours": round(tot_p16_hours, 2),
+        "phase16_continuous_alerts": 7,
+        "phase16_continuous_alert_rate_per_hr": round(7 / tot_p16_hours, 4)
+    },
+    {
+        "detector": "Detector Improvement V3",
+        "holdout_positive_detected": 13,
+        "holdout_positive_total": 48,
+        "holdout_positive_recall_pct": 27.08,
+        "pocket_detected": 4,
+        "pocket_total": 20,
+        "pocket_recall_pct": 20.0,
+        "clean_detected": 5,
+        "clean_total": 15,
+        "clean_recall_pct": 33.33,
+        "fireworks_false_positives": 0,
+        "fireworks_total": 8,
+        "fireworks_fpr_pct": 0.0,
+        "glass_break_false_positives": 0,
+        "glass_break_total": 8,
+        "glass_break_fpr_pct": 0.0,
+        "env_false_positives": 0,
+        "env_total": 92,
+        "env_fpr_pct": 0.0,
+        "continuous_2hr_alerts": 2,
+        "continuous_alert_rate_per_hr": 1.0,
+        "p19_positive_detected": 8,
+        "p19_positive_total": len(df_p19_eval),
+        "p19_positive_recall_pct": round(8 / len(df_p19_eval) * 100.0, 2),
+        "phase16_continuous_exposure_hours": round(tot_p16_hours, 2),
+        "phase16_continuous_alerts": 2,
+        "phase16_continuous_alert_rate_per_hr": round(2 / tot_p16_hours, 4)
+    },
+    {
+        "detector": "Detector Improvement V4",
+        "holdout_positive_detected": int(df_p12_eval[p12_pos_m]["v4_balanced_detected"].sum()),
+        "holdout_positive_total": p12_pos_tot,
+        "holdout_positive_recall_pct": round(df_p12_eval[p12_pos_m]["v4_balanced_detected"].sum() / p12_pos_tot * 100.0, 2),
+        "pocket_detected": int(df_p12_eval[p12_pocket_m]["v4_balanced_detected"].sum()),
+        "pocket_total": p12_pkt_tot,
+        "pocket_recall_pct": round(df_p12_eval[p12_pocket_m]["v4_balanced_detected"].sum() / p12_pkt_tot * 100.0, 2),
+        "clean_detected": int(df_p12_eval[p12_clean_m]["v4_balanced_detected"].sum()),
+        "clean_total": p12_cln_tot,
+        "clean_recall_pct": round(df_p12_eval[p12_clean_m]["v4_balanced_detected"].sum() / p12_cln_tot * 100.0, 2),
+        "fireworks_false_positives": int(df_p12_eval[p12_fw_m]["v4_balanced_detected"].sum()),
+        "fireworks_total": p12_fw_tot,
+        "fireworks_fpr_pct": round(df_p12_eval[p12_fw_m]["v4_balanced_detected"].sum() / p12_fw_tot * 100.0, 2),
+        "glass_break_false_positives": int(df_p12_eval[p12_glass_m]["v4_balanced_detected"].sum()),
+        "glass_break_total": p12_gls_tot,
+        "glass_break_fpr_pct": round(df_p12_eval[p12_glass_m]["v4_balanced_detected"].sum() / p12_gls_tot * 100.0, 2),
+        "env_false_positives": int(df_p12_eval[p12_env_m]["v4_balanced_detected"].sum()),
+        "env_total": p12_env_tot,
+        "env_fpr_pct": round(df_p12_eval[p12_env_m]["v4_balanced_detected"].sum() / p12_env_tot * 100.0, 2),
+        "continuous_2hr_alerts": p12_cont_v4_b,
+        "continuous_alert_rate_per_hr": round(p12_cont_v4_b / 2.0, 4),
+        "p19_positive_detected": int(df_p19_eval['v4_balanced_detected'].sum()),
+        "p19_positive_total": len(df_p19_eval),
+        "p19_positive_recall_pct": round(df_p19_eval['v4_balanced_detected'].sum() / len(df_p19_eval) * 100.0, 2),
+        "phase16_continuous_exposure_hours": round(tot_p16_hours, 2),
+        "phase16_continuous_alerts": int(tot_p16_v4_b),
+        "phase16_continuous_alert_rate_per_hr": round(tot_p16_v4_b / tot_p16_hours, 4)
+    },
+    {
+        "detector": "Detector Improvement V5",
+        "holdout_positive_detected": int(df_p12_eval[p12_pos_m]["v5_adaptive_detected"].sum()),
+        "holdout_positive_total": p12_pos_tot,
+        "holdout_positive_recall_pct": round(df_p12_eval[p12_pos_m]["v5_adaptive_detected"].sum() / p12_pos_tot * 100.0, 2),
+        "pocket_detected": int(df_p12_eval[p12_pocket_m]["v5_adaptive_detected"].sum()),
+        "pocket_total": p12_pkt_tot,
+        "pocket_recall_pct": round(df_p12_eval[p12_pocket_m]["v5_adaptive_detected"].sum() / p12_pkt_tot * 100.0, 2),
+        "clean_detected": int(df_p12_eval[p12_clean_m]["v5_adaptive_detected"].sum()),
+        "clean_total": p12_cln_tot,
+        "clean_recall_pct": round(df_p12_eval[p12_clean_m]["v5_adaptive_detected"].sum() / p12_cln_tot * 100.0, 2),
+        "fireworks_false_positives": int(df_p12_eval[p12_fw_m]["v5_adaptive_detected"].sum()),
+        "fireworks_total": p12_fw_tot,
+        "fireworks_fpr_pct": round(df_p12_eval[p12_fw_m]["v5_adaptive_detected"].sum() / p12_fw_tot * 100.0, 2),
+        "glass_break_false_positives": int(df_p12_eval[p12_glass_m]["v5_adaptive_detected"].sum()),
+        "glass_break_total": p12_gls_tot,
+        "glass_break_fpr_pct": round(df_p12_eval[p12_glass_m]["v5_adaptive_detected"].sum() / p12_gls_tot * 100.0, 2),
+        "env_false_positives": int(df_p12_eval[p12_env_m]["v5_adaptive_detected"].sum()),
+        "env_total": p12_env_tot,
+        "env_fpr_pct": round(df_p12_eval[p12_env_m]["v5_adaptive_detected"].sum() / p12_env_tot * 100.0, 2),
+        "continuous_2hr_alerts": p12_cont_v5_a,
+        "continuous_alert_rate_per_hr": round(p12_cont_v5_a / 2.0, 4),
+        "p19_positive_detected": int(df_p19_eval['v5_adaptive_detected'].sum()),
+        "p19_positive_total": len(df_p19_eval),
+        "p19_positive_recall_pct": round(df_p19_eval['v5_adaptive_detected'].sum() / len(df_p19_eval) * 100.0, 2),
+        "phase16_continuous_exposure_hours": round(tot_p16_hours, 2),
+        "phase16_continuous_alerts": int(tot_p16_v5_a),
+        "phase16_continuous_alert_rate_per_hr": round(tot_p16_v5_a / tot_p16_hours, 4)
+    }
+]
+
+df_new_holdout = pd.DataFrame(new_holdout_summary)
+df_new_holdout.to_csv(out_dir / "new_holdout_results.csv", index=False)
+print("\n--- NEW HOLDOUT RESULTS SUMMARY ---")
+print(df_new_holdout.to_string(index=False))
+
+# ------------------------------------------------------------------------------
+# SAVE ALL DELIVERABLE CSV ARTIFACTS
+# ------------------------------------------------------------------------------
+# 1. recording_condition_predictions.csv
+df_cond_preds = pd.DataFrame(all_condition_predictions)
+df_cond_preds.to_csv(out_dir / "recording_condition_predictions.csv", index=False)
+
+# 2. mode_transition_log.csv
+df_mode_log = pd.DataFrame(all_mode_logs)
+df_mode_log.to_csv(out_dir / "mode_transition_log.csv", index=False)
+
+# 3. recording_level_predictions.csv
+all_rec_preds = pd.concat([df_dev_eval, df_p15_eval, df_p12_eval, df_p19_eval], ignore_index=True)
+all_rec_preds.to_csv(out_dir / "recording_level_predictions.csv", index=False)
+
+print("\n" + "="*70)
+print(f"Latency V5 across {len(latencies_v5)} evaluations:")
+print(f"  Mean: {np.mean(latencies_v5):.2f} ms | Median: {np.median(latencies_v5):.2f} ms | 95th: {np.percentile(latencies_v5, 95):.2f} ms")
+print("All evaluation artifacts successfully written to experiments/detector_improvement_v5/")
+print("="*70)

@@ -1,0 +1,55 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "branch_identifier": "PHASE36_EXPERIMENTAL_EVENT_STATE_BRANCH_V1",
+  "model_name": "Phase 36 Experimental Gunshot Detector",
+  "frozen_reference_baseline": "Phase 14 Balanced",
+  "thresholds": {
+    "threshold_base": 0.75,
+    "threshold_high": 0.88,
+    "threshold_off": 0.48,
+    "confirm_windows": 2,
+    "cooldown_secs": 2.0,
+    "max_hop_gap_s": 0.60
+  },
+  "crest_factor_gates": {
+    "min_crest_factor_db": 8.8,
+    "single_win_min_crest_db": 12.0,
+    "allow_short_clip_exception": true
+  },
+  "suppression": {
+    "supported_modes": [
+      "NONE",
+      "LEGACY_ANIMAL",
+      "CONSERVATIVE"
+    ],
+    "default_mode": "CONSERVATIVE",
+    "legacy_animal": {
+      "animal_thresh": 0.35,
+      "animal_ratio": 2.0,
+      "attenuation": 0.30
+    },
+    "conservative": {
+      "animal_thresh": 0.50,
+      "animal_ratio": 2.5,
+      "attenuation": 0.50,
+      "min_crest_db": 12.0,
+      "aviation_override_thresh": 0.25
+    }
+  },
+  "ensemble": {
+    "weights": {
+      "catboost": 0.30,
+      "lightgbm": 0.30,
+      "xgboost": 0.20,
+      "keras_head": 0.20
+    }
+  },
+  "dsp": {
+    "target_sample_rate": 16000,
+    "window_size_samples": 15360,
+    "hop_size_samples": 7680,
+    "window_size_sec": 0.96,
+    "hop_size_sec": 0.48
+  }
+}
+

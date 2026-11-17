@@ -1,0 +1,60 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_22_VALIDATION_PROTOCOL_AND_BURST_COOLDOWN_FORENSICS",
+  "archive_filename": "gunshot_detection_phase22.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase22.zip",
+  "archive_size_bytes": 8199741,
+  "archive_sha256": "160d327072c3515e945ca5cdf89038f14b6ef1919b1e4865278affab52ad4de5",
+  "total_archive_entries": 122,
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_production_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "forensic_audit_summary": {
+    "total_physical_rounds_audited": 50,
+    "phase_14_balanced": {
+      "detected_with_independent_alert": 27,
+      "detected_but_merged_into_earlier_alert": 5,
+      "missed_while_in_refractory_cooldown": 2,
+      "missed_while_eligible": 16,
+      "ambiguous_due_to_insufficient_precision": 0
+    },
+    "phase_17_experimental": {
+      "detected_with_independent_alert": 33,
+      "detected_but_merged_into_earlier_alert": 6,
+      "missed_while_in_refractory_cooldown": 3,
+      "missed_while_eligible": 8,
+      "ambiguous_due_to_insufficient_precision": 0
+    },
+    "primary_miss_root_cause": "Acoustic energy attenuation below detection threshold while eligible (16/23 Phase 14 misses, 69.6%), NOT refractory cooldown dead time (2/23 Phase 14 misses, 8.7%)."
+  },
+  "negative_audio_protocol_summary": {
+    "target_exposure_hours": 100.0,
+    "idealized_zero_alert_poisson_95_upper_bound_alerts_per_hr": 0.02996,
+    "minimum_mtbfa_hours": 33.38
+  },
+  "key_deliverables": [
+    "reports/phase22_final_report.md",
+    "reports/phase22_baseline_freeze.json",
+    "reports/phase22_burst_cooldown_forensics.csv",
+    "reports/phase22_alert_event_timeline.csv",
+    "reports/phase22_burst_cooldown_analysis.md",
+    "reports/phase22_independent_validation_protocol.md",
+    "reports/phase22_preregistered_analysis_plan.md",
+    "reports/phase22_dataset_provenance_schema.json",
+    "reports/phase22_dataset_acquisition_plan.md",
+    "reports/phase22_negative_audio_protocol.md",
+    "reports/phase22_model_promotion_criteria.md",
+    "reports/phase22_risk_and_limitation_register.md",
+    "reports/phase22_test_results.txt",
+    "tests/test_phase22_validation_protocol.py",
+    "scripts/reproduce_phase22_analysis.py"
+  ]
+}

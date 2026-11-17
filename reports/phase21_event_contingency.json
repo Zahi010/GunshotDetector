@@ -1,0 +1,36 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "evaluation_scope": "Category A (ShotSpotter Pittsburgh PA DQV 2018)",
+  "total_physical_rounds": 50,
+  "contingency_table": {
+    "cell_a_both_detected": 27,
+    "cell_b_phase14_only": 0,
+    "cell_c_phase17_only": 6,
+    "cell_d_neither_detected": 17
+  },
+  "model_metrics": {
+    "phase_14_balanced": {
+      "detected_rounds": 27,
+      "total_rounds": 50,
+      "round_recall": 0.54,
+      "round_recall_percent": 54.0
+    },
+    "phase_17_experimental": {
+      "detected_rounds": 33,
+      "total_rounds": 50,
+      "round_recall": 0.66,
+      "round_recall_percent": 66.0
+    },
+    "absolute_recall_difference_pp": 12.0
+  },
+  "hypothesis_testing": {
+    "test_name": "Exact Two-Sided Binomial McNemar Test",
+    "null_hypothesis": "Marginal homogeneity: discordant events are equally likely under Phase 14 and Phase 17 (p=0.5)",
+    "total_discordant_pairs": 6,
+    "discordant_b": 0,
+    "discordant_c": 6,
+    "exact_two_sided_p_value": 0.03125,
+    "statistically_significant_alpha_05": true,
+    "reproduction_status": "EXACT_REPRODUCTION_VERIFIED"
+  }
+}

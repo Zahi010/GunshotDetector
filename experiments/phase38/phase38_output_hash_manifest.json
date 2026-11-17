@@ -1,0 +1,86 @@
+{
+  "experiments/phase38/phase38_evaluation_protocol.md": {
+    "size_bytes": 8211,
+    "sha256": "87e5574b52669017804f5cf3128475d0417cf3cbb24e842455794b47db2e81de"
+  },
+  "experiments/phase38/phase38_detector_freeze_manifest.json": {
+    "size_bytes": 4126,
+    "sha256": "1767cb0f598f62164b46dd08e56f1a9ed7ab38187f55bd46750b0ce920dddc5b"
+  },
+  "experiments/phase38/phase38_baseline_test_log.txt": {
+    "size_bytes": 2891,
+    "sha256": "e225f093d54e179eb5cbd3c4e1cd2338278a5822baf546e4fd4b88638b82ce7f"
+  },
+  "experiments/phase38/dataset/phase38_dataset_registry.csv": {
+    "size_bytes": 90521,
+    "sha256": "231fc5c509a2d61dff895ce38943624cb415d06405c5529853823c4c923fe561"
+  },
+  "experiments/phase38/dataset/phase38_dataset_license_register.csv": {
+    "size_bytes": 1118,
+    "sha256": "9a6f363c301f937e156641baebbfabbd30ccd602ace07e8c32b9a30646ad428b"
+  },
+  "experiments/phase38/dataset/phase38_historical_overlap_audit.csv": {
+    "size_bytes": 64424,
+    "sha256": "33b08c25c860407c88fde68d3261b6e4639877921bd16ad6675214af5d1baab6"
+  },
+  "experiments/phase38/dataset/phase38_dataset_acquisition_report.md": {
+    "size_bytes": 6797,
+    "sha256": "8deebf11a4c729c1c73458891a2699c3a4605a114b2b6c8c9b39c5d39102fe9a"
+  },
+  "experiments/phase38/dataset/phase38_positive_catalog.csv": {
+    "size_bytes": 37952,
+    "sha256": "496de6dbf721def86e9cdc03b6294e4aa3d2b0abff42fbe195fb7b2f2b17316c"
+  },
+  "experiments/phase38/dataset/phase38_distractor_catalog.csv": {
+    "size_bytes": 47842,
+    "sha256": "c5e5a6587f2443d818fc420b76a0afab688b278a51da2553d375baec4a018de3"
+  },
+  "experiments/phase38/provenance/phase38_frozen_asset_hash_reconciliation.csv": {
+    "size_bytes": 6069,
+    "sha256": "9c4917cec2d42bba5e094a8acaa606d4edfb31bf07e56299102a0abde8207670"
+  },
+  "experiments/phase38/provenance/phase38_frozen_asset_provenance.md": {
+    "size_bytes": 5775,
+    "sha256": "aee4cca54b365a48904fa78b1164741728775f690c8770356809ccfc5b0b462d"
+  },
+  "experiments/phase38/provenance/phase38_archive_history_reconciliation.md": {
+    "size_bytes": 3488,
+    "sha256": "4ac488635448d51040ff6fae945666bd949dfa9f588c8fe9d5e8c07ae8b2c092"
+  },
+  "experiments/phase38/phase38_background_results.csv": {
+    "size_bytes": 1057,
+    "sha256": "9f8bd1f6a1f6bf0f3d814a1aa446cfc17207b4a8f817ccb77bdc987590faccd3"
+  },
+  "experiments/phase38/phase38_positive_event_results.csv": {
+    "size_bytes": 1099,
+    "sha256": "f767e9a7532cbae2354c292d06e4b1fa24d65ebb92ac4fb33bff4f1219c820e5"
+  },
+  "experiments/phase38/phase38_distractor_results.csv": {
+    "size_bytes": 856,
+    "sha256": "8dcced2fcc970967d3696ef3eaf5c5435e7d0f66cf2c685705e2b9c9c9344a46"
+  },
+  "experiments/phase38/phase38_condition_comparison.csv": {
+    "size_bytes": 1294,
+    "sha256": "f45d354dd32943520b60517f10af6f590fa56b74e78c8ad4e079beb2b044eb71"
+  },
+  "experiments/phase38/phase38_statistical_analysis.md": {
+    "size_bytes": 4190,
+    "sha256": "389b38fab0339ae5f82e7ec160fc3a552c520394c20c5377d1d37c1ef0556a7a"
+  },
+  "tests/test_phase38_prospective.py": {
+    "size_bytes": 8824,
+    "sha256": "713ecadbb8e7514c79795413cbacfa81ad9a54b9410644dbc5de57c525274428"
+  },
+  "experiments/phase38/tests/test_phase38_prospective.py": {
+    "size_bytes": 8824,
+    "sha256": "713ecadbb8e7514c79795413cbacfa81ad9a54b9410644dbc5de57c525274428"
+  },
+  "experiments/phase38/phase38_test_execution_log.txt": {
+    "size_bytes": 2165,
+    "sha256": "9570ed2a74a0ad57db131c3a4f88f82d8bd6bb778a81e3cfd6f3aa2b4c9a51dd"
+  },
+  "experiments/phase38/phase38_final_evaluation_report.md": {
+    "size_bytes": 16940,
+    "sha256": "d3d7e1786e927c9d31d7b7c94ebf225411e04233bf9cec34fbc83cbe23c1da5b"
+  }
+}

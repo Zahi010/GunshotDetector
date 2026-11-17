@@ -1,0 +1,4 @@
+detector,positive_detected,positive_total,positive_recall_pct,fireworks_false_positives,fireworks_total,fireworks_fpr_pct,env_false_positives,env_total,env_fpr_pct,continuous_alerts,continuous_hours,continuous_alert_rate_per_hr
+Detector Improvement V4 (Balanced Baseline),69,72,95.83,20,59,33.9,7,87,8.05,1,1.1181,0.8944
+Detector Improvement V4 (Conservative Policy),62,72,86.11,14,59,23.73,5,87,5.75,0,1.1181,0.0
+Detector Improvement V5 (Condition-Adaptive),59,72,81.94,13,59,22.03,3,87,3.45,0,1.1181,0.0

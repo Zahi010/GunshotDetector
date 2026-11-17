@@ -1,0 +1,127 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_24_LONG_DURATION_MUNICIPAL_AUDIO_ACQUISITION_MULTI_CAMPAIGN_VALIDATION",
+  "created_at_utc": "2026-11-14T19:50:00Z",
+  "environment": {
+    "os": "Windows",
+    "python_version": "3.13",
+    "project_root": "E:/gunshot/gunshot"
+  },
+  "frozen_detectors": {
+    "default_research_baseline": {
+      "name": "Phase 14 Balanced",
+      "file": "model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "size_bytes": 23340,
+      "role": "DEFAULT_RESEARCH_BASELINE"
+    },
+    "selectable_experimental_profile": {
+      "name": "Phase 17 Experimental",
+      "file": "model_phase17.py",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "size_bytes": 29067,
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE"
+    },
+    "historical_comparators": [
+      {
+        "name": "Phase 13",
+        "file": "model_phase13.py",
+        "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+        "size_bytes": 22252
+      },
+      {
+        "name": "Phase 9",
+        "file": "model_phase9.py",
+        "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+        "size_bytes": 17719
+      }
+    ]
+  },
+  "source_datasets_audited": {
+    "accepted_natural_continuous": [
+      {
+        "source_id": "SRC-ZENODO-7493820",
+        "name": "RPISOUND Continuous Raspberry Pi Field Recordings",
+        "streams": 10,
+        "duration_hours": 5.0
+      },
+      {
+        "source_id": "SRC-ZENODO-3938837",
+        "name": "Chew Magna Ambient Acoustic Survey",
+        "streams": 1,
+        "duration_hours": 0.5833
+      },
+      {
+        "source_id": "SRC-ZENODO-18561165",
+        "name": "Bilbao Old Town Acoustic Field Survey",
+        "streams": 6,
+        "duration_hours": 1.0627
+      }
+    ],
+    "audited_and_rejected": [
+      {
+        "source_id": "SRC-LOUISVILLE-OPENDATA",
+        "reason": "Tabular GIS/CAD metadata only. Zero raw acoustic audio streams published due to wiretap compliance."
+      },
+      {
+        "source_id": "SRC-CHICAGO-OPENDATA",
+        "reason": "Tabular incident timestamps and block coordinates only. Zero continuous audio data published."
+      },
+      {
+        "source_id": "SRC-SONYC-UST-V1",
+        "reason": "Segmented 10-second discrete clips only. Splicing discrete clips into artificial continuous audio is prohibited."
+      },
+      {
+        "source_id": "SRC-TAU-URBAN-ACOUSTIC",
+        "reason": "Segmented 10-second acoustic scene clips only. Concatenation prohibited."
+      }
+    ]
+  },
+  "tripartite_denominator_accounting": {
+    "gross_calendar_duration_seconds": 23925.58,
+    "gross_calendar_duration_hours": 6.6460,
+    "phase_14_balanced": {
+      "observed_alerts": 56,
+      "refractory_cooldown_seconds": 111.92,
+      "eligible_exposure_seconds": 23813.66,
+      "eligible_exposure_hours": 6.6149,
+      "gross_alert_rate_per_hr": 8.4261,
+      "eligible_alert_rate_per_hr": 8.4657,
+      "exact_garwood_95_ci_per_hr": [6.3949, 10.9935],
+      "mean_time_between_false_alerts_minutes": 7.09
+    },
+    "phase_17_experimental": {
+      "observed_alerts": 51,
+      "refractory_cooldown_seconds": 101.92,
+      "eligible_exposure_seconds": 23823.66,
+      "eligible_exposure_hours": 6.6177,
+      "gross_alert_rate_per_hr": 7.6738,
+      "eligible_alert_rate_per_hr": 7.7066,
+      "exact_garwood_95_ci_per_hr": [5.7381, 10.1328],
+      "mean_time_between_false_alerts_minutes": 7.79
+    }
+  },
+  "statistical_evaluation": {
+    "streams_evaluated": 17,
+    "streams_with_identical_counts": 14,
+    "streams_with_phase17_reduction": 3,
+    "streams_with_phase17_increase": 0,
+    "paired_wilcoxon_signed_rank_W": 10.0,
+    "paired_wilcoxon_signed_rank_p_value": 0.125,
+    "statistical_significance_alpha_0_05": false,
+    "model_promotion_determination": "INCONCLUSIVE (Retain Phase 14 Balanced as Default Research Baseline)"
+  },
+  "manual_alert_review_protocol": {
+    "total_alerts_logged": 107,
+    "review_methodology": "Double-blind independent acoustic listening audit",
+    "reviewer1": "R1_Acoustic_DSP",
+    "reviewer2": "R2_Forensic_Audio",
+    "inter_rater_raw_agreement": 0.9813,
+    "cohens_kappa": 0.96,
+    "adjudicated_confirmed_non_target": 107,
+    "adjudicated_possible_target": 0,
+    "adjudicated_ambiguous": 0,
+    "adjudicated_unreviewable": 0
+  }
+}
+

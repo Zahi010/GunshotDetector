@@ -1,0 +1,62 @@
+{
+  "model_phase14.py": {
+    "path": "E:/gunshot/gunshot/model_phase14.py",
+    "size_bytes": 23340,
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "model_phase17.py": {
+    "path": "E:/gunshot/gunshot/model_phase17.py",
+    "size_bytes": 29067,
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "model_phase17_state_reset_candidate.py": {
+    "path": "E:/gunshot/gunshot/experiments/phase31/model_phase17_state_reset_candidate.py",
+    "size_bytes": 29718,
+    "sha256": "c144b917b56532787e2a9198f2cad4a77dc2095b57962f31d11d250a4d5d9ea5"
+  },
+  "feature_extractor.py": {
+    "path": "E:/gunshot/gunshot/feature_extractor.py",
+    "size_bytes": 6218,
+    "sha256": "1c665b7c1749de98337da0726627710fffe0dcfa56335291b666ae7abcbae94f"
+  },
+  "config.py": {
+    "path": "E:/gunshot/gunshot/config.py",
+    "size_bytes": 2619,
+    "sha256": "55749f9d46d561d131fad374064021b73c08274e2a79954efd08570b029b1858"
+  },
+  "model_phase36.py": {
+    "path": "E:/gunshot/gunshot/experiments/phase36/model_phase36.py",
+    "size_bytes": 13891,
+    "sha256": "2774ab4cae0fca6d2f3646b443694fefa40d6837ff195f1d216ae7ff7732563a"
+  },
+  "event_state_machine.py": {
+    "path": "E:/gunshot/gunshot/experiments/phase36/event_state_machine.py",
+    "size_bytes": 24905,
+    "sha256": "a91e9bc6d0ab9ca805817a406857d31e1f482f7d8815b0eaf7fee9075cd23c31"
+  },
+  "acoustic_features.py": {
+    "path": "E:/gunshot/gunshot/experiments/phase36/acoustic_features.py",
+    "size_bytes": 9812,
+    "sha256": "5cc775f97b8e9f2c62018efe6f3fc6d64913cfcb5ffd470a1daba625c6510a51"
+  },
+  "config_phase36.json": {
+    "path": "E:/gunshot/gunshot/experiments/phase36/config_phase36.json",
+    "size_bytes": 1337,
+    "sha256": "1aaffd5423e116958807372855d989e294d3ff12b614052e10df78346d62e363"
+  },
+  "gunshot_detection_phase34.zip": {
+    "path": "E:/gunshot/gunshot_detection_phase34.zip",
+    "size_bytes": 4552249,
+    "sha256": "1c961893c89285a48c5bf2a61a09b3dd71860febc12ac2fb56f0e43fd2a41208"
+  },
+  "gunshot_detection_phase35.zip": {
+    "path": "E:/gunshot/gunshot_detection_phase35.zip",
+    "size_bytes": 4561967,
+    "sha256": "142402f6d48c8167124807d0a5389ed322dd9e57e676f3dd5c3971ab8635f707"
+  },
+  "gunshot_detection_phase36.zip": {
+    "path": "E:/gunshot/gunshot_detection_phase36.zip",
+    "size_bytes": 137665,
+    "sha256": "44240bd32145fe0972cee5e7b088fe9524b2504b0b3d30a602703ba837174385"
+  }
+}

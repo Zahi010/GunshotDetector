@@ -1,0 +1,199 @@
+{
+  "train_set_leakage": [],
+  "val_set_leakage": [],
+  "phase7_overlap": [],
+  "phase8_overlap": [],
+  "phase12_session_overlap": [
+    {
+      "event_id": "P17-NAT-001",
+      "source": "phase15_gunshot_clean_berettadouble04.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-NAT-002",
+      "source": "phase15_gunshot_clean_berettadouble04.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-NAT-003",
+      "source": "phase15_gunshot_clean_berettadouble04.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-NAT-004",
+      "source": "phase15_gunshot_clean_berettadouble04.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-NAT-005",
+      "source": "phase15_gunshot_clean_berettadouble04.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-001",
+      "source": "phase15_gunshot_clean_ar15double09.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-002",
+      "source": "phase15_gunshot_clean_ar15double10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-003",
+      "source": "phase15_gunshot_clean_ar15single10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-004",
+      "source": "phase15_gunshot_clean_berettadouble03.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-005",
+      "source": "phase15_gunshot_clean_berettadouble05.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-006",
+      "source": "phase15_gunshot_clean_berettadouble06.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-007",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket07.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-008",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket08.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-009",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket09.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-010",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-011",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket11.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-012",
+      "source": "phase15_gunshot_pocket_ar15singlepocket07.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-013",
+      "source": "phase15_gunshot_clipped_ar15rapid08.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-014",
+      "source": "phase15_gunshot_clipped_ar15rapid09.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-015",
+      "source": "phase15_gunshot_clipped_ar15rapid10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-016",
+      "source": "phase15_gunshot_clipped_berettarapid08.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-017",
+      "source": "phase15_gunshot_clipped_berettarapid09.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-018",
+      "source": "phase15_gunshot_clipped_berettarapid10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-022",
+      "source": "phase15_gunshot_clean_berettadouble07.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-023",
+      "source": "phase15_gunshot_clean_berettadouble08.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-024",
+      "source": "phase15_gunshot_clean_berettadouble09.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-025",
+      "source": "phase15_gunshot_clean_ar15double09.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-026",
+      "source": "phase15_gunshot_clean_ar15double10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-027",
+      "source": "phase15_gunshot_clean_ar15single10.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-028",
+      "source": "phase15_gunshot_clean_berettadouble03.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-029",
+      "source": "phase15_gunshot_clean_berettadouble05.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-030",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket07.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-031",
+      "source": "phase15_gunshot_pocket_ar15rapidpocket08.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-032",
+      "source": "phase15_gunshot_clean_berettadouble07.wav",
+      "campaign": "MITCHELL_2015"
+    },
+    {
+      "event_id": "P17-EV-033",
+      "source": "phase15_gunshot_clean_berettadouble06.wav",
+      "campaign": "MITCHELL_2015"
+    }
+  ],
+  "phase15_reused_diagnostic": [],
+  "summary": {
+    "total_canonical_events": 39,
+    "exact_training_set_leaks": 0,
+    "exact_validation_set_leaks": 0,
+    "phase7_test_duplicates": 0,
+    "phase8_test_duplicates": 0,
+    "historically_related_session_events": 35,
+    "provenance_stratification": {
+      "SOURCE_INDEPENDENT_EXTERNAL": 1,
+      "HISTORICALLY_RELATED_SESSION": 5,
+      "CALIBRATED_TRANSPARENT_STREAM_EVALUATION": 33,
+      "REUSED_DIAGNOSTIC": 0,
+      "UNKNOWN_PROVENANCE": 0
+    }
+  }
+}

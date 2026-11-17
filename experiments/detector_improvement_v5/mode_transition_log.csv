@@ -1,0 +1,1050 @@
+window_idx,timestamp_s,from_mode,to_mode,ema_rolloff,ema_high,ema_mid,ema_low,ema_m2l,reason,recording_id,partition
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.5973,0.2776,0.4624,0.26,1.9299,"Persistent clear evidence (consecutive=2, rolloff=0.597, hi=0.278)",fsd50k_gun_368805,development
+4,1.92,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.304,0.143,0.6247,0.2323,3.4049,"Transition to occluded (rolloff=0.304 < 0.18, mid=0.625 >= 0.38)",fsd50k_gun_368805,development
+6,2.88,UNKNOWN,CLEAR_NORMAL,0.4374,0.0825,0.1886,0.7289,0.2606,"Persistent clear evidence (consecutive=2, rolloff=0.437, hi=0.082)",fsd50k_gun_166076,development
+8,3.84,CLEAR_NORMAL,UNKNOWN,0.3747,0.0635,0.1615,0.7751,0.2157,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.894, m2l=0.094)",fsd50k_gun_166076,development
+13,6.24,UNKNOWN,CLEAR_NORMAL,0.3449,0.0705,0.1953,0.7342,0.276,"Persistent clear evidence (consecutive=2, rolloff=0.345, hi=0.070)",fsd50k_gun_166076,development
+15,7.2,CLEAR_NORMAL,UNKNOWN,0.3536,0.0776,0.2145,0.7079,0.3109,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.661, m2l=0.382)",fsd50k_gun_166076,development
+23,11.04,UNKNOWN,CLEAR_NORMAL,0.3278,0.0769,0.2271,0.6959,0.3328,"Persistent clear evidence (consecutive=2, rolloff=0.328, hi=0.077)",fsd50k_gun_166076,development
+25,12.0,CLEAR_NORMAL,UNKNOWN,0.3058,0.0669,0.2129,0.7201,0.3007,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.761, m2l=0.252)",fsd50k_gun_166076,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.1096,0.0738,0.7188,0.2074,3.5536,"Persistent occluded evidence (consecutive=2, rolloff=0.110, mid=0.719)",fsd50k_gun_221451,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.4223,0.5054,0.3547,0.1399,5.9581,"Persistent clear evidence (consecutive=2, rolloff=1.422, hi=0.505)",fsd50k_gun_198952,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.2403,0.0825,0.3431,0.5744,0.599,"Persistent clear evidence (consecutive=2, rolloff=0.240, hi=0.082)",fsd50k_gun_346537,development
+3,1.44,CLEAR_NORMAL,UNKNOWN,0.1391,0.0476,0.3035,0.6489,0.4921,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.813, m2l=0.229)",fsd50k_gun_346537,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.2359,0.314,0.324,0.362,1.0509,"Persistent clear evidence (consecutive=2, rolloff=1.236, hi=0.314)",fsd50k_gun_147901,development
+5,2.4,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.5444,0.1331,0.5822,0.2847,4375.8425,"Transition to occluded (rolloff=0.544 < 0.18, mid=0.582 >= 0.38)",fsd50k_gun_147901,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.3571,0.1894,0.17,0.6406,0.2621,"Persistent clear evidence (consecutive=2, rolloff=1.357, hi=0.189)",fsd50k_gun_371158,development
+46,22.08,UNKNOWN,CLEAR_NORMAL,0.1774,0.0549,0.2972,0.6479,0.5253,"Persistent clear evidence (consecutive=2, rolloff=0.177, hi=0.055)",fsd50k_gun_197322,development
+48,23.04,CLEAR_NORMAL,UNKNOWN,0.1071,0.0332,0.2672,0.6997,0.4584,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.917, m2l=0.090)",fsd50k_gun_197322,development
+53,25.44,UNKNOWN,DEGRADED_OCCLUDED,0.1118,0.0508,0.3363,0.6129,1.0772,"Persistent occluded evidence (consecutive=2, rolloff=0.112, mid=0.336)",fsd50k_gun_197322,development
+55,26.4,DEGRADED_OCCLUDED,UNKNOWN,0.0694,0.0312,0.3288,0.64,0.8834,Transition to UNKNOWN due to low-frequency dominance (low=0.852),fsd50k_gun_197322,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,7.7013,0.8811,0.1185,0.0004,241.0101,"Persistent clear evidence (consecutive=2, rolloff=7.701, hi=0.881)",fsd50k_gun_254772,development
+19,9.12,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.7912,0.0677,0.488,0.4443,4377.3118,"Transition to occluded (rolloff=0.791 < 0.18, mid=0.488 >= 0.38)",fsd50k_gun_254772,development
+11,5.28,UNKNOWN,DEGRADED_OCCLUDED,0.0801,0.0508,0.6567,0.2925,2.4393,"Persistent occluded evidence (consecutive=2, rolloff=0.080, mid=0.657)",fsd50k_gun_353093,development
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,0.0609,0.0384,0.58,0.3816,1.9642,Transition to UNKNOWN due to low-frequency dominance (low=0.649),fsd50k_gun_353093,development
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,0.0471,0.0288,0.4504,0.5207,1.4897,"Persistent occluded evidence (consecutive=2, rolloff=0.047, mid=0.450)",fsd50k_gun_353093,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.4285,0.203,0.7699,0.027,5628.9157,"Persistent clear evidence (consecutive=2, rolloff=0.428, hi=0.203)",fsd50k_gun_7062,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,7.2849,0.3868,0.0569,0.5563,0.1069,"Persistent clear evidence (consecutive=2, rolloff=7.285, hi=0.387)",fsd50k_gun_191449,development
+6,2.88,CLEAR_NORMAL,DEGRADED_OCCLUDED,18.5421,0.3336,0.3682,0.2983,2.1494,"Transition to occluded (rolloff=18.542 < 0.18, mid=0.368 >= 0.38)",fsd50k_gun_191449,development
+9,4.32,DEGRADED_OCCLUDED,UNKNOWN,7.8689,0.1595,0.4557,0.3849,2.7779,Transition to UNKNOWN due to low-frequency dominance (low=0.694),fsd50k_gun_191449,development
+14,6.72,UNKNOWN,DEGRADED_OCCLUDED,1.8876,0.045,0.4281,0.527,1.2673,"Persistent occluded evidence (consecutive=2, rolloff=1.888, mid=0.428)",fsd50k_gun_191449,development
+17,8.16,DEGRADED_OCCLUDED,UNKNOWN,0.8076,0.0227,0.3871,0.5902,0.8714,Transition to UNKNOWN due to low-frequency dominance (low=0.721),fsd50k_gun_191449,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.7461,0.2912,0.4013,0.3076,1.3291,"Persistent clear evidence (consecutive=2, rolloff=0.746, hi=0.291)",fsd50k_gun_220130,development
+10,4.8,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.5458,0.1846,0.5301,0.2853,2.1707,"Transition to occluded (rolloff=0.546 < 0.18, mid=0.530 >= 0.38)",fsd50k_gun_220130,development
+7,3.36,UNKNOWN,CLEAR_NORMAL,0.4659,0.0815,0.2124,0.7061,0.3383,"Persistent clear evidence (consecutive=2, rolloff=0.466, hi=0.082)",fsd50k_gun_160772,development
+10,4.8,CLEAR_NORMAL,UNKNOWN,0.3108,0.0619,0.2795,0.6587,0.4779,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.739, m2l=0.257)",fsd50k_gun_160772,development
+14,6.72,UNKNOWN,DEGRADED_OCCLUDED,0.1837,0.0442,0.3595,0.5963,0.6564,"Persistent occluded evidence (consecutive=2, rolloff=0.184, mid=0.359)",fsd50k_gun_160772,development
+15,7.2,DEGRADED_OCCLUDED,UNKNOWN,0.1403,0.0337,0.3259,0.6404,0.5652,Transition to UNKNOWN due to low-frequency dominance (low=0.773),fsd50k_gun_160772,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.3372,0.0973,0.2853,0.6173,0.4928,"Persistent clear evidence (consecutive=2, rolloff=0.337, hi=0.097)",fsd50k_gun_187534,development
+5,2.4,UNKNOWN,CLEAR_NORMAL,0.3618,0.1242,0.3409,0.5349,0.6663,"Persistent clear evidence (consecutive=2, rolloff=0.362, hi=0.124)",fsd50k_gun_103626,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.6447,0.306,0.4757,0.2183,2.1784,"Persistent clear evidence (consecutive=2, rolloff=0.645, hi=0.306)",fsd50k_gun_255216,development
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.104,0.0166,0.5102,0.4731,4375.5374,"Persistent occluded evidence (consecutive=2, rolloff=0.104, mid=0.510)",fsd50k_gun_337166,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0917,0.0688,0.751,0.1802,4.1726,"Persistent occluded evidence (consecutive=2, rolloff=0.092, mid=0.751)",fsd50k_gun_30185,development
+8,3.84,UNKNOWN,CLEAR_NORMAL,1.0892,0.2178,0.1817,0.6005,1.6267,"Persistent clear evidence (consecutive=2, rolloff=1.089, hi=0.218)",fsd50k_gun_319008,development
+11,5.28,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.5003,0.1248,0.5453,0.3299,8.4702,"Transition to occluded (rolloff=0.500 < 0.18, mid=0.545 >= 0.38)",fsd50k_gun_319008,development
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,0.3912,0.0988,0.4914,0.4098,6.4798,Transition to UNKNOWN due to low-frequency dominance (low=0.649),fsd50k_gun_319008,development
+14,6.72,UNKNOWN,CLEAR_NORMAL,3.0134,0.4322,0.3354,0.2324,16.5862,"Persistent clear evidence (consecutive=2, rolloff=3.013, hi=0.432)",fsd50k_gun_319008,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.5599,0.1623,0.2927,0.545,0.5373,"Persistent clear evidence (consecutive=2, rolloff=0.560, hi=0.162)",fsd50k_gun_56900,development
+3,1.44,CLEAR_NORMAL,UNKNOWN,0.5651,0.1357,0.2423,0.622,0.41,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.717, m2l=0.254)",fsd50k_gun_56900,development
+5,2.4,UNKNOWN,CLEAR_NORMAL,0.517,0.1376,0.2696,0.5928,0.4748,"Persistent clear evidence (consecutive=2, rolloff=0.517, hi=0.138)",fsd50k_gun_56900,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,1.1872,0.3188,0.2168,0.4644,21.3706,"Persistent clear evidence (consecutive=2, rolloff=1.187, hi=0.319)",fsd50k_gun_149177,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.1402,0.0307,0.3047,0.6646,0.5976,"Persistent occluded evidence (consecutive=2, rolloff=0.140, mid=0.305)",fsd50k_gun_431822,development
+3,1.44,DEGRADED_OCCLUDED,UNKNOWN,0.1191,0.0276,0.3112,0.6612,0.5751,Transition to UNKNOWN due to low-frequency dominance (low=0.651),fsd50k_gun_431822,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.1497,0.077,0.5364,0.3866,1.4898,"Persistent occluded evidence (consecutive=2, rolloff=0.150, mid=0.536)",fsd50k_gun_100144,development
+3,1.44,DEGRADED_OCCLUDED,UNKNOWN,0.1235,0.0614,0.4838,0.4548,1.2409,Transition to UNKNOWN due to low-frequency dominance (low=0.659),fsd50k_gun_100144,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.5134,0.5238,0.3428,0.1335,5.7776,"Persistent clear evidence (consecutive=2, rolloff=1.513, hi=0.524)",fsd50k_gun_257873,development
+3,1.44,UNKNOWN,DEGRADED_OCCLUDED,0.0587,0.0209,0.3678,0.6114,0.66,"Persistent occluded evidence (consecutive=2, rolloff=0.059, mid=0.368)",p39_dist_DISTRACTOR_FIREWORKS_273320,development
+5,2.4,DEGRADED_OCCLUDED,UNKNOWN,0.0568,0.0207,0.3723,0.607,0.6471,Transition to UNKNOWN due to low-frequency dominance (low=0.620),p39_dist_DISTRACTOR_FIREWORKS_273320,development
+26,12.48,UNKNOWN,DEGRADED_OCCLUDED,0.0595,0.0222,0.3904,0.5874,0.7346,"Persistent occluded evidence (consecutive=2, rolloff=0.060, mid=0.390)",p39_dist_DISTRACTOR_FIREWORKS_273320,development
+27,12.96,DEGRADED_OCCLUDED,UNKNOWN,0.0666,0.0217,0.3511,0.6272,0.629,Transition to UNKNOWN due to low-frequency dominance (low=0.747),p39_dist_DISTRACTOR_FIREWORKS_273320,development
+39,18.72,UNKNOWN,DEGRADED_OCCLUDED,0.0281,0.0102,0.402,0.5878,0.8649,"Persistent occluded evidence (consecutive=2, rolloff=0.028, mid=0.402)",p39_dist_DISTRACTOR_FIREWORKS_273320,development
+40,19.2,DEGRADED_OCCLUDED,UNKNOWN,0.0309,0.0112,0.3923,0.5965,0.7946,Transition to UNKNOWN due to low-frequency dominance (low=0.623),p39_dist_DISTRACTOR_FIREWORKS_273320,development
+48,23.04,UNKNOWN,DEGRADED_OCCLUDED,0.0605,0.0268,0.4645,0.5087,1.0204,"Persistent occluded evidence (consecutive=2, rolloff=0.061, mid=0.464)",p39_dist_DISTRACTOR_FIREWORKS_273320,development
+4,1.92,UNKNOWN,CLEAR_NORMAL,0.6656,0.1198,0.1253,0.7549,0.2131,"Persistent clear evidence (consecutive=2, rolloff=0.666, hi=0.120)",p39_dist_DISTRACTOR_FIREWORKS_99198,development
+10,4.8,CLEAR_NORMAL,UNKNOWN,1.9739,0.0836,0.0723,0.8441,0.0958,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.940, m2l=0.061)",p39_dist_DISTRACTOR_FIREWORKS_99198,development
+7,3.36,UNKNOWN,DEGRADED_OCCLUDED,0.0992,0.0501,0.4811,0.4688,1.2069,"Persistent occluded evidence (consecutive=2, rolloff=0.099, mid=0.481)",p39_dist_DISTRACTOR_FIREWORKS_46323,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.8219,0.2592,0.1815,0.5593,2.3593,"Persistent clear evidence (consecutive=2, rolloff=0.822, hi=0.259)",p39_dist_DISTRACTOR_FIREWORKS_129686,development
+8,3.84,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.295,0.1055,0.4069,0.4876,2.2985,"Transition to occluded (rolloff=0.295 < 0.18, mid=0.407 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_129686,development
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,0.1091,0.0403,0.4162,0.5434,1.2426,Transition to UNKNOWN due to low-frequency dominance (low=0.631),p39_dist_DISTRACTOR_FIREWORKS_129686,development
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,0.0971,0.0331,0.3593,0.6075,0.991,"Persistent occluded evidence (consecutive=5, rolloff=0.097, mid=0.359)",p39_dist_DISTRACTOR_FIREWORKS_129686,development
+14,6.72,DEGRADED_OCCLUDED,UNKNOWN,0.088,0.0276,0.3162,0.6562,0.8014,Transition to UNKNOWN due to low-frequency dominance (low=0.802),p39_dist_DISTRACTOR_FIREWORKS_129686,development
+15,7.2,UNKNOWN,DEGRADED_OCCLUDED,0.0701,0.0211,0.2612,0.7177,0.6278,"Persistent occluded evidence (consecutive=3, rolloff=0.070, mid=0.261)",p39_dist_DISTRACTOR_FIREWORKS_129686,development
+16,7.68,DEGRADED_OCCLUDED,UNKNOWN,0.0557,0.0162,0.2306,0.7531,0.5112,Transition to UNKNOWN due to low-frequency dominance (low=0.859),p39_dist_DISTRACTOR_FIREWORKS_129686,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0833,0.0388,0.4729,0.4884,1.0171,"Persistent occluded evidence (consecutive=2, rolloff=0.083, mid=0.473)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+9,4.32,DEGRADED_OCCLUDED,UNKNOWN,0.0612,0.0272,0.635,0.3378,11.3974,Transition to UNKNOWN due to low-frequency dominance (low=0.763),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+10,4.8,UNKNOWN,DEGRADED_OCCLUDED,0.0775,0.0268,0.5271,0.446,8.6141,"Persistent occluded evidence (consecutive=6, rolloff=0.078, mid=0.527)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+11,5.28,DEGRADED_OCCLUDED,UNKNOWN,0.1265,0.0334,0.4439,0.5228,6.525,Transition to UNKNOWN due to low-frequency dominance (low=0.753),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+12,5.76,UNKNOWN,DEGRADED_OCCLUDED,0.1606,0.0383,0.3834,0.5783,4.9616,"Persistent occluded evidence (consecutive=4, rolloff=0.161, mid=0.383)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+24,11.52,DEGRADED_OCCLUDED,UNKNOWN,0.0699,0.0388,0.5314,0.4299,1.9897,Transition to UNKNOWN due to low-frequency dominance (low=0.738),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+25,12.0,UNKNOWN,DEGRADED_OCCLUDED,0.0623,0.0303,0.4297,0.54,1.5281,"Persistent occluded evidence (consecutive=13, rolloff=0.062, mid=0.430)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+26,12.48,DEGRADED_OCCLUDED,UNKNOWN,0.0598,0.0243,0.3527,0.623,1.1811,Transition to UNKNOWN due to low-frequency dominance (low=0.872),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+27,12.96,UNKNOWN,DEGRADED_OCCLUDED,0.0629,0.0209,0.3017,0.6775,0.9299,"Persistent occluded evidence (consecutive=11, rolloff=0.063, mid=0.302)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+28,13.44,DEGRADED_OCCLUDED,UNKNOWN,0.0684,0.0189,0.2645,0.7167,0.7433,Transition to UNKNOWN due to low-frequency dominance (low=0.834),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+29,13.92,UNKNOWN,DEGRADED_OCCLUDED,0.0795,0.0194,0.2447,0.736,0.6159,"Persistent occluded evidence (consecutive=9, rolloff=0.079, mid=0.245)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+30,14.4,DEGRADED_OCCLUDED,UNKNOWN,0.0893,0.0198,0.2278,0.7524,0.5172,Transition to UNKNOWN due to low-frequency dominance (low=0.802),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+31,14.88,UNKNOWN,DEGRADED_OCCLUDED,0.0905,0.017,0.1946,0.7884,0.4144,"Persistent occluded evidence (consecutive=7, rolloff=0.090, mid=0.195)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+32,15.36,DEGRADED_OCCLUDED,UNKNOWN,0.0844,0.0142,0.1675,0.8184,0.3345,Transition to UNKNOWN due to low-frequency dominance (low=0.908),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+33,15.84,UNKNOWN,DEGRADED_OCCLUDED,0.0785,0.0128,0.1615,0.8257,0.2933,"Persistent occluded evidence (consecutive=5, rolloff=0.078, mid=0.162)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+34,16.32,DEGRADED_OCCLUDED,UNKNOWN,0.072,0.0123,0.1733,0.8144,0.2868,Transition to UNKNOWN due to low-frequency dominance (low=0.780),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+35,16.8,UNKNOWN,DEGRADED_OCCLUDED,0.0644,0.0118,0.1919,0.7963,0.2986,"Persistent occluded evidence (consecutive=3, rolloff=0.064, mid=0.192)",p39_dist_DISTRACTOR_FIREWORKS_113513,development
+36,17.28,DEGRADED_OCCLUDED,UNKNOWN,0.0598,0.0108,0.1867,0.8025,0.2761,Transition to UNKNOWN due to low-frequency dominance (low=0.821),p39_dist_DISTRACTOR_FIREWORKS_113513,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,73.719,0.9204,0.0133,0.0663,0.2549,"Persistent clear evidence (consecutive=2, rolloff=73.719, hi=0.920)",p39_dist_DISTRACTOR_FIREWORKS_335983,development
+6,2.88,CLEAR_NORMAL,DEGRADED_OCCLUDED,17.6676,0.314,0.4577,0.2283,2.2594,"Transition to occluded (rolloff=17.668 < 0.18, mid=0.458 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_335983,development
+8,3.84,DEGRADED_OCCLUDED,UNKNOWN,9.9567,0.1831,0.4211,0.3958,1.5539,Transition to UNKNOWN due to low-frequency dominance (low=0.687),p39_dist_DISTRACTOR_FIREWORKS_335983,development
+26,12.48,UNKNOWN,CLEAR_NORMAL,0.3123,0.0552,0.151,0.7938,0.2061,"Persistent clear evidence (consecutive=2, rolloff=0.312, hi=0.055)",p39_dist_DISTRACTOR_FIREWORKS_202927,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,4.5125,0.6985,0.1557,0.1458,1.1011,"Persistent clear evidence (consecutive=2, rolloff=4.512, hi=0.699)",p39_dist_DISTRACTOR_FIREWORKS_237749,development
+5,2.4,UNKNOWN,CLEAR_NORMAL,2.8417,0.3161,0.107,0.5768,0.3006,"Persistent clear evidence (consecutive=2, rolloff=2.842, hi=0.316)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+16,7.68,CLEAR_NORMAL,UNKNOWN,0.1567,0.0271,0.3591,0.6138,0.6497,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.735, m2l=0.358)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+19,9.12,UNKNOWN,DEGRADED_OCCLUDED,0.1389,0.0454,0.395,0.5596,0.7901,"Persistent occluded evidence (consecutive=2, rolloff=0.139, mid=0.395)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+22,10.56,DEGRADED_OCCLUDED,CLEAR_NORMAL,1.1194,0.2574,0.3003,0.4423,0.7338,"Transition to CLEAR (rolloff=1.119 >= 0.22, hi=0.257 >= 0.08)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+25,12.0,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.4989,0.1213,0.432,0.4467,1.0177,"Transition to occluded (rolloff=0.499 < 0.18, mid=0.432 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+56,26.88,DEGRADED_OCCLUDED,UNKNOWN,0.0417,0.0272,0.5384,0.4343,1.7353,Transition to UNKNOWN due to low-frequency dominance (low=0.677),p39_dist_DISTRACTOR_FIREWORKS_213235,development
+57,27.36,UNKNOWN,DEGRADED_OCCLUDED,0.0332,0.0208,0.451,0.5283,1.3597,"Persistent occluded evidence (consecutive=30, rolloff=0.033, mid=0.451)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+58,27.84,DEGRADED_OCCLUDED,UNKNOWN,0.0278,0.0161,0.3831,0.6009,1.0746,Transition to UNKNOWN due to low-frequency dominance (low=0.819),p39_dist_DISTRACTOR_FIREWORKS_213235,development
+59,28.32,UNKNOWN,DEGRADED_OCCLUDED,0.025,0.0129,0.3377,0.6494,0.8693,"Persistent occluded evidence (consecutive=28, rolloff=0.025, mid=0.338)",p39_dist_DISTRACTOR_FIREWORKS_213235,development
+26,12.48,UNKNOWN,CLEAR_NORMAL,2.5817,0.3708,0.1798,0.4495,1.7714,"Persistent clear evidence (consecutive=2, rolloff=2.582, hi=0.371)",p39_dist_DISTRACTOR_FIREWORKS_18815,development
+30,14.4,CLEAR_NORMAL,UNKNOWN,1.3177,0.2086,0.1753,0.6161,0.8976,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.756, m2l=0.280)",p39_dist_DISTRACTOR_FIREWORKS_18815,development
+32,15.36,UNKNOWN,CLEAR_NORMAL,0.8139,0.1495,0.2969,0.5536,0.9522,"Persistent clear evidence (consecutive=2, rolloff=0.814, hi=0.150)",p39_dist_DISTRACTOR_FIREWORKS_18815,development
+35,16.8,CLEAR_NORMAL,UNKNOWN,0.4029,0.0772,0.2903,0.6324,0.7294,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.921, m2l=0.077)",p39_dist_DISTRACTOR_FIREWORKS_18815,development
+40,19.2,UNKNOWN,CLEAR_NORMAL,1.7508,0.2914,0.2435,0.4651,0.6675,"Persistent clear evidence (consecutive=2, rolloff=1.751, hi=0.291)",p39_dist_DISTRACTOR_FIREWORKS_18815,development
+44,21.12,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.8553,0.1495,0.3677,0.4829,0.9334,"Transition to occluded (rolloff=0.855 < 0.18, mid=0.368 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_18815,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0216,0.0097,0.459,0.5313,0.9014,"Persistent occluded evidence (consecutive=2, rolloff=0.022, mid=0.459)",p39_dist_DISTRACTOR_FIREWORKS_14742,development
+4,1.92,DEGRADED_OCCLUDED,UNKNOWN,0.0321,0.0112,0.3938,0.595,0.7135,Transition to UNKNOWN due to low-frequency dominance (low=0.733),p39_dist_DISTRACTOR_FIREWORKS_14742,development
+16,7.68,UNKNOWN,DEGRADED_OCCLUDED,0.0799,0.0244,0.4294,0.5461,0.9625,"Persistent occluded evidence (consecutive=2, rolloff=0.080, mid=0.429)",p39_dist_DISTRACTOR_FIREWORKS_14742,development
+17,8.16,DEGRADED_OCCLUDED,UNKNOWN,0.1123,0.0284,0.3706,0.601,0.7852,Transition to UNKNOWN due to low-frequency dominance (low=0.765),p39_dist_DISTRACTOR_FIREWORKS_14742,development
+3,1.44,UNKNOWN,DEGRADED_OCCLUDED,0.134,0.026,0.2729,0.7011,0.5095,"Persistent occluded evidence (consecutive=2, rolloff=0.134, mid=0.273)",p39_dist_DISTRACTOR_FIREWORKS_45656,development
+7,3.36,DEGRADED_OCCLUDED,UNKNOWN,0.0558,0.0131,0.3481,0.6387,0.6332,Transition to UNKNOWN due to low-frequency dominance (low=0.770),p39_dist_DISTRACTOR_FIREWORKS_45656,development
+8,3.84,UNKNOWN,DEGRADED_OCCLUDED,0.051,0.0108,0.2876,0.7016,0.5047,"Persistent occluded evidence (consecutive=3, rolloff=0.051, mid=0.288)",p39_dist_DISTRACTOR_FIREWORKS_45656,development
+9,4.32,DEGRADED_OCCLUDED,UNKNOWN,0.0456,0.0086,0.2347,0.7567,0.3992,Transition to UNKNOWN due to low-frequency dominance (low=0.922),p39_dist_DISTRACTOR_FIREWORKS_45656,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,3.0523,0.6799,0.2235,0.0966,2.3957,"Persistent clear evidence (consecutive=2, rolloff=3.052, hi=0.680)",p39_dist_DISTRACTOR_FIREWORKS_142014,development
+5,2.4,CLEAR_NORMAL,DEGRADED_OCCLUDED,1.2448,0.2995,0.3202,0.3802,1.6773,"Transition to occluded (rolloff=1.245 < 0.18, mid=0.320 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_142014,development
+6,2.88,DEGRADED_OCCLUDED,UNKNOWN,0.9605,0.2289,0.2797,0.4914,1.306,Transition to UNKNOWN due to low-frequency dominance (low=0.825),p39_dist_DISTRACTOR_FIREWORKS_142014,development
+11,5.28,UNKNOWN,CLEAR_NORMAL,1.4585,0.3391,0.1989,0.462,1.3615,"Persistent clear evidence (consecutive=2, rolloff=1.459, hi=0.339)",p39_dist_DISTRACTOR_FIREWORKS_142014,development
+14,6.72,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.8612,0.2251,0.3557,0.4192,1.3398,"Transition to occluded (rolloff=0.861 < 0.18, mid=0.356 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_142014,development
+15,7.2,DEGRADED_OCCLUDED,UNKNOWN,0.6869,0.1765,0.3139,0.5096,1.0653,Transition to UNKNOWN due to low-frequency dominance (low=0.781),p39_dist_DISTRACTOR_FIREWORKS_142014,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.7636,0.323,0.4229,0.2541,1.6777,"Persistent clear evidence (consecutive=2, rolloff=0.764, hi=0.323)",p39_dist_DISTRACTOR_FIREWORKS_205603,development
+47,22.56,UNKNOWN,CLEAR_NORMAL,0.8916,0.2117,0.1398,0.6485,0.9254,"Persistent clear evidence (consecutive=2, rolloff=0.892, hi=0.212)",p39_dist_DISTRACTOR_FIREWORKS_254834,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4917,0.2884,0.6209,0.0907,6.8428,"Persistent clear evidence (consecutive=2, rolloff=0.492, hi=0.288)",p39_dist_DISTRACTOR_FIREWORKS_140204,development
+52,24.96,CLEAR_NORMAL,DEGRADED_OCCLUDED,41.3571,0.201,0.5017,0.2973,2.5977,"Transition to occluded (rolloff=41.357 < 0.18, mid=0.502 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_140204,development
+4,1.92,UNKNOWN,CLEAR_NORMAL,12.4838,0.2086,0.0477,0.7437,0.0588,"Persistent clear evidence (consecutive=2, rolloff=12.484, hi=0.209)",p39_dist_DISTRACTOR_FIREWORKS_213082,development
+7,3.36,CLEAR_NORMAL,DEGRADED_OCCLUDED,5.5918,0.1548,0.2637,0.5815,0.5527,"Transition to occluded (rolloff=5.592 < 0.18, mid=0.264 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_213082,development
+9,4.32,DEGRADED_OCCLUDED,UNKNOWN,3.1692,0.0928,0.2617,0.6455,0.4847,Transition to UNKNOWN due to low-frequency dominance (low=0.835),p39_dist_DISTRACTOR_FIREWORKS_213082,development
+11,5.28,UNKNOWN,DEGRADED_OCCLUDED,1.7952,0.0604,0.4349,0.5047,1.1633,"Persistent occluded evidence (consecutive=2, rolloff=1.795, mid=0.435)",p39_dist_DISTRACTOR_FIREWORKS_213082,development
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,1.3564,0.0488,0.4136,0.5376,1.0098,Transition to UNKNOWN due to low-frequency dominance (low=0.636),p39_dist_DISTRACTOR_FIREWORKS_213082,development
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,1.0257,0.0372,0.3305,0.6323,0.7795,"Persistent occluded evidence (consecutive=2, rolloff=1.026, mid=0.330)",p39_dist_DISTRACTOR_FIREWORKS_213082,development
+14,6.72,DEGRADED_OCCLUDED,UNKNOWN,0.7775,0.0282,0.2573,0.7145,0.5945,Transition to UNKNOWN due to low-frequency dominance (low=0.961),p39_dist_DISTRACTOR_FIREWORKS_213082,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,49.1406,0.9767,0.0198,0.0035,5.7016,"Persistent clear evidence (consecutive=2, rolloff=49.141, hi=0.977)",p39_dist_DISTRACTOR_FIREWORKS_132043,development
+8,3.84,CLEAR_NORMAL,UNKNOWN,7.3065,0.2369,0.2786,0.4845,1.2917,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.733, m2l=0.363)",p39_dist_DISTRACTOR_FIREWORKS_132043,development
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.0537,0.021,0.3524,0.6266,0.9996,"Persistent occluded evidence (consecutive=2, rolloff=0.054, mid=0.352)",p39_dist_DISTRACTOR_FIREWORKS_27613,development
+51,24.48,UNKNOWN,DEGRADED_OCCLUDED,0.0791,0.0346,0.4266,0.5388,0.825,"Persistent occluded evidence (consecutive=2, rolloff=0.079, mid=0.427)",p39_dist_DISTRACTOR_FIREWORKS_244767,development
+53,25.44,DEGRADED_OCCLUDED,UNKNOWN,0.0791,0.0332,0.411,0.5557,0.7799,Transition to UNKNOWN due to low-frequency dominance (low=0.659),p39_dist_DISTRACTOR_FIREWORKS_244767,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0348,0.0165,0.4774,0.5061,0.9434,"Persistent occluded evidence (consecutive=2, rolloff=0.035, mid=0.477)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+18,8.64,DEGRADED_OCCLUDED,UNKNOWN,0.0111,0.005,0.4663,0.5287,0.9182,Transition to UNKNOWN due to low-frequency dominance (low=0.632),p39_dist_DISTRACTOR_FIREWORKS_87080,development
+19,9.12,UNKNOWN,DEGRADED_OCCLUDED,0.0113,0.005,0.4588,0.5362,0.8838,"Persistent occluded evidence (consecutive=18, rolloff=0.011, mid=0.459)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+21,10.08,DEGRADED_OCCLUDED,UNKNOWN,0.0114,0.0045,0.411,0.5845,0.7357,Transition to UNKNOWN due to low-frequency dominance (low=0.677),p39_dist_DISTRACTOR_FIREWORKS_87080,development
+22,10.56,UNKNOWN,DEGRADED_OCCLUDED,0.0112,0.0046,0.4241,0.5713,0.7698,"Persistent occluded evidence (consecutive=17, rolloff=0.011, mid=0.424)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+24,11.52,DEGRADED_OCCLUDED,UNKNOWN,0.0116,0.0045,0.3998,0.5957,0.6973,Transition to UNKNOWN due to low-frequency dominance (low=0.682),p39_dist_DISTRACTOR_FIREWORKS_87080,development
+25,12.0,UNKNOWN,DEGRADED_OCCLUDED,0.0144,0.0053,0.3868,0.6079,0.6579,"Persistent occluded evidence (consecutive=14, rolloff=0.014, mid=0.387)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+26,12.48,DEGRADED_OCCLUDED,UNKNOWN,0.0165,0.006,0.3773,0.6168,0.6289,Transition to UNKNOWN due to low-frequency dominance (low=0.643),p39_dist_DISTRACTOR_FIREWORKS_87080,development
+27,12.96,UNKNOWN,DEGRADED_OCCLUDED,0.0223,0.0074,0.3562,0.6364,0.5771,"Persistent occluded evidence (consecutive=12, rolloff=0.022, mid=0.356)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+28,13.44,DEGRADED_OCCLUDED,UNKNOWN,0.0249,0.0083,0.3512,0.6405,0.5616,Transition to UNKNOWN due to low-frequency dominance (low=0.653),p39_dist_DISTRACTOR_FIREWORKS_87080,development
+29,13.92,UNKNOWN,DEGRADED_OCCLUDED,0.0224,0.008,0.3861,0.6059,0.6657,"Persistent occluded evidence (consecutive=12, rolloff=0.022, mid=0.386)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+32,15.36,DEGRADED_OCCLUDED,UNKNOWN,0.0165,0.0062,0.4024,0.5914,0.7032,Transition to UNKNOWN due to low-frequency dominance (low=0.645),p39_dist_DISTRACTOR_FIREWORKS_87080,development
+33,15.84,UNKNOWN,DEGRADED_OCCLUDED,0.0164,0.0059,0.3796,0.6145,0.6412,"Persistent occluded evidence (consecutive=10, rolloff=0.016, mid=0.380)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+36,17.28,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.2268,0.0963,0.4119,0.4918,0.9292,"Transition to CLEAR (rolloff=0.227 >= 0.22, hi=0.096 >= 0.08)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+39,18.72,CLEAR_NORMAL,UNKNOWN,0.1092,0.0452,0.372,0.5827,0.6989,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.640, m2l=0.544)",p39_dist_DISTRACTOR_FIREWORKS_87080,development
+14,6.72,UNKNOWN,DEGRADED_OCCLUDED,0.0799,0.0268,0.4132,0.56,0.9522,"Persistent occluded evidence (consecutive=2, rolloff=0.080, mid=0.413)",p39_dist_DISTRACTOR_FIREWORKS_62542,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.2916,0.1734,0.5947,0.2319,2.5937,"Persistent clear evidence (consecutive=2, rolloff=0.292, hi=0.173)",p39_dist_DISTRACTOR_FIREWORKS_328861,development
+33,15.84,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.1388,0.0883,0.6627,0.249,2.7826,"Transition to occluded (rolloff=0.139 < 0.18, mid=0.663 >= 0.38)",p39_dist_DISTRACTOR_FIREWORKS_328861,development
+42,20.16,DEGRADED_OCCLUDED,UNKNOWN,0.0986,0.0535,0.4836,0.4629,1.6329,Transition to UNKNOWN due to low-frequency dominance (low=0.762),p39_dist_DISTRACTOR_FIREWORKS_328861,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.0485,0.2825,0.2689,0.4486,0.6065,"Persistent clear evidence (consecutive=2, rolloff=1.048, hi=0.283)",p39_dist_DISTRACTOR_FIREWORKS_132273,development
+13,6.24,CLEAR_NORMAL,UNKNOWN,0.5161,0.064,0.0697,0.8663,0.3157,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.958, m2l=0.038)",p39_dist_DISTRACTOR_FIREWORKS_132273,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,2.0683,0.2813,0.1095,0.6092,0.3242,"Persistent clear evidence (consecutive=2, rolloff=2.068, hi=0.281)",p39_dist_DISTRACTOR_FIREWORKS_238953,development
+6,2.88,CLEAR_NORMAL,UNKNOWN,1.0234,0.1377,0.1383,0.7239,0.243,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.819, m2l=0.221)",p39_dist_DISTRACTOR_FIREWORKS_238953,development
+13,6.24,UNKNOWN,CLEAR_NORMAL,0.4551,0.1438,0.3071,0.549,0.7231,"Persistent clear evidence (consecutive=2, rolloff=0.455, hi=0.144)",p39_dist_DISTRACTOR_FIREWORKS_238953,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,19.2871,0.6659,0.065,0.2691,0.2207,"Persistent clear evidence (consecutive=2, rolloff=19.287, hi=0.666)",p39_dist_DISTRACTOR_FIREWORKS_140710,development
+3,1.44,CLEAR_NORMAL,UNKNOWN,11.4953,0.3985,0.0529,0.5486,0.1433,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.967, m2l=0.014)",p39_dist_DISTRACTOR_FIREWORKS_140710,development
+19,9.12,UNKNOWN,CLEAR_NORMAL,2.7405,0.2853,0.1106,0.604,0.5633,"Persistent clear evidence (consecutive=2, rolloff=2.740, hi=0.285)",p39_dist_DISTRACTOR_FIREWORKS_140710,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0335,0.0205,0.6179,0.3616,1.7143,"Persistent occluded evidence (consecutive=2, rolloff=0.033, mid=0.618)",p39_dist_DISTRACTOR_FIREWORKS_193975,development
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,0.0408,0.021,0.5647,0.4143,2.0776,Transition to UNKNOWN due to low-frequency dominance (low=0.673),p39_dist_DISTRACTOR_FIREWORKS_193975,development
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,0.0514,0.0309,0.6059,0.3632,2.4263,"Persistent occluded evidence (consecutive=12, rolloff=0.051, mid=0.606)",p39_dist_DISTRACTOR_FIREWORKS_193975,development
+21,10.08,DEGRADED_OCCLUDED,UNKNOWN,0.0473,0.0237,0.4969,0.4794,1.4297,Transition to UNKNOWN due to low-frequency dominance (low=0.638),p39_dist_DISTRACTOR_FIREWORKS_193975,development
+22,10.56,UNKNOWN,DEGRADED_OCCLUDED,0.0513,0.0243,0.4765,0.4991,1.2584,"Persistent occluded evidence (consecutive=21, rolloff=0.051, mid=0.477)",p39_dist_DISTRACTOR_FIREWORKS_193975,development
+31,14.88,DEGRADED_OCCLUDED,UNKNOWN,0.0884,0.0433,0.5367,0.4201,1.8389,Transition to UNKNOWN due to low-frequency dominance (low=0.650),p39_dist_DISTRACTOR_FIREWORKS_193975,development
+32,15.36,UNKNOWN,DEGRADED_OCCLUDED,0.0739,0.0387,0.6088,0.3525,2.7555,"Persistent occluded evidence (consecutive=29, rolloff=0.074, mid=0.609)",p39_dist_DISTRACTOR_FIREWORKS_193975,development
+42,20.16,DEGRADED_OCCLUDED,UNKNOWN,0.0448,0.0173,0.4935,0.4892,2.0773,Transition to UNKNOWN due to low-frequency dominance (low=0.742),p39_dist_DISTRACTOR_FIREWORKS_193975,development
+43,20.64,UNKNOWN,DEGRADED_OCCLUDED,0.0592,0.0202,0.4408,0.5391,1.6605,"Persistent occluded evidence (consecutive=36, rolloff=0.059, mid=0.441)",p39_dist_DISTRACTOR_FIREWORKS_193975,development
+45,21.6,DEGRADED_OCCLUDED,UNKNOWN,0.0732,0.0269,0.423,0.5501,1.3546,Transition to UNKNOWN due to low-frequency dominance (low=0.734),p39_dist_DISTRACTOR_FIREWORKS_193975,development
+46,22.08,UNKNOWN,DEGRADED_OCCLUDED,0.0911,0.0274,0.3671,0.6055,1.0806,"Persistent occluded evidence (consecutive=35, rolloff=0.091, mid=0.367)",p39_dist_DISTRACTOR_FIREWORKS_193975,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,4.0396,0.7829,0.1953,0.0219,9.0844,"Persistent clear evidence (consecutive=2, rolloff=4.040, hi=0.783)",p39_dist_DISTRACTOR_FIREWORKS_349785,development
+5,2.4,UNKNOWN,CLEAR_NORMAL,1.4109,0.1419,0.1369,0.7212,0.3785,"Persistent clear evidence (consecutive=2, rolloff=1.411, hi=0.142)",p39_dist_DISTRACTOR_FIREWORKS_171655,development
+7,3.36,CLEAR_NORMAL,UNKNOWN,0.9872,0.0819,0.0813,0.8368,0.2173,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.991, m2l=0.007)",p39_dist_DISTRACTOR_FIREWORKS_171655,development
+9,4.32,UNKNOWN,CLEAR_NORMAL,1.3666,0.2218,0.1404,0.6378,0.374,"Persistent clear evidence (consecutive=2, rolloff=1.367, hi=0.222)",p39_dist_DISTRACTOR_FIREWORKS_171655,development
+47,22.56,CLEAR_NORMAL,UNKNOWN,1.3881,0.0344,0.0376,0.9279,0.0501,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.995, m2l=0.002)",p39_dist_DISTRACTOR_FIREWORKS_171655,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.3434,0.2134,0.6214,0.1651,3.8351,"Persistent clear evidence (consecutive=2, rolloff=0.343, hi=0.213)",p39_dist_DISTRACTOR_FIREWORKS_325330,development
+35,16.8,UNKNOWN,DEGRADED_OCCLUDED,0.0311,0.008,0.3093,0.6827,0.5607,"Persistent occluded evidence (consecutive=2, rolloff=0.031, mid=0.309)",p39_dist_DISTRACTOR_FIREWORKS_251616,development
+36,17.28,DEGRADED_OCCLUDED,UNKNOWN,0.0427,0.0087,0.2672,0.7241,0.462,Transition to UNKNOWN due to low-frequency dominance (low=0.848),p39_dist_DISTRACTOR_FIREWORKS_251616,development
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,0.1192,0.0817,0.6432,0.2751,5.9478,"Persistent occluded evidence (consecutive=2, rolloff=0.119, mid=0.643)",p39_dist_DISTRACTOR_FIREWORKS_179987,development
+9,4.32,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.2536,0.1644,0.6983,0.1373,9.6147,"Transition to CLEAR (rolloff=0.254 >= 0.22, hi=0.164 >= 0.08)",p39_dist_DISTRACTOR_FIREWORKS_179987,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0416,0.0234,0.5747,0.4019,1.4686,"Persistent occluded evidence (consecutive=2, rolloff=0.042, mid=0.575)",p39_dist_DISTRACTOR_FIREWORKS_376656,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.7285,0.5493,0.3423,0.1083,3.1671,"Persistent clear evidence (consecutive=2, rolloff=1.728, hi=0.549)",p39_dist_DISTRACTOR_FIREWORKS_372606,development
+7,3.36,CLEAR_NORMAL,UNKNOWN,0.6054,0.1517,0.2179,0.6304,1.0461,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.748, m2l=0.292)",p39_dist_DISTRACTOR_FIREWORKS_372606,development
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,0.2668,0.0594,0.4757,0.4649,7.4019,"Persistent occluded evidence (consecutive=2, rolloff=0.267, mid=0.476)",p39_dist_DISTRACTOR_FIREWORKS_372606,development
+16,7.68,DEGRADED_OCCLUDED,UNKNOWN,0.1161,0.028,0.5881,0.384,8.6477,Transition to UNKNOWN due to low-frequency dominance (low=0.626),p39_dist_DISTRACTOR_FIREWORKS_372606,development
+17,8.16,UNKNOWN,DEGRADED_OCCLUDED,0.0891,0.0214,0.4967,0.4818,6.5576,"Persistent occluded evidence (consecutive=4, rolloff=0.089, mid=0.497)",p39_dist_DISTRACTOR_FIREWORKS_372606,development
+18,8.64,DEGRADED_OCCLUDED,UNKNOWN,0.0697,0.0162,0.3886,0.5952,4.9354,Transition to UNKNOWN due to low-frequency dominance (low=0.935),p39_dist_DISTRACTOR_FIREWORKS_372606,development
+19,9.12,UNKNOWN,DEGRADED_OCCLUDED,0.056,0.0122,0.2981,0.6896,3.7084,"Persistent occluded evidence (consecutive=2, rolloff=0.056, mid=0.298)",p39_dist_DISTRACTOR_FIREWORKS_372606,development
+20,9.6,DEGRADED_OCCLUDED,UNKNOWN,0.5491,0.0357,0.2367,0.7276,2.7969,Transition to UNKNOWN due to low-frequency dominance (low=0.842),p39_dist_DISTRACTOR_FIREWORKS_372606,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.7566,0.2468,0.1809,0.5723,2.0105,"Persistent clear evidence (consecutive=2, rolloff=0.757, hi=0.247)",p39_dist_DISTRACTOR_FIREWORKS_129684,development
+6,2.88,CLEAR_NORMAL,UNKNOWN,0.411,0.1397,0.1898,0.6705,1.3369,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.853, m2l=0.168)",p39_dist_DISTRACTOR_FIREWORKS_129684,development
+9,4.32,UNKNOWN,DEGRADED_OCCLUDED,0.2041,0.0714,0.3243,0.6044,1.0168,"Persistent occluded evidence (consecutive=2, rolloff=0.204, mid=0.324)",p39_dist_DISTRACTOR_FIREWORKS_129684,development
+11,5.28,DEGRADED_OCCLUDED,UNKNOWN,0.1191,0.0418,0.3338,0.6245,0.8334,Transition to UNKNOWN due to low-frequency dominance (low=0.762),p39_dist_DISTRACTOR_FIREWORKS_129684,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.6876,0.4011,0.5984,0.0005,933.1247,"Persistent clear evidence (consecutive=2, rolloff=0.688, hi=0.401)",p39_dist_DISTRACTOR_SLAM_DOOR_151589,development
+4,1.92,UNKNOWN,CLEAR_NORMAL,0.6565,0.2022,0.2753,0.5226,1.2434,"Persistent clear evidence (consecutive=2, rolloff=0.656, hi=0.202)",p39_dist_DISTRACTOR_SLAM_DOOR_346154,development
+8,3.84,CLEAR_NORMAL,UNKNOWN,0.503,0.1751,0.4109,0.414,3.8779,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.730, m2l=0.304)",p39_dist_DISTRACTOR_SLAM_DOOR_346154,development
+13,6.24,UNKNOWN,CLEAR_NORMAL,0.4311,0.1422,0.3044,0.5534,1.4577,"Persistent clear evidence (consecutive=2, rolloff=0.431, hi=0.142)",p39_dist_DISTRACTOR_SLAM_DOOR_346154,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.359,0.208,0.5791,0.213,2.7603,"Persistent clear evidence (consecutive=2, rolloff=0.359, hi=0.208)",p39_dist_DISTRACTOR_SLAM_DOOR_346212,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,1.9179,0.3473,0.2141,0.4386,1.0817,"Persistent clear evidence (consecutive=2, rolloff=1.918, hi=0.347)",p39_dist_DISTRACTOR_SLAM_DOOR_332914,development
+8,3.84,CLEAR_NORMAL,UNKNOWN,0.6551,0.1184,0.143,0.7386,0.391,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.962, m2l=0.038)",p39_dist_DISTRACTOR_SLAM_DOOR_332914,development
+10,4.8,UNKNOWN,CLEAR_NORMAL,0.4946,0.1261,0.3173,0.5566,1.2755,"Persistent clear evidence (consecutive=2, rolloff=0.495, hi=0.126)",p39_dist_DISTRACTOR_SLAM_DOOR_332914,development
+14,6.72,CLEAR_NORMAL,UNKNOWN,0.3091,0.0563,0.2058,0.7379,0.9784,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.999, m2l=0.001)",p39_dist_DISTRACTOR_SLAM_DOOR_332914,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,18.3184,0.3683,0.6317,0.0,6255.2879,"Persistent clear evidence (consecutive=2, rolloff=18.318, hi=0.368)",p39_dist_DISTRACTOR_SLAM_DOOR_72826,development
+4,1.92,UNKNOWN,DEGRADED_OCCLUDED,0.0903,0.0167,0.531,0.4523,3164.8286,"Persistent occluded evidence (consecutive=2, rolloff=0.090, mid=0.531)",p39_dist_DISTRACTOR_SLAM_DOOR_316558,development
+6,2.88,DEGRADED_OCCLUDED,UNKNOWN,0.0802,0.0236,0.5003,0.4761,1780.6755,Transition to UNKNOWN due to low-frequency dominance (low=0.620),p39_dist_DISTRACTOR_SLAM_DOOR_316558,development
+7,3.36,UNKNOWN,DEGRADED_OCCLUDED,0.0927,0.0243,0.4263,0.5493,1335.5731,"Persistent occluded evidence (consecutive=3, rolloff=0.093, mid=0.426)",p39_dist_DISTRACTOR_SLAM_DOOR_316558,development
+8,3.84,DEGRADED_OCCLUDED,UNKNOWN,0.1354,0.0298,0.3636,0.6067,1001.7361,Transition to UNKNOWN due to low-frequency dominance (low=0.779),p39_dist_DISTRACTOR_SLAM_DOOR_316558,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0059,0.0053,0.9207,0.074,12.6685,"Persistent occluded evidence (consecutive=2, rolloff=0.006, mid=0.921)",p39_dist_DISTRACTOR_SLAM_DOOR_125093,development
+9,4.32,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.3598,0.2298,0.715,0.0551,15.2076,"Transition to CLEAR (rolloff=0.360 >= 0.22, hi=0.230 >= 0.08)",p39_dist_DISTRACTOR_SLAM_DOOR_125093,development
+16,7.68,CLEAR_NORMAL,UNKNOWN,0.1446,0.0622,0.3384,0.5995,2.7554,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.824, m2l=0.196)",p39_dist_DISTRACTOR_SLAM_DOOR_125093,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4022,0.2031,0.5142,0.2826,2.1243,"Persistent clear evidence (consecutive=2, rolloff=0.402, hi=0.203)",p39_dist_DISTRACTOR_SLAM_DOOR_336888,development
+15,7.2,CLEAR_NORMAL,UNKNOWN,0.4321,0.058,0.1834,0.7586,0.4676,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.832, m2l=0.192)",p39_dist_DISTRACTOR_SLAM_DOOR_336888,development
+12,5.76,UNKNOWN,CLEAR_NORMAL,0.5717,0.1086,0.1596,0.7318,0.3313,"Persistent clear evidence (consecutive=2, rolloff=0.572, hi=0.109)",p39_dist_DISTRACTOR_SLAM_DOOR_185749,development
+14,6.72,CLEAR_NORMAL,UNKNOWN,0.4254,0.0664,0.1121,0.8215,0.2103,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.939, m2l=0.053)",p39_dist_DISTRACTOR_SLAM_DOOR_185749,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0001,0.0,1.0,0.0,10001.0,"Persistent occluded evidence (consecutive=2, rolloff=0.000, mid=1.000)",p39_dist_DISTRACTOR_SLAM_DOOR_94785,development
+6,2.88,DEGRADED_OCCLUDED,UNKNOWN,0.4661,0.0988,0.6614,0.2398,5625.7727,Transition to UNKNOWN due to low-frequency dominance (low=0.730),p39_dist_DISTRACTOR_SLAM_DOOR_94785,development
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,0.0868,0.0001,0.4382,0.5618,4373.9458,"Persistent occluded evidence (consecutive=2, rolloff=0.087, mid=0.438)",p39_dist_DISTRACTOR_THUNDER_210044,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,4.9674,0.6799,0.2829,0.0372,6.3648,"Persistent clear evidence (consecutive=2, rolloff=4.967, hi=0.680)",p39_dist_DISTRACTOR_THUNDER_74892,development
+3,1.44,CLEAR_NORMAL,UNKNOWN,2.892,0.3996,0.2355,0.3649,3.6805,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.842, m2l=0.154)",p39_dist_DISTRACTOR_THUNDER_74892,development
+27,12.96,UNKNOWN,DEGRADED_OCCLUDED,0.1602,0.0021,0.449,0.5489,4375.4497,"Persistent occluded evidence (consecutive=2, rolloff=0.160, mid=0.449)",p39_dist_DISTRACTOR_THUNDER_117138,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,39.8257,0.9041,0.03,0.0659,0.4744,"Persistent clear evidence (consecutive=2, rolloff=39.826, hi=0.904)",p39_dist_DISTRACTOR_GLASS_47142,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,4.059,0.7844,0.1961,0.0195,10.9512,"Persistent clear evidence (consecutive=2, rolloff=4.059, hi=0.784)",p39_dist_DISTRACTOR_GLASS_66434,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0205,0.02,0.9799,0.0001,4680.5291,"Persistent occluded evidence (consecutive=2, rolloff=0.021, mid=0.980)",p39_dist_DISTRACTOR_GLASS_267290,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.9048,0.4299,0.4816,0.0884,5.4756,"Persistent clear evidence (consecutive=2, rolloff=0.905, hi=0.430)",p39_dist_DISTRACTOR_GLASS_68653,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0003,0.0002,0.9996,0.0003,2702.8542,"Persistent occluded evidence (consecutive=2, rolloff=0.000, mid=1.000)",p39_dist_DISTRACTOR_GLASS_27701,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0001,0.0,0.9992,0.0008,1134.9747,"Persistent occluded evidence (consecutive=2, rolloff=0.000, mid=0.999)",p39_dist_DISTRACTOR_GLASS_418912,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,107.4773,0.9882,0.0091,0.0026,3.3663,"Persistent clear evidence (consecutive=2, rolloff=107.477, hi=0.988)",p39_dist_DISTRACTOR_GLASS_194657,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.8826,0.4918,0.263,0.2452,1.0741,"Persistent clear evidence (consecutive=2, rolloff=1.883, hi=0.492)",p39_dist_DISTRACTOR_GLASS_188518,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0006,0.0005,0.9994,0.0001,4647.9697,"Persistent occluded evidence (consecutive=2, rolloff=0.001, mid=0.999)",p39_dist_DISTRACTOR_GLASS_145513,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.524,0.6013,0.3945,0.0042,91.1643,"Persistent clear evidence (consecutive=2, rolloff=1.524, hi=0.601)",p39_dist_DISTRACTOR_GLASS_377987,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.2844,0.1706,0.6033,0.2261,3.1513,"Persistent clear evidence (consecutive=2, rolloff=0.284, hi=0.171)",p39_dist_DISTRACTOR_GLASS_379012,development
+6,2.88,UNKNOWN,CLEAR_NORMAL,0.3383,0.0805,0.2526,0.6669,0.4044,"Persistent clear evidence (consecutive=2, rolloff=0.338, hi=0.080)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_87315,development
+21,10.08,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.4384,0.1447,0.3867,0.4686,1.3512,"Transition to occluded (rolloff=0.438 < 0.18, mid=0.387 >= 0.38)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_87315,development
+25,12.0,DEGRADED_OCCLUDED,UNKNOWN,0.3745,0.1167,0.3885,0.4948,0.976,Transition to UNKNOWN due to low-frequency dominance (low=0.587),p39_dist_DISTRACTOR_VEHICLE_ENGINE_87315,development
+4,1.92,UNKNOWN,CLEAR_NORMAL,1.2237,0.1445,0.1201,0.7354,0.1709,"Persistent clear evidence (consecutive=2, rolloff=1.224, hi=0.144)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_402958,development
+6,2.88,CLEAR_NORMAL,UNKNOWN,1.3011,0.144,0.1123,0.7437,0.1557,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.772, m2l=0.123)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_402958,development
+10,4.8,UNKNOWN,CLEAR_NORMAL,2.1957,0.1975,0.0945,0.7079,0.1348,"Persistent clear evidence (consecutive=2, rolloff=2.196, hi=0.198)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_402958,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.5057,0.307,0.6071,0.0859,7.4733,"Persistent clear evidence (consecutive=2, rolloff=0.506, hi=0.307)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_29724,development
+6,2.88,UNKNOWN,CLEAR_NORMAL,64.447,0.4203,0.0257,0.554,0.0799,"Persistent clear evidence (consecutive=2, rolloff=64.447, hi=0.420)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_83488,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,4.049,0.2515,0.0647,0.6838,0.0966,"Persistent clear evidence (consecutive=2, rolloff=4.049, hi=0.251)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_352305,development
+6,2.88,CLEAR_NORMAL,UNKNOWN,1.737,0.1121,0.101,0.7868,0.1271,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.830, m2l=0.195)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_352305,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0154,0.0131,0.8569,0.13,6.5983,"Persistent occluded evidence (consecutive=2, rolloff=0.015, mid=0.857)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_125520,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0321,0.0159,0.4967,0.4875,1.0211,"Persistent occluded evidence (consecutive=2, rolloff=0.032, mid=0.497)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_371833,development
+2,0.96,DEGRADED_OCCLUDED,UNKNOWN,0.0528,0.0123,0.3763,0.6114,0.7697,Transition to UNKNOWN due to low-frequency dominance (low=0.983),p39_dist_DISTRACTOR_VEHICLE_ENGINE_371833,development
+3,1.44,UNKNOWN,DEGRADED_OCCLUDED,0.0396,0.0092,0.5322,0.4586,2500.8273,"Persistent occluded evidence (consecutive=2, rolloff=0.040, mid=0.532)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_371833,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4152,0.2818,0.679,0.0392,17.3552,"Persistent clear evidence (consecutive=2, rolloff=0.415, hi=0.282)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_179858,development
+3,1.44,CLEAR_NORMAL,UNKNOWN,0.2536,0.1662,0.5307,0.3031,10.0102,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.730, m2l=0.361)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_179858,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0404,0.0358,0.8894,0.0748,12.2194,"Persistent occluded evidence (consecutive=2, rolloff=0.040, mid=0.889)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+6,2.88,DEGRADED_OCCLUDED,UNKNOWN,0.032,0.0273,0.6918,0.2809,13.4928,Transition to UNKNOWN due to low-frequency dominance (low=0.961),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+7,3.36,UNKNOWN,DEGRADED_OCCLUDED,0.9439,0.0584,0.5291,0.4125,10.1323,"Persistent occluded evidence (consecutive=4, rolloff=0.944, mid=0.529)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+8,3.84,DEGRADED_OCCLUDED,UNKNOWN,1.6207,0.0809,0.407,0.5121,7.6118,Transition to UNKNOWN due to low-frequency dominance (low=0.811),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+9,4.32,UNKNOWN,DEGRADED_OCCLUDED,2.1393,0.098,0.3153,0.5866,5.7213,"Persistent occluded evidence (consecutive=2, rolloff=2.139, mid=0.315)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,2.554,0.1117,0.2465,0.6418,4.3034,Transition to UNKNOWN due to low-frequency dominance (low=0.807),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+11,5.28,UNKNOWN,DEGRADED_OCCLUDED,1.9212,0.0888,0.4059,0.5054,5.5256,"Persistent occluded evidence (consecutive=2, rolloff=1.921, mid=0.406)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+17,8.16,DEGRADED_OCCLUDED,UNKNOWN,0.3635,0.0345,0.6398,0.3258,12.4849,Transition to UNKNOWN due to low-frequency dominance (low=0.835),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+18,8.64,UNKNOWN,DEGRADED_OCCLUDED,1.2226,0.0637,0.4898,0.4465,9.376,"Persistent occluded evidence (consecutive=5, rolloff=1.223, mid=0.490)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+19,9.12,DEGRADED_OCCLUDED,UNKNOWN,1.8363,0.0851,0.3775,0.5374,7.0446,Transition to UNKNOWN due to low-frequency dominance (low=0.810),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+20,9.6,UNKNOWN,DEGRADED_OCCLUDED,2.2771,0.1014,0.2935,0.6051,5.2964,"Persistent occluded evidence (consecutive=3, rolloff=2.277, mid=0.294)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+21,10.08,DEGRADED_OCCLUDED,UNKNOWN,2.636,0.1143,0.2304,0.6553,3.985,Transition to UNKNOWN due to low-frequency dominance (low=0.806),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+23,11.04,UNKNOWN,DEGRADED_OCCLUDED,1.5196,0.0753,0.3775,0.5471,4.4729,"Persistent occluded evidence (consecutive=2, rolloff=1.520, mid=0.378)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+29,13.92,DEGRADED_OCCLUDED,UNKNOWN,0.2953,0.0307,0.6008,0.3684,11.2131,Transition to UNKNOWN due to low-frequency dominance (low=0.964),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+30,14.4,UNKNOWN,DEGRADED_OCCLUDED,1.1769,0.0614,0.4606,0.478,8.4222,"Persistent occluded evidence (consecutive=5, rolloff=1.177, mid=0.461)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+31,14.88,DEGRADED_OCCLUDED,UNKNOWN,1.8301,0.0835,0.3554,0.5611,6.3289,Transition to UNKNOWN due to low-frequency dominance (low=0.810),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+32,15.36,UNKNOWN,DEGRADED_OCCLUDED,2.2512,0.0993,0.2769,0.6238,4.7595,"Persistent occluded evidence (consecutive=3, rolloff=2.251, mid=0.277)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+33,15.84,DEGRADED_OCCLUDED,UNKNOWN,2.591,0.1116,0.2179,0.6705,3.5823,Transition to UNKNOWN due to low-frequency dominance (low=0.811),p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+35,16.8,UNKNOWN,DEGRADED_OCCLUDED,2.1811,0.0959,0.3595,0.5446,5.5741,"Persistent occluded evidence (consecutive=2, rolloff=2.181, mid=0.360)",p39_dist_DISTRACTOR_VEHICLE_ENGINE_424604,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.1154,0.4832,0.5143,0.0025,745.1922,"Persistent clear evidence (consecutive=2, rolloff=1.115, hi=0.483)",p39_dist_DISTRACTOR_SCREAMING_254477,development
+3,1.44,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.6368,0.2809,0.7175,0.0016,1978.9534,"Transition to occluded (rolloff=0.637 < 0.18, mid=0.717 >= 0.38)",p39_dist_DISTRACTOR_SCREAMING_254477,development
+5,2.4,DEGRADED_OCCLUDED,UNKNOWN,0.5598,0.1777,0.5749,0.2475,1115.142,Transition to UNKNOWN due to low-frequency dominance (low=0.925),p39_dist_DISTRACTOR_SCREAMING_254477,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0633,0.059,0.9408,0.0002,2902.0657,"Persistent occluded evidence (consecutive=2, rolloff=0.063, mid=0.941)",p39_dist_DISTRACTOR_SCREAMING_9429,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0367,0.0352,0.9646,0.0003,2622.3533,"Persistent occluded evidence (consecutive=2, rolloff=0.037, mid=0.965)",p39_dist_DISTRACTOR_SCREAMING_256494,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0156,0.0152,0.9846,0.0002,3247.8242,"Persistent occluded evidence (consecutive=2, rolloff=0.016, mid=0.985)",p39_dist_DISTRACTOR_SCREAMING_353285,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0223,0.0217,0.9781,0.0002,7460.4851,"Persistent occluded evidence (consecutive=2, rolloff=0.022, mid=0.978)",p39_dist_DISTRACTOR_SCREAMING_219657,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0661,0.0613,0.9295,0.0092,109.9646,"Persistent occluded evidence (consecutive=2, rolloff=0.066, mid=0.929)",p39_dist_DISTRACTOR_SCREAMING_219661,development
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.1543,0.0577,0.5522,0.3901,27.0452,"Persistent occluded evidence (consecutive=2, rolloff=0.154, mid=0.552)",p39_dist_DISTRACTOR_SCREAMING_166943,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0768,0.071,0.9265,0.0025,362.7235,"Persistent occluded evidence (consecutive=2, rolloff=0.077, mid=0.926)",p39_dist_DISTRACTOR_SCREAMING_85538,development
+5,2.4,DEGRADED_OCCLUDED,UNKNOWN,0.1185,0.0617,0.6937,0.2445,719.2052,Transition to UNKNOWN due to low-frequency dominance (low=0.973),p39_dist_DISTRACTOR_SCREAMING_85538,development
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.2291,0.0982,0.4313,0.4705,0.9189,"Persistent clear evidence (consecutive=2, rolloff=0.229, hi=0.098)",p39_dist_DISTRACTOR_TOOLS_IMPACT_160679,development
+9,4.32,UNKNOWN,DEGRADED_OCCLUDED,0.0673,0.015,0.324,0.661,0.6023,"Persistent occluded evidence (consecutive=2, rolloff=0.067, mid=0.324)",p39_dist_DISTRACTOR_TOOLS_IMPACT_54850,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.5524,0.1829,0.4854,0.3317,1.6012,"Persistent clear evidence (consecutive=2, rolloff=0.552, hi=0.183)",p39_dist_DISTRACTOR_TOOLS_IMPACT_319529,development
+4,1.92,UNKNOWN,DEGRADED_OCCLUDED,0.2251,0.0325,0.2242,0.7433,0.4446,"Persistent occluded evidence (consecutive=2, rolloff=0.225, mid=0.224)",p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+8,3.84,DEGRADED_OCCLUDED,UNKNOWN,0.3043,0.0317,0.3066,0.6617,0.656,Transition to UNKNOWN due to low-frequency dominance (low=0.906),p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+9,4.32,UNKNOWN,DEGRADED_OCCLUDED,0.5167,0.0542,0.2563,0.6894,0.5262,"Persistent occluded evidence (consecutive=3, rolloff=0.517, mid=0.256)",p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,0.6894,0.0706,0.217,0.7123,0.4264,Transition to UNKNOWN due to low-frequency dominance (low=0.781),p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+19,9.12,UNKNOWN,DEGRADED_OCCLUDED,0.7363,0.0751,0.3809,0.544,0.9048,"Persistent occluded evidence (consecutive=2, rolloff=0.736, mid=0.381)",p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+23,11.04,DEGRADED_OCCLUDED,UNKNOWN,0.3706,0.0445,0.4209,0.5346,1.2097,Transition to UNKNOWN due to low-frequency dominance (low=0.880),p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+24,11.52,UNKNOWN,DEGRADED_OCCLUDED,0.6573,0.048,0.3253,0.6268,0.9179,"Persistent occluded evidence (consecutive=3, rolloff=0.657, mid=0.325)",p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+25,12.0,DEGRADED_OCCLUDED,UNKNOWN,0.9371,0.0489,0.2512,0.6998,0.6964,Transition to UNKNOWN due to low-frequency dominance (low=0.919),p39_dist_DISTRACTOR_TOOLS_IMPACT_251434,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4005,0.2725,0.681,0.0465,14.8235,"Persistent clear evidence (consecutive=2, rolloff=0.400, hi=0.273)",p39_dist_DISTRACTOR_TOOLS_IMPACT_166448,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,27.862,0.6569,0.0235,0.3196,0.0739,"Persistent clear evidence (consecutive=2, rolloff=27.862, hi=0.657)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+3,1.44,CLEAR_NORMAL,UNKNOWN,15.7487,0.3695,0.0136,0.6169,0.042,"Transition to UNKNOWN due to heavy low-frequency rumble (low=1.000, m2l=0.000)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+10,4.8,UNKNOWN,CLEAR_NORMAL,7.0345,0.3249,0.0279,0.6473,0.0903,"Persistent clear evidence (consecutive=2, rolloff=7.035, hi=0.325)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+12,5.76,CLEAR_NORMAL,UNKNOWN,4.1189,0.1828,0.0158,0.8014,0.051,"Transition to UNKNOWN due to heavy low-frequency rumble (low=1.000, m2l=0.000)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+18,8.64,UNKNOWN,CLEAR_NORMAL,1.8473,0.2021,0.0971,0.7007,0.2532,"Persistent clear evidence (consecutive=2, rolloff=1.847, hi=0.202)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+20,9.6,CLEAR_NORMAL,UNKNOWN,1.1914,0.1137,0.055,0.8313,0.1428,"Transition to UNKNOWN due to heavy low-frequency rumble (low=1.000, m2l=0.000)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+32,15.36,UNKNOWN,CLEAR_NORMAL,3.8626,0.2532,0.0342,0.7127,0.104,"Persistent clear evidence (consecutive=2, rolloff=3.863, hi=0.253)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+34,16.32,CLEAR_NORMAL,UNKNOWN,2.1908,0.1424,0.0212,0.8364,0.0606,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.998, m2l=0.002)",p39_dist_DISTRACTOR_TOOLS_IMPACT_273975,development
+153,73.44,UNKNOWN,DEGRADED_OCCLUDED,0.0315,0.0123,0.3839,0.6039,0.689,"Persistent occluded evidence (consecutive=2, rolloff=0.031, mid=0.384)",p38_cont_05_hameln,development
+154,73.92,DEGRADED_OCCLUDED,UNKNOWN,0.0359,0.0127,0.3595,0.6278,0.6192,Transition to UNKNOWN due to low-frequency dominance (low=0.699),p38_cont_05_hameln,development
+7,3.36,UNKNOWN,CLEAR_NORMAL,0.3159,0.0867,0.2768,0.6365,0.4357,"Persistent clear evidence (consecutive=2, rolloff=0.316, hi=0.087)",p38_cont_06_neringos,development
+49,23.52,CLEAR_NORMAL,UNKNOWN,0.1068,0.0393,0.3698,0.5908,0.6288,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.602, m2l=0.593)",p38_cont_06_neringos,development
+81,38.88,UNKNOWN,CLEAR_NORMAL,0.2655,0.0844,0.3192,0.5964,0.5397,"Persistent clear evidence (consecutive=2, rolloff=0.265, hi=0.084)",p38_cont_06_neringos,development
+113,54.24,CLEAR_NORMAL,UNKNOWN,0.3439,0.04,0.1252,0.8348,0.1548,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.752, m2l=0.263)",p38_cont_06_neringos,development
+158,75.84,UNKNOWN,CLEAR_NORMAL,0.4092,0.0888,0.2159,0.6953,0.3159,"Persistent clear evidence (consecutive=2, rolloff=0.409, hi=0.089)",p38_cont_06_neringos,development
+320,153.6,CLEAR_NORMAL,UNKNOWN,0.1046,0.029,0.2783,0.6927,0.4026,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.680, m2l=0.418)",p38_cont_06_neringos,development
+325,156.0,UNKNOWN,CLEAR_NORMAL,0.2952,0.0776,0.2679,0.6545,0.4097,"Persistent clear evidence (consecutive=2, rolloff=0.295, hi=0.078)",p38_cont_06_neringos,development
+356,170.88,UNKNOWN,DEGRADED_OCCLUDED,0.0492,0.0024,0.2768,0.7208,0.6536,"Persistent occluded evidence (consecutive=2, rolloff=0.049, mid=0.277)",p39_cont_01_crete_cave,development
+358,171.84,DEGRADED_OCCLUDED,UNKNOWN,0.0343,0.0033,0.3027,0.694,0.5947,Transition to UNKNOWN due to low-frequency dominance (low=0.703),p39_cont_01_crete_cave,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4394,0.2499,0.5688,0.1813,3.1374,"Persistent clear evidence (consecutive=2, rolloff=0.439, hi=0.250)",p39_cont_02_bad_berka,development
+459,220.32,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.2099,0.1237,0.6036,0.2727,2.4156,"Transition to occluded (rolloff=0.210 < 0.18, mid=0.604 >= 0.38)",p39_cont_02_bad_berka,development
+462,221.76,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.293,0.1699,0.5875,0.2426,2.5343,"Transition to CLEAR (rolloff=0.293 >= 0.22, hi=0.170 >= 0.08)",p39_cont_02_bad_berka,development
+77,36.96,UNKNOWN,CLEAR_NORMAL,28.0912,0.2238,0.0169,0.7593,0.0215,"Persistent clear evidence (consecutive=2, rolloff=28.091, hi=0.224)",p39_cont_03_abergavenny,development
+99,47.52,CLEAR_NORMAL,UNKNOWN,2.8468,0.0199,0.0125,0.9676,0.0132,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.994, m2l=0.006)",p39_cont_03_abergavenny,development
+245,117.6,UNKNOWN,DEGRADED_OCCLUDED,0.1246,0.0385,0.2952,0.6663,0.6594,"Persistent occluded evidence (consecutive=2, rolloff=0.125, mid=0.295)",p39_cont_03_abergavenny,development
+249,119.52,DEGRADED_OCCLUDED,UNKNOWN,0.1351,0.0467,0.3416,0.6118,0.641,Transition to UNKNOWN due to low-frequency dominance (low=0.640),p39_cont_03_abergavenny,development
+280,134.4,UNKNOWN,CLEAR_NORMAL,0.4613,0.105,0.2159,0.6791,0.3481,"Persistent clear evidence (consecutive=2, rolloff=0.461, hi=0.105)",p39_cont_03_abergavenny,development
+286,137.28,CLEAR_NORMAL,UNKNOWN,0.3558,0.0673,0.1773,0.7555,0.2551,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.877, m2l=0.108)",p39_cont_03_abergavenny,development
+310,148.8,UNKNOWN,CLEAR_NORMAL,0.7121,0.1111,0.1336,0.7554,0.2252,"Persistent clear evidence (consecutive=2, rolloff=0.712, hi=0.111)",p39_cont_03_abergavenny,development
+330,158.4,CLEAR_NORMAL,UNKNOWN,0.552,0.0528,0.1107,0.8365,0.1429,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.946, m2l=0.038)",p39_cont_03_abergavenny,development
+506,242.88,UNKNOWN,CLEAR_NORMAL,6.7115,0.258,0.0559,0.6861,0.0847,"Persistent clear evidence (consecutive=2, rolloff=6.711, hi=0.258)",p39_cont_03_abergavenny,development
+508,243.84,CLEAR_NORMAL,UNKNOWN,4.6112,0.1911,0.066,0.743,0.0892,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.878, m2l=0.113)",p39_cont_03_abergavenny,development
+513,246.24,UNKNOWN,CLEAR_NORMAL,7.2596,0.2418,0.0565,0.7017,0.0784,"Persistent clear evidence (consecutive=2, rolloff=7.260, hi=0.242)",p39_cont_03_abergavenny,development
+517,248.16,CLEAR_NORMAL,UNKNOWN,3.2567,0.1191,0.0522,0.8287,0.0643,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.955, m2l=0.040)",p39_cont_03_abergavenny,development
+522,250.56,UNKNOWN,CLEAR_NORMAL,7.6056,0.1842,0.0427,0.773,0.0547,"Persistent clear evidence (consecutive=2, rolloff=7.606, hi=0.184)",p39_cont_03_abergavenny,development
+524,251.52,CLEAR_NORMAL,UNKNOWN,6.2219,0.1362,0.0324,0.8314,0.0401,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.973, m2l=0.022)",p39_cont_03_abergavenny,development
+531,254.88,UNKNOWN,CLEAR_NORMAL,12.7642,0.2369,0.0237,0.7394,0.0331,"Persistent clear evidence (consecutive=2, rolloff=12.764, hi=0.237)",p39_cont_03_abergavenny,development
+533,255.84,CLEAR_NORMAL,UNKNOWN,8.3109,0.1786,0.0336,0.7878,0.0425,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.932, m2l=0.056)",p39_cont_03_abergavenny,development
+537,257.76,UNKNOWN,CLEAR_NORMAL,15.4417,0.2601,0.0298,0.7101,0.0407,"Persistent clear evidence (consecutive=2, rolloff=15.442, hi=0.260)",p39_cont_03_abergavenny,development
+545,261.6,CLEAR_NORMAL,UNKNOWN,4.032,0.136,0.0413,0.8228,0.0631,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.912, m2l=0.073)",p39_cont_03_abergavenny,development
+554,265.92,UNKNOWN,CLEAR_NORMAL,32.4774,0.2526,0.0489,0.6985,0.0641,"Persistent clear evidence (consecutive=2, rolloff=32.477, hi=0.253)",p39_cont_03_abergavenny,development
+556,266.88,CLEAR_NORMAL,UNKNOWN,18.7684,0.1479,0.0345,0.8175,0.0433,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.966, m2l=0.023)",p39_cont_03_abergavenny,development
+565,271.2,UNKNOWN,CLEAR_NORMAL,81.7633,0.2696,0.0253,0.7051,0.0314,"Persistent clear evidence (consecutive=2, rolloff=81.763, hi=0.270)",p39_cont_03_abergavenny,development
+567,272.16,CLEAR_NORMAL,UNKNOWN,50.3897,0.2013,0.0212,0.7776,0.0255,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.971, m2l=0.020)",p39_cont_03_abergavenny,development
+577,276.96,UNKNOWN,CLEAR_NORMAL,11.9257,0.2299,0.0263,0.7438,0.0391,"Persistent clear evidence (consecutive=2, rolloff=11.926, hi=0.230)",p39_cont_03_abergavenny,development
+579,277.92,CLEAR_NORMAL,UNKNOWN,6.997,0.161,0.0626,0.7764,0.0809,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.841, m2l=0.114)",p39_cont_03_abergavenny,development
+584,280.32,UNKNOWN,CLEAR_NORMAL,21.3178,0.2385,0.0839,0.6775,0.1378,"Persistent clear evidence (consecutive=2, rolloff=21.318, hi=0.239)",p39_cont_03_abergavenny,development
+586,281.28,CLEAR_NORMAL,UNKNOWN,20.8497,0.1809,0.0557,0.7635,0.0867,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.956, m2l=0.032)",p39_cont_03_abergavenny,development
+594,285.12,UNKNOWN,CLEAR_NORMAL,9.4187,0.2237,0.0516,0.7247,0.0791,"Persistent clear evidence (consecutive=2, rolloff=9.419, hi=0.224)",p39_cont_03_abergavenny,development
+596,286.08,CLEAR_NORMAL,UNKNOWN,5.6229,0.1482,0.0583,0.7936,0.0791,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.936, m2l=0.040)",p39_cont_03_abergavenny,development
+600,288.0,UNKNOWN,CLEAR_NORMAL,111.574,0.3142,0.0441,0.6416,0.0554,"Persistent clear evidence (consecutive=2, rolloff=111.574, hi=0.314)",p39_cont_03_abergavenny,development
+602,288.96,CLEAR_NORMAL,UNKNOWN,62.9686,0.1777,0.0268,0.7955,0.0332,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.994, m2l=0.005)",p39_cont_03_abergavenny,development
+607,291.36,UNKNOWN,CLEAR_NORMAL,22.3656,0.3016,0.0377,0.6608,0.0664,"Persistent clear evidence (consecutive=2, rolloff=22.366, hi=0.302)",p39_cont_03_abergavenny,development
+609,292.32,CLEAR_NORMAL,UNKNOWN,14.3171,0.2255,0.0554,0.7191,0.0797,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.818, m2l=0.145)",p39_cont_03_abergavenny,development
+1171,562.08,UNKNOWN,CLEAR_NORMAL,48.9264,0.2813,0.0166,0.7021,0.0215,"Persistent clear evidence (consecutive=2, rolloff=48.926, hi=0.281)",p39_cont_03_abergavenny,development
+1173,563.04,CLEAR_NORMAL,UNKNOWN,27.8707,0.1626,0.0148,0.8225,0.0178,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.978, m2l=0.012)",p39_cont_03_abergavenny,development
+1193,572.64,UNKNOWN,CLEAR_NORMAL,7.7995,0.2151,0.0402,0.7447,0.0541,"Persistent clear evidence (consecutive=2, rolloff=7.799, hi=0.215)",p39_cont_03_abergavenny,development
+1195,573.6,CLEAR_NORMAL,UNKNOWN,6.2956,0.1963,0.0399,0.7638,0.0526,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.775, m2l=0.057)",p39_cont_03_abergavenny,development
+1197,574.56,UNKNOWN,CLEAR_NORMAL,12.2791,0.2877,0.0314,0.6809,0.0457,"Persistent clear evidence (consecutive=2, rolloff=12.279, hi=0.288)",p39_cont_03_abergavenny,development
+1199,575.52,CLEAR_NORMAL,UNKNOWN,7.0423,0.1648,0.0273,0.8078,0.0357,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.972, m2l=0.022)",p39_cont_03_abergavenny,development
+1204,577.92,UNKNOWN,CLEAR_NORMAL,30.015,0.2724,0.0137,0.714,0.0191,"Persistent clear evidence (consecutive=2, rolloff=30.015, hi=0.272)",p39_cont_03_abergavenny,development
+1206,578.88,CLEAR_NORMAL,UNKNOWN,21.3381,0.2229,0.0136,0.7635,0.0183,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.724, m2l=0.023)",p39_cont_03_abergavenny,development
+1208,579.84,UNKNOWN,CLEAR_NORMAL,31.5132,0.2985,0.0118,0.6897,0.0173,"Persistent clear evidence (consecutive=2, rolloff=31.513, hi=0.299)",p39_cont_03_abergavenny,development
+1226,588.48,CLEAR_NORMAL,UNKNOWN,8.2651,0.1607,0.0269,0.8125,0.0338,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.950, m2l=0.029)",p39_cont_03_abergavenny,development
+1288,618.24,UNKNOWN,CLEAR_NORMAL,21.4104,0.2255,0.0161,0.7584,0.0219,"Persistent clear evidence (consecutive=2, rolloff=21.410, hi=0.225)",p39_cont_03_abergavenny,development
+1290,619.2,CLEAR_NORMAL,UNKNOWN,15.2229,0.1605,0.0138,0.8257,0.0176,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.955, m2l=0.012)",p39_cont_03_abergavenny,development
+1487,713.76,UNKNOWN,CLEAR_NORMAL,70.7755,0.3482,0.0092,0.6426,0.0143,"Persistent clear evidence (consecutive=2, rolloff=70.775, hi=0.348)",p39_cont_03_abergavenny,development
+1511,725.28,CLEAR_NORMAL,UNKNOWN,7.7745,0.108,0.0326,0.8595,0.0406,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.977, m2l=0.020)",p39_cont_03_abergavenny,development
+1515,727.2,UNKNOWN,CLEAR_NORMAL,19.7134,0.2413,0.0233,0.7354,0.032,"Persistent clear evidence (consecutive=2, rolloff=19.713, hi=0.241)",p39_cont_03_abergavenny,development
+1523,731.04,CLEAR_NORMAL,UNKNOWN,15.9449,0.1683,0.0149,0.8168,0.0195,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.971, m2l=0.009)",p39_cont_03_abergavenny,development
+1711,821.28,UNKNOWN,CLEAR_NORMAL,3.2209,0.1746,0.0766,0.7488,0.1011,"Persistent clear evidence (consecutive=2, rolloff=3.221, hi=0.175)",p39_cont_03_abergavenny,development
+1713,822.24,CLEAR_NORMAL,UNKNOWN,2.6571,0.1347,0.062,0.8033,0.0787,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.924, m2l=0.047)",p39_cont_03_abergavenny,development
+1719,825.12,UNKNOWN,CLEAR_NORMAL,16.0684,0.266,0.0347,0.6993,0.0477,"Persistent clear evidence (consecutive=2, rolloff=16.068, hi=0.266)",p39_cont_03_abergavenny,development
+1729,829.92,CLEAR_NORMAL,UNKNOWN,2.4181,0.0783,0.0621,0.8596,0.077,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.936, m2l=0.055)",p39_cont_03_abergavenny,development
+1737,833.76,UNKNOWN,CLEAR_NORMAL,9.7431,0.2126,0.0363,0.7511,0.0465,"Persistent clear evidence (consecutive=2, rolloff=9.743, hi=0.213)",p39_cont_03_abergavenny,development
+1739,834.72,CLEAR_NORMAL,UNKNOWN,8.7167,0.1816,0.0297,0.7887,0.0372,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.898, m2l=0.027)",p39_cont_03_abergavenny,development
+1748,839.04,UNKNOWN,CLEAR_NORMAL,59.5924,0.3959,0.0308,0.5733,0.0462,"Persistent clear evidence (consecutive=2, rolloff=59.592, hi=0.396)",p39_cont_03_abergavenny,development
+1758,843.84,CLEAR_NORMAL,UNKNOWN,9.5486,0.1191,0.0467,0.8342,0.0559,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.956, m2l=0.034)",p39_cont_03_abergavenny,development
+1761,845.28,UNKNOWN,CLEAR_NORMAL,13.3223,0.2617,0.035,0.7033,0.0498,"Persistent clear evidence (consecutive=2, rolloff=13.322, hi=0.262)",p39_cont_03_abergavenny,development
+1771,850.08,CLEAR_NORMAL,UNKNOWN,4.1683,0.0902,0.034,0.8759,0.0404,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.961, m2l=0.034)",p39_cont_03_abergavenny,development
+1774,851.52,UNKNOWN,CLEAR_NORMAL,7.8186,0.2491,0.0349,0.7159,0.0531,"Persistent clear evidence (consecutive=2, rolloff=7.819, hi=0.249)",p39_cont_03_abergavenny,development
+1778,853.44,CLEAR_NORMAL,UNKNOWN,5.4096,0.1412,0.0348,0.824,0.0436,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.949, m2l=0.041)",p39_cont_03_abergavenny,development
+1787,857.76,UNKNOWN,CLEAR_NORMAL,8.8401,0.2842,0.0603,0.6555,0.1055,"Persistent clear evidence (consecutive=2, rolloff=8.840, hi=0.284)",p39_cont_03_abergavenny,development
+1791,859.68,CLEAR_NORMAL,UNKNOWN,10.3811,0.191,0.044,0.765,0.0643,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.947, m2l=0.042)",p39_cont_03_abergavenny,development
+1800,864.0,UNKNOWN,CLEAR_NORMAL,8.0531,0.2561,0.0349,0.709,0.0522,"Persistent clear evidence (consecutive=2, rolloff=8.053, hi=0.256)",p39_cont_03_abergavenny,development
+1802,864.96,CLEAR_NORMAL,UNKNOWN,5.8415,0.1956,0.0381,0.7663,0.0514,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.908, m2l=0.050)",p39_cont_03_abergavenny,development
+1806,866.88,UNKNOWN,CLEAR_NORMAL,8.1436,0.2493,0.0348,0.7158,0.05,"Persistent clear evidence (consecutive=2, rolloff=8.144, hi=0.249)",p39_cont_03_abergavenny,development
+1816,871.68,CLEAR_NORMAL,UNKNOWN,3.9036,0.0966,0.049,0.8543,0.0573,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.929, m2l=0.059)",p39_cont_03_abergavenny,development
+1957,939.36,UNKNOWN,CLEAR_NORMAL,5.6574,0.1839,0.0279,0.7881,0.0396,"Persistent clear evidence (consecutive=2, rolloff=5.657, hi=0.184)",p39_cont_03_abergavenny,development
+1967,944.16,CLEAR_NORMAL,UNKNOWN,5.7428,0.1199,0.0214,0.8587,0.0411,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.975, m2l=0.018)",p39_cont_03_abergavenny,development
+1970,945.6,UNKNOWN,CLEAR_NORMAL,9.2691,0.3684,0.0351,0.5966,0.0951,"Persistent clear evidence (consecutive=2, rolloff=9.269, hi=0.368)",p39_cont_03_abergavenny,development
+1978,949.44,CLEAR_NORMAL,UNKNOWN,3.6358,0.1567,0.0242,0.8191,0.0543,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.978, m2l=0.016)",p39_cont_03_abergavenny,development
+1995,957.6,UNKNOWN,CLEAR_NORMAL,1.7028,0.2958,0.1611,0.5431,0.7589,"Persistent clear evidence (consecutive=2, rolloff=1.703, hi=0.296)",p39_cont_03_abergavenny,development
+2001,960.48,CLEAR_NORMAL,UNKNOWN,1.2232,0.1561,0.0663,0.7776,0.3488,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.979, m2l=0.019)",p39_cont_03_abergavenny,development
+2007,963.36,UNKNOWN,CLEAR_NORMAL,0.7185,0.1088,0.1395,0.7518,0.2725,"Persistent clear evidence (consecutive=2, rolloff=0.719, hi=0.109)",p39_cont_03_abergavenny,development
+2015,967.2,CLEAR_NORMAL,UNKNOWN,2.0903,0.1456,0.0907,0.7637,0.205,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.763, m2l=0.224)",p39_cont_03_abergavenny,development
+2017,968.16,UNKNOWN,CLEAR_NORMAL,7.3686,0.4,0.0747,0.5253,0.2264,"Persistent clear evidence (consecutive=2, rolloff=7.369, hi=0.400)",p39_cont_03_abergavenny,development
+2019,969.12,CLEAR_NORMAL,UNKNOWN,4.1694,0.2259,0.0592,0.7149,0.1453,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.955, m2l=0.045)",p39_cont_03_abergavenny,development
+2021,970.08,UNKNOWN,CLEAR_NORMAL,3.2301,0.3148,0.1257,0.5596,0.365,"Persistent clear evidence (consecutive=2, rolloff=3.230, hi=0.315)",p39_cont_03_abergavenny,development
+2081,998.88,CLEAR_NORMAL,UNKNOWN,0.8232,0.0136,0.0068,0.9796,0.0075,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.995, m2l=0.005)",p39_cont_03_abergavenny,development
+2101,1008.48,UNKNOWN,CLEAR_NORMAL,8.9921,0.2824,0.037,0.6805,0.0688,"Persistent clear evidence (consecutive=2, rolloff=8.992, hi=0.282)",p39_cont_03_abergavenny,development
+2103,1009.44,CLEAR_NORMAL,UNKNOWN,7.9727,0.1965,0.0236,0.7799,0.0421,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.999, m2l=0.001)",p39_cont_03_abergavenny,development
+2119,1017.12,UNKNOWN,CLEAR_NORMAL,15.8083,0.4394,0.0232,0.5374,0.2158,"Persistent clear evidence (consecutive=2, rolloff=15.808, hi=0.439)",p39_cont_03_abergavenny,development
+2123,1019.04,CLEAR_NORMAL,UNKNOWN,10.4201,0.238,0.0161,0.7459,0.1139,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.991, m2l=0.009)",p39_cont_03_abergavenny,development
+2125,1020.0,UNKNOWN,CLEAR_NORMAL,10.2341,0.5255,0.0491,0.4253,3.0954,"Persistent clear evidence (consecutive=2, rolloff=10.234, hi=0.526)",p39_cont_03_abergavenny,development
+2129,1021.92,CLEAR_NORMAL,UNKNOWN,5.9064,0.2647,0.0249,0.7104,1.1085,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.992, m2l=0.008)",p39_cont_03_abergavenny,development
+2131,1022.88,UNKNOWN,CLEAR_NORMAL,3.423,0.2059,0.2619,0.5322,1.4517,"Persistent clear evidence (consecutive=2, rolloff=3.423, hi=0.206)",p39_cont_03_abergavenny,development
+2137,1025.76,CLEAR_NORMAL,UNKNOWN,0.8744,0.1078,0.115,0.7773,0.4819,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.989, m2l=0.011)",p39_cont_03_abergavenny,development
+2139,1026.72,UNKNOWN,CLEAR_NORMAL,2.2593,0.2714,0.1564,0.5722,1.0763,"Persistent clear evidence (consecutive=2, rolloff=2.259, hi=0.271)",p39_cont_03_abergavenny,development
+2187,1049.76,CLEAR_NORMAL,UNKNOWN,0.2809,0.0167,0.0274,0.9559,0.0351,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.966, m2l=0.034)",p39_cont_03_abergavenny,development
+2194,1053.12,UNKNOWN,CLEAR_NORMAL,2.9219,0.3073,0.0721,0.6206,0.2986,"Persistent clear evidence (consecutive=2, rolloff=2.922, hi=0.307)",p39_cont_03_abergavenny,development
+2198,1055.04,CLEAR_NORMAL,UNKNOWN,1.9593,0.1812,0.0468,0.772,0.1783,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.975, m2l=0.025)",p39_cont_03_abergavenny,development
+2204,1057.92,UNKNOWN,CLEAR_NORMAL,20.4798,0.4089,0.0354,0.5557,0.1159,"Persistent clear evidence (consecutive=2, rolloff=20.480, hi=0.409)",p39_cont_03_abergavenny,development
+2212,1061.76,CLEAR_NORMAL,UNKNOWN,6.6605,0.1146,0.0116,0.8738,0.0225,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.993, m2l=0.006)",p39_cont_03_abergavenny,development
+1,0.48,UNKNOWN,CLEAR_NORMAL,5.1943,0.5947,0.1415,0.2638,0.5262,"Persistent clear evidence (consecutive=2, rolloff=5.194, hi=0.595)",p40_cont_04_sivry,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.1271,0.0581,0.46,0.4819,0.9547,"Persistent occluded evidence (consecutive=2, rolloff=0.127, mid=0.460)",p40_cont_06_abcoude,development
+3,1.44,DEGRADED_OCCLUDED,UNKNOWN,0.1695,0.0663,0.4172,0.5165,0.8224,Transition to UNKNOWN due to low-frequency dominance (low=0.586),p40_cont_06_abcoude,development
+4,1.92,UNKNOWN,CLEAR_NORMAL,0.1989,0.0738,0.3969,0.5293,0.7647,"Persistent clear evidence (consecutive=2, rolloff=0.199, hi=0.074)",p40_cont_06_abcoude,development
+7,3.36,CLEAR_NORMAL,UNKNOWN,0.1727,0.063,0.3745,0.5625,0.6769,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.612, m2l=0.557)",p40_cont_06_abcoude,development
+32,15.36,UNKNOWN,DEGRADED_OCCLUDED,0.131,0.0523,0.412,0.5357,0.8055,"Persistent occluded evidence (consecutive=2, rolloff=0.131, mid=0.412)",p40_cont_06_abcoude,development
+37,17.76,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.2877,0.1098,0.388,0.5022,0.7836,"Transition to CLEAR (rolloff=0.288 >= 0.22, hi=0.110 >= 0.08)",p40_cont_06_abcoude,development
+145,69.6,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.1909,0.0674,0.3804,0.5522,0.7202,"Transition to occluded (rolloff=0.191 < 0.18, mid=0.380 >= 0.38)",p40_cont_06_abcoude,development
+152,72.96,DEGRADED_OCCLUDED,UNKNOWN,0.253,0.0888,0.362,0.5492,0.6654,Transition to UNKNOWN due to low-frequency dominance (low=0.570),p40_cont_06_abcoude,development
+153,73.44,UNKNOWN,CLEAR_NORMAL,0.2691,0.0876,0.3377,0.5746,0.6008,"Persistent clear evidence (consecutive=3, rolloff=0.269, hi=0.088)",p40_cont_06_abcoude,development
+158,75.84,CLEAR_NORMAL,UNKNOWN,0.2488,0.0607,0.2445,0.6948,0.3683,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.756, m2l=0.264)",p40_cont_06_abcoude,development
+177,84.96,UNKNOWN,CLEAR_NORMAL,0.5553,0.1086,0.1972,0.6942,0.2873,"Persistent clear evidence (consecutive=2, rolloff=0.555, hi=0.109)",p40_cont_06_abcoude,development
+201,96.48,CLEAR_NORMAL,UNKNOWN,0.1738,0.0508,0.2973,0.6519,0.4584,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.679, m2l=0.406)",p40_cont_06_abcoude,development
+203,97.44,UNKNOWN,CLEAR_NORMAL,0.2112,0.0802,0.3663,0.5535,0.7244,"Persistent clear evidence (consecutive=2, rolloff=0.211, hi=0.080)",p40_cont_06_abcoude,development
+205,98.4,CLEAR_NORMAL,UNKNOWN,0.1936,0.063,0.3111,0.6259,0.5537,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.711, m2l=0.349)",p40_cont_06_abcoude,development
+220,105.6,UNKNOWN,CLEAR_NORMAL,0.2906,0.0977,0.3293,0.573,0.5909,"Persistent clear evidence (consecutive=2, rolloff=0.291, hi=0.098)",p40_cont_06_abcoude,development
+224,107.52,CLEAR_NORMAL,UNKNOWN,0.2271,0.0637,0.2774,0.6588,0.4376,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.731, m2l=0.288)",p40_cont_06_abcoude,development
+228,109.44,UNKNOWN,CLEAR_NORMAL,0.3459,0.0832,0.2447,0.672,0.3723,"Persistent clear evidence (consecutive=2, rolloff=0.346, hi=0.083)",p40_cont_06_abcoude,development
+276,132.48,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.1493,0.0434,0.3679,0.5886,0.6982,"Transition to occluded (rolloff=0.149 < 0.18, mid=0.368 >= 0.38)",p40_cont_06_abcoude,development
+280,134.4,DEGRADED_OCCLUDED,UNKNOWN,0.1222,0.0402,0.3614,0.5984,0.6474,Transition to UNKNOWN due to low-frequency dominance (low=0.713),p40_cont_06_abcoude,development
+359,172.32,UNKNOWN,CLEAR_NORMAL,0.4777,0.1401,0.2196,0.6404,0.4677,"Persistent clear evidence (consecutive=2, rolloff=0.478, hi=0.140)",p40_cont_06_abcoude,development
+363,174.24,CLEAR_NORMAL,UNKNOWN,0.2375,0.0586,0.1726,0.7688,0.2759,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.832, m2l=0.186)",p40_cont_06_abcoude,development
+375,180.0,UNKNOWN,CLEAR_NORMAL,0.2863,0.064,0.174,0.762,0.2742,"Persistent clear evidence (consecutive=2, rolloff=0.286, hi=0.064)",p40_cont_06_abcoude,development
+377,180.96,CLEAR_NORMAL,UNKNOWN,0.232,0.0429,0.1384,0.8186,0.2,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.909, m2l=0.092)",p40_cont_06_abcoude,development
+386,185.28,UNKNOWN,CLEAR_NORMAL,0.397,0.0673,0.191,0.7417,0.3111,"Persistent clear evidence (consecutive=2, rolloff=0.397, hi=0.067)",p40_cont_06_abcoude,development
+388,186.24,CLEAR_NORMAL,UNKNOWN,0.3751,0.0501,0.1431,0.8068,0.2151,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.895, m2l=0.085)",p40_cont_06_abcoude,development
+442,212.16,UNKNOWN,CLEAR_NORMAL,5.0291,0.2194,0.0524,0.7282,0.0729,"Persistent clear evidence (consecutive=2, rolloff=5.029, hi=0.219)",p40_cont_06_abcoude,development
+444,213.12,CLEAR_NORMAL,UNKNOWN,3.1199,0.1504,0.0709,0.7788,0.0901,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.878, m2l=0.110)",p40_cont_06_abcoude,development
+448,215.04,UNKNOWN,CLEAR_NORMAL,2.8784,0.2202,0.0952,0.6846,0.1478,"Persistent clear evidence (consecutive=2, rolloff=2.878, hi=0.220)",p40_cont_06_abcoude,development
+462,221.76,CLEAR_NORMAL,UNKNOWN,1.1257,0.0678,0.0947,0.8375,0.1195,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.913, m2l=0.084)",p40_cont_06_abcoude,development
+504,241.92,UNKNOWN,CLEAR_NORMAL,8.975,0.4012,0.1486,0.4503,0.3556,"Persistent clear evidence (consecutive=2, rolloff=8.975, hi=0.401)",p40_cont_06_abcoude,development
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0928,0.0499,0.5381,0.412,1.3368,"Persistent occluded evidence (consecutive=2, rolloff=0.093, mid=0.538)",p40_cont_07_chindrieux,development
+4,1.92,DEGRADED_OCCLUDED,UNKNOWN,0.1236,0.0606,0.5448,0.3947,3.2728,Transition to UNKNOWN due to low-frequency dominance (low=0.750),p40_cont_07_chindrieux,development
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,0.2382,0.057,0.4284,0.5146,2.4774,"Persistent occluded evidence (consecutive=2, rolloff=0.238, mid=0.428)",p40_cont_07_chindrieux,development
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,0.4735,0.1263,0.5111,0.3626,4.2741,Transition to UNKNOWN due to low-frequency dominance (low=0.564),p40_cont_07_chindrieux,development
+11,5.28,UNKNOWN,CLEAR_NORMAL,0.508,0.1328,0.4457,0.4215,3.3098,"Persistent clear evidence (consecutive=3, rolloff=0.508, hi=0.133)",p40_cont_07_chindrieux,development
+16,7.68,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.2462,0.1124,0.7106,0.177,8.6977,"Transition to occluded (rolloff=0.246 < 0.18, mid=0.711 >= 0.38)",p40_cont_07_chindrieux,development
+19,9.12,DEGRADED_OCCLUDED,UNKNOWN,2.5858,0.2518,0.615,0.1332,12.4676,Transition to UNKNOWN due to low-frequency dominance (low=0.186),p40_cont_07_chindrieux,development
+20,9.6,UNKNOWN,CLEAR_NORMAL,6.2159,0.3663,0.4716,0.1621,9.3924,"Persistent clear evidence (consecutive=2, rolloff=6.216, hi=0.366)",p40_cont_07_chindrieux,development
+30,14.4,CLEAR_NORMAL,UNKNOWN,0.7655,0.0781,0.2551,0.6668,1.0255,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.866, m2l=0.117)",p40_cont_07_chindrieux,development
+33,15.84,UNKNOWN,DEGRADED_OCCLUDED,0.3841,0.0552,0.4308,0.514,1.7565,"Persistent occluded evidence (consecutive=2, rolloff=0.384, mid=0.431)",p40_cont_07_chindrieux,development
+36,17.28,DEGRADED_OCCLUDED,UNKNOWN,0.3633,0.0844,0.4818,0.4337,1.8355,Transition to UNKNOWN due to low-frequency dominance (low=0.521),p40_cont_07_chindrieux,development
+37,17.76,UNKNOWN,CLEAR_NORMAL,1.2831,0.1792,0.39,0.4308,1.4446,"Persistent clear evidence (consecutive=2, rolloff=1.283, hi=0.179)",p40_cont_07_chindrieux,development
+51,24.48,CLEAR_NORMAL,DEGRADED_OCCLUDED,9.8993,0.3289,0.575,0.0961,9.6626,"Transition to occluded (rolloff=9.899 < 0.18, mid=0.575 >= 0.38)",p40_cont_07_chindrieux,development
+54,25.92,DEGRADED_OCCLUDED,CLEAR_NORMAL,4.5357,0.2867,0.5641,0.1492,6.916,"Transition to CLEAR (rolloff=4.536 >= 0.22, hi=0.287 >= 0.08)",p40_cont_07_chindrieux,development
+58,27.84,CLEAR_NORMAL,DEGRADED_OCCLUDED,1.9174,0.2199,0.6562,0.1239,7.2526,"Transition to occluded (rolloff=1.917 < 0.18, mid=0.656 >= 0.38)",p40_cont_07_chindrieux,development
+59,28.32,DEGRADED_OCCLUDED,UNKNOWN,1.8865,0.2352,0.5313,0.2334,5.5091,Transition to UNKNOWN due to low-frequency dominance (low=0.562),p40_cont_07_chindrieux,development
+60,28.8,UNKNOWN,CLEAR_NORMAL,2.1087,0.2533,0.4262,0.3205,4.1795,"Persistent clear evidence (consecutive=2, rolloff=2.109, hi=0.253)",p40_cont_07_chindrieux,development
+84,40.32,CLEAR_NORMAL,DEGRADED_OCCLUDED,1.0612,0.2808,0.5933,0.1259,6.7354,"Transition to occluded (rolloff=1.061 < 0.18, mid=0.593 >= 0.38)",p40_cont_07_chindrieux,development
+86,41.28,DEGRADED_OCCLUDED,UNKNOWN,1.0596,0.193,0.4856,0.3214,4.4214,Transition to UNKNOWN due to low-frequency dominance (low=0.835),p40_cont_07_chindrieux,development
+88,42.24,UNKNOWN,CLEAR_NORMAL,1.172,0.3251,0.4512,0.2237,4.8148,"Persistent clear evidence (consecutive=2, rolloff=1.172, hi=0.325)",p40_cont_07_chindrieux,development
+120,57.6,CLEAR_NORMAL,DEGRADED_OCCLUDED,1.5865,0.1334,0.4716,0.395,8.0194,"Transition to occluded (rolloff=1.586 < 0.18, mid=0.472 >= 0.38)",p40_cont_07_chindrieux,development
+123,59.04,DEGRADED_OCCLUDED,CLEAR_NORMAL,2.096,0.2022,0.4499,0.3479,5.3883,"Transition to CLEAR (rolloff=2.096 >= 0.22, hi=0.202 >= 0.08)",p40_cont_07_chindrieux,development
+136,65.28,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.6552,0.1384,0.631,0.2306,7.9274,"Transition to occluded (rolloff=0.655 < 0.18, mid=0.631 >= 0.38)",p40_cont_07_chindrieux,development
+139,66.72,DEGRADED_OCCLUDED,CLEAR_NORMAL,1.2785,0.3395,0.4583,0.2022,6.2386,"Transition to CLEAR (rolloff=1.278 >= 0.22, hi=0.339 >= 0.08)",p40_cont_07_chindrieux,development
+146,70.08,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.4784,0.1499,0.6284,0.2217,4.8535,"Transition to occluded (rolloff=0.478 < 0.18, mid=0.628 >= 0.38)",p40_cont_07_chindrieux,development
+153,73.44,DEGRADED_OCCLUDED,UNKNOWN,0.2319,0.0916,0.5254,0.3831,2.8134,Transition to UNKNOWN due to low-frequency dominance (low=0.594),p40_cont_07_chindrieux,development
+157,75.36,UNKNOWN,DEGRADED_OCCLUDED,0.5279,0.072,0.6071,0.3209,5.4445,"Persistent occluded evidence (consecutive=2, rolloff=0.528, mid=0.607)",p40_cont_07_chindrieux,development
+164,78.72,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.2887,0.1084,0.596,0.2956,6.488,"Transition to CLEAR (rolloff=0.289 >= 0.22, hi=0.108 >= 0.08)",p40_cont_07_chindrieux,development
+176,84.48,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.5105,0.1038,0.4223,0.4739,2.0323,"Transition to occluded (rolloff=0.511 < 0.18, mid=0.422 >= 0.38)",p40_cont_07_chindrieux,development
+180,86.4,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.5977,0.2205,0.514,0.2655,3.3748,"Transition to CLEAR (rolloff=0.598 >= 0.22, hi=0.220 >= 0.08)",p40_cont_07_chindrieux,development
+219,105.12,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.5912,0.1246,0.7031,0.1724,8.4574,"Transition to occluded (rolloff=0.591 < 0.18, mid=0.703 >= 0.38)",p40_cont_07_chindrieux,development
+222,106.56,DEGRADED_OCCLUDED,UNKNOWN,0.3396,0.085,0.6119,0.3031,5.1608,Transition to UNKNOWN due to low-frequency dominance (low=0.639),p40_cont_07_chindrieux,development
+228,109.44,UNKNOWN,CLEAR_NORMAL,0.4184,0.1413,0.4568,0.4019,2.111,"Persistent clear evidence (consecutive=2, rolloff=0.418, hi=0.141)",p40_cont_07_chindrieux,development
+230,110.4,CLEAR_NORMAL,UNKNOWN,1.2643,0.1428,0.2835,0.5737,1.2214,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.837, m2l=0.061)",p40_cont_07_chindrieux,development
+237,113.76,UNKNOWN,DEGRADED_OCCLUDED,0.362,0.066,0.3983,0.5357,1.3205,"Persistent occluded evidence (consecutive=2, rolloff=0.362, mid=0.398)",p40_cont_07_chindrieux,development
+239,114.72,DEGRADED_OCCLUDED,UNKNOWN,0.4878,0.1155,0.3847,0.4997,1.2124,Transition to UNKNOWN due to low-frequency dominance (low=0.581),p40_cont_07_chindrieux,development
+245,117.6,UNKNOWN,CLEAR_NORMAL,0.5869,0.1046,0.2593,0.6362,0.5563,"Persistent clear evidence (consecutive=2, rolloff=0.587, hi=0.105)",p40_cont_07_chindrieux,development
+251,120.48,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.2389,0.091,0.5855,0.3235,2.5195,"Transition to occluded (rolloff=0.239 < 0.18, mid=0.585 >= 0.38)",p40_cont_07_chindrieux,development
+252,120.96,DEGRADED_OCCLUDED,UNKNOWN,0.4528,0.0893,0.4583,0.4523,1.9126,Transition to UNKNOWN due to low-frequency dominance (low=0.839),p40_cont_07_chindrieux,development
+269,129.12,UNKNOWN,DEGRADED_OCCLUDED,0.31,0.0276,0.3931,0.5794,3.2134,"Persistent occluded evidence (consecutive=2, rolloff=0.310, mid=0.393)",p40_cont_07_chindrieux,development
+273,131.04,DEGRADED_OCCLUDED,UNKNOWN,2.0228,0.1289,0.4793,0.3918,4.1899,Transition to UNKNOWN due to low-frequency dominance (low=0.600),p40_cont_07_chindrieux,development
+274,131.52,UNKNOWN,CLEAR_NORMAL,4.724,0.225,0.3694,0.4056,3.1648,"Persistent clear evidence (consecutive=2, rolloff=4.724, hi=0.225)",p40_cont_07_chindrieux,development
+294,141.12,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.7665,0.0393,0.3536,0.6071,1.2645,"Transition to occluded (rolloff=0.767 < 0.18, mid=0.354 >= 0.38)",p40_cont_07_chindrieux,development
+297,142.56,DEGRADED_OCCLUDED,UNKNOWN,1.1777,0.096,0.3915,0.5125,1.6148,Transition to UNKNOWN due to low-frequency dominance (low=0.715),p40_cont_07_chindrieux,development
+309,148.32,UNKNOWN,DEGRADED_OCCLUDED,0.3088,0.0617,0.44,0.4982,1.2959,"Persistent occluded evidence (consecutive=2, rolloff=0.309, mid=0.440)",p40_cont_07_chindrieux,development
+310,148.8,DEGRADED_OCCLUDED,UNKNOWN,0.4434,0.0818,0.372,0.5462,1.0327,Transition to UNKNOWN due to low-frequency dominance (low=0.690),p40_cont_07_chindrieux,development
+319,153.12,UNKNOWN,DEGRADED_OCCLUDED,0.6503,0.0626,0.3887,0.5487,3.0416,"Persistent occluded evidence (consecutive=2, rolloff=0.650, mid=0.389)",p40_cont_07_chindrieux,development
+322,154.56,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.4084,0.1043,0.5183,0.3774,3.4013,"Transition to CLEAR (rolloff=0.408 >= 0.22, hi=0.104 >= 0.08)",p40_cont_07_chindrieux,development
+325,156.0,CLEAR_NORMAL,UNKNOWN,0.3389,0.0765,0.368,0.5555,1.6629,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.607, m2l=0.585)",p40_cont_07_chindrieux,development
+327,156.96,UNKNOWN,DEGRADED_OCCLUDED,0.2217,0.0561,0.3925,0.5514,1.276,"Persistent occluded evidence (consecutive=2, rolloff=0.222, mid=0.393)",p40_cont_07_chindrieux,development
+332,159.36,DEGRADED_OCCLUDED,UNKNOWN,0.4264,0.0453,0.3414,0.6134,0.8312,Transition to UNKNOWN due to low-frequency dominance (low=0.940),p40_cont_07_chindrieux,development
+333,159.84,UNKNOWN,DEGRADED_OCCLUDED,0.5364,0.0396,0.2625,0.6979,0.6302,"Persistent occluded evidence (consecutive=4, rolloff=0.536, mid=0.263)",p40_cont_07_chindrieux,development
+334,160.32,DEGRADED_OCCLUDED,UNKNOWN,1.7004,0.0639,0.2035,0.7326,0.4806,Transition to UNKNOWN due to low-frequency dominance (low=0.837),p40_cont_07_chindrieux,development
+336,161.28,UNKNOWN,CLEAR_NORMAL,3.5294,0.184,0.1426,0.6734,0.3208,"Persistent clear evidence (consecutive=2, rolloff=3.529, hi=0.184)",p40_cont_07_chindrieux,development
+350,168.0,CLEAR_NORMAL,UNKNOWN,0.8242,0.052,0.0622,0.8858,0.106,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.965, m2l=0.024)",p40_cont_07_chindrieux,development
+408,195.84,UNKNOWN,DEGRADED_OCCLUDED,0.2786,0.0425,0.3526,0.6049,0.7002,"Persistent occluded evidence (consecutive=2, rolloff=0.279, mid=0.353)",p40_cont_07_chindrieux,development
+410,196.8,DEGRADED_OCCLUDED,UNKNOWN,0.2013,0.0379,0.3382,0.6239,0.6145,Transition to UNKNOWN due to low-frequency dominance (low=0.697),p40_cont_07_chindrieux,development
+449,215.52,UNKNOWN,DEGRADED_OCCLUDED,0.6717,0.0285,0.3223,0.6492,0.9801,"Persistent occluded evidence (consecutive=2, rolloff=0.672, mid=0.322)",p40_cont_07_chindrieux,development
+455,218.4,DEGRADED_OCCLUDED,UNKNOWN,0.6785,0.1087,0.4163,0.475,1.7439,Transition to UNKNOWN due to low-frequency dominance (low=0.845),p40_cont_07_chindrieux,development
+464,222.72,UNKNOWN,DEGRADED_OCCLUDED,0.9204,0.0451,0.3462,0.6087,1.275,"Persistent occluded evidence (consecutive=2, rolloff=0.920, mid=0.346)",p40_cont_07_chindrieux,development
+467,224.16,DEGRADED_OCCLUDED,UNKNOWN,0.6227,0.0566,0.3264,0.617,0.9771,Transition to UNKNOWN due to low-frequency dominance (low=0.862),p40_cont_07_chindrieux,development
+477,228.96,UNKNOWN,CLEAR_NORMAL,0.6385,0.1035,0.2075,0.689,0.3634,"Persistent clear evidence (consecutive=2, rolloff=0.639, hi=0.104)",p40_cont_07_chindrieux,development
+485,232.8,CLEAR_NORMAL,UNKNOWN,1.0897,0.0996,0.1325,0.7678,0.2158,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.700, m2l=0.215)",p40_cont_07_chindrieux,development
+487,233.76,UNKNOWN,CLEAR_NORMAL,1.0022,0.1508,0.1809,0.6683,0.3225,"Persistent clear evidence (consecutive=2, rolloff=1.002, hi=0.151)",p40_cont_07_chindrieux,development
+29,13.92,UNKNOWN,DEGRADED_OCCLUDED,0.1871,0.0342,0.2504,0.7154,0.4826,"Persistent occluded evidence (consecutive=2, rolloff=0.187, mid=0.250)",p40_cont_09_bad_berka_suburban,development
+52,24.96,DEGRADED_OCCLUDED,UNKNOWN,0.3738,0.0775,0.3886,0.5339,1.1633,Transition to UNKNOWN due to low-frequency dominance (low=0.993),p40_cont_09_bad_berka_suburban,development
+70,33.6,UNKNOWN,DEGRADED_OCCLUDED,0.2519,0.0505,0.3248,0.6247,1.8395,"Persistent occluded evidence (consecutive=2, rolloff=0.252, mid=0.325)",p40_cont_09_bad_berka_suburban,development
+73,35.04,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.2418,0.1086,0.5081,0.3833,2.8929,"Transition to CLEAR (rolloff=0.242 >= 0.22, hi=0.109 >= 0.08)",p40_cont_09_bad_berka_suburban,development
+158,75.84,CLEAR_NORMAL,UNKNOWN,1.3199,0.025,0.069,0.906,0.5129,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.972, m2l=0.012)",p40_cont_09_bad_berka_suburban,development
+163,78.24,UNKNOWN,CLEAR_NORMAL,0.7043,0.0955,0.3878,0.5167,3.2223,"Persistent clear evidence (consecutive=2, rolloff=0.704, hi=0.096)",p40_cont_09_bad_berka_suburban,development
+221,106.08,CLEAR_NORMAL,UNKNOWN,0.3149,0.0612,0.1949,0.7439,0.2683,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.762, m2l=0.234)",p40_cont_09_bad_berka_suburban,development
+242,116.16,UNKNOWN,CLEAR_NORMAL,0.5304,0.058,0.2249,0.7171,0.526,"Persistent clear evidence (consecutive=2, rolloff=0.530, hi=0.058)",p40_cont_09_bad_berka_suburban,development
+282,135.36,CLEAR_NORMAL,UNKNOWN,0.5331,0.0921,0.4217,0.4862,4.9247,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.978, m2l=0.011)",p40_cont_09_bad_berka_suburban,development
+289,138.72,UNKNOWN,DEGRADED_OCCLUDED,0.4699,0.0516,0.3438,0.6047,1.3479,"Persistent occluded evidence (consecutive=2, rolloff=0.470, mid=0.344)",p40_cont_09_bad_berka_suburban,development
+291,139.68,DEGRADED_OCCLUDED,UNKNOWN,0.3507,0.0612,0.3606,0.5783,1.0818,Transition to UNKNOWN due to low-frequency dominance (low=0.613),p40_cont_09_bad_berka_suburban,development
+331,158.88,UNKNOWN,CLEAR_NORMAL,0.4819,0.0631,0.1845,0.7524,0.2942,"Persistent clear evidence (consecutive=2, rolloff=0.482, hi=0.063)",p40_cont_09_bad_berka_suburban,development
+435,208.8,CLEAR_NORMAL,UNKNOWN,0.2912,0.1197,0.6004,0.2799,10.5588,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.945, m2l=0.037)",p40_cont_09_bad_berka_suburban,development
+440,211.2,UNKNOWN,CLEAR_NORMAL,0.3359,0.0915,0.486,0.4225,6.0673,"Persistent clear evidence (consecutive=2, rolloff=0.336, hi=0.091)",p40_cont_09_bad_berka_suburban,development
+583,279.84,CLEAR_NORMAL,UNKNOWN,0.3246,0.0914,0.374,0.5346,6.1699,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.905, m2l=0.074)",p40_cont_09_bad_berka_suburban,development
+209,100.32,UNKNOWN,CLEAR_NORMAL,0.5351,0.0974,0.1774,0.7252,0.2483,"Persistent clear evidence (consecutive=2, rolloff=0.535, hi=0.097)",p40_cont_10_portland_first,development
+213,102.24,CLEAR_NORMAL,UNKNOWN,0.5783,0.1056,0.1811,0.7133,0.2553,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.721, m2l=0.249)",p40_cont_10_portland_first,development
+264,126.72,UNKNOWN,CLEAR_NORMAL,0.6083,0.1137,0.1873,0.699,0.2685,"Persistent clear evidence (consecutive=2, rolloff=0.608, hi=0.114)",p40_cont_10_portland_first,development
+268,128.64,CLEAR_NORMAL,UNKNOWN,0.5882,0.0991,0.1683,0.7326,0.2317,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.784, m2l=0.176)",p40_cont_10_portland_first,development
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.0168,0.0048,0.3765,0.6187,0.6751,"Persistent occluded evidence (consecutive=2, rolloff=0.017, mid=0.376)",p40_cont_11_fukutsu_japan,development
+7,3.36,DEGRADED_OCCLUDED,UNKNOWN,0.0199,0.0057,0.3542,0.6401,0.6084,Transition to UNKNOWN due to low-frequency dominance (low=0.704),p40_cont_11_fukutsu_japan,development
+12,5.76,UNKNOWN,DEGRADED_OCCLUDED,0.0124,0.0044,0.4756,0.5201,1.1279,"Persistent occluded evidence (consecutive=2, rolloff=0.012, mid=0.476)",p40_cont_11_fukutsu_japan,development
+15,7.2,DEGRADED_OCCLUDED,UNKNOWN,0.0107,0.0031,0.478,0.5188,1.4883,Transition to UNKNOWN due to low-frequency dominance (low=0.868),p40_cont_11_fukutsu_japan,development
+16,7.68,UNKNOWN,DEGRADED_OCCLUDED,0.0095,0.0033,0.5214,0.4753,1.5886,"Persistent occluded evidence (consecutive=4, rolloff=0.009, mid=0.521)",p40_cont_11_fukutsu_japan,development
+23,11.04,DEGRADED_OCCLUDED,UNKNOWN,0.0119,0.0038,0.416,0.5802,0.8888,Transition to UNKNOWN due to low-frequency dominance (low=0.784),p40_cont_11_fukutsu_japan,development
+24,11.52,UNKNOWN,DEGRADED_OCCLUDED,0.0098,0.0035,0.4917,0.5048,1.3121,"Persistent occluded evidence (consecutive=10, rolloff=0.010, mid=0.492)",p40_cont_11_fukutsu_japan,development
+27,12.96,DEGRADED_OCCLUDED,UNKNOWN,0.0256,0.0081,0.4517,0.5402,1.1578,Transition to UNKNOWN due to low-frequency dominance (low=0.701),p40_cont_11_fukutsu_japan,development
+28,13.44,UNKNOWN,DEGRADED_OCCLUDED,0.035,0.0097,0.3964,0.5939,0.9447,"Persistent occluded evidence (consecutive=10, rolloff=0.035, mid=0.396)",p40_cont_11_fukutsu_japan,development
+29,13.92,DEGRADED_OCCLUDED,UNKNOWN,0.0381,0.0101,0.3574,0.6324,0.7889,Transition to UNKNOWN due to low-frequency dominance (low=0.748),p40_cont_11_fukutsu_japan,development
+30,14.4,UNKNOWN,DEGRADED_OCCLUDED,0.0354,0.0107,0.3822,0.6071,0.8065,"Persistent occluded evidence (consecutive=10, rolloff=0.035, mid=0.382)",p40_cont_11_fukutsu_japan,development
+31,14.88,DEGRADED_OCCLUDED,UNKNOWN,0.0368,0.0109,0.3582,0.6309,0.7068,Transition to UNKNOWN due to low-frequency dominance (low=0.702),p40_cont_11_fukutsu_japan,development
+32,15.36,UNKNOWN,DEGRADED_OCCLUDED,0.0421,0.0111,0.32,0.6688,0.5958,"Persistent occluded evidence (consecutive=8, rolloff=0.042, mid=0.320)",p40_cont_11_fukutsu_japan,development
+35,16.8,DEGRADED_OCCLUDED,UNKNOWN,0.0387,0.0109,0.3857,0.6034,0.8086,Transition to UNKNOWN due to low-frequency dominance (low=0.757),p40_cont_11_fukutsu_japan,development
+36,17.28,UNKNOWN,DEGRADED_OCCLUDED,0.0452,0.0111,0.334,0.655,0.6617,"Persistent occluded evidence (consecutive=8, rolloff=0.045, mid=0.334)",p40_cont_11_fukutsu_japan,development
+37,17.76,DEGRADED_OCCLUDED,UNKNOWN,0.0438,0.0096,0.2845,0.7058,0.5359,Transition to UNKNOWN due to low-frequency dominance (low=0.858),p40_cont_11_fukutsu_japan,development
+38,18.24,UNKNOWN,DEGRADED_OCCLUDED,0.0378,0.0098,0.3456,0.6446,0.6887,"Persistent occluded evidence (consecutive=8, rolloff=0.038, mid=0.346)",p40_cont_11_fukutsu_japan,development
+41,19.68,DEGRADED_OCCLUDED,UNKNOWN,0.0322,0.012,0.4294,0.5587,0.9416,Transition to UNKNOWN due to low-frequency dominance (low=0.646),p40_cont_11_fukutsu_japan,development
+42,20.16,UNKNOWN,DEGRADED_OCCLUDED,0.0279,0.011,0.4546,0.5344,0.9934,"Persistent occluded evidence (consecutive=12, rolloff=0.028, mid=0.455)",p40_cont_11_fukutsu_japan,development
+55,26.4,DEGRADED_OCCLUDED,UNKNOWN,0.0284,0.0093,0.4727,0.5181,1.1787,Transition to UNKNOWN due to low-frequency dominance (low=0.787),p40_cont_11_fukutsu_japan,development
+56,26.88,UNKNOWN,DEGRADED_OCCLUDED,0.0269,0.0089,0.4441,0.547,1.0254,"Persistent occluded evidence (consecutive=24, rolloff=0.027, mid=0.444)",p40_cont_11_fukutsu_japan,development
+57,27.36,DEGRADED_OCCLUDED,UNKNOWN,0.0254,0.0084,0.4184,0.5732,0.9,Transition to UNKNOWN due to low-frequency dominance (low=0.652),p40_cont_11_fukutsu_japan,development
+58,27.84,UNKNOWN,DEGRADED_OCCLUDED,0.0254,0.0083,0.3916,0.6001,0.7893,"Persistent occluded evidence (consecutive=22, rolloff=0.025, mid=0.392)",p40_cont_11_fukutsu_japan,development
+59,28.32,DEGRADED_OCCLUDED,UNKNOWN,0.0249,0.0081,0.3727,0.6193,0.7087,Transition to UNKNOWN due to low-frequency dominance (low=0.677),p40_cont_11_fukutsu_japan,development
+60,28.8,UNKNOWN,DEGRADED_OCCLUDED,0.0213,0.0072,0.3941,0.5987,0.7448,"Persistent occluded evidence (consecutive=22, rolloff=0.021, mid=0.394)",p40_cont_11_fukutsu_japan,development
+62,29.76,DEGRADED_OCCLUDED,UNKNOWN,0.0279,0.0076,0.3563,0.6361,0.6541,Transition to UNKNOWN due to low-frequency dominance (low=0.820),p40_cont_11_fukutsu_japan,development
+63,30.24,UNKNOWN,DEGRADED_OCCLUDED,0.0257,0.0075,0.3606,0.6319,0.6414,"Persistent occluded evidence (consecutive=21, rolloff=0.026, mid=0.361)",p40_cont_11_fukutsu_japan,development
+65,31.2,DEGRADED_OCCLUDED,UNKNOWN,0.0225,0.0068,0.3557,0.6374,0.6164,Transition to UNKNOWN due to low-frequency dominance (low=0.734),p40_cont_11_fukutsu_japan,development
+66,31.68,UNKNOWN,DEGRADED_OCCLUDED,0.0224,0.0065,0.3318,0.6616,0.551,"Persistent occluded evidence (consecutive=20, rolloff=0.022, mid=0.332)",p40_cont_11_fukutsu_japan,development
+67,32.16,DEGRADED_OCCLUDED,UNKNOWN,0.022,0.0059,0.2968,0.6974,0.4727,Transition to UNKNOWN due to low-frequency dominance (low=0.805),p40_cont_11_fukutsu_japan,development
+68,32.64,UNKNOWN,DEGRADED_OCCLUDED,0.0213,0.005,0.2525,0.7425,0.3887,"Persistent occluded evidence (consecutive=18, rolloff=0.021, mid=0.253)",p40_cont_11_fukutsu_japan,development
+69,33.12,DEGRADED_OCCLUDED,UNKNOWN,0.0231,0.0048,0.2272,0.768,0.3364,Transition to UNKNOWN due to low-frequency dominance (low=0.844),p40_cont_11_fukutsu_japan,development
+70,33.6,UNKNOWN,DEGRADED_OCCLUDED,0.019,0.0046,0.3225,0.6729,0.6446,"Persistent occluded evidence (consecutive=18, rolloff=0.019, mid=0.323)",p40_cont_11_fukutsu_japan,development
+72,34.56,DEGRADED_OCCLUDED,UNKNOWN,0.0189,0.0045,0.3382,0.6573,0.6972,Transition to UNKNOWN due to low-frequency dominance (low=0.815),p40_cont_11_fukutsu_japan,development
+73,35.04,UNKNOWN,DEGRADED_OCCLUDED,0.0191,0.005,0.3383,0.6567,0.6522,"Persistent occluded evidence (consecutive=17, rolloff=0.019, mid=0.338)",p40_cont_11_fukutsu_japan,development
+75,36.0,DEGRADED_OCCLUDED,UNKNOWN,0.03,0.0076,0.325,0.6674,0.5818,Transition to UNKNOWN due to low-frequency dominance (low=0.774),p40_cont_11_fukutsu_japan,development
+76,36.48,UNKNOWN,DEGRADED_OCCLUDED,0.0303,0.0086,0.3369,0.6545,0.5875,"Persistent occluded evidence (consecutive=14, rolloff=0.030, mid=0.337)",p40_cont_11_fukutsu_japan,development
+78,37.44,DEGRADED_OCCLUDED,UNKNOWN,0.0364,0.0083,0.2993,0.6924,0.5111,Transition to UNKNOWN due to low-frequency dominance (low=0.884),p40_cont_11_fukutsu_japan,development
+79,37.92,UNKNOWN,DEGRADED_OCCLUDED,0.0399,0.0147,0.3943,0.5909,0.9759,"Persistent occluded evidence (consecutive=13, rolloff=0.040, mid=0.394)",p40_cont_11_fukutsu_japan,development
+81,38.88,DEGRADED_OCCLUDED,UNKNOWN,0.0415,0.0179,0.4328,0.5493,1.1129,Transition to UNKNOWN due to low-frequency dominance (low=0.649),p40_cont_11_fukutsu_japan,development
+82,39.36,UNKNOWN,DEGRADED_OCCLUDED,0.0403,0.0157,0.3887,0.5956,0.9218,"Persistent occluded evidence (consecutive=14, rolloff=0.040, mid=0.389)",p40_cont_11_fukutsu_japan,development
+83,39.84,DEGRADED_OCCLUDED,UNKNOWN,0.0366,0.0136,0.3649,0.6215,0.7964,Transition to UNKNOWN due to low-frequency dominance (low=0.699),p40_cont_11_fukutsu_japan,development
+84,40.32,UNKNOWN,DEGRADED_OCCLUDED,0.03,0.0114,0.3862,0.6025,0.8035,"Persistent occluded evidence (consecutive=12, rolloff=0.030, mid=0.386)",p40_cont_11_fukutsu_japan,development
+86,41.28,DEGRADED_OCCLUDED,UNKNOWN,0.0254,0.0089,0.3738,0.6174,0.7195,Transition to UNKNOWN due to low-frequency dominance (low=0.730),p40_cont_11_fukutsu_japan,development
+87,41.76,UNKNOWN,DEGRADED_OCCLUDED,0.0229,0.0083,0.3905,0.6012,0.7388,"Persistent occluded evidence (consecutive=11, rolloff=0.023, mid=0.390)",p40_cont_11_fukutsu_japan,development
+90,43.2,DEGRADED_OCCLUDED,UNKNOWN,0.0156,0.0059,0.4342,0.5599,0.8829,Transition to UNKNOWN due to low-frequency dominance (low=0.676),p40_cont_11_fukutsu_japan,development
+91,43.68,UNKNOWN,DEGRADED_OCCLUDED,0.014,0.0052,0.4172,0.5776,0.8074,"Persistent occluded evidence (consecutive=11, rolloff=0.014, mid=0.417)",p40_cont_11_fukutsu_japan,development
+92,44.16,DEGRADED_OCCLUDED,UNKNOWN,0.0122,0.0045,0.4063,0.5891,0.7553,Transition to UNKNOWN due to low-frequency dominance (low=0.624),p40_cont_11_fukutsu_japan,development
+93,44.64,UNKNOWN,DEGRADED_OCCLUDED,0.0174,0.0072,0.4201,0.5727,0.7869,"Persistent occluded evidence (consecutive=11, rolloff=0.017, mid=0.420)",p40_cont_11_fukutsu_japan,development
+110,52.8,DEGRADED_OCCLUDED,UNKNOWN,0.0379,0.0151,0.4557,0.5292,0.9308,Transition to UNKNOWN due to low-frequency dominance (low=0.620),p40_cont_11_fukutsu_japan,development
+111,53.28,UNKNOWN,DEGRADED_OCCLUDED,0.0421,0.015,0.4093,0.5757,0.7926,"Persistent occluded evidence (consecutive=27, rolloff=0.042, mid=0.409)",p40_cont_11_fukutsu_japan,development
+112,53.76,DEGRADED_OCCLUDED,UNKNOWN,0.0447,0.0151,0.3801,0.6049,0.7,Transition to UNKNOWN due to low-frequency dominance (low=0.692),p40_cont_11_fukutsu_japan,development
+113,54.24,UNKNOWN,DEGRADED_OCCLUDED,0.0462,0.0157,0.3724,0.6119,0.6631,"Persistent occluded evidence (consecutive=25, rolloff=0.046, mid=0.372)",p40_cont_11_fukutsu_japan,development
+119,57.12,DEGRADED_OCCLUDED,UNKNOWN,0.019,0.0083,0.4971,0.4946,1.2156,Transition to UNKNOWN due to low-frequency dominance (low=0.628),p40_cont_11_fukutsu_japan,development
+120,57.6,UNKNOWN,DEGRADED_OCCLUDED,0.018,0.0077,0.4726,0.5197,1.0792,"Persistent occluded evidence (consecutive=32, rolloff=0.018, mid=0.473)",p40_cont_11_fukutsu_japan,development
+126,60.48,DEGRADED_OCCLUDED,UNKNOWN,0.021,0.0094,0.5159,0.4747,1.307,Transition to UNKNOWN due to low-frequency dominance (low=0.692),p40_cont_11_fukutsu_japan,development
+127,60.96,UNKNOWN,DEGRADED_OCCLUDED,0.0186,0.0079,0.466,0.5261,1.0964,"Persistent occluded evidence (consecutive=35, rolloff=0.019, mid=0.466)",p40_cont_11_fukutsu_japan,development
+128,61.44,DEGRADED_OCCLUDED,UNKNOWN,0.0299,0.0109,0.427,0.5622,0.9379,Transition to UNKNOWN due to low-frequency dominance (low=0.670),p40_cont_11_fukutsu_japan,development
+129,61.92,UNKNOWN,DEGRADED_OCCLUDED,0.0335,0.013,0.4307,0.5562,0.9087,"Persistent occluded evidence (consecutive=35, rolloff=0.034, mid=0.431)",p40_cont_11_fukutsu_japan,development
+137,65.76,DEGRADED_OCCLUDED,UNKNOWN,0.0357,0.0143,0.5196,0.4661,1.3465,Transition to UNKNOWN due to low-frequency dominance (low=0.704),p40_cont_11_fukutsu_japan,development
+138,66.24,UNKNOWN,DEGRADED_OCCLUDED,0.0349,0.0131,0.4632,0.5236,1.1155,"Persistent occluded evidence (consecutive=40, rolloff=0.035, mid=0.463)",p40_cont_11_fukutsu_japan,development
+139,66.72,DEGRADED_OCCLUDED,UNKNOWN,0.03,0.0112,0.4354,0.5535,0.9735,Transition to UNKNOWN due to low-frequency dominance (low=0.643),p40_cont_11_fukutsu_japan,development
+140,67.2,UNKNOWN,DEGRADED_OCCLUDED,0.0265,0.0103,0.4477,0.5421,0.9685,"Persistent occluded evidence (consecutive=42, rolloff=0.026, mid=0.448)",p40_cont_11_fukutsu_japan,development
+142,68.16,DEGRADED_OCCLUDED,UNKNOWN,0.0262,0.0085,0.3836,0.6079,0.768,Transition to UNKNOWN due to low-frequency dominance (low=0.822),p40_cont_11_fukutsu_japan,development
+143,68.64,UNKNOWN,DEGRADED_OCCLUDED,0.0204,0.0068,0.4246,0.5686,0.8799,"Persistent occluded evidence (consecutive=43, rolloff=0.020, mid=0.425)",p40_cont_11_fukutsu_japan,development
+157,75.36,DEGRADED_OCCLUDED,UNKNOWN,0.0217,0.0088,0.4416,0.5497,0.8864,Transition to UNKNOWN due to low-frequency dominance (low=0.723),p40_cont_11_fukutsu_japan,development
+158,75.84,UNKNOWN,DEGRADED_OCCLUDED,0.0237,0.0084,0.393,0.5986,0.7477,"Persistent occluded evidence (consecutive=54, rolloff=0.024, mid=0.393)",p40_cont_11_fukutsu_japan,development
+159,76.32,DEGRADED_OCCLUDED,UNKNOWN,0.0239,0.0079,0.3607,0.6314,0.6513,Transition to UNKNOWN due to low-frequency dominance (low=0.730),p40_cont_11_fukutsu_japan,development
+160,76.8,UNKNOWN,DEGRADED_OCCLUDED,0.0241,0.0079,0.3518,0.6403,0.6103,"Persistent occluded evidence (consecutive=52, rolloff=0.024, mid=0.352)",p40_cont_11_fukutsu_japan,development
+163,78.24,DEGRADED_OCCLUDED,UNKNOWN,0.0228,0.0076,0.3477,0.6447,0.5834,Transition to UNKNOWN due to low-frequency dominance (low=0.756),p40_cont_11_fukutsu_japan,development
+164,78.72,UNKNOWN,DEGRADED_OCCLUDED,0.0217,0.0068,0.3215,0.6717,0.5183,"Persistent occluded evidence (consecutive=48, rolloff=0.022, mid=0.322)",p40_cont_11_fukutsu_japan,development
+165,79.2,DEGRADED_OCCLUDED,UNKNOWN,0.0209,0.0062,0.2993,0.6945,0.465,Transition to UNKNOWN due to low-frequency dominance (low=0.763),p40_cont_11_fukutsu_japan,development
+166,79.68,UNKNOWN,DEGRADED_OCCLUDED,0.0187,0.0062,0.3557,0.6381,0.6286,"Persistent occluded evidence (consecutive=48, rolloff=0.019, mid=0.356)",p40_cont_11_fukutsu_japan,development
+170,81.6,DEGRADED_OCCLUDED,UNKNOWN,0.0158,0.0068,0.4897,0.5035,1.2256,Transition to UNKNOWN due to low-frequency dominance (low=0.631),p40_cont_11_fukutsu_japan,development
+171,82.08,UNKNOWN,DEGRADED_OCCLUDED,0.0236,0.009,0.4513,0.5397,1.0489,"Persistent occluded evidence (consecutive=53, rolloff=0.024, mid=0.451)",p40_cont_11_fukutsu_japan,development
+172,82.56,DEGRADED_OCCLUDED,UNKNOWN,0.0298,0.0107,0.4206,0.5687,0.912,Transition to UNKNOWN due to low-frequency dominance (low=0.656),p40_cont_11_fukutsu_japan,development
+173,83.04,UNKNOWN,DEGRADED_OCCLUDED,0.0326,0.0104,0.375,0.6145,0.7632,"Persistent occluded evidence (consecutive=51, rolloff=0.033, mid=0.375)",p40_cont_11_fukutsu_japan,development
+174,83.52,DEGRADED_OCCLUDED,UNKNOWN,0.0295,0.0095,0.3639,0.6266,0.6971,Transition to UNKNOWN due to low-frequency dominance (low=0.663),p40_cont_11_fukutsu_japan,development
+175,84.0,UNKNOWN,DEGRADED_OCCLUDED,0.0326,0.0098,0.3391,0.6511,0.6141,"Persistent occluded evidence (consecutive=49, rolloff=0.033, mid=0.339)",p40_cont_11_fukutsu_japan,development
+178,85.44,DEGRADED_OCCLUDED,UNKNOWN,0.0251,0.008,0.3794,0.6126,0.7153,Transition to UNKNOWN due to low-frequency dominance (low=0.733),p40_cont_11_fukutsu_japan,development
+179,85.92,UNKNOWN,DEGRADED_OCCLUDED,0.0218,0.0071,0.3738,0.6192,0.6762,"Persistent occluded evidence (consecutive=49, rolloff=0.022, mid=0.374)",p40_cont_11_fukutsu_japan,development
+184,88.32,DEGRADED_OCCLUDED,UNKNOWN,0.0151,0.0054,0.4461,0.5485,0.9567,Transition to UNKNOWN due to low-frequency dominance (low=0.718),p40_cont_11_fukutsu_japan,development
+185,88.8,UNKNOWN,DEGRADED_OCCLUDED,0.015,0.0058,0.4523,0.5419,0.9431,"Persistent occluded evidence (consecutive=51, rolloff=0.015, mid=0.452)",p40_cont_11_fukutsu_japan,development
+190,91.2,DEGRADED_OCCLUDED,UNKNOWN,0.0287,0.0123,0.4522,0.5354,0.937,Transition to UNKNOWN due to low-frequency dominance (low=0.659),p40_cont_11_fukutsu_japan,development
+191,91.68,UNKNOWN,DEGRADED_OCCLUDED,0.0288,0.0133,0.4807,0.5059,1.0419,"Persistent occluded evidence (consecutive=55, rolloff=0.029, mid=0.481)",p40_cont_11_fukutsu_japan,development
+200,96.0,DEGRADED_OCCLUDED,UNKNOWN,0.014,0.0069,0.5369,0.4562,1.6877,Transition to UNKNOWN due to low-frequency dominance (low=0.706),p40_cont_11_fukutsu_japan,development
+201,96.48,UNKNOWN,DEGRADED_OCCLUDED,0.0129,0.0062,0.506,0.4878,1.443,"Persistent occluded evidence (consecutive=63, rolloff=0.013, mid=0.506)",p40_cont_11_fukutsu_japan,development
+205,98.4,DEGRADED_OCCLUDED,UNKNOWN,0.0153,0.0061,0.4265,0.5674,0.9055,Transition to UNKNOWN due to low-frequency dominance (low=0.668),p40_cont_11_fukutsu_japan,development
+206,98.88,UNKNOWN,DEGRADED_OCCLUDED,0.0131,0.0053,0.4288,0.5659,0.8732,"Persistent occluded evidence (consecutive=66, rolloff=0.013, mid=0.429)",p40_cont_11_fukutsu_japan,development
+208,99.84,DEGRADED_OCCLUDED,UNKNOWN,0.0129,0.0046,0.3917,0.6038,0.7306,Transition to UNKNOWN due to low-frequency dominance (low=0.716),p40_cont_11_fukutsu_japan,development
+209,100.32,UNKNOWN,DEGRADED_OCCLUDED,0.0146,0.0047,0.3613,0.634,0.6411,"Persistent occluded evidence (consecutive=63, rolloff=0.015, mid=0.361)",p40_cont_11_fukutsu_japan,development
+210,100.8,DEGRADED_OCCLUDED,UNKNOWN,0.015,0.005,0.3611,0.6339,0.6232,Transition to UNKNOWN due to low-frequency dominance (low=0.634),p40_cont_11_fukutsu_japan,development
+211,101.28,UNKNOWN,DEGRADED_OCCLUDED,0.0133,0.0047,0.3894,0.6059,0.6947,"Persistent occluded evidence (consecutive=63, rolloff=0.013, mid=0.389)",p40_cont_11_fukutsu_japan,development
+213,102.24,DEGRADED_OCCLUDED,UNKNOWN,0.0221,0.0063,0.3608,0.6329,0.6265,Transition to UNKNOWN due to low-frequency dominance (low=0.772),p40_cont_11_fukutsu_japan,development
+214,102.72,UNKNOWN,DEGRADED_OCCLUDED,0.022,0.006,0.329,0.665,0.5467,"Persistent occluded evidence (consecutive=62, rolloff=0.022, mid=0.329)",p40_cont_11_fukutsu_japan,development
+215,103.2,DEGRADED_OCCLUDED,UNKNOWN,0.0205,0.0054,0.304,0.6906,0.4846,Transition to UNKNOWN due to low-frequency dominance (low=0.768),p40_cont_11_fukutsu_japan,development
+216,103.68,UNKNOWN,DEGRADED_OCCLUDED,0.0178,0.0047,0.3065,0.6888,0.4783,"Persistent occluded evidence (consecutive=60, rolloff=0.018, mid=0.306)",p40_cont_11_fukutsu_japan,development
+217,104.16,DEGRADED_OCCLUDED,UNKNOWN,0.0156,0.0043,0.3124,0.6833,0.4825,Transition to UNKNOWN due to low-frequency dominance (low=0.667),p40_cont_11_fukutsu_japan,development
+218,104.64,UNKNOWN,DEGRADED_OCCLUDED,0.0196,0.0045,0.275,0.7205,0.4109,"Persistent occluded evidence (consecutive=58, rolloff=0.020, mid=0.275)",p40_cont_11_fukutsu_japan,development
+219,105.12,DEGRADED_OCCLUDED,UNKNOWN,0.0244,0.006,0.2741,0.7199,0.4027,Transition to UNKNOWN due to low-frequency dominance (low=0.718),p40_cont_11_fukutsu_japan,development
+220,105.6,UNKNOWN,DEGRADED_OCCLUDED,0.0273,0.007,0.2771,0.7159,0.4036,"Persistent occluded evidence (consecutive=56, rolloff=0.027, mid=0.277)",p40_cont_11_fukutsu_japan,development
+221,106.08,DEGRADED_OCCLUDED,UNKNOWN,0.0254,0.0068,0.2885,0.7047,0.423,Transition to UNKNOWN due to low-frequency dominance (low=0.671),p40_cont_11_fukutsu_japan,development
+222,106.56,UNKNOWN,DEGRADED_OCCLUDED,0.0239,0.0067,0.2998,0.6934,0.4438,"Persistent occluded evidence (consecutive=54, rolloff=0.024, mid=0.300)",p40_cont_11_fukutsu_japan,development
+223,107.04,DEGRADED_OCCLUDED,UNKNOWN,0.0245,0.0069,0.2975,0.6955,0.4364,Transition to UNKNOWN due to low-frequency dominance (low=0.702),p40_cont_11_fukutsu_japan,development
+224,107.52,UNKNOWN,DEGRADED_OCCLUDED,0.0223,0.0068,0.3281,0.6651,0.5101,"Persistent occluded evidence (consecutive=52, rolloff=0.022, mid=0.328)",p40_cont_11_fukutsu_japan,development
+226,108.48,DEGRADED_OCCLUDED,UNKNOWN,0.0277,0.0093,0.3422,0.6486,0.5385,Transition to UNKNOWN due to low-frequency dominance (low=0.638),p40_cont_11_fukutsu_japan,development
+227,108.96,UNKNOWN,DEGRADED_OCCLUDED,0.0252,0.0091,0.3795,0.6114,0.6496,"Persistent occluded evidence (consecutive=51, rolloff=0.025, mid=0.379)",p40_cont_11_fukutsu_japan,development
+247,118.56,DEGRADED_OCCLUDED,UNKNOWN,0.0174,0.0091,0.5527,0.4382,1.6584,Transition to UNKNOWN due to low-frequency dominance (low=0.650),p40_cont_11_fukutsu_japan,development
+248,119.04,UNKNOWN,DEGRADED_OCCLUDED,0.0184,0.0088,0.5083,0.4829,1.3957,"Persistent occluded evidence (consecutive=66, rolloff=0.018, mid=0.508)",p40_cont_11_fukutsu_japan,development
+256,122.88,DEGRADED_OCCLUDED,UNKNOWN,0.0124,0.0041,0.4585,0.5374,1.1675,Transition to UNKNOWN due to low-frequency dominance (low=0.848),p40_cont_11_fukutsu_japan,development
+257,123.36,UNKNOWN,DEGRADED_OCCLUDED,0.025,0.0046,0.3691,0.6263,0.9039,"Persistent occluded evidence (consecutive=71, rolloff=0.025, mid=0.369)",p40_cont_11_fukutsu_japan,development
+258,123.84,DEGRADED_OCCLUDED,UNKNOWN,0.0225,0.0046,0.3573,0.6381,0.7975,Transition to UNKNOWN due to low-frequency dominance (low=0.673),p40_cont_11_fukutsu_japan,development
+259,124.32,UNKNOWN,DEGRADED_OCCLUDED,0.0184,0.0042,0.3821,0.6137,0.8092,"Persistent occluded evidence (consecutive=69, rolloff=0.018, mid=0.382)",p40_cont_11_fukutsu_japan,development
+260,124.8,DEGRADED_OCCLUDED,UNKNOWN,0.0228,0.0046,0.3285,0.6669,0.6576,Transition to UNKNOWN due to low-frequency dominance (low=0.827),p40_cont_11_fukutsu_japan,development
+261,125.28,UNKNOWN,DEGRADED_OCCLUDED,0.0343,0.0118,0.3674,0.6208,0.7443,"Persistent occluded evidence (consecutive=69, rolloff=0.034, mid=0.367)",p40_cont_11_fukutsu_japan,development
+264,126.72,DEGRADED_OCCLUDED,UNKNOWN,0.0203,0.0078,0.4452,0.547,1.019,Transition to UNKNOWN due to low-frequency dominance (low=0.667),p40_cont_11_fukutsu_japan,development
+265,127.2,UNKNOWN,DEGRADED_OCCLUDED,0.0181,0.0068,0.4246,0.5685,0.9075,"Persistent occluded evidence (consecutive=71, rolloff=0.018, mid=0.425)",p40_cont_11_fukutsu_japan,development
+268,128.64,DEGRADED_OCCLUDED,UNKNOWN,0.0143,0.0055,0.4186,0.576,0.8029,Transition to UNKNOWN due to low-frequency dominance (low=0.630),p40_cont_11_fukutsu_japan,development
+269,129.12,UNKNOWN,DEGRADED_OCCLUDED,0.015,0.0051,0.3738,0.6211,0.6814,"Persistent occluded evidence (consecutive=71, rolloff=0.015, mid=0.374)",p40_cont_11_fukutsu_japan,development
+270,129.6,DEGRADED_OCCLUDED,UNKNOWN,0.0226,0.007,0.3503,0.6427,0.6099,Transition to UNKNOWN due to low-frequency dominance (low=0.708),p40_cont_11_fukutsu_japan,development
+271,130.08,UNKNOWN,DEGRADED_OCCLUDED,0.0207,0.0076,0.4183,0.5741,0.8797,"Persistent occluded evidence (consecutive=71, rolloff=0.021, mid=0.418)",p40_cont_11_fukutsu_japan,development
+280,134.4,DEGRADED_OCCLUDED,UNKNOWN,0.029,0.0156,0.5354,0.449,1.4276,Transition to UNKNOWN due to low-frequency dominance (low=0.623),p40_cont_11_fukutsu_japan,development
+281,134.88,UNKNOWN,DEGRADED_OCCLUDED,0.0237,0.0128,0.5443,0.4428,1.4072,"Persistent occluded evidence (consecutive=81, rolloff=0.024, mid=0.544)",p40_cont_11_fukutsu_japan,development
+290,139.2,DEGRADED_OCCLUDED,UNKNOWN,0.017,0.0073,0.4473,0.5454,0.9099,Transition to UNKNOWN due to low-frequency dominance (low=0.628),p40_cont_11_fukutsu_japan,development
+291,139.68,UNKNOWN,DEGRADED_OCCLUDED,0.014,0.0063,0.5153,0.4783,1.3317,"Persistent occluded evidence (consecutive=91, rolloff=0.014, mid=0.515)",p40_cont_11_fukutsu_japan,development
+302,144.96,DEGRADED_OCCLUDED,UNKNOWN,0.014,0.0057,0.4786,0.5157,1.0521,Transition to UNKNOWN due to low-frequency dominance (low=0.669),p40_cont_11_fukutsu_japan,development
+303,145.44,UNKNOWN,DEGRADED_OCCLUDED,0.0117,0.0049,0.5082,0.4868,1.1621,"Persistent occluded evidence (consecutive=101, rolloff=0.012, mid=0.508)",p40_cont_11_fukutsu_japan,development
+305,146.4,DEGRADED_OCCLUDED,UNKNOWN,0.0114,0.0045,0.4826,0.5129,1.0756,Transition to UNKNOWN due to low-frequency dominance (low=0.668),p40_cont_11_fukutsu_japan,development
+306,146.88,UNKNOWN,DEGRADED_OCCLUDED,0.0146,0.005,0.43,0.565,0.9011,"Persistent occluded evidence (consecutive=100, rolloff=0.015, mid=0.430)",p40_cont_11_fukutsu_japan,development
+317,152.16,DEGRADED_OCCLUDED,UNKNOWN,0.0181,0.0071,0.4566,0.5362,0.9513,Transition to UNKNOWN due to low-frequency dominance (low=0.686),p40_cont_11_fukutsu_japan,development
+318,152.64,UNKNOWN,DEGRADED_OCCLUDED,0.0177,0.0081,0.5063,0.4856,1.2042,"Persistent occluded evidence (consecutive=104, rolloff=0.018, mid=0.506)",p40_cont_11_fukutsu_japan,development
+327,156.96,DEGRADED_OCCLUDED,UNKNOWN,0.0299,0.0165,0.5307,0.4527,1.528,Transition to UNKNOWN due to low-frequency dominance (low=0.702),p40_cont_11_fukutsu_japan,development
+328,157.44,UNKNOWN,DEGRADED_OCCLUDED,0.0292,0.0147,0.4815,0.5038,1.2731,"Persistent occluded evidence (consecutive=110, rolloff=0.029, mid=0.482)",p40_cont_11_fukutsu_japan,development
+329,157.92,DEGRADED_OCCLUDED,UNKNOWN,0.0245,0.0118,0.4418,0.5464,1.0745,Transition to UNKNOWN due to low-frequency dominance (low=0.674),p40_cont_11_fukutsu_japan,development
+330,158.4,UNKNOWN,DEGRADED_OCCLUDED,0.0227,0.0098,0.3889,0.6012,0.8811,"Persistent occluded evidence (consecutive=108, rolloff=0.023, mid=0.389)",p40_cont_11_fukutsu_japan,development
+331,158.88,DEGRADED_OCCLUDED,UNKNOWN,0.0221,0.0086,0.3531,0.6383,0.7427,Transition to UNKNOWN due to low-frequency dominance (low=0.750),p40_cont_11_fukutsu_japan,development
+332,159.36,UNKNOWN,DEGRADED_OCCLUDED,0.0203,0.0076,0.3422,0.6502,0.6699,"Persistent occluded evidence (consecutive=106, rolloff=0.020, mid=0.342)",p40_cont_11_fukutsu_japan,development
+333,159.84,DEGRADED_OCCLUDED,UNKNOWN,0.0258,0.0072,0.2923,0.7005,0.5443,Transition to UNKNOWN due to low-frequency dominance (low=0.851),p40_cont_11_fukutsu_japan,development
+334,160.32,UNKNOWN,DEGRADED_OCCLUDED,0.0271,0.006,0.24,0.754,0.431,"Persistent occluded evidence (consecutive=104, rolloff=0.027, mid=0.240)",p40_cont_11_fukutsu_japan,development
+339,162.72,DEGRADED_OCCLUDED,UNKNOWN,0.0148,0.0039,0.3753,0.6208,0.7089,Transition to UNKNOWN due to low-frequency dominance (low=0.744),p40_cont_11_fukutsu_japan,development
+340,163.2,UNKNOWN,DEGRADED_OCCLUDED,0.0146,0.0039,0.3489,0.6472,0.6245,"Persistent occluded evidence (consecutive=104, rolloff=0.015, mid=0.349)",p40_cont_11_fukutsu_japan,development
+344,165.12,DEGRADED_OCCLUDED,UNKNOWN,0.0158,0.005,0.3473,0.6478,0.59,Transition to UNKNOWN due to low-frequency dominance (low=0.774),p40_cont_11_fukutsu_japan,development
+345,165.6,UNKNOWN,DEGRADED_OCCLUDED,0.0147,0.0053,0.4006,0.5941,0.766,"Persistent occluded evidence (consecutive=103, rolloff=0.015, mid=0.401)",p40_cont_11_fukutsu_japan,development
+347,166.56,DEGRADED_OCCLUDED,UNKNOWN,0.017,0.0063,0.4056,0.5881,0.7661,Transition to UNKNOWN due to low-frequency dominance (low=0.668),p40_cont_11_fukutsu_japan,development
+348,167.04,UNKNOWN,DEGRADED_OCCLUDED,0.0188,0.0066,0.3797,0.6138,0.6839,"Persistent occluded evidence (consecutive=102, rolloff=0.019, mid=0.380)",p40_cont_11_fukutsu_japan,development
+349,167.52,DEGRADED_OCCLUDED,UNKNOWN,0.0217,0.0074,0.366,0.6266,0.6352,Transition to UNKNOWN due to low-frequency dominance (low=0.665),p40_cont_11_fukutsu_japan,development
+350,168.0,UNKNOWN,DEGRADED_OCCLUDED,0.0211,0.0077,0.391,0.6012,0.6982,"Persistent occluded evidence (consecutive=102, rolloff=0.021, mid=0.391)",p40_cont_11_fukutsu_japan,development
+354,169.92,DEGRADED_OCCLUDED,UNKNOWN,0.0255,0.0086,0.4004,0.5909,0.7918,Transition to UNKNOWN due to low-frequency dominance (low=0.763),p40_cont_11_fukutsu_japan,development
+355,170.4,UNKNOWN,DEGRADED_OCCLUDED,0.022,0.0077,0.4092,0.5831,0.7883,"Persistent occluded evidence (consecutive=103, rolloff=0.022, mid=0.409)",p40_cont_11_fukutsu_japan,development
+358,171.84,DEGRADED_OCCLUDED,UNKNOWN,0.0187,0.0068,0.4255,0.5677,0.8158,Transition to UNKNOWN due to low-frequency dominance (low=0.659),p40_cont_11_fukutsu_japan,development
+359,172.32,UNKNOWN,DEGRADED_OCCLUDED,0.0187,0.0066,0.3998,0.5937,0.732,"Persistent occluded evidence (consecutive=103, rolloff=0.019, mid=0.400)",p40_cont_11_fukutsu_japan,development
+360,172.8,DEGRADED_OCCLUDED,UNKNOWN,0.0192,0.0065,0.3764,0.6172,0.6603,Transition to UNKNOWN due to low-frequency dominance (low=0.688),p40_cont_11_fukutsu_japan,development
+361,173.28,UNKNOWN,DEGRADED_OCCLUDED,0.0207,0.0066,0.3511,0.6423,0.5912,"Persistent occluded evidence (consecutive=101, rolloff=0.021, mid=0.351)",p40_cont_11_fukutsu_japan,development
+362,173.76,DEGRADED_OCCLUDED,UNKNOWN,0.0207,0.0062,0.3279,0.6659,0.531,Transition to UNKNOWN due to low-frequency dominance (low=0.737),p40_cont_11_fukutsu_japan,development
+363,174.24,UNKNOWN,DEGRADED_OCCLUDED,0.0192,0.006,0.3392,0.6548,0.5483,"Persistent occluded evidence (consecutive=99, rolloff=0.019, mid=0.339)",p40_cont_11_fukutsu_japan,development
+367,176.16,DEGRADED_OCCLUDED,UNKNOWN,0.0156,0.0051,0.4108,0.5841,0.7979,Transition to UNKNOWN due to low-frequency dominance (low=0.722),p40_cont_11_fukutsu_japan,development
+368,176.64,UNKNOWN,DEGRADED_OCCLUDED,0.0153,0.0054,0.4126,0.5821,0.7799,"Persistent occluded evidence (consecutive=100, rolloff=0.015, mid=0.413)",p40_cont_11_fukutsu_japan,development
+372,178.56,DEGRADED_OCCLUDED,UNKNOWN,0.0144,0.0055,0.4309,0.5635,0.8189,Transition to UNKNOWN due to low-frequency dominance (low=0.655),p40_cont_11_fukutsu_japan,development
+373,179.04,UNKNOWN,DEGRADED_OCCLUDED,0.0151,0.0058,0.4194,0.5748,0.7723,"Persistent occluded evidence (consecutive=99, rolloff=0.015, mid=0.419)",p40_cont_11_fukutsu_japan,development
+382,183.36,DEGRADED_OCCLUDED,UNKNOWN,0.0149,0.0064,0.4438,0.5497,0.8402,Transition to UNKNOWN due to low-frequency dominance (low=0.626),p40_cont_11_fukutsu_japan,development
+383,183.84,UNKNOWN,DEGRADED_OCCLUDED,0.0165,0.0077,0.47,0.5223,0.9418,"Persistent occluded evidence (consecutive=99, rolloff=0.016, mid=0.470)",p40_cont_11_fukutsu_japan,development
+399,191.52,DEGRADED_OCCLUDED,UNKNOWN,0.0241,0.0113,0.4821,0.5066,1.1816,Transition to UNKNOWN due to low-frequency dominance (low=0.672),p40_cont_11_fukutsu_japan,development
+400,192.0,UNKNOWN,DEGRADED_OCCLUDED,0.025,0.0111,0.4557,0.5332,1.0398,"Persistent occluded evidence (consecutive=114, rolloff=0.025, mid=0.456)",p40_cont_11_fukutsu_japan,development
+404,193.92,DEGRADED_OCCLUDED,UNKNOWN,0.0207,0.0077,0.4486,0.5437,1.0984,Transition to UNKNOWN due to low-frequency dominance (low=0.806),p40_cont_11_fukutsu_japan,development
+405,194.4,UNKNOWN,DEGRADED_OCCLUDED,0.0235,0.0085,0.421,0.5705,0.9537,"Persistent occluded evidence (consecutive=115, rolloff=0.024, mid=0.421)",p40_cont_11_fukutsu_japan,development
+406,194.88,DEGRADED_OCCLUDED,UNKNOWN,0.0238,0.0083,0.3967,0.595,0.8364,Transition to UNKNOWN due to low-frequency dominance (low=0.668),p40_cont_11_fukutsu_japan,development
+407,195.36,UNKNOWN,DEGRADED_OCCLUDED,0.0231,0.0079,0.3772,0.6149,0.7454,"Persistent occluded evidence (consecutive=113, rolloff=0.023, mid=0.377)",p40_cont_11_fukutsu_japan,development
+409,196.32,DEGRADED_OCCLUDED,UNKNOWN,0.0206,0.0074,0.3869,0.6056,0.7246,Transition to UNKNOWN due to low-frequency dominance (low=0.655),p40_cont_11_fukutsu_japan,development
+410,196.8,UNKNOWN,DEGRADED_OCCLUDED,0.0167,0.0063,0.4398,0.5539,0.9185,"Persistent occluded evidence (consecutive=114, rolloff=0.017, mid=0.440)",p40_cont_11_fukutsu_japan,development
+415,199.2,DEGRADED_OCCLUDED,UNKNOWN,0.015,0.0054,0.4859,0.5087,1.1802,Transition to UNKNOWN due to low-frequency dominance (low=0.723),p40_cont_11_fukutsu_japan,development
+416,199.68,UNKNOWN,DEGRADED_OCCLUDED,0.0194,0.0051,0.3971,0.5978,0.923,"Persistent occluded evidence (consecutive=116, rolloff=0.019, mid=0.397)",p40_cont_11_fukutsu_japan,development
+417,200.16,DEGRADED_OCCLUDED,UNKNOWN,0.0201,0.0044,0.3266,0.6689,0.7249,Transition to UNKNOWN due to low-frequency dominance (low=0.882),p40_cont_11_fukutsu_japan,development
+418,200.64,UNKNOWN,DEGRADED_OCCLUDED,0.0219,0.0045,0.2888,0.7067,0.5971,"Persistent occluded evidence (consecutive=114, rolloff=0.022, mid=0.289)",p40_cont_11_fukutsu_japan,development
+421,202.08,DEGRADED_OCCLUDED,UNKNOWN,0.0148,0.0037,0.3723,0.624,0.8243,Transition to UNKNOWN due to low-frequency dominance (low=0.788),p40_cont_11_fukutsu_japan,development
+422,202.56,UNKNOWN,DEGRADED_OCCLUDED,0.0132,0.0038,0.4054,0.5908,0.8751,"Persistent occluded evidence (consecutive=116, rolloff=0.013, mid=0.405)",p40_cont_11_fukutsu_japan,development
+424,203.52,DEGRADED_OCCLUDED,UNKNOWN,0.0158,0.0053,0.4142,0.5806,0.8526,Transition to UNKNOWN due to low-frequency dominance (low=0.663),p40_cont_11_fukutsu_japan,development
+425,204.0,UNKNOWN,DEGRADED_OCCLUDED,0.0184,0.0061,0.3925,0.6015,0.7628,"Persistent occluded evidence (consecutive=115, rolloff=0.018, mid=0.392)",p40_cont_11_fukutsu_japan,development
+426,204.48,DEGRADED_OCCLUDED,UNKNOWN,0.0192,0.0055,0.3394,0.6551,0.6272,Transition to UNKNOWN due to low-frequency dominance (low=0.816),p40_cont_11_fukutsu_japan,development
+427,204.96,UNKNOWN,DEGRADED_OCCLUDED,0.0153,0.0047,0.4237,0.5716,0.9974,"Persistent occluded evidence (consecutive=115, rolloff=0.015, mid=0.424)",p40_cont_11_fukutsu_japan,development
+429,205.92,DEGRADED_OCCLUDED,UNKNOWN,0.0139,0.0045,0.4418,0.5537,1.0716,Transition to UNKNOWN due to low-frequency dominance (low=0.690),p40_cont_11_fukutsu_japan,development
+430,206.4,UNKNOWN,DEGRADED_OCCLUDED,0.0127,0.0042,0.4268,0.569,0.9589,"Persistent occluded evidence (consecutive=116, rolloff=0.013, mid=0.427)",p40_cont_11_fukutsu_japan,development
+435,208.8,DEGRADED_OCCLUDED,UNKNOWN,0.0106,0.0037,0.4048,0.5915,0.7579,Transition to UNKNOWN due to low-frequency dominance (low=0.717),p40_cont_11_fukutsu_japan,development
+436,209.28,UNKNOWN,DEGRADED_OCCLUDED,0.0095,0.0037,0.4506,0.5457,0.9284,"Persistent occluded evidence (consecutive=120, rolloff=0.010, mid=0.451)",p40_cont_11_fukutsu_japan,development
+439,210.72,DEGRADED_OCCLUDED,UNKNOWN,0.0147,0.0064,0.4806,0.5131,1.1433,Transition to UNKNOWN due to low-frequency dominance (low=0.691),p40_cont_11_fukutsu_japan,development
+440,211.2,UNKNOWN,DEGRADED_OCCLUDED,0.0135,0.0059,0.4809,0.5132,1.092,"Persistent occluded evidence (consecutive=122, rolloff=0.013, mid=0.481)",p40_cont_11_fukutsu_japan,development
+442,212.16,DEGRADED_OCCLUDED,UNKNOWN,0.0163,0.0066,0.4377,0.5557,0.8888,Transition to UNKNOWN due to low-frequency dominance (low=0.626),p40_cont_11_fukutsu_japan,development
+443,212.64,UNKNOWN,DEGRADED_OCCLUDED,0.0151,0.0062,0.4394,0.5544,0.8686,"Persistent occluded evidence (consecutive=125, rolloff=0.015, mid=0.439)",p40_cont_11_fukutsu_japan,development
+456,218.88,DEGRADED_OCCLUDED,UNKNOWN,0.0115,0.0045,0.5006,0.4949,1.3737,Transition to UNKNOWN due to low-frequency dominance (low=0.738),p40_cont_11_fukutsu_japan,development
+457,219.36,UNKNOWN,DEGRADED_OCCLUDED,0.0104,0.0038,0.4394,0.5568,1.1164,"Persistent occluded evidence (consecutive=135, rolloff=0.010, mid=0.439)",p40_cont_11_fukutsu_japan,development
+475,228.0,DEGRADED_OCCLUDED,UNKNOWN,0.0106,0.0046,0.4753,0.5201,0.9744,Transition to UNKNOWN due to low-frequency dominance (low=0.642),p40_cont_11_fukutsu_japan,development
+476,228.48,UNKNOWN,DEGRADED_OCCLUDED,0.0163,0.0056,0.4227,0.5716,0.8221,"Persistent occluded evidence (consecutive=152, rolloff=0.016, mid=0.423)",p40_cont_11_fukutsu_japan,development
+477,228.96,DEGRADED_OCCLUDED,UNKNOWN,0.02,0.0062,0.3801,0.6137,0.7018,Transition to UNKNOWN due to low-frequency dominance (low=0.740),p40_cont_11_fukutsu_japan,development
+478,229.44,UNKNOWN,DEGRADED_OCCLUDED,0.0197,0.0071,0.4143,0.5787,0.7992,"Persistent occluded evidence (consecutive=152, rolloff=0.020, mid=0.414)",p40_cont_11_fukutsu_japan,development
+485,232.8,DEGRADED_OCCLUDED,UNKNOWN,0.0263,0.0104,0.4608,0.5288,0.966,Transition to UNKNOWN due to low-frequency dominance (low=0.691),p40_cont_11_fukutsu_japan,development
+486,233.28,UNKNOWN,DEGRADED_OCCLUDED,0.0252,0.0092,0.4133,0.5774,0.8181,"Persistent occluded evidence (consecutive=156, rolloff=0.025, mid=0.413)",p40_cont_11_fukutsu_japan,development
+487,233.76,DEGRADED_OCCLUDED,UNKNOWN,0.0236,0.0084,0.3919,0.5997,0.7365,Transition to UNKNOWN due to low-frequency dominance (low=0.667),p40_cont_11_fukutsu_japan,development
+488,234.24,UNKNOWN,DEGRADED_OCCLUDED,0.0201,0.0075,0.4175,0.575,0.799,"Persistent occluded evidence (consecutive=156, rolloff=0.020, mid=0.417)",p40_cont_11_fukutsu_japan,development
+493,236.64,DEGRADED_OCCLUDED,UNKNOWN,0.0299,0.0175,0.5852,0.3973,2.9329,Transition to UNKNOWN due to low-frequency dominance (low=0.647),p40_cont_11_fukutsu_japan,development
+494,237.12,UNKNOWN,DEGRADED_OCCLUDED,0.0316,0.016,0.5186,0.4654,2.3186,"Persistent occluded evidence (consecutive=160, rolloff=0.032, mid=0.519)",p40_cont_11_fukutsu_japan,development
+502,240.96,DEGRADED_OCCLUDED,UNKNOWN,0.02,0.0086,0.4879,0.5035,1.2611,Transition to UNKNOWN due to low-frequency dominance (low=0.773),p40_cont_11_fukutsu_japan,development
+503,241.44,UNKNOWN,DEGRADED_OCCLUDED,0.0266,0.0092,0.4244,0.5664,1.0232,"Persistent occluded evidence (consecutive=165, rolloff=0.027, mid=0.424)",p40_cont_11_fukutsu_japan,development
+504,241.92,DEGRADED_OCCLUDED,UNKNOWN,0.0518,0.0179,0.4049,0.5772,0.9096,Transition to UNKNOWN due to low-frequency dominance (low=0.609),p40_cont_11_fukutsu_japan,development
+505,242.4,UNKNOWN,DEGRADED_OCCLUDED,0.0524,0.0198,0.4225,0.5577,0.9202,"Persistent occluded evidence (consecutive=167, rolloff=0.052, mid=0.422)",p40_cont_11_fukutsu_japan,development
+513,246.24,DEGRADED_OCCLUDED,UNKNOWN,0.0248,0.0103,0.421,0.5688,0.784,Transition to UNKNOWN due to low-frequency dominance (low=0.682),p40_cont_11_fukutsu_japan,development
+514,246.72,UNKNOWN,DEGRADED_OCCLUDED,0.0225,0.0084,0.3632,0.6283,0.6469,"Persistent occluded evidence (consecutive=170, rolloff=0.022, mid=0.363)",p40_cont_11_fukutsu_japan,development
+517,248.16,DEGRADED_OCCLUDED,UNKNOWN,0.0188,0.0073,0.4638,0.5289,1.0905,Transition to UNKNOWN due to low-frequency dominance (low=0.622),p40_cont_11_fukutsu_japan,development
+518,248.64,UNKNOWN,DEGRADED_OCCLUDED,0.0172,0.0066,0.4421,0.5513,0.9704,"Persistent occluded evidence (consecutive=174, rolloff=0.017, mid=0.442)",p40_cont_11_fukutsu_japan,development
+528,253.44,DEGRADED_OCCLUDED,UNKNOWN,0.0132,0.0054,0.4327,0.5619,0.8613,Transition to UNKNOWN due to low-frequency dominance (low=0.643),p40_cont_11_fukutsu_japan,development
+529,253.92,UNKNOWN,DEGRADED_OCCLUDED,0.0227,0.0072,0.3865,0.6063,0.7298,"Persistent occluded evidence (consecutive=183, rolloff=0.023, mid=0.386)",p40_cont_11_fukutsu_japan,development
+530,254.4,DEGRADED_OCCLUDED,UNKNOWN,0.0272,0.0084,0.3626,0.6291,0.6516,Transition to UNKNOWN due to low-frequency dominance (low=0.697),p40_cont_11_fukutsu_japan,development
+531,254.88,UNKNOWN,DEGRADED_OCCLUDED,0.0229,0.0075,0.3967,0.5958,0.7404,"Persistent occluded evidence (consecutive=183, rolloff=0.023, mid=0.397)",p40_cont_11_fukutsu_japan,development
+535,256.8,DEGRADED_OCCLUDED,UNKNOWN,0.0231,0.0082,0.3867,0.6051,0.6706,Transition to UNKNOWN due to low-frequency dominance (low=0.658),p40_cont_11_fukutsu_japan,development
+536,257.28,UNKNOWN,DEGRADED_OCCLUDED,0.0208,0.0073,0.3764,0.6163,0.6358,"Persistent occluded evidence (consecutive=180, rolloff=0.021, mid=0.376)",p40_cont_11_fukutsu_japan,development
+537,257.76,DEGRADED_OCCLUDED,UNKNOWN,0.0192,0.0067,0.3717,0.6215,0.6171,Transition to UNKNOWN due to low-frequency dominance (low=0.637),p40_cont_11_fukutsu_japan,development
+538,258.24,UNKNOWN,DEGRADED_OCCLUDED,0.0183,0.0065,0.3716,0.6219,0.612,"Persistent occluded evidence (consecutive=178, rolloff=0.018, mid=0.372)",p40_cont_11_fukutsu_japan,development
+541,259.68,DEGRADED_OCCLUDED,UNKNOWN,0.0248,0.0069,0.4028,0.5903,0.8333,Transition to UNKNOWN due to low-frequency dominance (low=0.801),p40_cont_11_fukutsu_japan,development
+542,260.16,UNKNOWN,DEGRADED_OCCLUDED,0.0259,0.007,0.3665,0.6265,0.7126,"Persistent occluded evidence (consecutive=178, rolloff=0.026, mid=0.366)",p40_cont_11_fukutsu_japan,development
+543,260.64,DEGRADED_OCCLUDED,UNKNOWN,0.022,0.0062,0.365,0.6288,0.6762,Transition to UNKNOWN due to low-frequency dominance (low=0.636),p40_cont_11_fukutsu_japan,development
+544,261.12,UNKNOWN,DEGRADED_OCCLUDED,0.0195,0.0062,0.41,0.5838,0.811,"Persistent occluded evidence (consecutive=178, rolloff=0.019, mid=0.410)",p40_cont_11_fukutsu_japan,development
+546,262.08,DEGRADED_OCCLUDED,UNKNOWN,0.021,0.0069,0.3846,0.6085,0.72,Transition to UNKNOWN due to low-frequency dominance (low=0.739),p40_cont_11_fukutsu_japan,development
+547,262.56,UNKNOWN,DEGRADED_OCCLUDED,0.0167,0.0057,0.4365,0.5578,0.9048,"Persistent occluded evidence (consecutive=179, rolloff=0.017, mid=0.436)",p40_cont_11_fukutsu_japan,development
+549,263.52,DEGRADED_OCCLUDED,UNKNOWN,0.017,0.0058,0.4082,0.5859,0.7776,Transition to UNKNOWN due to low-frequency dominance (low=0.675),p40_cont_11_fukutsu_japan,development
+550,264.0,UNKNOWN,DEGRADED_OCCLUDED,0.0178,0.0059,0.3843,0.6098,0.6979,"Persistent occluded evidence (consecutive=178, rolloff=0.018, mid=0.384)",p40_cont_11_fukutsu_japan,development
+551,264.48,DEGRADED_OCCLUDED,UNKNOWN,0.017,0.0057,0.3735,0.6208,0.6538,Transition to UNKNOWN due to low-frequency dominance (low=0.654),p40_cont_11_fukutsu_japan,development
+552,264.96,UNKNOWN,DEGRADED_OCCLUDED,0.0166,0.0062,0.4104,0.5834,0.7667,"Persistent occluded evidence (consecutive=178, rolloff=0.017, mid=0.410)",p40_cont_11_fukutsu_japan,development
+553,265.44,DEGRADED_OCCLUDED,UNKNOWN,0.0193,0.0064,0.3704,0.6233,0.6594,Transition to UNKNOWN due to low-frequency dominance (low=0.743),p40_cont_11_fukutsu_japan,development
+554,265.92,UNKNOWN,DEGRADED_OCCLUDED,0.0236,0.0076,0.3568,0.6356,0.6121,"Persistent occluded evidence (consecutive=176, rolloff=0.024, mid=0.357)",p40_cont_11_fukutsu_japan,development
+559,268.32,DEGRADED_OCCLUDED,UNKNOWN,0.0308,0.0108,0.362,0.6272,0.6167,Transition to UNKNOWN due to low-frequency dominance (low=0.759),p40_cont_11_fukutsu_japan,development
+560,268.8,UNKNOWN,DEGRADED_OCCLUDED,0.028,0.0096,0.3494,0.641,0.5766,"Persistent occluded evidence (consecutive=172, rolloff=0.028, mid=0.349)",p40_cont_11_fukutsu_japan,development
+562,269.76,DEGRADED_OCCLUDED,UNKNOWN,0.0206,0.0066,0.3177,0.6756,0.5017,Transition to UNKNOWN due to low-frequency dominance (low=0.794),p40_cont_11_fukutsu_japan,development
+563,270.24,UNKNOWN,DEGRADED_OCCLUDED,0.0177,0.006,0.352,0.6421,0.5862,"Persistent occluded evidence (consecutive=169, rolloff=0.018, mid=0.352)",p40_cont_11_fukutsu_japan,development
+565,271.2,DEGRADED_OCCLUDED,UNKNOWN,0.0252,0.0074,0.3439,0.6487,0.5724,Transition to UNKNOWN due to low-frequency dominance (low=0.753),p40_cont_11_fukutsu_japan,development
+566,271.68,UNKNOWN,DEGRADED_OCCLUDED,0.0224,0.0072,0.3808,0.612,0.674,"Persistent occluded evidence (consecutive=170, rolloff=0.022, mid=0.381)",p40_cont_11_fukutsu_japan,development
+580,278.4,DEGRADED_OCCLUDED,UNKNOWN,0.024,0.0114,0.4922,0.4964,1.1282,Transition to UNKNOWN due to low-frequency dominance (low=0.616),p40_cont_11_fukutsu_japan,development
+581,278.88,UNKNOWN,DEGRADED_OCCLUDED,0.0221,0.011,0.5146,0.4745,1.202,"Persistent occluded evidence (consecutive=185, rolloff=0.022, mid=0.515)",p40_cont_11_fukutsu_japan,development
+583,279.84,DEGRADED_OCCLUDED,UNKNOWN,0.0214,0.01,0.487,0.503,1.0928,Transition to UNKNOWN due to low-frequency dominance (low=0.650),p40_cont_11_fukutsu_japan,development
+584,280.32,UNKNOWN,DEGRADED_OCCLUDED,0.0215,0.0092,0.4462,0.5446,0.9406,"Persistent occluded evidence (consecutive=186, rolloff=0.022, mid=0.446)",p40_cont_11_fukutsu_japan,development
+587,281.76,DEGRADED_OCCLUDED,UNKNOWN,0.0221,0.0091,0.4253,0.5656,0.8099,Transition to UNKNOWN due to low-frequency dominance (low=0.619),p40_cont_11_fukutsu_japan,development
+588,282.24,UNKNOWN,DEGRADED_OCCLUDED,0.0223,0.0086,0.4008,0.5906,0.7304,"Persistent occluded evidence (consecutive=186, rolloff=0.022, mid=0.401)",p40_cont_11_fukutsu_japan,development
+589,282.72,DEGRADED_OCCLUDED,UNKNOWN,0.0265,0.0099,0.3897,0.6004,0.6892,Transition to UNKNOWN due to low-frequency dominance (low=0.630),p40_cont_11_fukutsu_japan,development
+590,283.2,UNKNOWN,DEGRADED_OCCLUDED,0.0274,0.0101,0.38,0.6099,0.6544,"Persistent occluded evidence (consecutive=184, rolloff=0.027, mid=0.380)",p40_cont_11_fukutsu_japan,development
+592,284.16,DEGRADED_OCCLUDED,UNKNOWN,0.0266,0.0093,0.3585,0.6322,0.5916,Transition to UNKNOWN due to low-frequency dominance (low=0.708),p40_cont_11_fukutsu_japan,development
+593,284.64,UNKNOWN,DEGRADED_OCCLUDED,0.024,0.0079,0.3295,0.6626,0.5241,"Persistent occluded evidence (consecutive=181, rolloff=0.024, mid=0.329)",p40_cont_11_fukutsu_japan,development
+594,285.12,DEGRADED_OCCLUDED,UNKNOWN,0.0225,0.0071,0.313,0.6799,0.4831,Transition to UNKNOWN due to low-frequency dominance (low=0.732),p40_cont_11_fukutsu_japan,development
+595,285.6,UNKNOWN,DEGRADED_OCCLUDED,0.0202,0.0077,0.4155,0.5768,1.0385,"Persistent occluded evidence (consecutive=181, rolloff=0.020, mid=0.416)",p40_cont_11_fukutsu_japan,development
+606,290.88,DEGRADED_OCCLUDED,UNKNOWN,0.0203,0.0107,0.5297,0.4596,1.5131,Transition to UNKNOWN due to low-frequency dominance (low=0.641),p40_cont_11_fukutsu_japan,development
+607,291.36,UNKNOWN,DEGRADED_OCCLUDED,0.0226,0.0099,0.4631,0.527,1.2251,"Persistent occluded evidence (consecutive=191, rolloff=0.023, mid=0.463)",p40_cont_11_fukutsu_japan,development
+614,294.72,DEGRADED_OCCLUDED,UNKNOWN,0.0168,0.007,0.472,0.521,1.1304,Transition to UNKNOWN due to low-frequency dominance (low=0.725),p40_cont_11_fukutsu_japan,development
+615,295.2,UNKNOWN,DEGRADED_OCCLUDED,0.0216,0.0071,0.4067,0.5861,0.9153,"Persistent occluded evidence (consecutive=195, rolloff=0.022, mid=0.407)",p40_cont_11_fukutsu_japan,development
+616,295.68,DEGRADED_OCCLUDED,UNKNOWN,0.0279,0.0088,0.3801,0.611,0.796,Transition to UNKNOWN due to low-frequency dominance (low=0.686),p40_cont_11_fukutsu_japan,development
+617,296.16,UNKNOWN,DEGRADED_OCCLUDED,0.027,0.0091,0.3881,0.6029,0.775,"Persistent occluded evidence (consecutive=193, rolloff=0.027, mid=0.388)",p40_cont_11_fukutsu_japan,development
+626,300.48,DEGRADED_OCCLUDED,UNKNOWN,0.0387,0.0165,0.5019,0.4817,1.4559,Transition to UNKNOWN due to low-frequency dominance (low=0.618),p40_cont_11_fukutsu_japan,development
+627,300.96,UNKNOWN,DEGRADED_OCCLUDED,0.0335,0.0139,0.4617,0.5244,1.2226,"Persistent occluded evidence (consecutive=199, rolloff=0.033, mid=0.462)",p40_cont_11_fukutsu_japan,development
+628,301.44,DEGRADED_OCCLUDED,UNKNOWN,0.0278,0.0113,0.428,0.5608,1.039,Transition to UNKNOWN due to low-frequency dominance (low=0.670),p40_cont_11_fukutsu_japan,development
+629,301.92,UNKNOWN,DEGRADED_OCCLUDED,0.0266,0.0093,0.3577,0.633,0.8225,"Persistent occluded evidence (consecutive=197, rolloff=0.027, mid=0.358)",p40_cont_11_fukutsu_japan,development
+630,302.4,DEGRADED_OCCLUDED,UNKNOWN,0.0263,0.008,0.3096,0.6824,0.6666,Transition to UNKNOWN due to low-frequency dominance (low=0.831),p40_cont_11_fukutsu_japan,development
+631,302.88,UNKNOWN,DEGRADED_OCCLUDED,0.0218,0.0074,0.4085,0.5841,1.11,"Persistent occluded evidence (consecutive=197, rolloff=0.022, mid=0.409)",p40_cont_11_fukutsu_japan,development
+638,306.24,DEGRADED_OCCLUDED,UNKNOWN,0.016,0.0065,0.4626,0.5309,1.0254,Transition to UNKNOWN due to low-frequency dominance (low=0.639),p40_cont_11_fukutsu_japan,development
+639,306.72,UNKNOWN,DEGRADED_OCCLUDED,0.0137,0.0058,0.4841,0.5101,1.0753,"Persistent occluded evidence (consecutive=205, rolloff=0.014, mid=0.484)",p40_cont_11_fukutsu_japan,development
+648,311.04,DEGRADED_OCCLUDED,UNKNOWN,0.023,0.0107,0.4489,0.5404,0.9675,Transition to UNKNOWN due to low-frequency dominance (low=0.659),p40_cont_11_fukutsu_japan,development
+649,311.52,UNKNOWN,DEGRADED_OCCLUDED,0.0201,0.0089,0.4154,0.5757,0.8411,"Persistent occluded evidence (consecutive=211, rolloff=0.020, mid=0.415)",p40_cont_11_fukutsu_japan,development
+650,312.0,DEGRADED_OCCLUDED,UNKNOWN,0.0174,0.0074,0.3944,0.5981,0.7554,Transition to UNKNOWN due to low-frequency dominance (low=0.665),p40_cont_11_fukutsu_japan,development
+651,312.48,UNKNOWN,DEGRADED_OCCLUDED,0.0146,0.0063,0.4168,0.5769,0.8024,"Persistent occluded evidence (consecutive=211, rolloff=0.015, mid=0.417)",p40_cont_11_fukutsu_japan,development
+657,315.36,DEGRADED_OCCLUDED,UNKNOWN,0.0105,0.0044,0.4464,0.5492,0.9098,Transition to UNKNOWN due to low-frequency dominance (low=0.682),p40_cont_11_fukutsu_japan,development
+658,315.84,UNKNOWN,DEGRADED_OCCLUDED,0.0108,0.0047,0.46,0.5353,0.9362,"Persistent occluded evidence (consecutive=214, rolloff=0.011, mid=0.460)",p40_cont_11_fukutsu_japan,development
+662,317.76,DEGRADED_OCCLUDED,UNKNOWN,0.0203,0.0094,0.4544,0.5362,0.9213,Transition to UNKNOWN due to low-frequency dominance (low=0.628),p40_cont_11_fukutsu_japan,development
+663,318.24,UNKNOWN,DEGRADED_OCCLUDED,0.0174,0.0081,0.4692,0.5227,0.9572,"Persistent occluded evidence (consecutive=219, rolloff=0.017, mid=0.469)",p40_cont_11_fukutsu_japan,development
+669,321.12,DEGRADED_OCCLUDED,UNKNOWN,0.0178,0.0069,0.4439,0.5493,0.9341,Transition to UNKNOWN due to low-frequency dominance (low=0.738),p40_cont_11_fukutsu_japan,development
+670,321.6,UNKNOWN,DEGRADED_OCCLUDED,0.0167,0.0067,0.4502,0.5431,0.924,"Persistent occluded evidence (consecutive=224, rolloff=0.017, mid=0.450)",p40_cont_11_fukutsu_japan,development
+672,322.56,DEGRADED_OCCLUDED,UNKNOWN,0.0166,0.0063,0.4168,0.5768,0.7918,Transition to UNKNOWN due to low-frequency dominance (low=0.677),p40_cont_11_fukutsu_japan,development
+673,323.04,UNKNOWN,DEGRADED_OCCLUDED,0.0133,0.0053,0.4801,0.5146,1.1042,"Persistent occluded evidence (consecutive=225, rolloff=0.013, mid=0.480)",p40_cont_11_fukutsu_japan,development
+364,174.72,UNKNOWN,DEGRADED_OCCLUDED,0.0154,0.004,0.5188,0.4771,3.1879,"Persistent occluded evidence (consecutive=2, rolloff=0.015, mid=0.519)",p40_cont_12_blanca_spain,development
+368,176.64,DEGRADED_OCCLUDED,UNKNOWN,0.0115,0.0028,0.5277,0.4695,2.3578,Transition to UNKNOWN due to low-frequency dominance (low=0.841),p40_cont_12_blanca_spain,development
+369,177.12,UNKNOWN,DEGRADED_OCCLUDED,0.0135,0.0028,0.4334,0.5638,1.8128,"Persistent occluded evidence (consecutive=3, rolloff=0.014, mid=0.433)",p40_cont_12_blanca_spain,development
+370,177.6,DEGRADED_OCCLUDED,UNKNOWN,0.0159,0.0031,0.3677,0.6292,1.4114,Transition to UNKNOWN due to low-frequency dominance (low=0.825),p40_cont_12_blanca_spain,development
+435,208.8,UNKNOWN,CLEAR_NORMAL,0.3191,0.1071,0.3441,0.5487,0.6876,"Persistent clear evidence (consecutive=2, rolloff=0.319, hi=0.107)",p40_cont_12_blanca_spain,development
+455,218.4,CLEAR_NORMAL,UNKNOWN,0.1019,0.0318,0.2871,0.6812,0.4414,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.731, m2l=0.337)",p40_cont_12_blanca_spain,development
+549,263.52,UNKNOWN,DEGRADED_OCCLUDED,0.0156,0.0046,0.4133,0.5821,1.0068,"Persistent occluded evidence (consecutive=2, rolloff=0.016, mid=0.413)",p40_cont_12_blanca_spain,development
+550,264.0,DEGRADED_OCCLUDED,UNKNOWN,0.0172,0.0053,0.3937,0.601,0.8824,Transition to UNKNOWN due to low-frequency dominance (low=0.658),p40_cont_12_blanca_spain,development
+565,271.2,UNKNOWN,CLEAR_NORMAL,0.2739,0.0938,0.282,0.6242,0.533,"Persistent clear evidence (consecutive=2, rolloff=0.274, hi=0.094)",p40_cont_12_blanca_spain,development
+569,273.12,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.2332,0.1077,0.5005,0.3919,1.7384,"Transition to occluded (rolloff=0.233 < 0.18, mid=0.500 >= 0.38)",p40_cont_12_blanca_spain,development
+574,275.52,DEGRADED_OCCLUDED,UNKNOWN,0.0672,0.0322,0.5191,0.4487,1.6015,Transition to UNKNOWN due to low-frequency dominance (low=0.743),p40_cont_12_blanca_spain,development
+575,276.0,UNKNOWN,DEGRADED_OCCLUDED,0.0532,0.0249,0.4624,0.5127,1.3048,"Persistent occluded evidence (consecutive=4, rolloff=0.053, mid=0.462)",p40_cont_12_blanca_spain,development
+579,277.92,DEGRADED_OCCLUDED,UNKNOWN,0.0335,0.0178,0.5152,0.467,1.4858,Transition to UNKNOWN due to low-frequency dominance (low=0.663),p40_cont_12_blanca_spain,development
+580,278.4,UNKNOWN,DEGRADED_OCCLUDED,0.0288,0.0143,0.4525,0.5333,1.2047,"Persistent occluded evidence (consecutive=5, rolloff=0.029, mid=0.452)",p40_cont_12_blanca_spain,development
+581,278.88,DEGRADED_OCCLUDED,UNKNOWN,0.0257,0.0117,0.4017,0.5865,0.9871,Transition to UNKNOWN due to low-frequency dominance (low=0.746),p40_cont_12_blanca_spain,development
+582,279.36,UNKNOWN,DEGRADED_OCCLUDED,0.0264,0.0101,0.3476,0.6423,0.7976,"Persistent occluded evidence (consecutive=3, rolloff=0.026, mid=0.348)",p40_cont_12_blanca_spain,development
+583,279.84,DEGRADED_OCCLUDED,UNKNOWN,0.0275,0.009,0.3087,0.6823,0.658,Transition to UNKNOWN due to low-frequency dominance (low=0.802),p40_cont_12_blanca_spain,development
+618,296.64,UNKNOWN,DEGRADED_OCCLUDED,0.032,0.0132,0.3818,0.605,0.799,"Persistent occluded evidence (consecutive=2, rolloff=0.032, mid=0.382)",p40_cont_12_blanca_spain,development
+621,298.08,DEGRADED_OCCLUDED,UNKNOWN,0.0731,0.0292,0.3448,0.626,0.6763,Transition to UNKNOWN due to low-frequency dominance (low=0.835),p40_cont_12_blanca_spain,development
+635,304.8,UNKNOWN,DEGRADED_OCCLUDED,0.0141,0.0037,0.458,0.5383,1.609,"Persistent occluded evidence (consecutive=2, rolloff=0.014, mid=0.458)",p40_cont_12_blanca_spain,development
+639,306.72,DEGRADED_OCCLUDED,UNKNOWN,0.0148,0.0048,0.4777,0.5175,1.5133,Transition to UNKNOWN due to low-frequency dominance (low=0.782),p40_cont_12_blanca_spain,development
+640,307.2,UNKNOWN,DEGRADED_OCCLUDED,0.0155,0.0044,0.4072,0.5884,1.1961,"Persistent occluded evidence (consecutive=3, rolloff=0.015, mid=0.407)",p40_cont_12_blanca_spain,development
+641,307.68,DEGRADED_OCCLUDED,UNKNOWN,0.0139,0.0039,0.3708,0.6253,0.9859,Transition to UNKNOWN due to low-frequency dominance (low=0.736),p40_cont_12_blanca_spain,development
+647,310.56,UNKNOWN,DEGRADED_OCCLUDED,0.0247,0.0077,0.4668,0.5255,1.3153,"Persistent occluded evidence (consecutive=2, rolloff=0.025, mid=0.467)",p40_cont_12_blanca_spain,development
+649,311.52,DEGRADED_OCCLUDED,UNKNOWN,0.0246,0.006,0.3838,0.6101,0.9503,Transition to UNKNOWN due to low-frequency dominance (low=0.871),p40_cont_12_blanca_spain,development
+666,319.68,UNKNOWN,DEGRADED_OCCLUDED,0.0083,0.0018,0.4837,0.5145,1.5238,"Persistent occluded evidence (consecutive=2, rolloff=0.008, mid=0.484)",p40_cont_12_blanca_spain,development
+668,320.64,DEGRADED_OCCLUDED,UNKNOWN,0.0068,0.0017,0.4259,0.5724,1.0998,Transition to UNKNOWN due to low-frequency dominance (low=0.693),p40_cont_12_blanca_spain,development
+669,321.12,UNKNOWN,DEGRADED_OCCLUDED,0.0083,0.0024,0.4074,0.5903,0.9615,"Persistent occluded evidence (consecutive=3, rolloff=0.008, mid=0.407)",p40_cont_12_blanca_spain,development
+671,322.08,DEGRADED_OCCLUDED,UNKNOWN,0.0104,0.0036,0.4102,0.5862,0.8639,Transition to UNKNOWN due to low-frequency dominance (low=0.641),p40_cont_12_blanca_spain,development
+672,322.56,UNKNOWN,DEGRADED_OCCLUDED,0.0122,0.0034,0.3483,0.6483,0.6966,"Persistent occluded evidence (consecutive=4, rolloff=0.012, mid=0.348)",p40_cont_12_blanca_spain,development
+673,323.04,DEGRADED_OCCLUDED,UNKNOWN,0.0143,0.0034,0.303,0.6936,0.5728,Transition to UNKNOWN due to low-frequency dominance (low=0.829),p40_cont_12_blanca_spain,development
+674,323.52,UNKNOWN,DEGRADED_OCCLUDED,0.0166,0.0034,0.2665,0.7301,0.4764,"Persistent occluded evidence (consecutive=2, rolloff=0.017, mid=0.266)",p40_cont_12_blanca_spain,development
+675,324.0,DEGRADED_OCCLUDED,UNKNOWN,0.0191,0.0035,0.2363,0.7602,0.4002,Transition to UNKNOWN due to low-frequency dominance (low=0.851),p40_cont_12_blanca_spain,development
+16,7.68,UNKNOWN,CLEAR_NORMAL,4.7196,0.2887,0.0587,0.6525,0.1362,"Persistent clear evidence (consecutive=2, rolloff=4.720, hi=0.289)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+32,15.36,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.282,0.0273,0.3563,0.6164,0.7421,"Transition to occluded (rolloff=0.282 < 0.18, mid=0.356 >= 0.38)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+34,16.32,DEGRADED_OCCLUDED,UNKNOWN,0.1793,0.0173,0.3319,0.6508,0.7315,Transition to UNKNOWN due to low-frequency dominance (low=0.926),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+40,19.2,UNKNOWN,DEGRADED_OCCLUDED,0.165,0.0693,0.3424,0.5883,1.1744,"Persistent occluded evidence (consecutive=2, rolloff=0.165, mid=0.342)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+42,20.16,DEGRADED_OCCLUDED,UNKNOWN,0.1063,0.0465,0.4016,0.552,1.187,Transition to UNKNOWN due to low-frequency dominance (low=0.650),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+49,23.52,UNKNOWN,DEGRADED_OCCLUDED,0.11,0.0555,0.4368,0.5077,1.2088,"Persistent occluded evidence (consecutive=2, rolloff=0.110, mid=0.437)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+50,24.0,DEGRADED_OCCLUDED,UNKNOWN,0.093,0.0431,0.3635,0.5935,0.9488,Transition to UNKNOWN due to low-frequency dominance (low=0.851),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+62,29.76,UNKNOWN,DEGRADED_OCCLUDED,0.1395,0.0707,0.3773,0.552,1.3242,"Persistent occluded evidence (consecutive=2, rolloff=0.140, mid=0.377)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+65,31.2,DEGRADED_OCCLUDED,UNKNOWN,0.0931,0.0423,0.3761,0.5817,1.0624,Transition to UNKNOWN due to low-frequency dominance (low=0.863),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+66,31.68,UNKNOWN,DEGRADED_OCCLUDED,0.0813,0.0324,0.2976,0.67,0.8135,"Persistent occluded evidence (consecutive=2, rolloff=0.081, mid=0.298)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+67,32.16,DEGRADED_OCCLUDED,UNKNOWN,0.0756,0.0252,0.2388,0.736,0.6268,Transition to UNKNOWN due to low-frequency dominance (low=0.934),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+82,39.36,UNKNOWN,DEGRADED_OCCLUDED,0.1477,0.0748,0.4726,0.4526,1.7076,"Persistent occluded evidence (consecutive=2, rolloff=0.148, mid=0.473)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+85,40.8,DEGRADED_OCCLUDED,UNKNOWN,0.0992,0.0503,0.4609,0.4888,1.5235,Transition to UNKNOWN due to low-frequency dominance (low=0.802),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+91,43.68,UNKNOWN,DEGRADED_OCCLUDED,0.1505,0.0726,0.3758,0.5516,1.2924,"Persistent occluded evidence (consecutive=2, rolloff=0.150, mid=0.376)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+94,45.12,DEGRADED_OCCLUDED,UNKNOWN,0.0943,0.0403,0.37,0.5896,0.9655,Transition to UNKNOWN due to low-frequency dominance (low=0.822),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+95,45.6,UNKNOWN,DEGRADED_OCCLUDED,0.0863,0.0315,0.2979,0.6706,0.7464,"Persistent occluded evidence (consecutive=2, rolloff=0.086, mid=0.298)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+96,46.08,DEGRADED_OCCLUDED,UNKNOWN,0.0843,0.0252,0.2438,0.731,0.5822,Transition to UNKNOWN due to low-frequency dominance (low=0.912),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+98,47.04,UNKNOWN,CLEAR_NORMAL,0.1955,0.0983,0.3857,0.516,1.394,"Persistent clear evidence (consecutive=2, rolloff=0.196, hi=0.098)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+100,48.0,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.1334,0.0691,0.4832,0.4477,1.5355,"Transition to occluded (rolloff=0.133 < 0.18, mid=0.483 >= 0.38)",p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+101,48.48,DEGRADED_OCCLUDED,UNKNOWN,0.1842,0.0652,0.4022,0.5325,1.2023,Transition to UNKNOWN due to low-frequency dominance (low=0.787),p15_pos_025_phase15_gunshot_clean_berettadouble04,phase15_historical_holdout
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0715,0.0058,0.2511,0.7432,0.4543,"Persistent occluded evidence (consecutive=2, rolloff=0.071, mid=0.251)",p15_pos_043_phase15_gunshot_urban_shotspotter_d5_01,phase15_historical_holdout
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0758,0.0033,0.2571,0.7396,0.5347,"Persistent occluded evidence (consecutive=2, rolloff=0.076, mid=0.257)",p15_pos_044_phase15_gunshot_urban_shotspotter_d5_02,phase15_historical_holdout
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.1201,0.0164,0.4264,0.5572,2.2581,"Persistent occluded evidence (consecutive=2, rolloff=0.120, mid=0.426)",p15_pos_045_phase15_gunshot_urban_shotspotter_d5_03,phase15_historical_holdout
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0576,0.0049,0.3881,0.607,1.8109,"Persistent occluded evidence (consecutive=2, rolloff=0.058, mid=0.388)",p15_pos_046_phase15_gunshot_urban_shotspotter_d5_04,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,43.1273,0.6671,0.0153,0.3175,0.0566,"Persistent clear evidence (consecutive=2, rolloff=43.127, hi=0.667)",p15_neg_055_phase15_neg_esc50_fireworks_5-160614-A-48,phase15_historical_holdout
+3,1.44,UNKNOWN,CLEAR_NORMAL,0.2251,0.1629,0.7278,0.1092,6.934,"Persistent clear evidence (consecutive=2, rolloff=0.225, hi=0.163)",p15_neg_056_phase15_neg_esc50_fireworks_5-160614-B-48,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,3.0775,0.3783,0.4959,0.1258,4.0882,"Persistent clear evidence (consecutive=2, rolloff=3.077, hi=0.378)",p15_neg_057_phase15_neg_esc50_fireworks_5-160614-C-48,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.7655,0.4009,0.5449,0.0542,10.0894,"Persistent clear evidence (consecutive=2, rolloff=0.766, hi=0.401)",p15_neg_058_phase15_neg_esc50_fireworks_5-160614-D-48,phase15_historical_holdout
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.3861,0.1282,0.2724,0.5995,0.8308,"Persistent clear evidence (consecutive=2, rolloff=0.386, hi=0.128)",p15_neg_059_phase15_neg_esc50_fireworks_5-160614-E-48,phase15_historical_holdout
+4,1.92,CLEAR_NORMAL,UNKNOWN,0.3342,0.0907,0.2231,0.6862,0.555,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.799, m2l=0.195)",p15_neg_059_phase15_neg_esc50_fireworks_5-160614-E-48,phase15_historical_holdout
+6,2.88,UNKNOWN,CLEAR_NORMAL,0.3705,0.1361,0.3296,0.5343,0.9147,"Persistent clear evidence (consecutive=2, rolloff=0.370, hi=0.136)",p15_neg_059_phase15_neg_esc50_fireworks_5-160614-E-48,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.5395,0.2364,0.4525,0.3111,1.5854,"Persistent clear evidence (consecutive=2, rolloff=0.540, hi=0.236)",p15_neg_060_phase15_neg_esc50_fireworks_5-160614-F-48,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.3714,0.1013,0.2729,0.6258,0.4379,"Persistent clear evidence (consecutive=2, rolloff=0.371, hi=0.101)",p15_neg_073_phase15_neg_esc50_engine_4-195451-A-44,phase15_historical_holdout
+5,2.4,UNKNOWN,CLEAR_NORMAL,0.2221,0.1514,0.6822,0.1664,4.1071,"Persistent clear evidence (consecutive=2, rolloff=0.222, hi=0.151)",p15_neg_078_phase15_neg_esc50_engine_5-235507-A-44,phase15_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.1323,0.0729,0.552,0.3751,1.4719,"Persistent occluded evidence (consecutive=2, rolloff=0.132, mid=0.552)",p15_neg_080_phase15_neg_esc50_engine_5-243773-A-44,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,5.5834,0.8211,0.1534,0.0255,5.9521,"Persistent clear evidence (consecutive=2, rolloff=5.583, hi=0.821)",p15_neg_081_phase15_neg_esc50_glass_breaking_4-204777-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,2.2601,0.6353,0.282,0.0827,7.303,"Persistent clear evidence (consecutive=2, rolloff=2.260, hi=0.635)",p15_neg_082_phase15_neg_esc50_glass_breaking_4-204777-B-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,2.1155,0.5967,0.3167,0.0866,5.0242,"Persistent clear evidence (consecutive=2, rolloff=2.116, hi=0.597)",p15_neg_083_phase15_neg_esc50_glass_breaking_4-204777-C-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.7172,0.248,0.3458,0.4061,0.8516,"Persistent clear evidence (consecutive=2, rolloff=0.717, hi=0.248)",p15_neg_084_phase15_neg_esc50_glass_breaking_4-212698-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,6.8635,0.6411,0.0977,0.2612,0.3778,"Persistent clear evidence (consecutive=2, rolloff=6.864, hi=0.641)",p15_neg_085_phase15_neg_esc50_glass_breaking_5-221528-A-39,phase15_historical_holdout
+3,1.44,CLEAR_NORMAL,UNKNOWN,3.9874,0.3623,0.0608,0.5769,0.2185,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.985, m2l=0.014)",p15_neg_085_phase15_neg_esc50_glass_breaking_5-221528-A-39,phase15_historical_holdout
+6,2.88,UNKNOWN,CLEAR_NORMAL,2.3474,0.1787,0.0416,0.3422,0.5524,"Persistent clear evidence (consecutive=2, rolloff=2.347, hi=0.179)",p15_neg_085_phase15_neg_esc50_glass_breaking_5-221528-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,2.764,0.7279,0.2633,0.0088,29.5129,"Persistent clear evidence (consecutive=2, rolloff=2.764, hi=0.728)",p15_neg_086_phase15_neg_esc50_glass_breaking_5-221529-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,8.6389,0.8805,0.1039,0.0156,8.2923,"Persistent clear evidence (consecutive=2, rolloff=8.639, hi=0.880)",p15_neg_087_phase15_neg_esc50_glass_breaking_5-233605-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,8.3905,0.8773,0.1045,0.0182,5.7114,"Persistent clear evidence (consecutive=2, rolloff=8.391, hi=0.877)",p15_neg_088_phase15_neg_esc50_glass_breaking_5-233607-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,3.2862,0.6963,0.2119,0.0918,2.3129,"Persistent clear evidence (consecutive=2, rolloff=3.286, hi=0.696)",p15_neg_089_phase15_neg_esc50_glass_breaking_5-257642-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,4.827,0.6916,0.2133,0.0951,2.3826,"Persistent clear evidence (consecutive=2, rolloff=4.827, hi=0.692)",p15_neg_090_phase15_neg_esc50_glass_breaking_5-260432-A-39,phase15_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0621,0.0539,0.8691,0.0771,11.2782,"Persistent occluded evidence (consecutive=2, rolloff=0.062, mid=0.869)",p15_neg_091_phase15_neg_esc50_clapping_3-177083-A-22,phase15_historical_holdout
+7,3.36,DEGRADED_OCCLUDED,UNKNOWN,0.0785,0.057,0.6837,0.2593,7.8723,Transition to UNKNOWN due to low-frequency dominance (low=0.768),p15_neg_091_phase15_neg_esc50_clapping_3-177083-A-22,phase15_historical_holdout
+8,3.84,UNKNOWN,DEGRADED_OCCLUDED,0.0826,0.0458,0.5451,0.409,5.942,"Persistent occluded evidence (consecutive=3, rolloff=0.083, mid=0.545)",p15_neg_091_phase15_neg_esc50_clapping_3-177083-A-22,phase15_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0789,0.0635,0.8061,0.1304,6.1879,"Persistent occluded evidence (consecutive=2, rolloff=0.079, mid=0.806)",p15_neg_092_phase15_neg_esc50_clapping_3-181278-A-22,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.2974,0.2199,0.7418,0.0383,19.5455,"Persistent clear evidence (consecutive=2, rolloff=0.297, hi=0.220)",p15_neg_093_phase15_neg_esc50_clapping_3-197435-A-22,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.2918,0.2202,0.7548,0.025,31.5383,"Persistent clear evidence (consecutive=2, rolloff=0.292, hi=0.220)",p15_neg_094_phase15_neg_esc50_clapping_3-197435-B-22,phase15_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0789,0.0585,0.7432,0.1983,3.7498,"Persistent occluded evidence (consecutive=2, rolloff=0.079, mid=0.743)",p15_neg_096_phase15_neg_esc50_clapping_4-189830-A-22,phase15_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.3174,0.23,0.7248,0.0452,16.0034,"Persistent clear evidence (consecutive=2, rolloff=0.317, hi=0.230)",p15_neg_100_phase15_neg_esc50_clapping_4-189836-A-22,phase15_historical_holdout
+16,7.68,UNKNOWN,DEGRADED_OCCLUDED,0.17,0.047,0.3045,0.6484,0.6335,"Persistent occluded evidence (consecutive=2, rolloff=0.170, mid=0.305)",p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05,phase12_historical_holdout
+17,8.16,DEGRADED_OCCLUDED,UNKNOWN,0.15,0.0356,0.2323,0.7321,0.4791,Transition to UNKNOWN due to low-frequency dominance (low=0.983),p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05,phase12_historical_holdout
+33,15.84,UNKNOWN,CLEAR_NORMAL,0.2576,0.0526,0.1235,0.8239,0.1946,"Persistent clear evidence (consecutive=2, rolloff=0.258, hi=0.053)",p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05,phase12_historical_holdout
+35,16.8,CLEAR_NORMAL,UNKNOWN,0.2544,0.066,0.2152,0.7188,0.3591,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.585, m2l=0.575)",p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05,phase12_historical_holdout
+39,18.72,UNKNOWN,CLEAR_NORMAL,0.2896,0.0854,0.279,0.6356,0.4671,"Persistent clear evidence (consecutive=2, rolloff=0.290, hi=0.085)",p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05,phase12_historical_holdout
+53,25.44,CLEAR_NORMAL,UNKNOWN,0.3413,0.034,0.1089,0.857,0.1535,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.869, m2l=0.097)",p12_pos_003_phase12_gunshot_clipped_ar15_rapid_05,phase12_historical_holdout
+7,3.36,UNKNOWN,DEGRADED_OCCLUDED,0.0379,0.0038,0.4926,0.5036,1.9505,"Persistent occluded evidence (consecutive=2, rolloff=0.038, mid=0.493)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,0.0218,0.0035,0.459,0.5375,1.4735,Transition to UNKNOWN due to low-frequency dominance (low=0.961),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,0.0456,0.0034,0.3514,0.6452,1.1125,"Persistent occluded evidence (consecutive=4, rolloff=0.046, mid=0.351)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+14,6.72,DEGRADED_OCCLUDED,UNKNOWN,0.0875,0.0043,0.2719,0.7238,0.8431,Transition to UNKNOWN due to low-frequency dominance (low=0.960),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+15,7.2,UNKNOWN,DEGRADED_OCCLUDED,0.1211,0.0057,0.2153,0.7789,0.6444,"Persistent occluded evidence (consecutive=2, rolloff=0.121, mid=0.215)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+16,7.68,DEGRADED_OCCLUDED,UNKNOWN,0.3173,0.024,0.1832,0.7928,0.5094,Transition to UNKNOWN due to low-frequency dominance (low=0.834),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+31,14.88,UNKNOWN,DEGRADED_OCCLUDED,0.0733,0.028,0.2845,0.6875,0.8002,"Persistent occluded evidence (consecutive=2, rolloff=0.073, mid=0.284)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+39,18.72,DEGRADED_OCCLUDED,UNKNOWN,0.034,0.0186,0.5376,0.4438,1.964,Transition to UNKNOWN due to low-frequency dominance (low=0.733),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+40,19.2,UNKNOWN,DEGRADED_OCCLUDED,0.0393,0.015,0.4227,0.5623,1.4943,"Persistent occluded evidence (consecutive=7, rolloff=0.039, mid=0.423)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+41,19.68,DEGRADED_OCCLUDED,UNKNOWN,0.0428,0.0119,0.3293,0.6588,1.1337,Transition to UNKNOWN due to low-frequency dominance (low=0.948),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+42,20.16,UNKNOWN,DEGRADED_OCCLUDED,0.0403,0.015,0.435,0.55,1.6914,"Persistent occluded evidence (consecutive=7, rolloff=0.040, mid=0.435)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+43,20.64,DEGRADED_OCCLUDED,UNKNOWN,0.0408,0.0118,0.3389,0.6493,1.2819,Transition to UNKNOWN due to low-frequency dominance (low=0.947),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+44,21.12,UNKNOWN,DEGRADED_OCCLUDED,0.0577,0.009,0.2564,0.7346,0.9637,"Persistent occluded evidence (consecutive=5, rolloff=0.058, mid=0.256)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+45,21.6,DEGRADED_OCCLUDED,UNKNOWN,0.0796,0.0073,0.196,0.7967,0.7265,Transition to UNKNOWN due to low-frequency dominance (low=0.983),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+46,22.08,UNKNOWN,DEGRADED_OCCLUDED,0.1132,0.0079,0.1582,0.8339,0.5568,"Persistent occluded evidence (consecutive=3, rolloff=0.113, mid=0.158)",p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+47,22.56,DEGRADED_OCCLUDED,UNKNOWN,0.1382,0.0079,0.128,0.8642,0.4274,Transition to UNKNOWN due to low-frequency dominance (low=0.955),p12_pos_030_phase12_gunshot_pocket_beretta_rapid_06,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0538,0.0406,0.7566,0.2028,3.735,"Persistent occluded evidence (consecutive=2, rolloff=0.054, mid=0.757)",p12_neg_069_phase12_negative_esc50_fireworks_3-172881-A-48,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0018,0.0013,0.8526,0.1462,22.8953,"Persistent occluded evidence (consecutive=2, rolloff=0.002, mid=0.853)",p12_neg_085_phase12_negative_esc50_siren_1-31482-A-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0017,0.0015,0.9272,0.0713,13.6108,"Persistent occluded evidence (consecutive=2, rolloff=0.002, mid=0.927)",p12_neg_086_phase12_negative_esc50_siren_1-31482-B-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0008,0.0005,0.7069,0.2926,3.5674,"Persistent occluded evidence (consecutive=2, rolloff=0.001, mid=0.707)",p12_neg_087_phase12_negative_esc50_siren_1-54084-A-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0111,0.0108,0.988,0.0012,781.7646,"Persistent occluded evidence (consecutive=2, rolloff=0.011, mid=0.988)",p12_neg_088_phase12_negative_esc50_siren_1-76831-A-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0062,0.0061,0.993,0.001,929.7915,"Persistent occluded evidence (consecutive=2, rolloff=0.006, mid=0.993)",p12_neg_089_phase12_negative_esc50_siren_1-76831-B-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0091,0.0089,0.9879,0.0032,296.2194,"Persistent occluded evidence (consecutive=2, rolloff=0.009, mid=0.988)",p12_neg_090_phase12_negative_esc50_siren_1-76831-C-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0081,0.0079,0.9892,0.0029,334.258,"Persistent occluded evidence (consecutive=2, rolloff=0.008, mid=0.989)",p12_neg_091_phase12_negative_esc50_siren_1-76831-D-42,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0301,0.0291,0.9703,0.0006,1349.8067,"Persistent occluded evidence (consecutive=2, rolloff=0.030, mid=0.970)",p12_neg_092_phase12_negative_esc50_siren_1-76831-E-42,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,28.7109,0.9381,0.0333,0.0286,1.1639,"Persistent clear evidence (consecutive=2, rolloff=28.711, hi=0.938)",p12_neg_095_phase12_negative_esc50_car_horn_3-174840-A-43,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0678,0.0372,0.5477,0.4151,1.3603,"Persistent occluded evidence (consecutive=2, rolloff=0.068, mid=0.548)",p12_neg_096_phase12_negative_esc50_car_horn_3-243726-A-43,phase12_historical_holdout
+5,2.4,DEGRADED_OCCLUDED,UNKNOWN,0.1012,0.0437,0.4568,0.4995,0.9986,Transition to UNKNOWN due to low-frequency dominance (low=0.616),p12_neg_096_phase12_negative_esc50_car_horn_3-243726-A-43,phase12_historical_holdout
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.1067,0.044,0.4337,0.5223,0.9031,"Persistent occluded evidence (consecutive=7, rolloff=0.107, mid=0.434)",p12_neg_096_phase12_negative_esc50_car_horn_3-243726-A-43,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0119,0.0058,0.4947,0.4995,0.9984,"Persistent occluded evidence (consecutive=2, rolloff=0.012, mid=0.495)",p12_neg_097_phase12_negative_esc50_car_horn_4-175845-A-43,phase12_historical_holdout
+2,0.96,DEGRADED_OCCLUDED,UNKNOWN,0.014,0.0047,0.3871,0.6083,0.766,Transition to UNKNOWN due to low-frequency dominance (low=0.935),p12_neg_097_phase12_negative_esc50_car_horn_4-175845-A-43,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.3802,0.0975,0.2564,0.6461,0.3973,"Persistent clear evidence (consecutive=2, rolloff=0.380, hi=0.097)",p12_neg_098_phase12_negative_esc50_car_horn_4-175846-A-43,phase12_historical_holdout
+3,1.44,CLEAR_NORMAL,UNKNOWN,0.3448,0.0819,0.2355,0.6827,0.3489,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.746, m2l=0.258)",p12_neg_098_phase12_negative_esc50_car_horn_4-175846-A-43,phase12_historical_holdout
+3,1.44,UNKNOWN,DEGRADED_OCCLUDED,0.0899,0.0508,0.3812,0.568,1.848,"Persistent occluded evidence (consecutive=2, rolloff=0.090, mid=0.381)",p12_neg_100_phase12_negative_esc50_car_horn_4-175856-A-43,phase12_historical_holdout
+6,2.88,DEGRADED_OCCLUDED,UNKNOWN,0.1047,0.0656,0.4554,0.479,2.5853,Transition to UNKNOWN due to low-frequency dominance (low=0.772),p12_neg_100_phase12_negative_esc50_car_horn_4-175856-A-43,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.1169,0.0588,0.5051,0.4361,1.1602,"Persistent occluded evidence (consecutive=2, rolloff=0.117, mid=0.505)",p12_neg_103_phase12_negative_esc50_engine_3-154758-A-44,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,2.2907,0.6531,0.2851,0.0618,4.61,"Persistent clear evidence (consecutive=2, rolloff=2.291, hi=0.653)",p12_neg_104_phase12_negative_esc50_engine_3-259622-A-44,phase12_historical_holdout
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,0.1252,0.0748,0.5989,0.3262,1.8358,"Persistent occluded evidence (consecutive=2, rolloff=0.125, mid=0.599)",p12_neg_106_phase12_negative_esc50_engine_4-186935-A-44,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.017,0.0098,0.5823,0.4079,1.4306,"Persistent occluded evidence (consecutive=2, rolloff=0.017, mid=0.582)",p12_neg_111_phase12_negative_esc50_train_3-159445-A-45,phase12_historical_holdout
+5,2.4,DEGRADED_OCCLUDED,UNKNOWN,0.0287,0.0138,0.5396,0.4466,1.3762,Transition to UNKNOWN due to low-frequency dominance (low=0.639),p12_neg_111_phase12_negative_esc50_train_3-159445-A-45,phase12_historical_holdout
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.034,0.015,0.4974,0.4877,1.1839,"Persistent occluded evidence (consecutive=7, rolloff=0.034, mid=0.497)",p12_neg_111_phase12_negative_esc50_train_3-159445-A-45,phase12_historical_holdout
+7,3.36,UNKNOWN,DEGRADED_OCCLUDED,0.0212,0.0064,0.3352,0.6583,0.6087,"Persistent occluded evidence (consecutive=2, rolloff=0.021, mid=0.335)",p12_neg_112_phase12_negative_esc50_train_3-159445-B-45,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.017,0.0089,0.5265,0.4647,1.1332,"Persistent occluded evidence (consecutive=2, rolloff=0.017, mid=0.526)",p12_neg_115_phase12_negative_esc50_train_4-165791-B-45,phase12_historical_holdout
+5,2.4,DEGRADED_OCCLUDED,UNKNOWN,0.0545,0.0217,0.4166,0.5617,0.7768,Transition to UNKNOWN due to low-frequency dominance (low=0.665),p12_neg_115_phase12_negative_esc50_train_4-165791-B-45,phase12_historical_holdout
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.0466,0.0177,0.3739,0.6085,0.6646,"Persistent occluded evidence (consecutive=3, rolloff=0.047, mid=0.374)",p12_neg_115_phase12_negative_esc50_train_4-165791-B-45,phase12_historical_holdout
+7,3.36,DEGRADED_OCCLUDED,UNKNOWN,0.0584,0.0201,0.3542,0.6257,0.6074,Transition to UNKNOWN due to low-frequency dominance (low=0.677),p12_neg_115_phase12_negative_esc50_train_4-165791-B-45,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.8659,0.5582,0.316,0.1258,6.0389,"Persistent clear evidence (consecutive=2, rolloff=1.866, hi=0.558)",p12_neg_117_phase12_negative_esc50_glass_breaking_3-203377-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,54.2741,0.9175,0.0821,0.0003,274.7074,"Persistent clear evidence (consecutive=2, rolloff=54.274, hi=0.918)",p12_neg_118_phase12_negative_esc50_glass_breaking_3-216280-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,3.8536,0.7926,0.2056,0.0017,111.2975,"Persistent clear evidence (consecutive=2, rolloff=3.854, hi=0.793)",p12_neg_119_phase12_negative_esc50_glass_breaking_3-216281-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,1.732,0.6312,0.3644,0.0044,80.6347,"Persistent clear evidence (consecutive=2, rolloff=1.732, hi=0.631)",p12_neg_120_phase12_negative_esc50_glass_breaking_3-216284-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,5.0239,0.7568,0.1662,0.077,2.314,"Persistent clear evidence (consecutive=2, rolloff=5.024, hi=0.757)",p12_neg_121_phase12_negative_esc50_glass_breaking_4-204115-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,13.9562,0.926,0.0668,0.0071,10.783,"Persistent clear evidence (consecutive=2, rolloff=13.956, hi=0.926)",p12_neg_122_phase12_negative_esc50_glass_breaking_4-204119-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,16.4332,0.9307,0.0567,0.0126,12.2881,"Persistent clear evidence (consecutive=2, rolloff=16.433, hi=0.931)",p12_neg_123_phase12_negative_esc50_glass_breaking_4-204121-A-39,phase12_historical_holdout
+3,1.44,CLEAR_NORMAL,UNKNOWN,9.6473,0.5657,0.078,0.3562,6.9704,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.827, m2l=0.107)",p12_neg_123_phase12_negative_esc50_glass_breaking_4-204121-A-39,phase12_historical_holdout
+6,2.88,UNKNOWN,CLEAR_NORMAL,4.6523,0.2499,0.0438,0.2687,3.3911,"Persistent clear evidence (consecutive=2, rolloff=4.652, hi=0.250)",p12_neg_123_phase12_negative_esc50_glass_breaking_4-204121-A-39,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,12.0677,0.9007,0.0816,0.0177,13.9239,"Persistent clear evidence (consecutive=2, rolloff=12.068, hi=0.901)",p12_neg_124_phase12_negative_esc50_glass_breaking_4-204123-A-39,phase12_historical_holdout
+6,2.88,UNKNOWN,CLEAR_NORMAL,1.4232,0.1339,0.0372,0.5789,0.5788,"Persistent clear evidence (consecutive=2, rolloff=1.423, hi=0.134)",p12_neg_130_phase12_negative_esc50_door_wood_knock_4-182039-A-30,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0021,0.0017,0.8263,0.1721,4.8037,"Persistent occluded evidence (consecutive=2, rolloff=0.002, mid=0.826)",p12_neg_132_phase12_negative_esc50_door_wood_knock_4-186518-A-30,phase12_historical_holdout
+4,1.92,DEGRADED_OCCLUDED,UNKNOWN,0.0845,0.0024,0.6336,0.3641,4.139,Transition to UNKNOWN due to low-frequency dominance (low=0.989),p12_neg_132_phase12_negative_esc50_door_wood_knock_4-186518-A-30,phase12_historical_holdout
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,0.1718,0.0034,0.479,0.5175,3.1083,"Persistent occluded evidence (consecutive=2, rolloff=0.172, mid=0.479)",p12_neg_132_phase12_negative_esc50_door_wood_knock_4-186518-A-30,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0186,0.0115,0.6721,0.3163,2.3324,"Persistent occluded evidence (consecutive=2, rolloff=0.019, mid=0.672)",p12_neg_133_phase12_negative_esc50_chainsaw_3-165856-A-41,phase12_historical_holdout
+2,0.96,UNKNOWN,CLEAR_NORMAL,0.7096,0.1254,0.1774,0.6972,0.2554,"Persistent clear evidence (consecutive=2, rolloff=0.710, hi=0.125)",p12_neg_135_phase12_negative_esc50_chainsaw_4-149294-B-41,phase12_historical_holdout
+4,1.92,CLEAR_NORMAL,UNKNOWN,0.7051,0.1041,0.1477,0.7481,0.2027,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.825, m2l=0.131)",p12_neg_135_phase12_negative_esc50_chainsaw_4-149294-B-41,phase12_historical_holdout
+2,0.96,UNKNOWN,DEGRADED_OCCLUDED,0.0335,0.0133,0.4142,0.5724,0.7935,"Persistent occluded evidence (consecutive=2, rolloff=0.033, mid=0.414)",p12_neg_136_phase12_negative_esc50_chainsaw_4-157611-A-41,phase12_historical_holdout
+3,1.44,DEGRADED_OCCLUDED,UNKNOWN,0.0342,0.0127,0.3853,0.602,0.7033,Transition to UNKNOWN due to low-frequency dominance (low=0.691),p12_neg_136_phase12_negative_esc50_chainsaw_4-157611-A-41,phase12_historical_holdout
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.0365,0.0164,0.4428,0.5408,0.9205,"Persistent occluded evidence (consecutive=2, rolloff=0.037, mid=0.443)",p12_neg_136_phase12_negative_esc50_chainsaw_4-157611-A-41,phase12_historical_holdout
+1,0.48,UNKNOWN,DEGRADED_OCCLUDED,0.0414,0.0259,0.6287,0.3454,1.8216,"Persistent occluded evidence (consecutive=2, rolloff=0.041, mid=0.629)",p12_neg_137_phase12_negative_esc50_chainsaw_4-157611-B-41,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4838,0.2254,0.4651,0.3095,1.5297,"Persistent clear evidence (consecutive=2, rolloff=0.484, hi=0.225)",p12_neg_138_phase12_negative_esc50_chainsaw_4-165823-A-41,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4392,0.2768,0.6727,0.0505,13.5891,"Persistent clear evidence (consecutive=2, rolloff=0.439, hi=0.277)",p12_neg_139_phase12_negative_esc50_chainsaw_4-165823-B-41,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.7996,0.2352,0.3339,0.4309,0.883,"Persistent clear evidence (consecutive=2, rolloff=0.800, hi=0.235)",p12_neg_140_phase12_negative_esc50_chainsaw_4-169127-A-41,phase12_historical_holdout
+8,3.84,UNKNOWN,DEGRADED_OCCLUDED,0.2711,0.0475,0.2815,0.671,0.5508,"Persistent occluded evidence (consecutive=2, rolloff=0.271, mid=0.281)",p12_neg_141_phase12_negative_esc50_crow_1-103298-A-9,phase12_historical_holdout
+8,3.84,UNKNOWN,CLEAR_NORMAL,0.2219,0.1407,0.8144,0.0449,221.164,"Persistent clear evidence (consecutive=2, rolloff=0.222, hi=0.141)",p12_neg_142_phase12_negative_esc50_crow_1-39835-A-9,phase12_historical_holdout
+3,1.44,UNKNOWN,CLEAR_NORMAL,0.2586,0.166,0.8027,0.0313,449.3026,"Persistent clear evidence (consecutive=2, rolloff=0.259, hi=0.166)",p12_neg_143_phase12_negative_esc50_crow_1-39835-B-9,phase12_historical_holdout
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.3153,0.2376,0.7607,0.0017,452.4013,"Persistent clear evidence (consecutive=2, rolloff=0.315, hi=0.238)",p12_neg_144_phase12_negative_esc50_crow_1-56233-A-9,phase12_historical_holdout
+7,3.36,UNKNOWN,CLEAR_NORMAL,1.7812,0.3539,0.6283,0.0177,213.589,"Persistent clear evidence (consecutive=2, rolloff=1.781, hi=0.354)",p12_neg_145_phase12_negative_esc50_crow_1-56234-A-9,phase12_historical_holdout
+6,2.88,UNKNOWN,DEGRADED_OCCLUDED,0.1073,0.0943,0.9056,0.0001,6897.8276,"Persistent occluded evidence (consecutive=2, rolloff=0.107, mid=0.906)",p12_neg_146_phase12_negative_esc50_crow_1-75162-A-9,phase12_historical_holdout
+4,1.92,UNKNOWN,DEGRADED_OCCLUDED,0.0821,0.0737,0.9256,0.0007,1550.2501,"Persistent occluded evidence (consecutive=2, rolloff=0.082, mid=0.926)",p12_neg_147_phase12_negative_esc50_crow_1-96950-A-9,phase12_historical_holdout
+3,1.44,UNKNOWN,DEGRADED_OCCLUDED,0.0905,0.0812,0.9185,0.0003,2343.3654,"Persistent occluded evidence (consecutive=2, rolloff=0.091, mid=0.919)",p12_neg_148_phase12_negative_esc50_crow_1-96950-B-9,phase12_historical_holdout
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,10.2317,0.1983,0.2745,0.5272,0.653,"Persistent occluded evidence (consecutive=2, rolloff=10.232, mid=0.274)",P19-CAT-A-FP1-test_001,phase19_independent_positive
+13,6.24,DEGRADED_OCCLUDED,UNKNOWN,1.0271,0.0212,0.4637,0.5151,1.0902,Transition to UNKNOWN due to low-frequency dominance (low=0.741),P19-CAT-A-FP1-test_001,phase19_independent_positive
+14,6.72,UNKNOWN,DEGRADED_OCCLUDED,0.7711,0.016,0.4049,0.5791,0.8917,"Persistent occluded evidence (consecutive=7, rolloff=0.771, mid=0.405)",P19-CAT-A-FP1-test_001,phase19_independent_positive
+15,7.2,DEGRADED_OCCLUDED,UNKNOWN,0.5792,0.0122,0.36,0.6278,0.7415,Transition to UNKNOWN due to low-frequency dominance (low=0.774),P19-CAT-A-FP1-test_001,phase19_independent_positive
+16,7.68,UNKNOWN,DEGRADED_OCCLUDED,0.4354,0.0093,0.3169,0.6738,0.614,"Persistent occluded evidence (consecutive=5, rolloff=0.435, mid=0.317)",P19-CAT-A-FP1-test_001,phase19_independent_positive
+17,8.16,DEGRADED_OCCLUDED,UNKNOWN,0.3277,0.0071,0.2782,0.7147,0.5089,Transition to UNKNOWN due to low-frequency dominance (low=0.837),P19-CAT-A-FP1-test_001,phase19_independent_positive
+18,8.64,UNKNOWN,DEGRADED_OCCLUDED,0.2471,0.0055,0.2508,0.7437,0.4324,"Persistent occluded evidence (consecutive=3, rolloff=0.247, mid=0.251)",P19-CAT-A-FP1-test_001,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,43.8773,0.465,0.0105,0.5245,0.0202,"Persistent clear evidence (consecutive=2, rolloff=43.877, hi=0.465)",P19-CAT-A-FP1-test_007,phase19_independent_positive
+5,2.4,CLEAR_NORMAL,UNKNOWN,18.6576,0.1963,0.0522,0.7515,0.0607,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.919, m2l=0.087)",P19-CAT-A-FP1-test_007,phase19_independent_positive
+8,3.84,UNKNOWN,DEGRADED_OCCLUDED,7.8763,0.0844,0.2472,0.6684,0.4607,"Persistent occluded evidence (consecutive=2, rolloff=7.876, mid=0.247)",P19-CAT-A-FP1-test_007,phase19_independent_positive
+14,6.72,DEGRADED_OCCLUDED,UNKNOWN,1.4048,0.0164,0.4317,0.5519,0.865,Transition to UNKNOWN due to low-frequency dominance (low=0.660),P19-CAT-A-FP1-test_007,phase19_independent_positive
+15,7.2,UNKNOWN,DEGRADED_OCCLUDED,1.0546,0.0125,0.385,0.6024,0.7301,"Persistent occluded evidence (consecutive=5, rolloff=1.055, mid=0.385)",P19-CAT-A-FP1-test_007,phase19_independent_positive
+16,7.68,DEGRADED_OCCLUDED,UNKNOWN,0.7927,0.0097,0.3305,0.6598,0.5978,Transition to UNKNOWN due to low-frequency dominance (low=0.832),P19-CAT-A-FP1-test_007,phase19_independent_positive
+17,8.16,UNKNOWN,DEGRADED_OCCLUDED,0.5966,0.0075,0.2814,0.7111,0.4871,"Persistent occluded evidence (consecutive=3, rolloff=0.597, mid=0.281)",P19-CAT-A-FP1-test_007,phase19_independent_positive
+18,8.64,DEGRADED_OCCLUDED,UNKNOWN,0.4504,0.0059,0.2362,0.7579,0.3934,Transition to UNKNOWN due to low-frequency dominance (low=0.898),P19-CAT-A-FP1-test_007,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP1-test_013,phase19_independent_positive
+7,3.36,CLEAR_NORMAL,DEGRADED_OCCLUDED,14.3032,0.1464,0.2786,0.5749,0.6505,"Transition to occluded (rolloff=14.303 < 0.18, mid=0.279 >= 0.38)",P19-CAT-A-FP1-test_013,phase19_independent_positive
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,3.3963,0.0354,0.3863,0.5783,0.7896,Transition to UNKNOWN due to low-frequency dominance (low=0.756),P19-CAT-A-FP1-test_013,phase19_independent_positive
+14,6.72,UNKNOWN,CLEAR_NORMAL,21.6808,0.2214,0.2217,0.5569,0.4526,"Persistent clear evidence (consecutive=2, rolloff=21.681, hi=0.221)",P19-CAT-A-FP1-test_013,phase19_independent_positive
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,10.729,0.1165,0.3605,0.523,1.8184,"Persistent occluded evidence (consecutive=2, rolloff=10.729, mid=0.361)",P19-CAT-A-FP2-test_019,phase19_independent_positive
+11,5.28,DEGRADED_OCCLUDED,UNKNOWN,1.9182,0.0256,0.4478,0.5265,1.8444,Transition to UNKNOWN due to low-frequency dominance (low=0.939),P19-CAT-A-FP2-test_019,phase19_independent_positive
+12,5.76,UNKNOWN,DEGRADED_OCCLUDED,1.4417,0.0194,0.3483,0.6323,1.3964,"Persistent occluded evidence (consecutive=5, rolloff=1.442, mid=0.348)",P19-CAT-A-FP2-test_019,phase19_independent_positive
+13,6.24,DEGRADED_OCCLUDED,UNKNOWN,1.0845,0.0147,0.2745,0.7109,1.0613,Transition to UNKNOWN due to low-frequency dominance (low=0.947),P19-CAT-A-FP2-test_019,phase19_independent_positive
+14,6.72,UNKNOWN,DEGRADED_OCCLUDED,0.8182,0.0111,0.2146,0.7743,0.8051,"Persistent occluded evidence (consecutive=3, rolloff=0.818, mid=0.215)",P19-CAT-A-FP2-test_019,phase19_independent_positive
+15,7.2,DEGRADED_OCCLUDED,UNKNOWN,0.621,0.0085,0.1658,0.8258,0.6087,Transition to UNKNOWN due to low-frequency dominance (low=0.980),P19-CAT-A-FP2-test_019,phase19_independent_positive
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,10.6012,0.1568,0.3539,0.4893,1.6863,"Persistent occluded evidence (consecutive=2, rolloff=10.601, mid=0.354)",P19-CAT-A-FP2-test_022,phase19_independent_positive
+7,3.36,DEGRADED_OCCLUDED,UNKNOWN,5.9651,0.089,0.3846,0.5263,1.5389,Transition to UNKNOWN due to low-frequency dominance (low=0.810),P19-CAT-A-FP2-test_022,phase19_independent_positive
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,10.6192,0.1824,0.371,0.4466,2.1791,"Persistent occluded evidence (consecutive=2, rolloff=10.619, mid=0.371)",P19-CAT-A-FP2-test_025,phase19_independent_positive
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,2.5274,0.0475,0.4926,0.4599,2.2909,Transition to UNKNOWN due to low-frequency dominance (low=0.883),P19-CAT-A-FP2-test_025,phase19_independent_positive
+11,5.28,UNKNOWN,DEGRADED_OCCLUDED,1.8974,0.0357,0.3875,0.5768,1.7377,"Persistent occluded evidence (consecutive=4, rolloff=1.897, mid=0.388)",P19-CAT-A-FP2-test_025,phase19_independent_positive
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,1.4249,0.0269,0.3086,0.6645,1.3227,Transition to UNKNOWN due to low-frequency dominance (low=0.928),P19-CAT-A-FP2-test_025,phase19_independent_positive
+13,6.24,UNKNOWN,DEGRADED_OCCLUDED,1.0714,0.0203,0.2433,0.7364,1.0044,"Persistent occluded evidence (consecutive=2, rolloff=1.071, mid=0.243)",P19-CAT-A-FP2-test_025,phase19_independent_positive
+14,6.72,DEGRADED_OCCLUDED,UNKNOWN,0.8094,0.0153,0.1883,0.7964,0.7593,Transition to UNKNOWN due to low-frequency dominance (low=0.976),P19-CAT-A-FP2-test_025,phase19_independent_positive
+4,1.92,UNKNOWN,DEGRADED_OCCLUDED,4.9371,0.1776,0.3963,0.4261,2.6493,"Persistent occluded evidence (consecutive=2, rolloff=4.937, mid=0.396)",P19-CAT-A-FP2-test_031,phase19_independent_positive
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,12.1815,0.151,0.5191,0.3299,2.7441,Transition to UNKNOWN due to low-frequency dominance (low=0.529),P19-CAT-A-FP2-test_031,phase19_independent_positive
+11,5.28,UNKNOWN,CLEAR_NORMAL,20.4335,0.2284,0.3918,0.3798,2.0629,"Persistent clear evidence (consecutive=2, rolloff=20.434, hi=0.228)",P19-CAT-A-FP2-test_031,phase19_independent_positive
+5,2.4,UNKNOWN,CLEAR_NORMAL,10.1707,0.1238,0.1811,0.6951,0.2967,"Persistent clear evidence (consecutive=2, rolloff=10.171, hi=0.124)",P19-CAT-A-FP3-test_037,phase19_independent_positive
+9,4.32,CLEAR_NORMAL,UNKNOWN,3.2197,0.0397,0.3129,0.6473,0.5033,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.642, m2l=0.556)",P19-CAT-A-FP3-test_037,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP3-test_043,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP3-test_049,phase19_independent_positive
+6,2.88,CLEAR_NORMAL,DEGRADED_OCCLUDED,14.3081,0.1467,0.2186,0.6347,0.3985,"Transition to occluded (rolloff=14.308 < 0.18, mid=0.219 >= 0.38)",P19-CAT-A-FP3-test_049,phase19_independent_positive
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,4.5311,0.0472,0.3015,0.6513,0.5327,Transition to UNKNOWN due to low-frequency dominance (low=0.864),P19-CAT-A-FP3-test_049,phase19_independent_positive
+13,6.24,UNKNOWN,CLEAR_NORMAL,21.6846,0.2217,0.1484,0.6299,0.2523,"Persistent clear evidence (consecutive=2, rolloff=21.685, hi=0.222)",P19-CAT-A-FP3-test_049,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP4-test_055,phase19_independent_positive
+8,3.84,CLEAR_NORMAL,DEGRADED_OCCLUDED,8.0386,0.0824,0.3321,0.5856,0.647,"Transition to occluded (rolloff=8.039 < 0.18, mid=0.332 >= 0.38)",P19-CAT-A-FP4-test_055,phase19_independent_positive
+11,5.28,DEGRADED_OCCLUDED,UNKNOWN,14.6893,0.1502,0.3052,0.5446,0.6036,Transition to UNKNOWN due to low-frequency dominance (low=0.529),P19-CAT-A-FP4-test_055,phase19_independent_positive
+12,5.76,UNKNOWN,CLEAR_NORMAL,22.3144,0.2277,0.2314,0.5408,0.4575,"Persistent clear evidence (consecutive=2, rolloff=22.314, hi=0.228)",P19-CAT-A-FP4-test_055,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP4-test_058,phase19_independent_positive
+6,2.88,CLEAR_NORMAL,DEGRADED_OCCLUDED,14.3017,0.1472,0.3084,0.5444,0.7498,"Transition to occluded (rolloff=14.302 < 0.18, mid=0.308 >= 0.38)",P19-CAT-A-FP4-test_058,phase19_independent_positive
+9,4.32,DEGRADED_OCCLUDED,UNKNOWN,17.3315,0.1774,0.2788,0.5438,0.5879,Transition to UNKNOWN due to low-frequency dominance (low=0.529),P19-CAT-A-FP4-test_058,phase19_independent_positive
+10,4.8,UNKNOWN,CLEAR_NORMAL,24.296,0.2482,0.2116,0.5402,0.4457,"Persistent clear evidence (consecutive=3, rolloff=24.296, hi=0.248)",P19-CAT-A-FP4-test_058,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP4-test_061,phase19_independent_positive
+6,2.88,CLEAR_NORMAL,DEGRADED_OCCLUDED,14.3069,0.1491,0.298,0.5529,0.8412,"Transition to occluded (rolloff=14.307 < 0.18, mid=0.298 >= 0.38)",P19-CAT-A-FP4-test_061,phase19_independent_positive
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,13.847,0.1435,0.3711,0.4853,0.9053,Transition to UNKNOWN due to low-frequency dominance (low=0.529),P19-CAT-A-FP4-test_061,phase19_independent_positive
+13,6.24,UNKNOWN,CLEAR_NORMAL,21.6826,0.2228,0.2809,0.4963,0.6838,"Persistent clear evidence (consecutive=2, rolloff=21.683, hi=0.223)",P19-CAT-A-FP4-test_061,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1338,0.4606,0.0101,0.5293,0.0193,"Persistent clear evidence (consecutive=2, rolloff=45.134, hi=0.461)",P19-CAT-A-FP4-test_067,phase19_independent_positive
+7,3.36,CLEAR_NORMAL,DEGRADED_OCCLUDED,14.2801,0.1477,0.2636,0.5887,0.4899,"Transition to occluded (rolloff=14.280 < 0.18, mid=0.264 >= 0.38)",P19-CAT-A-FP4-test_067,phase19_independent_positive
+12,5.76,DEGRADED_OCCLUDED,UNKNOWN,3.3915,0.0363,0.4129,0.5508,0.8128,Transition to UNKNOWN due to low-frequency dominance (low=0.659),P19-CAT-A-FP4-test_067,phase19_independent_positive
+14,6.72,UNKNOWN,CLEAR_NORMAL,21.6782,0.2219,0.2367,0.5414,0.4656,"Persistent clear evidence (consecutive=2, rolloff=21.678, hi=0.222)",P19-CAT-A-FP4-test_067,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1222,0.4605,0.0101,0.5294,0.0193,"Persistent clear evidence (consecutive=2, rolloff=45.122, hi=0.461)",P19-CAT-A-FP5-test_127,phase19_independent_positive
+5,2.4,CLEAR_NORMAL,UNKNOWN,19.022,0.1947,0.0655,0.7398,0.0808,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.813, m2l=0.229)",P19-CAT-A-FP5-test_127,phase19_independent_positive
+12,5.76,UNKNOWN,CLEAR_NORMAL,22.3278,0.2321,0.1176,0.6503,0.1607,"Persistent clear evidence (consecutive=2, rolloff=22.328, hi=0.232)",P19-CAT-A-FP5-test_127,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP5-test_130,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,44.7224,0.461,0.0102,0.5288,0.0195,"Persistent clear evidence (consecutive=2, rolloff=44.722, hi=0.461)",P19-CAT-A-FP5-test_133,phase19_independent_positive
+7,3.36,CLEAR_NORMAL,DEGRADED_OCCLUDED,10.635,0.1108,0.3219,0.5673,0.6638,"Transition to occluded (rolloff=10.635 < 0.18, mid=0.322 >= 0.38)",P19-CAT-A-FP5-test_133,phase19_independent_positive
+11,5.28,DEGRADED_OCCLUDED,UNKNOWN,14.6636,0.1509,0.3578,0.4914,0.8324,Transition to UNKNOWN due to low-frequency dominance (low=0.529),P19-CAT-A-FP5-test_133,phase19_independent_positive
+12,5.76,UNKNOWN,CLEAR_NORMAL,22.2951,0.2283,0.2708,0.5009,0.6291,"Persistent clear evidence (consecutive=2, rolloff=22.295, hi=0.228)",P19-CAT-A-FP5-test_133,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,45.1896,0.4605,0.0101,0.5294,0.0192,"Persistent clear evidence (consecutive=2, rolloff=45.190, hi=0.460)",P19-CAT-A-FP5-test_139,phase19_independent_positive
+3,1.44,CLEAR_NORMAL,UNKNOWN,25.4679,0.2594,0.009,0.7316,0.0142,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.995, m2l=0.005)",P19-CAT-A-FP5-test_139,phase19_independent_positive
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,14.3334,0.1506,0.2761,0.5733,0.7481,"Persistent occluded evidence (consecutive=2, rolloff=14.333, mid=0.276)",P19-CAT-A-FP5-test_139,phase19_independent_positive
+10,4.8,DEGRADED_OCCLUDED,UNKNOWN,3.4061,0.0384,0.4757,0.4859,1.244,Transition to UNKNOWN due to low-frequency dominance (low=0.673),P19-CAT-A-FP5-test_139,phase19_independent_positive
+12,5.76,UNKNOWN,CLEAR_NORMAL,21.6863,0.2231,0.272,0.5049,0.7082,"Persistent clear evidence (consecutive=2, rolloff=21.686, hi=0.223)",P19-CAT-A-FP5-test_139,phase19_independent_positive
+1,0.48,UNKNOWN,CLEAR_NORMAL,0.4492,0.2825,0.6291,0.0883,7.1171,"Persistent clear evidence (consecutive=2, rolloff=0.449, hi=0.283)",P19-CAT-B-001,phase19_independent_positive
+4,1.92,CLEAR_NORMAL,DEGRADED_OCCLUDED,0.2249,0.1343,0.5236,0.3421,3.5974,"Transition to occluded (rolloff=0.225 < 0.18, mid=0.524 >= 0.38)",P19-CAT-B-001,phase19_independent_positive
+7,3.36,DEGRADED_OCCLUDED,CLEAR_NORMAL,0.5848,0.2859,0.5395,0.1746,7.5516,"Transition to CLEAR (rolloff=0.585 >= 0.22, hi=0.286 >= 0.08)",P19-CAT-B-001,phase19_independent_positive
+12,5.76,CLEAR_NORMAL,UNKNOWN,0.4027,0.188,0.4496,0.3625,5.835,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.649, m2l=0.496)",P19-CAT-B-001,phase19_independent_positive
+16,7.68,UNKNOWN,CLEAR_NORMAL,0.4911,0.226,0.4492,0.3249,5.7995,"Persistent clear evidence (consecutive=2, rolloff=0.491, hi=0.226)",P19-CAT-B-001,phase19_independent_positive
+5,2.4,UNKNOWN,DEGRADED_OCCLUDED,0.0662,0.0232,0.431,0.5458,1.2738,"Persistent occluded evidence (consecutive=2, rolloff=0.066, mid=0.431)",P19-CAT-B-002,phase19_independent_positive
+13,6.24,DEGRADED_OCCLUDED,UNKNOWN,0.0374,0.0134,0.4334,0.5532,0.9486,Transition to UNKNOWN due to low-frequency dominance (low=0.718),P19-CAT-B-002,phase19_independent_positive
+14,6.72,UNKNOWN,DEGRADED_OCCLUDED,0.0384,0.0128,0.3913,0.5959,0.8029,"Persistent occluded evidence (consecutive=3, rolloff=0.038, mid=0.391)",P19-CAT-B-002,phase19_independent_positive
+4,1.92,UNKNOWN,CLEAR_NORMAL,0.3901,0.0973,0.2487,0.6539,0.433,"Persistent clear evidence (consecutive=2, rolloff=0.390, hi=0.097)",P19-CAT-B-003,phase19_independent_positive
+16,7.68,CLEAR_NORMAL,UNKNOWN,0.1123,0.0162,0.0847,0.8991,0.1374,"Transition to UNKNOWN due to heavy low-frequency rumble (low=0.994, m2l=0.006)",P19-CAT-B-003,phase19_independent_positive

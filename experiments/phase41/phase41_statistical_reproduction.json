@@ -1,0 +1,204 @@
+{
+  "audit_phase": "PHASE_41",
+  "mandatory_safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "evaluation_scope": {
+    "total_continuous_streams": 28,
+    "gross_duration_seconds": 15185.590000000002,
+    "gross_duration_hours": 4.218199999999999,
+    "recordist_clusters_count": 19,
+    "top_recordist_cluster": "duseigne",
+    "top_recordist_streams": 8,
+    "top_recordist_duration_hours": 1.2583
+  },
+  "six_condition_summary": {
+    "COND1": {
+      "condition_id": "COND1",
+      "profile_name": "Phase 14 Balanced Baseline",
+      "total_false_alerts": 31,
+      "gross_duration_hours": 4.2182,
+      "gross_far_per_hour": 7.3491,
+      "poisson_naive_se": 1.3199,
+      "poisson_95_ci": [
+        4.9934,
+        10.4315
+      ],
+      "cluster_robust_se": 4.9274,
+      "cluster_robust_95_ci": [
+        -2.3085,
+        17.0067
+      ],
+      "conv_b_excluded_seconds": 120.64,
+      "conv_b_eligible_hours": 4.1847,
+      "conv_b_far_per_hour": 7.4079
+    },
+    "COND2": {
+      "condition_id": "COND2",
+      "profile_name": "Phase 17 Experimental Profile (Defective)",
+      "total_false_alerts": 104,
+      "gross_duration_hours": 4.2182,
+      "gross_far_per_hour": 24.6551,
+      "poisson_naive_se": 2.4176,
+      "poisson_95_ci": [
+        20.145,
+        29.8737
+      ],
+      "cluster_robust_se": 12.0357,
+      "cluster_robust_95_ci": [
+        1.065,
+        48.2451
+      ],
+      "conv_b_excluded_seconds": 3440.0,
+      "conv_b_eligible_hours": 3.2627,
+      "conv_b_far_per_hour": 31.8758
+    },
+    "COND3": {
+      "condition_id": "COND3",
+      "profile_name": "Phase 17 State Reset Candidate",
+      "total_false_alerts": 31,
+      "gross_duration_hours": 4.2182,
+      "gross_far_per_hour": 7.3491,
+      "poisson_naive_se": 1.3199,
+      "poisson_95_ci": [
+        4.9934,
+        10.4315
+      ],
+      "cluster_robust_se": 4.9274,
+      "cluster_robust_95_ci": [
+        -2.3085,
+        17.0067
+      ],
+      "conv_b_excluded_seconds": 120.64,
+      "conv_b_eligible_hours": 4.1847,
+      "conv_b_far_per_hour": 7.4079
+    },
+    "COND4": {
+      "condition_id": "COND4",
+      "profile_name": "Phase 36 Raw State Machine",
+      "total_false_alerts": 26,
+      "gross_duration_hours": 4.2182,
+      "gross_far_per_hour": 6.1638,
+      "poisson_naive_se": 1.2088,
+      "poisson_95_ci": [
+        4.0264,
+        9.0313
+      ],
+      "cluster_robust_se": 4.1231,
+      "cluster_robust_95_ci": [
+        -1.9175,
+        14.245
+      ],
+      "conv_b_excluded_seconds": 107.2,
+      "conv_b_eligible_hours": 4.1884,
+      "conv_b_far_per_hour": 6.2076
+    },
+    "COND5": {
+      "condition_id": "COND5",
+      "profile_name": "Phase 36 Legacy Suppression",
+      "total_false_alerts": 26,
+      "gross_duration_hours": 4.2182,
+      "gross_far_per_hour": 6.1638,
+      "poisson_naive_se": 1.2088,
+      "poisson_95_ci": [
+        4.0264,
+        9.0313
+      ],
+      "cluster_robust_se": 4.1231,
+      "cluster_robust_95_ci": [
+        -1.9175,
+        14.245
+      ],
+      "conv_b_excluded_seconds": 107.2,
+      "conv_b_eligible_hours": 4.1884,
+      "conv_b_far_per_hour": 6.2076
+    },
+    "COND6": {
+      "condition_id": "COND6",
+      "profile_name": "Phase 36 Conservative Suppression",
+      "total_false_alerts": 26,
+      "gross_duration_hours": 4.2182,
+      "gross_far_per_hour": 6.1638,
+      "poisson_naive_se": 1.2088,
+      "poisson_95_ci": [
+        4.0264,
+        9.0313
+      ],
+      "cluster_robust_se": 4.1231,
+      "cluster_robust_95_ci": [
+        -1.9175,
+        14.245
+      ],
+      "conv_b_excluded_seconds": 107.2,
+      "conv_b_eligible_hours": 4.1884,
+      "conv_b_far_per_hour": 6.2076
+    }
+  },
+  "continuous_statistical_tests": {
+    "cond1_vs_cond6_stream_level_wilcoxon": {
+      "test_type": "Wilcoxon signed-rank test (two-sided, zero_method=wilcox)",
+      "n_pairs": 28,
+      "n_nonzero_differences": 3,
+      "nonzero_differences": [
+        1,
+        3,
+        1
+      ],
+      "statistic_W": 0.0,
+      "p_value": 0.10247043485974937,
+      "is_statistically_significant_alpha_0_05": false
+    },
+    "cond1_vs_cond6_recordist_level_wilcoxon": {
+      "test_type": "Recordist-aggregated Wilcoxon signed-rank test (two-sided)",
+      "n_recordist_clusters": 19,
+      "n_nonzero_differences": 3,
+      "nonzero_differences": [
+        3,
+        1,
+        1
+      ],
+      "statistic_W": 0.0,
+      "p_value": 0.10247043485974937,
+      "is_statistically_significant_alpha_0_05": false
+    },
+    "cond1_vs_cond6_cluster_robust_rate_difference": {
+      "delta_rate_per_hour": 1.1853,
+      "cluster_robust_se": 0.8494,
+      "degrees_of_freedom": 18,
+      "t_statistic": 1.3955,
+      "p_value": 0.1799,
+      "ci_95_percent": [
+        -0.5992,
+        2.9699
+      ],
+      "is_statistically_significant_alpha_0_05": false
+    },
+    "cond2_vs_cond1_phase17_defect_wilcoxon": {
+      "test_type": "Wilcoxon signed-rank test (Phase 17 defect vs Phase 14 baseline)",
+      "p_value": 0.0006337625600278512,
+      "is_statistically_significant_alpha_0_05": true,
+      "phase17_excess_alerts": 73
+    }
+  },
+  "fireworks_paired_tests": {
+    "n_clips": 100,
+    "contingency_table": {
+      "both_triggered_a": 47,
+      "phase36_only_b": 10,
+      "phase14_only_c": 0,
+      "neither_triggered_d": 43
+    },
+    "mcnemar_continuity_corrected": {
+      "chi2": 8.1,
+      "p_value": 0.004427,
+      "is_statistically_significant_alpha_0_05": true
+    },
+    "mcnemar_uncorrected": {
+      "chi2": 10.0,
+      "p_value": 0.001565,
+      "is_statistically_significant_alpha_0_05": true
+    },
+    "exact_paired_binomial": {
+      "p_value": 0.001953,
+      "is_statistically_significant_alpha_0_05": true
+    }
+  }
+}

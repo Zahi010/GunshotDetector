@@ -1,0 +1,23 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 14 items
+
+tests/test_phase38_prospective.py::TestFrozenAssetIntegrityAndReconciliation::test_frozen_detector_hashes PASSED [  7%]
+tests/test_phase38_prospective.py::TestFrozenAssetIntegrityAndReconciliation::test_protocol_freeze_integrity PASSED [ 14%]
+tests/test_phase38_prospective.py::TestFrozenAssetIntegrityAndReconciliation::test_provenance_reconciliation_csv PASSED [ 21%]
+tests/test_phase38_prospective.py::TestDatasetLineageAndIndependence::test_dataset_registry_completeness PASSED [ 28%]
+tests/test_phase38_prospective.py::TestDatasetLineageAndIndependence::test_license_register_completeness PASSED [ 35%]
+tests/test_phase38_prospective.py::TestDatasetLineageAndIndependence::test_historical_overlap_zero_leakage PASSED [ 42%]
+tests/test_phase38_prospective.py::TestDatasetLineageAndIndependence::test_partition_isolation_and_no_leakage PASSED [ 50%]
+tests/test_phase38_prospective.py::TestEvaluationArithmeticAndMetrics::test_positive_event_matching_arithmetic PASSED [ 57%]
+tests/test_phase38_prospective.py::TestEvaluationArithmeticAndMetrics::test_continuous_background_arithmetic PASSED [ 64%]
+tests/test_phase38_prospective.py::TestEvaluationArithmeticAndMetrics::test_convention_ab_phase17_defect PASSED [ 71%]
+tests/test_phase38_prospective.py::TestEvaluationArithmeticAndMetrics::test_distractor_trigger_rate_consistency PASSED [ 78%]
+tests/test_phase38_prospective.py::TestEvaluationArithmeticAndMetrics::test_condition_comparison_table_consistency PASSED [ 85%]
+tests/test_phase38_prospective.py::TestReleaseArchiveIntegrity::test_phase34_and_35_archives_crc PASSED [ 92%]
+tests/test_phase38_prospective.py::TestReleaseArchiveIntegrity::test_phase38_prospective_archive_crc PASSED [100%]
+
+============================= 14 passed in 0.64s ==============================

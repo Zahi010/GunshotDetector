@@ -1,0 +1,76 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "total_canonical_events": 39,
+  "unique_event_ids": 39,
+  "events_by_stream": {
+    "P17-POS-STREAM-03": 24,
+    "P17-POS-STREAM-04": 9,
+    "P17-POS-STREAM-01": 5,
+    "P17-POS-STREAM-02": 1
+  },
+  "events_by_condition": {
+    "clean_direct": 11,
+    "rapid_cadence_burst": 9,
+    "pocket_occluded": 6,
+    "clipped_saturated": 6,
+    "urban_sensor": 4,
+    "distant_low_snr": 3
+  },
+  "detections_by_detector": {
+    "phase_9_balanced": 19,
+    "phase_13_balanced": 24,
+    "phase_14_balanced": 23,
+    "phase_14_high_precision": 18,
+    "phase_14_high_sensitivity": 24,
+    "phase_17_experimental": 23
+  },
+  "missed_by_detector": {
+    "phase_9_balanced": 20,
+    "phase_13_balanced": 15,
+    "phase_14_balanced": 16,
+    "phase_14_high_precision": 21,
+    "phase_14_high_sensitivity": 15,
+    "phase_17_experimental": 16
+  },
+  "duplicate_alerts_total": 0,
+  "false_positive_alerts_continuous_positive": {
+    "phase_9_balanced": 7,
+    "phase_13_balanced": 7,
+    "phase_14_balanced": 8,
+    "phase_14_high_precision": 7,
+    "phase_14_high_sensitivity": 8,
+    "phase_17_experimental": 8
+  },
+  "condition_recall_phase14_balanced": {
+    "clean_direct": {
+      "total": 11,
+      "detected": 6,
+      "recall_pct": 54.55
+    },
+    "clipped_saturated": {
+      "total": 6,
+      "detected": 6,
+      "recall_pct": 100.0
+    },
+    "distant_low_snr": {
+      "total": 3,
+      "detected": 0,
+      "recall_pct": 0.0
+    },
+    "pocket_occluded": {
+      "total": 6,
+      "detected": 3,
+      "recall_pct": 50.0
+    },
+    "rapid_cadence_burst": {
+      "total": 9,
+      "detected": 7,
+      "recall_pct": 77.78
+    },
+    "urban_sensor": {
+      "total": 4,
+      "detected": 1,
+      "recall_pct": 25.0
+    }
+  }
+}

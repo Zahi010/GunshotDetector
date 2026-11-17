@@ -1,0 +1,81 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_26_CONDITIONAL_DATASET_ACQUISITION_CONTINUOUS_AUDIO_VERIFICATION_AND_INDEPENDENT_CAMPAIGN_EXPANSION",
+  "archive_filename": "gunshot_detection_phase26.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase26.zip",
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_research_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  },
+  "tripartite_denominator_summary": {
+    "gross_calendar_exposure_hours": 6.646,
+    "total_verified_natural_streams": 17,
+    "total_independent_campaigns": 3,
+    "phase_14_balanced": {
+      "total_observed_alerts": 56,
+      "gross_rate_alerts_per_hr": 8.4261,
+      "cooldown_excluded_seconds": 111.92,
+      "eligible_exposure_hours": 6.6149,
+      "eligible_rate_alerts_per_hr": 8.4657,
+      "garwood_95_ci_per_hr": [
+        6.3949,
+        10.9935
+      ],
+      "mtbfa_minutes": 7.09
+    },
+    "phase_17_experimental": {
+      "total_observed_alerts": 51,
+      "gross_rate_alerts_per_hr": 7.6738,
+      "cooldown_excluded_seconds": 101.92,
+      "eligible_exposure_hours": 6.6177,
+      "eligible_rate_alerts_per_hr": 7.7066,
+      "garwood_95_ci_per_hr": [
+        5.7381,
+        10.1328
+      ],
+      "mtbfa_minutes": 7.79
+    },
+    "paired_wilcoxon_signed_rank_p_value": 0.125,
+    "model_promotion_determination": "INCONCLUSIVE (Retain Phase 14 Balanced Baseline)"
+  },
+  "candidate_audit_summary": {
+    "candidate_a_aerosonicdb": "CONDITIONAL_ACCESS_PENDING (Zenodo 10215080, 6.0h continuous; Cloudflare 403 anti-bot gate)",
+    "candidate_b_isd": "REJECTED (Zenodo 4459422/5578703; 30-second discrete clips violate continuity protocol; synthetic concatenation prohibited)",
+    "new_exposure_acquired_hours": 0.0,
+    "cumulative_gross_exposure_hours": 6.646
+  },
+  "key_deliverables": [
+    "reports/phase26_final_report.md",
+    "reports/phase26_baseline_freeze.json",
+    "reports/phase26_aerosonicdb_source_audit.md",
+    "reports/phase26_isd_source_audit.md",
+    "reports/phase26_source_shortlist.md",
+    "reports/phase26_source_registry.csv",
+    "reports/phase26_campaign_independence_matrix.csv",
+    "reports/phase26_recording_provenance.csv",
+    "reports/phase26_duplicate_audit.csv",
+    "reports/phase26_continuity_audit.csv",
+    "reports/phase26_negative_eligibility_report.md",
+    "reports/phase26_exposure_accounting.csv",
+    "reports/phase26_alert_event_log.csv",
+    "reports/phase26_negative_audio_results.csv",
+    "reports/phase26_matched_model_comparison.md",
+    "reports/phase26_statistical_analysis.md",
+    "reports/phase26_risk_and_limitation_register.md",
+    "reports/phase26_processing_manifest.json",
+    "reports/phase26_artifact_manifest.json",
+    "tests/test_phase26_acquisition.py",
+    "reports/phase26_test_results.txt",
+    "scripts/reproduce_phase26_analysis.py"
+  ],
+  "archive_size_bytes": 8218546,
+  "archive_sha256": "df8d3e0165c98b1b093e93d6edf12a43a6c831c6818122a23da4c3db29ea5c01",
+  "total_archive_entries": 130
+}

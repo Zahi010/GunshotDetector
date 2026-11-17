@@ -1,0 +1,584 @@
+{
+  "report_title": "Phase 7 Validation Operating Point Optimization & Model Comparison Report",
+  "evaluator": "Senior Acoustic ML Engineer",
+  "dataset_split": "Validation Split Only (No Independent Test Set Exposure)",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "system_profiling": {
+    "initial_memory_mb": 0.0,
+    "final_memory_mb": 0.0,
+    "memory_usage_delta_mb": 0.0,
+    "inference_latency_ms": {
+      "mean": 93.06,
+      "p50": 89.78,
+      "p95": 102.27,
+      "p99": 151.65
+    }
+  },
+  "validation_selection_rule": "Select operating point on validation data that satisfies Event Recall >= 90.0% while minimizing false alert rate per hour under continuous background audio, breaking ties with Event F1.",
+  "selected_configuration": {
+    "name": "Permissive Single-Window (tau=0.50)",
+    "threshold": 0.5,
+    "threshold_off": 0.4,
+    "confirm_windows": 1,
+    "cooldown_secs": 2.0,
+    "window_metrics": {
+      "accuracy": 93.32,
+      "precision": 70.95,
+      "recall": 92.11,
+      "f1": 80.15,
+      "roc_auc": 97.5,
+      "pr_auc": 94.18,
+      "confusion_matrix": {
+        "tp": 105,
+        "fp": 43,
+        "tn": 622,
+        "fn": 9
+      }
+    },
+    "event_metrics": {
+      "physical_events_total": 31,
+      "tp_events": 30,
+      "fn_events": 1,
+      "fp_events_bg": 21,
+      "fp_events_gunshot": 0,
+      "total_fp_events": 21,
+      "event_recall": 96.77,
+      "event_precision": 58.82,
+      "event_f1": 73.17,
+      "recording_recall": 95.45,
+      "duplicate_alerts": 7
+    },
+    "false_alert_rates": {
+      "rate_policy_a_per_hr": 747.42,
+      "rate_policy_b_per_hr": 554.81,
+      "poisson_95_ci_a": [
+        462.66,
+        1142.51
+      ]
+    },
+    "timing_and_latency": {
+      "mean_detection_delay_ms": 461.0,
+      "model_inference_latency_ms": 93.06,
+      "end_to_end_streaming_delay_ms": 1053.06
+    }
+  },
+  "candidate_grid_results": [
+    {
+      "name": "Permissive Single-Window (tau=0.50)",
+      "threshold": 0.5,
+      "threshold_off": 0.4,
+      "confirm_windows": 1,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 93.32,
+        "precision": 70.95,
+        "recall": 92.11,
+        "f1": 80.15,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 105,
+          "fp": 43,
+          "tn": 622,
+          "fn": 9
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 30,
+        "fn_events": 1,
+        "fp_events_bg": 21,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 21,
+        "event_recall": 96.77,
+        "event_precision": 58.82,
+        "event_f1": 73.17,
+        "recording_recall": 95.45,
+        "duplicate_alerts": 7
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 747.42,
+        "rate_policy_b_per_hr": 554.81,
+        "poisson_95_ci_a": [
+          462.66,
+          1142.51
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 461.0,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1053.06
+      }
+    },
+    {
+      "name": "Low Threshold Multi-Window (tau=0.60)",
+      "threshold": 0.6,
+      "threshold_off": 0.4,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.41,
+        "precision": 87.72,
+        "recall": 87.72,
+        "f1": 87.72,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 100,
+          "fp": 14,
+          "tn": 651,
+          "fn": 14
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 25,
+        "fn_events": 6,
+        "fp_events_bg": 5,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 5,
+        "event_recall": 80.65,
+        "event_precision": 83.33,
+        "event_f1": 81.97,
+        "recording_recall": 81.82,
+        "duplicate_alerts": 3
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 177.96,
+        "rate_policy_b_per_hr": 132.1,
+        "poisson_95_ci_a": [
+          57.78,
+          415.29
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 834.6,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Intermediate Multi-Window (tau=0.65)",
+      "threshold": 0.65,
+      "threshold_off": 0.45,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.66,
+        "precision": 90.0,
+        "recall": 86.84,
+        "f1": 88.39,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 99,
+          "fp": 11,
+          "tn": 654,
+          "fn": 15
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 25,
+        "fn_events": 6,
+        "fp_events_bg": 2,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 2,
+        "event_recall": 80.65,
+        "event_precision": 92.59,
+        "event_f1": 86.21,
+        "recording_recall": 81.82,
+        "duplicate_alerts": 3
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 71.18,
+        "rate_policy_b_per_hr": 52.84,
+        "poisson_95_ci_a": [
+          8.62,
+          257.14
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 853.8,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Phase 5 Baseline Operating Point (tau=0.69)",
+      "threshold": 0.69,
+      "threshold_off": 0.4,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.92,
+        "precision": 93.27,
+        "recall": 85.09,
+        "f1": 88.99,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 97,
+          "fp": 7,
+          "tn": 658,
+          "fn": 17
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 23,
+        "fn_events": 8,
+        "fp_events_bg": 1,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 1,
+        "event_recall": 74.19,
+        "event_precision": 95.83,
+        "event_f1": 83.64,
+        "recording_recall": 72.73,
+        "duplicate_alerts": 3
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 35.59,
+        "rate_policy_b_per_hr": 26.42,
+        "poisson_95_ci_a": [
+          0.9,
+          198.3
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 928.04,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Balanced Multi-Window (tau=0.70)",
+      "threshold": 0.7,
+      "threshold_off": 0.45,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.79,
+        "precision": 93.2,
+        "recall": 84.21,
+        "f1": 88.48,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 96,
+          "fp": 7,
+          "tn": 658,
+          "fn": 18
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 23,
+        "fn_events": 8,
+        "fp_events_bg": 1,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 1,
+        "event_recall": 74.19,
+        "event_precision": 95.83,
+        "event_f1": 83.64,
+        "recording_recall": 72.73,
+        "duplicate_alerts": 3
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 35.59,
+        "rate_policy_b_per_hr": 26.42,
+        "poisson_95_ci_a": [
+          0.9,
+          198.3
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 928.04,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "High Precision Candidate A (tau=0.72)",
+      "threshold": 0.72,
+      "threshold_off": 0.5,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.92,
+        "precision": 95.92,
+        "recall": 82.46,
+        "f1": 88.68,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 94,
+          "fp": 4,
+          "tn": 661,
+          "fn": 20
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 17,
+        "fn_events": 14,
+        "fp_events_bg": 1,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 1,
+        "event_recall": 54.84,
+        "event_precision": 94.44,
+        "event_f1": 69.39,
+        "recording_recall": 54.55,
+        "duplicate_alerts": 1
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 35.59,
+        "rate_policy_b_per_hr": 26.42,
+        "poisson_95_ci_a": [
+          0.9,
+          198.3
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 841.76,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Phase 6 Recommended Operating Point (tau=0.75)",
+      "threshold": 0.75,
+      "threshold_off": 0.5,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.41,
+        "precision": 95.74,
+        "recall": 78.95,
+        "f1": 86.54,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 90,
+          "fp": 4,
+          "tn": 661,
+          "fn": 24
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 17,
+        "fn_events": 14,
+        "fp_events_bg": 0,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 0,
+        "event_recall": 54.84,
+        "event_precision": 100.0,
+        "event_f1": 70.83,
+        "recording_recall": 54.55,
+        "duplicate_alerts": 1
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 0.0,
+        "rate_policy_b_per_hr": 0.0,
+        "poisson_95_ci_a": [
+          0.0,
+          131.29
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 1124.12,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "High Precision Candidate B (tau=0.78)",
+      "threshold": 0.78,
+      "threshold_off": 0.55,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 96.15,
+        "precision": 96.67,
+        "recall": 76.32,
+        "f1": 85.29,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 87,
+          "fp": 3,
+          "tn": 662,
+          "fn": 27
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 17,
+        "fn_events": 14,
+        "fp_events_bg": 0,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 0,
+        "event_recall": 54.84,
+        "event_precision": 100.0,
+        "event_f1": 70.83,
+        "recording_recall": 54.55,
+        "duplicate_alerts": 2
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 0.0,
+        "rate_policy_b_per_hr": 0.0,
+        "poisson_95_ci_a": [
+          0.0,
+          131.29
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 1237.06,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Aggressive False-Alarm Suppression (tau=0.80)",
+      "threshold": 0.8,
+      "threshold_off": 0.6,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 95.89,
+        "precision": 98.81,
+        "recall": 72.81,
+        "f1": 83.84,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 83,
+          "fp": 1,
+          "tn": 664,
+          "fn": 31
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 17,
+        "fn_events": 14,
+        "fp_events_bg": 0,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 0,
+        "event_recall": 54.84,
+        "event_precision": 100.0,
+        "event_f1": 70.83,
+        "recording_recall": 54.55,
+        "duplicate_alerts": 2
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 0.0,
+        "rate_policy_b_per_hr": 0.0,
+        "poisson_95_ci_a": [
+          0.0,
+          131.29
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 1237.06,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Extreme Precision (tau=0.85)",
+      "threshold": 0.85,
+      "threshold_off": 0.65,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "window_metrics": {
+        "accuracy": 94.61,
+        "precision": 100.0,
+        "recall": 63.16,
+        "f1": 77.42,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 72,
+          "fp": 0,
+          "tn": 665,
+          "fn": 42
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 15,
+        "fn_events": 16,
+        "fp_events_bg": 0,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 0,
+        "event_recall": 48.39,
+        "event_precision": 100.0,
+        "event_f1": 65.22,
+        "recording_recall": 54.55,
+        "duplicate_alerts": 3
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 0.0,
+        "rate_policy_b_per_hr": 0.0,
+        "poisson_95_ci_a": [
+          0.0,
+          131.29
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 1177.0,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1533.06
+      }
+    },
+    {
+      "name": "Low Latency Fast-Trigger (tau=0.75, N=1)",
+      "threshold": 0.75,
+      "threshold_off": 0.5,
+      "confirm_windows": 1,
+      "cooldown_secs": 1.5,
+      "window_metrics": {
+        "accuracy": 96.41,
+        "precision": 95.74,
+        "recall": 78.95,
+        "f1": 86.54,
+        "roc_auc": 97.5,
+        "pr_auc": 94.18,
+        "confusion_matrix": {
+          "tp": 90,
+          "fp": 4,
+          "tn": 661,
+          "fn": 24
+        }
+      },
+      "event_metrics": {
+        "physical_events_total": 31,
+        "tp_events": 25,
+        "fn_events": 6,
+        "fp_events_bg": 6,
+        "fp_events_gunshot": 0,
+        "total_fp_events": 6,
+        "event_recall": 80.65,
+        "event_precision": 80.65,
+        "event_f1": 80.65,
+        "recording_recall": 81.82,
+        "duplicate_alerts": 6
+      },
+      "false_alert_rates": {
+        "rate_policy_a_per_hr": 213.55,
+        "rate_policy_b_per_hr": 158.52,
+        "poisson_95_ci_a": [
+          78.37,
+          464.81
+        ]
+      },
+      "timing_and_latency": {
+        "mean_detection_delay_ms": 911.4,
+        "model_inference_latency_ms": 93.06,
+        "end_to_end_streaming_delay_ms": 1053.06
+      }
+    }
+  ]
+}

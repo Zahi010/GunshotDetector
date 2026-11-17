@@ -1,0 +1,72 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "device_id": 1,
+  "device_name": "Microphone (Realtek(R) Audio)",
+  "total_duration_seconds": 1800.88,
+  "target_duration_seconds": 1800.0,
+  "total_chunks_processed": 3745,
+  "dropped_callbacks": 0,
+  "dropped_chunks": 0,
+  "dropped_window_rate_pct": 0.0,
+  "clipping_events": 0,
+  "latency_metrics_ms": {
+    "mean": 54.6,
+    "median": 62.47,
+    "p95": 75.25,
+    "max": 317.48,
+    "window_budget_ms": 480.0,
+    "realtime_margin_pct": 88.62
+  },
+  "ambient_noise_floor": {
+    "mean_rms": 0.001081,
+    "mean_peak": 0.006779,
+    "max_peak": 0.989807
+  },
+  "memory_stability": {
+    "initial_mb": 749.06,
+    "final_mb": 785.68,
+    "delta_mb": 36.62
+  },
+  "device_reconnection_test": {
+    "attempted": true,
+    "successful": true
+  },
+  "session_isolation_test": {
+    "verified": true,
+    "status": "PASS"
+  },
+  "state_transitions": [],
+  "playback_log": [
+    {
+      "elapsed_sec": 270.52,
+      "type": "gunshot_positive",
+      "file": "mitchell_glock17_9mm_01.wav",
+      "status": "played_successfully"
+    },
+    {
+      "elapsed_sec": 540.77,
+      "type": "door_slam_negative",
+      "file": "hard_neg_door_slam_001.wav",
+      "status": "played_successfully"
+    },
+    {
+      "elapsed_sec": 900.01,
+      "type": "balloon_burst_negative",
+      "file": "hard_neg_balloon_burst_001.wav",
+      "status": "played_successfully"
+    },
+    {
+      "elapsed_sec": 1260.32,
+      "type": "gunshot_positive",
+      "file": "mitchell_colt_ar15_01.wav",
+      "status": "played_successfully"
+    },
+    {
+      "elapsed_sec": 1440.45,
+      "type": "fireworks_negative",
+      "file": "hard_neg_fireworks_001.wav",
+      "status": "played_successfully"
+    }
+  ],
+  "alerts_detected": 0
+}

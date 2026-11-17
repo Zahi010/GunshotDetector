@@ -1,0 +1,91 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_26_CONDITIONAL_DATASET_ACQUISITION_CONTINUOUS_AUDIO_VERIFICATION_AND_INDEPENDENT_CAMPAIGN_EXPANSION",
+  "created_at_utc": "2026-11-14T20:30:00Z",
+  "environment": {
+    "os": "Windows",
+    "python_version": "3.13",
+    "project_root": "E:/gunshot/gunshot"
+  },
+  "frozen_detectors": {
+    "default_research_baseline": {
+      "name": "Phase 14 Balanced",
+      "file": "model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "size_bytes": 23340,
+      "role": "DEFAULT_RESEARCH_BASELINE"
+    },
+    "selectable_experimental_profile": {
+      "name": "Phase 17 Experimental",
+      "file": "model_phase17.py",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "size_bytes": 29067,
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE"
+    },
+    "historical_comparators": [
+      {
+        "name": "Phase 13",
+        "file": "model_phase13.py",
+        "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+        "size_bytes": 22252
+      },
+      {
+        "name": "Phase 9",
+        "file": "model_phase9.py",
+        "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+        "size_bytes": 17719
+      }
+    ]
+  },
+  "historical_release_archives_verified": {
+    "gunshot_detection_phase25.zip": "cc2349c46ebaeed859ed300a0b2f402e62bf9c20994d2112a15ec47cd656425e",
+    "gunshot_detection_phase24.zip": "3e732e0716160f2d77b71ceff3e01a49f3d933e397bf29bf222fec771a8832b8",
+    "gunshot_detection_phase23.zip": "5ce4e64715829d9b52111b6d6322f251976e1ce99e829d9dfbe0858a7e1644c8",
+    "gunshot_detection_phase22.zip": "160d327072c3515e945ca5cdf89038f14b6ef1919b1e4865278affab52ad4de5",
+    "gunshot_detection_phase21.zip": "b065747b0e6118d228336bee7f8c3811890b638a25070d3ce2a047c329b3e225",
+    "gunshot_detection_phase20.zip": "dda7427f2dbffcb178f6d9ade0abb80fbfc491751f04de5dc0db1b4731c31c89"
+  },
+  "candidate_evaluations": {
+    "candidate_a_aerosonicdb": {
+      "dataset_name": "AeroSonicDB / YPAD-0523",
+      "zenodo_record_verified": "10215080",
+      "obsolete_record_corrected": "7976269",
+      "authors": "Blake Downward, Jon Nordby",
+      "license": "CC BY 4.0",
+      "continuous_audio_available": true,
+      "continuous_duration_hours": 6.0,
+      "access_status": "CONDITIONAL_ACCESS_PENDING",
+      "blocker_reason": "Automated download blocked by Zenodo Cloudflare anti-bot edge protection (HTTP 403 Forbidden). Compliant with guidelines: no scraping, evading, or automated bypassing."
+    },
+    "candidate_b_isd": {
+      "dataset_name": "International Soundscape Database (ISD / ISO 12913)",
+      "zenodo_records": [
+        "4459422",
+        "5578703"
+      ],
+      "authors": "Mitchell, Oberman, Aletta, Kang",
+      "license": "CC BY 4.0",
+      "continuous_audio_available": false,
+      "clip_length_seconds": 30.0,
+      "access_status": "REJECTED",
+      "rejection_reason": "Collection consists solely of 30-second discrete binaural clips. Synthetic concatenation is strictly prohibited by Rule R-CONT-01 as it corrupts temporal arrival dynamics and introduces boundary impulse artifacts."
+    }
+  },
+  "benchmark_accounting": {
+    "previously_audited_gross_hours": 6.646,
+    "new_phase26_gross_hours": 0.0,
+    "new_phase26_eligible_hours": 0.0,
+    "cumulative_gross_hours": 6.646,
+    "cumulative_eligible_hours_phase14": 6.6149,
+    "cumulative_eligible_hours_phase17": 6.6177,
+    "evaluated_streams_count": 17,
+    "evaluated_campaigns_count": 3,
+    "phase14_observed_alerts": 56,
+    "phase17_observed_alerts": 51,
+    "paired_wilcoxon_stat": 10.0,
+    "paired_wilcoxon_p_value": 0.125,
+    "baseline_promotion_status": "INCONCLUSIVE_RETAIN_PHASE14_BALANCED",
+    "shortfall_against_20hr_target": 20.0,
+    "shortfall_against_50hr_milestone": 43.354
+  }
+}

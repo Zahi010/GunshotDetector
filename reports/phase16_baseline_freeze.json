@@ -1,0 +1,180 @@
+{
+  "phase": 16,
+  "action": "BASELINE_FREEZE",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "historical_archives": {
+    "Phase 8": {
+      "path": "e:\\gunshot\\gunshot_detection_phase8.zip",
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "size_mb": 462.72
+    },
+    "Phase 9": {
+      "path": "e:\\gunshot\\gunshot_detection_phase9.zip",
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "size_mb": 825.77
+    },
+    "Phase 10": {
+      "path": "e:\\gunshot\\gunshot_detection_phase10.zip",
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "size_mb": 825.84
+    },
+    "Phase 11": {
+      "path": "e:\\gunshot\\gunshot_detection_phase11.zip",
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "size_mb": 825.87
+    },
+    "Phase 12": {
+      "path": "e:\\gunshot\\gunshot_detection_phase12.zip",
+      "sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a",
+      "size_mb": 1048.73
+    },
+    "Phase 13": {
+      "path": "e:\\gunshot\\gunshot_detection_phase13.zip",
+      "sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561",
+      "size_mb": 1276.98
+    },
+    "Phase 14": {
+      "path": "e:\\gunshot\\gunshot_detection_phase14.zip",
+      "sha256": "37807435378d313efbec89a3671b714cb33f8b1ddef4ca91141956ae5082d144",
+      "size_mb": 1217.79
+    },
+    "Phase 15": {
+      "path": "e:\\gunshot\\gunshot_detection_phase15.zip",
+      "sha256": "9ae819de02b9520aa105ecad8db871aa583cc204778bca20e7b9d1018ea6b08c",
+      "size_mb": 1409.58
+    }
+  },
+  "models": {
+    "model_phase14": {
+      "path": "e:\\gunshot\\gunshot\\model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+    },
+    "model_phase13": {
+      "path": "e:\\gunshot\\gunshot\\model_phase13.py",
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6"
+    },
+    "model_phase9": {
+      "path": "e:\\gunshot\\gunshot\\model_phase9.py",
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a"
+    }
+  },
+  "phase14_profiles": {
+    "balanced": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 8.8,
+      "single_win_min_crest_db": 12.0,
+      "fw_thresh": 0.35,
+      "fw_ratio": 2.0,
+      "fw_gun_max": 0.05,
+      "thun_thresh": 0.25,
+      "thun_ratio": 1.5
+    },
+    "high_precision": {
+      "threshold_base": 0.8,
+      "threshold_high": 0.9,
+      "threshold_off": 0.52,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.5,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 8.8,
+      "single_win_min_crest_db": 12.0,
+      "fw_thresh": 0.35,
+      "fw_ratio": 2.0,
+      "fw_gun_max": 0.05,
+      "thun_thresh": 0.25,
+      "thun_ratio": 1.5
+    },
+    "high_sensitivity": {
+      "threshold_base": 0.7,
+      "threshold_high": 0.85,
+      "threshold_off": 0.42,
+      "confirm_windows": 2,
+      "cooldown_secs": 1.5,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 8.5,
+      "single_win_min_crest_db": 11.0,
+      "fw_thresh": 0.4,
+      "fw_ratio": 2.5,
+      "fw_gun_max": 0.06,
+      "thun_thresh": 0.25,
+      "thun_ratio": 1.5
+    }
+  },
+  "phase13_profiles": {
+    "balanced": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.5,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 8.8,
+      "single_win_min_crest_db": 12.0
+    },
+    "high_precision": {
+      "threshold_base": 0.8,
+      "threshold_high": 0.9,
+      "threshold_off": 0.5,
+      "confirm_windows": 2,
+      "cooldown_secs": 3.0,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 9.5,
+      "single_win_min_crest_db": 14.0
+    },
+    "high_sensitivity": {
+      "threshold_base": 0.7,
+      "threshold_high": 0.84,
+      "threshold_off": 0.45,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 8.5,
+      "single_win_min_crest_db": 10.5
+    }
+  },
+  "phase9_profiles": {
+    "balanced": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.88,
+      "threshold_off": 0.48,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 9.5
+    },
+    "high_precision": {
+      "threshold_base": 0.8,
+      "threshold_high": 0.9,
+      "threshold_off": 0.5,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.5,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 10.0
+    },
+    "high_sensitivity": {
+      "threshold_base": 0.7,
+      "threshold_high": 0.82,
+      "threshold_off": 0.45,
+      "confirm_windows": 2,
+      "cooldown_secs": 1.5,
+      "enable_semantic_gating": true,
+      "min_crest_factor_db": 9.0
+    }
+  },
+  "dsp_configuration": {
+    "sample_rate": 16000,
+    "window_samples": 15360,
+    "hop_samples": 7680,
+    "window_duration_sec": 0.96,
+    "hop_duration_sec": 0.48
+  },
+  "diagnostic_status": {
+    "phase12_final_test": "PERMANENTLY_DIAGNOSTIC_ONLY",
+    "phase15_blind_evaluation": "INSPECTED_DIAGNOSTIC_EVIDENCE_NOT_UNTOUCHED"
+  }
+}

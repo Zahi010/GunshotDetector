@@ -1,0 +1,11 @@
+{
+  "hardware_present": true,
+  "device_name": "Microphone (Realtek(R) Audio)",
+  "total_chunks": 13,
+  "mean_latency_ms": 77.65,
+  "max_latency_ms": 310.24,
+  "dropped_window_rate_pct": 0.0,
+  "ambient_rms": 0.002328,
+  "session_isolation_verified": true,
+  "hardware_recovery_verified": true
+}

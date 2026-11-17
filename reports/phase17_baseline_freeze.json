@@ -1,0 +1,116 @@
+{
+  "phase": 17,
+  "action": "BASELINE_FREEZE",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "timestamp": "2026-11-13T22:30:00Z",
+  "models": {
+    "model_phase14": {
+      "path": "E:\\gunshot\\gunshot\\model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "description": "Primary Production Detector Baseline (Phase 14 Calibrated Semantic Gating)",
+      "status": "VERIFIED_LOCKED"
+    },
+    "model_phase13": {
+      "path": "E:\\gunshot\\gunshot\\model_phase13.py",
+      "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+      "description": "Frozen Historical Comparator (Phase 13 Streaming Two-Window Confirmation)",
+      "status": "VERIFIED_LOCKED"
+    },
+    "model_phase9": {
+      "path": "E:\\gunshot\\gunshot\\model_phase9.py",
+      "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+      "description": "Frozen Historical Comparator (Phase 9 Single-Window Baseline)",
+      "status": "VERIFIED_LOCKED"
+    }
+  },
+  "current_archives": {
+    "Phase 16": {
+      "path": "E:\\gunshot\\gunshot_detection_phase16.zip",
+      "sha256": "386298c4a4a251b4728d14d5903265ebe18c63404f87d0eba47bbcce442f65b4",
+      "size_mb": 1905.18,
+      "status": "VERIFIED_LOCKED"
+    }
+  },
+  "historical_archive_registry": {
+    "Phase 8": {
+      "sha256": "c8bd26d09b5a41903ae8308b7bcac42f37ecd00d95eb6abfa4295365e074d353",
+      "size_mb": 462.72
+    },
+    "Phase 9": {
+      "sha256": "96ff780eaa38737ea66851195301beebc576a31a48319f3b0a71083c4dee2ff0",
+      "size_mb": 825.77
+    },
+    "Phase 10": {
+      "sha256": "d8edb26b71d69d6e76a1834cc741bda272c71b475287d7bd7fe2f33be95c459d",
+      "size_mb": 825.84
+    },
+    "Phase 11": {
+      "sha256": "c50a9b07ffe93f01118fbc2a26130fd73c800d717b6a372d2e76291c735404ef",
+      "size_mb": 825.87
+    },
+    "Phase 12": {
+      "sha256": "8c674902761d469760928c81596813a08a942262440d977a423e58007055241a",
+      "size_mb": 1048.73
+    },
+    "Phase 13": {
+      "sha256": "1a87aef803c7b2ec1bc0e5b3a894451960ea17a9f787a8ffc81ba7a15e8f6561",
+      "size_mb": 1276.98
+    },
+    "Phase 14": {
+      "sha256": "37807435378d313efbec89a3671b714cb33f8b1ddef4ca91141956ae5082d144",
+      "size_mb": 1217.79
+    },
+    "Phase 15": {
+      "sha256": "9ae819de02b9520aa105ecad8db871aa583cc204778bca20e7b9d1018ea6b08c",
+      "size_mb": 1409.58
+    }
+  },
+  "operating_profiles_phase14": {
+    "balanced": {
+      "threshold_base": 0.75,
+      "threshold_high": 0.9,
+      "threshold_off": 0.4,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.0,
+      "min_crest_factor_db": 8.8,
+      "single_win_min_crest_db": 12.0,
+      "enable_semantic_gating": true,
+      "target_operational_env": "Standard multi-threat urban/suburban environments"
+    },
+    "high_precision": {
+      "threshold_base": 0.85,
+      "threshold_high": 0.95,
+      "threshold_off": 0.5,
+      "confirm_windows": 2,
+      "cooldown_secs": 2.5,
+      "min_crest_factor_db": 10.5,
+      "single_win_min_crest_db": 14.0,
+      "enable_semantic_gating": true,
+      "target_operational_env": "High-noise industrial, fireworks-prone, urban arterial transit"
+    },
+    "high_sensitivity": {
+      "threshold_base": 0.65,
+      "threshold_high": 0.8,
+      "threshold_off": 0.35,
+      "confirm_windows": 2,
+      "cooldown_secs": 1.5,
+      "min_crest_factor_db": 7.0,
+      "single_win_min_crest_db": 10.5,
+      "enable_semantic_gating": true,
+      "target_operational_env": "Quiet rural areas, indoor surveillance, low-SNR distant threat monitoring"
+    }
+  },
+  "benchmark_retirement_audit": {
+    "phase15_discrete_benchmark": {
+      "status": "RETIRED_INSPECTED_DIAGNOSTIC_EVIDENCE",
+      "sample_size": 98,
+      "reason": "Exhaustively inspected, parameterized, and diagnostically audited in Phase 15 and 16. Permanent prohibition on reuse as blind evaluation data."
+    },
+    "phase16_continuous_benchmark": {
+      "status": "FROZEN_HISTORICAL_EVIDENCE",
+      "exposure_hours": 6.08,
+      "streams_count": 11,
+      "reason": "Baseline natural continuous negative exposure established in Phase 16; preserved for longitudinal comparison."
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "bundle_version": "1.0.0",
+  "created_at_utc": "2026-10-26T08:50:18.206667",
+  "confidence_calibrated": false,
+  "confidence_note": "Scores represent raw sigmoid probabilities from the neural network classifier. They should be termed detection scores rather than calibrated Bayesian confidence until formal Platt scaling or Isotonic regression is conducted on live in-field test data.",
+  "safety_disclaimer": "CRITICAL DISCLAIMER: This gunshot detection model is designed for research, prototyping, and evaluation purposes only. It MUST NOT be relied upon as a primary safety system, emergency response trigger, or life-critical monitoring apparatus.",
+  "training_history": {
+    "epochs_trained": 12,
+    "final_train_loss": 0.25950777530670166,
+    "final_val_loss": 0.6744986772537231,
+    "final_train_acc": 0.8893840909004211,
+    "final_val_acc": 0.6148267388343811
+  },
+  "evaluation_metrics": {
+    "validation_selected_metrics": {
+      "threshold": 0.19,
+      "objective": "Maximize validation F1 score to balance detection rate against false alerts",
+      "precision": 0.8168,
+      "recall": 0.9296,
+      "f1": 0.8696
+    },
+    "test_window_metrics": {
+      "threshold": 0.19,
+      "windows_total": 519,
+      "windows_gunshot": 245,
+      "windows_background": 274,
+      "precision": 0.5766,
+      "recall": 0.9673,
+      "f1": 0.7226,
+      "roc_auc": 0.9213,
+      "confusion_matrix": [
+        [
+          100,
+          174
+        ],
+        [
+          8,
+          237
+        ]
+      ],
+      "true_negatives": 100,
+      "false_positives": 174,
+      "false_negatives": 8,
+      "true_positives": 237
+    },
+    "test_recording_metrics": {
+      "total_recordings": 37,
+      "recordings_gunshot": 17,
+      "recordings_background": 20,
+      "precision": 0.5312,
+      "recall": 1.0,
+      "f1": 0.6939,
+      "roc_auc": 0.9941,
+      "confusion_matrix": [
+        [
+          5,
+          15
+        ],
+        [
+          0,
+          17
+        ]
+      ],
+      "true_negatives": 5,
+      "false_positives": 15,
+      "false_negatives": 0,
+      "true_positives": 17
+    }
+  }
+}

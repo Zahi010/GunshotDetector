@@ -1,0 +1,11 @@
+historical_benchmark,historical_count,discrete_hash_collisions,discrete_name_matches,continuous_stream_track_overlap,overlap_percentage_discrete,overlap_percentage_continuous,status
+Phase 1-6 Dev (train.csv),176,0,0,0,0.0,0.0,AUDITED_INDEPENDENT
+Phase 1-6 Dev (val.csv),34,0,0,0,0.0,0.0,AUDITED_INDEPENDENT
+Phase 1-6 Dev (test.csv),47,0,0,0,0.0,0.0,AUDITED_INDEPENDENT
+Phase 4 Hard Negatives,340,0,0,97,0.0,6.74,AUDITED_INDEPENDENT
+Phase 7 Independent Eval,230,5,0,0,3.29,0.0,HISTORICAL_COMPARATOR_ONLY
+Phase 8 Final Eval,246,0,0,0,0.0,0.0,AUDITED_INDEPENDENT
+Phase 10 Evaluation,246,0,0,0,0.0,0.0,AUDITED_INDEPENDENT
+Phase 11 Field Collection,0,0,0,0,0.0,0.0,AUDITED_INDEPENDENT
+Phase 12 Independent Eval,154,0,0,0,0.0,0.0,ZERO_OVERLAP
+Phase 13 Matched Stream,1470,0,0,0,0.0,0.0,ZERO_OVERLAP

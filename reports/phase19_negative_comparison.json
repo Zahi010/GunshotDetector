@@ -1,0 +1,71 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "evaluation_phase": "PHASE_19_NEGATIVE_CONTINUOUS_VERIFICATION",
+  "timestamp": "2026-11-13 UTC",
+  "total_negative_streams": 17,
+  "total_duration_seconds": 23925.58,
+  "total_duration_hours": 6.646,
+  "models": {
+    "Phase 14 Balanced (Production Baseline)": {
+      "total_false_alerts": 56,
+      "alert_rate_per_hour": 8.43,
+      "exact_95_poisson_ci": [6.37, 10.94],
+      "mean_time_between_false_alerts_minutes": 7.12,
+      "status": "DEFAULT_PRODUCTION_BASELINE"
+    },
+    "Phase 14 High-Precision": {
+      "total_false_alerts": 22,
+      "alert_rate_per_hour": 3.31,
+      "exact_95_poisson_ci": [2.07, 5.01],
+      "mean_time_between_false_alerts_minutes": 18.13,
+      "status": "OPERATIONAL_PROFILE_RECOMMENDED_FOR_LOW_FALSE_ALERTS"
+    },
+    "Phase 14 High-Sensitivity": {
+      "total_false_alerts": 100,
+      "alert_rate_per_hour": 15.05,
+      "exact_95_poisson_ci": [12.24, 18.30],
+      "mean_time_between_false_alerts_minutes": 3.99,
+      "status": "OPERATIONAL_PROFILE_HIGH_RECALL"
+    },
+    "Phase 17 Experimental (Animal Suppression)": {
+      "total_false_alerts": 51,
+      "alert_rate_per_hour": 7.67,
+      "exact_95_poisson_ci": [5.71, 10.09],
+      "mean_time_between_false_alerts_minutes": 7.82,
+      "suppressed_animal_alerts": 5,
+      "statistical_significance_p_value": 0.2314,
+      "status": "SELECTABLE_RESEARCH_PROFILE"
+    },
+    "Phase 9 Balanced (Historical Baseline)": {
+      "total_false_alerts": 15,
+      "alert_rate_per_hour": 2.26,
+      "exact_95_poisson_ci": [1.26, 3.72],
+      "mean_time_between_false_alerts_minutes": 26.58,
+      "status": "FROZEN_HISTORICAL_COMPARATOR"
+    }
+  },
+  "poisson_zero_alert_bounds": {
+    "1.0_hour_exposure": {
+      "observed_alerts": 0,
+      "upper_bound_95_ci_alerts_per_hour": 2.9957,
+      "minimum_reliable_mtbfa_minutes": 20.03
+    },
+    "6.08_hours_exposure": {
+      "observed_alerts": 0,
+      "upper_bound_95_ci_alerts_per_hour": 0.4927,
+      "minimum_reliable_mtbfa_hours": 2.03
+    },
+    "6.65_hours_exposure": {
+      "observed_alerts": 0,
+      "upper_bound_95_ci_alerts_per_hour": 0.4505,
+      "minimum_reliable_mtbfa_hours": 2.22
+    },
+    "24.0_hours_exposure": {
+      "observed_alerts": 0,
+      "upper_bound_95_ci_alerts_per_hour": 0.1248,
+      "minimum_reliable_mtbfa_hours": 8.01
+    }
+  },
+  "operational_rule": "Claiming zero false-alert risk or infinite MTBFA for zero observed events over finite exposure is statistically invalid and prohibited."
+}
+

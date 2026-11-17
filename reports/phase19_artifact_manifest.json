@@ -1,0 +1,20 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_19_SOURCE_INDEPENDENT_EVALUATION",
+  "archive_filename": "gunshot_detection_phase19.zip",
+  "archive_path": "E:\\gunshot\\gunshot_detection_phase19.zip",
+  "archive_size_bytes": 8191423,
+  "archive_sha256": "9d768b9db3126aa23b37dd0f6b00804345929a4171499f703e4bb84132ad9ac4",
+  "total_archive_entries": 124,
+  "integrity_verification": "PASS_TESTZIP_CRC_VERIFIED",
+  "default_production_baseline": {
+    "model": "Phase 14 Balanced",
+    "file": "model_phase14.py",
+    "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065"
+  },
+  "selectable_experimental_profile": {
+    "model": "Phase 17 Experimental (Animal Suppression)",
+    "file": "model_phase17.py",
+    "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819"
+  }
+}

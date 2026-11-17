@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\zahia\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: E:\gunshot
+plugins: anyio-4.14.1, langsmith-0.10.5, platformdirs-4.12.4
+collecting ... collected 15 items
+
+gunshot/tests/test_phase31_reproduction.py::test_frozen_model_hashes PASSED [  6%]
+gunshot/tests/test_phase31_reproduction.py::test_historical_release_archives PASSED [ 13%]
+gunshot/tests/test_phase31_reproduction.py::test_experimental_candidate_hash PASSED [ 20%]
+gunshot/tests/test_phase31_reproduction.py::test_master_recording_registry PASSED [ 26%]
+gunshot/tests/test_phase31_reproduction.py::test_alert_reconciliation_totals PASSED [ 33%]
+gunshot/tests/test_phase31_reproduction.py::test_exposure_reconciliation_metrics PASSED [ 40%]
+gunshot/tests/test_phase31_reproduction.py::test_regression_test_a_isolated_spike PASSED [ 46%]
+gunshot/tests/test_phase31_reproduction.py::test_regression_test_b_unrelated_spikes_across_gap PASSED [ 53%]
+gunshot/tests/test_phase31_reproduction.py::test_regression_test_c_consecutive_confirmation PASSED [ 60%]
+gunshot/tests/test_phase31_reproduction.py::test_regression_test_d_recording_boundary PASSED [ 66%]
+gunshot/tests/test_phase31_reproduction.py::test_regression_test_e_immediate_qualification PASSED [ 73%]
+gunshot/tests/test_phase31_reproduction.py::test_animal_suppression_parameter_values PASSED [ 80%]
+gunshot/tests/test_phase31_reproduction.py::test_aircraft_counterfactual_classification PASSED [ 86%]
+gunshot/tests/test_phase31_reproduction.py::test_statistical_inferences_reproduction PASSED [ 93%]
+gunshot/tests/test_phase31_reproduction.py::test_loco_subsets_non_significance PASSED [100%]
+
+============================= 15 passed in 4.55s ==============================

@@ -1,0 +1,11 @@
+metric,value,description
+Condition_A_Total_Alerts,108,"Suppression ON, Defective Reset (Frozen Phase 17)"
+Condition_B_Total_Alerts,130,"Suppression OFF, Defective Reset"
+Condition_C_Total_Alerts,66,"Suppression ON, Corrected Reset"
+Condition_D_Total_Alerts,72,"Suppression OFF, Corrected Reset (Equivalent to Phase 14 Baseline)"
+Suppression_Effect_Under_Defective_Reset,-22,Alert difference A - B (Suppression reduces alerts by 22 across corpus)
+Suppression_Effect_Under_Corrected_Reset,-6,Alert difference C - D (Suppression reduces alerts by 6 across corpus)
+Reset_Defect_Effect_Under_Suppression_ON,42,Alert increase A - C caused by defective reset (+42 false alerts)
+Reset_Defect_Effect_Under_Suppression_OFF,58,Alert increase B - D caused by defective reset (+58 false alerts)
+Combined_Effect_A_vs_D,36,Net inflation of Phase 17 over Phase 14 Baseline (+36 alerts)
+Factorial_Interaction,-16,Non-zero interaction: (A - B) - (C - D) = -16 alerts (mechanisms non-additive)

@@ -1,0 +1,51 @@
+{
+  "audit_timestamp": "2026-10-29T08:52:45Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "manifest_row_counts": {
+    "train": 176,
+    "validation": 34,
+    "historical_test": 47,
+    "phase7_diagnostic": 230,
+    "phase8_diagnostic": 246
+  },
+  "manifest_hash_overlaps": {
+    "train__vs__validation": 0,
+    "train__vs__historical_test": 0,
+    "train__vs__phase7_diagnostic": 0,
+    "train__vs__phase8_diagnostic": 0,
+    "validation__vs__historical_test": 0,
+    "validation__vs__phase7_diagnostic": 0,
+    "validation__vs__phase8_diagnostic": 0,
+    "historical_test__vs__phase7_diagnostic": 0,
+    "historical_test__vs__phase8_diagnostic": 0,
+    "phase7_diagnostic__vs__phase8_diagnostic": 0
+  },
+  "manifest_stem_overlaps": {
+    "train__vs__validation": 0,
+    "train__vs__historical_test": 0,
+    "train__vs__phase7_diagnostic": 0,
+    "train__vs__phase8_diagnostic": 0,
+    "validation__vs__historical_test": 0,
+    "validation__vs__phase7_diagnostic": 0,
+    "validation__vs__phase8_diagnostic": 0,
+    "historical_test__vs__phase7_diagnostic": 0,
+    "historical_test__vs__phase8_diagnostic": 0,
+    "phase7_diagnostic__vs__phase8_diagnostic": 0
+  },
+  "disk_audio_inventory": {
+    "total_audio_files": 2486,
+    "directory_breakdown": {
+      "background": 265,
+      "hard_negatives": 732,
+      "phase7_independent_test": 239,
+      "phase8_final_eval": 246,
+      "processed": 257,
+      "raw": 597,
+      "gunshot": 150
+    },
+    "total_gunshot_files": 523,
+    "unmanifested_gunshot_files": 0
+  },
+  "generalization_status": "UNVERIFIED_INDEPENDENT_EVALUATION",
+  "generalization_finding": "All physical gunshot audio files on disk originated from either AudioSet/FreeSound (Phases 1-7) or the Mitchell Roberts Ballistic Archive (Phase 8). Both datasets have previously been examined and utilized for threshold calibration and short-clip recovery logic. Zero genuinely unexamined physical gunshot recordings exist on disk. Therefore, true zero-shot field generalization to novel environments remains unverified."
+}

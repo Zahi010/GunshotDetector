@@ -1,0 +1,88 @@
+{
+  "audit_timestamp": "2026-10-29T14:15:00Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "distribution_summary": [
+    {
+      "category": "ballistic_gunshots_close_range",
+      "count": 43,
+      "min_crest_db": 10.06,
+      "p5_crest_db": 10.62,
+      "p25_crest_db": 13.09,
+      "median_crest_db": 14.66,
+      "p75_crest_db": 16.17,
+      "p95_crest_db": 17.49,
+      "max_crest_db": 19.07,
+      "pct_ge_9_5_db": 100.0,
+      "pct_ge_12_0_db": 83.7,
+      "pct_ge_14_0_db": 58.1
+    },
+    {
+      "category": "gunshots_distant_and_reverberant",
+      "count": 27,
+      "min_crest_db": 9.94,
+      "p5_crest_db": 10.54,
+      "p25_crest_db": 16.62,
+      "median_crest_db": 18.21,
+      "p75_crest_db": 21.58,
+      "p95_crest_db": 27.01,
+      "max_crest_db": 29.28,
+      "pct_ge_9_5_db": 100.0,
+      "pct_ge_12_0_db": 81.5,
+      "pct_ge_14_0_db": 81.5
+    },
+    {
+      "category": "mimic_pyrotechnic_fireworks",
+      "count": 20,
+      "min_crest_db": 10.49,
+      "p5_crest_db": 13.74,
+      "p25_crest_db": 25.11,
+      "median_crest_db": 29.24,
+      "p75_crest_db": 32.22,
+      "p95_crest_db": 35.5,
+      "max_crest_db": 37.15,
+      "pct_ge_9_5_db": 100.0,
+      "pct_ge_12_0_db": 95.0,
+      "pct_ge_14_0_db": 90.0
+    },
+    {
+      "category": "mimic_weather_thunder",
+      "count": 20,
+      "min_crest_db": 15.65,
+      "p5_crest_db": 16.22,
+      "p25_crest_db": 18.0,
+      "median_crest_db": 18.85,
+      "p75_crest_db": 19.66,
+      "p95_crest_db": 21.42,
+      "max_crest_db": 23.7,
+      "pct_ge_9_5_db": 100.0,
+      "pct_ge_12_0_db": 100.0,
+      "pct_ge_14_0_db": 100.0
+    },
+    {
+      "category": "mimic_domestic_ambient",
+      "count": 200,
+      "min_crest_db": 8.43,
+      "p5_crest_db": 11.47,
+      "p25_crest_db": 15.18,
+      "median_crest_db": 18.41,
+      "p75_crest_db": 22.42,
+      "p95_crest_db": 33.49,
+      "max_crest_db": 42.73,
+      "pct_ge_9_5_db": 99.5,
+      "pct_ge_12_0_db": 94.0,
+      "pct_ge_14_0_db": 87.0
+    }
+  ],
+  "perturbation_analysis": {
+    "reference_clean_crest_db": 14.66,
+    "gain_scaling_minus_10db": 14.66,
+    "gain_scaling_plus_6db_unclipped": 14.66,
+    "hard_clipping_4x_saturated": 7.42,
+    "additive_noise_snr": {
+      "snr_30db": 14.69,
+      "snr_20db": 14.73,
+      "snr_10db": 14.59,
+      "snr_0db": 14.59
+    }
+  }
+}

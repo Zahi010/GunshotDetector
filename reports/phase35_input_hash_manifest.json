@@ -1,0 +1,47 @@
+{
+  "phase34_canonical_23_stream_registry.csv": {
+    "relative_path": "reports/phase34_canonical_23_stream_registry.csv",
+    "size_bytes": 12230,
+    "sha256": "ff30bec3785a5d532aad987fa611dc95aa254dd35c9d65cd4fd43af4fbb9490e"
+  },
+  "phase34_stream_level_detector_metrics.csv": {
+    "relative_path": "reports/phase34_stream_level_detector_metrics.csv",
+    "size_bytes": 5357,
+    "sha256": "7d6b4c783af40d04a749532a4ef5fdf2db5005037653e1e82922f5dae361ae90"
+  },
+  "phase34_campaign_level_metrics.csv": {
+    "relative_path": "reports/phase34_campaign_level_metrics.csv",
+    "size_bytes": 1109,
+    "sha256": "1827801dd592d66ed2e13108fef654f59c8976655642103fc51ef71a27fbdb3e"
+  },
+  "phase28_cooldown_interval_ledger.csv": {
+    "relative_path": "reports/phase28_cooldown_interval_ledger.csv",
+    "size_bytes": 43688,
+    "sha256": "bb2c4838cb67c4bdb0d877a329f086b13a4912558032b0efcea4bb01e92d530a"
+  },
+  "phase28_exposure_reproduction.csv": {
+    "relative_path": "reports/phase28_exposure_reproduction.csv",
+    "size_bytes": 10096,
+    "sha256": "241b8610208bb909470ca285091b03ec33f549f4833fd419a12644a859dc5dd3"
+  },
+  "phase31_exposure_reconciliation.csv": {
+    "relative_path": "reports/phase31_exposure_reconciliation.csv",
+    "size_bytes": 6634,
+    "sha256": "3a64ec7bf66796c227559cecb79909e7a01693a21e9c6227c8b6b7d9ab1d1e5a"
+  },
+  "phase24_alert_review_registry.csv": {
+    "relative_path": "reports/phase24_alert_review_registry.csv",
+    "size_bytes": 48050,
+    "sha256": "201fcc05122fd02dda02ad439a2c035f85f16c80e095272e9ec6b2c9200c7d24"
+  },
+  "phase27_alert_event_log.csv": {
+    "relative_path": "reports/phase27_alert_event_log.csv",
+    "size_bytes": 109180,
+    "sha256": "035f01912304252ff2dec386cbd5a8b946d65c0c65cbd326fdfd4cc0b5e915ae"
+  },
+  "phase27_aerosonic_eval_raw.json": {
+    "relative_path": "data/phase27/phase27_aerosonic_eval_raw.json",
+    "size_bytes": 94986,
+    "sha256": "44ecb7b4125d9e5513ed55008db2962506038b059678ec1b310bd7112906bed2"
+  }
+}

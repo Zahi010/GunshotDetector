@@ -1,0 +1,98 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": 55,
+  "description": "Reproducibility manifest, baseline hashes, and Phase 54 integrity verification",
+  "files": {
+    "e:/gunshot/gunshot/experiments/detector_improvement_v10/model_detector_improvement_v10.py": {
+      "sha256": "2580cd78db5801bfe4957b694fc206bf67bdd8a5a5af6184e574a3428f9461cb",
+      "bytes": 13848,
+      "basename": "model_detector_improvement_v10.py"
+    },
+    "e:/gunshot/gunshot/experiments/detector_improvement_v10/config_improvement_v10.json": {
+      "sha256": "9e946d3fcb2497e24c97082e3af6a2f3e71782e02fdf5fdba266e63d779b582a",
+      "bytes": 4333,
+      "basename": "config_improvement_v10.json"
+    },
+    "e:/gunshot/gunshot/experiments/detector_improvement_v8/model_detector_improvement_v8.py": {
+      "sha256": "a4763c119235c2db606f1ce8e09965142c6db4009bfd7486dc1eba87b955d796",
+      "bytes": 38129,
+      "basename": "model_detector_improvement_v8.py"
+    },
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/classifier_head.keras": {
+      "sha256": "1142278dd5848f0344433448af4185f5ea1f987f6109a297e1b774c9001fba8a",
+      "bytes": 4217913,
+      "basename": "classifier_head.keras"
+    },
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/yamnet.keras": "MISSING",
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/catboost_model.cbm": "MISSING",
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/lightgbm_model.txt": "MISSING",
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/xgboost_model.json": "MISSING",
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/mlp_model.keras": "MISSING",
+    "e:/gunshot/gunshot/models/gunshot_yamnet_bundle/fusion_model.joblib": "MISSING",
+    "e:/gunshot/gunshot/app.py": {
+      "sha256": "e5b0a416af68b6e67cfe58385cf9d0a6d21d8dc644a0791b3160484bcae85577",
+      "bytes": 32864,
+      "basename": "app.py"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/phase54_evaluation_manifest.csv": {
+      "sha256": "ff488414ad6657c43b89b0bd9c582c12bde20ae108d96d1232599fe6cfbf44ff",
+      "bytes": 100030,
+      "basename": "phase54_evaluation_manifest.csv"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/recording_level_predictions.csv": {
+      "sha256": "7dcddee4ed80f2d1ee27b648dcbadd8cffa90e494b46d085cb6b0996d8563fdd",
+      "bytes": 66931,
+      "basename": "recording_level_predictions.csv"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/source_level_metrics.csv": {
+      "sha256": "5d3d06c34c0cce1e5e10e68ecd0379534ff0554687707c9c0bb61eaede9e33dc",
+      "bytes": 3938,
+      "basename": "source_level_metrics.csv"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/statistical_metrics.csv": {
+      "sha256": "d94a9db953ea62475f110f2f4509de9b09885e453401f776b19996db2e9c744c",
+      "bytes": 1631,
+      "basename": "statistical_metrics.csv"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/continuous_stream_evaluation.csv": {
+      "sha256": "681c8d6f14208826e2d56b8101b072bc5b76a9a6f2cf2b4c4f615e9320c1e445",
+      "bytes": 1367,
+      "basename": "continuous_stream_evaluation.csv"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/physical_microphone_validation.json": {
+      "sha256": "6d97b688e6e606b859291ba5d3d4693cbaff6f85bcbfb4804b5d071d1ce9ea6e",
+      "bytes": 1867,
+      "basename": "physical_microphone_validation.json"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/dataset_provenance.md": {
+      "sha256": "ea7a5da4bca6b2796957f1aabc47fa56a4dda91afede5876cd1f61c352565f12",
+      "bytes": 7439,
+      "basename": "dataset_provenance.md"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/duplicate_and_leakage_audit.md": {
+      "sha256": "738c7de5b75fd4f171aca4b449758d6d16e82fcc1081cf15516a2a79affa2df7",
+      "bytes": 4320,
+      "basename": "duplicate_and_leakage_audit.md"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/final_qualification_decision.md": {
+      "sha256": "e8ab9fee4413c5351c8e67faf95b71133723d05317410b625655bc9a6cf81668",
+      "bytes": 7023,
+      "basename": "final_qualification_decision.md"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/latency_and_dropped_window_report.md": {
+      "sha256": "29d14d06a3442b247576456177c9af1a6233d1b09809ee217672a0b4ac173934",
+      "bytes": 7098,
+      "basename": "latency_and_dropped_window_report.md"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/physical_microphone_validation.md": {
+      "sha256": "36a2e05cdc2e22114d30322fa9e3b1f6a84285051cd821004c54b84df5b63c85",
+      "bytes": 9176,
+      "basename": "physical_microphone_validation.md"
+    },
+    "e:/gunshot/gunshot/experiments/phase54_final_validation/statistical_evaluation.md": {
+      "sha256": "2d78a197c7c5bb7265585000ed3595ed53093a680757c341736f46168410e1a5",
+      "bytes": 6151,
+      "basename": "statistical_evaluation.md"
+    }
+  }
+}

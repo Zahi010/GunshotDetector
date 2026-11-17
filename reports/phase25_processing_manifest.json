@@ -1,0 +1,137 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "phase": "PHASE_25_CROSS_PHASE_EVIDENCE_RECONCILIATION_AND_INDEPENDENT_ACQUISITION",
+  "created_at_utc": "2026-11-14T20:15:00Z",
+  "environment": {
+    "os": "Windows",
+    "python_version": "3.13",
+    "project_root": "E:/gunshot/gunshot"
+  },
+  "frozen_detectors": {
+    "default_research_baseline": {
+      "name": "Phase 14 Balanced",
+      "file": "model_phase14.py",
+      "sha256": "a268551604ae8b73068435ff10ab3d265065f56e0679757fca5b6bf0f061c065",
+      "size_bytes": 23340,
+      "role": "DEFAULT_RESEARCH_BASELINE"
+    },
+    "selectable_experimental_profile": {
+      "name": "Phase 17 Experimental",
+      "file": "model_phase17.py",
+      "sha256": "e2b262b866fdd5d7f1a4ab91a7b8b9bac189ee8cc7a78603b3544ca1579fb819",
+      "size_bytes": 29067,
+      "role": "SELECTABLE_EXPERIMENTAL_PROFILE"
+    },
+    "historical_comparators": [
+      {
+        "name": "Phase 13",
+        "file": "model_phase13.py",
+        "sha256": "68585039a4a4fdb7978a99f5e2a72c0ad5a9523127ec24a1338fbedd1c1231e6",
+        "size_bytes": 22252
+      },
+      {
+        "name": "Phase 9",
+        "file": "model_phase9.py",
+        "sha256": "85cedd9f5b988ecafb1eae7de9630ee3d6a387ded6ef732e0efb7c3b496f132a",
+        "size_bytes": 17719
+      }
+    ]
+  },
+  "historical_release_archives_verified": {
+    "gunshot_detection_phase24.zip": "3e732e0716160f2d77b71ceff3e01a49f3d933e397bf29bf222fec771a8832b8",
+    "gunshot_detection_phase23.zip": "5ce4e64715829d9b52111b6d6322f251976e1ce99e829d9dfbe0858a7e1644c8",
+    "gunshot_detection_phase22.zip": "160d327072c3515e945ca5cdf89038f14b6ef1919b1e4865278affab52ad4de5",
+    "gunshot_detection_phase21.zip": "b065747b0e6118d228336bee7f8c3811890b638a25070d3ce2a047c329b3e225",
+    "gunshot_detection_phase20.zip": "dda7427f2dbffcb178f6d9ade0abb80fbfc491751f04de5dc0db1b4731c31c89"
+  },
+  "workstream_a_forensic_reconciliation": {
+    "stream_count_discrepancy_resolution": {
+      "finding": "RESOLVED_CLERICAL_TYPO",
+      "explanation": "Phase 23 prose narrative table reported 4 streams fewer and 13 identical. However, the underlying Phase 23 and Phase 24 exposure accounting CSVs are bitwise identical: exactly 3 streams improved (STR-05, STR-14, STR-16), 14 streams were identical, and 0 streams were worse. Net alert reduction is 5 alerts (2 + 2 + 1). The discrepancy is resolved.",
+      "canonical_counts": {
+        "streams_evaluated": 17,
+        "streams_phase17_improved": 3,
+        "streams_counts_equal": 14,
+        "streams_phase17_worse": 0
+      }
+    },
+    "recording_inventory_reconciliation": {
+      "total_cataloged": 23,
+      "unique_original_recordings": 23,
+      "continuous_recordings": 17,
+      "included_primary_evaluation": 17,
+      "excluded_not_continuous": 6,
+      "gross_hours_cataloged": 12.6460,
+      "gross_hours_evaluated": 6.6460,
+      "gross_hours_excluded": 6.0000
+    },
+    "double_reviewer_audit": {
+      "total_alerts_reviewed": 107,
+      "contingency_table": {
+        "reviewer1_confirmed_non_target": 107,
+        "reviewer2_confirmed_non_target": 107,
+        "discordant_cells": 0
+      },
+      "cohens_kappa_assessment": "UNVERIFIED_FROM_ARTIFACT",
+      "kappa_explanation": "Because both reviewer columns in the stored phase24_alert_review_registry.csv record 100% consensus labels (CONFIRMED_NON_TARGET), Cohen's kappa is mathematically degenerate (0/0) on the stored artifact. Dual-column pre-adjudication schema designed for future phases."
+    },
+    "municipal_legal_claims": {
+      "status": "QUALIFIED_AND_CORRECTED",
+      "finding": "Audited portal evidence demonstrates absence of raw audio, but does not definitively establish the specific administrative, commercial, or legal rationale. Unsupported claims regarding universal Federal Wiretap Act requirements have been removed."
+    }
+  },
+  "workstream_b_independent_acquisition": {
+    "source_registry_count": 12,
+    "evaluated_categories": {
+      "accept_historical": 3,
+      "conditional_prospective": 4,
+      "reject": 5
+    },
+    "research_data_access_request_prepared": "REQ-ACOUSTIC-DATA-P25",
+    "exposure_accounting": {
+      "previously_audited_gross_hours": 6.6460,
+      "new_phase25_gross_hours": 0.0000,
+      "new_phase25_eligible_hours": 0.0000,
+      "cumulative_gross_hours": 6.6460,
+      "cumulative_eligible_hours_phase14": 6.6149,
+      "cumulative_eligible_hours_phase17": 6.6177,
+      "shortfall_against_20hr_target": 20.0000,
+      "shortfall_against_50hr_milestone": 43.3540
+    }
+  },
+  "tripartite_denominator_accounting": {
+    "gross_calendar_duration_seconds": 23925.58,
+    "gross_calendar_duration_hours": 6.6460,
+    "phase_14_balanced": {
+      "observed_alerts": 56,
+      "refractory_cooldown_seconds": 111.92,
+      "eligible_exposure_seconds": 23813.66,
+      "eligible_exposure_hours": 6.6149,
+      "gross_alert_rate_per_hr": 8.4261,
+      "eligible_alert_rate_per_hr": 8.4657,
+      "exact_garwood_95_ci_per_hr": [6.3949, 10.9935],
+      "mean_time_between_false_alerts_minutes": 7.09
+    },
+    "phase_17_experimental": {
+      "observed_alerts": 51,
+      "refractory_cooldown_seconds": 101.92,
+      "eligible_exposure_seconds": 23823.66,
+      "eligible_exposure_hours": 6.6177,
+      "gross_alert_rate_per_hr": 7.6738,
+      "eligible_alert_rate_per_hr": 7.7066,
+      "exact_garwood_95_ci_per_hr": [5.7381, 10.1328],
+      "mean_time_between_false_alerts_minutes": 7.79
+    }
+  },
+  "statistical_evaluation": {
+    "streams_evaluated": 17,
+    "streams_with_identical_counts": 14,
+    "streams_with_phase17_reduction": 3,
+    "streams_with_phase17_increase": 0,
+    "paired_wilcoxon_signed_rank_W": 10.0,
+    "paired_wilcoxon_signed_rank_p_value": 0.125,
+    "statistical_significance_alpha_0_05": false,
+    "model_promotion_determination": "INCONCLUSIVE (Retain Phase 14 Balanced as Default Research Baseline)"
+  }
+}
+

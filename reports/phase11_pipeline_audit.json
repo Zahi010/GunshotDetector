@@ -1,0 +1,95 @@
+{
+  "audit_phase": "Phase 11",
+  "audit_timestamp": "2026-10-29T09:30:00Z",
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY",
+  "endpoints_audited": [
+    "/",
+    "/api/status",
+    "/api/detect",
+    "/api/stream_window",
+    "/api/save_alert",
+    "/api/devices"
+  ],
+  "pipeline_stages": {
+    "1_microphone_capture": {
+      "implementation_file": "static/js/app.js",
+      "function": "startContinuousListening",
+      "api": "navigator.mediaDevices.getUserMedia",
+      "sample_rate_native": "44100 Hz or 48000 Hz (hardware-dependent)",
+      "channels": 1,
+      "dsp_constraints": {
+        "raw_mode_supported": true,
+        "echoCancellation": "toggleable (default ideal: false)",
+        "noiseSuppression": "toggleable (default ideal: false)",
+        "autoGainControl": "toggleable (default ideal: false)"
+      },
+      "status": "VERIFIED_COMPATIBLE"
+    },
+    "2_client_resampling_and_windowing": {
+      "implementation_file": "static/js/app.js",
+      "resampling_function": "downsampleTo16kHz",
+      "algorithm": "linear interpolation",
+      "buffer_management": "Float32Array concatenation",
+      "target_sample_rate": 16000,
+      "window_samples": 15360,
+      "hop_samples": 7680,
+      "window_duration_sec": 0.96,
+      "hop_duration_sec": 0.48,
+      "status": "VERIFIED_FUNCTIONAL"
+    },
+    "3_client_encoding_and_transport": {
+      "implementation_file": "static/js/app.js",
+      "encoding_function": "float32ToWavBlob",
+      "format": "PCM 16-bit LE Mono WAV",
+      "transport": "HTTP POST multipart/form-data",
+      "target_url": "/api/stream_window",
+      "status": "VERIFIED_FUNCTIONAL"
+    },
+    "4_server_receiving_and_decoding": {
+      "implementation_file": "app.py",
+      "endpoint": "/api/stream_window",
+      "temp_file_handling": "tempfile.NamedTemporaryFile(suffix='.wav')",
+      "decoding_function": "load_audio_mono_16k",
+      "library": "librosa.load(sr=16000, mono=True)",
+      "status": "VERIFIED_FUNCTIONAL"
+    },
+    "5_detector_invocation": {
+      "implementation_file": "app.py",
+      "historical_imported_class": "GunshotDetector (model.py)",
+      "intended_class": "Phase9AdaptiveGunshotDetector / RealTimeStreamDetector (model_phase9.py)",
+      "ensemble_models_loaded": "Historical: Single Keras MLP only. Target: 4-Model Stacking Ensemble (CatBoost, LightGBM, XGBoost, Keras MLP)",
+      "crest_factor_guard_floor": "Historical: Bypassed. Target: >= 9.5 dB",
+      "semantic_suppression": "Historical: Bypassed. Target: 5 Classes (Thunder, Fireworks, Barking, Fire Crackle, Sirens)",
+      "discrepancy_identified": true,
+      "resolution_required": "Refactor app.py to instantiate RealTimeStreamDetector with session state management"
+    },
+    "6_temporal_state_machine": {
+      "historical_location": "Client-side JS (app.js) with naive integer counter",
+      "intended_location": "Server-side stateful ring-buffer (RealTimeStreamDetector)",
+      "confirmation_logic": {
+        "dual_threshold_support": "Historical: No (Single threshold slider). Target: tau_base and tau_high",
+        "refractory_cooldown": "Historical: Client-only. Target: Server-enforced refractory hysteresis",
+        "hysteresis_deactivation": "Historical: Absent. Target: tau_off decay tracking"
+      },
+      "discrepancy_identified": true,
+      "resolution_required": "Migrate temporal state machine into server-side session-keyed RealTimeStreamDetector"
+    },
+    "7_alert_emission_and_ui_rendering": {
+      "implementation_file": "static/js/app.js & templates/index.html",
+      "wording_audit": {
+        "historical_heading": "GUNSHOT DETECTED!",
+        "mandated_heading": "Gunshot-like acoustic event detected",
+        "safety_disclaimer_present": true,
+        "disclaimer_text": "RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY"
+      },
+      "operating_profiles_supported_in_ui": {
+        "balanced": false,
+        "high_precision": false,
+        "high_sensitivity": false
+      },
+      "resolution_required": "Update wording, add profile selector, and expose verified telemetry in UI"
+    }
+  },
+  "overall_audit_verdict": "ARCHITECTURAL_DISCREPANCY_CONFIRMED",
+  "remediation_status": "PENDING_PHASE11_STAGE2_REFACTOR"
+}

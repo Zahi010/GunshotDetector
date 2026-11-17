@@ -1,0 +1,95 @@
+{
+  "safety_designation": "RESEARCH DEMONSTRATION PROTOTYPE \u2014 NOT FOR LIFE SAFETY",
+  "phase": "PHASE_27_STATISTICAL_INFERENCE_CORRECTION",
+  "sample_metadata": {
+    "total_paired_recordings": 17,
+    "total_independent_campaigns": 3,
+    "gross_calendar_hours": 6.646,
+    "tied_recordings_count": 14,
+    "discordant_recordings_count": 3,
+    "nonzero_difference_vector": [
+      2,
+      2,
+      1
+    ],
+    "discordant_recording_ids": [
+      "P26-NAT-STR-05",
+      "P26-NAT-STR-14",
+      "P26-NAT-STR-16"
+    ]
+  },
+  "historical_reported_values": {
+    "reported_in_phases": [
+      "Phase 23",
+      "Phase 24",
+      "Phase 25",
+      "Phase 26"
+    ],
+    "reported_wilcoxon_statistic_W": 10.0,
+    "reported_p_value": 0.125,
+    "reported_conclusion": "Non-significant (p >= 0.05), reject Phase 17 promotion"
+  },
+  "mathematical_reproduction_and_correction": {
+    "wilcoxon_signed_rank_audit": {
+      "nonzero_pairs_count": 3,
+      "absolute_differences": [
+        1,
+        2,
+        2
+      ],
+      "assigned_ranks": [
+        1.0,
+        2.5,
+        2.5
+      ],
+      "sum_of_positive_ranks_W_plus": 6.0,
+      "sum_of_negative_ranks_W_minus": 0.0,
+      "maximum_possible_rank_sum_for_n3": 6.0,
+      "standard_two_sided_statistic_W": 0.0,
+      "standard_one_sided_statistic_W": 6.0,
+      "exact_permutation_distribution": {
+        "total_permutations_2_pow_3": 8,
+        "possible_rank_sums": [
+          0.0,
+          1.0,
+          2.5,
+          2.5,
+          3.5,
+          3.5,
+          5.0,
+          6.0
+        ],
+        "exact_one_sided_p_value": 0.125,
+        "exact_two_sided_p_value": 0.25
+      },
+      "scipy_asymptotic_approximation": {
+        "two_sided_statistic": 0.0,
+        "two_sided_p_value": 0.10247043485974937,
+        "greater_statistic": 6.0,
+        "greater_p_value": 0.051235217429874684
+      },
+      "verdict_on_reported_W10": "MATHEMATICALLY_IMPOSSIBLE_FOR_N3_WILCOXON",
+      "origin_explanation": "For N_r = 3 discordant pairs, the maximum possible rank sum is 3*(3+1)/2 = 6.0. An unreduced test statistic of W = 10.0 is mathematically incompatible with 3 pairs. It is a historical transcription/labeling artifact, likely conflating the '+10.0%' LOPO recall delta from Phase 21 or an unreduced sum formula error."
+    },
+    "sign_test_audit": {
+      "test_type": "EXACT_BINOMIAL_SIGN_TEST",
+      "number_of_discordant_pairs": 3,
+      "positive_pairs": 3,
+      "negative_pairs": 0,
+      "exact_one_sided_p_value": 0.125,
+      "exact_two_sided_p_value": 0.25,
+      "verdict_on_reported_p0125": "EXACT_ONE_SIDED_SIGN_TEST_PROBABILITY",
+      "origin_explanation": "The reported value p = 0.125 represents exactly (1/2)^3, which is the exact one-sided sign test probability (and the exact one-sided Wilcoxon permutation probability), rather than a two-sided Wilcoxon signed-rank test."
+    },
+    "scientific_conclusion_invariance": {
+      "corrected_two_sided_wilcoxon_exact_p": 0.25,
+      "corrected_two_sided_sign_test_exact_p": 0.25,
+      "corrected_one_sided_wilcoxon_exact_p": 0.125,
+      "corrected_one_sided_sign_test_exact_p": 0.125,
+      "alpha_threshold": 0.05,
+      "decision": "NULL_HYPOTHESIS_CANNOT_BE_REJECTED",
+      "model_governance_verdict": "RETAIN_PHASE14_BALANCED_BASELINE",
+      "invariance_confirmation": "While the reporting of W = 10.0 was a numerical error and p = 0.125 was a one-sided rather than two-sided probability, the qualitative scientific conclusion is completely unchanged: all valid exact and asymptotic non-parametric tests yield p >= 0.05. Phase 17 does NOT demonstrate statistically significant superiority."
+    }
+  }
+}
