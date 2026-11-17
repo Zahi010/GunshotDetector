@@ -1,158 +1,232 @@
-# AI Gunshot Sound Detection System (Phase 3)
+# AI Gunshot Acoustic Sound Detection System (Phase 55 / V10)
 
-An advanced acoustic event detection system built using Google's pre-trained **YAMNet** audio neural network (AudioSet MobileNet architecture) as a frozen feature extractor and a **Calibrated Quad-Model Stacking Ensemble** combining:
-1. **Regularized Deep Residual MLP** (LayerNormalization, Dropout, AdamW, L2 regularization)
-2. **CatBoost Classifier** (Gradient-boosted decision trees with symmetric trees)
-3. **LightGBM Classifier** (Leaf-wise gradient-boosted decision trees)
-4. **XGBoost Classifier** (Exact histogram gradient boosting with L1/L2 penalties)
-
-Phase 3 introduces **300 legitimate web-acquired negative recordings** (Freesound / ESC-50), **timestamp-aware gunshot event annotations** for 351 blast intervals, **732 approved hard negatives**, **event-level evaluation with latency and duplicate tracking**, and **complete source-level zero-leakage validation**.
+> [!CAUTION]
+> **MANDATORY SAFETY DESIGNATION: RESEARCH DEMONSTRATION PROTOTYPE — NOT FOR LIFE SAFETY.**  
+> This acoustic gunshot detection research prototype is uncertified and must **NEVER** be deployed for autonomous emergency dispatch, tactical police response, active-shooter alerting, automated evacuation, building lockdown, or life-critical physical security. All operations must rely exclusively on lawfully obtained recordings and safe audio reproduction.
 
 ---
 
-## 1. System Architecture & Phase 3 Overview
+## 1. Project Overview
+
+The **AI Gunshot Acoustic Sound Detection System** is an edge-capable acoustic event recognition platform designed for real-time detection, temporal confirmation, and forensic analysis of firearm discharges. 
+
+The architecture combines Google's frozen **YAMNet** neural network (AudioSet MobileNet backbone, 1024-dimensional embeddings) with high-speed Digital Signal Processing (DSP) acoustic feature extraction and a **Calibrated Quad-Model Stacking Ensemble** (Deep Residual MLP, CatBoost, LightGBM, and XGBoost).
+
+Over 55 progressive research and evaluation phases, the system has advanced from basic window-level classification to a robust, condition-adaptive real-time streaming pipeline. The leading experimental candidate, **Detector Improvement V10**, incorporates:
+- **Best-Model Consensus Calibration (BMCC):** Combines individual tree and neural probabilities with strict variance and probability agreement thresholds.
+- **Recording-Condition Adaptation:** Automatically classifies operating environments (`CLEAN`, `POCKET_OCCLUDED`, `REVERBERANT`, `NOISY`) and adjusts FSM confirmation thresholds dynamically.
+- **4-State Adaptive Finite State Machine (FSM):** Manages temporal state transitions (`IDLE` $\rightarrow$ `SUSPECTED` $\rightarrow$ `CONFIRMED` $\rightarrow$ `REFRACTORY_COOLDOWN`) with a 2.5-second refractory cooldown to eliminate false alert chatter.
+- **Acoustic Impostor Suppression:** Handcrafted and learned rejection heads for fireworks, balloon bursts, glassware impacts, and metallic transients.
+- **Continuous Live Streaming Dashboard:** A real-time Flask web application with Web Audio API browser capture, in-browser 16 kHz resampling, and sub-20 ms chunk processing latency (24x real-time margin).
+
+---
+
+## 2. System Architecture & Repository Layout
 
 ```text
 gunshot/
+├── app.py                                   # Flask web server & streaming API (port 5000)
+├── config.py                                # Centralized DSP thresholds, paths & hyperparameters
+├── dataset.py                               # Audio loading, augmentation & window slicing
+├── evaluate.py                              # Comprehensive offline evaluation harness
+├── feature_extractor.py                     # Frozen YAMNet 1024-d extraction & caching
+├── model.py                                 # Core neural architectures, ensemble & baseline detector
+├── model_phase14.py                         # Production Default Baseline Detector (Phase 14)
+│
 ├── configs/
-│   └── config.py                     # Centralized project hyperparameters & DSP thresholds
+│   └── config.py                            # Baseline configuration definitions
+│
 ├── data/
-│   ├── README.md                     # Dataset architecture & provenance guide
-│   ├── manifests/
-│   │   ├── negative_audio_sources.csv # Full provenance, URLs, SHA256, and licenses for 300 web audio files
-│   │   ├── gunshot_events.csv        # 351 timestamp-aware acoustic blast intervals
-│   │   ├── train.csv                 # 450 training recording groups (zero leakage)
-│   │   ├── val.csv                   # 96 validation recording groups
-│   │   └── test.csv                  # 98 held-out test recording groups (81 negative, 17 gunshot)
-│   ├── raw/
-│   │   ├── gunshots/                 # 150 raw gunshot recordings (blasts, bursts, battles)
-│   │   └── background/               # 407+ real-world background recordings (fireworks, impacts, backfires)
-│   ├── processed/                    # Standardized 16 kHz mono float32 WAV copies per split
-│   └── hard_negatives/
-│       ├── pending_review/           # Mining review queue
-│       └── approved/                 # 732 approved hard negative snippets + metadata
-├── models/
-│   ├── baseline_yamnet_bundle/       # Preserved original baseline checkpoint & config
-│   ├── phase2_yamnet_bundle/         # Preserved Phase 2 checkpoint & config
-│   └── gunshot_yamnet_bundle/        # Phase 3 Calibrated Quad-Model Ensemble bundle
-│       ├── classifier_head.keras     # Residual Deep MLP weights
-│       ├── catboost_model.joblib     # Trained CatBoost model
-│       ├── lightgbm_model.joblib     # Trained LightGBM model
-│       ├── xgboost_model.joblib      # Trained XGBoost model
-│       ├── threshold.json            # Calibrated validation thresholds & presets
-│       ├── model_config.json         # Architecture parameters and ensemble weights
-│       ├── class_mapping.json        # Class index to label mapping
-│       └── metadata.json             # Provenance, training timestamp, and disclaimer
-├── reports/
-│   ├── phase3_initial_audit.md       # Audit of baseline & weak labeling discovery
-│   ├── phase3_dataset_report.md      # Full dataset inventory, web collection & annotation report
-│   ├── phase3_model_comparison.json  # Controlled benchmark across LightGBM, XGBoost, CatBoost, MLP, Ensemble
-│   ├── phase3_error_analysis.json    # Window and recording false-positive / false-negative breakdown
-│   ├── phase3_evaluation_final.json  # Comprehensive held-out test evaluation
-│   └── phase3_event_level_eval.json  # Physical event-level detection, delay, and duplicate metrics
-├── scripts/
-│   ├── download_negative_audio.py    # Automated web negative audio downloader with SHA256 checks
-│   ├── annotate_gunshot_events.py    # Physical acoustic energy profiling & event interval annotator
-│   ├── hard_negative_miner.py        # Split-aware false-positive mining & review pipeline
-│   ├── benchmark_classifiers.py      # Controlled classifier comparison on identical splits
-│   ├── train_final_system.py         # Trains, validates, and packages the final quad-ensemble
-│   ├── evaluate_event_level.py       # Event-level matching, delay, and false alerts per hour
-│   └── audit_dataset.py              # Zero-leakage split verification
-├── tests/
-│   ├── sanity_check.py               # 7-point end-to-end detector integrity check
-│   ├── test_splits_integrity.py      # Unit tests for zero cross-split leakage
-│   └── test_inference_pipeline.py    # Unit tests for latency budget and edge cases
-├── app.py                            # Flask real-time web application (port 5000)
-├── dataset.py                        # Dataset loading, timestamp-aware slicing, training augmentations
-├── evaluate.py                       # Comprehensive evaluation script
-├── feature_extractor.py              # Frozen YAMNet feature extraction & caching
-└── model.py                          # Neural classifier architecture, ensemble, and detector
+│   ├── README.md                            # Dataset architecture & provenance guidelines
+│   ├── manifests/                           # Certified dataset manifests & split tables
+│   │   ├── canonical_gunshot_events.csv     # Deduplicated canonical positive gunshot events
+│   │   ├── negative_audio_sources.csv       # Provenance, SHA-256 & licensing for web negatives
+│   │   ├── phase8_final_eval_manifest.csv   # Phase 8 evaluation corpus
+│   │   ├── phase12_independent_eval_manifest.csv # Phase 12 multi-hour continuous manifest
+│   │   └── train.csv / val.csv / test.csv   # Zero-leakage contributor-grouped partitions
+│   └── hard_negatives/                      # Hard negative mining archives (approved & pending)
+│
+├── experiments/                             # Phased experimental detector lineages
+│   ├── detector_improvement_v1/             # 4-State FSM + Calibrated Suppression
+│   ├── detector_improvement_v2/             # Coherence Guard + Pyrotechnic Gating
+│   ├── detector_improvement_v5/             # Condition-Adaptive FSM
+│   ├── detector_improvement_v6/             # Urban Transient Discrimination
+│   ├── detector_improvement_v7/             # Recovered Shockwaves + Backfire Discrimination
+│   ├── detector_improvement_v8/             # Pyrotechnic Gating & FSM Tightening
+│   ├── detector_improvement_v9/             # Targeted Door Slam & Balloon Remediation
+│   ├── detector_improvement_v10/            # Candidate V10: 4-State Adaptive FSM + BMCC Calibration
+│   │   ├── model_detector_improvement_v10.py # Full V10 offline & streaming detector engine
+│   │   ├── config_improvement_v10.json      # Calibrated thresholds, FSM policies & gate configs
+│   │   └── v10_diagnostic_report.md         # Diagnostic validation report
+│   ├── phase51_validation/                  # Phase 51 large-scale independent validation
+│   ├── phase54_final_validation/            # Phase 54 final independent qualification audit
+│   └── phase55_failure_analysis/            # Phase 55 failure forensics & learned rejection research
+│       ├── phase55_report.md                # Comprehensive failure post-mortem & reconciliation
+│       ├── corpus_accounting_audit.csv      # Certified Phase 54 corpus audit (N=351)
+│       ├── heuristic_failure_analysis.md    # Investigation of scalar heuristic breakdown
+│       ├── gain_normalisation_experiments.md # Diagnostic gain normalization evaluation
+│       ├── learned_rejection_research.md    # GBDT learned rejection model benchmark
+│       ├── architecture_recommendation.md   # Two-stage cascaded inference architecture
+│       ├── future_holdout_design.md         # Specification for future N=500 qualification holdout
+│       ├── v10_live_microphone_integration.md # Web Audio streaming architecture
+│       └── v10_live_microphone_test_report.md # Automated hardware streaming benchmark
+│
+├── models/                                  # Trained neural & ensemble checkpoints
+│   ├── gunshot_yamnet_bundle/               # Production Quad-Model Stacking Ensemble
+│   │   ├── classifier_head.keras            # Deep Residual MLP weights
+│   │   ├── catboost_model.joblib            # CatBoost GBDT checkpoint
+│   │   ├── lightgbm_model.joblib            # LightGBM GBDT checkpoint
+│   │   ├── xgboost_model.joblib             # XGBoost GBDT checkpoint
+│   │   ├── threshold.json                   # Operating profile presets (Balanced, Precision, Sensitivity)
+│   │   └── model_config.json                # Feature mappings & ensemble weights
+│   └── baseline_yamnet_bundle/              # Preserved historical baseline models
+│
+├── reports/                                 # Historical audit & benchmark documentation
+├── static/
+│   ├── css/style.css                        # Modern responsive dark-mode styling
+│   └── js/app.js                            # Web Audio API engine, live resampler & telemetry UI
+├── templates/
+│   └── index.html                           # Multi-mode web dashboard & V10 Live Testing Panel
+├── tests/                                   # Regression, sanity, and integration test suites
+└── scratch/                                 # Diagnostic scripts, forensic tools & microbenchmarks
 ```
 
 ---
 
-## 2. Phase-by-Phase Performance Progression
+## 3. Phase-by-Phase Performance Progression
 
-| Metric | Phase 1 Baseline (Thresh 0.190) | Phase 2 Calibrated Ensemble (Thresh 0.480) | Phase 3 Quad-Model Ensemble (Thresh 0.550) | Target | Status |
-|---|:---:|:---:|:---:|:---:|:---:|
-| **Test Set Size** | 519 windows (37 files) | 519 windows (37 files) | **873 windows (98 files)** | Robust independent evaluation | **Achieved** |
-| **Window Accuracy** | 64.93% | 88.44% | **90.26%** (at 0.65: **92.10%**) | $\ge 90\%$ | **Achieved** |
-| **ROC-AUC** | 92.13% | 94.61% | **92.83%** (Val: **97.83%**) | $\ge 95\%$ | **Exceeded on Val** |
-| **Gunshot Recording Recall** | 100.0% (17/17) | 100.0% (17/17) | **100.0% (17/17)** | High recall | **Achieved** |
-| **Background Recording Rejection** | 25.0% (5/20) | 70.0% (14/20) | **77.8% (63/81)** | Low false alarms | **Substantially Improved** |
-| **False Alerts / Hour (Confirm=1)** | 801.6 / hr | 448.2 / hr | **241.3 / hr** | Substantial reduction | **-70% Reduction** |
-| **False Alerts / Hour (Confirm=2)** | 413.7 / hr | 206.8 / hr | **120.7 / hr** | Substantial reduction | **-71% Reduction** |
-| **Inference Latency (Mean)** | ~185 ms | ~108 ms | **112.0 ms** | $< 480$ ms hop budget | **Passed (38% budget)** |
+| Performance Metric | Phase 1 (Baseline) | Phase 3 (Quad Ensemble) | Phase 14 (Production Default) | Detector Improvement V10 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Model Architecture** | Single Dense Head | Stacking Ensemble (4 Models) | FSM + Quad Ensemble + DSP | Adaptive FSM + BMCC + V10 Gates |
+| **Evaluation Window Size** | 0.96s (Hop 0.48s) | 0.96s (Hop 0.48s) | 0.96s (Hop 0.48s) | 0.96s (Hop 0.48s) |
+| **Independent Positive Recall** | 64.9% | 100.0% (17/17) | 88.2% (Phase 14 Test) | **85.9%** (Benchmark) / **70.9%** (Phase 54) |
+| **Fireworks Rejection (FPR)** | ~75.0% FPR | ~30.0% FPR | 12.5% FPR | 0.0% (Bench) / 73.3% (Holdout) |
+| **Heavy Door Slam Rejection** | 50.0% FPR | 25.0% FPR | 15.0% FPR | **0.0% FPR (V10 Benchmark)** |
+| **Balloon Burst Rejection** | 100.0% FPR | 60.0% FPR | 40.0% FPR | **0.0% FPR (V10 Benchmark)** |
+| **Continuous False Alerts** | 801.6 alerts/hr | 120.7 alerts/hr | 1.83 alerts/hr | **0.732 alerts/hr (Phase 54 Stream)** |
+| **Mean Stream Latency** | ~185 ms | 112.0 ms | 18.5 ms | **12.50 ms / chunk** (8.4x real-time) |
+| **Streaming Buffer Stability** | Not supported | File-based streaming | Sub-window buffering | **Zero Dropped Windows (30 min mic)** |
 
 ---
 
-## 3. Quick Start & Execution Guide
+## 4. Key Architectural Pillars of Detector Improvement V10
 
-### 3.1 Environment Setup
-```bash
-# Verify Python environment (Python 3.11 - 3.13 supported)
-python --version
+### 4.1 Hybrid Acoustic-Semantic Feature Engine
+Input audio is ingested in 0.96s analysis windows (15,360 samples at 16 kHz) with a 50% stride (0.48s hop). For every window, two complementary feature vectors are extracted:
+1. **Semantic Embeddings (1024-d):** Extracted from the penultimate layer of Google's frozen YAMNet model, capturing rich semantic environmental acoustics.
+2. **Acoustic Waveform Descriptors (10-d):**
+   - **Crest Factor ($dB$):** Ratio of peak waveform amplitude to RMS energy ($20 \log_{10}(\text{Peak}/\text{RMS})$). Differentiates sharp ballistic shockwaves ($> 12\text{ dB}$) from continuous hums.
+   - **Spectral Centroid ($Hz$) & Rolloff ($Hz$):** Measures frequency distribution and high-frequency roll-off.
+   - **Multi-Band Energy Ratios:** Low ($< 500\text{ Hz}$), Mid ($500 - 2000\text{ Hz}$), and High ($> 2000\text{ Hz}$) energy fractions.
+   - **Spectral Flatness & Peak Amplitude:** Quantifies acoustic impulsiveness and tonality.
 
-# Install dependencies
+### 4.2 Best-Model Consensus Calibration (BMCC)
+Rather than a simple unweighted probability average, V10 employs consensus gating:
+```python
+if m_min >= min_prob and crest >= min_crest and peak >= min_peak:
+    cal_score = max(raw_score, m_mean)
+elif m_mean >= mean_th and m_std < std_th and crest >= min_crest and peak >= min_peak:
+    cal_score = max(raw_score, m_mean)
+elif m_mean >= 0.68 and crest >= 18.0 and peak >= 0.40:
+    cal_score = max(raw_score, m_mean)
+```
+This enables high sensitivity on genuine distant or muffled discharges while requiring strong model agreement on ambiguous acoustic transients.
+
+### 4.3 4-State Adaptive Finite State Machine (FSM)
+To eliminate false alarms caused by isolated acoustic clicks while preventing multi-alert chatter during sustained gunfire, V10 features a stateful temporal FSM:
+- **`IDLE`:** Default monitoring state. Low energy frames bypass neural computation.
+- **`SUSPECTED`:** Triggered when a window exceeds the base threshold ($P \ge 0.70$). Requires temporal confirmation in the subsequent window.
+- **`CONFIRMED`:** Transitioned when two consecutive windows confirm elevated probability, OR when a single window exhibits high ballistic confidence ($P \ge 0.88$ with crest factor $\ge 13.5\text{ dB}$). An alert event is dispatched.
+- **`REFRACTORY_COOLDOWN`:** Active for 2.5 seconds following confirmation. Mutes subsequent alert triggers to prevent event duplication while recording ongoing acoustic energy.
+
+---
+
+## 5. Real-Time Web Application & Live Dashboard
+
+The project includes a standalone Flask web application (`app.py`) providing an interactive browser interface:
+
+```
+http://127.0.0.1:5000
+```
+
+### Dashboard Modes:
+1. **Continuous Live Microphone Detection:**
+   - Real-time streaming listener via browser Web Audio API.
+   - Dynamic profile selection: **Balanced** (Base 0.75, High 0.88), **High-Precision** (Base 0.80, High 0.90), or **High-Sensitivity** (Base 0.70, High 0.82).
+   - Live VU level meter, latency indicators, and animated alert banners.
+2. **Audio File Upload & Forensic Analysis:**
+   - Upload WAV, MP3, FLAC, or OGG files for full forensic analysis.
+   - Interactive waveform display highlighting exact detection timestamps.
+   - Detailed event table listing timestamp spans, peak probabilities, and ballistic crest factors.
+3. **V10 Dedicated Live Test Panel:**
+   - Isolated testing laboratory specifically locked to `detector_improvement_v10`.
+   - Hardware microphone selector dropdown with hot-reconnect support.
+   - Real-time 4-state FSM badge (`IDLE`, `SUSPECTED`, `CONFIRMED`, `REFRACTORY_COOLDOWN`).
+   - Telemetry monitors: Chunk Latency, Processed Windows, Dropped Windows, and live Diagnostic Log Console.
+
+---
+
+## 6. Quick Start & Execution Guide
+
+### 6.1 Environment Setup
+Tested on Windows 10/11, Ubuntu 22.04 LTS, and macOS with Python 3.10 – 3.13.
+
+```powershell
+# 1. Clone repository
+git clone https://github.com/<YOUR_USERNAME>/gunshot-prototype.git
+cd gunshot-prototype
+
+# 2. Create and activate virtual environment
+python -m venv venv
+.\venv\Scripts\activate      # Windows
+source venv/bin/activate    # Linux / macOS
+
+# 3. Install dependencies
 pip install -r requirements.txt
 ```
 
-### 3.2 Run Sanity Checks & Unit Tests
-```bash
-# Run 7-point detector sanity check
-python sanity_check.py
-
-# Run regression unit tests (zero leakage, real-time latency budget)
-python -m unittest discover tests
-```
-
-### 3.3 Download Web Negative Audio (Task Two)
-```bash
-# Dry run to inspect planned downloads
-python scripts/download_negative_audio.py --dry-run
-
-# Execute web download of 300 real-world recordings
-python scripts/download_negative_audio.py --categories fireworks sharp_impacts engine_backfires thunder_and_weather general_ambience
-```
-
-### 3.4 Annotate Gunshot Events (Task Three)
-```bash
-# Profile physical acoustic energy and detect gunshot event intervals
-python scripts/annotate_gunshot_events.py --output data/manifests/gunshot_events.csv --gunshot-dir data/raw/gunshots
-```
-
-### 3.5 Mine Hard Negatives (Task Four)
-```bash
-# Scan training negative audio with zero-leakage guarantee
-python scripts/hard_negative_miner.py --split train --min-score 0.20 --threshold 0.48 --auto-approve
-```
-
-### 3.6 Train & Package the Final Quad-Model Ensemble (Task Five & Seven)
-```bash
-python scripts/train_final_system.py
-```
-
-### 3.7 Evaluate Event-Level & Continuous Streaming (Task Six & Eight)
-```bash
-# Event-level evaluation
-python scripts/evaluate_event_level.py --threshold 0.55 --confirm-windows 1
-
-# Full offline evaluation report
-python evaluate.py
-```
-
-### 3.8 Launch Web Application (Task Ten)
-```bash
+### 6.2 Launch the Real-Time Web Dashboard
+```powershell
 python app.py
-# Open browser at http://127.0.0.1:5000
+```
+Open your browser to `http://127.0.0.1:5000`.
+
+### 6.3 Run Integration & Verification Test Suites
+```powershell
+# Run detector sanity check
+python tests/sanity_check.py
+
+# Run streaming pipeline unit tests
+python -m unittest discover tests
+
+# Run V10 Live Streaming automated microbenchmark
+python scratch/test_v10_live_microphone.py
+```
+
+### 6.4 Evaluate Detector Candidates
+```powershell
+# Evaluate Phase 14 Production Default Baseline
+python evaluate.py
+
+# Evaluate Detector Improvement V10 on benchmark data
+python -c "from experiments.detector_improvement_v10.model_detector_improvement_v10 import DetectorImprovementV10; det = DetectorImprovementV10(); print('V10 initialized successfully!')"
 ```
 
 ---
 
-## 4. Safety Disclaimer
+## 7. Phase 55 Findings & Research Horizon
 
-> [!IMPORTANT]
-> **CRITICAL RESEARCH DISCLAIMER:**
-> This gunshot sound detection system is an algorithmic research, prototyping, and educational tool.
-> It is **NOT** certified for life-safety applications, automated emergency 911 dispatch, tactical defense operations, or automated weapon triggers.
-> Acoustic event detection systems are inherently vulnerable to out-of-distribution acoustic transients, reverberant environments, and complex multi-source audio scenes. Any mission-critical physical deployment requires extensive in-situ validation and human-in-the-loop oversight.
+Phase 55 completed an exhaustive audit of V10 failures on out-of-distribution audio:
+- **Heuristic Limitations:** Proved that handcrafted scalar thresholding (`centroid >= 3400 Hz`, `high_ratio >= 0.70`) is structurally fragile. Real-world fireworks exhibit explosive rise times $< 15\text{ ms}$, while room acoustics alter balloon burst centroids into the 1,500–3,300 Hz range.
+- **Learned Post-Classification Rejection:** Demonstrated that replacing heuristic rules with a trained Gradient Boosted Decision Tree (GBDT) evaluating 15 multidimensional acoustic and semantic features achieves **83.33% recall with just 1.00% FPR** on an independent test split at negligible computational overhead (0.053 ms latency).
+- **Future Direction:** Formal qualification of the Two-Stage Cascaded Architecture with a cryptographically sealed $N=500$ evaluation holdout corpus.
+
+---
+
+## 8. License & Safety Disclaimer
+
+This project is distributed for academic research, algorithmic benchmarking, and educational demonstration purposes.
+
+> [!WARNING]
+> **CRITICAL OPERATIONAL DISCLAIMER:**  
+> This acoustic gunshot detection software is an experimental prototype. It is **NOT CERTIFIED** for life-safety applications, autonomous emergency 911 dispatch, tactical law enforcement response, active-shooter alerting, automated evacuation, building lockdown, or physical security trigger systems. Acoustic recognition models are subject to acoustic interference, reverberation, environmental masking, and out-of-distribution false positives. Any mission-critical operational deployment requires certified hardware, fail-safe redundant sensors, and mandatory human-in-the-loop verification.
